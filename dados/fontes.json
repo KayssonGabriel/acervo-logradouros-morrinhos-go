@@ -1,0 +1,350 @@
+{
+  "listas": [
+    {
+      "id": "lista-2025-12-bairro",
+      "arquivo": "Morrinhos-09_12_2025_Ordem-de-Bairro.pdf",
+      "url": "https://morrinhos.go.gov.br/wp-content/uploads/2025/12/Morrinhos-09_12_2025_Ordem-de-Bairro.pdf",
+      "referencia": "2025-12-09", "prioridade": 1, "linhas": 1021
+    },
+    {
+      "id": "lista-2025-12-alfabetica",
+      "arquivo": "Morrinhos-09_12_2025-ordem-alfabetica-dos-logradouros.pdf",
+      "url": "https://morrinhos.go.gov.br/wp-content/uploads/2025/12/Morrinhos-09_12_2025-ordem-alfabetica-dos-logradouros.pdf",
+      "referencia": "2025-12-09", "linhas": 1021,
+      "nota": "Mesmos registros da lista por bairro, em outra ordem."
+    },
+    {
+      "id": "lista-2025-10", "arquivo": "NOVOS-CEPS.pdf",
+      "url": "https://morrinhos.go.gov.br/wp-content/uploads/2025/10/NOVOS-CEPS.pdf",
+      "referencia": "2025-10", "linhas": 35, "formato": "numerado", "abrangencia": "complementar",
+      "nota": "Lista complementar. O mês corresponde ao caminho de publicação."
+    },
+    {
+      "id": "lista-2025-01", "arquivo": "fontes/ceps/lista-2025-01.pdf",
+      "url": "https://morrinhos.go.gov.br/wp-content/uploads/2025/01/DNE_Lista_de_Logradouros_Ordem_Alfabetica-1.pdf",
+      "referencia": "2025-01", "linhas": 970,
+      "nota": "Mesmas linhas da lista de novembro de 2024. O mês corresponde ao caminho do arquivo."
+    },
+    {
+      "id": "lista-2024-11", "arquivo": "fontes/ceps/lista-2024-11.pdf",
+      "url": "https://morrinhos.go.gov.br/wp-content/uploads/2024/11/DNE_Lista_de_Logradouros_Ordem_Alfabetica_241113_172319.pdf",
+      "referencia": "2024-11", "linhas": 970
+    }
+  ],
+  "atos": [
+    {
+      "id": "lei-1448-1996", "arquivo": "fontes/leis/lei-1448-1996.pdf",
+      "url": "https://morrinhos.go.gov.br/wp-content/uploads/2023/11/Lei-n-1448-de-22-de-agosto-de-1996.pdf",
+      "referencia": "1996-08-22", "numero": "1.448", "artigo": "1º", "pagina": 1,
+      "bairro": "Setor Aeroporto", "anterior": "Rua 210", "atribuido": "Rua José Alves de Toledo Neto"
+    },
+    {
+      "id": "lei-1732-2000", "arquivo": "fontes/leis/lei-1732-2000.pdf",
+      "url": "https://morrinhos.go.gov.br/wp-content/uploads/2023/11/Lei-n-1732-de-21-de-fevereiro-de-2000.pdf",
+      "referencia": "2000-02-21", "numero": "1.732", "artigo": "1º", "pagina": 1,
+      "bairro": "Povoado de Marcelânia", "anterior": null, "atribuido": "Rua Dona Etelvina Rosa de Jesus",
+      "trecho": "Via principal do povoado de Marcelânia"
+    },
+    {
+      "id": "lei-1939-2002", "arquivo": "fontes/leis/lei-1939-2002.pdf",
+      "url": "https://morrinhos.go.gov.br/wp-content/uploads/2023/11/1.939-Nome-de-Rua.pdf",
+      "referencia": "2002-11-20", "numero": "1.939", "artigo": "1º", "pagina": 1,
+      "bairro": "São Francisco de Assis", "anterior": null, "atribuido": "Rua Esperança",
+      "trecho": "Via então recém-criada, junto à Chácara do Negrinho Carneiro e iniciada na confluência da Rua X"
+    },
+    {
+      "id": "lei-2295-2007", "arquivo": "fontes/leis/lei-2295-2007.pdf",
+      "url": "https://morrinhos.go.gov.br/wp-content/uploads/2023/11/2.295-Nome-de-Rua.-Padre-Kleibe.pdf",
+      "referencia": "2007-03-02", "numero": "2.295", "artigo": "1º", "pagina": 1,
+      "bairro": "Setor Monte Verde", "anterior": "Avenida Central", "atribuido": "Padre Kleibe França Ribeiro",
+      "trecho": "Entre as ruas MV 01 e MV 02",
+      "vinculo_postal": {"cep": "75652-396", "bairro": "Conjunto Residencial Monte Verde", "nome": "Avenida Padre Kleibe França Ribeiro"},
+      "registros_postais_anteriores": [
+        {"cep": "75652-396", "bairro": "Conjunto Habitacional Monte Verde", "nome": "Avenida Central"}
+      ]
+    },
+    {
+      "id": "lei-2585-2009", "arquivo": "fontes/leis/lei-2585-2009.pdf",
+      "url": "https://morrinhos.go.gov.br/wp-content/uploads/2023/11/2.585-Nome.-Rua-prxima-AABB-Jos-Elias-Borges.pdf",
+      "referencia": "2009-12-11", "numero": "2.585", "artigo": "1º", "pagina": 1,
+      "bairro": "Setor Cordeiro / Irinéia de Freitas Chaves", "anterior": null, "atribuido": "Rua José Elias Borges",
+      "trecho": "Acesso à AABB entre as avenidas Coronel Fernando Barbosa e Antônio Firmo de Freitas",
+      "nota": "O mesmo nome tem registros postais em mais de um bairro. O alcance postal do trecho descrito no ato requer conferência."
+    },
+    {
+      "id": "lei-2450-2008",
+      "registro": "lei-2450-2008-1",
+      "arquivo": "fontes/leis/lei-2450-2008.pdf",
+      "url": "https://morrinhos.go.gov.br/wp-content/uploads/2023/11/Nome-de-Avenida.-Darcy-Chaves-2.450.pdf",
+      "referencia": "2008-08-21",
+      "numero": "2.450",
+      "artigo": "1º",
+      "pagina": 1,
+      "bairro": "",
+      "anterior": null,
+      "atribuido": "Avenida Darcy Chaves",
+      "trecho": "Da bifurcação da Avenida Dante Costa, junto ao Lago Municipal, até a captação de água da Saneago",
+      "nota": "Trecho definido no ato. Há mais de um CEP publicado para avenidas com esse nome."
+    },
+    {
+      "id": "lei-2474-2008",
+      "registro": "lei-2474-2008-a",
+      "arquivo": "fontes/leis/lei-2474-2008.pdf",
+      "url": "https://morrinhos.go.gov.br/wp-content/uploads/2023/11/2.474-D-nome-s-Vias-Pblicas-do-Povoado-Rancho-Alegre.pdf",
+      "referencia": "2008-12-11",
+      "numero": "2.474",
+      "artigo": "1º, alínea a",
+      "pagina": 1,
+      "bairro": "Povoado Rancho Alegre",
+      "anterior": null,
+      "atribuido": "Rua João Tassara",
+      "nota": "A lei remete a um protótipo anexo. O PDF disponível contém o texto do ato. CEP individual a confirmar."
+    },
+    {
+      "id": "lei-2474-2008",
+      "registro": "lei-2474-2008-b",
+      "arquivo": "fontes/leis/lei-2474-2008.pdf",
+      "url": "https://morrinhos.go.gov.br/wp-content/uploads/2023/11/2.474-D-nome-s-Vias-Pblicas-do-Povoado-Rancho-Alegre.pdf",
+      "referencia": "2008-12-11",
+      "numero": "2.474",
+      "artigo": "1º, alínea b",
+      "pagina": 1,
+      "bairro": "Povoado Rancho Alegre",
+      "anterior": null,
+      "atribuido": "Rua José Jerônimo Sobrinho",
+      "nota": "A lei remete a um protótipo anexo. O PDF disponível contém o texto do ato. CEP individual a confirmar."
+    },
+    {
+      "id": "lei-2474-2008",
+      "registro": "lei-2474-2008-c",
+      "arquivo": "fontes/leis/lei-2474-2008.pdf",
+      "url": "https://morrinhos.go.gov.br/wp-content/uploads/2023/11/2.474-D-nome-s-Vias-Pblicas-do-Povoado-Rancho-Alegre.pdf",
+      "referencia": "2008-12-11",
+      "numero": "2.474",
+      "artigo": "1º, alínea c",
+      "pagina": 1,
+      "bairro": "Povoado Rancho Alegre",
+      "anterior": null,
+      "atribuido": "Rua Deusdete Damacena",
+      "nota": "A lei remete a um protótipo anexo. O PDF disponível contém o texto do ato. CEP individual a confirmar."
+    },
+    {
+      "id": "lei-2474-2008",
+      "registro": "lei-2474-2008-d",
+      "arquivo": "fontes/leis/lei-2474-2008.pdf",
+      "url": "https://morrinhos.go.gov.br/wp-content/uploads/2023/11/2.474-D-nome-s-Vias-Pblicas-do-Povoado-Rancho-Alegre.pdf",
+      "referencia": "2008-12-11",
+      "numero": "2.474",
+      "artigo": "1º, alínea d",
+      "pagina": 1,
+      "bairro": "Povoado Rancho Alegre",
+      "anterior": null,
+      "atribuido": "Rua Maria Francisca",
+      "nota": "A lei remete a um protótipo anexo. O PDF disponível contém o texto do ato. CEP individual a confirmar."
+    },
+    {
+      "id": "lei-2474-2008",
+      "registro": "lei-2474-2008-e",
+      "arquivo": "fontes/leis/lei-2474-2008.pdf",
+      "url": "https://morrinhos.go.gov.br/wp-content/uploads/2023/11/2.474-D-nome-s-Vias-Pblicas-do-Povoado-Rancho-Alegre.pdf",
+      "referencia": "2008-12-11",
+      "numero": "2.474",
+      "artigo": "1º, alínea e",
+      "pagina": 1,
+      "bairro": "Povoado Rancho Alegre",
+      "anterior": null,
+      "atribuido": "Rua Vicente Júlio Peixoto",
+      "nota": "A lei remete a um protótipo anexo. O PDF disponível contém o texto do ato. CEP individual a confirmar."
+    },
+    {
+      "id": "lei-2474-2008",
+      "registro": "lei-2474-2008-f",
+      "arquivo": "fontes/leis/lei-2474-2008.pdf",
+      "url": "https://morrinhos.go.gov.br/wp-content/uploads/2023/11/2.474-D-nome-s-Vias-Pblicas-do-Povoado-Rancho-Alegre.pdf",
+      "referencia": "2008-12-11",
+      "numero": "2.474",
+      "artigo": "1º, alínea f",
+      "pagina": 1,
+      "bairro": "Povoado Rancho Alegre",
+      "anterior": null,
+      "atribuido": "Rua Padre João Batista Irias dos Santos",
+      "nota": "A lei remete a um protótipo anexo. O PDF disponível contém o texto do ato. CEP individual a confirmar."
+    },
+    {
+      "id": "lei-2474-2008",
+      "registro": "lei-2474-2008-g",
+      "arquivo": "fontes/leis/lei-2474-2008.pdf",
+      "url": "https://morrinhos.go.gov.br/wp-content/uploads/2023/11/2.474-D-nome-s-Vias-Pblicas-do-Povoado-Rancho-Alegre.pdf",
+      "referencia": "2008-12-11",
+      "numero": "2.474",
+      "artigo": "1º, alínea g",
+      "pagina": 1,
+      "bairro": "Povoado Rancho Alegre",
+      "anterior": null,
+      "atribuido": "Avenida Sebastião Cândido Castilho",
+      "nota": "A lei remete a um protótipo anexo. O PDF disponível contém o texto do ato. CEP individual a confirmar."
+    },
+    {
+      "id": "lei-2474-2008",
+      "registro": "lei-2474-2008-h",
+      "arquivo": "fontes/leis/lei-2474-2008.pdf",
+      "url": "https://morrinhos.go.gov.br/wp-content/uploads/2023/11/2.474-D-nome-s-Vias-Pblicas-do-Povoado-Rancho-Alegre.pdf",
+      "referencia": "2008-12-11",
+      "numero": "2.474",
+      "artigo": "1º, alínea h",
+      "pagina": 1,
+      "bairro": "Povoado Rancho Alegre",
+      "anterior": null,
+      "atribuido": "Avenida Celso Arantes Cunha",
+      "nota": "A lei remete a um protótipo anexo. O PDF disponível contém o texto do ato. CEP individual a confirmar."
+    },
+    {
+      "id": "lei-2475-2008",
+      "registro": "lei-2475-2008-a",
+      "arquivo": "fontes/leis/lei-2475-2008.pdf",
+      "url": "https://morrinhos.go.gov.br/wp-content/uploads/2023/11/2.475-D-nome-s-Vias-Pblicas-do-Povoado-Espraiado.pdf",
+      "referencia": "2008-12-11",
+      "numero": "2.475",
+      "artigo": "1º, alínea a",
+      "pagina": 1,
+      "bairro": "Povoado Espraiado",
+      "anterior": null,
+      "atribuido": "Rua Joaquim Beija",
+      "trecho": "Trevo de Pontalina",
+      "nota": "Redação original do art. 1º, substituída pela Lei nº 3.045/2014. As correspondências entre grafias alteradas dependem da identificação física das vias."
+    },
+    {
+      "id": "lei-2475-2008",
+      "registro": "lei-2475-2008-b",
+      "arquivo": "fontes/leis/lei-2475-2008.pdf",
+      "url": "https://morrinhos.go.gov.br/wp-content/uploads/2023/11/2.475-D-nome-s-Vias-Pblicas-do-Povoado-Espraiado.pdf",
+      "referencia": "2008-12-11",
+      "numero": "2.475",
+      "artigo": "1º, alínea b",
+      "pagina": 1,
+      "bairro": "Povoado Espraiado",
+      "anterior": null,
+      "atribuido": "Rua Luzia Cândido M. dos Santos",
+      "trecho": "Trevo de Pontalina",
+      "nota": "Redação original do art. 1º, substituída pela Lei nº 3.045/2014. As correspondências entre grafias alteradas dependem da identificação física das vias."
+    },
+    {
+      "id": "lei-2475-2008",
+      "registro": "lei-2475-2008-c",
+      "arquivo": "fontes/leis/lei-2475-2008.pdf",
+      "url": "https://morrinhos.go.gov.br/wp-content/uploads/2023/11/2.475-D-nome-s-Vias-Pblicas-do-Povoado-Espraiado.pdf",
+      "referencia": "2008-12-11",
+      "numero": "2.475",
+      "artigo": "1º, alínea c",
+      "pagina": 1,
+      "bairro": "Povoado Espraiado",
+      "anterior": null,
+      "atribuido": "Rua Edma Ramos",
+      "trecho": "Trevo de Pontalina",
+      "nota": "Redação original do art. 1º, substituída pela Lei nº 3.045/2014. As correspondências entre grafias alteradas dependem da identificação física das vias."
+    },
+    {
+      "id": "lei-2475-2008",
+      "registro": "lei-2475-2008-d",
+      "arquivo": "fontes/leis/lei-2475-2008.pdf",
+      "url": "https://morrinhos.go.gov.br/wp-content/uploads/2023/11/2.475-D-nome-s-Vias-Pblicas-do-Povoado-Espraiado.pdf",
+      "referencia": "2008-12-11",
+      "numero": "2.475",
+      "artigo": "1º, alínea d",
+      "pagina": 1,
+      "bairro": "Povoado Espraiado",
+      "anterior": null,
+      "atribuido": "Avenida José Ferreira Machado",
+      "trecho": "Trevo de Pontalina",
+      "nota": "Redação original do art. 1º, substituída pela Lei nº 3.045/2014. As correspondências entre grafias alteradas dependem da identificação física das vias."
+    },
+    {
+      "id": "lei-3045-2014",
+      "registro": "lei-3045-2014-1",
+      "arquivo": "fontes/leis/lei-3045-2014.pdf",
+      "url": "https://morrinhos.go.gov.br/wp-content/uploads/2023/11/3.045-Altera-Lei-2.475.-Vias-Publicas-Espraiado.-Nome.pdf",
+      "referencia": "2014-05-21",
+      "numero": "3.045",
+      "artigo": "1º, inciso I",
+      "pagina": 1,
+      "bairro": "Povoado Espraiado",
+      "anterior": null,
+      "atribuido": "Rua Joaquim Beijo",
+      "trecho": "Trevo de Pontalina",
+      "nota": "Nova redação do art. 1º da Lei nº 2.475/2008."
+    },
+    {
+      "id": "lei-3045-2014",
+      "registro": "lei-3045-2014-2",
+      "arquivo": "fontes/leis/lei-3045-2014.pdf",
+      "url": "https://morrinhos.go.gov.br/wp-content/uploads/2023/11/3.045-Altera-Lei-2.475.-Vias-Publicas-Espraiado.-Nome.pdf",
+      "referencia": "2014-05-21",
+      "numero": "3.045",
+      "artigo": "1º, inciso II",
+      "pagina": 1,
+      "bairro": "Povoado Espraiado",
+      "anterior": null,
+      "atribuido": "Rua Luíza Mesquita dos Santos",
+      "trecho": "Trevo de Pontalina",
+      "nota": "Nova redação do art. 1º da Lei nº 2.475/2008."
+    },
+    {
+      "id": "lei-3045-2014",
+      "registro": "lei-3045-2014-3",
+      "arquivo": "fontes/leis/lei-3045-2014.pdf",
+      "url": "https://morrinhos.go.gov.br/wp-content/uploads/2023/11/3.045-Altera-Lei-2.475.-Vias-Publicas-Espraiado.-Nome.pdf",
+      "referencia": "2014-05-21",
+      "numero": "3.045",
+      "artigo": "1º, inciso III",
+      "pagina": 1,
+      "bairro": "Povoado Espraiado",
+      "anterior": null,
+      "atribuido": "Rua Edma Ramos",
+      "trecho": "Trevo de Pontalina",
+      "trecho_ato": "lei-2475-2008-c",
+      "nota": "Nova redação do art. 1º da Lei nº 2.475/2008."
+    },
+    {
+      "id": "lei-3045-2014",
+      "registro": "lei-3045-2014-4",
+      "arquivo": "fontes/leis/lei-3045-2014.pdf",
+      "url": "https://morrinhos.go.gov.br/wp-content/uploads/2023/11/3.045-Altera-Lei-2.475.-Vias-Publicas-Espraiado.-Nome.pdf",
+      "referencia": "2014-05-21",
+      "numero": "3.045",
+      "artigo": "1º, inciso IV",
+      "pagina": 1,
+      "bairro": "Povoado Espraiado",
+      "anterior": null,
+      "atribuido": "Avenida José Fernandes Machado",
+      "trecho": "Trevo de Pontalina",
+      "nota": "Nova redação do art. 1º da Lei nº 2.475/2008."
+    },
+    {
+      "id": "lei-3066-2014",
+      "registro": "lei-3066-2014-1",
+      "arquivo": "fontes/leis/lei-3066-2014.pdf",
+      "url": "https://morrinhos.go.gov.br/wp-content/uploads/2023/11/3.066-Altera-denominacao-de-via-publica.pdf",
+      "referencia": "2014-08-22",
+      "numero": "3.066",
+      "artigo": "1º",
+      "pagina": 1,
+      "bairro": "",
+      "anterior": "Avenida Perimetral",
+      "atribuido": "Avenida Presidente Getúlio Vargas",
+      "trecho": "Entre a Avenida do Trabalhador e a Estrada do Café",
+      "nota": "A lei não especifica o bairro. A equivalência postal depende de localizar o trecho."
+    },
+    {
+      "id": "lei-3119-2015", "arquivo": "fontes/leis/lei-3119-2015.pdf",
+      "url": "https://morrinhos.go.gov.br/wp-content/uploads/2023/11/3.119-Nome-de-rua.-Juvercina-Cipriana.pdf",
+      "referencia": "2015-05-22", "numero": "3.119", "artigo": "1º", "pagina": 1,
+      "bairro": "Jardim América", "anterior": "Rua 03", "atribuido": "Rua Juvercina Cipriana da Silva",
+      "vinculo_postal": {"cep": "75650-281", "bairro": "Jardim América", "nome": "Rua Juvercina Cipriana da Silva"}
+    }
+  ],
+  "cep_geral": {
+    "id": "comunicado-cep-geral-2025-03",
+    "url": "https://morrinhos.go.gov.br/mudanca-no-cep-de-morrinhos-entenda-o-que-muda-e-como-se-adaptar/",
+    "referencia": "2025-03-14", "cep": "75650-000", "fim_anunciado": "2025-03-15"
+  }
+}
