@@ -10,6 +10,7 @@ import tempfile
 import unittest
 
 import acervo
+import auditar_acervo
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -47,7 +48,8 @@ class TestAcervo(unittest.TestCase):
             self.assertEqual(contagem['lista-2025-10'], 35)
             self.assertEqual(contagem['lista-2024-11'], 970)
             self.assertEqual(contagem['lista-2025-01'], 970)
-            self.assertEqual(db.execute('SELECT count(*) FROM ato_nome').fetchone()[0], 24)
+            self.assertEqual(contagem['lista-2025-01-bairro'], 970)
+            self.assertEqual(db.execute('SELECT count(*) FROM ato_nome').fetchone()[0], 38)
 
     def test_nome_anterior_documentado_encontra_cep_por_bairro(self):
         resultado, = self.consultar('Rua 03', '--bairro', 'Jardim América')
@@ -77,8 +79,8 @@ class TestAcervo(unittest.TestCase):
         self.assertEqual(outubro['observacoes_postais'][0]['cep_original'], '75656534')
 
     def test_lei_sem_cep_encontra_logradouro(self):
-        resultado, = self.consultar('Rua 210', '--bairro', 'Setor Aeroporto')
-        self.assertEqual(resultado['nome_municipal_documentado'], 'Rua José Alves de Toledo Neto')
+        resultado, = self.consultar('Rua Esperança', '--bairro', 'São Francisco de Assis')
+        self.assertEqual(resultado['nome_municipal_documentado'], 'Rua Esperança')
         self.assertIsNone(resultado['cep_publicado'])
         self.assertEqual(resultado['situacao_postal'], 'sem_cep_nas_fontes')
 
@@ -162,9 +164,9 @@ class TestAcervo(unittest.TestCase):
         del ato['registros_postais_anteriores']
         with closing(acervo.abrir_banco(caminho, escrita=True)) as db, db:
             acervo.importar_ato(db, ato)
-            self.assertEqual(db.execute('SELECT count(*) FROM equivalencia_trecho').fetchone()[0], 0)
+            self.assertEqual(db.execute("SELECT count(*) FROM equivalencia_trecho WHERE ato_id = 'lei-2295-2007'").fetchone()[0], 0)
             origens = db.execute("SELECT count(*) FROM observacao_postal WHERE cep = '75652-396'").fetchone()[0]
-            self.assertEqual(origens, 4)
+            self.assertEqual(origens, 5)
 
     def test_importacao_recusa_mudar_origem_de_fonte_existente(self):
         caminho = Path(self.pasta.name) / 'fontes.sqlite3'
@@ -231,6 +233,63 @@ class TestAcervo(unittest.TestCase):
         resultado, = self.consultar('Rua 216', '--bairro', 'Aeroporto')
         self.assertEqual(resultado['bairro'], 'Setor Aeroporto')
         self.assertEqual(resultado['cep_publicado'], '75654-123')
+
+    def test_endereco_copiado_aceita_numero_quadra_localidade_e_cep_formatado(self):
+        resultado, = self.consultar('R. 03, nº 44, Qd. 8, Jardim América, Morrinhos - GO, CEP 75.650-281')
+        self.assertEqual(resultado['cep_publicado'], '75650-281')
+        self.assertEqual(resultado['nome_municipal_documentado'], 'Rua Juvercina Cipriana da Silva')
+
+    def test_bairro_no_fim_funciona_sem_virgula(self):
+        resultado, = self.consultar('Rua 216 Vila Santos Dumont')
+        self.assertEqual(resultado['cep_publicado'], '75654-216')
+
+    def test_nome_com_palavras_fora_de_ordem_continua_localizavel(self):
+        resultados = self.consultar('Silva Juvercina', '--bairro', 'Jardim América')
+        self.assertEqual(resultados[0]['cep_publicado'], '75650-281')
+
+    def test_grafia_aproximada_retorna_sugestao_sem_confirmar_identidade(self):
+        resposta = self.cli('consultar', 'Rua Juvercna', '--bairro', 'Jardim América')
+        self.assertEqual(resposta.returncode, 0, resposta.stderr)
+        dados = json.loads(resposta.stdout)
+        self.assertEqual(dados['criterio'], 'aproximada')
+        self.assertEqual(dados['resultados'][0]['cep_publicado'], '75650-281')
+
+    def test_cep_especifico_conflitante_e_numero_de_rua_nao_sao_aproximados(self):
+        self.assertEqual(self.consultar('Rua 03, Jardim América, CEP 75654-069'), [])
+        self.assertEqual(self.consultar('Rua 21699', '--bairro', 'Setor Aeroporto'), [])
+        self.assertEqual(self.consultar('CEP 75654-069, Morrinhos - CE'), [])
+
+    def test_cep_geral_com_nome_nao_esconde_o_registro_da_via(self):
+        resposta = self.cli('consultar', 'Rua 03, Jardim América, CEP 75650-000')
+        self.assertEqual(resposta.returncode, 0, resposta.stderr)
+        dados = json.loads(resposta.stdout)
+        self.assertEqual(dados['resultados'][0]['cep_publicado'], '75650-281')
+        self.assertTrue(dados['cep_geral_informado'])
+
+    def test_rua_210_preserva_tres_atos_e_rastreia_observacao_postal(self):
+        resultado, = self.consultar('Rua 210', '--bairro', 'Setor Aeroporto')
+        self.assertEqual(resultado['cep_publicado'], '75654-064')
+        self.assertEqual([r['numero'] for r in resultado['historico_nomes']], ['1.448', '2.311', '2.822'])
+        self.assertEqual(resultado['conferencia_correios'], 'pendente')
+
+    def test_rua_fc03_preserva_os_tres_trechos_documentados(self):
+        resultados = self.consultar('Rua FC03')
+        ceps = {r['cep_publicado'] for r in resultados if r['fonte_municipal_id'] == 'lei-2793-2011'}
+        self.assertEqual(ceps, {'75652-366', '75652-482', '75652-446'})
+
+    def test_numero_no_nome_da_rua_e_distinto_de_numero_predial(self):
+        dados = self.consultar('Rua nº 19, Vila Bela')
+        self.assertEqual([r['cep_publicado'] for r in dados], ['75654-000'])
+        self.assertEqual(self.consultar('Rua 19, Vila Bela'), dados)
+
+    def test_auditoria_separa_cep_ausente_de_grafia_alterada_entre_edicoes(self):
+        with closing(acervo.abrir_banco(self.banco)) as db:
+            resumo, _ = auditar_acervo.cobertura(db)
+        comparacao = resumo['comparacao_listas_integrais']
+        self.assertEqual(resumo['registros_da_lista_integral'], 1021)
+        self.assertEqual(len(comparacao['ceps_so_na_anterior']), 14)
+        self.assertIn('75659-100', comparacao['ceps_so_na_anterior'])
+        self.assertNotIn('75650-294', comparacao['ceps_so_na_anterior'])
 
 
 if __name__ == '__main__':

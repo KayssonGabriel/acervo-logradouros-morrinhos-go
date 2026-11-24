@@ -2,6 +2,8 @@
 
 O banco SQLite reúne nomes, trechos, CEPs e fontes públicas de Morrinhos, Goiás. O arquivo `morrinhos.csv` permite abrir o cadastro no Excel e filtrar por bairro, pelo nome postal ou pelos nomes anteriores documentados. A versão de dezembro de 2025 contém 1.021 registros postais. A pesquisa histórica e a conferência nos Correios são registradas progressivamente.
 
+Para ampliar a pesquisa, fazer ajustes ou pedir a revisão de outra IA, use [AGENTS.md](AGENTS.md). O roteiro inclui as fontes oficiais, os critérios de evidência e os casos de teste.
+
 ## Consultar
 
 Para abrir a interface local no navegador, inicie o servidor na pasta do acervo.
@@ -26,10 +28,14 @@ python -X utf8 acervo.py consultar 'Rua 03' --bairro 'Jardim América'
 python -X utf8 acervo.py consultar 'Avenida Central' --bairro 'Setor Monte Verde'
 python -X utf8 acervo.py consultar 'Av. Central, Setor Monte Verde'
 python -X utf8 acervo.py consultar '75654-069'
+python -X utf8 acervo.py consultar 'R. 03, nº 44, Jardim América, Morrinhos - GO, CEP 75.650-281'
+python -X utf8 auditar_acervo.py
 python -X utf8 acervo.py exportar 'morrinhos-revisao.csv'
 ```
 
-A busca aceita nomes com ou sem acentos, abreviações comuns como `Av.` e `R.`, e CEP com ou sem hífen. O bairro pode vir depois da vírgula ou em `--bairro`. O resultado em JSON traz o nome municipal documentado, o nome postal publicado, o CEP, a situação da conferência e as fontes. Use `situacao_historico` para localizar os nomes ainda a pesquisar. Em `observacoes_postais`, cada entrada preserva a grafia, o bairro e o CEP tal como aparecem no documento original. Um CEP associado a registros conflitantes mantém as diferentes observações disponíveis, com `divergencia_postal`.
+A busca aceita nomes com ou sem acentos, abreviações, formatos comuns de CEP e bairro no final do texto. Em endereços copiados, complementos explícitos como número predial e quadra servem de contexto. Quando a busca textual não encontra resultados, também tenta palavras fora de ordem, prefixos e grafias próximas. A interface marca as grafias próximas como sugestões e pede que você escolha uma para conferir a fonte. O bairro e o CEP específico informado continuam restringindo os resultados.
+
+O JSON traz o nome municipal documentado, o nome postal publicado, o CEP, a situação da conferência, as fontes e o `criterio` de busca. Use `situacao_historico` para localizar os nomes ainda a pesquisar. Em `observacoes_postais`, cada entrada preserva a grafia, o bairro e o CEP tal como aparecem no documento original. Um CEP associado a registros conflitantes mantém as diferentes observações disponíveis, com `divergencia_postal`.
 
 O indicador `divergencia_postal` abrange diferenças entre edições. Use as referências e páginas para distinguir uma diferença histórica de um conflito na publicação mais recente. A lista integral e os boletins complementares são identificados por `abrangencia_fonte_postal`.
 
@@ -54,4 +60,4 @@ As etapas de pesquisa, os controles operacionais e os testes de integração est
 
 ## Fontes
 
-As duas listas municipais de dezembro de 2025 contêm os mesmos registros, ordenados por nome ou bairro. As listas anteriores de novembro de 2024 e janeiro de 2025 contêm as mesmas 970 observações extraídas. O banco conserva a origem de cada registro. O mapa municipal pode ajudar a investigar a continuidade de uma via e comparar seus trechos. [Listas municipais de CEP](https://morrinhos.go.gov.br/codigo-de-enderecamento-postal-cep/) · [Lista de novembro de 2024](https://morrinhos.go.gov.br/prefeitura-apresenta-cadastros-de-logradouros-de-morrinhos-com-novos-ceps/) · [Mapa municipal](https://morrinhos.go.gov.br/mapa-da-cidade-de-morrinhos/) · [Legislação da Câmara](https://leis.morrinhos.go.leg.br/leis)
+As duas listas municipais de dezembro de 2025 contêm os mesmos registros, ordenados por nome ou bairro. As listas anteriores de novembro de 2024 e de janeiro de 2025, esta em duas ordenações, contêm as mesmas 970 observações extraídas. O banco conserva a origem de cada registro. O mapa municipal pode ajudar a investigar a continuidade de uma via e comparar seus trechos. [Listas municipais de CEP](https://morrinhos.go.gov.br/codigo-de-enderecamento-postal-cep/) · [Lista de novembro de 2024](https://morrinhos.go.gov.br/prefeitura-apresenta-cadastros-de-logradouros-de-morrinhos-com-novos-ceps/) · [Mapa municipal](https://morrinhos.go.gov.br/mapa-da-cidade-de-morrinhos/) · [Legislação da Câmara](https://leis.morrinhos.go.leg.br/leis)

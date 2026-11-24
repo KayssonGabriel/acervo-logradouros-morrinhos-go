@@ -25,6 +25,7 @@ LISTAS = {
     'lista-2025-12-alfabetica': 'Lista em ordem alfabética',
     'lista-2025-10': 'Lista complementar de CEPs',
     'lista-2025-01': 'Cadastro de logradouros de janeiro de 2025',
+    'lista-2025-01-bairro': 'Cadastro por bairro de janeiro de 2025',
     'lista-2024-11': 'Cadastro de logradouros de novembro de 2024',
     'comunicado-cep-geral-2025-03': 'Comunicado sobre o CEP geral',
 }
@@ -70,7 +71,9 @@ def resultados_publicos(db, params):
             for observacao in trecho['observacoes_postais']
         ]
         resultados.append(resumo)
-    return {'resultados': resultados, 'total': dados['total'], 'pagina': pagina, 'por_pagina': TAMANHO_PAGINA}
+    return {'resultados': resultados, 'total': dados['total'], 'pagina': pagina, 'por_pagina': TAMANHO_PAGINA,
+            'criterio': dados['criterio'], 'cep_geral_informado': dados['cep_geral_informado'],
+            'conflito_entrada': dados['conflito_entrada']}
 
 
 def fontes_publicas(db):

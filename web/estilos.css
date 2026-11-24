@@ -61,6 +61,7 @@ button:disabled { cursor: default; }
 .espaco-trabalho { display: grid; grid-template-columns: minmax(0, .57fr) minmax(0, 1fr); align-items: start; gap: 28px; margin-top: 28px; }
 .resultados > h2 { font-size: clamp(25px, 2.2vw, 34px); letter-spacing: -.045em; line-height: 1.16; }
 .resultados > p { color: var(--secundaria); margin-top: 4px; }
+.resultados > .aviso-consulta { margin-top: 10px; font-size: .86em; }
 .lista-resultados { list-style: none; padding: 0; margin-top: 21px; display: grid; gap: 12px; }
 .resultado { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 20px; width: 100%; min-height: 90px; text-align: left; padding: 14px 19px; border: 1px solid var(--linha); border-radius: var(--raio); background: var(--papel); }
 .resultado:hover { border-color: var(--verde); }

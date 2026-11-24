@@ -6,14 +6,14 @@ Acervo de atos municipais que identificam, denominam ou renomeiam vias de Morrin
 
 | Nome anterior | Nome atribuído | Bairro e trecho | Ato municipal | CEP na lista de 09/12/2025 |
 | --- | --- | --- | --- | --- |
-| Rua 210 | Rua José Alves de Toledo Neto | Setor Aeroporto | Lei nº 1.448, de 22/08/1996, art. 1º | A confirmar |
+| Rua 210 | Rua José Alves de Toledo Neto | Setor Aeroporto | Lei nº 1.448, de 22/08/1996, art. 1º | Ver os atos posteriores da Rua 210 |
 | Avenida Central | Padre Kleibe França Ribeiro | Setor Monte Verde, entre as ruas MV 01 e MV 02 | Lei nº 2.295, de 02/03/2007, art. 1º | 75652-396 |
 | Rua 03 | Rua Juvercina Cipriana da Silva | Setor Jardim América | Lei nº 3.119, de 22/05/2015, art. 1º | 75650-281 |
 | Avenida Perimetral | Avenida Presidente Getúlio Vargas | Trecho entre a Avenida do Trabalhador e a Estrada do Café | Lei nº 3.066, de 22/08/2014, art. 1º | A confirmar |
 
 ### Lei nº 1.448, de 22 de agosto de 1996
 
-O art. 1º atribui à Rua 210 do Setor Aeroporto o nome Rua José Alves de Toledo Neto. O art. 3º estabelece vigência na data da publicação. A data de publicação e a correspondência postal estão a conferir. [PDF oficial, página 1](https://morrinhos.go.gov.br/wp-content/uploads/2023/11/Lei-n-1448-de-22-de-agosto-de-1996.pdf#page=1) · [Cópia local](fontes/leis/lei-1448-1996.pdf)
+O art. 1º atribui à Rua 210 do Setor Aeroporto o nome Rua José Alves de Toledo Neto. O art. 3º estabelece vigência na data da publicação. A data de publicação está a conferir. [PDF oficial, página 1](https://morrinhos.go.gov.br/wp-content/uploads/2023/11/Lei-n-1448-de-22-de-agosto-de-1996.pdf#page=1) · [Cópia local](fontes/leis/lei-1448-1996.pdf)
 
 ### Lei nº 2.295, de 2 de março de 2007
 
@@ -32,6 +32,26 @@ A lista postal de 09/12/2025 registra Rua Juvercina Cipriana da Silva, Jardim Am
 ### Lei nº 3.066, de 22 de agosto de 2014
 
 O art. 1º atribui o nome Avenida Presidente Getúlio Vargas ao trecho da Avenida Perimetral entre a Avenida do Trabalhador e a Estrada do Café. O ato identifica os limites do trecho. A correspondência com os registros postais permanece em pesquisa. [PDF oficial, página 1](https://morrinhos.go.gov.br/wp-content/uploads/2023/11/3.066-Altera-denominacao-de-via-publica.pdf#page=1) · [Cópia local](fontes/leis/lei-3066-2014.pdf)
+
+## Lote de pesquisa de 24/11/2026
+
+No **Setor Aeroporto**, três leis identificam a **Rua 210**. Em 1996 aparece Rua José Alves de Toledo Neto. A Lei nº 2.311/2007 atribui Reverendo Tipple e a Lei nº 2.822/2011 usa Reverendo Archibald Tipple. A de 2011 cita a Lei nº 2.310, cujo PDF publicado trata da Fundação Betuel. Essa divergência permanece no histórico. A lista municipal de dezembro de 2025 registra **Rua Reverendo Archibald Tipple, CEP 75654-064**, no Setor Aeroporto. [Lei nº 1.448/1996](fontes/leis/lei-1448-1996.pdf) · [Lei nº 2.311/2007](fontes/leis/lei-2311-2007.pdf) · [Lei nº 2.822/2011](fontes/leis/lei-2822-2011.pdf) · [Lei nº 2.310/2007 citada no ato](fontes/leis/lei-2310-2007.pdf) · [Lista postal, p. 14](https://morrinhos.go.gov.br/wp-content/uploads/2025/12/Morrinhos-09_12_2025_Ordem-de-Bairro.pdf#page=14)
+
+Os atos da tabela estão arquivados com o art. 1º. A coluna de CEP registra os dados da lista por bairro de 09/12/2025. A conferência direta nos Correios permanece pendente. [Lista postal por bairro](https://morrinhos.go.gov.br/wp-content/uploads/2025/12/Morrinhos-09_12_2025_Ordem-de-Bairro.pdf)
+
+| Nome anterior | Nome atribuído | Trecho ou bairro | Ato | CEP publicado |
+| --- | --- | --- | --- | --- |
+| Avenida 101-A | Avenida Professor Frauzino Sobrinho | Setor Aeroporto. Início na rotatória descrita na lei | [Lei nº 2.179/2005](fontes/leis/lei-2179-2005.pdf) | 75654-104, p. 13 |
+| Rua nº 19 | Pe. Samuel George | Divisa entre Vila Bela e Setor Oeste. O PDF identifica o ato como nº 2.292, embora o nome do arquivo indique 2.296 | [Lei nº 2.292/2007](fontes/leis/lei-2292-2007.pdf) | 75654-000, p. 20, e 75650-018, p. 18 |
+| Rua 13 | Rua Geraldo Santana | Setor Oeste | [Lei nº 2.517/2009](fontes/leis/lei-2517-2009.pdf) | 75650-030, p. 18 |
+| Rua 20 | Rua Pastor Belino Gonçalves Damaceno | Setor Oeste, entre as avenidas Saturnino de Azevedo e Doutor Gumercindo Otero | [Lei nº 2.756/2011](fontes/leis/lei-2756-2011.pdf) | 75650-058, p. 18 |
+| Rua 101-A | Rua Soldado PM Adonai do Carmo Oliveira | Setor Aeroporto, em frente à 10ª CIPM. A lista usa **Avenida** para a denominação postal correspondente em grafia. O vínculo depende de verificar o trecho | [Lei nº 2.759/2011](fontes/leis/lei-2759-2011.pdf) | A confirmar |
+| Rua 22 | Rua Agenor Vicente de Souza | Setor Oeste | [Lei nº 2.792/2011](fontes/leis/lei-2792-2011.pdf) | A confirmar |
+| Rua FC 03 | Rua Beraldino Vicente de Souza | Aeroporto II, Felício Chaves e Irinéia de Freitas, com registro por bairro | [Lei nº 2.793/2011](fontes/leis/lei-2793-2011.pdf) | 75652-366, p. 14, 75652-446, p. 16, e 75652-482, p. 17 |
+| Rua 18-A | Rua Vereador Luiz Santiago | Setor Aeroporto | [Lei nº 2.804/2011](fontes/leis/lei-2804-2011.pdf) | 75654-090, p. 14 |
+| Rua 15 | Rua Dalmes Antônio de Oliveira | Jardim América. A lista de novembro de 2024 usa Rua 15 com o mesmo CEP | [Lei nº 2.823/2011](fontes/leis/lei-2823-2011.pdf) | 75650-294, p. 4 |
+
+A Portaria SPU/GO nº 11/2014 registra o nome **antiga Rua 17** para um endereço da **Rua Prefeito Manoel Lemos de Mendonça**, no Setor Oeste. É evidência de uso no endereço descrito. O ato municipal de denominação e o alcance desse nome anterior ainda precisam ser localizados. A lista de dezembro de 2025 registra Rua Prefeito Manoel Lemos de Mendonça, CEP **75650-042**. [DOU de 04/06/2014, p. 113](https://transparencia.mpf.mp.br/conteudo/diarios-e-boletins/diario-oficial-da-uniao-1/2014/dou1_2014_06_04.pdf#page=113) · [Lista postal, p. 18](https://morrinhos.go.gov.br/wp-content/uploads/2025/12/Morrinhos-09_12_2025_Ordem-de-Bairro.pdf#page=18)
 
 ## Denominações sem nome anterior identificado no ato
 

@@ -6,6 +6,7 @@ const lista = porId('lista');
 const detalhe = porId('detalhe');
 const contador = porId('contador');
 const mensagem = porId('mensagem');
+const avisoConsulta = porId('aviso-consulta');
 const abas = [porId('tab-nomes'), porId('tab-ceps')];
 const paginaAnterior = porId('anterior');
 const paginaProxima = porId('proxima');
@@ -94,6 +95,7 @@ function nome(trecho) {
 }
 
 function exibirTrecho(trecho, botao, interacao) {
+  mensagem.hidden = true;
   for (const item of lista.querySelectorAll('button')) {
     item.setAttribute('aria-pressed', String(item === botao));
   }
@@ -158,6 +160,7 @@ async function buscar(novaPagina = 1, moverFoco = false) {
   const atual = new AbortController();
   pedido = atual;
   mensagem.hidden = true;
+  avisoConsulta.hidden = true;
   detalhe.hidden = true;
   lista.replaceChildren();
   contador.textContent = 'Buscando…';
@@ -170,9 +173,19 @@ async function buscar(novaPagina = 1, moverFoco = false) {
     if (atual.signal.aborted) return;
     if (!resposta.ok) throw new Error(dados.erro || 'Não foi possível consultar a base.');
     pagina = dados.pagina;
-    contador.textContent = `${formatoNumero.format(dados.total)} ${dados.total === 1 ? 'encontrado' : 'encontrados'}`;
+    const aproximada = dados.criterio === 'aproximada';
+    const rotulo = aproximada ? (dados.total === 1 ? 'sugestão' : 'sugestões') : (dados.total === 1 ? 'encontrado' : 'encontrados');
+    contador.textContent = `${formatoNumero.format(dados.total)} ${rotulo}`;
+    if (dados.cep_geral_informado) {
+      avisoConsulta.textContent = 'O CEP geral antigo foi usado como contexto. A busca considera o nome da via e o bairro.';
+      avisoConsulta.hidden = false;
+    }
     if (!dados.resultados.length) {
-      mostrarMensagem('Nenhuma correspondência encontrada', 'Confira o bairro ou tente buscar por parte do nome ou pelo CEP.');
+      if (dados.conflito_entrada) {
+        mostrarMensagem('Dados da busca incompatíveis', 'Confira os CEPs, o bairro e a localidade informados. O acervo é de Morrinhos (GO).');
+      } else {
+        mostrarMensagem('Nenhuma correspondência encontrada', 'Confira o bairro ou tente buscar por parte do nome ou pelo CEP.');
+      }
       return;
     }
     for (const trecho of dados.resultados) {
@@ -189,7 +202,11 @@ async function buscar(novaPagina = 1, moverFoco = false) {
       lista.append(item);
     }
     const primeiro = lista.querySelector('button');
-    exibirTrecho(dados.resultados[0], primeiro, false);
+    if (aproximada) {
+      mostrarMensagem('Sugestões por grafia semelhante', 'Selecione uma sugestão para conferir o nome, o bairro e as fontes. A semelhança não confirma que se trata da mesma via.');
+    } else {
+      exibirTrecho(dados.resultados[0], primeiro, false);
+    }
     if (moverFoco) primeiro.focus();
     const totalPaginas = Math.ceil(dados.total / dados.por_pagina);
     porId('paginacao').hidden = totalPaginas < 2;

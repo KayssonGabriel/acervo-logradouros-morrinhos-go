@@ -26,6 +26,12 @@
       "nota": "Mesmas linhas da lista de novembro de 2024. O mês corresponde ao caminho do arquivo."
     },
     {
+      "id": "lista-2025-01-bairro", "arquivo": "fontes/ceps/lista-2025-01-bairro.pdf",
+      "url": "https://morrinhos.go.gov.br/wp-content/uploads/2025/01/DNE_Lista_de_Logradouros_por_bairro.pdf",
+      "referencia": "2025-01", "prioridade": -1, "linhas": 970,
+      "nota": "Mesmas observações da lista alfabética de janeiro de 2025, em ordem de bairro."
+    },
+    {
       "id": "lista-2024-11", "arquivo": "fontes/ceps/lista-2024-11.pdf",
       "url": "https://morrinhos.go.gov.br/wp-content/uploads/2024/11/DNE_Lista_de_Logradouros_Ordem_Alfabetica_241113_172319.pdf",
       "referencia": "2024-11", "linhas": 970
@@ -333,6 +339,276 @@
       "atribuido": "Avenida Presidente Getúlio Vargas",
       "trecho": "Entre a Avenida do Trabalhador e a Estrada do Café",
       "nota": "A lei não especifica o bairro. A equivalência postal depende de localizar o trecho."
+    },
+    {
+      "id": "lei-2311-2007",
+      "arquivo": "fontes/leis/lei-2311-2007.pdf",
+      "url": "https://morrinhos.go.gov.br/wp-content/uploads/2023/11/2.311-Nome.-Altera-nome-da-Rua-210.pdf",
+      "referencia": "2007-03-23",
+      "numero": "2.311",
+      "artigo": "1º",
+      "pagina": 1,
+      "bairro": "Setor Aeroporto",
+      "anterior": "Rua 210",
+      "atribuido": "Reverendo Tipple",
+      "trecho_ato": "lei-1448-1996"
+    },
+    {
+      "id": "lei-2822-2011",
+      "arquivo": "fontes/leis/lei-2822-2011.pdf",
+      "url": "https://morrinhos.go.gov.br/wp-content/uploads/2023/11/2.822-altera-lei-2.310-nome-de-rua-Reverendo-Archibald-Tipple.docx.pdf",
+      "referencia": "2011-09-27",
+      "numero": "2.822",
+      "artigo": "1º",
+      "pagina": 1,
+      "bairro": "Setor Aeroporto",
+      "anterior": "Rua 210",
+      "atribuido": "Reverendo Archibald Tipple",
+      "trecho_ato": "lei-1448-1996",
+      "registros_postais_vinculados": [
+        {
+          "cep": "75654-064",
+          "bairro": "Setor Aeroporto",
+          "nome": "Rua Reverendo Archibald Tipple"
+        }
+      ],
+      "nota": "O artigo identifica a Rua 210 do Setor Aeroporto e cita a Lei nº 2.310. O PDF municipal da 2.310 trata da Fundação Betuel. A Lei nº 2.311, da mesma data, é a que denomina a Rua 210."
+    },
+    {
+      "id": "lei-2517-2009",
+      "arquivo": "fontes/leis/lei-2517-2009.pdf",
+      "url": "https://morrinhos.go.gov.br/wp-content/uploads/2023/11/2.517-Nome.-Rua-13-para-Geraldo-Santana.pdf",
+      "referencia": "2009-05-22",
+      "numero": "2.517",
+      "artigo": "1º",
+      "pagina": 1,
+      "bairro": "Setor Oeste",
+      "anterior": "Rua 13",
+      "atribuido": "Rua Geraldo Santana",
+      "vinculo_postal": {
+        "cep": "75650-030",
+        "bairro": "Setor Oeste",
+        "nome": "Rua Geraldo Santana"
+      }
+    },
+    {
+      "id": "lei-2756-2011",
+      "arquivo": "fontes/leis/lei-2756-2011.pdf",
+      "url": "https://morrinhos.go.gov.br/wp-content/uploads/2023/11/2.756-da-nome-a-rua-Pastor-Belino-Gonalves-Damaceno.docx.pdf",
+      "referencia": "2011-04-28",
+      "numero": "2.756",
+      "artigo": "1º",
+      "pagina": 1,
+      "bairro": "Setor Oeste",
+      "anterior": "Rua 20",
+      "atribuido": "Rua Pastor Belino Gonçalves Damaceno",
+      "trecho": "Entre a Avenida Saturnino de Azevedo e a Avenida Doutor Gumercindo Otero",
+      "vinculo_postal": {
+        "cep": "75650-058",
+        "bairro": "Setor Oeste",
+        "nome": "Rua Pastor Belino Gonçalves Damaceno"
+      }
+    },
+    {
+      "id": "lei-2793-2011",
+      "arquivo": "fontes/leis/lei-2793-2011.pdf",
+      "url": "https://morrinhos.go.gov.br/wp-content/uploads/2023/11/2.793-Da-nome-a-Rua-Beraldino-Vicente-de-Souza.docx.pdf",
+      "referencia": "2011-06-22",
+      "numero": "2.793",
+      "artigo": "1º",
+      "pagina": 1,
+      "bairro": "Setor Aeroporto II",
+      "anterior": "Rua FC 03",
+      "atribuido": "Rua Beraldino Vicente de Souza",
+      "registro": "lei-2793-2011-aeroporto-ii",
+      "vinculo_postal": {
+        "cep": "75652-366",
+        "bairro": "Setor Aeroporto II",
+        "nome": "Rua Beraldino Vicente de Souza"
+      },
+      "registros_postais_anteriores": [
+        {
+          "cep": "75652-366",
+          "bairro": "Setor Aeroporto II",
+          "nome": "Rua FC-3"
+        }
+      ]
+    },
+    {
+      "id": "lei-2793-2011",
+      "arquivo": "fontes/leis/lei-2793-2011.pdf",
+      "url": "https://morrinhos.go.gov.br/wp-content/uploads/2023/11/2.793-Da-nome-a-Rua-Beraldino-Vicente-de-Souza.docx.pdf",
+      "referencia": "2011-06-22",
+      "numero": "2.793",
+      "artigo": "1º",
+      "pagina": 1,
+      "bairro": "Setor Irinéia de Freitas",
+      "anterior": "Rua FC 03",
+      "atribuido": "Rua Beraldino Vicente de Souza",
+      "registro": "lei-2793-2011-irineia",
+      "vinculo_postal": {
+        "cep": "75652-482",
+        "bairro": "Setor Irinéia de Freitas",
+        "nome": "Rua Beraldino Vicente de Souza"
+      },
+      "registros_postais_anteriores": [
+        {
+          "cep": "75652-482",
+          "bairro": "Setor Irinéia de Freitas",
+          "nome": "Rua FC-3"
+        }
+      ]
+    },
+    {
+      "id": "lei-2793-2011",
+      "arquivo": "fontes/leis/lei-2793-2011.pdf",
+      "url": "https://morrinhos.go.gov.br/wp-content/uploads/2023/11/2.793-Da-nome-a-Rua-Beraldino-Vicente-de-Souza.docx.pdf",
+      "referencia": "2011-06-22",
+      "numero": "2.793",
+      "artigo": "1º",
+      "pagina": 1,
+      "bairro": "Setor Felício Chaves",
+      "anterior": "Rua FC 03",
+      "atribuido": "Rua Beraldino Vicente de Souza",
+      "registro": "lei-2793-2011-felicio",
+      "vinculo_postal": {
+        "cep": "75652-446",
+        "bairro": "Setor Felício Chaves",
+        "nome": "Rua Beraldino Vicente de Souza"
+      },
+      "registros_postais_anteriores": [
+        {
+          "cep": "75652-446",
+          "bairro": "Setor Felício Chaves",
+          "nome": "Rua FC-3"
+        }
+      ]
+    },
+    {
+      "id": "lei-2804-2011",
+      "arquivo": "fontes/leis/lei-2804-2011.pdf",
+      "url": "https://morrinhos.go.gov.br/wp-content/uploads/2023/11/2.804-Da-nome-a-Rua-Luiz-Santiago.docx.pdf",
+      "referencia": "2011-08-18",
+      "numero": "2.804",
+      "artigo": "1º",
+      "pagina": 1,
+      "bairro": "Setor Aeroporto",
+      "anterior": "Rua 18-A",
+      "atribuido": "Rua Vereador Luiz Santiago",
+      "vinculo_postal": {
+        "cep": "75654-090",
+        "bairro": "Setor Aeroporto",
+        "nome": "Rua Vereador Luiz Santiago"
+      }
+    },
+    {
+      "id": "lei-2823-2011",
+      "arquivo": "fontes/leis/lei-2823-2011.pdf",
+      "url": "https://morrinhos.go.gov.br/wp-content/uploads/2023/11/2.823-D-nome-a-Rua-Dalmes-Antonio-de-oliveira.docx.pdf",
+      "referencia": "2011-10-17",
+      "numero": "2.823",
+      "artigo": "1º",
+      "pagina": 1,
+      "bairro": "Jardim América",
+      "anterior": "Rua 15",
+      "atribuido": "Rua Dalmes Antônio de Oliveira",
+      "vinculo_postal": {
+        "cep": "75650-294",
+        "bairro": "Jardim América",
+        "nome": "Rua Dalmes Antônio de Oliveira"
+      },
+      "registros_postais_anteriores": [
+        {
+          "cep": "75650-294",
+          "bairro": "Jardim América",
+          "nome": "Rua 15"
+        }
+      ]
+    },
+    {
+      "id": "lei-2292-2007",
+      "arquivo": "fontes/leis/lei-2292-2007.pdf",
+      "url": "https://morrinhos.go.gov.br/wp-content/uploads/2023/11/2.296-Nome-de-Rua.-Padre-Samuel.pdf",
+      "referencia": "2007-03-02",
+      "numero": "2.292",
+      "artigo": "1º",
+      "pagina": 1,
+      "bairro": "Vila Bela",
+      "anterior": "Rua nº 19",
+      "atribuido": "Pe. Samuel George",
+      "registro": "lei-2292-2007-vila-bela",
+      "trecho": "Divisa entre Vila Bela e Setor Oeste",
+      "vinculo_postal": {
+        "cep": "75654-000",
+        "bairro": "Vila Bela",
+        "nome": "Rua Padre Samuel George"
+      },
+      "nota": "O cabeçalho do PDF identifica a Lei nº 2.292. O nome do arquivo indica 2.296."
+    },
+    {
+      "id": "lei-2292-2007",
+      "arquivo": "fontes/leis/lei-2292-2007.pdf",
+      "url": "https://morrinhos.go.gov.br/wp-content/uploads/2023/11/2.296-Nome-de-Rua.-Padre-Samuel.pdf",
+      "referencia": "2007-03-02",
+      "numero": "2.292",
+      "artigo": "1º",
+      "pagina": 1,
+      "bairro": "Setor Oeste",
+      "anterior": "Rua nº 19",
+      "atribuido": "Pe. Samuel George",
+      "registro": "lei-2292-2007-oeste",
+      "trecho": "Divisa entre Vila Bela e Setor Oeste",
+      "vinculo_postal": {
+        "cep": "75650-018",
+        "bairro": "Setor Oeste",
+        "nome": "Rua Padre Samuel George"
+      },
+      "nota": "O cabeçalho do PDF identifica a Lei nº 2.292. O nome do arquivo indica 2.296."
+    },
+    {
+      "id": "lei-2179-2005",
+      "arquivo": "fontes/leis/lei-2179-2005.pdf",
+      "url": "https://morrinhos.go.gov.br/wp-content/uploads/2023/11/2.179-nome-via-pblica.pdf",
+      "referencia": "2005-08-19",
+      "numero": "2.179",
+      "artigo": "1º",
+      "pagina": 1,
+      "bairro": "Setor Aeroporto",
+      "anterior": "Avenida 101-A",
+      "atribuido": "Avenida Professor Frauzino Sobrinho",
+      "trecho": "Início na rotatória das avenidas Jaime Vilela, H e 101-B e das ruas 214 e 206",
+      "vinculo_postal": {
+        "cep": "75654-104",
+        "bairro": "Setor Aeroporto",
+        "nome": "Avenida Professor Frauzino Sobrinho"
+      }
+    },
+    {
+      "id": "lei-2759-2011",
+      "arquivo": "fontes/leis/lei-2759-2011.pdf",
+      "url": "https://morrinhos.go.gov.br/wp-content/uploads/2023/11/2.759-D-nome-de-Rua-Soldado-Adonai-do-Carmo-Oliveira.docx.pdf",
+      "referencia": "2011-04-29",
+      "numero": "2.759",
+      "artigo": "1º",
+      "pagina": 1,
+      "bairro": "Setor Aeroporto",
+      "anterior": "Rua 101-A",
+      "atribuido": "Rua Soldado PM Adonai do Carmo Oliveira",
+      "trecho": "Em frente ao quartel da 10ª CIPM",
+      "nota": "A lista postal tem Avenida Soldado PM Adonai do Carmo Oliveira. O tipo da via e o alcance do trecho ainda precisam de conferência."
+    },
+    {
+      "id": "lei-2792-2011",
+      "arquivo": "fontes/leis/lei-2792-2011.pdf",
+      "url": "https://morrinhos.go.gov.br/wp-content/uploads/2023/11/2.792-da-nome-a-Rua-Agenor-Vicente-de-Souza.docx.pdf",
+      "referencia": "2011-06-22",
+      "numero": "2.792",
+      "artigo": "1º",
+      "pagina": 1,
+      "bairro": "Setor Oeste",
+      "anterior": "Rua 22",
+      "atribuido": "Rua Agenor Vicente de Souza",
+      "nota": "Correspondência com as observações postais ainda a confirmar."
     },
     {
       "id": "lei-3119-2015", "arquivo": "fontes/leis/lei-3119-2015.pdf",

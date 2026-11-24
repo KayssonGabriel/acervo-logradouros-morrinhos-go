@@ -14,25 +14,14 @@ import tempfile
 import unicodedata
 from uuid import NAMESPACE_URL, uuid5
 
+from busca import chave, expandir, interpretar, pontuador, separar_bairro, variantes_bairro
+
 
 RAIZ = Path(__file__).resolve().parent
 BANCO = RAIZ / 'morrinhos.sqlite3'
 CEP = r'[0-9]{5}-?[0-9]{3}'
 LINHA_PADRAO = re.compile(rf'\s*(.+?)\s+({CEP})(?:\s+(.+?))?\s*')
 LINHA_NUMERADA = re.compile(rf'\s*(\d+)\s{{2,}}(.+?)\s{{2,}}(.+?)\s{{2,}}({CEP})\s*')
-CEP_CONSULTA = re.compile(rf'(?:cep\s*:\s*|cep\s+)?({CEP})', re.IGNORECASE)
-ABREVIACOES_LOGRADOURO = {'r': 'rua', 'av': 'avenida', 'al': 'alameda', 'tv': 'travessa',
-                          'trav': 'travessa', 'pc': 'praca', 'pca': 'praca'}
-PREFIXOS_BAIRRO = ('bairro', 'setor', 'vila', 'loteamento', 'residencial', 'povoado')
-
-
-def chave(texto):
-    if texto is None:
-        return None
-    texto = unicodedata.normalize('NFKD', texto.casefold())
-    texto = ''.join(letra for letra in texto if not unicodedata.combining(letra))
-    texto = ' '.join(re.findall(r'[a-z0-9]+', texto))
-    return re.sub(r'\b0+(?=[0-9])', '', texto)
 
 
 def cep_formatado(valor):
@@ -219,7 +208,8 @@ def importar_ato(db, ato, campos=None):
     ''', (ato_id, trecho, ato['id'], ato['numero'], ato['artigo'], ato['pagina'], ato['bairro'],
           ato.get('trecho'), anterior, chave(anterior) if anterior else None, ato['atribuido'],
           chave(ato['atribuido']), ato.get('data_publicacao'), ato.get('vigencia_desde'), ato.get('nota')))
-    anteriores = {encontrar_trecho_postal(db, registro) for registro in ato.get('registros_postais_anteriores', [])}
+    vinculados = ato.get('registros_postais_anteriores', []) + ato.get('registros_postais_vinculados', [])
+    anteriores = {encontrar_trecho_postal(db, registro) for registro in vinculados}
     anteriores_salvos = db.execute('SELECT anterior_id, principal_id FROM equivalencia_trecho WHERE ato_id = ?',
                                    (ato_id,)).fetchall()
     for vinculo_salvo in anteriores_salvos:
@@ -272,63 +262,79 @@ def atos(db, trecho_id):
     ''', (trecho_id,))]
 
 
-def variantes_bairro(bairro):
-    bairro_chave = chave(bairro)
-    if not bairro_chave:
-        return []
-    prefixo, _, resto = bairro_chave.partition(' ')
-    if prefixo == 'st' and resto:
-        return [f'setor {resto}']
-    if prefixo in PREFIXOS_BAIRRO:
-        return [bairro_chave]
-    return [bairro_chave, *(f'{prefixo} {bairro_chave}' for prefixo in PREFIXOS_BAIRRO)]
-
-
-def consultar(db, termo, bairro, *, limite=None, deslocamento=0):
-    termo = termo.strip()
-    endereco, separador, bairro_no_termo = termo.rpartition(',')
-    if bairro is None and separador and endereco.strip() and bairro_no_termo.strip():
-        termo, bairro = endereco.strip(), bairro_no_termo.strip()
+def localizar(db, nome, bairro, cep, *, variantes=False):
     bairros = variantes_bairro(bairro)
-    cep_consultado = CEP_CONSULTA.fullmatch(termo)
-    if cep_consultado:
-        parametros = [cep_formatado(cep_consultado.group(1))]
-        candidatos = 'SELECT trecho_canonico_id FROM observacao_postal_v1 WHERE cep = ?'
-    else:
-        pesquisa = chave(termo)
-        if not pesquisa:
-            raise ValueError('Informe um nome ou CEP para pesquisar.')
-        prefixo, _, resto = pesquisa.partition(' ')
-        expandida = f'{ABREVIACOES_LOGRADOURO.get(prefixo, prefixo)} {resto}'.strip()
-        parametros = [f'% {pesquisa} %', f'% {expandida} %']
-        parametros *= 3
+    if not nome:
+        candidatos = 'SELECT DISTINCT trecho_canonico_id, 4 AS peso FROM observacao_postal_v1 WHERE cep = ?'
+        parametros = [cep]
+    elif variantes:
+        db.create_function('pontuar', 1, pontuador(nome), deterministic=True)
         candidatos = '''
-            SELECT trecho_canonico_id FROM observacao_postal_v1
+            SELECT trecho_canonico_id, max(peso) AS peso FROM (
+                SELECT trecho_canonico_id, pontuar(nome_chave) AS peso FROM observacao_postal_v1
+                UNION ALL
+                SELECT trecho_id, max(pontuar(anterior_chave), pontuar(atribuido_chave)) FROM ato_nome
+            ) WHERE peso > 0 GROUP BY trecho_canonico_id
+        '''
+        parametros = []
+    else:
+        parametros = [f'% {nome} %', f'% {expandir(nome)} %'] * 3
+        candidatos = '''
+            SELECT trecho_canonico_id, 4 AS peso FROM observacao_postal_v1
                 WHERE (' ' || nome_chave || ' ') LIKE ? OR (' ' || nome_chave || ' ') LIKE ?
             UNION
-            SELECT trecho_id FROM ato_nome
+            SELECT trecho_id, 4 FROM ato_nome
                 WHERE (' ' || anterior_chave || ' ') LIKE ? OR (' ' || anterior_chave || ' ') LIKE ?
                    OR (' ' || atribuido_chave || ' ') LIKE ? OR (' ' || atribuido_chave || ' ') LIKE ?
         '''
-    limite_bairro = ''
+    filtros = []
+    if nome and cep:
+        filtros.append('c.trecho_id IN (SELECT trecho_canonico_id FROM observacao_postal_v1 WHERE cep = ?)')
+        parametros.append(cep)
     if bairros:
         marcadores = ', '.join('?' for _ in bairros)
-        limite_bairro = f'''WHERE c.trecho_id IN (
+        filtros.append(f'''c.trecho_id IN (
             SELECT t.id FROM trecho t JOIN bairro b ON b.id = t.bairro_id WHERE b.chave IN ({marcadores})
             UNION
             SELECT trecho_id FROM ato_nome WHERE normalizar(bairro_no_ato) IN ({marcadores})
             UNION
             SELECT trecho_canonico_id FROM observacao_postal_v1 WHERE normalizar(bairro_original) IN ({marcadores})
-        )'''
+        )''')
         parametros.extend(bairros * 3)
     db.create_function('normalizar', 1, chave, deterministic=True)
-    registros = db.execute(f'''
-        SELECT c.* FROM consulta_v1 c
-        JOIN (SELECT DISTINCT trecho_canonico_id FROM ({candidatos})) candidatos
+    restricoes = 'WHERE ' + ' AND '.join(filtros) if filtros else ''
+    return db.execute(f'''
+        SELECT c.*, candidatos.peso FROM consulta_v1 c
+        JOIN ({candidatos}) candidatos
             ON candidatos.trecho_canonico_id = c.trecho_id
-        {limite_bairro}
-        ORDER BY referencia_postal DESC, bairro, nome_postal_publicado, trecho_id
+        {restricoes}
+        ORDER BY candidatos.peso DESC, referencia_postal DESC, bairro, nome_postal_publicado, trecho_id
     ''', parametros).fetchall()
+
+
+def consultar(db, termo, bairro, *, limite=None, deslocamento=0):
+    entrada = interpretar(termo, bairro)
+    if entrada.conflito:
+        registros = []
+    else:
+        if not entrada.nome and not entrada.cep:
+            raise ValueError('Informe um nome ou CEP para pesquisar.')
+        nome, bairro = entrada.nome, entrada.bairro
+        registros = localizar(db, nome, bairro, entrada.cep)
+        if not registros and nome:
+            nomes_bairro = [linha[0] for linha in db.execute('SELECT nome FROM bairro UNION SELECT bairro_no_ato FROM ato_nome')]
+            if entrada.cep and not bairro and any(nome in variantes_bairro(item) for item in nomes_bairro):
+                registros = localizar(db, '', nome, entrada.cep)
+            nome_curto, sufixo = separar_bairro(nome, nomes_bairro)
+            if not registros and sufixo and (not bairro or set(variantes_bairro(bairro)).intersection(variantes_bairro(sufixo))):
+                nome, bairro = nome_curto, bairro or sufixo
+                registros = localizar(db, nome, bairro, entrada.cep)
+            if not registros:
+                registros = localizar(db, nome, bairro, entrada.cep, variantes=True)
+                if registros:
+                    registros = [linha for linha in registros if linha['peso'] == registros[0]['peso']]
+    nomes_criterio = {1: 'aproximada', 2: 'prefixo', 3: 'termos', 4: 'texto' if entrada.nome else 'cep'}
+    criterio = nomes_criterio[registros[0]['peso']] if registros else 'nenhuma'
     total = len(registros)
     if limite is not None:
         registros = registros[deslocamento:deslocamento + limite]
@@ -336,6 +342,7 @@ def consultar(db, termo, bairro, *, limite=None, deslocamento=0):
     for linha in registros:
         resultado = dict(linha)
         resultado.pop('bairro_chave')
+        resultado.pop('peso')
         resultado['divergencia_postal'] = bool(resultado['divergencia_postal'])
         resultado['historico_nomes'] = atos(db, linha['trecho_id'])
         resultado['observacoes_postais'] = [dict(o) for o in db.execute('''
@@ -346,7 +353,8 @@ def consultar(db, termo, bairro, *, limite=None, deslocamento=0):
             ORDER BY f.referencia DESC, f.prioridade DESC, f.id, o.pagina, o.linha
         ''', (linha['trecho_id'], linha['trecho_id']))]
         resultados.append(resultado)
-    resposta = {'versao': 1, 'resultados': resultados}
+    resposta = {'versao': 1, 'criterio': criterio, 'cep_geral_informado': entrada.cep_geral,
+                'conflito_entrada': entrada.conflito, 'resultados': resultados}
     if limite is not None:
         resposta['total'] = total
     return resposta

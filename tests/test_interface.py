@@ -51,6 +51,11 @@ class TestInterface(unittest.TestCase):
         self.assertGreater(primeira['total'], len(primeira['resultados']))
         self.assertNotEqual(primeira['resultados'][0]['trecho_id'], segunda['resultados'][0]['trecho_id'])
 
+    def test_api_distingue_sugestao_de_correspondencia_documentada(self):
+        dados = self.ler_json('/api/consulta', q='Rua Juvercna', bairro='Jardim América')
+        self.assertEqual(dados['criterio'], 'aproximada')
+        self.assertTrue(any(trecho['cep_publicado'] == '75650-281' for trecho in dados['resultados']))
+
     def test_interface_e_fontes_sao_servidas_pelo_mesmo_host(self):
         with urlopen(self.url, timeout=5) as resposta:
             self.assertIn('Consulta de logradouros', resposta.read().decode('utf-8'))
