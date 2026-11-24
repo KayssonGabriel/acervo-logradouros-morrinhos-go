@@ -17,6 +17,10 @@ Abra [a interface local](http://127.0.0.1:8765). A consulta é somente leitura. 
 
 Em uma base que guarde conferências reais, faça uma cópia com `python -X utf8 acervo.py backup minha-copia.sqlite3` e valide a mudança nela com `--banco minha-copia.sqlite3` antes de aplicá-la ao banco de trabalho. O banco local, exportações, backups e credenciais ficam fora do Git. Preserve alterações locais feitas pela equipe.
 
+## Publicar no GitHub ao concluir
+
+Ao terminar e validar cada alteração deste acervo, faça commit dos arquivos da tarefa e publique a versão no GitHub. Use a branch `main` do repositório privado do acervo, salvo quando o usuário indicar outro destino. Faça o push preservando o histórico e confira se o commit remoto corresponde à versão validada antes de informar a conclusão. Se a publicação falhar, informe a causa e o que ficou pendente.
+
 ## Ampliar a pesquisa rua por rua
 
 1. Rode `auditar_acervo.py` e use a contagem de pendências por bairro para escolher o próximo lote. Pesquise cada via pelo nome atual, designação numerada, tipo abreviado, títulos com e sem abreviação, bairro atual e histórico, loteamento, interseções e CEPs antigos. Use os limites do trecho quando houver homônimos.
