@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f6f2">
+  <title>Consulta de logradouros · Morrinhos, GO</title>
+  <link rel="icon" href="/marca.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/estilos.css">
+  <script defer src="/consulta.js"></script>
+</head>
+<body>
+  <a class="atalho" href="#conteudo">Pular para o conteúdo</a>
+  <header class="barra">
+    <div class="largura barra-interna">
+      <a class="marca" href="#consulta" aria-label="Acervo de Logradouros de Morrinhos, GO">
+        <span class="marca-icone"><svg aria-hidden="true"><use href="/icones.svg#pin"></use></svg></span>
+        <span><strong>Acervo de Logradouros</strong><small>Morrinhos, GO</small></span>
+      </a>
+      <nav aria-label="Navegação principal">
+        <a id="nav-consulta" href="#consulta" aria-current="page"><svg aria-hidden="true"><use href="/icones.svg#buscar"></use></svg>Consulta</a>
+        <a id="nav-fontes" href="#fontes"><svg aria-hidden="true"><use href="/icones.svg#arquivo"></use></svg>Fontes</a>
+      </nav>
+    </div>
+  </header>
+  <main class="largura" id="conteudo" tabindex="-1">
+    <section id="tela-consulta" aria-labelledby="titulo-consulta">
+      <div class="introducao">
+        <h1 id="titulo-consulta">Consulta de logradouros</h1>
+        <p>Encontre nomes antigos, CEPs e as fontes de cada registro.</p>
+      </div>
+      <form id="busca" class="busca" role="search" aria-label="Busca de logradouros">
+        <label for="termo">Nome da via ou CEP
+          <span class="controle com-icone"><svg aria-hidden="true"><use href="/icones.svg#buscar"></use></svg><input type="search" id="termo" name="q" maxlength="120" value="Rua 216" placeholder="Ex. Rua 03 ou 75650-281" required></span>
+        </label>
+        <label for="bairro">Bairro
+          <span class="controle"><select id="bairro" name="bairro"><option value="">Todos os bairros</option></select><svg aria-hidden="true"><use href="/icones.svg#baixo"></use></svg></span>
+        </label>
+        <button type="submit" class="primario">Buscar</button>
+      </form>
+      <div class="espaco-trabalho">
+        <section aria-labelledby="titulo-resultados" class="resultados">
+          <h2 id="titulo-resultados">Resultados</h2>
+          <p id="contador" role="status" aria-atomic="true">Buscando…</p>
+          <ol id="lista" class="lista-resultados"></ol>
+          <nav id="paginacao" class="paginacao" aria-label="Páginas de resultados" hidden>
+            <button type="button" id="anterior" aria-label="Página anterior"><svg aria-hidden="true"><use href="/icones.svg#esquerda"></use></svg></button>
+            <span id="pagina-atual"></span>
+            <button type="button" id="proxima" aria-label="Próxima página"><svg aria-hidden="true"><use href="/icones.svg#direita"></use></svg></button>
+          </nav>
+        </section>
+        <article id="detalhe" class="detalhe" aria-labelledby="nome-via" hidden>
+          <header class="detalhe-cabecalho">
+            <div>
+              <h2 id="nome-via" tabindex="-1"></h2>
+              <p id="local-via" class="local-via"><svg aria-hidden="true"><use href="/icones.svg#pin"></use></svg><span></span></p>
+            </div>
+            <span id="status-postal" class="situacao"></span>
+          </header>
+          <dl class="resumo">
+            <div><dt>CEP publicado</dt><dd id="cep-via"></dd></div>
+            <div><dt>Referência postal</dt><dd id="referencia-via"></dd></div>
+            <div><dt>Histórico</dt><dd id="historico-via"></dd></div>
+          </dl>
+          <p id="situacao-via" class="nota" hidden></p>
+          <p id="trecho-via" class="nota" hidden></p>
+          <div class="abas" role="tablist" aria-label="Informações da via">
+            <button role="tab" id="tab-nomes" type="button" aria-controls="painel-nomes" aria-selected="false" tabindex="-1">Histórico de nomes</button>
+            <button role="tab" id="tab-ceps" type="button" aria-controls="painel-ceps" aria-selected="true">Fontes postais</button>
+          </div>
+          <section role="tabpanel" id="painel-nomes" aria-labelledby="tab-nomes" tabindex="0" hidden></section>
+          <section role="tabpanel" id="painel-ceps" aria-labelledby="tab-ceps" tabindex="0"></section>
+        </article>
+        <div id="mensagem" class="detalhe mensagem" hidden></div>
+      </div>
+    </section>
+    <section id="tela-fontes" aria-labelledby="titulo-fontes" hidden>
+      <div class="introducao">
+        <h1 id="titulo-fontes" tabindex="-1">Fontes do acervo</h1>
+        <p>Consulte os documentos usados para registrar nomes de vias e CEPs.</p>
+      </div>
+      <p id="estado-fontes" role="status"></p>
+      <div id="grupos-fontes" class="grupos-fontes"></div>
+    </section>
+  </main>
+  <footer class="largura rodape">
+    <span>Acervo de Logradouros · Morrinhos, GO</span>
+    <span>Os resultados indicam a origem de cada informação.</span>
+  </footer>
+</body>
+</html>

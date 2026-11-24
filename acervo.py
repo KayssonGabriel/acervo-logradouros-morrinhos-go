@@ -284,7 +284,7 @@ def variantes_bairro(bairro):
     return [bairro_chave, *(f'{prefixo} {bairro_chave}' for prefixo in PREFIXOS_BAIRRO)]
 
 
-def consultar(db, termo, bairro):
+def consultar(db, termo, bairro, *, limite=None, deslocamento=0):
     termo = termo.strip()
     endereco, separador, bairro_no_termo = termo.rpartition(',')
     if bairro is None and separador and endereco.strip() and bairro_no_termo.strip():
@@ -329,6 +329,9 @@ def consultar(db, termo, bairro):
         {limite_bairro}
         ORDER BY referencia_postal DESC, bairro, nome_postal_publicado, trecho_id
     ''', parametros).fetchall()
+    total = len(registros)
+    if limite is not None:
+        registros = registros[deslocamento:deslocamento + limite]
     resultados = []
     for linha in registros:
         resultado = dict(linha)
@@ -343,7 +346,10 @@ def consultar(db, termo, bairro):
             ORDER BY f.referencia DESC, f.prioridade DESC, f.id, o.pagina, o.linha
         ''', (linha['trecho_id'], linha['trecho_id']))]
         resultados.append(resultado)
-    return {'versao': 1, 'resultados': resultados}
+    resposta = {'versao': 1, 'resultados': resultados}
+    if limite is not None:
+        resposta['total'] = total
+    return resposta
 
 
 @contextmanager

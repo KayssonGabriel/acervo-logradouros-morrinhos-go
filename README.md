@@ -4,9 +4,17 @@ O banco SQLite reúne nomes, trechos, CEPs e fontes públicas de Morrinhos, Goi�
 
 ## Consultar
 
+Para abrir a interface local no navegador, inicie o servidor na pasta do acervo.
+
+```powershell
+python -X utf8 interface.py
+```
+
+Acesse [a consulta local](http://127.0.0.1:8765). A tela é adaptável a computador e celular, com busca por nome ou CEP, filtro por bairro e acesso às fontes oficiais. O servidor escuta apenas no próprio computador e usa o SQLite em modo somente leitura.
+
 No PowerShell, a partir da pasta do acervo, use Python 3.10 ou superior. A consulta e a exportação usam o banco existente. A importação dos PDFs requer o `pdftotext` do Poppler no PATH.
 
-Em um clone novo do repositório, gere primeiro a base local e o CSV. O Git guarda o código, o catálogo e os PDFs públicos usados na importação. O banco de trabalho, os CSVs gerados e os backups ficam na pasta local.
+Em um clone novo do repositório, gere primeiro a base local e o CSV. O Git guarda o código, o catálogo e os PDFs públicos usados na importação. O banco de trabalho, os CSVs gerados e os backups ficam na pasta local. Depois da importação, inicie a interface ou use os comandos de consulta.
 
 ```powershell
 python -X utf8 acervo.py importar
