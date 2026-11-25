@@ -419,8 +419,12 @@ def localizar(db, nome, bairro, cep, *, variantes=False, pendencia_cep=None):
         equivalencia_numerica = ''
         if numerada:
             db.create_function('via_numerada', 1, via_numerada, deterministic=True)
-            equivalencia_numerica = ' OR via_numerada(nome_chave) = ?'
-            parametros.append(numerada)
+            if numerada.isdigit():
+                equivalencia_numerica = " OR (' ' || via_numerada(nome_chave) || ' ') LIKE ?"
+                parametros.append(f'% {numerada} %')
+            else:
+                equivalencia_numerica = ' OR via_numerada(nome_chave) = ?'
+                parametros.append(numerada)
         candidatos = f'''
             SELECT DISTINCT trecho_id, 4 AS peso FROM {nomes}
                 WHERE (' ' || nome_chave || ' ') LIKE ? OR (' ' || nome_chave || ' ') LIKE ?

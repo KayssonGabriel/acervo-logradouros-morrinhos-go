@@ -64,12 +64,56 @@ def cardinais():
 
 
 @lru_cache(maxsize=4096)
+def numero_por_extenso(nome):
+    simples = cardinais().get(nome)
+    if simples is not None:
+        return simples
+    escalas = {'mil': 1000}
+    potencias = {'milh': 2, 'bilh': 3, 'trilh': 4, 'quadrilh': 5, 'quatrilh': 5,
+                 'quintilh': 6, 'sextilh': 7, 'septilh': 8, 'octilh': 9,
+                 'nonilh': 10, 'decilh': 11}
+    for radical, potencia in potencias.items():
+        for sufixo in ('ao', 'oes'):
+            escalas[radical + sufixo] = 1000 ** potencia
+    total = 0
+    anterior = float('inf')
+    grupo = []
+    for palavra in nome.split():
+        escala = escalas.get(palavra)
+        if escala is None:
+            grupo.append(palavra)
+            continue
+        if total and grupo and grupo[0] == 'e':
+            grupo = grupo[1:]
+        valor = cardinais().get(' '.join(grupo)) if grupo else 1
+        if escala >= anterior or valor is None or not 0 < valor < 1000:
+            return None
+        total += valor * escala
+        anterior = escala
+        grupo = []
+    if not total:
+        return None
+    if grupo == ['e']:
+        return None
+    if grupo and grupo[0] == 'e':
+        grupo = grupo[1:]
+    resto = cardinais().get(' '.join(grupo)) if grupo else 0
+    if resto is None or resto >= anterior:
+        return None
+    return total + resto
+
+
+@lru_cache(maxsize=4096)
 def via_numerada(nome):
-    tipo, _, designacao = expandir(nome).partition(' ')
+    nome = expandir(nome)
+    numero = nome if nome.isdigit() else numero_por_extenso(nome)
+    if numero is not None:
+        return str(numero)
+    tipo, _, designacao = nome.partition(' ')
     if tipo not in TIPOS:
         return None
     designacao = re.sub(r'^(?:n|no|numero) ', '', designacao)
-    numero = designacao if designacao.isdigit() else cardinais().get(designacao)
+    numero = designacao if designacao.isdigit() else numero_por_extenso(designacao)
     if numero is not None:
         return f'{tipo} {numero}'
 

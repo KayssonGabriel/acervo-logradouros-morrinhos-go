@@ -344,6 +344,32 @@ class TestAcervo(unittest.TestCase):
         self.assertEqual(acervo.via_numerada('avenida duas'), 'avenida 2')
         self.assertIsNone(acervo.via_numerada('rua tres marias'))
 
+    def test_cardinal_sem_tipo_de_via_respeita_bairro(self):
+        for escrito, numerico in [('três', '3'), ('vinte e dois', '22'),
+                                  ('duzentos e dezesseis', '216')]:
+            with self.subTest(escrito=escrito):
+                esperado = self.consultar(numerico)
+                self.assertTrue(esperado)
+                self.assertEqual(self.consultar(escrito), esperado)
+        dados = self.consultar('três', '--bairro', 'Jardim América')
+        self.assertEqual(dados, self.consultar('03', '--bairro', 'Jardim América'))
+        self.assertEqual([r['cep_publicado'] for r in dados], ['75650-281'])
+        self.assertEqual(acervo.via_numerada('rua tres'), 'rua 3')
+        self.assertIsNone(acervo.via_numerada('tres marias'))
+
+    def test_numeros_por_extenso_acima_de_mil(self):
+        for escrito, numero in [('zero', '0'), ('cem', '100'), ('mil', '1000'),
+                                 ('mil e um', '1001'), ('mil duzentos e trinta e quatro', '1234'),
+                                 ('dois mil e vinte e quatro', '2024'), ('cem mil', '100000'),
+                                 ('um milhão e duzentos mil', '1200000')]:
+            with self.subTest(escrito=escrito):
+                for tipo in ('', 'Rua ', 'Avenida '):
+                    self.assertEqual(acervo.via_numerada(tipo + escrito),
+                                     acervo.via_numerada(tipo + numero))
+        self.assertIsNone(acervo.via_numerada('mil e'))
+        self.assertIsNone(acervo.via_numerada('e dois mil'))
+        self.assertIsNone(acervo.via_numerada('tres mil marias'))
+
     def test_auditoria_separa_cep_ausente_de_grafia_alterada_entre_edicoes(self):
         with closing(acervo.abrir_banco(self.banco)) as db:
             resumo, _ = auditar_acervo.cobertura(db)
