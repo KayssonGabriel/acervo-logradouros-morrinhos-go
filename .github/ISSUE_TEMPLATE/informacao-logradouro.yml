@@ -1,0 +1,32 @@
+name: Informação de logradouro
+description: Informe uma mudança de nome, uma variação de grafia ou uma divergência de CEP em Morrinhos (GO).
+title: '[Logradouro] '
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Este relato será público. Informe apenas os dados necessários para identificar a via. Deixe de fora matrículas, documentos de identidade, dados de moradores e arquivos do cartório.
+  - type: input
+    id: logradouro
+    attributes:
+      label: Nome do logradouro
+      placeholder: Rua, avenida, praça ou outro logradouro
+    validations:
+      required: true
+  - type: input
+    id: bairro-trecho
+    attributes:
+      label: Bairro e trecho, se conhecidos
+      placeholder: Bairro, interseção ou limites do trecho
+  - type: textarea
+    id: informacao
+    attributes:
+      label: Informação encontrada
+      description: Informe o nome antigo ou novo, os CEPs, a época e o que está em dúvida.
+    validations:
+      required: true
+  - type: textarea
+    id: fonte
+    attributes:
+      label: Fonte pública, se disponível
+      description: Inclua o link ou a referência da lei, lista postal, mapa ou jornal, com a data e a página quando souber.

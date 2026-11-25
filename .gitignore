@@ -1,6 +1,9 @@
 /backups/
 /morrinhos*.csv
 /morrinhos-varredura-*.json
+/pesquisa-local/
+52138060500.zip
+5213806_MORRINHOS.zip
 *.sqlite
 *.sqlite3
 !/dados/base-inicial.sqlite3

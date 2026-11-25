@@ -1,79 +1,104 @@
-# Acervo de logradouros e CEPs de Morrinhos (GO)
+<img src="web/marca.svg" width="56" height="56" align="right" alt="">
 
-O banco SQLite reúne nomes, trechos, CEPs e fontes públicas de Morrinhos, Goiás. O arquivo `morrinhos.csv` permite abrir o cadastro no Excel e filtrar por bairro, pelo nome postal ou pelos nomes anteriores documentados. A versão de dezembro de 2025 contém 1.021 registros postais. A pesquisa histórica e a conferência nos Correios são registradas progressivamente.
+# Acervo de logradouros de Morrinhos, Goiás
 
-Para ampliar a pesquisa, fazer ajustes ou pedir a revisão de outra IA, use [AGENTS.md](AGENTS.md). O roteiro inclui as fontes oficiais, os critérios de evidência e os casos de teste.
+Pesquise ruas pelo nome antigo, pelo nome atual ou pelo CEP. Veja o bairro, o trecho e os documentos que sustentam cada resultado. A consulta funciona no navegador do seu computador e já vem com uma base preenchida.
 
-## Consultar
+[Começar](#começar) · [Exemplos de busca](#exemplos-de-busca) · [Cadastrar uma mudança](#cadastrar-uma-mudança-na-interface) · [Contribuir](#contribuir) · [Dados e fontes](#dados-e-fontes)
 
-Com Git e Python 3.10 ou superior, clone o repositório e inicie a interface.
+## Começar
 
-```powershell
+**Você precisa de Python 3.10 ou superior.** Com Git instalado, rode os comandos abaixo no terminal. Você também pode baixar o projeto pelo botão **Code → Download ZIP**, extrair o arquivo e abrir o terminal na pasta extraída.
+
+```sh
 git clone https://github.com/KayssonGabriel/acervo-logradouros-morrinhos-go.git
 cd acervo-logradouros-morrinhos-go
 python -X utf8 interface.py
 ```
 
-Acesse [a consulta local](http://127.0.0.1:8765). A tela é adaptável a computador e celular, com busca por nome ou CEP, filtro por bairro e acesso às fontes oficiais. O servidor escuta apenas no próprio computador. No primeiro uso, o programa cria `morrinhos.sqlite3` a partir da [base inicial preenchida](dados/base-inicial.sqlite3). A base inicial reúne **4.988 observações postais** e **46 registros de atos municipais**. O primeiro uso dispensa Poppler e importação manual. Se já existir um banco de trabalho, a consulta usa esse arquivo.
+Abra **[http://127.0.0.1:8765](http://127.0.0.1:8765)**. No primeiro uso, o programa cria `morrinhos.sqlite3` a partir da [base inicial](dados/base-inicial.sqlite3). Você já pode consultar sem instalar o Poppler, importar PDFs ou entrar no GitHub. Mantenha o terminal aberto enquanto estiver usando a interface.
 
-O Git guarda a base inicial gerada para distribuição, o código e as fontes públicas. As mudanças cadastradas e as conferências dos Correios ficam na cópia de trabalho local. A importação dos PDFs usa o `pdftotext` do Poppler no PATH. Depois de atualizar as fontes com `git pull`, use `acervo.py importar` para incorporar os novos dados à sua cópia de trabalho.
+Se o comando `python` estiver indisponível, tente `py -3` no Windows ou `python3` no macOS e Linux. Se a porta 8765 estiver ocupada, inicie com `python -X utf8 interface.py --porta 8766` e abra [http://127.0.0.1:8766](http://127.0.0.1:8766).
 
-Para gerar o CSV para Excel a partir da sua cópia local, execute:
+## Exemplos de busca
 
-```powershell
-python -X utf8 acervo.py exportar 'morrinhos.csv'
-```
+| Digite | O que aparece |
+| --- | --- |
+| `Rua 03, Jardim América` | Rua Juvercina Cipriana da Silva, CEP `75650-281`, com a lei que documenta o nome. |
+| `Rua 216` | Dois resultados, em Setor Aeroporto e Vila Santos Dumont. Selecione o bairro do endereço. |
+| `Rua 04, Jardim Santa Terezinha I` | O histórico mostra a sequência Rua 04 → Rua Eurípedes Mariano Borges → Rua Eurípedes Mariano da Silva. A lista postal de dezembro de 2025 usa a denominação Borges para o CEP `75654-596`. |
+| `75654-069` | Rua 214 e Rua João Ferreira de Macedo, com as respectivas fontes. A equivalência entre os registros está em pesquisa. |
+| `75650-000` | O CEP geral histórico de Morrinhos. Para identificar um trecho específico, informe também a via e o bairro. |
 
-```powershell
-python -X utf8 acervo.py consultar 'Rua 03' --bairro 'Jardim América'
-python -X utf8 acervo.py consultar 'Avenida Central' --bairro 'Setor Monte Verde'
-python -X utf8 acervo.py consultar 'Av. Central, Setor Monte Verde'
-python -X utf8 acervo.py consultar '75654-069'
-python -X utf8 acervo.py consultar 'R. 03, nº 44, Jardim América, Morrinhos - GO, CEP 75.650-281'
-python -X utf8 auditar_acervo.py
-python -X utf8 acervo.py exportar 'morrinhos-revisao.csv'
-```
+A busca aceita abreviações como `R.` e `Av.`, grafias sem acento e endereços com CEP. Um resultado por grafia semelhante aparece como sugestão. Confirme o bairro, o trecho e a fonte antes de usar a informação.
 
-A busca aceita nomes com ou sem acentos, abreviações, formatos comuns de CEP e bairro no final do texto. Em endereços copiados, complementos explícitos como número predial e quadra servem de contexto. Quando a busca textual não encontra resultados, também tenta palavras fora de ordem, prefixos e grafias próximas. A interface marca as grafias próximas como sugestões e pede que você escolha uma para conferir a fonte. O bairro e o CEP específico informado continuam restringindo os resultados.
+### Como interpretar um resultado
 
-O JSON traz o nome municipal documentado, o nome postal publicado, o CEP, a situação da conferência, as fontes e o `criterio` de busca. Use `situacao_historico` para localizar os nomes ainda a pesquisar. Em `observacoes_postais`, cada entrada preserva a grafia, o bairro e o CEP tal como aparecem no documento original. Um CEP associado a registros conflitantes mantém as diferentes observações disponíveis, com `divergencia_postal`.
-
-O indicador `divergencia_postal` abrange diferenças entre edições. Use as referências e páginas para distinguir uma diferença histórica de um conflito na publicação mais recente. A lista integral e os boletins complementares são identificados por `abrangencia_fonte_postal`.
+| Campo | Significado |
+| --- | --- |
+| **Nome municipal documentado** | Denominação encontrada em ato municipal, com o artigo e a data disponíveis no histórico. |
+| **CEP publicado** | CEP observado numa lista postal, com a referência da edição. A data da lista indica quando a informação foi publicada. |
+| **Conferência nos Correios** | Resultado de uma consulta direta registrada para a observação postal. A base inicial tem as conferências pendentes. |
+| **Mudanças cadastradas** | Histórico lançado por quem usa a cópia local, com a vigência quando conhecida e a referência informada. |
 
 ## Cadastrar uma mudança na interface
 
-Inicie a interface com edição habilitada.
+Feche o servidor de consulta com `Ctrl+C` e inicie o modo de edição:
 
-```powershell
+```sh
 python -X utf8 interface.py --edicao
 ```
 
-1. Pesquise a via e selecione o resultado que corresponde ao bairro e trecho da fonte. Clique em **Cadastrar mudança**.
-2. Informe o novo nome e, se forem conhecidos, o nome anterior e a data de vigência. Para registrar apenas uma troca de CEP, deixe os nomes vazios.
-3. Informe se o CEP mudou, continuou igual ou ainda está a confirmar. Confira os valores com a fonte, principalmente ao cadastrar uma mudança antiga.
-4. Informe a referência documental e, se houver, o link público. Depois de salvar, **Mudanças cadastradas** aparece no trecho. A consulta aceita os nomes e os CEPs específicos do cadastro. As fontes postais publicadas e as conferências nos Correios têm campos próprios.
+1. Busque a via, selecione o trecho correto e clique em **Cadastrar mudança**.
+2. Informe o novo nome. Preencha o nome anterior e a vigência se forem conhecidos. Para uma alteração somente de CEP, deixe os nomes em branco.
+3. Selecione **Mudou**, **Continuou igual** ou **Ainda a confirmar**. Preencha os campos de CEP de acordo com a fonte.
+4. Informe a referência documental e, se houver, um link público. Ao salvar, o registro aparece em **Mudanças cadastradas**. Você pode recuperar o trecho pelos nomes e CEPs específicos registrados.
 
-O modo de edição dá acesso de gravação a quem usa a interface nesse computador. Use-o durante o cadastramento em uma estação autorizada. Registre referências públicas à via ou ao documento. A referência digitada fica visível na consulta. Os registros da equipe ficam no SQLite e são preservados ao reimportar os PDFs. Inclua esse banco nas cópias de segurança. O JSON de consulta inclui `mudancas_cadastradas`; a visão `consulta_v1` e o CSV continuam a descrever as fontes importadas.
+O modo de edição permite gravar no banco desse computador. A referência digitada fica visível na consulta. Use referências públicas e preserve a cópia local em backup. Os lançamentos locais continuam no seu computador e aparecem junto das fontes importadas na interface.
 
-## Atualizar
+## Dados e fontes
 
-1. Mantenha os PDFs originais e uma cópia de segurança do banco. O comando `python -X utf8 acervo.py backup 'morrinhos-copia.sqlite3'` cria uma cópia consistente e checa sua integridade e as referências. Teste a cópia com `python -X utf8 acervo.py --banco 'morrinhos-copia.sqlite3' consultar '75650-281'`. O banco também guarda as conferências inseridas pela equipe.
-2. Cadastre cada nova lista em [`dados/fontes.json`](dados/fontes.json) com ID próprio, arquivo, origem, referência, abrangência e quantidade de linhas a importar. Use `complementar` para boletins parciais. Os nomes de bairro e CEPs permanecem associados às fontes que os publicaram.
-3. Arquive novas leis em `fontes/leis/`, registre artigo, página e trecho no [índice legislativo](LEGISLACAO.md) e acrescente o ato ao mesmo JSON. Quando houver evidência que ligue registros postais, use `vinculo_postal` para identificar o trecho principal já existente e `registros_postais_anteriores` para associar outras ocorrências. O banco conserva os IDs das ocorrências anteriores e o ato que justificou o vínculo.
-4. Execute `python -X utf8 acervo.py importar`. A operação valida fontes conhecidas sem repetir a leitura postal pelo Poppler. Alterações no conteúdo ou nos metadados de uma fonte exigem um ID novo. Revise os resultados e gere um novo CSV com `exportar`, usando um nome de arquivo disponível. A exportação preserva os valores no banco e protege a abertura do CSV no Excel.
+O recorte é **Morrinhos, Goiás (IBGE 5213806)**. A [base inicial](dados/base-inicial.sqlite3) reúne **4.988 observações postais** de várias edições e **46 registros de atos municipais**. A lista integral de dezembro de 2025 traz **1.021 registros postais**. As contagens maiores incluem observações repetidas entre edições e entre as ordenações por bairro e por nome.
 
-Após uma consulta direta ao Busca CEP, use `python -X utf8 acervo.py registrar-conferencia --help`. Informe o `observacao_postal_id` retornado pela busca, a data, o responsável, o resultado, o endereço retornado quando houver e a referência da evidência. O procedimento vincula a conferência à observação escolhida. [Busca CEP dos Correios](https://buscacepinter.correios.com.br/app/endereco/index.php)
+| Informação | Onde consultar |
+| --- | --- |
+| Listas postais, boletins e mapa | [Listas da Prefeitura](https://morrinhos.go.gov.br/codigo-de-enderecamento-postal-cep/) · [Mapa municipal](https://morrinhos.go.gov.br/mapa-da-cidade-de-morrinhos/) |
+| Atos de denominação e renomeação | [Índice legislativo e PDFs](LEGISLACAO.md) · [Leis da Câmara](https://leis.morrinhos.go.leg.br/leis) |
+| Nomes antigos, jornais, plantas e censos | [Roteiro de pesquisa histórica](PESQUISA.md) · [Catálogo de fontes históricas](dados/pesquisa-historica.json) |
+| Proveniência e edições das fontes importadas | [Catálogo de fontes do banco](dados/fontes.json) |
+| Conferência postal direta | [Busca CEP dos Correios](https://buscacepinter.correios.com.br/app/endereco/index.php) |
+
+O levantamento fiscal de 1896, reproduzido em pesquisa da UFG, já identifica 11 logradouros de Morrinhos. O roteiro documenta as correspondências históricas localizadas, as fontes consultadas e os pontos que ainda exigem pesquisa individual. [Levantamento de 1896, p. 50](https://files.cercomp.ufg.br/weby/up/113/o/FONSECA__Maria_L_cia._1997.pdf#page=50) · [Resultados da pesquisa](PESQUISA.md#nomes-registrados-em-1896)
+
+## Exportar, atualizar e fazer backup
+
+```sh
+# Gerar uma planilha em formato CSV
+python -X utf8 acervo.py exportar morrinhos.csv
+
+# Gerar uma cópia de segurança verificada do banco local
+python -X utf8 acervo.py backup morrinhos-copia.sqlite3
+
+# Consultar por nome e bairro em JSON
+python -X utf8 acervo.py consultar "Rua 03" --bairro "Jardim América"
+```
+
+Use um nome de arquivo novo para cada exportação ou backup. Para atualizar uma cópia de trabalho existente, faça o backup, baixe a atualização do repositório e execute `python -X utf8 acervo.py importar`. A reimportação dos PDFs requer `pdftotext` do Poppler no `PATH` e preserva os registros cadastrados na cópia local.
+
+Para registrar uma conferência oficial, consulte a via no Busca CEP e use `python -X utf8 acervo.py registrar-conferencia --help`. Guarde o ID da observação postal, a data e a referência da consulta. [Busca CEP dos Correios](https://buscacepinter.correios.com.br/app/endereco/index.php)
 
 ## Integração com o cartório
 
-`consulta_v1` é a visão SQLite de consulta atualizada pela [migração 002](dados/migracao-002.sql). O comando `consultar` é uma interface JSON local de leitura, com `versao: 1` e a lista `resultados`. O campo `trecho_id` é o identificador da correspondência no acervo. A tabela `equivalencia_trecho` permite localizar o ID principal de um vínculo já comprovado. Nomes, bairros e CEPs são dados de consulta e podem mudar com o tempo.
+| Saída | Uso |
+| --- | --- |
+| **SQLite `consulta_v1`** | Visão de leitura com os dados publicados e seu estado. Use `trecho_id` para referenciar a correspondência e `equivalencia_trecho` para consultar vínculos documentados. |
+| **JSON do comando `consultar`** | Inclui `versao`, `criterio` e `resultados`. Cada resultado pode trazer `historico_nomes`, `observacoes_postais` e `mudancas_cadastradas`. |
+| **CSV** | Exportação das informações de consulta para planilha, com nomes anteriores documentados nos atos importados. |
 
-`referencia_postal` é a data ou mês de referência da fonte. A data em que um CEP entrou em vigor requer evidência própria. `nome_municipal_documentado` indica a última denominação municipal localizada no acervo. O status `conferencia_correios` informa se existe uma conferência registrada para aquela observação postal. CSV e JSON distinguem esses campos para que o sistema consumidor possa mostrar a procedência do resultado.
+`referencia_postal` é a data ou o mês da fonte. `abrangencia_fonte_postal` identifica listas integrais e boletins complementares. `divergencia_postal` sinaliza diferenças entre observações, inclusive entre edições. Confira as datas e páginas antes de interpretar uma divergência como conflito na lista mais recente. `conferencia_correios` se refere à observação postal indicada no resultado. [Plano de integração](PLANO.md#4-integração-com-o-cartório)
 
-O banco foi preparado para uso local. O sistema do cartório pode usar a visão de leitura, o JSON ou o CSV quando o formato de integração estiver definido.
+## Contribuir
 
-As etapas de pesquisa, os controles operacionais e os testes de integração estão no [plano revisado](PLANO.md).
+Encontrou um nome antigo, uma lei, uma diferença de grafia ou um CEP diferente? Envie uma sugestão com **nome do logradouro, bairro, trecho, data e fonte pública** quando disponíveis. Informe qual informação está em dúvida. A issue ficará pública, então use apenas dados necessários para identificar o logradouro. [Relatar uma informação de logradouro](https://github.com/KayssonGabriel/acervo-logradouros-morrinhos-go/issues/new?template=informacao-logradouro.yml)
 
-## Fontes
-
-As duas listas municipais de dezembro de 2025 contêm os mesmos registros, ordenados por nome ou bairro. As listas anteriores de novembro de 2024 e de janeiro de 2025, esta em duas ordenações, contêm as mesmas 970 observações extraídas. O banco conserva a origem de cada registro. O mapa municipal pode ajudar a investigar a continuidade de uma via e comparar seus trechos. [Listas municipais de CEP](https://morrinhos.go.gov.br/codigo-de-enderecamento-postal-cep/) · [Lista de novembro de 2024](https://morrinhos.go.gov.br/prefeitura-apresenta-cadastros-de-logradouros-de-morrinhos-com-novos-ceps/) · [Mapa municipal](https://morrinhos.go.gov.br/mapa-da-cidade-de-morrinhos/) · [Legislação da Câmara](https://leis.morrinhos.go.leg.br/leis)
+Para preparar uma contribuição de dados ou código, siga o [guia de manutenção e validação](AGENTS.md). O Git inclui o código, as fontes públicas e a base inicial gerada. Mantenha bancos de trabalho, conferências, backups, credenciais e arquivos brutos do IBGE na sua pasta local. Ao propor uma alteração na base, indique a fonte, o artigo ou a página e o que ainda precisa de verificação.
