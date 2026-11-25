@@ -8,6 +8,7 @@ import subprocess
 import sys
 import tempfile
 import unittest
+from zipfile import ZipFile
 
 import acervo
 import auditar_acervo
@@ -49,7 +50,7 @@ class TestAcervo(unittest.TestCase):
             self.assertEqual(contagem['lista-2024-11'], 970)
             self.assertEqual(contagem['lista-2025-01'], 970)
             self.assertEqual(contagem['lista-2025-01-bairro'], 970)
-            self.assertEqual(db.execute('SELECT count(*) FROM ato_nome').fetchone()[0], 38)
+            self.assertEqual(db.execute('SELECT count(*) FROM ato_nome').fetchone()[0], 45)
 
     def test_nome_anterior_documentado_encontra_cep_por_bairro(self):
         resultado, = self.consultar('Rua 03', '--bairro', 'Jardim América')
@@ -290,6 +291,50 @@ class TestAcervo(unittest.TestCase):
         self.assertEqual(len(comparacao['ceps_so_na_anterior']), 14)
         self.assertIn('75659-100', comparacao['ceps_so_na_anterior'])
         self.assertNotIn('75650-294', comparacao['ceps_so_na_anterior'])
+
+    def test_pistas_postais_mostram_fontes_e_vinculos_documentados(self):
+        with closing(acervo.abrir_banco(self.banco)) as db:
+            resumo, _ = auditar_acervo.cobertura(db, listar_pistas=True)
+        pistas = {pista['cep']: pista for pista in resumo['comparacao_listas_integrais']['pistas']}
+        dalmes = pistas['75650-294']
+        self.assertEqual(dalmes['anterior'][0]['nome'], 'Rua 15')
+        self.assertEqual(dalmes['atual'][0]['nome'], 'Rua Dalmes Antônio de Oliveira')
+        self.assertTrue(dalmes['vinculo_documentado'])
+        self.assertTrue(pistas['75654-596']['vinculo_documentado'])
+        self.assertFalse(pistas['75650-042']['vinculo_documentado'])
+        boletim, = resumo['comparacao_boletins']
+        self.assertNotIn('ceps_so_na_atual', boletim)
+        rua214 = next(pista for pista in boletim['pistas'] if pista['cep'] == '75654-069')
+        self.assertEqual(rua214['anterior'][0]['nome'], 'RUA 214')
+        self.assertFalse(rua214['vinculo_documentado'])
+
+    def test_retificacao_da_rua_04_preserva_grafia_postal_e_homonimo(self):
+        legal, = self.consultar('Rua 04', '--bairro', 'Jardim Santa Terezinha I')
+        self.assertEqual(legal['nome_municipal_documentado'], 'Rua Eurípedes Mariano da Silva')
+        self.assertEqual(legal['cep_publicado'], '75654-596')
+        self.assertEqual(legal['nome_postal_publicado'], 'Rua Eurípedes Mariano Borges')
+        self.assertEqual([ato['numero'] for ato in legal['historico_nomes']], ['1.575', '1.594'])
+        homonimo, = (r for r in self.consultar('75654-616') if r['nome_postal_publicado'] == 'Rua 4')
+        self.assertIsNone(homonimo['nome_municipal_documentado'])
+        self.assertNotEqual(legal['trecho_id'], homonimo['trecho_id'])
+
+    def test_cnefe_2010_registra_grafias_alternativas_sem_exportar_numero_predial(self):
+        caminho = Path(self.pasta.name) / 'cnefe-2010.zip'
+        linha = bytearray(b' ' * 558)
+        linha[:7] = b'5213806'
+        linha[16:19] = b'RUA'
+        nome = b'DOMINGOS RICARDO DE SOUZA OU RUA 4'
+        linha[66:66 + len(nome)] = nome
+        linha[126:131] = b'12345'
+        linha[351:357] = b'CENTRO'
+        linha[550:558] = b'75650000'
+        with ZipFile(caminho, 'w') as arquivo:
+            arquivo.writestr('52138060500.TXT', bytes(linha) + b'\r\n')
+        resumo = auditar_acervo.cruzar_cnefe(caminho, [], ano=2010, listar_pistas=True)
+        self.assertEqual(resumo['linhas_lidas'], 1)
+        self.assertEqual(resumo['variantes_explicitas'][0]['nomes'],
+                         ['rua domingos ricardo de souza', 'rua 4'])
+        self.assertNotIn('12345', json.dumps(resumo))
 
 
 if __name__ == '__main__':

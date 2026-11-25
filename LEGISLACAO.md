@@ -53,6 +53,22 @@ Os atos da tabela estão arquivados com o art. 1º. A coluna de CEP registra os 
 
 A Portaria SPU/GO nº 11/2014 registra o nome **antiga Rua 17** para um endereço da **Rua Prefeito Manoel Lemos de Mendonça**, no Setor Oeste. É evidência de uso no endereço descrito. O ato municipal de denominação e o alcance desse nome anterior ainda precisam ser localizados. A lista de dezembro de 2025 registra Rua Prefeito Manoel Lemos de Mendonça, CEP **75650-042**. [DOU de 04/06/2014, p. 113](https://transparencia.mpf.mp.br/conteudo/diarios-e-boletins/diario-oficial-da-uniao-1/2014/dou1_2014_06_04.pdf#page=113) · [Lista postal, p. 18](https://morrinhos.go.gov.br/wp-content/uploads/2025/12/Morrinhos-09_12_2025_Ordem-de-Bairro.pdf#page=18)
 
+## Lote de pesquisa de 25/11/2026
+
+O art. 1º de cada ato está na página 1. Os atos preveem vigência na publicação, cuja data ainda precisa ser localizada. Os CEPs abaixo vêm das listas disponibilizadas pela Prefeitura.
+
+| Nome anterior no ato | Nome atribuído | Bairro e trecho | Ato | Observação postal |
+| --- | --- | --- | --- | --- |
+| Avenida F | Avenida Firmo Antônio de Freitas | Setor Jardim Santa Fé, toda a extensão da Avenida F nesse setor | [Lei nº 1.432, de 24/05/1996](fontes/leis/lei-1432-1996.pdf#page=1) | 75652-126, [lista de dezembro de 2025, p. 7](https://morrinhos.go.gov.br/wp-content/uploads/2025/12/Morrinhos-09_12_2025_Ordem-de-Bairro.pdf#page=7) |
+| Avenida B | Avenida Armídio Felipe Santiago | Setor São Pedro | [Lei nº 1.459, de 20/09/1996](fontes/leis/lei-1459-1996.pdf#page=1) | 75652-278, [lista de dezembro de 2025, p. 18](https://morrinhos.go.gov.br/wp-content/uploads/2025/12/Morrinhos-09_12_2025_Ordem-de-Bairro.pdf#page=18) |
+| Rua 02 | Rua Engenheiro Ovídio S. Tannus | Setor Jardim Santa Terezinha | [Lei nº 1.574, de 19/03/1998](fontes/leis/lei-1574-1998.pdf#page=1) | CEP e trecho nas subdivisões atuais a confirmar |
+| Rua 04 | Rua Eurípedes Mariano Borges | Setor Jardim Santa Terezinha | [Lei nº 1.575, de 19/03/1998](fontes/leis/lei-1575-1998.pdf#page=1) | 75654-596, Jardim Santa Terezinha I. [Janeiro de 2025, p. 6](fontes/ceps/lista-2025-01.pdf#page=6) registra Rua 4. [Dezembro de 2025, p. 8](https://morrinhos.go.gov.br/wp-content/uploads/2025/12/Morrinhos-09_12_2025_Ordem-de-Bairro.pdf#page=8) registra Rua Eurípedes Mariano Borges |
+| Rua Eurípedes Mariano Borges, anteriormente Rua 04 | Rua Eurípedes Mariano da Silva | Setor Jardim Santa Terezinha. O art. 2º cita expressamente a Lei nº 1.575/1998 | [Lei nº 1.594, de 16/04/1998](fontes/leis/lei-1594-1998.pdf#page=1) | A lista de dezembro de 2025 conserva a grafia da lei anterior no CEP 75654-596. A grafia nos Correios está a conferir |
+| Avenida José Nascimento | Avenida Professor José do Nascimento | Setor Oeste. O art. 2º cita a Lei nº 036, de 25/08/1960, cujo texto ainda precisa ser localizado | [Lei nº 1.576, de 19/03/1998](fontes/leis/lei-1576-1998.pdf#page=1) | 75650-014 no Setor Oeste, [lista de janeiro de 2025, p. 2](fontes/ceps/lista-2025-01.pdf#page=2). O mesmo CEP aparece em Vila Nunes na [lista de dezembro de 2025, p. 21](https://morrinhos.go.gov.br/wp-content/uploads/2025/12/Morrinhos-09_12_2025_Ordem-de-Bairro.pdf#page=21). Alcance da mudança de bairro a confirmar |
+| — | Praça Manoel de Freitas | Setor Cristo Redentor, confluência das ruas CR-02 e CR-05 | [Lei nº 2.478, cabeçalho de 12/12/2008 e fecho de 15/12/2008](fontes/leis/lei-2478-2008.pdf#page=1) | CEP da praça a confirmar |
+
+A Rua 4 do **Jardim Santa Terezinha II** aparece com CEP próprio, 75654-616, na lista de janeiro. A correspondência comprovada pelas duas grafias da Lei nº 1.575/1998 refere-se ao CEP do **Jardim Santa Terezinha I**. [Lista de janeiro de 2025, p. 6](fontes/ceps/lista-2025-01.pdf#page=6)
+
 ## Denominações sem nome anterior identificado no ato
 
 - **Rua Dona Etelvina Rosa de Jesus, Povoado de Marcelânia.** O art. 1º da Lei nº 1.732, de 21/02/2000, atribui o nome à via principal do povoado. CEP a confirmar. [PDF oficial, página 1](https://morrinhos.go.gov.br/wp-content/uploads/2023/11/Lei-n-1732-de-21-de-fevereiro-de-2000.pdf#page=1) · [Cópia local](fontes/leis/lei-1732-2000.pdf)
@@ -77,6 +93,8 @@ A Lei nº 3.091, de 15/12/2014, trata de denominação, emplacamento e numeraç�
 **Rua 214 e Rua João Ferreira de Macedo, Setor Aeroporto.** O CEP 75654-069 aparece com o primeiro nome na lista de outubro de 2025 e com o segundo na lista de dezembro. A equivalência e a data de eventual mudança dependem de confirmação em ato ou cadastro municipal. Conferência direta no Busca CEP pendente. [Lista de outubro, item 7](https://morrinhos.go.gov.br/wp-content/uploads/2025/10/NOVOS-CEPS.pdf) · [Lista de dezembro, página 14](https://morrinhos.go.gov.br/wp-content/uploads/2025/12/Morrinhos-09_12_2025_Ordem-de-Bairro.pdf#page=14)
 
 O Diário Oficial da União já usava Rua João Ferreira de Macedo no Setor Aeroporto de Morrinhos em 18/02/2014, na Portaria nº 41. O CNES também associa esse nome e bairro ao CEP 75654-069 no cadastro da Secretaria Municipal de Saúde. A relação com Rua 214 continua a confirmar. [Diário Oficial da União, seção 1](https://transparencia.mpf.mp.br/conteudo/diarios-e-boletins/diario-oficial-da-uniao-1/2014/dou1_2014_02_18.pdf) · [CNES](https://cnes2.datasus.gov.br/Listar_Mantidas.asp?VCnpj=23773183000183&VEstado=52&VNome=SECRETARIA+MUNICIPAL+DE+SAUDE)
+
+O CNEFE de 2010 registra no Setor Aeroporto o tipo `RUA` e o nome `214 OU JOAO F MACEDO`. Isso documenta o uso conjunto das duas formas em 2010. A lei de denominação, seus limites e a confirmação postal do trecho ainda estão em pesquisa. [CNEFE de Morrinhos, 2010](https://ftp.ibge.gov.br/Cadastro_Nacional_de_Enderecos_para_Fins_Estatisticos/Censo_Demografico_2010/GO/52138060500.zip) · [Como reproduzir o cruzamento](PESQUISA.md)
 
 ## Como acrescentar um ato
 
