@@ -8,6 +8,7 @@ import subprocess
 import sys
 import tempfile
 import unittest
+from unittest.mock import patch
 from zipfile import ZipFile
 
 import acervo
@@ -59,6 +60,29 @@ class TestAcervo(unittest.TestCase):
         self.assertEqual(resultado['cep_publicado'], '75650-281')
         self.assertEqual(resultado['conferencia_correios'], 'pendente')
         self.assertEqual(resultado['historico_nomes'][0]['fonte_id'], 'lei-3119-2015')
+
+    def test_primeiro_uso_copia_base_inicial_sem_sobrescrever_a_base_local(self):
+        with tempfile.TemporaryDirectory() as pasta:
+            local = Path(pasta) / 'morrinhos.sqlite3'
+            with patch.object(acervo, 'BANCO', local):
+                with closing(acervo.abrir_banco(local)) as db:
+                    self.assertEqual(db.execute('SELECT count(*) FROM observacao_postal').fetchone()[0], 4988)
+                self.assertTrue(local.is_file())
+                with closing(acervo.abrir_banco(local, escrita=True)) as db, db:
+                    db.execute('CREATE TABLE marcador_local (id INTEGER)')
+                with closing(acervo.abrir_banco(local)) as db:
+                    db.execute('SELECT id FROM marcador_local')
+            with closing(acervo.abrir_banco(acervo.BASE_INICIAL)) as db:
+                self.assertEqual(db.execute('SELECT count(*) FROM ato_nome').fetchone()[0], 46)
+                self.assertEqual(db.execute('SELECT count(*) FROM mudanca_local').fetchone()[0], 0)
+                self.assertEqual(db.execute('SELECT count(*) FROM conferencia_correios').fetchone()[0], 0)
+                db.execute('ATTACH DATABASE ? AS reimportado', (str(self.banco),))
+                for tabela in ('fonte', 'bairro', 'trecho', 'observacao_postal', 'ato_nome', 'equivalencia_trecho'):
+                    with self.subTest(tabela=tabela):
+                        self.assertFalse(db.execute(f'SELECT * FROM main.{tabela} EXCEPT SELECT * FROM reimportado.{tabela}').fetchall())
+                        self.assertFalse(db.execute(f'SELECT * FROM reimportado.{tabela} EXCEPT SELECT * FROM main.{tabela}').fetchall())
+            with self.assertRaises(ValueError):
+                acervo.abrir_banco(acervo.BASE_INICIAL, escrita=True)
 
     def test_homonimos_conservam_ids_e_ceps_separados(self):
         resultados = self.consultar('Rua 216')

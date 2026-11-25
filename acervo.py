@@ -20,6 +20,7 @@ from busca import chave, expandir, interpretar, pontuador, separar_bairro, varia
 
 RAIZ = Path(__file__).resolve().parent
 BANCO = RAIZ / 'morrinhos.sqlite3'
+BASE_INICIAL = RAIZ / 'dados' / 'base-inicial.sqlite3'
 CEP = r'[0-9]{5}-?[0-9]{3}'
 LINHA_PADRAO = re.compile(rf'\s*(.+?)\s+({CEP})(?:\s+(.+?))?\s*')
 LINHA_NUMERADA = re.compile(rf'\s*(\d+)\s{{2,}}(.+?)\s{{2,}}(.+?)\s{{2,}}({CEP})\s*')
@@ -33,7 +34,18 @@ def cep_formatado(valor):
 
 
 def abrir_banco(caminho, escrita=False):
+    caminho = caminho.absolute()
+    if caminho == BANCO and not caminho.exists() and not caminho.is_symlink() and BASE_INICIAL.is_file():
+        try:
+            with publicar_arquivo(caminho) as temporario:
+                shutil.copyfile(BASE_INICIAL, temporario)
+        except FileExistsError:
+            # Outra instância terminou de criar a base local primeiro.
+            if not caminho.is_file():
+                raise
     caminho = caminho.resolve()
+    if escrita and caminho == BASE_INICIAL.resolve():
+        raise ValueError('A base inicial é somente leitura. Use a cópia local para trabalhar.')
     modo = 'rwc' if escrita else 'ro'
     db = sqlite3.connect(f'{caminho.as_uri()}?mode={modo}', uri=True)
     db.row_factory = sqlite3.Row
@@ -483,6 +495,14 @@ def backup(db, destino):
     return {'arquivo': str(destino.resolve()), 'integridade': 'ok'}
 
 
+def gerar_base_inicial(destino):
+    with tempfile.TemporaryDirectory() as pasta:
+        with closing(abrir_banco(Path(pasta) / 'fontes-publicas.sqlite3', escrita=True)) as db:
+            contagem = importar(db)
+            copia = backup(db, destino)
+    return {**copia, **contagem}
+
+
 def registrar_conferencia(db, args):
     dia = date.fromisoformat(args.data).isoformat()
     if not args.responsavel.strip() or not args.evidencia.strip():
@@ -501,6 +521,8 @@ def main():
     cli.add_argument('--banco', type=Path, default=BANCO)
     comandos = cli.add_subparsers(dest='comando', required=True)
     comandos.add_parser('importar', help='Importa as fontes catalogadas')
+    base_inicial = comandos.add_parser('gerar-base-inicial', help='Gera um banco novo apenas com as fontes públicas')
+    base_inicial.add_argument('destino', type=Path)
     busca = comandos.add_parser('consultar', help='Pesquisa um nome ou CEP e devolve JSON')
     busca.add_argument('termo')
     busca.add_argument('--bairro')
@@ -517,6 +539,9 @@ def main():
     conferencia.add_argument('--evidencia', required=True)
     args = cli.parse_args()
     try:
+        if args.comando == 'gerar-base-inicial':
+            print(json.dumps(gerar_base_inicial(args.destino), ensure_ascii=False, indent=2))
+            return
         db = abrir_banco(args.banco, escrita=args.comando in ('importar', 'registrar-conferencia'))
         try:
             if args.comando == 'importar':

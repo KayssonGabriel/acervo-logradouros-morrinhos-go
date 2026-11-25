@@ -6,20 +6,21 @@ Para ampliar a pesquisa, fazer ajustes ou pedir a revisão de outra IA, use [AGE
 
 ## Consultar
 
-Para abrir a interface local no navegador, inicie o servidor na pasta do acervo.
+Com Git e Python 3.10 ou superior, clone o repositório e inicie a interface.
 
 ```powershell
+git clone https://github.com/KayssonGabriel/acervo-logradouros-morrinhos-go.git
+cd acervo-logradouros-morrinhos-go
 python -X utf8 interface.py
 ```
 
-Acesse [a consulta local](http://127.0.0.1:8765). A tela é adaptável a computador e celular, com busca por nome ou CEP, filtro por bairro e acesso às fontes oficiais. O servidor escuta apenas no próprio computador. A consulta padrão usa o SQLite em modo somente leitura.
+Acesse [a consulta local](http://127.0.0.1:8765). A tela é adaptável a computador e celular, com busca por nome ou CEP, filtro por bairro e acesso às fontes oficiais. O servidor escuta apenas no próprio computador. No primeiro uso, o programa cria `morrinhos.sqlite3` a partir da [base inicial preenchida](dados/base-inicial.sqlite3). A base inicial reúne **4.988 observações postais** e **46 registros de atos municipais**. O primeiro uso dispensa Poppler e importação manual. Se já existir um banco de trabalho, a consulta usa esse arquivo.
 
-No PowerShell, a partir da pasta do acervo, use Python 3.10 ou superior. A consulta e a exportação usam o banco existente. A importação dos PDFs requer o `pdftotext` do Poppler no PATH.
+O Git guarda a base inicial gerada para distribuição, o código e as fontes públicas. As mudanças cadastradas e as conferências dos Correios ficam na cópia de trabalho local. A importação dos PDFs usa o `pdftotext` do Poppler no PATH. Depois de atualizar as fontes com `git pull`, use `acervo.py importar` para incorporar os novos dados à sua cópia de trabalho.
 
-Em um clone novo do repositório, gere primeiro a base local e o CSV. O Git guarda o código, o catálogo e os PDFs públicos usados na importação. O banco de trabalho, os CSVs gerados e os backups ficam na pasta local. Depois da importação, inicie a interface ou use os comandos de consulta.
+Para gerar o CSV para Excel a partir da sua cópia local, execute:
 
 ```powershell
-python -X utf8 acervo.py importar
 python -X utf8 acervo.py exportar 'morrinhos.csv'
 ```
 

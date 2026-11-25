@@ -3,6 +3,7 @@
 /morrinhos-varredura-*.json
 *.sqlite
 *.sqlite3
+!/dados/base-inicial.sqlite3
 *.sqlite-wal
 *.sqlite-shm
 *.sqlite-journal

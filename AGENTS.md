@@ -4,7 +4,7 @@ O repositório documenta vias de **Morrinhos, Goiás, código IBGE 5213806**, pa
 
 ## Reproduzir a base e validar uma mudança
 
-Use Python 3.10 ou superior, SQLite da biblioteca padrão e `pdftotext` do Poppler no PATH. Execute na raiz do clone.
+Use Python 3.10 ou superior e SQLite da biblioteca padrão. A interface cria a cópia local a partir de `dados/base-inicial.sqlite3` no primeiro uso. Para reimportar as fontes ou executar os testes, tenha `pdftotext` do Poppler no PATH. Execute na raiz do clone.
 
 ```powershell
 python -X utf8 acervo.py importar
@@ -16,6 +16,8 @@ python -X utf8 interface.py
 Abra [a interface local](http://127.0.0.1:8765). O modo padrão é somente leitura. Para registrar uma mudança pela interface, use `python -X utf8 interface.py --edicao` e consulte o [procedimento no README](README.md#cadastrar-uma-mudança-na-interface). `busca.py` interpreta entradas e variantes. `acervo.py` resolve evidências, vínculos e cadastros no SQLite. `interface.py` atende a interface local e `web/` contém os arquivos do navegador.
 
 Em uma base que guarde conferências reais, faça uma cópia com `python -X utf8 acervo.py backup minha-copia.sqlite3` e valide a mudança nela com `--banco minha-copia.sqlite3` antes de aplicá-la ao banco de trabalho. O banco local, exportações, backups e credenciais ficam fora do Git. Preserve alterações locais feitas pela equipe.
+
+Quando mudar as fontes importadas ou o esquema, rode `python -X utf8 acervo.py gerar-base-inicial dados/base-inicial-nova.sqlite3`. O comando recria o banco do zero com o catálogo público. Após conferir a integridade e as contagens, substitua `dados/base-inicial.sqlite3` pelo novo arquivo e rode os testes. Publique como base inicial somente o arquivo gerado a partir das fontes públicas. As tabelas de mudanças locais e conferências dos Correios devem estar vazias.
 
 ## Ampliar a pesquisa rua por rua
 
