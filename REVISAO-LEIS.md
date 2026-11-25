@@ -1,5 +1,7 @@
 # Revisão documental dos logradouros de Morrinhos (GO)
 
+A conferência posterior dos CEPs diretamente nos Correios está detalhada em [Conferência dos CEPs de Morrinhos](CONFERENCIA-CEPS.md), com tabela consolidada, divergências e pendências por trecho.
+
 Foram examinados 89 PDFs, com 106 páginas. Os 77 arquivos legislativos contêm 62 leis distintas. Os outros 12 documentos são cinco plantas, cinco memoriais, uma nota registral e uma autorização estadual. Seus endereços e confrontações foram examinados como referências de localização. A Lei nº 1.358/1995 foi obtida como fonte complementar para a Praça W-A.
 
 | Indicador | Antes | Depois |
@@ -898,6 +900,73 @@ Os números abaixo identificam cada arquivo recebido. A soma SHA-256 permite con
 | 75 | Lei n.º 3.119 de 22 de maio de 2015, Setor  Jardim América, Rua Juvercina Cipriana da Silva (Rua 03).pdf | 3119/2015 | 1 | `26b51064aa5948ccc5446083bcfa4a042e7e80fe0103065db95a1401b7a90472` |
 | 76 | Lei-1.594-98---Modifica-Lei-1.575-98---Rua-Euripedes-Mariano-da-Silva---Jd-Santa-Terezinha.pdf | 1594/1998 | 1 | `7f864994e50d3ab52b268fb13f483e03a0ab7f7060a3023aa80f2652ea1aae9c` |
 | 77 | Lei-n°-1.834--Avenida dos trabalhadores para Angelo Auricchio.PDF | 1834/2001 | 1 | `359b5156eba806af9e441f652e7945092e76af4216c7f17ebd1ebdc0da96be03` |
+
+## Conferência postal de Cristo Redentor em 25/11/2026
+
+A consulta “Logradouro por Bairro” dos Correios, com UF GO, localidade Morrinhos e bairro Cristo Redentor, retornou 37 endereços. Foram 16 no Setor Cristo Redentor e 21 no Setor Cristo Redentor – II Etapa. A transcrição preserva as grafias dos logradouros e bairros exibidas na data da consulta. [Tabela completa em CSV](fontes/ceps/correios-2026-11-25-cristo-redentor.csv) · [Formulário dos Correios](https://buscacepinter.correios.com.br/app/logradouro_bairro/index.php)
+
+| Endereço nos Correios | CEP | Comparação com as fontes municipais |
+| --- | --- | --- |
+| Rua CR-2, II Etapa | 75652-150 | Coincide com a lista de dezembro. O boletim de outubro atribuiu esse CEP à Rua CR-3. |
+| Rua CR-3, II Etapa | 75652-151 | Coincide com a lista de dezembro. No bairro identificado apenas como Setor Cristo Redentor, a Rua CR-3 tem outro CEP, 75652-182. |
+| Rua Manoel Mendonça, Setor Cristo Redentor | 75652-200 | A lista de dezembro traz “Morro Manoel Mendonça”. O CEP e o bairro coincidem. A divergência está no tipo de logradouro. |
+
+Na cópia de trabalho, 36 observações municipais coincidiram com o endereço completo dos Correios. Duas foram registradas como divergentes: a da Rua CR-3 no boletim de outubro e a de Manoel Mendonça em dezembro. Há 38 conferências para 37 endereços porque o retorno do CEP 75652-150 permitiu verificar duas observações municipais de edições diferentes. [Boletim de outubro de 2025, p. 1](NOVOS-CEPS.pdf#page=1) · [Lista por bairro de dezembro de 2025, p. 16](Morrinhos-09_12_2025_Ordem-de-Bairro.pdf#page=16)
+
+## Conferência postal de Sol Nascente em 25/11/2026
+
+A busca dos Correios por bairro em Morrinhos/GO retornou 12 endereços em Sol Nascente e cinco em Sol Nascente 2ª Etapa. Os 17 coincidiram em nome, bairro e CEP com a lista municipal de dezembro de 2025 e tiveram a conferência registrada na base local. Na 2ª Etapa, a Avenida Ivanolph Mesquita tem CEP 75650-610, a Rua 4 tem 75650-612, a Rua 8 tem 75650-614, a Rua 9 tem 75650-616 e a Rua 10 tem 75650-618. [Tabela completa dos Correios](fontes/ceps/correios-2026-11-25-sol-nascente.csv) · [Lista municipal por bairro, p. 19](Morrinhos-09_12_2025_Ordem-de-Bairro.pdf#page=19)
+
+A ficha anterior da Rua 10 em Sol Nascente conserva o CEP 75650-658. Esse número não apareceu na busca por bairro. Em 25/11/2026, a consulta direta pelo CEP 75650-658 também retornou “Não há dados a serem exibidos”. A conferência foi registrada como “não localizado”. O CEP 75650-618 foi confirmado para a Rua 10 em Sol Nascente 2ª Etapa. A relação entre os dois trechos continua sem comprovação documental. [Consulta direta dos Correios](https://buscacepinter.correios.com.br/app/endereco/index.php)
+
+## Conferência postal de Vila Santos Dumont em 25/11/2026
+
+Os Correios retornaram 48 endereços na busca por bairro em Morrinhos/GO. Os 32 registros de Vila Santos Dumont coincidiram com o acervo em nome, bairro e CEP. Os 16 registros de Vila Santos Dumont II foram cadastrados na base local com os CEPs e as grafias do resultado oficial. [Tabela completa dos Correios](fontes/ceps/correios-2026-11-25-vila-santos-dumont.csv)
+
+Doze CEPs da lista municipal para Vila Santos Dumont ficaram ausentes na consulta por bairro. A tabela apresenta os logradouros homônimos encontrados em Vila Santos Dumont II. A correspondência entre os trechos e a eventual substituição de um CEP por outro dependem de comprovação.
+
+| Logradouro | CEP municipal em Vila Santos Dumont, ausente no resultado | CEP retornado em Vila Santos Dumont II |
+| --- | --- | --- |
+| Avenida A | 75654-214 | 75654-322 |
+| Avenida B | 75654-240 | 75654-330 |
+| Avenida Sebastião Dias Coelho | 75654-246 | 75654-332 |
+| Rua 216 | 75654-216 | 75654-350 |
+| Rua D | 75654-218 | 75654-348 |
+| Rua E | 75654-220 | 75654-344 |
+| Rua F | 75654-222 | 75654-340 |
+| Rua G | 75654-224 | 75654-342 |
+| Rua I | 75654-228 | 75654-326 |
+| Rua J | 75654-256 | 75654-334 |
+| Rua K | 75654-254 | 75654-338 |
+| Rua L | 75654-250 | 75654-346 |
+
+Em 25/11/2026, a busca direta pelo CEP 75654-220 da Rua E retornou “Não há dados a serem exibidos”. O histórico municipal conserva esse CEP em Vila Santos Dumont. Na consulta por bairro, os Correios identificaram a Rua E em Vila Santos Dumont II com o CEP 75654-344. [Busca direta dos Correios](https://buscacepinter.correios.com.br/app/endereco/index.php)
+
+Na mesma data, a consulta direta pelo CEP 75654-254, publicado para a Rua K em Vila Santos Dumont, também retornou “Não há dados a serem exibidos”. O CEP 75654-338 foi confirmado por bairro para a Rua K em Vila Santos Dumont II.
+
+A busca individual pelo CEP 75654-250 da Rua L em Vila Santos Dumont, em 25/11/2026, retornou “Não há dados a serem exibidos”. A consulta por bairro confirmou o CEP 75654-346 para a Rua L em Vila Santos Dumont II.
+
+Em 25/11/2026, a busca individual pelo CEP 75654-214 da Avenida A em Vila Santos Dumont retornou “Não há dados a serem exibidos”. Na busca por bairro, a Avenida A em Vila Santos Dumont II consta com o CEP 75654-322.
+
+Na consulta direta de 25/11/2026, os Correios não localizaram o CEP 75654-240 que a Prefeitura publicou para a Avenida B em Vila Santos Dumont. A busca por bairro confirmou o CEP 75654-330 para a Avenida B em Vila Santos Dumont II.
+
+Em 25/11/2026, os Correios também não localizaram o CEP 75654-246, publicado pela Prefeitura para a Avenida Sebastião Dias Coelho em Vila Santos Dumont. A busca por bairro confirmou o CEP 75654-332 para a avenida de mesmo nome em Vila Santos Dumont II.
+
+Na consulta individual de 25/11/2026, os Correios não localizaram o CEP 75654-216, publicado para a Rua 216 em Vila Santos Dumont. Na busca por bairro, a Rua 216 em Vila Santos Dumont II consta com o CEP 75654-350.
+
+Em 25/11/2026, os Correios não localizaram o CEP 75654-218 na consulta individual. A Prefeitura publicou esse número para a Rua D em Vila Santos Dumont. A busca por bairro confirmou o CEP 75654-348 para a Rua D em Vila Santos Dumont II.
+
+Na consulta individual de 25/11/2026, os Correios não localizaram o CEP 75654-222, publicado pela Prefeitura para a Rua F em Vila Santos Dumont. A busca por bairro confirmou o CEP 75654-340 para a Rua F em Vila Santos Dumont II.
+
+Em 25/11/2026, os Correios não localizaram o CEP 75654-224, publicado pela Prefeitura para a Rua G em Vila Santos Dumont. A consulta por bairro confirmou o CEP 75654-342 para a Rua G em Vila Santos Dumont II.
+
+Na consulta individual de 25/11/2026, os Correios não localizaram o CEP 75654-228 da Rua I em Vila Santos Dumont. Na consulta por bairro, a Rua I em Vila Santos Dumont II consta com o CEP 75654-326.
+
+Em 25/11/2026, a busca direta pelo CEP 75654-256 da Rua J retornou “Não há dados a serem exibidos”. O CEP 75654-334 foi confirmado para a Rua J em Vila Santos Dumont II. Com essa consulta, os 12 CEPs municipais da tabela foram pesquisados individualmente e todos tiveram o resultado “não localizado” registrado na base local.
+
+## Conferência postal do Jardim Venezuela em 25/11/2026
+
+A busca por bairro dos Correios retornou seis endereços em Jardim Venezuela, Morrinhos/GO. Cinco coincidiram em nome, bairro e CEP com fichas existentes, incluindo a Rua 1, CEP 75650-168. A Avenida Dante Costa, CEP 75650-161, foi acrescentada à base local como registro postal desse bairro. As seis conferências ficaram vinculadas às respectivas observações, com a data e a linha da consulta. [Tabela completa dos Correios](fontes/ceps/correios-2026-11-25-jardim-venezuela.csv) · [Formulário de consulta por bairro](https://buscacepinter.correios.com.br/app/logradouro_bairro/index.php)
 
 ## Verificação da base
 

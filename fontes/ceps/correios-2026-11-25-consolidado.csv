@@ -1,0 +1,1051 @@
+Logradouro;Bairro;Localidade;CEP;Arquivos de origem
+Alameda A;Setor Sul dos Pomares;Morrinhos/GO;75654-294;correios-2026-11-25-municipio.csv, linha 55 | correios-2026-11-25-setores.csv, linha 277
+Alameda Alberto Xavier;Residencial Portal do Lago;Morrinhos/GO;75656-010;correios-2026-11-25-municipio.csv, linha 56 | correios-2026-11-25-residenciais.csv, linha 111
+Alameda Goiás;Jardim Goiás;Morrinhos/GO;75656-140;correios-2026-11-25-jardins.csv, linha 81 | correios-2026-11-25-municipio.csv, linha 2
+Alameda Isabela Cândido;Jardim Maria Ferreira de Souza;Morrinhos/GO;75652-101;correios-2026-11-25-jardins.csv, linha 104 | correios-2026-11-25-municipio.csv, linha 65
+Alameda Jonas Inocêncio de Oliveira;Jardim Santa Fé;Morrinhos/GO;75652-134;correios-2026-11-25-jardins.csv, linha 163 | correios-2026-11-25-municipio.csv, linha 66
+Alameda Jonas Inocêncio de Oliveira;Setor Cristo Redentor;Morrinhos/GO;75652-190;correios-2026-11-25-cristo-redentor.csv, linha 2 | correios-2026-11-25-municipio.csv, linha 67 | correios-2026-11-25-setores.csv, linha 116
+Alameda Jonas Inocêncio de Oliveira;Setor Cristo Redentor - II Etapa;Morrinhos/GO;75652-142;correios-2026-11-25-cristo-redentor.csv, linha 18 | correios-2026-11-25-municipio.csv, linha 68 | correios-2026-11-25-setores.csv, linha 132
+Alameda Jonas Inocêncio de Oliveira;Setor José Jesuíno Filho;Morrinhos/GO;75652-071;correios-2026-11-25-municipio.csv, linha 69 | correios-2026-11-25-setores.csv, linha 171
+Alameda Milão;Jardim Romano;Morrinhos/GO;75656-050;correios-2026-11-25-jardins.csv, linha 117 | correios-2026-11-25-municipio.csv, linha 70
+Alameda das Bromélias;Residencial Portal do Lago;Morrinhos/GO;75656-012;correios-2026-11-25-municipio.csv, linha 57 | correios-2026-11-25-residenciais.csv, linha 112
+Alameda das Camélias;Residencial Portal do Lago;Morrinhos/GO;75656-018;correios-2026-11-25-municipio.csv, linha 58 | correios-2026-11-25-residenciais.csv, linha 113
+Alameda das Flores;Residencial Portal do Lago;Morrinhos/GO;75656-024;correios-2026-11-25-municipio.csv, linha 59 | correios-2026-11-25-residenciais.csv, linha 114
+Alameda das Orquídeas;Residencial Portal do Lago;Morrinhos/GO;75656-030;correios-2026-11-25-municipio.csv, linha 60 | correios-2026-11-25-residenciais.csv, linha 115
+Alameda das Rosas;Residencial Portal do Lago;Morrinhos/GO;75656-028;correios-2026-11-25-municipio.csv, linha 61 | correios-2026-11-25-residenciais.csv, linha 116
+Alameda dos Girassóis;Residencial Portal do Lago;Morrinhos/GO;75656-016;correios-2026-11-25-municipio.csv, linha 62 | correios-2026-11-25-residenciais.csv, linha 117
+Alameda dos Jasmins;Residencial Portal do Lago;Morrinhos/GO;75656-026;correios-2026-11-25-municipio.csv, linha 63 | correios-2026-11-25-residenciais.csv, linha 118
+Alameda dos Lírios;Residencial Portal do Lago;Morrinhos/GO;75656-014;correios-2026-11-25-municipio.csv, linha 64 | correios-2026-11-25-residenciais.csv, linha 119
+Avenida 101;Setor Aeroporto;Morrinhos/GO;75654-120;correios-2026-11-25-aeroporto.csv, linha 8 | correios-2026-11-25-municipio.csv, linha 170 | correios-2026-11-25-setores.csv, linha 8
+Avenida 101A;Vila Santos Dumont II;Morrinhos/GO;75654-324;correios-2026-11-25-municipio.csv, linha 171 | correios-2026-11-25-vila-santos-dumont.csv, linha 38 | correios-2026-11-25-vilas.csv, linha 126
+Avenida 101B;Setor Aeroporto;Morrinhos/GO;75654-110;correios-2026-11-25-aeroporto.csv, linha 9 | correios-2026-11-25-municipio.csv, linha 172 | correios-2026-11-25-setores.csv, linha 9
+Avenida 101B;Setor Aeroporto III;Morrinhos/GO;75654-164;correios-2026-11-25-aeroporto.csv, linha 62 | correios-2026-11-25-municipio.csv, linha 173 | correios-2026-11-25-setores.csv, linha 62
+Avenida 101B;Vila Mutirão;Morrinhos/GO;75654-184;correios-2026-11-25-municipio.csv, linha 174 | correios-2026-11-25-vilas.csv, linha 25
+Avenida 102;Vila Santos Dumont;Morrinhos/GO;75654-252;correios-2026-11-25-vila-santos-dumont.csv, linha 6 | correios-2026-11-25-vilas.csv, linha 94
+Avenida 102;Vila Santos Dumont II;Morrinhos/GO;75654-336;correios-2026-11-25-municipio.csv, linha 175 | correios-2026-11-25-vila-santos-dumont.csv, linha 39 | correios-2026-11-25-vilas.csv, linha 127
+Avenida 2;Jardim Santa Terezinha I;Morrinhos/GO;75654-600;correios-2026-11-25-jardins.csv, linha 178 | correios-2026-11-25-municipio.csv, linha 176
+Avenida 2;Jardim Santa Terezinha II;Morrinhos/GO;75654-612;correios-2026-11-25-jardins.csv, linha 187 | correios-2026-11-25-municipio.csv, linha 177
+Avenida A;Jardim América;Morrinhos/GO;75650-308;correios-2026-11-25-jardins.csv, linha 2 | correios-2026-11-25-municipio.csv, linha 72
+Avenida A;Setor Leste Universitário;Morrinhos/GO;75650-320;correios-2026-11-25-municipio.csv, linha 73 | correios-2026-11-25-setores.csv, linha 186
+Avenida A;Vila Santos Dumont II;Morrinhos/GO;75654-322;correios-2026-11-25-municipio.csv, linha 74 | correios-2026-11-25-vila-santos-dumont.csv, linha 34 | correios-2026-11-25-vilas.csv, linha 122
+Avenida Angelo Auricchio;Distrito Agroindustrial de Morrinhos;Morrinhos/GO;75654-740;correios-2026-11-25-distritos.csv, linha 2 | correios-2026-11-25-municipio.csv, linha 75
+Avenida Angelo Auricchio;Jardim Helena;Morrinhos/GO;75654-690;correios-2026-11-25-jardins.csv, linha 93 | correios-2026-11-25-municipio.csv, linha 76
+Avenida Angelo Auricchio;Jardim Renascer;Morrinhos/GO;75654-282;correios-2026-11-25-jardins.csv, linha 114
+Avenida Angelo Auricchio;Residencial dos Ipês;Morrinhos/GO;75654-424;correios-2026-11-25-municipio.csv, linha 77 | correios-2026-11-25-residenciais.csv, linha 63
+Avenida Angelo Auricchio;Setor Arca de Noé;Morrinhos/GO;75654-380;correios-2026-11-25-municipio.csv, linha 78 | correios-2026-11-25-setores.csv, linha 74
+Avenida Angelo Auricchio;Setor Solar do Bosque;Morrinhos/GO;75654-710;correios-2026-11-25-municipio.csv, linha 79 | correios-2026-11-25-setores.csv, linha 266
+Avenida Angelo Auricchio;Setor Sul dos Pomares;Morrinhos/GO;75654-310;correios-2026-11-25-municipio.csv, linha 80 | correios-2026-11-25-setores.csv, linha 278
+Avenida Angelo Auricchio;Vila Santos Dumont;Morrinhos/GO;75654-276;correios-2026-11-25-vila-santos-dumont.csv, linha 2 | correios-2026-11-25-vilas.csv, linha 90
+Avenida Antonio L Gomes;Jardim Santa Terezinha II;Morrinhos/GO;75654-624;correios-2026-11-25-jardins.csv, linha 185 | correios-2026-11-25-municipio.csv, linha 4
+Avenida Antônio Alves Rabelo;Residencial Dona Ondina;Morrinhos/GO;75652-762;correios-2026-11-25-municipio.csv, linha 81 | correios-2026-11-25-residenciais.csv, linha 51
+Avenida Antônio Alves Rabelo;Setor Cristo Redentor;Morrinhos/GO;75652-186;correios-2026-11-25-cristo-redentor.csv, linha 3 | correios-2026-11-25-municipio.csv, linha 82 | correios-2026-11-25-setores.csv, linha 117
+Avenida Antônio Alves Rabelo;Setor Cristo Redentor - II Etapa;Morrinhos/GO;75652-154;correios-2026-11-25-cristo-redentor.csv, linha 19 | correios-2026-11-25-municipio.csv, linha 83 | correios-2026-11-25-setores.csv, linha 133
+Avenida Antônio Gonçalves Leite;Genoveva Alves;Morrinhos/GO;75656-542;correios-2026-11-25-municipio.csv, linha 3
+Avenida Armídio Felipe Santiago;Setor São Pedro;Morrinhos/GO;75652-278;correios-2026-11-25-municipio.csv, linha 84 | correios-2026-11-25-setores.csv, linha 245
+Avenida B;Vila Nunes;Morrinhos/GO;75650-010;correios-2026-11-25-municipio.csv, linha 85 | correios-2026-11-25-vilas.csv, linha 74
+Avenida B;Vila Santos Dumont II;Morrinhos/GO;75654-330;correios-2026-11-25-municipio.csv, linha 86 | correios-2026-11-25-vila-santos-dumont.csv, linha 35 | correios-2026-11-25-vilas.csv, linha 123
+Avenida Central;Cristina Park;Morrinhos/GO;75652-690;correios-2026-11-25-municipio.csv, linha 87
+Avenida Central;Setor Aeroporto II;Morrinhos/GO;75652-378;correios-2026-11-25-aeroporto.csv, linha 48 | correios-2026-11-25-setores.csv, linha 48
+Avenida Central;Setor Felício Chaves;Morrinhos/GO;75652-442;correios-2026-11-25-setores.csv, linha 153
+Avenida Coronel Fernando Barbosa;Jardim Renascer;Morrinhos/GO;75654-280;correios-2026-11-25-jardins.csv, linha 115
+Avenida Coronel Fernando Barbosa;Jardim Santa Terezinha I;Morrinhos/GO;75654-590;correios-2026-11-25-jardins.csv, linha 177 | correios-2026-11-25-municipio.csv, linha 88
+Avenida Coronel Fernando Barbosa;Jardim Santa Terezinha II;Morrinhos/GO;75654-610;correios-2026-11-25-jardins.csv, linha 186 | correios-2026-11-25-municipio.csv, linha 89
+Avenida Coronel Fernando Barbosa;Jardim Santa Terezinha III;Morrinhos/GO;75654-680;correios-2026-11-25-jardins.csv, linha 194 | correios-2026-11-25-municipio.csv, linha 90
+Avenida Coronel Fernando Barbosa;Lugar Denominado Aldeia;Morrinhos/GO;75654-530;correios-2026-11-25-municipio.csv, linha 91
+Avenida Coronel Fernando Barbosa;Parque das Laranjeiras;Morrinhos/GO;75654-560;correios-2026-11-25-municipio.csv, linha 92
+Avenida Coronel Fernando Barbosa;Reserva Atenas;Morrinhos/GO;75654-522;correios-2026-11-25-municipio.csv, linha 93
+Avenida Coronel Fernando Barbosa;Residencial Santa Terezinha;Morrinhos/GO;75654-550;correios-2026-11-25-municipio.csv, linha 94 | correios-2026-11-25-residenciais.csv, linha 122
+Avenida Coronel Fernando Barbosa;Setor Aeroporto;Morrinhos/GO;75654-072;correios-2026-11-25-aeroporto.csv, linha 2 | correios-2026-11-25-municipio.csv, linha 95 | correios-2026-11-25-setores.csv, linha 2
+Avenida Coronel Fernando Barbosa;Setor Aeroporto II;Morrinhos/GO;75652-360;correios-2026-11-25-aeroporto.csv, linha 49 | correios-2026-11-25-municipio.csv, linha 96 | correios-2026-11-25-setores.csv, linha 49
+Avenida Coronel Fernando Barbosa;Setor Cordeiro;Morrinhos/GO;75652-320;correios-2026-11-25-cordeiro.csv, linha 14 | correios-2026-11-25-municipio.csv, linha 97 | correios-2026-11-25-setores.csv, linha 95
+Avenida Coronel Fernando Barbosa;Setor Felício Chaves;Morrinhos/GO;75652-440;correios-2026-11-25-setores.csv, linha 154
+Avenida Coronel Fernando Barbosa;Setor Irinéia de Freitas;Morrinhos/GO;75652-470;correios-2026-11-25-municipio.csv, linha 98 | correios-2026-11-25-setores.csv, linha 162
+Avenida Coronel Fernando Barbosa;Setor Sul dos Pomares;Morrinhos/GO;75654-290;correios-2026-11-25-setores.csv, linha 279
+Avenida Coronel Fernando Barbosa;Setor São Pedro;Morrinhos/GO;75652-302;correios-2026-11-25-municipio.csv, linha 99 | correios-2026-11-25-setores.csv, linha 246
+Avenida Coronel Fernando Barbosa;Vila Nunes;Morrinhos/GO;75650-002;correios-2026-11-25-municipio.csv, linha 100 | correios-2026-11-25-vilas.csv, linha 75
+Avenida Coronel Fernando Barbosa;Vila Santos Dumont;Morrinhos/GO;75654-204;correios-2026-11-25-municipio.csv, linha 101 | correios-2026-11-25-vila-santos-dumont.csv, linha 3 | correios-2026-11-25-vilas.csv, linha 91
+Avenida Coronel Pedro Nunes;Centro;Morrinhos/GO;75650-072;correios-2026-11-25-centro.csv, linha 2 | correios-2026-11-25-municipio.csv, linha 102
+Avenida Coronel Pedro Nunes;Setor Noroeste;Morrinhos/GO;75656-172;correios-2026-11-25-municipio.csv, linha 103 | correios-2026-11-25-setores.csv, linha 191
+Avenida Couto de Magalhães;Centro;Morrinhos/GO;75650-086;correios-2026-11-25-centro.csv, linha 3 | correios-2026-11-25-municipio.csv, linha 104
+Avenida Dante Costa;Centro;Morrinhos/GO;75650-140;correios-2026-11-25-centro.csv, linha 4 | correios-2026-11-25-municipio.csv, linha 105
+Avenida Dante Costa;Jardim Venezuela;Morrinhos/GO;75650-161;correios-2026-11-25-jardim-venezuela.csv, linha 2 | correios-2026-11-25-jardins.csv, linha 196 | correios-2026-11-25-municipio.csv, linha 106
+Avenida Darcy Chaves;Jardim Maria Estela;Morrinhos/GO;75656-000;correios-2026-11-25-jardins.csv, linha 103 | correios-2026-11-25-municipio.csv, linha 107
+Avenida Darcy Chaves;Jardim Romano;Morrinhos/GO;75656-052;correios-2026-11-25-jardins.csv, linha 118 | correios-2026-11-25-municipio.csv, linha 108
+Avenida Darcy Chaves;Residencial Portal do Lago;Morrinhos/GO;75656-022;correios-2026-11-25-municipio.csv, linha 109 | correios-2026-11-25-residenciais.csv, linha 120
+Avenida Dona Fiica;Jardim Romano;Morrinhos/GO;75656-060;correios-2026-11-25-jardins.csv, linha 119 | correios-2026-11-25-municipio.csv, linha 110
+Avenida Doutor Eduval Pereira Maia;Jardim Helena;Morrinhos/GO;75654-698;correios-2026-11-25-jardins.csv, linha 94 | correios-2026-11-25-municipio.csv, linha 114
+Avenida Doutor Eduval Pereira Maia;Parque das Laranjeiras;Morrinhos/GO;75654-566;correios-2026-11-25-municipio.csv, linha 115
+Avenida Doutor Gumercindo Otero;Centro;Morrinhos/GO;75650-070;correios-2026-11-25-centro.csv, linha 5 | correios-2026-11-25-municipio.csv, linha 116
+Avenida Doutor Gumercindo Otero;Setor Aeroporto;Morrinhos/GO;75654-052;correios-2026-11-25-aeroporto.csv, linha 3 | correios-2026-11-25-municipio.csv, linha 117 | correios-2026-11-25-setores.csv, linha 3
+Avenida Doutor Gumercindo Otero;Setor Noroeste;Morrinhos/GO;75656-170;correios-2026-11-25-municipio.csv, linha 118 | correios-2026-11-25-setores.csv, linha 192
+Avenida Doutor Gumercindo Otero;Setor Oeste;Morrinhos/GO;75650-062;correios-2026-11-25-municipio.csv, linha 119 | correios-2026-11-25-setores.csv, linha 208
+Avenida Doutor Gumercindo Otero;Vila Nossa Senhora do Carmo;Morrinhos/GO;75656-228;correios-2026-11-25-municipio.csv, linha 120 | correios-2026-11-25-vilas.csv, linha 34
+Avenida Doutor Álvaro Teixeira de Camargo;Jardim Vera Cruz;Morrinhos/GO;75656-490;correios-2026-11-25-jardins.csv, linha 202 | correios-2026-11-25-municipio.csv, linha 112
+Avenida Doutor Álvaro Teixeira de Camargo;Residencial Darcy Chaves;Morrinhos/GO;75656-630;correios-2026-11-25-municipio.csv, linha 113 | correios-2026-11-25-residenciais.csv, linha 40
+Avenida E;Setor São Pedro;Morrinhos/GO;75652-294;correios-2026-11-25-municipio.csv, linha 121 | correios-2026-11-25-setores.csv, linha 247
+Avenida Engenheiro Flávio Cascão;Jardim Santa Fé;Morrinhos/GO;75652-112;correios-2026-11-25-jardins.csv, linha 164 | correios-2026-11-25-municipio.csv, linha 122
+Avenida Engenheiro Flávio Cascão;Setor São Pedro;Morrinhos/GO;75652-270;correios-2026-11-25-municipio.csv, linha 123 | correios-2026-11-25-setores.csv, linha 248
+Avenida Engenheiro Flávio Cascão;Vila Nunes;Morrinhos/GO;75650-004;correios-2026-11-25-municipio.csv, linha 124 | correios-2026-11-25-vilas.csv, linha 76
+Avenida Firmo Antônio de Freitas;Jardim Santa Fé;Morrinhos/GO;75652-126;correios-2026-11-25-jardins.csv, linha 165 | correios-2026-11-25-municipio.csv, linha 125
+Avenida Firmo Antônio de Freitas;Setor Aeroporto II;Morrinhos/GO;75652-370;correios-2026-11-25-aeroporto.csv, linha 50 | correios-2026-11-25-municipio.csv, linha 126 | correios-2026-11-25-setores.csv, linha 50
+Avenida Firmo Antônio de Freitas;Setor Cordeiro;Morrinhos/GO;75652-324;correios-2026-11-25-cordeiro.csv, linha 15 | correios-2026-11-25-municipio.csv, linha 127 | correios-2026-11-25-setores.csv, linha 96
+Avenida Firmo Antônio de Freitas;Setor Cristo Redentor;Morrinhos/GO;75652-180;correios-2026-11-25-cristo-redentor.csv, linha 4 | correios-2026-11-25-municipio.csv, linha 128 | correios-2026-11-25-setores.csv, linha 118
+Avenida Firmo Antônio de Freitas;Setor São Pedro;Morrinhos/GO;75652-288;correios-2026-11-25-municipio.csv, linha 129 | correios-2026-11-25-setores.csv, linha 249
+Avenida Francisco Rosa Campos;Setor Arca de Noé;Morrinhos/GO;75654-384;correios-2026-11-25-municipio.csv, linha 130 | correios-2026-11-25-setores.csv, linha 75
+Avenida G;Centro;Morrinhos/GO;75650-124;correios-2026-11-25-centro.csv, linha 6 | correios-2026-11-25-municipio.csv, linha 131
+Avenida G;Vila Nunes;Morrinhos/GO;75650-013;correios-2026-11-25-municipio.csv, linha 132 | correios-2026-11-25-vilas.csv, linha 77
+Avenida Gaspar Martins de Oliveira;Residencial Valéria Reis;Morrinhos/GO;75656-394;correios-2026-11-25-municipio.csv, linha 133 | correios-2026-11-25-residenciais.csv, linha 125
+Avenida Genoveva;Setor Oeste;Morrinhos/GO;75650-028;correios-2026-11-25-municipio.csv, linha 134 | correios-2026-11-25-setores.csv, linha 209
+Avenida Genoveva Rezende Carneiro;Setor Aeroporto;Morrinhos/GO;75654-050;correios-2026-11-25-aeroporto.csv, linha 4 | correios-2026-11-25-municipio.csv, linha 135 | correios-2026-11-25-setores.csv, linha 4
+Avenida Genoveva Rezende Carneiro;Vila Bela;Morrinhos/GO;75654-042;correios-2026-11-25-municipio.csv, linha 136 | correios-2026-11-25-vilas.csv, linha 2
+Avenida Genoveva Rezende Carneiro;Vila Nunes;Morrinhos/GO;75650-001;correios-2026-11-25-municipio.csv, linha 137 | correios-2026-11-25-vilas.csv, linha 78
+Avenida Hercílio Gomes de Melo;Residencial Hercílio Gomes de Melo;Morrinhos/GO;75656-452;correios-2026-11-25-municipio.csv, linha 5 | correios-2026-11-25-residenciais.csv, linha 76
+Avenida Ivanolph Mesquita;Estância da Saudade - Bairro Morro da Saudade;Morrinhos/GO;75650-590;correios-2026-11-25-morro.csv, linha 2 | correios-2026-11-25-municipio.csv, linha 138
+Avenida Ivanolph Mesquita;Loteamento Vinícius Cândido;Morrinhos/GO;75650-682;correios-2026-11-25-municipio.csv, linha 139 | correios-2026-11-25-vinicius.csv, linha 2
+Avenida Ivanolph Mesquita;Sol Nascente;Morrinhos/GO;75650-652;correios-2026-11-25-municipio.csv, linha 140 | correios-2026-11-25-sol-nascente.csv, linha 2
+Avenida Ivanolph Mesquita;Sol Nascente 2ª Etapa;Morrinhos/GO;75650-610;correios-2026-11-25-municipio.csv, linha 141 | correios-2026-11-25-sol-nascente.csv, linha 14
+Avenida Jadir Machado da Silva;Jardim Colibri;Morrinhos/GO;75656-292;correios-2026-11-25-jardins.csv, linha 59 | correios-2026-11-25-municipio.csv, linha 142
+Avenida Jadir Machado da Silva;Residencial Valéria Reis;Morrinhos/GO;75656-392;correios-2026-11-25-municipio.csv, linha 143 | correios-2026-11-25-residenciais.csv, linha 126
+Avenida Jadir Machado da Silva;Setor Arca de Noé;Morrinhos/GO;75654-370;correios-2026-11-25-municipio.csv, linha 144 | correios-2026-11-25-setores.csv, linha 76
+Avenida Jaime Vilela;Vila Santos Dumont;Morrinhos/GO;75654-206;correios-2026-11-25-municipio.csv, linha 145 | correios-2026-11-25-vila-santos-dumont.csv, linha 4 | correios-2026-11-25-vilas.csv, linha 92
+Avenida Juscelino Kubitschek;Jardim América;Morrinhos/GO;75650-280;correios-2026-11-25-jardins.csv, linha 3 | correios-2026-11-25-municipio.csv, linha 146
+Avenida Noé José Pereira;Setor Arca de Noé;Morrinhos/GO;75654-372;correios-2026-11-25-municipio.csv, linha 147 | correios-2026-11-25-setores.csv, linha 77
+Avenida Padre Kleibe França Ribeiro;Conjunto Residencial Monte Verde;Morrinhos/GO;75652-396;correios-2026-11-25-residenciais.csv, linha 2
+Avenida Perimetral;Jardim Vera Cruz;Morrinhos/GO;75656-485;correios-2026-11-25-jardins.csv, linha 203 | correios-2026-11-25-municipio.csv, linha 148
+Avenida Perimetral;Setor Noroeste;Morrinhos/GO;75656-182;correios-2026-11-25-municipio.csv, linha 149 | correios-2026-11-25-setores.csv, linha 193
+Avenida Perimetral;Vila Nossa Senhora do Carmo;Morrinhos/GO;75656-226;correios-2026-11-25-municipio.csv, linha 150 | correios-2026-11-25-vilas.csv, linha 35
+Avenida Perimetral;Vila Santa Rosa;Morrinhos/GO;75650-732;correios-2026-11-25-municipio.csv, linha 151 | correios-2026-11-25-vilas.csv, linha 85
+Avenida Professor Frauzino Sobrinho;Setor Aeroporto;Morrinhos/GO;75654-104;correios-2026-11-25-aeroporto.csv, linha 5 | correios-2026-11-25-municipio.csv, linha 152 | correios-2026-11-25-setores.csv, linha 5
+Avenida Professor José do Nascimento;Setor Oeste;Morrinhos/GO;75650-023;correios-2026-11-25-municipio.csv, linha 153 | correios-2026-11-25-setores.csv, linha 210
+Avenida Professor José do Nascimento;Vila Nunes;Morrinhos/GO;75650-014;correios-2026-11-25-municipio.csv, linha 154 | correios-2026-11-25-vilas.csv, linha 79
+Avenida Professora Zilda Diniz Fontes;Setor Aeroporto;Morrinhos/GO;75654-096;correios-2026-11-25-aeroporto.csv, linha 6 | correios-2026-11-25-municipio.csv, linha 155 | correios-2026-11-25-setores.csv, linha 6
+Avenida Professora Zilda Diniz Fontes;Setor Aeroporto III;Morrinhos/GO;75654-140;correios-2026-11-25-aeroporto.csv, linha 60 | correios-2026-11-25-municipio.csv, linha 156 | correios-2026-11-25-setores.csv, linha 60
+Avenida Roma;Genoveva Alves;Morrinhos/GO;75656-562;correios-2026-11-25-municipio.csv, linha 157
+Avenida Roma;Jardim Romano;Morrinhos/GO;75656-104;correios-2026-11-25-jardins.csv, linha 120 | correios-2026-11-25-municipio.csv, linha 158
+Avenida Roma;Jardim Vera Cruz;Morrinhos/GO;75656-486;correios-2026-11-25-jardins.csv, linha 204 | correios-2026-11-25-municipio.csv, linha 159
+Avenida Romeu Romano;Jardim América;Morrinhos/GO;75650-296;correios-2026-11-25-jardins.csv, linha 4 | correios-2026-11-25-municipio.csv, linha 160
+Avenida Saturnino Azeredo;Setor Oeste;Morrinhos/GO;75650-016;correios-2026-11-25-municipio.csv, linha 161 | correios-2026-11-25-setores.csv, linha 211
+Avenida Sebastião Dias Coelho;Vila Santos Dumont II;Morrinhos/GO;75654-332;correios-2026-11-25-municipio.csv, linha 162 | correios-2026-11-25-vila-santos-dumont.csv, linha 36 | correios-2026-11-25-vilas.csv, linha 124
+Avenida Senador Hermenegildo de Morais;Centro;Morrinhos/GO;75650-122;correios-2026-11-25-centro.csv, linha 7 | correios-2026-11-25-municipio.csv, linha 163
+Avenida Senador Hermenegildo de Morais;Setor Oeste;Morrinhos/GO;75650-040;correios-2026-11-25-municipio.csv, linha 164 | correios-2026-11-25-setores.csv, linha 212
+Avenida Soldado PM Adonai do Carmo Oliveira;Setor Aeroporto;Morrinhos/GO;75654-108;correios-2026-11-25-aeroporto.csv, linha 7 | correios-2026-11-25-municipio.csv, linha 165 | correios-2026-11-25-setores.csv, linha 7
+Avenida Soldado PM Adonai do Carmo Oliveira;Setor Aeroporto III;Morrinhos/GO;75654-156;correios-2026-11-25-aeroporto.csv, linha 61 | correios-2026-11-25-municipio.csv, linha 166 | correios-2026-11-25-setores.csv, linha 61
+Avenida Soldado PM Adonai do Carmo Oliveira;Vila Mutirão;Morrinhos/GO;75654-182;correios-2026-11-25-municipio.csv, linha 167 | correios-2026-11-25-vilas.csv, linha 24
+Avenida Soldado PM Adonai do Carmo Oliveira;Vila Nossa Senhora do Carmo;Morrinhos/GO;75656-212;correios-2026-11-25-municipio.csv, linha 168 | correios-2026-11-25-vilas.csv, linha 36
+Avenida Tenente Santana;Vila Santos Dumont;Morrinhos/GO;75654-226;correios-2026-11-25-vila-santos-dumont.csv, linha 5 | correios-2026-11-25-vilas.csv, linha 93
+Avenida Tenente Santana;Vila Santos Dumont II;Morrinhos/GO;75654-328;correios-2026-11-25-municipio.csv, linha 169 | correios-2026-11-25-vila-santos-dumont.csv, linha 37 | correios-2026-11-25-vilas.csv, linha 125
+Avenida Vera Cruz;Residencial Hercílio Gomes de Melo;Morrinhos/GO;75656-446;correios-2026-11-25-municipio.csv, linha 6 | correios-2026-11-25-residenciais.csv, linha 77
+Avenida dos Girassóis;Parque das Laranjeiras;Morrinhos/GO;75654-570;correios-2026-11-25-municipio.csv, linha 111
+Estrada Do Café;Jardim Cerrado;Morrinhos/GO;75656-340;correios-2026-11-25-jardins.csv, linha 58 | correios-2026-11-25-municipio.csv, linha 178
+Estrada do Café;Aldeia dos Pomares;Morrinhos/GO;75656-420;correios-2026-11-25-municipio.csv, linha 179
+Estrada do Café;Genoveva Alves;Morrinhos/GO;75656-540;correios-2026-11-25-municipio.csv, linha 180
+Estrada do Café;Jardim Colibri;Morrinhos/GO;75656-332;correios-2026-11-25-jardins.csv, linha 60 | correios-2026-11-25-municipio.csv, linha 181
+Estrada do Café;Jardim Vera Cruz;Morrinhos/GO;75656-480;correios-2026-11-25-jardins.csv, linha 205 | correios-2026-11-25-municipio.csv, linha 182
+Estrada do Café;Setor Noroeste;Morrinhos/GO;75656-202;correios-2026-11-25-municipio.csv, linha 183 | correios-2026-11-25-setores.csv, linha 194
+Passagem De Pedestres;Jardim Romano;Morrinhos/GO;75656-059;correios-2026-11-25-jardins.csv, linha 121 | correios-2026-11-25-municipio.csv, linha 186
+Passagem de Pedestre;Centro;Morrinhos/GO;75650-102;correios-2026-11-25-centro.csv, linha 8 | correios-2026-11-25-municipio.csv, linha 184
+Passagem de Pedestre;Setor Cristo Redentor - II Etapa;Morrinhos/GO;75652-158;correios-2026-11-25-cristo-redentor.csv, linha 20 | correios-2026-11-25-municipio.csv, linha 185 | correios-2026-11-25-setores.csv, linha 134
+Praça Doutor Raul Nunes;Centro;Morrinhos/GO;75650-144;correios-2026-11-25-centro.csv, linha 11 | correios-2026-11-25-municipio.csv, linha 190
+Praça III;Setor Oeste;Morrinhos/GO;75650-060;correios-2026-11-25-municipio.csv, linha 191 | correios-2026-11-25-setores.csv, linha 213
+Praça Joaquim Diniz;Setor Oeste;Morrinhos/GO;75650-034;correios-2026-11-25-municipio.csv, linha 192 | correios-2026-11-25-setores.csv, linha 214
+Praça Lions;Setor Oeste;Morrinhos/GO;75650-029;correios-2026-11-25-municipio.csv, linha 193 | correios-2026-11-25-setores.csv, linha 215
+Praça Lions;Vila Nunes;Morrinhos/GO;75650-008;correios-2026-11-25-municipio.csv, linha 194 | correios-2026-11-25-vilas.csv, linha 80
+Praça da Lavanderia;São Francisco de Assis;Morrinhos/GO;75650-200;correios-2026-11-25-municipio.csv, linha 187 | correios-2026-11-25-saoFrancisco.csv, linha 2
+Praça do Coreto;Centro;Morrinhos/GO;75650-134;correios-2026-11-25-centro.csv, linha 9 | correios-2026-11-25-municipio.csv, linha 188
+Praça do Mercado Municipal;Centro;Morrinhos/GO;75650-129;correios-2026-11-25-centro.csv, linha 10 | correios-2026-11-25-municipio.csv, linha 189
+Rodovia GO-213;Estância da Saudade - Bairro Morro da Saudade;Morrinhos/GO;75650-592;correios-2026-11-25-morro.csv, linha 3 | correios-2026-11-25-municipio.csv, linha 7
+Rodovia GO-213;Jardim Moisés Inocêncio;Morrinhos/GO;75650-719;correios-2026-11-25-jardins.csv, linha 106 | correios-2026-11-25-municipio.csv, linha 8
+Rodovia GO-213;Morro da Saudade;Morrinhos/GO;75650-535;correios-2026-11-25-morro.csv, linha 6 | correios-2026-11-25-municipio.csv, linha 9
+Rua 1;JK;Morrinhos/GO;75650-412;correios-2026-11-25-jk.csv, linha 7 | correios-2026-11-25-municipio.csv, linha 697
+Rua 1;Jardim América;Morrinhos/GO;75650-300;correios-2026-11-25-jardins.csv, linha 14 | correios-2026-11-25-municipio.csv, linha 694
+Rua 1;Jardim Romano;Morrinhos/GO;75656-126;correios-2026-11-25-jardins.csv, linha 156 | correios-2026-11-25-municipio.csv, linha 695
+Rua 1;Jardim Venezuela;Morrinhos/GO;75650-168;correios-2026-11-25-jardim-venezuela.csv, linha 5 | correios-2026-11-25-jardins.csv, linha 199 | correios-2026-11-25-municipio.csv, linha 696
+Rua 1;Loteamento Vinícius Cândido;Morrinhos/GO;75650-680;correios-2026-11-25-municipio.csv, linha 698 | correios-2026-11-25-vinicius.csv, linha 3
+Rua 1;Morro da Saudade II;Morrinhos/GO;75650-570;correios-2026-11-25-morro.csv, linha 36 | correios-2026-11-25-municipio.csv, linha 699
+Rua 1;Residencial Portal do Lago;Morrinhos/GO;75656-020;correios-2026-11-25-municipio.csv, linha 700 | correios-2026-11-25-residenciais.csv, linha 121
+Rua 1;Setor Aeroporto;Morrinhos/GO;75654-060;correios-2026-11-25-aeroporto.csv, linha 17 | correios-2026-11-25-municipio.csv, linha 701 | correios-2026-11-25-setores.csv, linha 17
+Rua 1;Setor Cordeiro;Morrinhos/GO;75652-382;correios-2026-11-25-cordeiro.csv, linha 28 | correios-2026-11-25-setores.csv, linha 109
+Rua 1;Setor Cristo Redentor - II Etapa;Morrinhos/GO;75652-164;correios-2026-11-25-cristo-redentor.csv, linha 37 | correios-2026-11-25-municipio.csv, linha 702 | correios-2026-11-25-setores.csv, linha 151
+Rua 1;Setor Noroeste;Morrinhos/GO;75656-176;correios-2026-11-25-municipio.csv, linha 703 | correios-2026-11-25-setores.csv, linha 203
+Rua 1;Setor Oeste;Morrinhos/GO;75650-024;correios-2026-11-25-municipio.csv, linha 704 | correios-2026-11-25-setores.csv, linha 226
+Rua 1;Setor Sul dos Pomares;Morrinhos/GO;75654-298;correios-2026-11-25-municipio.csv, linha 706 | correios-2026-11-25-setores.csv, linha 280
+Rua 1;Setor São Pedro;Morrinhos/GO;75652-272;correios-2026-11-25-municipio.csv, linha 705 | correios-2026-11-25-setores.csv, linha 257
+Rua 1;Sol Nascente;Morrinhos/GO;75650-648;correios-2026-11-25-municipio.csv, linha 707 | correios-2026-11-25-sol-nascente.csv, linha 3
+Rua 1;Vila Bela;Morrinhos/GO;75654-004;correios-2026-11-25-municipio.csv, linha 708 | correios-2026-11-25-vilas.csv, linha 20
+Rua 1;Vila Nova I;Morrinhos/GO;75650-330;correios-2026-11-25-municipio.csv, linha 709 | correios-2026-11-25-vilas.csv, linha 47
+Rua 1;Vila Nova III;Morrinhos/GO;75650-361;correios-2026-11-25-municipio.csv, linha 710 | correios-2026-11-25-vilas.csv, linha 67
+Rua 1;Vila Nunes;Morrinhos/GO;75650-009;correios-2026-11-25-municipio.csv, linha 711 | correios-2026-11-25-vilas.csv, linha 82
+Rua 1;Vila Santos Dumont;Morrinhos/GO;75654-238;correios-2026-11-25-vila-santos-dumont.csv, linha 9 | correios-2026-11-25-vilas.csv, linha 97
+Rua 10;Barra do Cordeiro;Morrinhos/GO;75650-392;correios-2026-11-25-cordeiro.csv, linha 6 | correios-2026-11-25-municipio.csv, linha 714
+Rua 10;Centro;Morrinhos/GO;75650-148;correios-2026-11-25-centro.csv, linha 42 | correios-2026-11-25-municipio.csv, linha 715
+Rua 10;Jardim América;Morrinhos/GO;75650-290;correios-2026-11-25-jardins.csv, linha 15 | correios-2026-11-25-municipio.csv, linha 716
+Rua 10;Morro da Saudade II;Morrinhos/GO;75650-588;correios-2026-11-25-morro.csv, linha 37 | correios-2026-11-25-municipio.csv, linha 717
+Rua 10;Residencial Jarina Park;Morrinhos/GO;75650-694;correios-2026-11-25-municipio.csv, linha 718 | correios-2026-11-25-residenciais.csv, linha 100
+Rua 10;Sol Nascente 2ª Etapa;Morrinhos/GO;75650-618;correios-2026-11-25-municipio.csv, linha 719 | correios-2026-11-25-sol-nascente.csv, linha 15
+Rua 10;Vila Nossa Senhora do Carmo;Morrinhos/GO;75656-234;correios-2026-11-25-municipio.csv, linha 720 | correios-2026-11-25-vilas.csv, linha 37
+Rua 10;Vila Nova I;Morrinhos/GO;75650-354;correios-2026-11-25-municipio.csv, linha 721 | correios-2026-11-25-vilas.csv, linha 48
+Rua 10;Vila Santos Dumont;Morrinhos/GO;75654-268;correios-2026-11-25-vila-santos-dumont.csv, linha 10 | correios-2026-11-25-vilas.csv, linha 98
+Rua 100;Residencial Valéria Reis;Morrinhos/GO;75656-404;correios-2026-11-25-municipio.csv, linha 722 | correios-2026-11-25-residenciais.csv, linha 127
+Rua 101;Jardim Colibri;Morrinhos/GO;75656-306;correios-2026-11-25-jardins.csv, linha 80 | correios-2026-11-25-municipio.csv, linha 723
+Rua 101;Residencial Valéria Reis;Morrinhos/GO;75656-390;correios-2026-11-25-municipio.csv, linha 724 | correios-2026-11-25-residenciais.csv, linha 128
+Rua 102;Residencial Valéria Reis;Morrinhos/GO;75656-396;correios-2026-11-25-municipio.csv, linha 725 | correios-2026-11-25-residenciais.csv, linha 129
+Rua 102A;Vila Santos Dumont;Morrinhos/GO;75654-272;correios-2026-11-25-vila-santos-dumont.csv, linha 11 | correios-2026-11-25-vilas.csv, linha 99
+Rua 103;Residencial Valéria Reis;Morrinhos/GO;75656-398;correios-2026-11-25-municipio.csv, linha 726 | correios-2026-11-25-residenciais.csv, linha 130
+Rua 105;Residencial Valéria Reis;Morrinhos/GO;75656-400;correios-2026-11-25-municipio.csv, linha 727 | correios-2026-11-25-residenciais.csv, linha 131
+Rua 107;Residencial Valéria Reis;Morrinhos/GO;75656-402;correios-2026-11-25-municipio.csv, linha 728 | correios-2026-11-25-residenciais.csv, linha 132
+Rua 109;Residencial Valéria Reis;Morrinhos/GO;75656-406;correios-2026-11-25-municipio.csv, linha 729 | correios-2026-11-25-residenciais.csv, linha 133
+Rua 11;Barra do Cordeiro;Morrinhos/GO;75650-386;correios-2026-11-25-cordeiro.csv, linha 7 | correios-2026-11-25-municipio.csv, linha 730
+Rua 11;Jardim América;Morrinhos/GO;75650-292;correios-2026-11-25-jardins.csv, linha 16 | correios-2026-11-25-municipio.csv, linha 731
+Rua 11;Jardim Santa Fé;Morrinhos/GO;75652-119;correios-2026-11-25-jardins.csv, linha 170 | correios-2026-11-25-municipio.csv, linha 732
+Rua 11;Morro da Saudade;Morrinhos/GO;75650-538;correios-2026-11-25-morro.csv, linha 21 | correios-2026-11-25-municipio.csv, linha 733
+Rua 11;Vila Nova I;Morrinhos/GO;75650-356;correios-2026-11-25-municipio.csv, linha 734 | correios-2026-11-25-vilas.csv, linha 49
+Rua 11;Vila Santos Dumont;Morrinhos/GO;75654-266;correios-2026-11-25-vila-santos-dumont.csv, linha 12 | correios-2026-11-25-vilas.csv, linha 100
+Rua 111;Residencial Valéria Reis;Morrinhos/GO;75656-408;correios-2026-11-25-municipio.csv, linha 736 | correios-2026-11-25-residenciais.csv, linha 134
+Rua 113;Residencial Valéria Reis;Morrinhos/GO;75656-410;correios-2026-11-25-municipio.csv, linha 737 | correios-2026-11-25-residenciais.csv, linha 135
+Rua 11A;Vila Nova I;Morrinhos/GO;75650-360;correios-2026-11-25-municipio.csv, linha 735 | correios-2026-11-25-vilas.csv, linha 50
+Rua 12;Barra do Cordeiro;Morrinhos/GO;75650-398;correios-2026-11-25-cordeiro.csv, linha 8 | correios-2026-11-25-municipio.csv, linha 738
+Rua 12;Jardim América;Morrinhos/GO;75650-293;correios-2026-11-25-jardins.csv, linha 17 | correios-2026-11-25-municipio.csv, linha 739
+Rua 12;Morro da Saudade;Morrinhos/GO;75650-546;correios-2026-11-25-morro.csv, linha 22
+Rua 12;Vila Nova I;Morrinhos/GO;75650-358;correios-2026-11-25-vilas.csv, linha 51
+Rua 12;Vila Santos Dumont;Morrinhos/GO;75654-208;correios-2026-11-25-vila-santos-dumont.csv, linha 13 | correios-2026-11-25-vilas.csv, linha 101
+Rua 13;Morro da Saudade;Morrinhos/GO;75650-530;correios-2026-11-25-morro.csv, linha 23
+Rua 13;Vila Nova III;Morrinhos/GO;75650-362;correios-2026-11-25-vilas.csv, linha 68
+Rua 13 de Maio;Centro;Morrinhos/GO;75650-154;correios-2026-11-25-centro.csv, linha 43
+Rua 13 de Maio;Jardim América;Morrinhos/GO;75650-272;correios-2026-11-25-jardins.csv, linha 18
+Rua 14;Setor Oeste;Morrinhos/GO;75650-022;correios-2026-11-25-setores.csv, linha 227
+Rua 14;Vila Nova II;Morrinhos/GO;75650-224;correios-2026-11-25-vilas.csv, linha 62
+Rua 15;Vila Nova II;Morrinhos/GO;75650-222;correios-2026-11-25-vilas.csv, linha 63
+Rua 15;Vila Nunes;Morrinhos/GO;75650-012;correios-2026-11-25-vilas.csv, linha 83
+Rua 16;Jardim América;Morrinhos/GO;75650-310;correios-2026-11-25-jardins.csv, linha 19
+Rua 16;Setor Leste Universitário;Morrinhos/GO;75650-322;correios-2026-11-25-setores.csv, linha 190
+Rua 16;Setor Oeste;Morrinhos/GO;75650-038;correios-2026-11-25-setores.csv, linha 228
+Rua 16;Vila Nova I;Morrinhos/GO;75650-340;correios-2026-11-25-vilas.csv, linha 52
+Rua 16A;Setor Oeste;Morrinhos/GO;75650-036;correios-2026-11-25-setores.csv, linha 229
+Rua 17;Setor Aeroporto;Morrinhos/GO;75654-062;correios-2026-11-25-aeroporto.csv, linha 19 | correios-2026-11-25-setores.csv, linha 19
+Rua 17;Vila Mutirão;Morrinhos/GO;75654-188;correios-2026-11-25-vilas.csv, linha 27
+Rua 17;Vila Nova III;Morrinhos/GO;75650-364;correios-2026-11-25-vilas.csv, linha 69
+Rua 17A;Vila Mutirão;Morrinhos/GO;75654-186;correios-2026-11-25-vilas.csv, linha 28
+Rua 18;Setor Aeroporto;Morrinhos/GO;75654-082;correios-2026-11-25-aeroporto.csv, linha 20 | correios-2026-11-25-setores.csv, linha 20
+Rua 18;Vila Mutirão;Morrinhos/GO;75654-180;correios-2026-11-25-vilas.csv, linha 29
+Rua 18;Vila Nova III;Morrinhos/GO;75650-368;correios-2026-11-25-vilas.csv, linha 70
+Rua 18A;Setor Oeste;Morrinhos/GO;75650-044;correios-2026-11-25-setores.csv, linha 230
+Rua 18A;Vila Mutirão;Morrinhos/GO;75654-178;correios-2026-11-25-vilas.csv, linha 30
+Rua 18B;Vila Mutirão;Morrinhos/GO;75654-176;correios-2026-11-25-vilas.csv, linha 31
+Rua 18C;Vila Mutirão;Morrinhos/GO;75654-174;correios-2026-11-25-vilas.csv, linha 32
+Rua 19;Setor Aeroporto;Morrinhos/GO;75654-056;correios-2026-11-25-aeroporto.csv, linha 21 | correios-2026-11-25-setores.csv, linha 21
+Rua 19;Setor Aeroporto III;Morrinhos/GO;75654-150;correios-2026-11-25-aeroporto.csv, linha 64 | correios-2026-11-25-setores.csv, linha 64
+Rua 19;Vila Nova III;Morrinhos/GO;75650-370;correios-2026-11-25-vilas.csv, linha 71
+Rua 19A;Setor Aeroporto III;Morrinhos/GO;75654-162;correios-2026-11-25-aeroporto.csv, linha 65 | correios-2026-11-25-setores.csv, linha 65
+Rua 1A;Residencial Santa Terezinha;Morrinhos/GO;75654-554;correios-2026-11-25-municipio.csv, linha 712 | correios-2026-11-25-residenciais.csv, linha 123
+Rua 1A;Setor Aeroporto;Morrinhos/GO;75654-074;correios-2026-11-25-aeroporto.csv, linha 18 | correios-2026-11-25-municipio.csv, linha 713 | correios-2026-11-25-setores.csv, linha 18
+Rua 2;Centro;Morrinhos/GO;75650-104;correios-2026-11-25-centro.csv, linha 44
+Rua 2;Jardim América;Morrinhos/GO;75650-282;correios-2026-11-25-jardins.csv, linha 20
+Rua 2;Jardim Romano;Morrinhos/GO;75656-130;correios-2026-11-25-jardins.csv, linha 157
+Rua 2;Jardim Romano II;Morrinhos/GO;75656-042;correios-2026-11-25-jardins.csv, linha 161
+Rua 2;Jardim Venezuela;Morrinhos/GO;75650-162;correios-2026-11-25-jardim-venezuela.csv, linha 6 | correios-2026-11-25-jardins.csv, linha 200
+Rua 2;Loteamento Vinícius Cândido;Morrinhos/GO;75650-678;correios-2026-11-25-vinicius.csv, linha 4
+Rua 2;Morro da Saudade;Morrinhos/GO;75650-520;correios-2026-11-25-morro.csv, linha 24
+Rua 2;Morro da Saudade II;Morrinhos/GO;75650-582;correios-2026-11-25-morro.csv, linha 38
+Rua 2;Setor Aeroporto III;Morrinhos/GO;75654-160;correios-2026-11-25-aeroporto.csv, linha 66 | correios-2026-11-25-setores.csv, linha 66
+Rua 2;Setor Cordeiro;Morrinhos/GO;75652-386;correios-2026-11-25-cordeiro.csv, linha 29 | correios-2026-11-25-setores.csv, linha 110
+Rua 2;Setor Cristo Redentor - II Etapa;Morrinhos/GO;75652-166;correios-2026-11-25-cristo-redentor.csv, linha 38 | correios-2026-11-25-setores.csv, linha 152
+Rua 2;Setor Noroeste;Morrinhos/GO;75656-178;correios-2026-11-25-setores.csv, linha 204
+Rua 2;Setor Sul dos Pomares;Morrinhos/GO;75654-300;correios-2026-11-25-setores.csv, linha 281
+Rua 2;Setor São Pedro;Morrinhos/GO;75652-280;correios-2026-11-25-setores.csv, linha 258
+Rua 2;Sol Nascente;Morrinhos/GO;75650-640;correios-2026-11-25-sol-nascente.csv, linha 4
+Rua 2;Vila Bela;Morrinhos/GO;75654-002;correios-2026-11-25-vilas.csv, linha 21
+Rua 2;Vila Nossa Senhora do Carmo;Morrinhos/GO;75656-210;correios-2026-11-25-vilas.csv, linha 38
+Rua 2;Vila Nova I;Morrinhos/GO;75650-331;correios-2026-11-25-vilas.csv, linha 53
+Rua 2;Vila Nova II;Morrinhos/GO;75650-226;correios-2026-11-25-vilas.csv, linha 64
+Rua 2;Vila Nunes;Morrinhos/GO;75650-006;correios-2026-11-25-vilas.csv, linha 84
+Rua 2;Vila Santa Rosa;Morrinhos/GO;75650-733;correios-2026-11-25-vilas.csv, linha 87
+Rua 2;Vila Santos Dumont;Morrinhos/GO;75654-248;correios-2026-11-25-vila-santos-dumont.csv, linha 14 | correios-2026-11-25-vilas.csv, linha 102
+Rua 2 Ramal A;Sol Nascente;Morrinhos/GO;75650-646;correios-2026-11-25-sol-nascente.csv, linha 5
+Rua 2 Ramal B;Sol Nascente;Morrinhos/GO;75650-644;correios-2026-11-25-sol-nascente.csv, linha 6
+Rua 20;Setor Aeroporto;Morrinhos/GO;75654-054;correios-2026-11-25-aeroporto.csv, linha 22 | correios-2026-11-25-setores.csv, linha 22
+Rua 20;Setor Aeroporto III;Morrinhos/GO;75654-146;correios-2026-11-25-aeroporto.csv, linha 67 | correios-2026-11-25-setores.csv, linha 67
+Rua 20;Vila Nova III;Morrinhos/GO;75650-372;correios-2026-11-25-vilas.csv, linha 72
+Rua 202A;Setor Aeroporto;Morrinhos/GO;75654-080;correios-2026-11-25-aeroporto.csv, linha 23 | correios-2026-11-25-setores.csv, linha 23
+Rua 203;Setor Aeroporto;Morrinhos/GO;75654-092;correios-2026-11-25-aeroporto.csv, linha 24 | correios-2026-11-25-setores.csv, linha 24
+Rua 203A;Setor Aeroporto;Morrinhos/GO;75654-088;correios-2026-11-25-aeroporto.csv, linha 25 | correios-2026-11-25-setores.csv, linha 25
+Rua 204;Setor Aeroporto;Morrinhos/GO;75654-112;correios-2026-11-25-aeroporto.csv, linha 26 | correios-2026-11-25-setores.csv, linha 26
+Rua 204A;Setor Aeroporto;Morrinhos/GO;75654-098;correios-2026-11-25-aeroporto.csv, linha 27 | correios-2026-11-25-setores.csv, linha 27
+Rua 204A;Setor Aeroporto III;Morrinhos/GO;75654-148;correios-2026-11-25-aeroporto.csv, linha 68 | correios-2026-11-25-setores.csv, linha 68
+Rua 204B;Setor Aeroporto;Morrinhos/GO;75654-106;correios-2026-11-25-aeroporto.csv, linha 28 | correios-2026-11-25-setores.csv, linha 28
+Rua 205;Setor Aeroporto;Morrinhos/GO;75654-114;correios-2026-11-25-aeroporto.csv, linha 29 | correios-2026-11-25-setores.csv, linha 29
+Rua 205A;Setor Aeroporto;Morrinhos/GO;75654-102;correios-2026-11-25-aeroporto.csv, linha 30 | correios-2026-11-25-setores.csv, linha 30
+Rua 205A;Vila Mutirão;Morrinhos/GO;75654-170;correios-2026-11-25-vilas.csv, linha 33
+Rua 205B;Setor Aeroporto;Morrinhos/GO;75654-100;correios-2026-11-25-aeroporto.csv, linha 31 | correios-2026-11-25-setores.csv, linha 31
+Rua 205B;Setor Aeroporto III;Morrinhos/GO;75654-152;correios-2026-11-25-aeroporto.csv, linha 69 | correios-2026-11-25-setores.csv, linha 69
+Rua 206;Setor Aeroporto;Morrinhos/GO;75654-116;correios-2026-11-25-aeroporto.csv, linha 32 | correios-2026-11-25-setores.csv, linha 32
+Rua 207;Setor Aeroporto;Morrinhos/GO;75654-124;correios-2026-11-25-aeroporto.csv, linha 33 | correios-2026-11-25-setores.csv, linha 33
+Rua 208;Setor Aeroporto;Morrinhos/GO;75654-118;correios-2026-11-25-aeroporto.csv, linha 34 | correios-2026-11-25-setores.csv, linha 34
+Rua 209;Setor Aeroporto;Morrinhos/GO;75654-130;correios-2026-11-25-aeroporto.csv, linha 35 | correios-2026-11-25-setores.csv, linha 35
+Rua 209;Vila Santos Dumont;Morrinhos/GO;75654-190;correios-2026-11-25-vila-santos-dumont.csv, linha 19 | correios-2026-11-25-vilas.csv, linha 107
+Rua 20A;Setor Oeste;Morrinhos/GO;75650-052;correios-2026-11-25-setores.csv, linha 231
+Rua 21;Setor Aeroporto;Morrinhos/GO;75654-076;correios-2026-11-25-aeroporto.csv, linha 36 | correios-2026-11-25-setores.csv, linha 36
+Rua 21;Setor Aeroporto III;Morrinhos/GO;75654-142;correios-2026-11-25-aeroporto.csv, linha 70 | correios-2026-11-25-setores.csv, linha 70
+Rua 21;São Francisco de Assis;Morrinhos/GO;75650-190;correios-2026-11-25-saoFrancisco.csv, linha 15
+Rua 21;Vila Nova III;Morrinhos/GO;75650-366;correios-2026-11-25-vilas.csv, linha 73
+Rua 211;Setor Aeroporto;Morrinhos/GO;75654-126;correios-2026-11-25-aeroporto.csv, linha 37 | correios-2026-11-25-setores.csv, linha 37
+Rua 212;Setor Aeroporto;Morrinhos/GO;75654-086;correios-2026-11-25-aeroporto.csv, linha 38 | correios-2026-11-25-setores.csv, linha 38
+Rua 212;Vila Santos Dumont;Morrinhos/GO;75654-192;correios-2026-11-25-vila-santos-dumont.csv, linha 20 | correios-2026-11-25-vilas.csv, linha 108
+Rua 212A;Setor Aeroporto;Morrinhos/GO;75654-094;correios-2026-11-25-aeroporto.csv, linha 39 | correios-2026-11-25-setores.csv, linha 39
+Rua 212B;Setor Aeroporto;Morrinhos/GO;75654-122;correios-2026-11-25-aeroporto.csv, linha 40 | correios-2026-11-25-setores.csv, linha 40
+Rua 213;Setor Aeroporto;Morrinhos/GO;75654-121;correios-2026-11-25-aeroporto.csv, linha 41 | correios-2026-11-25-setores.csv, linha 41
+Rua 213;Vila Santos Dumont;Morrinhos/GO;75654-212;correios-2026-11-25-vila-santos-dumont.csv, linha 21 | correios-2026-11-25-vilas.csv, linha 109
+Rua 213;Vila Santos Dumont II;Morrinhos/GO;75654-320;correios-2026-11-25-vila-santos-dumont.csv, linha 48 | correios-2026-11-25-vilas.csv, linha 136
+Rua 214A;Setor Aeroporto;Morrinhos/GO;75654-089;correios-2026-11-25-aeroporto.csv, linha 42 | correios-2026-11-25-setores.csv, linha 42
+Rua 215;Setor Aeroporto;Morrinhos/GO;75654-066;correios-2026-11-25-aeroporto.csv, linha 43 | correios-2026-11-25-setores.csv, linha 43
+Rua 216;Setor Aeroporto;Morrinhos/GO;75654-123;correios-2026-11-25-aeroporto.csv, linha 44 | correios-2026-11-25-setores.csv, linha 44
+Rua 216;Vila Santos Dumont II;Morrinhos/GO;75654-350;correios-2026-11-25-vila-santos-dumont.csv, linha 49 | correios-2026-11-25-vilas.csv, linha 137
+Rua 21A;Setor Oeste;Morrinhos/GO;75650-056;correios-2026-11-25-setores.csv, linha 232
+Rua 22;Setor Aeroporto;Morrinhos/GO;75654-081;correios-2026-11-25-aeroporto.csv, linha 45 | correios-2026-11-25-setores.csv, linha 45
+Rua 22-A;Setor Aeroporto;Morrinhos/GO;75654-079;correios-2026-11-25-aeroporto.csv, linha 46 | correios-2026-11-25-setores.csv, linha 46
+Rua 22A;Vila Nossa Senhora do Carmo;Morrinhos/GO;75656-216;correios-2026-11-25-vilas.csv, linha 39
+Rua 22B;Setor Aeroporto;Morrinhos/GO;75654-078;correios-2026-11-25-aeroporto.csv, linha 47 | correios-2026-11-25-setores.csv, linha 47
+Rua 23;São Francisco de Assis;Morrinhos/GO;75650-197;correios-2026-11-25-saoFrancisco.csv, linha 16
+Rua 24;São Francisco de Assis;Morrinhos/GO;75650-196;correios-2026-11-25-saoFrancisco.csv, linha 17
+Rua 24;Vila Bela;Morrinhos/GO;75654-020;correios-2026-11-25-vilas.csv, linha 22
+Rua 25;Centro;Morrinhos/GO;75650-156;correios-2026-11-25-centro.csv, linha 45
+Rua 25;Jardim Santa Fé;Morrinhos/GO;75652-118;correios-2026-11-25-jardins.csv, linha 171
+Rua 25;Setor Oeste;Morrinhos/GO;75650-020;correios-2026-11-25-setores.csv, linha 233
+Rua 25;São Francisco de Assis;Morrinhos/GO;75650-198;correios-2026-11-25-saoFrancisco.csv, linha 18
+Rua 25 de Maio;Setor Arca de Noé;Morrinhos/GO;75654-398;correios-2026-11-25-setores.csv, linha 92
+Rua 25-A;São Francisco de Assis;Morrinhos/GO;75650-199;correios-2026-11-25-saoFrancisco.csv, linha 19
+Rua 26;Jardim Santa Fé;Morrinhos/GO;75652-116;correios-2026-11-25-jardins.csv, linha 172
+Rua 26;São Francisco de Assis;Morrinhos/GO;75650-194;correios-2026-11-25-saoFrancisco.csv, linha 20
+Rua 27;Jardim Santa Fé;Morrinhos/GO;75652-114;correios-2026-11-25-jardins.csv, linha 173
+Rua 27;Setor José Jesuíno Filho;Morrinhos/GO;75652-074;correios-2026-11-25-setores.csv, linha 184
+Rua 27;Setor Professor Olyntho Cândido;Morrinhos/GO;75652-006;correios-2026-11-25-setores.csv, linha 244
+Rua 27;São Francisco de Assis;Morrinhos/GO;75650-170;correios-2026-11-25-saoFrancisco.csv, linha 21
+Rua 28;Jardim Santa Fé;Morrinhos/GO;75652-128;correios-2026-11-25-jardins.csv, linha 174
+Rua 29;Jardim Santa Fé;Morrinhos/GO;75652-130;correios-2026-11-25-jardins.csv, linha 175
+Rua 29;Setor Cordeiro;Morrinhos/GO;75652-325;correios-2026-11-25-cordeiro.csv, linha 30 | correios-2026-11-25-setores.csv, linha 111
+Rua 29;Setor Cristo Redentor;Morrinhos/GO;75652-196;correios-2026-11-25-cristo-redentor.csv, linha 17 | correios-2026-11-25-setores.csv, linha 131
+Rua 29;Setor José Jesuíno Filho;Morrinhos/GO;75652-070;correios-2026-11-25-setores.csv, linha 185
+Rua 2A;Residencial Santa Terezinha;Morrinhos/GO;75654-552;correios-2026-11-25-residenciais.csv, linha 124
+Rua 2A;Vila Santos Dumont;Morrinhos/GO;75654-264;correios-2026-11-25-vila-santos-dumont.csv, linha 15 | correios-2026-11-25-vilas.csv, linha 103
+Rua 2B;Vila Santos Dumont;Morrinhos/GO;75654-262;correios-2026-11-25-vila-santos-dumont.csv, linha 16 | correios-2026-11-25-vilas.csv, linha 104
+Rua 2C;Vila Santos Dumont;Morrinhos/GO;75654-260;correios-2026-11-25-vila-santos-dumont.csv, linha 17 | correios-2026-11-25-vilas.csv, linha 105
+Rua 2D;Vila Santos Dumont;Morrinhos/GO;75654-258;correios-2026-11-25-vila-santos-dumont.csv, linha 18 | correios-2026-11-25-vilas.csv, linha 106
+Rua 3;Estância da Saudade - Bairro Morro da Saudade;Morrinhos/GO;75650-594;correios-2026-11-25-morro.csv, linha 4
+Rua 3;Jardim Romano;Morrinhos/GO;75656-132;correios-2026-11-25-jardins.csv, linha 158
+Rua 3;Jardim Santa Terezinha I;Morrinhos/GO;75654-598;correios-2026-11-25-jardins.csv, linha 182
+Rua 3;Loteamento Vinícius Cândido;Morrinhos/GO;75650-676;correios-2026-11-25-vinicius.csv, linha 5
+Rua 3;Morro da Saudade;Morrinhos/GO;75650-526;correios-2026-11-25-morro.csv, linha 25
+Rua 3;Morro da Saudade II;Morrinhos/GO;75650-584;correios-2026-11-25-morro.csv, linha 39
+Rua 3;Setor Cordeiro;Morrinhos/GO;75652-384;correios-2026-11-25-cordeiro.csv, linha 31 | correios-2026-11-25-setores.csv, linha 112
+Rua 3;Setor Noroeste;Morrinhos/GO;75656-180;correios-2026-11-25-setores.csv, linha 205
+Rua 3;Setor Sul dos Pomares;Morrinhos/GO;75654-304;correios-2026-11-25-setores.csv, linha 282
+Rua 3;Setor São Pedro;Morrinhos/GO;75652-290;correios-2026-11-25-setores.csv, linha 259
+Rua 3;Sol Nascente;Morrinhos/GO;75650-642;correios-2026-11-25-sol-nascente.csv, linha 7
+Rua 3;Vila Bela;Morrinhos/GO;75654-010;correios-2026-11-25-vilas.csv, linha 23
+Rua 3;Vila Nossa Senhora do Carmo;Morrinhos/GO;75656-214;correios-2026-11-25-vilas.csv, linha 40
+Rua 3;Vila Nova I;Morrinhos/GO;75650-342;correios-2026-11-25-vilas.csv, linha 54
+Rua 3;Vila Santos Dumont;Morrinhos/GO;75654-242;correios-2026-11-25-vila-santos-dumont.csv, linha 22 | correios-2026-11-25-vilas.csv, linha 110
+Rua 30 de Agosto;Setor Arca de Noé;Morrinhos/GO;75654-406;correios-2026-11-25-setores.csv, linha 93
+Rua 33;São Francisco de Assis;Morrinhos/GO;75650-184;correios-2026-11-25-saoFrancisco.csv, linha 22
+Rua 34;São Francisco de Assis;Morrinhos/GO;75650-188;correios-2026-11-25-saoFrancisco.csv, linha 23
+Rua 35;São Francisco de Assis;Morrinhos/GO;75650-186;correios-2026-11-25-saoFrancisco.csv, linha 24
+Rua 3A;JK;Morrinhos/GO;75650-418;correios-2026-11-25-jk.csv, linha 8
+Rua 3A;Morro da Saudade;Morrinhos/GO;75650-522;correios-2026-11-25-morro.csv, linha 26
+Rua 3A;Vila Santos Dumont;Morrinhos/GO;75654-244;correios-2026-11-25-vila-santos-dumont.csv, linha 23 | correios-2026-11-25-vilas.csv, linha 111
+Rua 4;Centro;Morrinhos/GO;75650-106;correios-2026-11-25-centro.csv, linha 46
+Rua 4;Estância da Saudade - Bairro Morro da Saudade;Morrinhos/GO;75650-596;correios-2026-11-25-morro.csv, linha 5
+Rua 4;Jardim Romano II;Morrinhos/GO;75656-044;correios-2026-11-25-jardins.csv, linha 162
+Rua 4;Loteamento Vinícius Cândido;Morrinhos/GO;75650-670;correios-2026-11-25-vinicius.csv, linha 6
+Rua 4;Morro da Saudade;Morrinhos/GO;75650-528;correios-2026-11-25-morro.csv, linha 27
+Rua 4;Morro da Saudade II;Morrinhos/GO;75650-586;correios-2026-11-25-morro.csv, linha 40
+Rua 4;Residencial Jarina Park;Morrinhos/GO;75650-690;correios-2026-11-25-residenciais.csv, linha 101
+Rua 4;Setor Sul dos Pomares;Morrinhos/GO;75654-306;correios-2026-11-25-setores.csv, linha 283
+Rua 4;Setor São Pedro;Morrinhos/GO;75652-292;correios-2026-11-25-setores.csv, linha 260
+Rua 4;Sol Nascente;Morrinhos/GO;75650-664;correios-2026-11-25-sol-nascente.csv, linha 8
+Rua 4;Sol Nascente 2ª Etapa;Morrinhos/GO;75650-612;correios-2026-11-25-sol-nascente.csv, linha 16
+Rua 4;Vila Nossa Senhora do Carmo;Morrinhos/GO;75656-218;correios-2026-11-25-vilas.csv, linha 41
+Rua 4;Vila Nova I;Morrinhos/GO;75650-334;correios-2026-11-25-vilas.csv, linha 55
+Rua 4;Vila Santa Rosa;Morrinhos/GO;75650-735;correios-2026-11-25-vilas.csv, linha 88
+Rua 4;Vila Santos Dumont;Morrinhos/GO;75654-210;correios-2026-11-25-vila-santos-dumont.csv, linha 24 | correios-2026-11-25-vilas.csv, linha 112
+Rua 4A;Vila Santos Dumont;Morrinhos/GO;75654-236;correios-2026-11-25-vila-santos-dumont.csv, linha 25 | correios-2026-11-25-vilas.csv, linha 113
+Rua 4B;Vila Santos Dumont;Morrinhos/GO;75654-234;correios-2026-11-25-vila-santos-dumont.csv, linha 26 | correios-2026-11-25-vilas.csv, linha 114
+Rua 4C;Vila Santos Dumont;Morrinhos/GO;75654-232;correios-2026-11-25-vila-santos-dumont.csv, linha 27 | correios-2026-11-25-vilas.csv, linha 115
+Rua 4D;Vila Santos Dumont;Morrinhos/GO;75654-230;correios-2026-11-25-vila-santos-dumont.csv, linha 28 | correios-2026-11-25-vilas.csv, linha 116
+Rua 5;Barra do Cordeiro;Morrinhos/GO;75650-400;correios-2026-11-25-cordeiro.csv, linha 9
+Rua 5;Centro;Morrinhos/GO;75650-112;correios-2026-11-25-centro.csv, linha 47
+Rua 5;Jardim América;Morrinhos/GO;75650-302;correios-2026-11-25-jardins.csv, linha 21
+Rua 5;Jardim Santa Terezinha II;Morrinhos/GO;75654-622;correios-2026-11-25-jardins.csv, linha 192
+Rua 5;Jardim Venezuela;Morrinhos/GO;75650-160;correios-2026-11-25-jardim-venezuela.csv, linha 7 | correios-2026-11-25-jardins.csv, linha 201
+Rua 5;Loteamento Vinícius Cândido;Morrinhos/GO;75650-672;correios-2026-11-25-vinicius.csv, linha 7
+Rua 5;Morro da Saudade;Morrinhos/GO;75650-540;correios-2026-11-25-morro.csv, linha 28
+Rua 5;Morro da Saudade II;Morrinhos/GO;75650-572;correios-2026-11-25-morro.csv, linha 41
+Rua 5;Setor Aeroporto III;Morrinhos/GO;75654-147;correios-2026-11-25-aeroporto.csv, linha 71 | correios-2026-11-25-setores.csv, linha 71
+Rua 5;Setor Sul dos Pomares;Morrinhos/GO;75654-302;correios-2026-11-25-setores.csv, linha 284
+Rua 5;Setor São Pedro;Morrinhos/GO;75652-296;correios-2026-11-25-setores.csv, linha 261
+Rua 5;Sol Nascente;Morrinhos/GO;75650-660;correios-2026-11-25-sol-nascente.csv, linha 9
+Rua 5;Vila Nossa Senhora do Carmo;Morrinhos/GO;75656-224;correios-2026-11-25-vilas.csv, linha 42
+Rua 5;Vila Nova I;Morrinhos/GO;75650-346;correios-2026-11-25-vilas.csv, linha 56
+Rua 5;Vila Santa Rosa;Morrinhos/GO;75650-731;correios-2026-11-25-vilas.csv, linha 89
+Rua 5;Vila Santos Dumont;Morrinhos/GO;75654-194;correios-2026-11-25-vila-santos-dumont.csv, linha 29 | correios-2026-11-25-vilas.csv, linha 117
+Rua 6;Jardim América;Morrinhos/GO;75650-284;correios-2026-11-25-jardins.csv, linha 22
+Rua 6;Loteamento Vinícius Cândido;Morrinhos/GO;75650-674;correios-2026-11-25-vinicius.csv, linha 8
+Rua 6;Morro da Saudade;Morrinhos/GO;75650-542;correios-2026-11-25-morro.csv, linha 29
+Rua 6;Setor Noroeste;Morrinhos/GO;75656-184;correios-2026-11-25-setores.csv, linha 206
+Rua 6;Setor Sul dos Pomares;Morrinhos/GO;75654-308;correios-2026-11-25-setores.csv, linha 285
+Rua 6;Setor São Pedro;Morrinhos/GO;75652-282;correios-2026-11-25-setores.csv, linha 262
+Rua 6;Sol Nascente;Morrinhos/GO;75650-654;correios-2026-11-25-sol-nascente.csv, linha 10
+Rua 6;Vila Nossa Senhora do Carmo;Morrinhos/GO;75656-232;correios-2026-11-25-vilas.csv, linha 43
+Rua 6;Vila Nova I;Morrinhos/GO;75650-332;correios-2026-11-25-vilas.csv, linha 57
+Rua 6;Vila Nova II;Morrinhos/GO;75650-220;correios-2026-11-25-vilas.csv, linha 65
+Rua 6;Vila Santos Dumont;Morrinhos/GO;75654-196;correios-2026-11-25-vila-santos-dumont.csv, linha 30 | correios-2026-11-25-vilas.csv, linha 118
+Rua 6A;Barra do Cordeiro;Morrinhos/GO;75650-396;correios-2026-11-25-cordeiro.csv, linha 10
+Rua 6B;Morro da Saudade II;Morrinhos/GO;75650-574;correios-2026-11-25-morro.csv, linha 42
+Rua 7;Barra do Cordeiro;Morrinhos/GO;75650-394;correios-2026-11-25-cordeiro.csv, linha 11
+Rua 7;Jardim América;Morrinhos/GO;75650-286;correios-2026-11-25-jardins.csv, linha 23
+Rua 7;Jardim Santa Terezinha I;Morrinhos/GO;75654-594;correios-2026-11-25-jardins.csv, linha 183
+Rua 7;Jardim Santa Terezinha II;Morrinhos/GO;75654-626;correios-2026-11-25-jardins.csv, linha 193
+Rua 7;Morro da Saudade;Morrinhos/GO;75650-532;correios-2026-11-25-morro.csv, linha 30
+Rua 7;Morro da Saudade II;Morrinhos/GO;75650-576;correios-2026-11-25-morro.csv, linha 43
+Rua 7;Setor São Pedro;Morrinhos/GO;75652-286;correios-2026-11-25-setores.csv, linha 263
+Rua 7;Sol Nascente;Morrinhos/GO;75650-650;correios-2026-11-25-sol-nascente.csv, linha 11
+Rua 7;Vila Nossa Senhora do Carmo;Morrinhos/GO;75656-220;correios-2026-11-25-vilas.csv, linha 44
+Rua 7;Vila Nova I;Morrinhos/GO;75650-348;correios-2026-11-25-vilas.csv, linha 58
+Rua 7;Vila Santos Dumont;Morrinhos/GO;75654-198;correios-2026-11-25-vila-santos-dumont.csv, linha 31 | correios-2026-11-25-vilas.csv, linha 119
+Rua 7 de Setembro;Centro;Morrinhos/GO;75650-078;correios-2026-11-25-centro.csv, linha 48
+Rua 7 de Setembro;Setor Noroeste;Morrinhos/GO;75656-188;correios-2026-11-25-setores.csv, linha 207
+Rua 7 de Setembro;São Francisco de Assis;Morrinhos/GO;75650-212;correios-2026-11-25-saoFrancisco.csv, linha 25
+Rua 7 de Setembro Ramal A;São Francisco de Assis;Morrinhos/GO;75650-214;correios-2026-11-25-saoFrancisco.csv, linha 26
+Rua 7 de Setembro Ramal B;São Francisco de Assis;Morrinhos/GO;75650-206;correios-2026-11-25-saoFrancisco.csv, linha 27
+Rua 8;Barra do Cordeiro;Morrinhos/GO;75650-384;correios-2026-11-25-cordeiro.csv, linha 12
+Rua 8;Jardim América;Morrinhos/GO;75650-304;correios-2026-11-25-jardins.csv, linha 24
+Rua 8;Jardim Santa Fé;Morrinhos/GO;75652-122;correios-2026-11-25-jardins.csv, linha 176
+Rua 8;Jardim Santa Terezinha I;Morrinhos/GO;75654-602;correios-2026-11-25-jardins.csv, linha 184
+Rua 8;Morro da Saudade;Morrinhos/GO;75650-552;correios-2026-11-25-morro.csv, linha 31
+Rua 8;Morro da Saudade II;Morrinhos/GO;75650-578;correios-2026-11-25-morro.csv, linha 44
+Rua 8;Setor São Pedro;Morrinhos/GO;75652-274;correios-2026-11-25-setores.csv, linha 264
+Rua 8;Sol Nascente;Morrinhos/GO;75650-662;correios-2026-11-25-sol-nascente.csv, linha 12
+Rua 8;Sol Nascente 2ª Etapa;Morrinhos/GO;75650-614;correios-2026-11-25-sol-nascente.csv, linha 17
+Rua 8;Vila Nossa Senhora do Carmo;Morrinhos/GO;75656-230;correios-2026-11-25-vilas.csv, linha 45
+Rua 8;Vila Nova I;Morrinhos/GO;75650-350;correios-2026-11-25-vilas.csv, linha 59
+Rua 8;Vila Nova II;Morrinhos/GO;75650-228;correios-2026-11-25-vilas.csv, linha 66
+Rua 8;Vila Santos Dumont;Morrinhos/GO;75654-200;correios-2026-11-25-vila-santos-dumont.csv, linha 32 | correios-2026-11-25-vilas.csv, linha 120
+Rua 8 de Agosto;Setor Arca de Noé;Morrinhos/GO;75654-400;correios-2026-11-25-setores.csv, linha 94
+Rua 9;Barra do Cordeiro;Morrinhos/GO;75650-390;correios-2026-11-25-cordeiro.csv, linha 13
+Rua 9;Jardim América;Morrinhos/GO;75650-288;correios-2026-11-25-jardins.csv, linha 25
+Rua 9;Morro da Saudade;Morrinhos/GO;75650-554;correios-2026-11-25-morro.csv, linha 32
+Rua 9;Morro da Saudade II;Morrinhos/GO;75650-580;correios-2026-11-25-morro.csv, linha 45
+Rua 9;Sol Nascente;Morrinhos/GO;75650-656;correios-2026-11-25-sol-nascente.csv, linha 13
+Rua 9;Sol Nascente 2ª Etapa;Morrinhos/GO;75650-616;correios-2026-11-25-sol-nascente.csv, linha 18
+Rua 9;Vila Nossa Senhora do Carmo;Morrinhos/GO;75656-222;correios-2026-11-25-vilas.csv, linha 46
+Rua 9;Vila Nova I;Morrinhos/GO;75650-352;correios-2026-11-25-vilas.csv, linha 60
+Rua 9;Vila Santos Dumont;Morrinhos/GO;75654-270;correios-2026-11-25-vila-santos-dumont.csv, linha 33 | correios-2026-11-25-vilas.csv, linha 121
+Rua A;Setor Noroeste;Morrinhos/GO;75656-200;correios-2026-11-25-municipio.csv, linha 195 | correios-2026-11-25-setores.csv, linha 195
+Rua A;Vila Bela;Morrinhos/GO;75654-016;correios-2026-11-25-municipio.csv, linha 196 | correios-2026-11-25-vilas.csv, linha 3
+Rua A Salvador Costa;Setor Irinéia de Freitas;Morrinhos/GO;75652-484;correios-2026-11-25-municipio.csv, linha 197 | correios-2026-11-25-setores.csv, linha 163
+Rua Adelino Ribeiro da Silva;Condomínio Recanto das Araras;Morrinhos/GO;75650-442;correios-2026-11-25-municipio.csv, linha 199
+Rua Adelino Ribeiro da Silva;Morro da Saudade;Morrinhos/GO;75650-534;correios-2026-11-25-morro.csv, linha 7 | correios-2026-11-25-municipio.csv, linha 200
+Rua Alagoas;Centro;Morrinhos/GO;75650-136;correios-2026-11-25-centro.csv, linha 12 | correios-2026-11-25-municipio.csv, linha 201
+Rua Alagoas;JK;Morrinhos/GO;75650-414;correios-2026-11-25-jk.csv, linha 2 | correios-2026-11-25-municipio.csv, linha 202
+Rua Alagoas;Morro da Saudade;Morrinhos/GO;75650-558;correios-2026-11-25-morro.csv, linha 8 | correios-2026-11-25-municipio.csv, linha 203
+Rua Alexandria;Jardim Romano;Morrinhos/GO;75656-078;correios-2026-11-25-jardins.csv, linha 122 | correios-2026-11-25-municipio.csv, linha 204
+Rua Amazonas;Centro;Morrinhos/GO;75650-074;correios-2026-11-25-centro.csv, linha 13 | correios-2026-11-25-municipio.csv, linha 205
+Rua Amazonas;Setor Noroeste;Morrinhos/GO;75656-174;correios-2026-11-25-municipio.csv, linha 206 | correios-2026-11-25-setores.csv, linha 196
+Rua Anaildes Maria do Carmo Oliveira;JK;Morrinhos/GO;75650-420;correios-2026-11-25-jk.csv, linha 3 | correios-2026-11-25-municipio.csv, linha 207
+Rua Ancona;Jardim Romano;Morrinhos/GO;75656-114;correios-2026-11-25-jardins.csv, linha 123 | correios-2026-11-25-municipio.csv, linha 208
+Rua Angico;Jardim Colibri;Morrinhos/GO;75656-324;correios-2026-11-25-jardins.csv, linha 62 | correios-2026-11-25-municipio.csv, linha 209
+Rua Antônio Cascão;Setor Arca de Noé;Morrinhos/GO;75654-386;correios-2026-11-25-municipio.csv, linha 210 | correios-2026-11-25-setores.csv, linha 78
+Rua Antônio Rosa Ribeiro Falcão;Setor José Jesuíno Filho;Morrinhos/GO;75652-096;correios-2026-11-25-municipio.csv, linha 211 | correios-2026-11-25-setores.csv, linha 172
+Rua Antônio Rosa Ribeiro Falcão;Setor Professor Olyntho Cândido;Morrinhos/GO;75652-004;correios-2026-11-25-municipio.csv, linha 212 | correios-2026-11-25-setores.csv, linha 234
+Rua Arezzo;Jardim Romano;Morrinhos/GO;75656-112;correios-2026-11-25-jardins.csv, linha 124 | correios-2026-11-25-municipio.csv, linha 213
+Rua Argos;Reserva Atenas;Morrinhos/GO;75654-520;correios-2026-11-25-municipio.csv, linha 214
+Rua Aroeira;Jardim Colibri;Morrinhos/GO;75656-294;correios-2026-11-25-jardins.csv, linha 63 | correios-2026-11-25-municipio.csv, linha 215
+Rua Aroeira;Residencial Mirante do Bosque;Morrinhos/GO;75656-610;correios-2026-11-25-municipio.csv, linha 216 | correios-2026-11-25-residenciais.csv, linha 102
+Rua Açaí;Jardim Colibri;Morrinhos/GO;75656-310;correios-2026-11-25-jardins.csv, linha 61 | correios-2026-11-25-municipio.csv, linha 198
+Rua B;Vila Bela;Morrinhos/GO;75654-026;correios-2026-11-25-municipio.csv, linha 217 | correios-2026-11-25-vilas.csv, linha 4
+Rua B-1;Vila Santos Dumont;Morrinhos/GO;75654-202;correios-2026-11-25-municipio.csv, linha 274 | correios-2026-11-25-vila-santos-dumont.csv, linha 7 | correios-2026-11-25-vilas.csv, linha 95
+Rua B-1A;Vila Santos Dumont;Morrinhos/GO;75654-274;correios-2026-11-25-vila-santos-dumont.csv, linha 8 | correios-2026-11-25-vilas.csv, linha 96
+Rua BV 1;Setor Cordeiro;Morrinhos/GO;75652-500;correios-2026-11-25-cordeiro.csv, linha 16 | correios-2026-11-25-municipio.csv, linha 236 | correios-2026-11-25-setores.csv, linha 97
+Rua BV-03;Jardim Hadassa;Morrinhos/GO;75652-770;correios-2026-11-25-jardins.csv, linha 92 | correios-2026-11-25-municipio.csv, linha 237
+Rua BV-1;Jardim Bela Vista II;Morrinhos/GO;75652-588;correios-2026-11-25-jardins.csv, linha 40 | correios-2026-11-25-municipio.csv, linha 238
+Rua BV-1;Jardim Bela Vista III;Morrinhos/GO;75652-620;correios-2026-11-25-jardins.csv, linha 52 | correios-2026-11-25-municipio.csv, linha 239
+Rua BV-1;Jardim Bela Vista IV;Morrinhos/GO;75652-630;correios-2026-11-25-jardins.csv, linha 54 | correios-2026-11-25-municipio.csv, linha 240
+Rua BV-1;Jardim Primavera;Morrinhos/GO;75652-490;correios-2026-11-25-jardins.csv, linha 113 | correios-2026-11-25-municipio.csv, linha 241
+Rua BV-1;Residencial Antônio Correia Bueno;Morrinhos/GO;75652-550;correios-2026-11-25-municipio.csv, linha 242 | correios-2026-11-25-residenciais.csv, linha 28
+Rua BV-1;Residencial Califórnia;Morrinhos/GO;75652-610;correios-2026-11-25-municipio.csv, linha 243 | correios-2026-11-25-residenciais.csv, linha 39
+Rua BV-1;Residencial dos Buritis;Morrinhos/GO;75652-640;correios-2026-11-25-municipio.csv, linha 244 | correios-2026-11-25-residenciais.csv, linha 61
+Rua BV-10;Jardim Bela Vista;Morrinhos/GO;75652-664;correios-2026-11-25-jardins.csv, linha 26 | correios-2026-11-25-municipio.csv, linha 247
+Rua BV-10;Jardim Bela Vista II;Morrinhos/GO;75652-600;correios-2026-11-25-jardins.csv, linha 41 | correios-2026-11-25-municipio.csv, linha 248
+Rua BV-11;Jardim Bela Vista;Morrinhos/GO;75652-666;correios-2026-11-25-jardins.csv, linha 27 | correios-2026-11-25-municipio.csv, linha 249
+Rua BV-11;Jardim Bela Vista II;Morrinhos/GO;75652-602;correios-2026-11-25-jardins.csv, linha 42 | correios-2026-11-25-municipio.csv, linha 250
+Rua BV-11A;Jardim Bela Vista;Morrinhos/GO;75652-668;correios-2026-11-25-jardins.csv, linha 28 | correios-2026-11-25-municipio.csv, linha 251
+Rua BV-12;Jardim Bela Vista;Morrinhos/GO;75652-670;correios-2026-11-25-jardins.csv, linha 29 | correios-2026-11-25-municipio.csv, linha 252
+Rua BV-13;Jardim Bela Vista;Morrinhos/GO;75652-672;correios-2026-11-25-jardins.csv, linha 30 | correios-2026-11-25-municipio.csv, linha 253
+Rua BV-14;Jardim Bela Vista;Morrinhos/GO;75652-674;correios-2026-11-25-jardins.csv, linha 31 | correios-2026-11-25-municipio.csv, linha 254
+Rua BV-14A;Jardim Bela Vista;Morrinhos/GO;75652-676;correios-2026-11-25-jardins.csv, linha 32 | correios-2026-11-25-municipio.csv, linha 255
+Rua BV-1A;Jardim Bela Vista III;Morrinhos/GO;75652-622;correios-2026-11-25-jardins.csv, linha 53 | correios-2026-11-25-municipio.csv, linha 245
+Rua BV-1B;Jardim Bela Vista IV;Morrinhos/GO;75652-632;correios-2026-11-25-jardins.csv, linha 55 | correios-2026-11-25-municipio.csv, linha 246
+Rua BV-2;Jardim Bela Vista II;Morrinhos/GO;75652-582;correios-2026-11-25-jardins.csv, linha 43 | correios-2026-11-25-municipio.csv, linha 256
+Rua BV-2B;Jardim Bela Vista IV;Morrinhos/GO;75652-636;correios-2026-11-25-jardins.csv, linha 56 | correios-2026-11-25-municipio.csv, linha 257
+Rua BV-3;Jardim Bela Vista;Morrinhos/GO;75652-654;correios-2026-11-25-jardins.csv, linha 33 | correios-2026-11-25-municipio.csv, linha 258
+Rua BV-3;Jardim Bela Vista II;Morrinhos/GO;75652-594;correios-2026-11-25-jardins.csv, linha 44 | correios-2026-11-25-municipio.csv, linha 259
+Rua BV-3;Jardim Portugal;Morrinhos/GO;75652-464;correios-2026-11-25-jardins.csv, linha 107 | correios-2026-11-25-municipio.csv, linha 260
+Rua BV-3B;Jardim Bela Vista IV;Morrinhos/GO;75652-634;correios-2026-11-25-jardins.csv, linha 57 | correios-2026-11-25-municipio.csv, linha 261
+Rua BV-4;Jardim Bela Vista II;Morrinhos/GO;75652-584;correios-2026-11-25-jardins.csv, linha 45 | correios-2026-11-25-municipio.csv, linha 262
+Rua BV-5;Jardim Bela Vista;Morrinhos/GO;75652-650;correios-2026-11-25-jardins.csv, linha 34 | correios-2026-11-25-municipio.csv, linha 263
+Rua BV-5;Jardim Bela Vista II;Morrinhos/GO;75652-586;correios-2026-11-25-jardins.csv, linha 46 | correios-2026-11-25-municipio.csv, linha 264
+Rua BV-5;Jardim Portugal;Morrinhos/GO;75652-468;correios-2026-11-25-jardins.csv, linha 108 | correios-2026-11-25-municipio.csv, linha 265
+Rua BV-6;Jardim Bela Vista;Morrinhos/GO;75652-656;correios-2026-11-25-jardins.csv, linha 35 | correios-2026-11-25-municipio.csv, linha 266
+Rua BV-6;Jardim Bela Vista II;Morrinhos/GO;75652-590;correios-2026-11-25-jardins.csv, linha 47 | correios-2026-11-25-municipio.csv, linha 267
+Rua BV-7;Jardim Bela Vista;Morrinhos/GO;75652-658;correios-2026-11-25-jardins.csv, linha 36 | correios-2026-11-25-municipio.csv, linha 268
+Rua BV-7;Jardim Bela Vista II;Morrinhos/GO;75652-592;correios-2026-11-25-jardins.csv, linha 48 | correios-2026-11-25-municipio.csv, linha 269
+Rua BV-8;Jardim Bela Vista;Morrinhos/GO;75652-660;correios-2026-11-25-jardins.csv, linha 37 | correios-2026-11-25-municipio.csv, linha 270
+Rua BV-8;Jardim Bela Vista II;Morrinhos/GO;75652-596;correios-2026-11-25-jardins.csv, linha 49 | correios-2026-11-25-municipio.csv, linha 271
+Rua BV-9;Jardim Bela Vista;Morrinhos/GO;75652-662;correios-2026-11-25-jardins.csv, linha 38 | correios-2026-11-25-municipio.csv, linha 272
+Rua BV-9;Jardim Bela Vista II;Morrinhos/GO;75652-598;correios-2026-11-25-jardins.csv, linha 50 | correios-2026-11-25-municipio.csv, linha 273
+Rua Bacuri;Jardim Colibri;Morrinhos/GO;75656-330;correios-2026-11-25-jardins.csv, linha 64 | correios-2026-11-25-municipio.csv, linha 218
+Rua Bari;Jardim Romano;Morrinhos/GO;75656-082;correios-2026-11-25-jardins.csv, linha 125 | correios-2026-11-25-municipio.csv, linha 223
+Rua Barão do Rio Branco;Barra do Cordeiro;Morrinhos/GO;75650-382;correios-2026-11-25-cordeiro.csv, linha 2 | correios-2026-11-25-municipio.csv, linha 219
+Rua Barão do Rio Branco;Centro;Morrinhos/GO;75650-114;correios-2026-11-25-centro.csv, linha 14 | correios-2026-11-25-municipio.csv, linha 220
+Rua Barão do Rio Branco;Jardim América;Morrinhos/GO;75650-306;correios-2026-11-25-jardins.csv, linha 5 | correios-2026-11-25-municipio.csv, linha 221
+Rua Barão do Rio Branco;Vila Nova II;Morrinhos/GO;75650-229;correios-2026-11-25-municipio.csv, linha 222 | correios-2026-11-25-vilas.csv, linha 61
+Rua Barú;Jardim Colibri;Morrinhos/GO;75656-290;correios-2026-11-25-jardins.csv, linha 65 | correios-2026-11-25-municipio.csv, linha 224
+Rua Barú;Residencial Mirante do Bosque;Morrinhos/GO;75656-608;correios-2026-11-25-municipio.csv, linha 225 | correios-2026-11-25-residenciais.csv, linha 103
+Rua Beraldino Jesuíno de Souza;Setor Cristo Redentor;Morrinhos/GO;75652-184;correios-2026-11-25-cristo-redentor.csv, linha 5 | correios-2026-11-25-municipio.csv, linha 226 | correios-2026-11-25-setores.csv, linha 119
+Rua Beraldino Jesuíno de Souza;Setor Cristo Redentor - II Etapa;Morrinhos/GO;75652-148;correios-2026-11-25-cristo-redentor.csv, linha 21 | correios-2026-11-25-municipio.csv, linha 227 | correios-2026-11-25-setores.csv, linha 135
+Rua Beraldino Vicente de Souza;Setor Aeroporto II;Morrinhos/GO;75652-366;correios-2026-11-25-aeroporto.csv, linha 51 | correios-2026-11-25-municipio.csv, linha 228 | correios-2026-11-25-setores.csv, linha 51
+Rua Beraldino Vicente de Souza;Setor Felício Chaves;Morrinhos/GO;75652-446;correios-2026-11-25-setores.csv, linha 155
+Rua Beraldino Vicente de Souza;Setor Irinéia de Freitas;Morrinhos/GO;75652-482;correios-2026-11-25-municipio.csv, linha 229 | correios-2026-11-25-setores.csv, linha 164
+Rua Bolonha;Jardim Goiás;Morrinhos/GO;75656-160;correios-2026-11-25-jardins.csv, linha 82 | correios-2026-11-25-municipio.csv, linha 10
+Rua Bolonha;Jardim Romano;Morrinhos/GO;75656-068;correios-2026-11-25-jardins.csv, linha 127 | correios-2026-11-25-municipio.csv, linha 231
+Rua Bom Retiro;Centro;Morrinhos/GO;75650-126;correios-2026-11-25-centro.csv, linha 15 | correios-2026-11-25-municipio.csv, linha 232
+Rua Brindisi;Jardim Romano;Morrinhos/GO;75656-088;correios-2026-11-25-jardins.csv, linha 129 | correios-2026-11-25-municipio.csv, linha 234
+Rua Bréscia;Jardim Romano;Morrinhos/GO;75656-108;correios-2026-11-25-jardins.csv, linha 128 | correios-2026-11-25-municipio.csv, linha 233
+Rua Buriti;Jardim Colibri;Morrinhos/GO;75656-296;correios-2026-11-25-jardins.csv, linha 66 | correios-2026-11-25-municipio.csv, linha 235
+Rua Bérgamo;Jardim Romano;Morrinhos/GO;75656-070;correios-2026-11-25-jardins.csv, linha 126 | correios-2026-11-25-municipio.csv, linha 230
+Rua C;Vila Bela;Morrinhos/GO;75654-028;correios-2026-11-25-municipio.csv, linha 275 | correios-2026-11-25-vilas.csv, linha 5
+Rua C-1;Setor Aeroporto;Morrinhos/GO;75654-128;correios-2026-11-25-aeroporto.csv, linha 10 | correios-2026-11-25-municipio.csv, linha 329 | correios-2026-11-25-setores.csv, linha 10
+Rua CP-1;Cristina Park;Morrinhos/GO;75652-686;correios-2026-11-25-municipio.csv, linha 289
+Rua CP-10;Cristina Park;Morrinhos/GO;75652-706;correios-2026-11-25-municipio.csv, linha 290
+Rua CP-10;Cristina Park 2;Morrinhos/GO;75652-730;correios-2026-11-25-municipio.csv, linha 291
+Rua CP-11;Cristina Park;Morrinhos/GO;75652-708;correios-2026-11-25-municipio.csv, linha 292
+Rua CP-11;Cristina Park 2;Morrinhos/GO;75652-732;correios-2026-11-25-municipio.csv, linha 293
+Rua CP-12;Cristina Park 2;Morrinhos/GO;75652-733;correios-2026-11-25-municipio.csv, linha 294
+Rua CP-12;Setor Cordeiro II;Morrinhos/GO;75652-744;correios-2026-11-25-cordeiro.csv, linha 32 | correios-2026-11-25-municipio.csv, linha 295 | correios-2026-11-25-setores.csv, linha 113
+Rua CP-2;Cristina Park;Morrinhos/GO;75652-688;correios-2026-11-25-municipio.csv, linha 296
+Rua CP-3;Cristina Park;Morrinhos/GO;75652-692;correios-2026-11-25-municipio.csv, linha 297
+Rua CP-3A;Conjunto Residencial Monte Verde;Morrinhos/GO;75652-438;correios-2026-11-25-residenciais.csv, linha 3
+Rua CP-3A;Cristina Park;Morrinhos/GO;75652-682;correios-2026-11-25-municipio.csv, linha 298
+Rua CP-4;Cristina Park;Morrinhos/GO;75652-694;correios-2026-11-25-municipio.csv, linha 299
+Rua CP-5;Cristina Park;Morrinhos/GO;75652-696;correios-2026-11-25-municipio.csv, linha 300
+Rua CP-6;Cristina Park;Morrinhos/GO;75652-698;correios-2026-11-25-municipio.csv, linha 301
+Rua CP-6A;Cristina Park 2;Morrinhos/GO;75652-722;correios-2026-11-25-municipio.csv, linha 302
+Rua CP-7;Cristina Park;Morrinhos/GO;75652-700;correios-2026-11-25-municipio.csv, linha 303
+Rua CP-7A;Cristina Park 2;Morrinhos/GO;75652-724;correios-2026-11-25-municipio.csv, linha 304
+Rua CP-8;Cristina Park;Morrinhos/GO;75652-702;correios-2026-11-25-municipio.csv, linha 305
+Rua CP-8;Cristina Park 2;Morrinhos/GO;75652-726;correios-2026-11-25-municipio.csv, linha 306
+Rua CP-9;Cristina Park;Morrinhos/GO;75652-704;correios-2026-11-25-municipio.csv, linha 307
+Rua CP-9;Cristina Park 2;Morrinhos/GO;75652-728;correios-2026-11-25-municipio.csv, linha 308
+Rua CR-1;Setor Cristo Redentor;Morrinhos/GO;75652-204;correios-2026-11-25-cristo-redentor.csv, linha 6 | correios-2026-11-25-municipio.csv, linha 311 | correios-2026-11-25-setores.csv, linha 120
+Rua CR-1;Setor Cristo Redentor - II Etapa;Morrinhos/GO;75652-146;correios-2026-11-25-cristo-redentor.csv, linha 22 | correios-2026-11-25-municipio.csv, linha 312 | correios-2026-11-25-setores.csv, linha 136
+Rua CR-10;Setor Cristo Redentor - II Etapa;Morrinhos/GO;75652-174;correios-2026-11-25-cristo-redentor.csv, linha 23 | correios-2026-11-25-municipio.csv, linha 313 | correios-2026-11-25-setores.csv, linha 137
+Rua CR-11;Setor Cristo Redentor - II Etapa;Morrinhos/GO;75652-176;correios-2026-11-25-cristo-redentor.csv, linha 24 | correios-2026-11-25-municipio.csv, linha 314 | correios-2026-11-25-setores.csv, linha 138
+Rua CR-2;Setor Cristo Redentor;Morrinhos/GO;75652-206;correios-2026-11-25-cristo-redentor.csv, linha 7 | correios-2026-11-25-municipio.csv, linha 315 | correios-2026-11-25-setores.csv, linha 121
+Rua CR-2;Setor Cristo Redentor - II Etapa;Morrinhos/GO;75652-150;correios-2026-11-25-cristo-redentor.csv, linha 25 | correios-2026-11-25-municipio.csv, linha 316 | correios-2026-11-25-setores.csv, linha 139
+Rua CR-3;Jardim Santa Fé;Morrinhos/GO;75652-132;correios-2026-11-25-jardins.csv, linha 166 | correios-2026-11-25-municipio.csv, linha 317
+Rua CR-3;Setor Cristo Redentor;Morrinhos/GO;75652-182;correios-2026-11-25-cristo-redentor.csv, linha 8 | correios-2026-11-25-municipio.csv, linha 318 | correios-2026-11-25-setores.csv, linha 122
+Rua CR-3;Setor Cristo Redentor - II Etapa;Morrinhos/GO;75652-151;correios-2026-11-25-cristo-redentor.csv, linha 26 | correios-2026-11-25-municipio.csv, linha 319 | correios-2026-11-25-setores.csv, linha 140
+Rua CR-4;Setor Cristo Redentor;Morrinhos/GO;75652-198;correios-2026-11-25-cristo-redentor.csv, linha 9 | correios-2026-11-25-municipio.csv, linha 320 | correios-2026-11-25-setores.csv, linha 123
+Rua CR-4;Setor Cristo Redentor - II Etapa;Morrinhos/GO;75652-153;correios-2026-11-25-cristo-redentor.csv, linha 27 | correios-2026-11-25-municipio.csv, linha 321 | correios-2026-11-25-setores.csv, linha 141
+Rua CR-5;Setor Cristo Redentor;Morrinhos/GO;75652-208;correios-2026-11-25-cristo-redentor.csv, linha 10 | correios-2026-11-25-municipio.csv, linha 322 | correios-2026-11-25-setores.csv, linha 124
+Rua CR-5;Setor Cristo Redentor - II Etapa;Morrinhos/GO;75652-152;correios-2026-11-25-cristo-redentor.csv, linha 28 | correios-2026-11-25-municipio.csv, linha 323 | correios-2026-11-25-setores.csv, linha 142
+Rua CR-6;Setor Cristo Redentor;Morrinhos/GO;75652-210;correios-2026-11-25-cristo-redentor.csv, linha 11 | correios-2026-11-25-municipio.csv, linha 324 | correios-2026-11-25-setores.csv, linha 125
+Rua CR-6;Setor Cristo Redentor - II Etapa;Morrinhos/GO;75652-156;correios-2026-11-25-cristo-redentor.csv, linha 29 | correios-2026-11-25-municipio.csv, linha 325 | correios-2026-11-25-setores.csv, linha 143
+Rua CR-7;Setor Cristo Redentor - II Etapa;Morrinhos/GO;75652-160;correios-2026-11-25-cristo-redentor.csv, linha 30 | correios-2026-11-25-municipio.csv, linha 326 | correios-2026-11-25-setores.csv, linha 144
+Rua CR-8;Setor Cristo Redentor - II Etapa;Morrinhos/GO;75652-162;correios-2026-11-25-cristo-redentor.csv, linha 31 | correios-2026-11-25-municipio.csv, linha 327 | correios-2026-11-25-setores.csv, linha 145
+Rua CR-9;Setor Cristo Redentor - II Etapa;Morrinhos/GO;75652-172;correios-2026-11-25-cristo-redentor.csv, linha 32 | correios-2026-11-25-municipio.csv, linha 328 | correios-2026-11-25-setores.csv, linha 146
+Rua Camponesa;São Francisco de Assis;Morrinhos/GO;75650-178;correios-2026-11-25-municipio.csv, linha 276 | correios-2026-11-25-saoFrancisco.csv, linha 3
+Rua Caraíba;São Francisco de Assis;Morrinhos/GO;75650-208;correios-2026-11-25-municipio.csv, linha 277 | correios-2026-11-25-saoFrancisco.csv, linha 4
+Rua Carmindo Coelho G de Almeida;Jardim Portugal;Morrinhos/GO;75652-466;correios-2026-11-25-jardins.csv, linha 109 | correios-2026-11-25-municipio.csv, linha 278
+Rua Casimiro Luiz Ferreira;Residencial Antônio Correia Bueno;Morrinhos/GO;75652-554;correios-2026-11-25-municipio.csv, linha 279 | correios-2026-11-25-residenciais.csv, linha 29
+Rua Castro Alves;Centro;Morrinhos/GO;75650-098;correios-2026-11-25-centro.csv, linha 16 | correios-2026-11-25-municipio.csv, linha 280
+Rua Ceará;Centro;Morrinhos/GO;75650-080;correios-2026-11-25-centro.csv, linha 17 | correios-2026-11-25-municipio.csv, linha 281
+Rua Ceará;Setor Noroeste;Morrinhos/GO;75656-190;correios-2026-11-25-municipio.csv, linha 282 | correios-2026-11-25-setores.csv, linha 197
+Rua Cedro;Jardim Colibri;Morrinhos/GO;75656-304;correios-2026-11-25-jardins.csv, linha 67 | correios-2026-11-25-municipio.csv, linha 283
+Rua Cedro;Residencial Mirante do Bosque;Morrinhos/GO;75656-606;correios-2026-11-25-municipio.csv, linha 284 | correios-2026-11-25-residenciais.csv, linha 104
+Rua Clovis Carneiro;Jardim Helena;Morrinhos/GO;75654-706;correios-2026-11-25-jardins.csv, linha 95 | correios-2026-11-25-municipio.csv, linha 285
+Rua Coronel Bento Godoy;Cristina Park 2;Morrinhos/GO;75652-734;correios-2026-11-25-municipio.csv, linha 11
+Rua Coronel Bento Godoy;Residencial Dona Ondina;Morrinhos/GO;75652-758;correios-2026-11-25-municipio.csv, linha 12 | correios-2026-11-25-residenciais.csv, linha 52
+Rua Coronel João Lopes Zedes;Centro;Morrinhos/GO;75650-084;correios-2026-11-25-centro.csv, linha 18 | correios-2026-11-25-municipio.csv, linha 286
+Rua Coronel João Lopes Zedes;Jardim América;Morrinhos/GO;75650-274;correios-2026-11-25-jardins.csv, linha 6 | correios-2026-11-25-municipio.csv, linha 287
+Rua Coronel João Lopes Zedes;Setor Noroeste;Morrinhos/GO;75656-198;correios-2026-11-25-municipio.csv, linha 288 | correios-2026-11-25-setores.csv, linha 198
+Rua Cremona;Jardim Romano;Morrinhos/GO;75656-086;correios-2026-11-25-jardins.csv, linha 130 | correios-2026-11-25-municipio.csv, linha 309
+Rua Creta;Reserva Atenas;Morrinhos/GO;75654-512;correios-2026-11-25-municipio.csv, linha 310
+Rua D;Vila Bela;Morrinhos/GO;75654-012;correios-2026-11-25-municipio.csv, linha 330 | correios-2026-11-25-vilas.csv, linha 6
+Rua D;Vila Santos Dumont II;Morrinhos/GO;75654-348;correios-2026-11-25-municipio.csv, linha 331 | correios-2026-11-25-vila-santos-dumont.csv, linha 40 | correios-2026-11-25-vilas.csv, linha 128
+Rua DC-1;Residencial Darcy Chaves;Morrinhos/GO;75656-620;correios-2026-11-25-municipio.csv, linha 352 | correios-2026-11-25-residenciais.csv, linha 41
+Rua DC-10;Residencial Darcy Chaves;Morrinhos/GO;75656-638;correios-2026-11-25-municipio.csv, linha 353 | correios-2026-11-25-residenciais.csv, linha 42
+Rua DC-2;Residencial Darcy Chaves;Morrinhos/GO;75656-622;correios-2026-11-25-municipio.csv, linha 354 | correios-2026-11-25-residenciais.csv, linha 43
+Rua DC-3;Residencial Darcy Chaves;Morrinhos/GO;75656-624;correios-2026-11-25-municipio.csv, linha 355 | correios-2026-11-25-residenciais.csv, linha 44
+Rua DC-4;Jardim Vera Cruz;Morrinhos/GO;75656-532;correios-2026-11-25-jardins.csv, linha 206 | correios-2026-11-25-municipio.csv, linha 356
+Rua DC-4;Residencial Darcy Chaves;Morrinhos/GO;75656-628;correios-2026-11-25-municipio.csv, linha 357 | correios-2026-11-25-residenciais.csv, linha 45
+Rua DC-5;Jardim Vera Cruz;Morrinhos/GO;75656-534;correios-2026-11-25-jardins.csv, linha 207 | correios-2026-11-25-municipio.csv, linha 358
+Rua DC-5;Residencial Darcy Chaves;Morrinhos/GO;75656-626;correios-2026-11-25-municipio.csv, linha 359 | correios-2026-11-25-residenciais.csv, linha 46
+Rua DC-6;Residencial Darcy Chaves;Morrinhos/GO;75656-632;correios-2026-11-25-municipio.csv, linha 360 | correios-2026-11-25-residenciais.csv, linha 47
+Rua DC-7;Residencial Darcy Chaves;Morrinhos/GO;75656-634;correios-2026-11-25-municipio.csv, linha 361 | correios-2026-11-25-residenciais.csv, linha 48
+Rua DC-8;Residencial Darcy Chaves;Morrinhos/GO;75656-636;correios-2026-11-25-municipio.csv, linha 362 | correios-2026-11-25-residenciais.csv, linha 49
+Rua DC-9;Residencial Darcy Chaves;Morrinhos/GO;75656-640;correios-2026-11-25-municipio.csv, linha 363 | correios-2026-11-25-residenciais.csv, linha 50
+Rua Dalmes Antônio de Oliveira;Jardim América;Morrinhos/GO;75650-294;correios-2026-11-25-jardins.csv, linha 7 | correios-2026-11-25-municipio.csv, linha 334
+Rua Davi Troncoso Carrera;Setor Cordeiro;Morrinhos/GO;75652-328;correios-2026-11-25-cordeiro.csv, linha 17 | correios-2026-11-25-municipio.csv, linha 351 | correios-2026-11-25-setores.csv, linha 98
+Rua Delfino Curado;Jardim Santa Terezinha II;Morrinhos/GO;75654-620;correios-2026-11-25-jardins.csv, linha 188 | correios-2026-11-25-municipio.csv, linha 365
+Rua Dimas Vítor Souza;Setor Aeroporto II;Morrinhos/GO;75652-367;correios-2026-11-25-aeroporto.csv, linha 52 | correios-2026-11-25-municipio.csv, linha 366 | correios-2026-11-25-setores.csv, linha 52
+Rua Divino Bidon;Setor Cristo Redentor - II Etapa;Morrinhos/GO;75652-168;correios-2026-11-25-cristo-redentor.csv, linha 33 | correios-2026-11-25-municipio.csv, linha 367 | correios-2026-11-25-setores.csv, linha 147
+Rua Dom Pedro II;Centro;Morrinhos/GO;75650-120;correios-2026-11-25-centro.csv, linha 19 | correios-2026-11-25-municipio.csv, linha 372
+Rua Dom Pedro II, 444 Clique e Retire Correios AC Morrinhos Clique e Retire;Centro;Morrinhos/GO;75650-959;correios-2026-11-25-centro.csv, linha 20
+Rua Dom Pedro II, 444 Quadra 18 Lote 14 AC Morrinhos;Centro;Morrinhos/GO;75650-970;correios-2026-11-25-centro.csv, linha 21
+Rua Domingos Ricardo de Souza;Jardim América;Morrinhos/GO;75650-278;correios-2026-11-25-jardins.csv, linha 8 | correios-2026-11-25-municipio.csv, linha 373
+Rua Domingos Ricardo de Souza;São Francisco de Assis;Morrinhos/GO;75650-205;correios-2026-11-25-municipio.csv, linha 374 | correios-2026-11-25-saoFrancisco.csv, linha 5
+Rua Doutor Antonio Carneiro;Setor Cristo Redentor;Morrinhos/GO;75652-188;correios-2026-11-25-cristo-redentor.csv, linha 12 | correios-2026-11-25-municipio.csv, linha 376 | correios-2026-11-25-setores.csv, linha 126
+Rua Doutor Antônio J Melo;Residencial Antônio Correia Bueno;Morrinhos/GO;75652-558;correios-2026-11-25-municipio.csv, linha 377 | correios-2026-11-25-residenciais.csv, linha 30
+Rua Doutor Guilherme Xavier Almeida;Residencial Antônio Correia Bueno;Morrinhos/GO;75652-570;correios-2026-11-25-municipio.csv, linha 378 | correios-2026-11-25-residenciais.csv, linha 31
+Rua Doutor Jair de Freitas;Setor Professor Olyntho Cândido;Morrinhos/GO;75652-016;correios-2026-11-25-municipio.csv, linha 379 | correios-2026-11-25-setores.csv, linha 235
+Rua Doutor Pedro Nunes;Centro;Morrinhos/GO;75650-142;correios-2026-11-25-centro.csv, linha 22 | correios-2026-11-25-municipio.csv, linha 380
+Rua Doutor Pedro Nunes;Jardim Santa Fé;Morrinhos/GO;75652-110;correios-2026-11-25-jardins.csv, linha 167 | correios-2026-11-25-municipio.csv, linha 381
+Rua Doutor Pedro Nunes;São Francisco de Assis;Morrinhos/GO;75650-172;correios-2026-11-25-municipio.csv, linha 382 | correios-2026-11-25-saoFrancisco.csv, linha 6
+Rua Doutor Sílvio de Melo;Setor Cristo Redentor;Morrinhos/GO;75652-192;correios-2026-11-25-cristo-redentor.csv, linha 13 | correios-2026-11-25-municipio.csv, linha 383 | correios-2026-11-25-setores.csv, linha 127
+Rua E;Vila Bela;Morrinhos/GO;75654-008;correios-2026-11-25-municipio.csv, linha 384 | correios-2026-11-25-vilas.csv, linha 7
+Rua E;Vila Santos Dumont II;Morrinhos/GO;75654-344;correios-2026-11-25-municipio.csv, linha 385 | correios-2026-11-25-vila-santos-dumont.csv, linha 41 | correios-2026-11-25-vilas.csv, linha 129
+Rua Eli Ribeiro Dias;Residencial dos Buritis;Morrinhos/GO;75652-642;correios-2026-11-25-municipio.csv, linha 386 | correios-2026-11-25-residenciais.csv, linha 62
+Rua Elmo Carneiro;Jardim Helena;Morrinhos/GO;75654-696;correios-2026-11-25-jardins.csv, linha 96 | correios-2026-11-25-municipio.csv, linha 387
+Rua Ermelinda Gonzaga de Aquino;Jardim Maria Ferreira de Souza;Morrinhos/GO;75652-100;correios-2026-11-25-jardins.csv, linha 105 | correios-2026-11-25-municipio.csv, linha 14
+Rua Ermelinda Gonzaga de Aquino;Setor Cristo Redentor - II Etapa;Morrinhos/GO;75652-140;correios-2026-11-25-cristo-redentor.csv, linha 34 | correios-2026-11-25-municipio.csv, linha 15 | correios-2026-11-25-setores.csv, linha 148
+Rua Ermelinda Gonzaga de Aquino;Setor Professor Olyntho Cândido;Morrinhos/GO;75652-007;correios-2026-11-25-municipio.csv, linha 16 | correios-2026-11-25-setores.csv, linha 236
+Rua Esparta;Reserva Atenas;Morrinhos/GO;75654-510;correios-2026-11-25-municipio.csv, linha 388
+Rua Eurico Coelho Cruvinel;Jardim Portugal;Morrinhos/GO;75652-467;correios-2026-11-25-jardins.csv, linha 110 | correios-2026-11-25-municipio.csv, linha 389
+Rua Eurípedes Mariano Borges;Jardim Santa Terezinha I;Morrinhos/GO;75654-596;correios-2026-11-25-jardins.csv, linha 180 | correios-2026-11-25-municipio.csv, linha 390
+Rua Evangelista Valério Cardoso;Setor Aeroporto;Morrinhos/GO;75654-058;correios-2026-11-25-aeroporto.csv, linha 11 | correios-2026-11-25-municipio.csv, linha 391 | correios-2026-11-25-setores.csv, linha 11
+Rua Evangelista Valério Cardoso;Setor Aeroporto III;Morrinhos/GO;75654-154;correios-2026-11-25-aeroporto.csv, linha 63 | correios-2026-11-25-municipio.csv, linha 392 | correios-2026-11-25-setores.csv, linha 63
+Rua Evangelista Valério Cardoso;Setor Oeste;Morrinhos/GO;75650-054;correios-2026-11-25-municipio.csv, linha 393 | correios-2026-11-25-setores.csv, linha 216
+Rua Evangelista Valério Cardoso;Vila Bela;Morrinhos/GO;75654-040;correios-2026-11-25-municipio.csv, linha 394 | correios-2026-11-25-vilas.csv, linha 8
+Rua Evangelista Valério Cardoso;Vila Mutirão;Morrinhos/GO;75654-172;correios-2026-11-25-municipio.csv, linha 395 | correios-2026-11-25-vilas.csv, linha 26
+Rua F;Vila Bela;Morrinhos/GO;75654-006;correios-2026-11-25-municipio.csv, linha 396 | correios-2026-11-25-vilas.csv, linha 9
+Rua F;Vila Santos Dumont II;Morrinhos/GO;75654-340;correios-2026-11-25-municipio.csv, linha 397 | correios-2026-11-25-vila-santos-dumont.csv, linha 42 | correios-2026-11-25-vilas.csv, linha 130
+Rua FC-1;Setor Aeroporto II;Morrinhos/GO;75652-364;correios-2026-11-25-aeroporto.csv, linha 53 | correios-2026-11-25-municipio.csv, linha 399 | correios-2026-11-25-setores.csv, linha 53
+Rua FC-1;Setor Cordeiro;Morrinhos/GO;75652-344;correios-2026-11-25-cordeiro.csv, linha 18 | correios-2026-11-25-municipio.csv, linha 400 | correios-2026-11-25-setores.csv, linha 99
+Rua FC-1;Setor Felício Chaves;Morrinhos/GO;75652-444;correios-2026-11-25-setores.csv, linha 156
+Rua FC-1;Setor Irinéia de Freitas;Morrinhos/GO;75652-480;correios-2026-11-25-municipio.csv, linha 401 | correios-2026-11-25-setores.csv, linha 165
+Rua FC-2;Setor Felício Chaves;Morrinhos/GO;75652-456;correios-2026-11-25-setores.csv, linha 157
+Rua FC-2;Setor Irinéia de Freitas;Morrinhos/GO;75652-472;correios-2026-11-25-municipio.csv, linha 402 | correios-2026-11-25-setores.csv, linha 166
+Rua FC-3;Setor Aeroporto II;Morrinhos/GO;75652-365;correios-2026-11-25-aeroporto.csv, linha 54 | correios-2026-11-25-municipio.csv, linha 403 | correios-2026-11-25-setores.csv, linha 54
+Rua FC-3;Setor Cordeiro;Morrinhos/GO;75652-334;correios-2026-11-25-cordeiro.csv, linha 19 | correios-2026-11-25-municipio.csv, linha 404 | correios-2026-11-25-setores.csv, linha 100
+Rua FC-4;Setor Felício Chaves;Morrinhos/GO;75652-452;correios-2026-11-25-setores.csv, linha 158
+Rua FC-5;Conjunto Residencial Monte Verde;Morrinhos/GO;75652-390;correios-2026-11-25-residenciais.csv, linha 4
+Rua FC-5;Jardim Bela Vista II;Morrinhos/GO;75652-580;correios-2026-11-25-jardins.csv, linha 51 | correios-2026-11-25-municipio.csv, linha 405
+Rua FC-5;Jardim Portugal;Morrinhos/GO;75652-460;correios-2026-11-25-jardins.csv, linha 111 | correios-2026-11-25-municipio.csv, linha 406
+Rua FC-5;Setor Aeroporto II;Morrinhos/GO;75652-369;correios-2026-11-25-aeroporto.csv, linha 55 | correios-2026-11-25-municipio.csv, linha 407 | correios-2026-11-25-setores.csv, linha 55
+Rua FC-5;Setor Cordeiro;Morrinhos/GO;75652-348;correios-2026-11-25-cordeiro.csv, linha 20 | correios-2026-11-25-municipio.csv, linha 408 | correios-2026-11-25-setores.csv, linha 101
+Rua FC-5;Setor Felício Chaves;Morrinhos/GO;75652-448;correios-2026-11-25-setores.csv, linha 159
+Rua FC-5;Setor Irinéia de Freitas;Morrinhos/GO;75652-486;correios-2026-11-25-municipio.csv, linha 409 | correios-2026-11-25-setores.csv, linha 167
+Rua FC-6;Setor Felício Chaves;Morrinhos/GO;75652-454;correios-2026-11-25-setores.csv, linha 160
+Rua FC-8;Setor Felício Chaves;Morrinhos/GO;75652-450;correios-2026-11-25-setores.csv, linha 161
+Rua Felicidade Estrela de Godoy;Cristina Park;Morrinhos/GO;75652-710;correios-2026-11-25-municipio.csv, linha 17
+Rua Felicidade Estrela de Godoy;Cristina Park 2;Morrinhos/GO;75652-720;correios-2026-11-25-municipio.csv, linha 18
+Rua Felicidade Estrela de Godoy;Setor Cordeiro II;Morrinhos/GO;75652-740;correios-2026-11-25-cordeiro.csv, linha 33 | correios-2026-11-25-municipio.csv, linha 19 | correios-2026-11-25-setores.csv, linha 114
+Rua Ferrara;Jardim Romano;Morrinhos/GO;75656-120;correios-2026-11-25-jardins.csv, linha 131 | correios-2026-11-25-municipio.csv, linha 410
+Rua Fiica Marçal;Barra do Cordeiro;Morrinhos/GO;75650-388;correios-2026-11-25-cordeiro.csv, linha 4 | correios-2026-11-25-municipio.csv, linha 411
+Rua Flamboyant;Jardim Colibri;Morrinhos/GO;75656-314;correios-2026-11-25-jardins.csv, linha 69 | correios-2026-11-25-municipio.csv, linha 412
+Rua Florença;Jardim Romano;Morrinhos/GO;75656-058;correios-2026-11-25-jardins.csv, linha 132 | correios-2026-11-25-municipio.csv, linha 413
+Rua Fortaleza;Setor Arca de Noé;Morrinhos/GO;75654-396;correios-2026-11-25-municipio.csv, linha 414 | correios-2026-11-25-setores.csv, linha 79
+Rua Francisco Vinuto Alves;Setor Cristo Redentor - II Etapa;Morrinhos/GO;75652-170;correios-2026-11-25-cristo-redentor.csv, linha 35 | correios-2026-11-25-municipio.csv, linha 415 | correios-2026-11-25-setores.csv, linha 149
+Rua Fábio Tavares;Jardim América;Morrinhos/GO;75650-295;correios-2026-11-25-jardins.csv, linha 9 | correios-2026-11-25-municipio.csv, linha 398
+Rua G;Vila Bela;Morrinhos/GO;75654-032;correios-2026-11-25-municipio.csv, linha 416 | correios-2026-11-25-vilas.csv, linha 10
+Rua G;Vila Santos Dumont II;Morrinhos/GO;75654-342;correios-2026-11-25-municipio.csv, linha 417 | correios-2026-11-25-vila-santos-dumont.csv, linha 43 | correios-2026-11-25-vilas.csv, linha 131
+Rua GA-1;Genoveva Alves;Morrinhos/GO;75656-544;correios-2026-11-25-municipio.csv, linha 418
+Rua GA-10;Genoveva Alves;Morrinhos/GO;75656-568;correios-2026-11-25-municipio.csv, linha 419
+Rua GA-11;Genoveva Alves;Morrinhos/GO;75656-570;correios-2026-11-25-municipio.csv, linha 420
+Rua GA-12;Genoveva Alves;Morrinhos/GO;75656-572;correios-2026-11-25-municipio.csv, linha 421
+Rua GA-13;Genoveva Alves;Morrinhos/GO;75656-574;correios-2026-11-25-municipio.csv, linha 422
+Rua GA-14;Genoveva Alves;Morrinhos/GO;75656-576;correios-2026-11-25-municipio.csv, linha 423
+Rua GA-15;Genoveva Alves;Morrinhos/GO;75656-578;correios-2026-11-25-municipio.csv, linha 424
+Rua GA-15A;Desmembramento Fernando Azzi Teixeira;Morrinhos/GO;75656-596;correios-2026-11-25-municipio.csv, linha 425
+Rua GA-15A;Genoveva Alves;Morrinhos/GO;75656-580;correios-2026-11-25-municipio.csv, linha 426
+Rua GA-15A;Jardim Vera Cruz;Morrinhos/GO;75656-483;correios-2026-11-25-jardins.csv, linha 208 | correios-2026-11-25-municipio.csv, linha 427
+Rua GA-15A;Residencial Mirante do Bosque;Morrinhos/GO;75656-602;correios-2026-11-25-municipio.csv, linha 428 | correios-2026-11-25-residenciais.csv, linha 105
+Rua GA-16;Desmembramento Fernando Azzi Teixeira;Morrinhos/GO;75656-594;correios-2026-11-25-municipio.csv, linha 429
+Rua GA-16;Genoveva Alves;Morrinhos/GO;75656-546;correios-2026-11-25-municipio.csv, linha 430
+Rua GA-16;Jardim Vera Cruz;Morrinhos/GO;75656-482;correios-2026-11-25-jardins.csv, linha 209 | correios-2026-11-25-municipio.csv, linha 431
+Rua GA-2;Genoveva Alves;Morrinhos/GO;75656-548;correios-2026-11-25-municipio.csv, linha 432
+Rua GA-3;Genoveva Alves;Morrinhos/GO;75656-550;correios-2026-11-25-municipio.csv, linha 433
+Rua GA-4;Genoveva Alves;Morrinhos/GO;75656-552;correios-2026-11-25-municipio.csv, linha 434
+Rua GA-4A;Genoveva Alves;Morrinhos/GO;75656-554;correios-2026-11-25-municipio.csv, linha 435
+Rua GA-5;Genoveva Alves;Morrinhos/GO;75656-556;correios-2026-11-25-municipio.csv, linha 436
+Rua GA-6;Genoveva Alves;Morrinhos/GO;75656-558;correios-2026-11-25-municipio.csv, linha 437
+Rua GA-7;Genoveva Alves;Morrinhos/GO;75656-560;correios-2026-11-25-municipio.csv, linha 438
+Rua GA-8;Genoveva Alves;Morrinhos/GO;75656-564;correios-2026-11-25-municipio.csv, linha 439
+Rua GA-9;Genoveva Alves;Morrinhos/GO;75656-566;correios-2026-11-25-municipio.csv, linha 440
+Rua Geraldino de Freitas;Residencial Antônio Correia Bueno;Morrinhos/GO;75652-564;correios-2026-11-25-municipio.csv, linha 442 | correios-2026-11-25-residenciais.csv, linha 32
+Rua Geraldino de Freitas;Setor Aeroporto II;Morrinhos/GO;75652-362;correios-2026-11-25-aeroporto.csv, linha 56 | correios-2026-11-25-municipio.csv, linha 443 | correios-2026-11-25-setores.csv, linha 56
+Rua Geraldino de Freitas;Setor Cordeiro;Morrinhos/GO;75652-352;correios-2026-11-25-cordeiro.csv, linha 21 | correios-2026-11-25-municipio.csv, linha 444 | correios-2026-11-25-setores.csv, linha 102
+Rua Geraldo José de Souza;Conjunto Residencial Monte Verde;Morrinhos/GO;75652-393;correios-2026-11-25-residenciais.csv, linha 5
+Rua Geraldo José de Souza;Cristina Park;Morrinhos/GO;75652-684;correios-2026-11-25-municipio.csv, linha 445
+Rua Geraldo José de Souza;Jardim Bela Vista;Morrinhos/GO;75652-652;correios-2026-11-25-jardins.csv, linha 39 | correios-2026-11-25-municipio.csv, linha 446
+Rua Geraldo José de Souza;Jardim Portugal;Morrinhos/GO;75652-462;correios-2026-11-25-jardins.csv, linha 112 | correios-2026-11-25-municipio.csv, linha 447
+Rua Geraldo Santana;Setor Oeste;Morrinhos/GO;75650-030;correios-2026-11-25-municipio.csv, linha 448 | correios-2026-11-25-setores.csv, linha 217
+Rua Gerson Ribeiro;Setor Leste Universitário;Morrinhos/GO;75650-324;correios-2026-11-25-municipio.csv, linha 449 | correios-2026-11-25-setores.csv, linha 189
+Rua Gilda D Fontes;Residencial Antônio Correia Bueno;Morrinhos/GO;75652-566;correios-2026-11-25-municipio.csv, linha 450 | correios-2026-11-25-residenciais.csv, linha 33
+Rua Goiás;Centro;Morrinhos/GO;75650-088;correios-2026-11-25-centro.csv, linha 23 | correios-2026-11-25-municipio.csv, linha 20
+Rua Goiás;Jardim Romano II;Morrinhos/GO;75656-040;correios-2026-11-25-jardins.csv, linha 160 | correios-2026-11-25-municipio.csv, linha 21
+Rua Gumercindo Inocêncio de Oliveira;Jardim Santa Fé;Morrinhos/GO;75652-124;correios-2026-11-25-jardins.csv, linha 168 | correios-2026-11-25-municipio.csv, linha 451
+Rua Gumercindo Inocêncio de Oliveira;Setor São Pedro;Morrinhos/GO;75652-276;correios-2026-11-25-municipio.csv, linha 452 | correios-2026-11-25-setores.csv, linha 250
+Rua Gustavo Emílio Felter;Setor Irinéia de Freitas;Morrinhos/GO;75652-476;correios-2026-11-25-municipio.csv, linha 453 | correios-2026-11-25-setores.csv, linha 168
+Rua Génova;Jardim Romano;Morrinhos/GO;75656-066;correios-2026-11-25-jardins.csv, linha 133 | correios-2026-11-25-municipio.csv, linha 441
+Rua H;Vila Bela;Morrinhos/GO;75654-034;correios-2026-11-25-municipio.csv, linha 454 | correios-2026-11-25-vilas.csv, linha 11
+Rua H-1;Residencial Hercílio Gomes de Melo;Morrinhos/GO;75656-442;correios-2026-11-25-municipio.csv, linha 22 | correios-2026-11-25-residenciais.csv, linha 78
+Rua H-10;Residencial Hercílio Gomes de Melo;Morrinhos/GO;75656-476;correios-2026-11-25-municipio.csv, linha 23 | correios-2026-11-25-residenciais.csv, linha 79
+Rua H-11;Residencial Hercílio Gomes de Melo;Morrinhos/GO;75656-466;correios-2026-11-25-municipio.csv, linha 24 | correios-2026-11-25-residenciais.csv, linha 80
+Rua H-13;Residencial Hercílio Gomes de Melo;Morrinhos/GO;75656-464;correios-2026-11-25-municipio.csv, linha 25 | correios-2026-11-25-residenciais.csv, linha 81
+Rua H-15;Residencial Hercílio Gomes de Melo;Morrinhos/GO;75656-460;correios-2026-11-25-municipio.csv, linha 26 | correios-2026-11-25-residenciais.csv, linha 82
+Rua H-2;Residencial Hercílio Gomes de Melo;Morrinhos/GO;75656-440;correios-2026-11-25-municipio.csv, linha 27 | correios-2026-11-25-residenciais.csv, linha 83
+Rua H-3;Residencial Hercílio Gomes de Melo;Morrinhos/GO;75656-450;correios-2026-11-25-municipio.csv, linha 28 | correios-2026-11-25-residenciais.csv, linha 84
+Rua H-4;Residencial Hercílio Gomes de Melo;Morrinhos/GO;75656-448;correios-2026-11-25-municipio.csv, linha 29 | correios-2026-11-25-residenciais.csv, linha 85
+Rua H-5;Residencial Hercílio Gomes de Melo;Morrinhos/GO;75656-454;correios-2026-11-25-municipio.csv, linha 30 | correios-2026-11-25-residenciais.csv, linha 86
+Rua H-6;Residencial Hercílio Gomes de Melo;Morrinhos/GO;75656-462;correios-2026-11-25-municipio.csv, linha 31 | correios-2026-11-25-residenciais.csv, linha 87
+Rua H-7;Residencial Hercílio Gomes de Melo;Morrinhos/GO;75656-458;correios-2026-11-25-municipio.csv, linha 32 | correios-2026-11-25-residenciais.csv, linha 88
+Rua H-8;Residencial Hercílio Gomes de Melo;Morrinhos/GO;75656-470;correios-2026-11-25-municipio.csv, linha 33 | correios-2026-11-25-residenciais.csv, linha 89
+Rua H-9;Residencial Hercílio Gomes de Melo;Morrinhos/GO;75656-474;correios-2026-11-25-municipio.csv, linha 34 | correios-2026-11-25-residenciais.csv, linha 90
+Rua HF;Setor Arca de Noé;Morrinhos/GO;75654-410;correios-2026-11-25-municipio.csv, linha 457 | correios-2026-11-25-setores.csv, linha 80
+Rua HP;Setor Arca de Noé;Morrinhos/GO;75654-404;correios-2026-11-25-municipio.csv, linha 459 | correios-2026-11-25-setores.csv, linha 81
+Rua Heitor de Bastos;Jardim América;Morrinhos/GO;75650-298;correios-2026-11-25-jardins.csv, linha 10 | correios-2026-11-25-municipio.csv, linha 455
+Rua Heleniene Cândido dos Santos;Setor São Pedro;Morrinhos/GO;75652-298;correios-2026-11-25-municipio.csv, linha 456 | correios-2026-11-25-setores.csv, linha 251
+Rua Horizonte;São Francisco de Assis;Morrinhos/GO;75650-192;correios-2026-11-25-municipio.csv, linha 458 | correios-2026-11-25-saoFrancisco.csv, linha 7
+Rua I;Setor São Pedro;Morrinhos/GO;75652-304;correios-2026-11-25-municipio.csv, linha 460 | correios-2026-11-25-setores.csv, linha 252
+Rua I;Vila Bela;Morrinhos/GO;75654-036;correios-2026-11-25-municipio.csv, linha 461 | correios-2026-11-25-vilas.csv, linha 12
+Rua I;Vila Santos Dumont II;Morrinhos/GO;75654-326;correios-2026-11-25-municipio.csv, linha 462 | correios-2026-11-25-vila-santos-dumont.csv, linha 44 | correios-2026-11-25-vilas.csv, linha 132
+Rua II;Setor São Pedro;Morrinhos/GO;75652-306;correios-2026-11-25-municipio.csv, linha 464 | correios-2026-11-25-setores.csv, linha 253
+Rua III;Setor São Pedro;Morrinhos/GO;75652-308;correios-2026-11-25-municipio.csv, linha 465 | correios-2026-11-25-setores.csv, linha 254
+Rua Idelma Carneiro;Jardim Helena;Morrinhos/GO;75654-700;correios-2026-11-25-jardins.csv, linha 97 | correios-2026-11-25-municipio.csv, linha 463
+Rua Independente;São Francisco de Assis;Morrinhos/GO;75650-182;correios-2026-11-25-municipio.csv, linha 467 | correios-2026-11-25-saoFrancisco.csv, linha 8
+Rua Inácio Correa;Jardim Santa Terezinha II;Morrinhos/GO;75654-614;correios-2026-11-25-jardins.csv, linha 189 | correios-2026-11-25-municipio.csv, linha 466
+Rua Ipê;Jardim Colibri;Morrinhos/GO;75656-300;correios-2026-11-25-jardins.csv, linha 70 | correios-2026-11-25-municipio.csv, linha 468
+Rua Ipê;Residencial Mirante do Bosque;Morrinhos/GO;75656-612;correios-2026-11-25-municipio.csv, linha 469 | correios-2026-11-25-residenciais.csv, linha 106
+Rua Irenéa de Freitas Chaves;Setor Aeroporto II;Morrinhos/GO;75652-372;correios-2026-11-25-aeroporto.csv, linha 57 | correios-2026-11-25-municipio.csv, linha 470 | correios-2026-11-25-setores.csv, linha 57
+Rua Isolina Norato de Jesus;JK;Morrinhos/GO;75650-410;correios-2026-11-25-jk.csv, linha 5 | correios-2026-11-25-municipio.csv, linha 471
+Rua Itamar Bernardino de Souza;Setor Professor Olyntho Cândido;Morrinhos/GO;75652-010;correios-2026-11-25-municipio.csv, linha 472 | correios-2026-11-25-setores.csv, linha 237
+Rua J;Vila Bela;Morrinhos/GO;75654-038;correios-2026-11-25-municipio.csv, linha 473 | correios-2026-11-25-vilas.csv, linha 13
+Rua J;Vila Santos Dumont II;Morrinhos/GO;75654-334;correios-2026-11-25-municipio.csv, linha 474 | correios-2026-11-25-vila-santos-dumont.csv, linha 45 | correios-2026-11-25-vilas.csv, linha 133
+Rua J1;Residencial Jarina Park;Morrinhos/GO;75650-696;correios-2026-11-25-municipio.csv, linha 518 | correios-2026-11-25-residenciais.csv, linha 96
+Rua J2;Residencial Jarina Park;Morrinhos/GO;75650-700;correios-2026-11-25-municipio.csv, linha 519 | correios-2026-11-25-residenciais.csv, linha 97
+Rua J3;Residencial Jarina Park;Morrinhos/GO;75650-698;correios-2026-11-25-municipio.csv, linha 520 | correios-2026-11-25-residenciais.csv, linha 98
+Rua J4;Residencial Jarina Park;Morrinhos/GO;75650-692;correios-2026-11-25-municipio.csv, linha 521 | correios-2026-11-25-residenciais.csv, linha 99
+Rua JC-I;Condomínio Recanto das Araras;Morrinhos/GO;75650-430;correios-2026-11-25-municipio.csv, linha 478
+Rua JC-II;Condomínio Recanto das Araras;Morrinhos/GO;75650-436;correios-2026-11-25-municipio.csv, linha 479
+Rua JC-III;Condomínio Recanto das Araras;Morrinhos/GO;75650-438;correios-2026-11-25-municipio.csv, linha 480
+Rua JC-IV;Condomínio Recanto das Araras;Morrinhos/GO;75650-440;correios-2026-11-25-municipio.csv, linha 481
+Rua JC-V;Condomínio Recanto das Araras;Morrinhos/GO;75650-432;correios-2026-11-25-municipio.csv, linha 482
+Rua JC-VI;Condomínio Recanto das Araras;Morrinhos/GO;75650-434;correios-2026-11-25-municipio.csv, linha 483
+Rua JG-I;Jardim Goiás;Morrinhos/GO;75656-144;correios-2026-11-25-jardins.csv, linha 83 | correios-2026-11-25-municipio.csv, linha 35
+Rua JG-II;Jardim Goiás;Morrinhos/GO;75656-142;correios-2026-11-25-jardins.csv, linha 84 | correios-2026-11-25-municipio.csv, linha 36
+Rua JG-IV;Jardim Goiás;Morrinhos/GO;75656-154;correios-2026-11-25-jardins.csv, linha 85 | correios-2026-11-25-municipio.csv, linha 37
+Rua JG-V;Jardim Goiás;Morrinhos/GO;75656-156;correios-2026-11-25-jardins.csv, linha 86 | correios-2026-11-25-municipio.csv, linha 38
+Rua JG-VI;Jardim Goiás;Morrinhos/GO;75656-146;correios-2026-11-25-jardins.csv, linha 87 | correios-2026-11-25-municipio.csv, linha 39
+Rua JG-VII;Jardim Goiás;Morrinhos/GO;75656-158;correios-2026-11-25-jardins.csv, linha 88 | correios-2026-11-25-municipio.csv, linha 40
+Rua JG-VIII;Jardim Goiás;Morrinhos/GO;75656-148;correios-2026-11-25-jardins.csv, linha 89 | correios-2026-11-25-municipio.csv, linha 41
+Rua JG-X;Jardim Goiás;Morrinhos/GO;75656-150;correios-2026-11-25-jardins.csv, linha 90 | correios-2026-11-25-municipio.csv, linha 42
+Rua JG-X;Jardim Romano;Morrinhos/GO;75656-054;correios-2026-11-25-jardins.csv, linha 134 | correios-2026-11-25-municipio.csv, linha 485
+Rua JJ 02;Setor José Jesuíno Filho;Morrinhos/GO;75652-072;correios-2026-11-25-municipio.csv, linha 486 | correios-2026-11-25-setores.csv, linha 173
+Rua JJ 03;Setor José Jesuíno Filho;Morrinhos/GO;75652-076;correios-2026-11-25-municipio.csv, linha 487 | correios-2026-11-25-setores.csv, linha 174
+Rua JJ 04;Setor José Jesuíno Filho;Morrinhos/GO;75652-078;correios-2026-11-25-municipio.csv, linha 488 | correios-2026-11-25-setores.csv, linha 175
+Rua JJ 05;Setor José Jesuíno Filho;Morrinhos/GO;75652-080;correios-2026-11-25-municipio.csv, linha 489 | correios-2026-11-25-setores.csv, linha 176
+Rua JJ 06;Setor José Jesuíno Filho;Morrinhos/GO;75652-088;correios-2026-11-25-municipio.csv, linha 490 | correios-2026-11-25-setores.csv, linha 177
+Rua JJ 07;Setor José Jesuíno Filho;Morrinhos/GO;75652-082;correios-2026-11-25-municipio.csv, linha 491 | correios-2026-11-25-setores.csv, linha 178
+Rua JJ 08;Setor José Jesuíno Filho;Morrinhos/GO;75652-084;correios-2026-11-25-municipio.csv, linha 492 | correios-2026-11-25-setores.csv, linha 179
+Rua JJ 09;Setor José Jesuíno Filho;Morrinhos/GO;75652-090;correios-2026-11-25-municipio.csv, linha 493 | correios-2026-11-25-setores.csv, linha 180
+Rua JJ 10;Setor José Jesuíno Filho;Morrinhos/GO;75652-092;correios-2026-11-25-municipio.csv, linha 494 | correios-2026-11-25-setores.csv, linha 181
+Rua JJ 11;Setor José Jesuíno Filho;Morrinhos/GO;75652-094;correios-2026-11-25-municipio.csv, linha 495 | correios-2026-11-25-setores.csv, linha 182
+Rua Jacarandá;Residencial Mirante do Bosque;Morrinhos/GO;75656-604;correios-2026-11-25-municipio.csv, linha 475 | correios-2026-11-25-residenciais.csv, linha 107
+Rua Jatobá;Jardim Colibri;Morrinhos/GO;75656-320;correios-2026-11-25-jardins.csv, linha 71 | correios-2026-11-25-municipio.csv, linha 476
+Rua Jatobá;Residencial Mirante do Bosque;Morrinhos/GO;75656-616;correios-2026-11-25-municipio.csv, linha 477 | correios-2026-11-25-residenciais.csv, linha 108
+Rua Jerivá;Jardim Colibri;Morrinhos/GO;75656-326;correios-2026-11-25-jardins.csv, linha 72 | correios-2026-11-25-municipio.csv, linha 484
+Rua Joaquim Godoy;Cristina Park 2;Morrinhos/GO;75652-736;correios-2026-11-25-municipio.csv, linha 43
+Rua Joaquim Luiz Cascão;Setor Arca de Noé;Morrinhos/GO;75654-390;correios-2026-11-25-municipio.csv, linha 501 | correios-2026-11-25-setores.csv, linha 82
+Rua Joaquim Quitério;Morro da Saudade;Morrinhos/GO;75650-524;correios-2026-11-25-morro.csv, linha 18 | correios-2026-11-25-municipio.csv, linha 502
+Rua Joaquina Alves Coutino;Setor Arca de Noé;Morrinhos/GO;75654-394;correios-2026-11-25-municipio.csv, linha 503 | correios-2026-11-25-setores.csv, linha 83
+Rua Jonas Romano;Residencial Antônio Correia Bueno;Morrinhos/GO;75652-552;correios-2026-11-25-municipio.csv, linha 504 | correios-2026-11-25-residenciais.csv, linha 34
+Rua Jordelina de Freitas;Setor Irinéia de Freitas;Morrinhos/GO;75652-474;correios-2026-11-25-municipio.csv, linha 505 | correios-2026-11-25-setores.csv, linha 169
+Rua Jorge Romano Júnior;Setor Aeroporto;Morrinhos/GO;75654-084;correios-2026-11-25-aeroporto.csv, linha 14 | correios-2026-11-25-municipio.csv, linha 506 | correios-2026-11-25-setores.csv, linha 14
+Rua Josina Barbosa de Freitas;Setor Irinéia de Freitas;Morrinhos/GO;75652-478;correios-2026-11-25-municipio.csv, linha 515 | correios-2026-11-25-setores.csv, linha 170
+Rua José Daniel da Silva;Setor Cordeiro;Morrinhos/GO;75652-326;correios-2026-11-25-cordeiro.csv, linha 22 | correios-2026-11-25-municipio.csv, linha 507 | correios-2026-11-25-setores.csv, linha 103
+Rua José Dionísio de Melo;Jardim Romano;Morrinhos/GO;75656-128;correios-2026-11-25-jardins.csv, linha 135 | correios-2026-11-25-municipio.csv, linha 508
+Rua José Dionísio de Melo;Jardim Venezuela;Morrinhos/GO;75650-164;correios-2026-11-25-jardim-venezuela.csv, linha 3 | correios-2026-11-25-jardins.csv, linha 197 | correios-2026-11-25-municipio.csv, linha 509
+Rua José Divino Prudente;Setor Professor Olyntho Cândido;Morrinhos/GO;75652-014;correios-2026-11-25-municipio.csv, linha 510 | correios-2026-11-25-setores.csv, linha 238
+Rua José Elias Borges;Barra do Cordeiro;Morrinhos/GO;75650-381;correios-2026-11-25-cordeiro.csv, linha 5 | correios-2026-11-25-municipio.csv, linha 511
+Rua José Elias Borges;Setor Cordeiro;Morrinhos/GO;75652-322;correios-2026-11-25-cordeiro.csv, linha 23 | correios-2026-11-25-municipio.csv, linha 512 | correios-2026-11-25-setores.csv, linha 104
+Rua José Elias Borges;Setor São Pedro;Morrinhos/GO;75652-310;correios-2026-11-25-municipio.csv, linha 513 | correios-2026-11-25-setores.csv, linha 255
+Rua José Gomes Veado;Setor Oeste;Morrinhos/GO;75650-032;correios-2026-11-25-municipio.csv, linha 44 | correios-2026-11-25-setores.csv, linha 219
+Rua José Nelson;Setor Arca de Noé;Morrinhos/GO;75654-408;correios-2026-11-25-municipio.csv, linha 514 | correios-2026-11-25-setores.csv, linha 84
+Rua Joviano Antonio Fernandes;Setor Cristo Redentor;Morrinhos/GO;75652-202;correios-2026-11-25-cristo-redentor.csv, linha 14 | correios-2026-11-25-municipio.csv, linha 516 | correios-2026-11-25-setores.csv, linha 128
+Rua João Barbosa de Souza;Setor Aeroporto;Morrinhos/GO;75654-070;correios-2026-11-25-aeroporto.csv, linha 12 | correios-2026-11-25-municipio.csv, linha 496 | correios-2026-11-25-setores.csv, linha 12
+Rua João Ferreira de Macedo;Setor Aeroporto;Morrinhos/GO;75654-069;correios-2026-11-25-aeroporto.csv, linha 13 | correios-2026-11-25-municipio.csv, linha 497 | correios-2026-11-25-setores.csv, linha 13
+Rua João Júlio de Oliveira;Setor Oeste;Morrinhos/GO;75650-048;correios-2026-11-25-municipio.csv, linha 498 | correios-2026-11-25-setores.csv, linha 218
+Rua João Júlio de Oliveira;Vila Bela;Morrinhos/GO;75654-030;correios-2026-11-25-municipio.csv, linha 499 | correios-2026-11-25-vilas.csv, linha 14
+Rua João Pinto de Oliveira;JK;Morrinhos/GO;75650-424;correios-2026-11-25-jk.csv, linha 6 | correios-2026-11-25-municipio.csv, linha 500
+Rua Juvercina Cipriana da Silva;Jardim América;Morrinhos/GO;75650-281;correios-2026-11-25-jardins.csv, linha 11 | correios-2026-11-25-municipio.csv, linha 517
+Rua K;Vila Santos Dumont II;Morrinhos/GO;75654-338;correios-2026-11-25-municipio.csv, linha 522 | correios-2026-11-25-vila-santos-dumont.csv, linha 46 | correios-2026-11-25-vilas.csv, linha 134
+Rua KM;Setor Arca de Noé;Morrinhos/GO;75654-376;correios-2026-11-25-municipio.csv, linha 523 | correios-2026-11-25-setores.csv, linha 85
+Rua L;Vila Bela;Morrinhos/GO;75654-022;correios-2026-11-25-municipio.csv, linha 524 | correios-2026-11-25-vilas.csv, linha 15
+Rua L;Vila Santos Dumont II;Morrinhos/GO;75654-346;correios-2026-11-25-municipio.csv, linha 525 | correios-2026-11-25-vila-santos-dumont.csv, linha 47 | correios-2026-11-25-vilas.csv, linha 135
+Rua Leila Regina;Residencial Antônio Correia Bueno;Morrinhos/GO;75652-568;correios-2026-11-25-municipio.csv, linha 526 | correios-2026-11-25-residenciais.csv, linha 35
+Rua Ligúria;Jardim Romano;Morrinhos/GO;75656-106;correios-2026-11-25-jardins.csv, linha 136 | correios-2026-11-25-municipio.csv, linha 527
+Rua Livorno;Jardim Romano;Morrinhos/GO;75656-074;correios-2026-11-25-jardins.csv, linha 137 | correios-2026-11-25-municipio.csv, linha 528
+Rua Loir Carneiro de Castro;Jardim Helena;Morrinhos/GO;75654-694;correios-2026-11-25-jardins.csv, linha 98 | correios-2026-11-25-municipio.csv, linha 529
+Rua Lombardia;Jardim Romano;Morrinhos/GO;75656-084;correios-2026-11-25-jardins.csv, linha 138 | correios-2026-11-25-municipio.csv, linha 530
+Rua M;Vila Bela;Morrinhos/GO;75654-018;correios-2026-11-25-municipio.csv, linha 531 | correios-2026-11-25-vilas.csv, linha 16
+Rua MV-1;Conjunto Residencial Monte Verde;Morrinhos/GO;75652-394;correios-2026-11-25-residenciais.csv, linha 6
+Rua MV-1;Setor Cordeiro;Morrinhos/GO;75652-380;correios-2026-11-25-cordeiro.csv, linha 24 | correios-2026-11-25-setores.csv, linha 105
+Rua MV-14;Conjunto Residencial Monte Verde;Morrinhos/GO;75652-436;correios-2026-11-25-residenciais.csv, linha 7
+Rua MV-14;Cristina Park;Morrinhos/GO;75652-680;correios-2026-11-25-municipio.csv, linha 558
+Rua MV-19;Conjunto Residencial Monte Verde;Morrinhos/GO;75652-408;correios-2026-11-25-residenciais.csv, linha 8
+Rua MV-3;Setor Aeroporto II;Morrinhos/GO;75652-374;correios-2026-11-25-aeroporto.csv, linha 59 | correios-2026-11-25-municipio.csv, linha 559 | correios-2026-11-25-setores.csv, linha 59
+Rua Maestro Vicente José Vieira;Centro;Morrinhos/GO;75650-082;correios-2026-11-25-centro.csv, linha 24 | correios-2026-11-25-municipio.csv, linha 532
+Rua Maestro Vicente José Vieira;Jardim América;Morrinhos/GO;75650-270;correios-2026-11-25-jardins.csv, linha 12 | correios-2026-11-25-municipio.csv, linha 533
+Rua Maestro Vicente José Vieira;Setor Noroeste;Morrinhos/GO;75656-192;correios-2026-11-25-municipio.csv, linha 535 | correios-2026-11-25-setores.csv, linha 199
+Rua Maestro Vicente José Vieira;São Francisco de Assis;Morrinhos/GO;75650-216;correios-2026-11-25-municipio.csv, linha 534 | correios-2026-11-25-saoFrancisco.csv, linha 9
+Rua Major Evaristo Frauzino;Centro;Morrinhos/GO;75650-076;correios-2026-11-25-centro.csv, linha 25 | correios-2026-11-25-municipio.csv, linha 536
+Rua Major Evaristo Frauzino;Setor Noroeste;Morrinhos/GO;75656-186;correios-2026-11-25-municipio.csv, linha 538 | correios-2026-11-25-setores.csv, linha 200
+Rua Major Evaristo Frauzino;São Francisco de Assis;Morrinhos/GO;75650-202;correios-2026-11-25-municipio.csv, linha 537 | correios-2026-11-25-saoFrancisco.csv, linha 10
+Rua Major Limírio;Centro;Morrinhos/GO;75650-128;correios-2026-11-25-centro.csv, linha 26 | correios-2026-11-25-municipio.csv, linha 539
+Rua Manoel Cândido de Mello;Jardim Goiás;Morrinhos/GO;75656-152;correios-2026-11-25-jardins.csv, linha 91 | correios-2026-11-25-municipio.csv, linha 45
+Rua Manoel Mendonça;Setor Cristo Redentor;Morrinhos/GO;75652-200;correios-2026-11-25-cristo-redentor.csv, linha 15 | correios-2026-11-25-municipio.csv, linha 542 | correios-2026-11-25-setores.csv, linha 129
+Rua Manoel de Freitas;Centro;Morrinhos/GO;75650-118;correios-2026-11-25-centro.csv, linha 27 | correios-2026-11-25-municipio.csv, linha 540
+Rua Manoel de Freitas;Jardim Venezuela;Morrinhos/GO;75650-166;correios-2026-11-25-jardim-venezuela.csv, linha 4 | correios-2026-11-25-jardins.csv, linha 198 | correios-2026-11-25-municipio.csv, linha 541
+Rua Maria Alves Pereira;Setor Arca de Noé;Morrinhos/GO;75654-374;correios-2026-11-25-municipio.csv, linha 543 | correios-2026-11-25-setores.csv, linha 86
+Rua Maria Amabini de Moraes;Residencial Antônio Correia Bueno;Morrinhos/GO;75652-556;correios-2026-11-25-municipio.csv, linha 544 | correios-2026-11-25-residenciais.csv, linha 36
+Rua Maria Eduarda Rodrigues;Residencial Antônio Correia Bueno;Morrinhos/GO;75652-560;correios-2026-11-25-municipio.csv, linha 545 | correios-2026-11-25-residenciais.csv, linha 37
+Rua Maria Ferreira de Souza;Setor José Jesuíno Filho;Morrinhos/GO;75652-086;correios-2026-11-25-municipio.csv, linha 546 | correios-2026-11-25-setores.csv, linha 183
+Rua Maria Ferreira de Souza;Setor Professor Olyntho Cândido;Morrinhos/GO;75652-002;correios-2026-11-25-municipio.csv, linha 547 | correios-2026-11-25-setores.csv, linha 239
+Rua Maria Rosa;Setor Arca de Noé;Morrinhos/GO;75654-392;correios-2026-11-25-municipio.csv, linha 548 | correios-2026-11-25-setores.csv, linha 87
+Rua Mariquinha de Freitas;Setor Aeroporto II;Morrinhos/GO;75652-376;correios-2026-11-25-aeroporto.csv, linha 58 | correios-2026-11-25-municipio.csv, linha 549 | correios-2026-11-25-setores.csv, linha 58
+Rua Mato Grosso;Centro;Morrinhos/GO;75650-092;correios-2026-11-25-centro.csv, linha 28 | correios-2026-11-25-municipio.csv, linha 550
+Rua Melanias Vieira de Melo;Setor Oeste;Morrinhos/GO;75650-046;correios-2026-11-25-municipio.csv, linha 551 | correios-2026-11-25-setores.csv, linha 220
+Rua Minas Gerais;Centro;Morrinhos/GO;75650-130;correios-2026-11-25-centro.csv, linha 29 | correios-2026-11-25-municipio.csv, linha 552
+Rua Minervino Quintino Martins;Centro;Morrinhos/GO;75650-150;correios-2026-11-25-centro.csv, linha 30 | correios-2026-11-25-municipio.csv, linha 553
+Rua Minervino Quintino Martins;Jardim América;Morrinhos/GO;75650-276;correios-2026-11-25-jardins.csv, linha 13 | correios-2026-11-25-municipio.csv, linha 554
+Rua Mogno;Desmembramento Fernando Azzi Teixeira;Morrinhos/GO;75656-592;correios-2026-11-25-municipio.csv, linha 555
+Rua Mogno;Jardim Colibri;Morrinhos/GO;75656-302;correios-2026-11-25-jardins.csv, linha 73 | correios-2026-11-25-municipio.csv, linha 556
+Rua Mogno;Residencial Mirante do Bosque;Morrinhos/GO;75656-600;correios-2026-11-25-municipio.csv, linha 557 | correios-2026-11-25-residenciais.csv, linha 109
+Rua N;Vila Bela;Morrinhos/GO;75654-024;correios-2026-11-25-municipio.csv, linha 560 | correios-2026-11-25-vilas.csv, linha 17
+Rua Norma Grace Simiema;Setor Arca de Noé;Morrinhos/GO;75654-382;correios-2026-11-25-municipio.csv, linha 562 | correios-2026-11-25-setores.csv, linha 88
+Rua Novara;Jardim Romano;Morrinhos/GO;75656-118;correios-2026-11-25-jardins.csv, linha 140 | correios-2026-11-25-municipio.csv, linha 563
+Rua Nápolis;Jardim Romano;Morrinhos/GO;75656-064;correios-2026-11-25-jardins.csv, linha 139 | correios-2026-11-25-municipio.csv, linha 561
+Rua Osmira Carneiro;Jardim Helena;Morrinhos/GO;75654-702;correios-2026-11-25-jardins.csv, linha 99 | correios-2026-11-25-municipio.csv, linha 564
+Rua Osvaldo Rodrigues dos Santos;Setor Professor Olyntho Cândido;Morrinhos/GO;75652-000;correios-2026-11-25-municipio.csv, linha 565 | correios-2026-11-25-setores.csv, linha 240
+Rua Ovidio José dos Santos;Setor Professor Olyntho Cândido;Morrinhos/GO;75652-012;correios-2026-11-25-municipio.csv, linha 566 | correios-2026-11-25-setores.csv, linha 241
+Rua P;Vila Bela;Morrinhos/GO;75654-014;correios-2026-11-25-municipio.csv, linha 567 | correios-2026-11-25-vilas.csv, linha 18
+Rua Padre Samuel George;Setor Oeste;Morrinhos/GO;75650-018;correios-2026-11-25-municipio.csv, linha 568 | correios-2026-11-25-setores.csv, linha 221
+Rua Padre Samuel George;Vila Bela;Morrinhos/GO;75654-000;correios-2026-11-25-municipio.csv, linha 569 | correios-2026-11-25-vilas.csv, linha 19
+Rua Paineira;Jardim Colibri;Morrinhos/GO;75656-316;correios-2026-11-25-jardins.csv, linha 74 | correios-2026-11-25-municipio.csv, linha 571
+Rua Paraná;Centro;Morrinhos/GO;75650-090;correios-2026-11-25-centro.csv, linha 33 | correios-2026-11-25-municipio.csv, linha 574
+Rua Paraíba;Centro;Morrinhos/GO;75650-138;correios-2026-11-25-centro.csv, linha 32 | correios-2026-11-25-municipio.csv, linha 573
+Rua Parma;Jardim Romano;Morrinhos/GO;75656-122;correios-2026-11-25-jardins.csv, linha 142 | correios-2026-11-25-municipio.csv, linha 575
+Rua Pará;Centro;Morrinhos/GO;75650-116;correios-2026-11-25-centro.csv, linha 31 | correios-2026-11-25-municipio.csv, linha 572
+Rua Pastor Belino Gonçalves Damaceno;Setor Oeste;Morrinhos/GO;75650-058;correios-2026-11-25-municipio.csv, linha 46 | correios-2026-11-25-setores.csv, linha 222
+Rua Paulo de Souza;Morro da Saudade;Morrinhos/GO;75650-562;correios-2026-11-25-morro.csv, linha 19 | correios-2026-11-25-municipio.csv, linha 576
+Rua Paulo de Souza;Morro da Saudade II;Morrinhos/GO;75650-587;correios-2026-11-25-morro.csv, linha 35 | correios-2026-11-25-municipio.csv, linha 577
+Rua Pavia;Jardim Romano;Morrinhos/GO;75656-124;correios-2026-11-25-jardins.csv, linha 143 | correios-2026-11-25-municipio.csv, linha 578
+Rua Pedro Braga;Setor Cordeiro;Morrinhos/GO;75652-332;correios-2026-11-25-cordeiro.csv, linha 25 | correios-2026-11-25-municipio.csv, linha 579 | correios-2026-11-25-setores.csv, linha 106
+Rua Pequi;Jardim Colibri;Morrinhos/GO;75656-328;correios-2026-11-25-jardins.csv, linha 75 | correios-2026-11-25-municipio.csv, linha 580
+Rua Pernambuco;Centro;Morrinhos/GO;75650-096;correios-2026-11-25-centro.csv, linha 34 | correios-2026-11-25-municipio.csv, linha 581
+Rua Pernambuco;Setor Oeste;Morrinhos/GO;75650-050;correios-2026-11-25-municipio.csv, linha 582 | correios-2026-11-25-setores.csv, linha 223
+Rua Peroba Rosa;Jardim Colibri;Morrinhos/GO;75656-322;correios-2026-11-25-jardins.csv, linha 76 | correios-2026-11-25-municipio.csv, linha 583
+Rua Perucia;Jardim Romano;Morrinhos/GO;75656-090;correios-2026-11-25-jardins.csv, linha 144 | correios-2026-11-25-municipio.csv, linha 584
+Rua Piauí;Centro;Morrinhos/GO;75650-110;correios-2026-11-25-centro.csv, linha 35 | correios-2026-11-25-municipio.csv, linha 585
+Rua Porto Alegre;Centro;Morrinhos/GO;75650-152;correios-2026-11-25-centro.csv, linha 36 | correios-2026-11-25-municipio.csv, linha 586
+Rua Porto Alegre;São Francisco de Assis;Morrinhos/GO;75650-176;correios-2026-11-25-municipio.csv, linha 587 | correios-2026-11-25-saoFrancisco.csv, linha 11
+Rua Prefeito Antônio de Castro Rosa;Setor Professor Olyntho Cândido;Morrinhos/GO;75652-018;correios-2026-11-25-municipio.csv, linha 588 | correios-2026-11-25-setores.csv, linha 242
+Rua Prefeito Felício Chaves;Setor Oeste;Morrinhos/GO;75650-026;correios-2026-11-25-municipio.csv, linha 589 | correios-2026-11-25-setores.csv, linha 224
+Rua Prefeito Manoel Lemos de Mendonça;Setor Oeste;Morrinhos/GO;75650-042;correios-2026-11-25-municipio.csv, linha 591 | correios-2026-11-25-setores.csv, linha 225
+Rua Prefeito Manoel de Freitas;Setor Professor Olyntho Cândido;Morrinhos/GO;75652-008;correios-2026-11-25-municipio.csv, linha 590 | correios-2026-11-25-setores.csv, linha 243
+Rua Professor Felício Chaves;Jardim Santa Fé;Morrinhos/GO;75652-120;correios-2026-11-25-jardins.csv, linha 169 | correios-2026-11-25-municipio.csv, linha 592
+Rua Professor Felício Chaves;Setor Cristo Redentor - II Etapa;Morrinhos/GO;75652-144;correios-2026-11-25-cristo-redentor.csv, linha 36 | correios-2026-11-25-municipio.csv, linha 593 | correios-2026-11-25-setores.csv, linha 150
+Rua Professor Felício Chaves;Vila Nunes;Morrinhos/GO;75650-011;correios-2026-11-25-municipio.csv, linha 594 | correios-2026-11-25-vilas.csv, linha 81
+Rua Professor José Cândido;Setor Cordeiro;Morrinhos/GO;75652-354;correios-2026-11-25-cordeiro.csv, linha 26 | correios-2026-11-25-municipio.csv, linha 595 | correios-2026-11-25-setores.csv, linha 107
+Rua Professor José Cândido;Setor Cristo Redentor;Morrinhos/GO;75652-194;correios-2026-11-25-cristo-redentor.csv, linha 16 | correios-2026-11-25-municipio.csv, linha 596 | correios-2026-11-25-setores.csv, linha 130
+Rua Pádua;Jardim Romano;Morrinhos/GO;75656-100;correios-2026-11-25-jardins.csv, linha 141 | correios-2026-11-25-municipio.csv, linha 570
+Rua Queridinha;Parque das Laranjeiras;Morrinhos/GO;75654-582;correios-2026-11-25-municipio.csv, linha 597
+Rua RDO 1;Residencial Dona Ondina;Morrinhos/GO;75652-752;correios-2026-11-25-municipio.csv, linha 600 | correios-2026-11-25-residenciais.csv, linha 53
+Rua RDO 2;Residencial Dona Ondina;Morrinhos/GO;75652-754;correios-2026-11-25-municipio.csv, linha 601 | correios-2026-11-25-residenciais.csv, linha 54
+Rua RDO 3;Residencial Dona Ondina;Morrinhos/GO;75652-756;correios-2026-11-25-municipio.csv, linha 602 | correios-2026-11-25-residenciais.csv, linha 55
+Rua RDO 4;Residencial Dona Ondina;Morrinhos/GO;75652-760;correios-2026-11-25-municipio.csv, linha 603 | correios-2026-11-25-residenciais.csv, linha 56
+Rua RDO 5;Residencial Dona Ondina;Morrinhos/GO;75652-764;correios-2026-11-25-municipio.csv, linha 604 | correios-2026-11-25-residenciais.csv, linha 57
+Rua RDO 6;Residencial Dona Ondina;Morrinhos/GO;75652-768;correios-2026-11-25-municipio.csv, linha 605 | correios-2026-11-25-residenciais.csv, linha 58
+Rua RDO 7;Residencial Dona Ondina;Morrinhos/GO;75652-766;correios-2026-11-25-municipio.csv, linha 606 | correios-2026-11-25-residenciais.csv, linha 59
+Rua RI-1;Residencial dos Ipês;Morrinhos/GO;75654-444;correios-2026-11-25-municipio.csv, linha 613 | correios-2026-11-25-residenciais.csv, linha 64
+Rua RI-1A;Residencial dos Ipês;Morrinhos/GO;75654-442;correios-2026-11-25-municipio.csv, linha 614 | correios-2026-11-25-residenciais.csv, linha 65
+Rua RI-2;Residencial dos Ipês;Morrinhos/GO;75654-438;correios-2026-11-25-municipio.csv, linha 615 | correios-2026-11-25-residenciais.csv, linha 66
+Rua RI-2A;Residencial dos Ipês;Morrinhos/GO;75654-440;correios-2026-11-25-municipio.csv, linha 616 | correios-2026-11-25-residenciais.csv, linha 67
+Rua RI-3;Residencial dos Ipês;Morrinhos/GO;75654-428;correios-2026-11-25-municipio.csv, linha 617 | correios-2026-11-25-residenciais.csv, linha 68
+Rua RI-4;Residencial dos Ipês;Morrinhos/GO;75654-430;correios-2026-11-25-municipio.csv, linha 618 | correios-2026-11-25-residenciais.csv, linha 69
+Rua RI-5;Residencial dos Ipês;Morrinhos/GO;75654-422;correios-2026-11-25-municipio.csv, linha 619 | correios-2026-11-25-residenciais.csv, linha 70
+Rua RI-6;Residencial dos Ipês;Morrinhos/GO;75654-432;correios-2026-11-25-municipio.csv, linha 620 | correios-2026-11-25-residenciais.csv, linha 71
+Rua RI-7;Residencial dos Ipês;Morrinhos/GO;75654-434;correios-2026-11-25-municipio.csv, linha 621 | correios-2026-11-25-residenciais.csv, linha 72
+Rua RI-8;Residencial Aldeia;Morrinhos/GO;75654-500;correios-2026-11-25-municipio.csv, linha 622 | correios-2026-11-25-residenciais.csv, linha 27
+Rua RI-8;Residencial dos Ipês;Morrinhos/GO;75654-436;correios-2026-11-25-municipio.csv, linha 623 | correios-2026-11-25-residenciais.csv, linha 73
+Rua RI-9;Residencial dos Ipês;Morrinhos/GO;75654-426;correios-2026-11-25-municipio.csv, linha 624 | correios-2026-11-25-residenciais.csv, linha 74
+Rua Raimundo N Ribeiro;Jardim Santa Terezinha II;Morrinhos/GO;75654-618;correios-2026-11-25-jardins.csv, linha 190 | correios-2026-11-25-municipio.csv, linha 598
+Rua Ravena;Jardim Romano;Morrinhos/GO;75656-116;correios-2026-11-25-jardins.csv, linha 145 | correios-2026-11-25-municipio.csv, linha 599
+Rua Regio;Jardim Romano;Morrinhos/GO;75656-096;correios-2026-11-25-jardins.csv, linha 146 | correios-2026-11-25-municipio.csv, linha 607
+Rua Regio 2;Jardim Romano;Morrinhos/GO;75656-094;correios-2026-11-25-jardins.csv, linha 147 | correios-2026-11-25-municipio.csv, linha 608
+Rua Reverendo Archibald Tipple;Setor Aeroporto;Morrinhos/GO;75654-064;correios-2026-11-25-aeroporto.csv, linha 15 | correios-2026-11-25-municipio.csv, linha 609 | correios-2026-11-25-setores.csv, linha 15
+Rua Rio Grande do Sul;Centro;Morrinhos/GO;75650-094;correios-2026-11-25-centro.csv, linha 38 | correios-2026-11-25-municipio.csv, linha 612
+Rua Rio de Janeiro;Centro;Morrinhos/GO;75650-146;correios-2026-11-25-centro.csv, linha 37 | correios-2026-11-25-municipio.csv, linha 610
+Rua Rio de Janeiro;São Francisco de Assis;Morrinhos/GO;75650-174;correios-2026-11-25-municipio.csv, linha 611 | correios-2026-11-25-saoFrancisco.csv, linha 12
+Rua Rodrigo Freitas de Moraes;Setor Cordeiro;Morrinhos/GO;75652-336;correios-2026-11-25-cordeiro.csv, linha 27 | correios-2026-11-25-municipio.csv, linha 625 | correios-2026-11-25-setores.csv, linha 108
+Rua Rosa Cascão;Setor Arca de Noé;Morrinhos/GO;75654-388;correios-2026-11-25-municipio.csv, linha 626 | correios-2026-11-25-setores.csv, linha 89
+Rua Roseli Carneiro de Castro;Jardim Helena;Morrinhos/GO;75654-692;correios-2026-11-25-jardins.csv, linha 100 | correios-2026-11-25-municipio.csv, linha 627
+Rua SB-10;Setor Solar do Bosque;Morrinhos/GO;75654-730;correios-2026-11-25-municipio.csv, linha 635 | correios-2026-11-25-setores.csv, linha 267
+Rua SB-2;Setor Solar do Bosque;Morrinhos/GO;75654-726;correios-2026-11-25-municipio.csv, linha 636 | correios-2026-11-25-setores.csv, linha 268
+Rua SB-3;Setor Solar do Bosque;Morrinhos/GO;75654-724;correios-2026-11-25-municipio.csv, linha 637 | correios-2026-11-25-setores.csv, linha 269
+Rua SB-4;Setor Solar do Bosque;Morrinhos/GO;75654-722;correios-2026-11-25-municipio.csv, linha 638 | correios-2026-11-25-setores.csv, linha 270
+Rua SB-5;Setor Solar do Bosque;Morrinhos/GO;75654-720;correios-2026-11-25-municipio.csv, linha 639 | correios-2026-11-25-setores.csv, linha 271
+Rua SB-6;Setor Solar do Bosque;Morrinhos/GO;75654-718;correios-2026-11-25-municipio.csv, linha 640 | correios-2026-11-25-setores.csv, linha 272
+Rua SB-7;Setor Solar do Bosque;Morrinhos/GO;75654-714;correios-2026-11-25-municipio.csv, linha 641 | correios-2026-11-25-setores.csv, linha 273
+Rua SB-7A;Setor Solar do Bosque;Morrinhos/GO;75654-716;correios-2026-11-25-municipio.csv, linha 642 | correios-2026-11-25-setores.csv, linha 274
+Rua SB-8;Jardim Helena;Morrinhos/GO;75654-708;correios-2026-11-25-jardins.csv, linha 101 | correios-2026-11-25-municipio.csv, linha 643
+Rua SB-8;Setor Solar do Bosque;Morrinhos/GO;75654-728;correios-2026-11-25-municipio.csv, linha 644 | correios-2026-11-25-setores.csv, linha 275
+Rua SB-9;Setor Solar do Bosque;Morrinhos/GO;75654-712;correios-2026-11-25-municipio.csv, linha 645 | correios-2026-11-25-setores.csv, linha 276
+Rua Salermo;Jardim Romano;Morrinhos/GO;75656-056;correios-2026-11-25-jardins.csv, linha 148 | correios-2026-11-25-municipio.csv, linha 628
+Rua Santo Agostinho;Morro da Saudade;Morrinhos/GO;75650-550;correios-2026-11-25-morro.csv, linha 20 | correios-2026-11-25-municipio.csv, linha 629
+Rua Santorini;Reserva Atenas;Morrinhos/GO;75654-516;correios-2026-11-25-municipio.csv, linha 630
+Rua Sargento Neir Garcia dos Santos;Jardim Santa Terezinha I;Morrinhos/GO;75654-601;correios-2026-11-25-jardins.csv, linha 181 | correios-2026-11-25-municipio.csv, linha 633
+Rua Sargento Neir Garcia dos Santos;Jardim Santa Terezinha II;Morrinhos/GO;75654-616;correios-2026-11-25-jardins.csv, linha 191 | correios-2026-11-25-municipio.csv, linha 634
+Rua Sebastião Godoy;Cristina Park 2;Morrinhos/GO;75652-738;correios-2026-11-25-municipio.csv, linha 47
+Rua Sebastião Godoy;Residencial Dona Ondina;Morrinhos/GO;75652-750;correios-2026-11-25-municipio.csv, linha 48 | correios-2026-11-25-residenciais.csv, linha 60
+Rua Sebastião Godoy;Setor Cordeiro II;Morrinhos/GO;75652-742;correios-2026-11-25-cordeiro.csv, linha 34 | correios-2026-11-25-municipio.csv, linha 49 | correios-2026-11-25-setores.csv, linha 115
+Rua Sergipe;Centro;Morrinhos/GO;75650-100;correios-2026-11-25-centro.csv, linha 40 | correios-2026-11-25-municipio.csv, linha 646
+Rua Sergipe;Vila Santa Rosa;Morrinhos/GO;75650-734;correios-2026-11-25-municipio.csv, linha 647 | correios-2026-11-25-vilas.csv, linha 86
+Rua Siena;Jardim Romano;Morrinhos/GO;75656-110;correios-2026-11-25-jardins.csv, linha 149 | correios-2026-11-25-municipio.csv, linha 648
+Rua Spezzia;Jardim Romano;Morrinhos/GO;75656-080;correios-2026-11-25-jardins.csv, linha 150 | correios-2026-11-25-municipio.csv, linha 650
+Rua Sucupira;Jardim Colibri;Morrinhos/GO;75656-318;correios-2026-11-25-jardins.csv, linha 78 | correios-2026-11-25-municipio.csv, linha 651
+Rua Sucupira;Residencial Mirante do Bosque;Morrinhos/GO;75656-614;correios-2026-11-25-municipio.csv, linha 652 | correios-2026-11-25-residenciais.csv, linha 110
+Rua São Paulo;Centro;Morrinhos/GO;75650-132;correios-2026-11-25-centro.csv, linha 39 | correios-2026-11-25-municipio.csv, linha 631
+Rua São Pedro;São Francisco de Assis;Morrinhos/GO;75650-180;correios-2026-11-25-municipio.csv, linha 632 | correios-2026-11-25-saoFrancisco.csv, linha 13
+Rua Sílvio Romano de Melo;Jardim Colibri;Morrinhos/GO;75656-308;correios-2026-11-25-jardins.csv, linha 77 | correios-2026-11-25-municipio.csv, linha 649
+Rua Tarento;Jardim Romano;Morrinhos/GO;75656-072;correios-2026-11-25-jardins.csv, linha 151 | correios-2026-11-25-municipio.csv, linha 653
+Rua Tereza de Freitas Felter;Setor São Pedro;Morrinhos/GO;75652-300;correios-2026-11-25-municipio.csv, linha 654 | correios-2026-11-25-setores.csv, linha 256
+Rua Tessália;Reserva Atenas;Morrinhos/GO;75654-518;correios-2026-11-25-municipio.csv, linha 655
+Rua Tiradentes;Centro;Morrinhos/GO;75650-108;correios-2026-11-25-centro.csv, linha 41 | correios-2026-11-25-municipio.csv, linha 656
+Rua Tripoli;Reserva Atenas;Morrinhos/GO;75654-514;correios-2026-11-25-municipio.csv, linha 657
+Rua Turim;Jardim Romano;Morrinhos/GO;75656-062;correios-2026-11-25-jardins.csv, linha 152 | correios-2026-11-25-municipio.csv, linha 658
+Rua Uvaia;Jardim Colibri;Morrinhos/GO;75656-298;correios-2026-11-25-jardins.csv, linha 79 | correios-2026-11-25-municipio.csv, linha 659
+Rua VC-1;Jardim Vera Cruz;Morrinhos/GO;75656-484;correios-2026-11-25-jardins.csv, linha 210 | correios-2026-11-25-municipio.csv, linha 660
+Rua VC-10;Desmembramento Fernando Azzi Teixeira;Morrinhos/GO;75656-590;correios-2026-11-25-municipio.csv, linha 661
+Rua VC-10;Jardim Vera Cruz;Morrinhos/GO;75656-508;correios-2026-11-25-jardins.csv, linha 211 | correios-2026-11-25-municipio.csv, linha 662
+Rua VC-11;Jardim Vera Cruz;Morrinhos/GO;75656-496;correios-2026-11-25-jardins.csv, linha 212 | correios-2026-11-25-municipio.csv, linha 663
+Rua VC-12;Jardim Vera Cruz;Morrinhos/GO;75656-510;correios-2026-11-25-jardins.csv, linha 213 | correios-2026-11-25-municipio.csv, linha 664
+Rua VC-13;Jardim Vera Cruz;Morrinhos/GO;75656-512;correios-2026-11-25-jardins.csv, linha 214 | correios-2026-11-25-municipio.csv, linha 665
+Rua VC-14;Jardim Vera Cruz;Morrinhos/GO;75656-514;correios-2026-11-25-jardins.csv, linha 215 | correios-2026-11-25-municipio.csv, linha 666
+Rua VC-14;Residencial Hercílio Gomes de Melo;Morrinhos/GO;75656-468;correios-2026-11-25-municipio.csv, linha 50 | correios-2026-11-25-residenciais.csv, linha 91
+Rua VC-14A;Jardim Vera Cruz;Morrinhos/GO;75656-516;correios-2026-11-25-jardins.csv, linha 216 | correios-2026-11-25-municipio.csv, linha 667
+Rua VC-15;Jardim Vera Cruz;Morrinhos/GO;75656-518;correios-2026-11-25-jardins.csv, linha 217 | correios-2026-11-25-municipio.csv, linha 668
+Rua VC-15A;Jardim Vera Cruz;Morrinhos/GO;75656-520;correios-2026-11-25-jardins.csv, linha 218 | correios-2026-11-25-municipio.csv, linha 669
+Rua VC-16;Jardim Vera Cruz;Morrinhos/GO;75656-522;correios-2026-11-25-jardins.csv, linha 219 | correios-2026-11-25-municipio.csv, linha 670
+Rua VC-16;Residencial Hercílio Gomes de Melo;Morrinhos/GO;75656-472;correios-2026-11-25-municipio.csv, linha 51 | correios-2026-11-25-residenciais.csv, linha 92
+Rua VC-16A;Jardim Vera Cruz;Morrinhos/GO;75656-524;correios-2026-11-25-jardins.csv, linha 220 | correios-2026-11-25-municipio.csv, linha 671
+Rua VC-17;Jardim Vera Cruz;Morrinhos/GO;75656-528;correios-2026-11-25-jardins.csv, linha 221 | correios-2026-11-25-municipio.csv, linha 672
+Rua VC-17A;Jardim Vera Cruz;Morrinhos/GO;75656-526;correios-2026-11-25-jardins.csv, linha 222 | correios-2026-11-25-municipio.csv, linha 673
+Rua VC-18;Jardim Vera Cruz;Morrinhos/GO;75656-530;correios-2026-11-25-jardins.csv, linha 223 | correios-2026-11-25-municipio.csv, linha 674
+Rua VC-18;Residencial Hercílio Gomes de Melo;Morrinhos/GO;75656-478;correios-2026-11-25-municipio.csv, linha 52 | correios-2026-11-25-residenciais.csv, linha 93
+Rua VC-2;Jardim Vera Cruz;Morrinhos/GO;75656-488;correios-2026-11-25-jardins.csv, linha 224 | correios-2026-11-25-municipio.csv, linha 675
+Rua VC-3;Jardim Vera Cruz;Morrinhos/GO;75656-492;correios-2026-11-25-jardins.csv, linha 225 | correios-2026-11-25-municipio.csv, linha 676
+Rua VC-4;Jardim Vera Cruz;Morrinhos/GO;75656-494;correios-2026-11-25-jardins.csv, linha 226 | correios-2026-11-25-municipio.csv, linha 677
+Rua VC-4;Residencial Hercílio Gomes de Melo;Morrinhos/GO;75656-444;correios-2026-11-25-municipio.csv, linha 53 | correios-2026-11-25-residenciais.csv, linha 94
+Rua VC-5;Jardim Vera Cruz;Morrinhos/GO;75656-498;correios-2026-11-25-jardins.csv, linha 227 | correios-2026-11-25-municipio.csv, linha 678
+Rua VC-6;Jardim Vera Cruz;Morrinhos/GO;75656-500;correios-2026-11-25-jardins.csv, linha 228 | correios-2026-11-25-municipio.csv, linha 679
+Rua VC-6;Residencial Hercílio Gomes de Melo;Morrinhos/GO;75656-456;correios-2026-11-25-municipio.csv, linha 54 | correios-2026-11-25-residenciais.csv, linha 95
+Rua VC-7;Jardim Vera Cruz;Morrinhos/GO;75656-502;correios-2026-11-25-jardins.csv, linha 229 | correios-2026-11-25-municipio.csv, linha 680
+Rua VC-8;Jardim Vera Cruz;Morrinhos/GO;75656-504;correios-2026-11-25-jardins.csv, linha 230 | correios-2026-11-25-municipio.csv, linha 681
+Rua VC-9;Jardim Vera Cruz;Morrinhos/GO;75656-506;correios-2026-11-25-jardins.csv, linha 231 | correios-2026-11-25-municipio.csv, linha 682
+Rua Vera Cruz;Setor Arca de Noé;Morrinhos/GO;75654-402;correios-2026-11-25-municipio.csv, linha 683 | correios-2026-11-25-setores.csv, linha 90
+Rua Vereador Antonio da Lucinda;Jardim Helena;Morrinhos/GO;75654-704;correios-2026-11-25-jardins.csv, linha 102 | correios-2026-11-25-municipio.csv, linha 684
+Rua Vereador Luiz Santiago;Setor Aeroporto;Morrinhos/GO;75654-090;correios-2026-11-25-aeroporto.csv, linha 16 | correios-2026-11-25-municipio.csv, linha 685 | correios-2026-11-25-setores.csv, linha 16
+Rua Verona;Jardim Romano;Morrinhos/GO;75656-098;correios-2026-11-25-jardins.csv, linha 153 | correios-2026-11-25-municipio.csv, linha 686
+Rua Verona I;Jardim Romano;Morrinhos/GO;75656-092;correios-2026-11-25-jardins.csv, linha 154 | correios-2026-11-25-municipio.csv, linha 687
+Rua Verona II;Jardim Romano;Morrinhos/GO;75656-102;correios-2026-11-25-jardins.csv, linha 155 | correios-2026-11-25-municipio.csv, linha 688
+Rua Vitória da Paixão A Barbosa;Residencial Antônio Correia Bueno;Morrinhos/GO;75652-562;correios-2026-11-25-municipio.csv, linha 689 | correios-2026-11-25-residenciais.csv, linha 38
+Rua WN;Setor Arca de Noé;Morrinhos/GO;75654-378;correios-2026-11-25-municipio.csv, linha 690 | correios-2026-11-25-setores.csv, linha 91
+Rua X;Setor Noroeste;Morrinhos/GO;75656-194;correios-2026-11-25-municipio.csv, linha 692 | correios-2026-11-25-setores.csv, linha 201
+Rua X;São Francisco de Assis;Morrinhos/GO;75650-204;correios-2026-11-25-municipio.csv, linha 691 | correios-2026-11-25-saoFrancisco.csv, linha 14
+Rua Z;Setor Noroeste;Morrinhos/GO;75656-196;correios-2026-11-25-municipio.csv, linha 693 | correios-2026-11-25-setores.csv, linha 202
+Rua da Mangueira;Morro da Saudade;Morrinhos/GO;75650-548;correios-2026-11-25-morro.csv, linha 9 | correios-2026-11-25-municipio.csv, linha 332
+Rua da Pitombeira;Jardim Colibri;Morrinhos/GO;75656-312;correios-2026-11-25-jardins.csv, linha 68 | correios-2026-11-25-municipio.csv, linha 333
+Rua das Acácias;Parque das Laranjeiras;Morrinhos/GO;75654-578;correios-2026-11-25-municipio.csv, linha 335
+Rua das Azaléias;Parque das Laranjeiras;Morrinhos/GO;75654-576;correios-2026-11-25-municipio.csv, linha 336
+Rua das Bananeiras;Morro da Saudade;Morrinhos/GO;75650-502;correios-2026-11-25-morro.csv, linha 10 | correios-2026-11-25-municipio.csv, linha 337
+Rua das Begônias;Parque das Laranjeiras;Morrinhos/GO;75654-580;correios-2026-11-25-municipio.csv, linha 338
+Rua das Goiabeiras;Morro da Saudade;Morrinhos/GO;75650-504;correios-2026-11-25-morro.csv, linha 11 | correios-2026-11-25-municipio.csv, linha 13
+Rua das Hortências;Parque das Laranjeiras;Morrinhos/GO;75654-572;correios-2026-11-25-municipio.csv, linha 339
+Rua das Jabuticabeiras;Morro da Saudade;Morrinhos/GO;75650-512;correios-2026-11-25-morro.csv, linha 12 | correios-2026-11-25-municipio.csv, linha 340
+Rua das Laranjeiras;Morro da Saudade;Morrinhos/GO;75650-508;correios-2026-11-25-morro.csv, linha 13 | correios-2026-11-25-municipio.csv, linha 341
+Rua das Limeiras;Morro da Saudade;Morrinhos/GO;75650-514;correios-2026-11-25-morro.csv, linha 14 | correios-2026-11-25-municipio.csv, linha 342
+Rua das Margaridas;Parque das Laranjeiras;Morrinhos/GO;75654-564;correios-2026-11-25-municipio.csv, linha 343
+Rua das Orquídeas;Jardim Santa Terezinha I;Morrinhos/GO;75654-592;correios-2026-11-25-jardins.csv, linha 179 | correios-2026-11-25-municipio.csv, linha 344
+Rua das Orquídeas;Parque das Laranjeiras;Morrinhos/GO;75654-568;correios-2026-11-25-municipio.csv, linha 345
+Rua das Palmas;Parque das Laranjeiras;Morrinhos/GO;75654-584;correios-2026-11-25-municipio.csv, linha 346
+Rua das Palmeiras;Setor Leste Universitário;Morrinhos/GO;75650-326;correios-2026-11-25-municipio.csv, linha 347 | correios-2026-11-25-setores.csv, linha 187
+Rua das Rosas;Parque das Laranjeiras;Morrinhos/GO;75654-574;correios-2026-11-25-municipio.csv, linha 348
+Rua das Videiras;Morro da Saudade;Morrinhos/GO;75650-510;correios-2026-11-25-morro.csv, linha 15 | correios-2026-11-25-municipio.csv, linha 349
+Rua das Violetas;Parque das Laranjeiras;Morrinhos/GO;75654-562;correios-2026-11-25-municipio.csv, linha 350
+Rua de Acesso;Jardim Santa Terezinha III;Morrinhos/GO;75654-682;correios-2026-11-25-jardins.csv, linha 195 | correios-2026-11-25-municipio.csv, linha 364
+Rua do Boiadeiro;Barra do Cordeiro;Morrinhos/GO;75650-380;correios-2026-11-25-cordeiro.csv, linha 3 | correios-2026-11-25-municipio.csv, linha 368
+Rua do Boiadeiro;JK;Morrinhos/GO;75650-422;correios-2026-11-25-jk.csv, linha 4 | correios-2026-11-25-municipio.csv, linha 369
+Rua do Caju;Morro da Saudade;Morrinhos/GO;75650-506;correios-2026-11-25-morro.csv, linha 16 | correios-2026-11-25-municipio.csv, linha 371
+Rua do Caju;Morro da Saudade;Morrinhos/GO;75650-536;correios-2026-11-25-morro.csv, linha 17 | correios-2026-11-25-municipio.csv, linha 370
+Rua dos Ipês;Setor Leste Universitário;Morrinhos/GO;75650-328;correios-2026-11-25-municipio.csv, linha 375 | correios-2026-11-25-setores.csv, linha 188
+Via DPI-1;Distrito de Pequenas Indústrias de Morrinhos;Morrinhos/GO;75653-422;correios-2026-11-25-distritos.csv, linha 11
+Via DPI-10;Distrito de Pequenas Indústrias de Morrinhos;Morrinhos/GO;75653-414;correios-2026-11-25-distritos.csv, linha 12
+Via DPI-11;Distrito de Pequenas Indústrias de Morrinhos;Morrinhos/GO;75653-404;correios-2026-11-25-distritos.csv, linha 13
+Via DPI-12;Distrito de Pequenas Indústrias de Morrinhos;Morrinhos/GO;75653-402;correios-2026-11-25-distritos.csv, linha 14
+Via DPI-2;Distrito de Pequenas Indústrias de Morrinhos;Morrinhos/GO;75653-420;correios-2026-11-25-distritos.csv, linha 15
+Via DPI-3;Distrito de Pequenas Indústrias de Morrinhos;Morrinhos/GO;75653-418;correios-2026-11-25-distritos.csv, linha 16
+Via DPI-4;Distrito de Pequenas Indústrias de Morrinhos;Morrinhos/GO;75653-412;correios-2026-11-25-distritos.csv, linha 17
+Via DPI-5;Distrito de Pequenas Indústrias de Morrinhos;Morrinhos/GO;75653-410;correios-2026-11-25-distritos.csv, linha 18
+Via DPI-6;Distrito de Pequenas Indústrias de Morrinhos;Morrinhos/GO;75653-408;correios-2026-11-25-distritos.csv, linha 19
+Via DPI-7;Distrito de Pequenas Indústrias de Morrinhos;Morrinhos/GO;75653-406;correios-2026-11-25-distritos.csv, linha 20
+Via DPI-8;Distrito de Pequenas Indústrias de Morrinhos;Morrinhos/GO;75653-400;correios-2026-11-25-distritos.csv, linha 21
+Via DPI-9;Distrito de Pequenas Indústrias de Morrinhos;Morrinhos/GO;75653-416;correios-2026-11-25-distritos.csv, linha 22
+Via Perimetral 1;Residencial dos Ipês;Morrinhos/GO;75654-420;correios-2026-11-25-residenciais.csv, linha 75
+Via Perimetral 1;Setor Sul dos Pomares;Morrinhos/GO;75654-296;correios-2026-11-25-setores.csv, linha 286
+Via Perimetral 2;Jardim Renascer;Morrinhos/GO;75654-284;correios-2026-11-25-jardins.csv, linha 116
+Via Perimetral 2;Setor Sul dos Pomares;Morrinhos/GO;75654-292;correios-2026-11-25-setores.csv, linha 287
+Via Primária;Distrito Agroindustrial de Morrinhos;Morrinhos/GO;75654-741;correios-2026-11-25-distritos.csv, linha 3
+Via Primária 1;Distrito Agroindustrial de Morrinhos;Morrinhos/GO;75654-742;correios-2026-11-25-distritos.csv, linha 4
+Via Primária 2;Distrito Agroindustrial de Morrinhos;Morrinhos/GO;75654-744;correios-2026-11-25-distritos.csv, linha 5
+Via Secundária 01;Distrito Agroindustrial de Morrinhos;Morrinhos/GO;75654-746;correios-2026-11-25-distritos.csv, linha 6
+Via Secundária 03;Distrito Agroindustrial de Morrinhos;Morrinhos/GO;75654-745;correios-2026-11-25-distritos.csv, linha 7
+Via Secundária 05;Distrito Agroindustrial de Morrinhos;Morrinhos/GO;75654-747;correios-2026-11-25-distritos.csv, linha 8
+Via Secundária 07;Distrito Agroindustrial de Morrinhos;Morrinhos/GO;75654-743;correios-2026-11-25-distritos.csv, linha 9
+Via Secundária 08;Distrito Agroindustrial de Morrinhos;Morrinhos/GO;75654-748;correios-2026-11-25-distritos.csv, linha 10
+Viela 1;Setor Aeroporto III;Morrinhos/GO;75654-144;correios-2026-11-25-aeroporto.csv, linha 72 | correios-2026-11-25-setores.csv, linha 72
+Viela 1;Setor São Pedro;Morrinhos/GO;75652-284;correios-2026-11-25-setores.csv, linha 265
+Viela 10;Morro da Saudade;Morrinhos/GO;75650-556;correios-2026-11-25-morro.csv, linha 34
+Viela 2;Setor Aeroporto III;Morrinhos/GO;75654-158;correios-2026-11-25-aeroporto.csv, linha 73 | correios-2026-11-25-setores.csv, linha 73
+Viela 3;Jardim Romano;Morrinhos/GO;75656-076;correios-2026-11-25-jardins.csv, linha 159
+Viela MV-10;Conjunto Residencial Monte Verde;Morrinhos/GO;75652-422;correios-2026-11-25-residenciais.csv, linha 10
+Viela MV-11;Conjunto Residencial Monte Verde;Morrinhos/GO;75652-426;correios-2026-11-25-residenciais.csv, linha 11
+Viela MV-12;Conjunto Residencial Monte Verde;Morrinhos/GO;75652-428;correios-2026-11-25-residenciais.csv, linha 12
+Viela MV-13;Conjunto Residencial Monte Verde;Morrinhos/GO;75652-432;correios-2026-11-25-residenciais.csv, linha 13
+Viela MV-15;Conjunto Residencial Monte Verde;Morrinhos/GO;75652-430;correios-2026-11-25-residenciais.csv, linha 14
+Viela MV-16;Conjunto Residencial Monte Verde;Morrinhos/GO;75652-424;correios-2026-11-25-residenciais.csv, linha 15
+Viela MV-17;Conjunto Residencial Monte Verde;Morrinhos/GO;75652-420;correios-2026-11-25-residenciais.csv, linha 16
+Viela MV-18;Conjunto Residencial Monte Verde;Morrinhos/GO;75652-414;correios-2026-11-25-residenciais.csv, linha 17
+Viela MV-1A;Conjunto Residencial Monte Verde;Morrinhos/GO;75652-434;correios-2026-11-25-residenciais.csv, linha 9
+Viela MV-20;Conjunto Residencial Monte Verde;Morrinhos/GO;75652-404;correios-2026-11-25-residenciais.csv, linha 18
+Viela MV-21;Conjunto Residencial Monte Verde;Morrinhos/GO;75652-416;correios-2026-11-25-residenciais.csv, linha 19
+Viela MV-3;Conjunto Residencial Monte Verde;Morrinhos/GO;75652-392;correios-2026-11-25-residenciais.csv, linha 20
+Viela MV-4;Conjunto Residencial Monte Verde;Morrinhos/GO;75652-400;correios-2026-11-25-residenciais.csv, linha 21
+Viela MV-5;Conjunto Residencial Monte Verde;Morrinhos/GO;75652-402;correios-2026-11-25-residenciais.csv, linha 22
+Viela MV-6;Conjunto Residencial Monte Verde;Morrinhos/GO;75652-406;correios-2026-11-25-residenciais.csv, linha 23
+Viela MV-7;Conjunto Residencial Monte Verde;Morrinhos/GO;75652-410;correios-2026-11-25-residenciais.csv, linha 24
+Viela MV-8;Conjunto Residencial Monte Verde;Morrinhos/GO;75652-412;correios-2026-11-25-residenciais.csv, linha 25
+Viela MV-9;Conjunto Residencial Monte Verde;Morrinhos/GO;75652-418;correios-2026-11-25-residenciais.csv, linha 26
+Viela Porto Alegre;São Francisco de Assis;Morrinhos/GO;75650-210;correios-2026-11-25-saoFrancisco.csv, linha 28
+Viela do Caju;Morro da Saudade;Morrinhos/GO;75650-544;correios-2026-11-25-morro.csv, linha 33
+Área Rural;Área Rural de Morrinhos;Morrinhos/GO;75658-899;correios-2026-11-25-municipio.csv, linha 71

@@ -1,0 +1,739 @@
+Logradouro;Bairro;Localidade;CEP
+Alameda Goiás;Jardim Goiás;Morrinhos/GO;75656-140
+Avenida Antônio Gonçalves Leite;Genoveva Alves;Morrinhos/GO;75656-542
+Avenida Antonio L Gomes;Jardim Santa Terezinha II;Morrinhos/GO;75654-624
+Avenida Hercílio Gomes de Melo;Residencial Hercílio Gomes de Melo;Morrinhos/GO;75656-452
+Avenida Vera Cruz;Residencial Hercílio Gomes de Melo;Morrinhos/GO;75656-446
+Rodovia GO-213;Estância da Saudade - Bairro Morro da Saudade;Morrinhos/GO;75650-592
+Rodovia GO-213;Jardim Moisés Inocêncio;Morrinhos/GO;75650-719
+Rodovia GO-213;Morro da Saudade;Morrinhos/GO;75650-535
+Rua Bolonha;Jardim Goiás;Morrinhos/GO;75656-160
+Rua Coronel Bento Godoy;Cristina Park 2;Morrinhos/GO;75652-734
+Rua Coronel Bento Godoy;Residencial Dona Ondina;Morrinhos/GO;75652-758
+Rua das Goiabeiras;Morro da Saudade;Morrinhos/GO;75650-504
+Rua Ermelinda Gonzaga de Aquino;Jardim Maria Ferreira de Souza;Morrinhos/GO;75652-100
+Rua Ermelinda Gonzaga de Aquino;Setor Cristo Redentor - II Etapa;Morrinhos/GO;75652-140
+Rua Ermelinda Gonzaga de Aquino;Setor Professor Olyntho Cândido;Morrinhos/GO;75652-007
+Rua Felicidade Estrela de Godoy;Cristina Park;Morrinhos/GO;75652-710
+Rua Felicidade Estrela de Godoy;Cristina Park 2;Morrinhos/GO;75652-720
+Rua Felicidade Estrela de Godoy;Setor Cordeiro II;Morrinhos/GO;75652-740
+Rua Goiás;Centro;Morrinhos/GO;75650-088
+Rua Goiás;Jardim Romano II;Morrinhos/GO;75656-040
+Rua H-1;Residencial Hercílio Gomes de Melo;Morrinhos/GO;75656-442
+Rua H-10;Residencial Hercílio Gomes de Melo;Morrinhos/GO;75656-476
+Rua H-11;Residencial Hercílio Gomes de Melo;Morrinhos/GO;75656-466
+Rua H-13;Residencial Hercílio Gomes de Melo;Morrinhos/GO;75656-464
+Rua H-15;Residencial Hercílio Gomes de Melo;Morrinhos/GO;75656-460
+Rua H-2;Residencial Hercílio Gomes de Melo;Morrinhos/GO;75656-440
+Rua H-3;Residencial Hercílio Gomes de Melo;Morrinhos/GO;75656-450
+Rua H-4;Residencial Hercílio Gomes de Melo;Morrinhos/GO;75656-448
+Rua H-5;Residencial Hercílio Gomes de Melo;Morrinhos/GO;75656-454
+Rua H-6;Residencial Hercílio Gomes de Melo;Morrinhos/GO;75656-462
+Rua H-7;Residencial Hercílio Gomes de Melo;Morrinhos/GO;75656-458
+Rua H-8;Residencial Hercílio Gomes de Melo;Morrinhos/GO;75656-470
+Rua H-9;Residencial Hercílio Gomes de Melo;Morrinhos/GO;75656-474
+Rua JG-I;Jardim Goiás;Morrinhos/GO;75656-144
+Rua JG-II;Jardim Goiás;Morrinhos/GO;75656-142
+Rua JG-IV;Jardim Goiás;Morrinhos/GO;75656-154
+Rua JG-V;Jardim Goiás;Morrinhos/GO;75656-156
+Rua JG-VI;Jardim Goiás;Morrinhos/GO;75656-146
+Rua JG-VII;Jardim Goiás;Morrinhos/GO;75656-158
+Rua JG-VIII;Jardim Goiás;Morrinhos/GO;75656-148
+Rua JG-X;Jardim Goiás;Morrinhos/GO;75656-150
+Rua Joaquim Godoy;Cristina Park 2;Morrinhos/GO;75652-736
+Rua José Gomes Veado;Setor Oeste;Morrinhos/GO;75650-032
+Rua Manoel Cândido de Mello;Jardim Goiás;Morrinhos/GO;75656-152
+Rua Pastor Belino Gonçalves Damaceno;Setor Oeste;Morrinhos/GO;75650-058
+Rua Sebastião Godoy;Cristina Park 2;Morrinhos/GO;75652-738
+Rua Sebastião Godoy;Residencial Dona Ondina;Morrinhos/GO;75652-750
+Rua Sebastião Godoy;Setor Cordeiro II;Morrinhos/GO;75652-742
+Rua VC-14;Residencial Hercílio Gomes de Melo;Morrinhos/GO;75656-468
+Rua VC-16;Residencial Hercílio Gomes de Melo;Morrinhos/GO;75656-472
+Rua VC-18;Residencial Hercílio Gomes de Melo;Morrinhos/GO;75656-478
+Rua VC-4;Residencial Hercílio Gomes de Melo;Morrinhos/GO;75656-444
+Rua VC-6;Residencial Hercílio Gomes de Melo;Morrinhos/GO;75656-456
+Alameda A;Setor Sul dos Pomares;Morrinhos/GO;75654-294
+Alameda Alberto Xavier;Residencial Portal do Lago;Morrinhos/GO;75656-010
+Alameda das Bromélias;Residencial Portal do Lago;Morrinhos/GO;75656-012
+Alameda das Camélias;Residencial Portal do Lago;Morrinhos/GO;75656-018
+Alameda das Flores;Residencial Portal do Lago;Morrinhos/GO;75656-024
+Alameda das Orquídeas;Residencial Portal do Lago;Morrinhos/GO;75656-030
+Alameda das Rosas;Residencial Portal do Lago;Morrinhos/GO;75656-028
+Alameda dos Girassóis;Residencial Portal do Lago;Morrinhos/GO;75656-016
+Alameda dos Jasmins;Residencial Portal do Lago;Morrinhos/GO;75656-026
+Alameda dos Lírios;Residencial Portal do Lago;Morrinhos/GO;75656-014
+Alameda Isabela Cândido;Jardim Maria Ferreira de Souza;Morrinhos/GO;75652-101
+Alameda Jonas Inocêncio de Oliveira;Jardim Santa Fé;Morrinhos/GO;75652-134
+Alameda Jonas Inocêncio de Oliveira;Setor Cristo Redentor;Morrinhos/GO;75652-190
+Alameda Jonas Inocêncio de Oliveira;Setor Cristo Redentor - II Etapa;Morrinhos/GO;75652-142
+Alameda Jonas Inocêncio de Oliveira;Setor José Jesuíno Filho;Morrinhos/GO;75652-071
+Alameda Milão;Jardim Romano;Morrinhos/GO;75656-050
+Área Rural;Área Rural de Morrinhos;Morrinhos/GO;75658-899
+Avenida A;Jardim América;Morrinhos/GO;75650-308
+Avenida A;Setor Leste Universitário;Morrinhos/GO;75650-320
+Avenida A;Vila Santos Dumont II;Morrinhos/GO;75654-322
+Avenida Angelo Auricchio;Distrito Agroindustrial de Morrinhos;Morrinhos/GO;75654-740
+Avenida Angelo Auricchio;Jardim Helena;Morrinhos/GO;75654-690
+Avenida Angelo Auricchio;Residencial dos Ipês;Morrinhos/GO;75654-424
+Avenida Angelo Auricchio;Setor Arca de Noé;Morrinhos/GO;75654-380
+Avenida Angelo Auricchio;Setor Solar do Bosque;Morrinhos/GO;75654-710
+Avenida Angelo Auricchio;Setor Sul dos Pomares;Morrinhos/GO;75654-310
+Avenida Antônio Alves Rabelo;Residencial Dona Ondina;Morrinhos/GO;75652-762
+Avenida Antônio Alves Rabelo;Setor Cristo Redentor;Morrinhos/GO;75652-186
+Avenida Antônio Alves Rabelo;Setor Cristo Redentor - II Etapa;Morrinhos/GO;75652-154
+Avenida Armídio Felipe Santiago;Setor São Pedro;Morrinhos/GO;75652-278
+Avenida B;Vila Nunes;Morrinhos/GO;75650-010
+Avenida B;Vila Santos Dumont II;Morrinhos/GO;75654-330
+Avenida Central;Cristina Park;Morrinhos/GO;75652-690
+Avenida Coronel Fernando Barbosa;Jardim Santa Terezinha I;Morrinhos/GO;75654-590
+Avenida Coronel Fernando Barbosa;Jardim Santa Terezinha II;Morrinhos/GO;75654-610
+Avenida Coronel Fernando Barbosa;Jardim Santa Terezinha III;Morrinhos/GO;75654-680
+Avenida Coronel Fernando Barbosa;Lugar Denominado Aldeia;Morrinhos/GO;75654-530
+Avenida Coronel Fernando Barbosa;Parque das Laranjeiras;Morrinhos/GO;75654-560
+Avenida Coronel Fernando Barbosa;Reserva Atenas;Morrinhos/GO;75654-522
+Avenida Coronel Fernando Barbosa;Residencial Santa Terezinha;Morrinhos/GO;75654-550
+Avenida Coronel Fernando Barbosa;Setor Aeroporto;Morrinhos/GO;75654-072
+Avenida Coronel Fernando Barbosa;Setor Aeroporto II;Morrinhos/GO;75652-360
+Avenida Coronel Fernando Barbosa;Setor Cordeiro;Morrinhos/GO;75652-320
+Avenida Coronel Fernando Barbosa;Setor Irinéia de Freitas;Morrinhos/GO;75652-470
+Avenida Coronel Fernando Barbosa;Setor São Pedro;Morrinhos/GO;75652-302
+Avenida Coronel Fernando Barbosa;Vila Nunes;Morrinhos/GO;75650-002
+Avenida Coronel Fernando Barbosa;Vila Santos Dumont;Morrinhos/GO;75654-204
+Avenida Coronel Pedro Nunes;Centro;Morrinhos/GO;75650-072
+Avenida Coronel Pedro Nunes;Setor Noroeste;Morrinhos/GO;75656-172
+Avenida Couto de Magalhães;Centro;Morrinhos/GO;75650-086
+Avenida Dante Costa;Centro;Morrinhos/GO;75650-140
+Avenida Dante Costa;Jardim Venezuela;Morrinhos/GO;75650-161
+Avenida Darcy Chaves;Jardim Maria Estela;Morrinhos/GO;75656-000
+Avenida Darcy Chaves;Jardim Romano;Morrinhos/GO;75656-052
+Avenida Darcy Chaves;Residencial Portal do Lago;Morrinhos/GO;75656-022
+Avenida Dona Fiica;Jardim Romano;Morrinhos/GO;75656-060
+Avenida dos Girassóis;Parque das Laranjeiras;Morrinhos/GO;75654-570
+Avenida Doutor Álvaro Teixeira de Camargo;Jardim Vera Cruz;Morrinhos/GO;75656-490
+Avenida Doutor Álvaro Teixeira de Camargo;Residencial Darcy Chaves;Morrinhos/GO;75656-630
+Avenida Doutor Eduval Pereira Maia;Jardim Helena;Morrinhos/GO;75654-698
+Avenida Doutor Eduval Pereira Maia;Parque das Laranjeiras;Morrinhos/GO;75654-566
+Avenida Doutor Gumercindo Otero;Centro;Morrinhos/GO;75650-070
+Avenida Doutor Gumercindo Otero;Setor Aeroporto;Morrinhos/GO;75654-052
+Avenida Doutor Gumercindo Otero;Setor Noroeste;Morrinhos/GO;75656-170
+Avenida Doutor Gumercindo Otero;Setor Oeste;Morrinhos/GO;75650-062
+Avenida Doutor Gumercindo Otero;Vila Nossa Senhora do Carmo;Morrinhos/GO;75656-228
+Avenida E;Setor São Pedro;Morrinhos/GO;75652-294
+Avenida Engenheiro Flávio Cascão;Jardim Santa Fé;Morrinhos/GO;75652-112
+Avenida Engenheiro Flávio Cascão;Setor São Pedro;Morrinhos/GO;75652-270
+Avenida Engenheiro Flávio Cascão;Vila Nunes;Morrinhos/GO;75650-004
+Avenida Firmo Antônio de Freitas;Jardim Santa Fé;Morrinhos/GO;75652-126
+Avenida Firmo Antônio de Freitas;Setor Aeroporto II;Morrinhos/GO;75652-370
+Avenida Firmo Antônio de Freitas;Setor Cordeiro;Morrinhos/GO;75652-324
+Avenida Firmo Antônio de Freitas;Setor Cristo Redentor;Morrinhos/GO;75652-180
+Avenida Firmo Antônio de Freitas;Setor São Pedro;Morrinhos/GO;75652-288
+Avenida Francisco Rosa Campos;Setor Arca de Noé;Morrinhos/GO;75654-384
+Avenida G;Centro;Morrinhos/GO;75650-124
+Avenida G;Vila Nunes;Morrinhos/GO;75650-013
+Avenida Gaspar Martins de Oliveira;Residencial Valéria Reis;Morrinhos/GO;75656-394
+Avenida Genoveva;Setor Oeste;Morrinhos/GO;75650-028
+Avenida Genoveva Rezende Carneiro;Setor Aeroporto;Morrinhos/GO;75654-050
+Avenida Genoveva Rezende Carneiro;Vila Bela;Morrinhos/GO;75654-042
+Avenida Genoveva Rezende Carneiro;Vila Nunes;Morrinhos/GO;75650-001
+Avenida Ivanolph Mesquita;Estância da Saudade - Bairro Morro da Saudade;Morrinhos/GO;75650-590
+Avenida Ivanolph Mesquita;Loteamento Vinícius Cândido;Morrinhos/GO;75650-682
+Avenida Ivanolph Mesquita;Sol Nascente;Morrinhos/GO;75650-652
+Avenida Ivanolph Mesquita;Sol Nascente 2ª Etapa;Morrinhos/GO;75650-610
+Avenida Jadir Machado da Silva;Jardim Colibri;Morrinhos/GO;75656-292
+Avenida Jadir Machado da Silva;Residencial Valéria Reis;Morrinhos/GO;75656-392
+Avenida Jadir Machado da Silva;Setor Arca de Noé;Morrinhos/GO;75654-370
+Avenida Jaime Vilela;Vila Santos Dumont;Morrinhos/GO;75654-206
+Avenida Juscelino Kubitschek;Jardim América;Morrinhos/GO;75650-280
+Avenida Noé José Pereira;Setor Arca de Noé;Morrinhos/GO;75654-372
+Avenida Perimetral;Jardim Vera Cruz;Morrinhos/GO;75656-485
+Avenida Perimetral;Setor Noroeste;Morrinhos/GO;75656-182
+Avenida Perimetral;Vila Nossa Senhora do Carmo;Morrinhos/GO;75656-226
+Avenida Perimetral;Vila Santa Rosa;Morrinhos/GO;75650-732
+Avenida Professor Frauzino Sobrinho;Setor Aeroporto;Morrinhos/GO;75654-104
+Avenida Professor José do Nascimento;Setor Oeste;Morrinhos/GO;75650-023
+Avenida Professor José do Nascimento;Vila Nunes;Morrinhos/GO;75650-014
+Avenida Professora Zilda Diniz Fontes;Setor Aeroporto;Morrinhos/GO;75654-096
+Avenida Professora Zilda Diniz Fontes;Setor Aeroporto III;Morrinhos/GO;75654-140
+Avenida Roma;Genoveva Alves;Morrinhos/GO;75656-562
+Avenida Roma;Jardim Romano;Morrinhos/GO;75656-104
+Avenida Roma;Jardim Vera Cruz;Morrinhos/GO;75656-486
+Avenida Romeu Romano;Jardim América;Morrinhos/GO;75650-296
+Avenida Saturnino Azeredo;Setor Oeste;Morrinhos/GO;75650-016
+Avenida Sebastião Dias Coelho;Vila Santos Dumont II;Morrinhos/GO;75654-332
+Avenida Senador Hermenegildo de Morais;Centro;Morrinhos/GO;75650-122
+Avenida Senador Hermenegildo de Morais;Setor Oeste;Morrinhos/GO;75650-040
+Avenida Soldado PM Adonai do Carmo Oliveira;Setor Aeroporto;Morrinhos/GO;75654-108
+Avenida Soldado PM Adonai do Carmo Oliveira;Setor Aeroporto III;Morrinhos/GO;75654-156
+Avenida Soldado PM Adonai do Carmo Oliveira;Vila Mutirão;Morrinhos/GO;75654-182
+Avenida Soldado PM Adonai do Carmo Oliveira;Vila Nossa Senhora do Carmo;Morrinhos/GO;75656-212
+Avenida Tenente Santana;Vila Santos Dumont II;Morrinhos/GO;75654-328
+Avenida 101;Setor Aeroporto;Morrinhos/GO;75654-120
+Avenida 101A;Vila Santos Dumont II;Morrinhos/GO;75654-324
+Avenida 101B;Setor Aeroporto;Morrinhos/GO;75654-110
+Avenida 101B;Setor Aeroporto III;Morrinhos/GO;75654-164
+Avenida 101B;Vila Mutirão;Morrinhos/GO;75654-184
+Avenida 102;Vila Santos Dumont II;Morrinhos/GO;75654-336
+Avenida 2;Jardim Santa Terezinha I;Morrinhos/GO;75654-600
+Avenida 2;Jardim Santa Terezinha II;Morrinhos/GO;75654-612
+Estrada Do Café;Jardim Cerrado;Morrinhos/GO;75656-340
+Estrada do Café;Aldeia dos Pomares;Morrinhos/GO;75656-420
+Estrada do Café;Genoveva Alves;Morrinhos/GO;75656-540
+Estrada do Café;Jardim Colibri;Morrinhos/GO;75656-332
+Estrada do Café;Jardim Vera Cruz;Morrinhos/GO;75656-480
+Estrada do Café;Setor Noroeste;Morrinhos/GO;75656-202
+Passagem de Pedestre;Centro;Morrinhos/GO;75650-102
+Passagem de Pedestre;Setor Cristo Redentor - II Etapa;Morrinhos/GO;75652-158
+Passagem De Pedestres;Jardim Romano;Morrinhos/GO;75656-059
+Praça da Lavanderia;São Francisco de Assis;Morrinhos/GO;75650-200
+Praça do Coreto;Centro;Morrinhos/GO;75650-134
+Praça do Mercado Municipal;Centro;Morrinhos/GO;75650-129
+Praça Doutor Raul Nunes;Centro;Morrinhos/GO;75650-144
+Praça III;Setor Oeste;Morrinhos/GO;75650-060
+Praça Joaquim Diniz;Setor Oeste;Morrinhos/GO;75650-034
+Praça Lions;Setor Oeste;Morrinhos/GO;75650-029
+Praça Lions;Vila Nunes;Morrinhos/GO;75650-008
+Rua A;Setor Noroeste;Morrinhos/GO;75656-200
+Rua A;Vila Bela;Morrinhos/GO;75654-016
+Rua A Salvador Costa;Setor Irinéia de Freitas;Morrinhos/GO;75652-484
+Rua Açaí;Jardim Colibri;Morrinhos/GO;75656-310
+Rua Adelino Ribeiro da Silva;Condomínio Recanto das Araras;Morrinhos/GO;75650-442
+Rua Adelino Ribeiro da Silva;Morro da Saudade;Morrinhos/GO;75650-534
+Rua Alagoas;Centro;Morrinhos/GO;75650-136
+Rua Alagoas;JK;Morrinhos/GO;75650-414
+Rua Alagoas;Morro da Saudade;Morrinhos/GO;75650-558
+Rua Alexandria;Jardim Romano;Morrinhos/GO;75656-078
+Rua Amazonas;Centro;Morrinhos/GO;75650-074
+Rua Amazonas;Setor Noroeste;Morrinhos/GO;75656-174
+Rua Anaildes Maria do Carmo Oliveira;JK;Morrinhos/GO;75650-420
+Rua Ancona;Jardim Romano;Morrinhos/GO;75656-114
+Rua Angico;Jardim Colibri;Morrinhos/GO;75656-324
+Rua Antônio Cascão;Setor Arca de Noé;Morrinhos/GO;75654-386
+Rua Antônio Rosa Ribeiro Falcão;Setor José Jesuíno Filho;Morrinhos/GO;75652-096
+Rua Antônio Rosa Ribeiro Falcão;Setor Professor Olyntho Cândido;Morrinhos/GO;75652-004
+Rua Arezzo;Jardim Romano;Morrinhos/GO;75656-112
+Rua Argos;Reserva Atenas;Morrinhos/GO;75654-520
+Rua Aroeira;Jardim Colibri;Morrinhos/GO;75656-294
+Rua Aroeira;Residencial Mirante do Bosque;Morrinhos/GO;75656-610
+Rua B;Vila Bela;Morrinhos/GO;75654-026
+Rua Bacuri;Jardim Colibri;Morrinhos/GO;75656-330
+Rua Barão do Rio Branco;Barra do Cordeiro;Morrinhos/GO;75650-382
+Rua Barão do Rio Branco;Centro;Morrinhos/GO;75650-114
+Rua Barão do Rio Branco;Jardim América;Morrinhos/GO;75650-306
+Rua Barão do Rio Branco;Vila Nova II;Morrinhos/GO;75650-229
+Rua Bari;Jardim Romano;Morrinhos/GO;75656-082
+Rua Barú;Jardim Colibri;Morrinhos/GO;75656-290
+Rua Barú;Residencial Mirante do Bosque;Morrinhos/GO;75656-608
+Rua Beraldino Jesuíno de Souza;Setor Cristo Redentor;Morrinhos/GO;75652-184
+Rua Beraldino Jesuíno de Souza;Setor Cristo Redentor - II Etapa;Morrinhos/GO;75652-148
+Rua Beraldino Vicente de Souza;Setor Aeroporto II;Morrinhos/GO;75652-366
+Rua Beraldino Vicente de Souza;Setor Irinéia de Freitas;Morrinhos/GO;75652-482
+Rua Bérgamo;Jardim Romano;Morrinhos/GO;75656-070
+Rua Bolonha;Jardim Romano;Morrinhos/GO;75656-068
+Rua Bom Retiro;Centro;Morrinhos/GO;75650-126
+Rua Bréscia;Jardim Romano;Morrinhos/GO;75656-108
+Rua Brindisi;Jardim Romano;Morrinhos/GO;75656-088
+Rua Buriti;Jardim Colibri;Morrinhos/GO;75656-296
+Rua BV 1;Setor Cordeiro;Morrinhos/GO;75652-500
+Rua BV-03;Jardim Hadassa;Morrinhos/GO;75652-770
+Rua BV-1;Jardim Bela Vista II;Morrinhos/GO;75652-588
+Rua BV-1;Jardim Bela Vista III;Morrinhos/GO;75652-620
+Rua BV-1;Jardim Bela Vista IV;Morrinhos/GO;75652-630
+Rua BV-1;Jardim Primavera;Morrinhos/GO;75652-490
+Rua BV-1;Residencial Antônio Correia Bueno;Morrinhos/GO;75652-550
+Rua BV-1;Residencial Califórnia;Morrinhos/GO;75652-610
+Rua BV-1;Residencial dos Buritis;Morrinhos/GO;75652-640
+Rua BV-1A;Jardim Bela Vista III;Morrinhos/GO;75652-622
+Rua BV-1B;Jardim Bela Vista IV;Morrinhos/GO;75652-632
+Rua BV-10;Jardim Bela Vista;Morrinhos/GO;75652-664
+Rua BV-10;Jardim Bela Vista II;Morrinhos/GO;75652-600
+Rua BV-11;Jardim Bela Vista;Morrinhos/GO;75652-666
+Rua BV-11;Jardim Bela Vista II;Morrinhos/GO;75652-602
+Rua BV-11A;Jardim Bela Vista;Morrinhos/GO;75652-668
+Rua BV-12;Jardim Bela Vista;Morrinhos/GO;75652-670
+Rua BV-13;Jardim Bela Vista;Morrinhos/GO;75652-672
+Rua BV-14;Jardim Bela Vista;Morrinhos/GO;75652-674
+Rua BV-14A;Jardim Bela Vista;Morrinhos/GO;75652-676
+Rua BV-2;Jardim Bela Vista II;Morrinhos/GO;75652-582
+Rua BV-2B;Jardim Bela Vista IV;Morrinhos/GO;75652-636
+Rua BV-3;Jardim Bela Vista;Morrinhos/GO;75652-654
+Rua BV-3;Jardim Bela Vista II;Morrinhos/GO;75652-594
+Rua BV-3;Jardim Portugal;Morrinhos/GO;75652-464
+Rua BV-3B;Jardim Bela Vista IV;Morrinhos/GO;75652-634
+Rua BV-4;Jardim Bela Vista II;Morrinhos/GO;75652-584
+Rua BV-5;Jardim Bela Vista;Morrinhos/GO;75652-650
+Rua BV-5;Jardim Bela Vista II;Morrinhos/GO;75652-586
+Rua BV-5;Jardim Portugal;Morrinhos/GO;75652-468
+Rua BV-6;Jardim Bela Vista;Morrinhos/GO;75652-656
+Rua BV-6;Jardim Bela Vista II;Morrinhos/GO;75652-590
+Rua BV-7;Jardim Bela Vista;Morrinhos/GO;75652-658
+Rua BV-7;Jardim Bela Vista II;Morrinhos/GO;75652-592
+Rua BV-8;Jardim Bela Vista;Morrinhos/GO;75652-660
+Rua BV-8;Jardim Bela Vista II;Morrinhos/GO;75652-596
+Rua BV-9;Jardim Bela Vista;Morrinhos/GO;75652-662
+Rua BV-9;Jardim Bela Vista II;Morrinhos/GO;75652-598
+Rua B-1;Vila Santos Dumont;Morrinhos/GO;75654-202
+Rua C;Vila Bela;Morrinhos/GO;75654-028
+Rua Camponesa;São Francisco de Assis;Morrinhos/GO;75650-178
+Rua Caraíba;São Francisco de Assis;Morrinhos/GO;75650-208
+Rua Carmindo Coelho G de Almeida;Jardim Portugal;Morrinhos/GO;75652-466
+Rua Casimiro Luiz Ferreira;Residencial Antônio Correia Bueno;Morrinhos/GO;75652-554
+Rua Castro Alves;Centro;Morrinhos/GO;75650-098
+Rua Ceará;Centro;Morrinhos/GO;75650-080
+Rua Ceará;Setor Noroeste;Morrinhos/GO;75656-190
+Rua Cedro;Jardim Colibri;Morrinhos/GO;75656-304
+Rua Cedro;Residencial Mirante do Bosque;Morrinhos/GO;75656-606
+Rua Clovis Carneiro;Jardim Helena;Morrinhos/GO;75654-706
+Rua Coronel João Lopes Zedes;Centro;Morrinhos/GO;75650-084
+Rua Coronel João Lopes Zedes;Jardim América;Morrinhos/GO;75650-274
+Rua Coronel João Lopes Zedes;Setor Noroeste;Morrinhos/GO;75656-198
+Rua CP-1;Cristina Park;Morrinhos/GO;75652-686
+Rua CP-10;Cristina Park;Morrinhos/GO;75652-706
+Rua CP-10;Cristina Park 2;Morrinhos/GO;75652-730
+Rua CP-11;Cristina Park;Morrinhos/GO;75652-708
+Rua CP-11;Cristina Park 2;Morrinhos/GO;75652-732
+Rua CP-12;Cristina Park 2;Morrinhos/GO;75652-733
+Rua CP-12;Setor Cordeiro II;Morrinhos/GO;75652-744
+Rua CP-2;Cristina Park;Morrinhos/GO;75652-688
+Rua CP-3;Cristina Park;Morrinhos/GO;75652-692
+Rua CP-3A;Cristina Park;Morrinhos/GO;75652-682
+Rua CP-4;Cristina Park;Morrinhos/GO;75652-694
+Rua CP-5;Cristina Park;Morrinhos/GO;75652-696
+Rua CP-6;Cristina Park;Morrinhos/GO;75652-698
+Rua CP-6A;Cristina Park 2;Morrinhos/GO;75652-722
+Rua CP-7;Cristina Park;Morrinhos/GO;75652-700
+Rua CP-7A;Cristina Park 2;Morrinhos/GO;75652-724
+Rua CP-8;Cristina Park;Morrinhos/GO;75652-702
+Rua CP-8;Cristina Park 2;Morrinhos/GO;75652-726
+Rua CP-9;Cristina Park;Morrinhos/GO;75652-704
+Rua CP-9;Cristina Park 2;Morrinhos/GO;75652-728
+Rua Cremona;Jardim Romano;Morrinhos/GO;75656-086
+Rua Creta;Reserva Atenas;Morrinhos/GO;75654-512
+Rua CR-1;Setor Cristo Redentor;Morrinhos/GO;75652-204
+Rua CR-1;Setor Cristo Redentor - II Etapa;Morrinhos/GO;75652-146
+Rua CR-10;Setor Cristo Redentor - II Etapa;Morrinhos/GO;75652-174
+Rua CR-11;Setor Cristo Redentor - II Etapa;Morrinhos/GO;75652-176
+Rua CR-2;Setor Cristo Redentor;Morrinhos/GO;75652-206
+Rua CR-2;Setor Cristo Redentor - II Etapa;Morrinhos/GO;75652-150
+Rua CR-3;Jardim Santa Fé;Morrinhos/GO;75652-132
+Rua CR-3;Setor Cristo Redentor;Morrinhos/GO;75652-182
+Rua CR-3;Setor Cristo Redentor - II Etapa;Morrinhos/GO;75652-151
+Rua CR-4;Setor Cristo Redentor;Morrinhos/GO;75652-198
+Rua CR-4;Setor Cristo Redentor - II Etapa;Morrinhos/GO;75652-153
+Rua CR-5;Setor Cristo Redentor;Morrinhos/GO;75652-208
+Rua CR-5;Setor Cristo Redentor - II Etapa;Morrinhos/GO;75652-152
+Rua CR-6;Setor Cristo Redentor;Morrinhos/GO;75652-210
+Rua CR-6;Setor Cristo Redentor - II Etapa;Morrinhos/GO;75652-156
+Rua CR-7;Setor Cristo Redentor - II Etapa;Morrinhos/GO;75652-160
+Rua CR-8;Setor Cristo Redentor - II Etapa;Morrinhos/GO;75652-162
+Rua CR-9;Setor Cristo Redentor - II Etapa;Morrinhos/GO;75652-172
+Rua C-1;Setor Aeroporto;Morrinhos/GO;75654-128
+Rua D;Vila Bela;Morrinhos/GO;75654-012
+Rua D;Vila Santos Dumont II;Morrinhos/GO;75654-348
+Rua da Mangueira;Morro da Saudade;Morrinhos/GO;75650-548
+Rua da Pitombeira;Jardim Colibri;Morrinhos/GO;75656-312
+Rua Dalmes Antônio de Oliveira;Jardim América;Morrinhos/GO;75650-294
+Rua das Acácias;Parque das Laranjeiras;Morrinhos/GO;75654-578
+Rua das Azaléias;Parque das Laranjeiras;Morrinhos/GO;75654-576
+Rua das Bananeiras;Morro da Saudade;Morrinhos/GO;75650-502
+Rua das Begônias;Parque das Laranjeiras;Morrinhos/GO;75654-580
+Rua das Hortências;Parque das Laranjeiras;Morrinhos/GO;75654-572
+Rua das Jabuticabeiras;Morro da Saudade;Morrinhos/GO;75650-512
+Rua das Laranjeiras;Morro da Saudade;Morrinhos/GO;75650-508
+Rua das Limeiras;Morro da Saudade;Morrinhos/GO;75650-514
+Rua das Margaridas;Parque das Laranjeiras;Morrinhos/GO;75654-564
+Rua das Orquídeas;Jardim Santa Terezinha I;Morrinhos/GO;75654-592
+Rua das Orquídeas;Parque das Laranjeiras;Morrinhos/GO;75654-568
+Rua das Palmas;Parque das Laranjeiras;Morrinhos/GO;75654-584
+Rua das Palmeiras;Setor Leste Universitário;Morrinhos/GO;75650-326
+Rua das Rosas;Parque das Laranjeiras;Morrinhos/GO;75654-574
+Rua das Videiras;Morro da Saudade;Morrinhos/GO;75650-510
+Rua das Violetas;Parque das Laranjeiras;Morrinhos/GO;75654-562
+Rua Davi Troncoso Carrera;Setor Cordeiro;Morrinhos/GO;75652-328
+Rua DC-1;Residencial Darcy Chaves;Morrinhos/GO;75656-620
+Rua DC-10;Residencial Darcy Chaves;Morrinhos/GO;75656-638
+Rua DC-2;Residencial Darcy Chaves;Morrinhos/GO;75656-622
+Rua DC-3;Residencial Darcy Chaves;Morrinhos/GO;75656-624
+Rua DC-4;Jardim Vera Cruz;Morrinhos/GO;75656-532
+Rua DC-4;Residencial Darcy Chaves;Morrinhos/GO;75656-628
+Rua DC-5;Jardim Vera Cruz;Morrinhos/GO;75656-534
+Rua DC-5;Residencial Darcy Chaves;Morrinhos/GO;75656-626
+Rua DC-6;Residencial Darcy Chaves;Morrinhos/GO;75656-632
+Rua DC-7;Residencial Darcy Chaves;Morrinhos/GO;75656-634
+Rua DC-8;Residencial Darcy Chaves;Morrinhos/GO;75656-636
+Rua DC-9;Residencial Darcy Chaves;Morrinhos/GO;75656-640
+Rua de Acesso;Jardim Santa Terezinha III;Morrinhos/GO;75654-682
+Rua Delfino Curado;Jardim Santa Terezinha II;Morrinhos/GO;75654-620
+Rua Dimas Vítor Souza;Setor Aeroporto II;Morrinhos/GO;75652-367
+Rua Divino Bidon;Setor Cristo Redentor - II Etapa;Morrinhos/GO;75652-168
+Rua do Boiadeiro;Barra do Cordeiro;Morrinhos/GO;75650-380
+Rua do Boiadeiro;JK;Morrinhos/GO;75650-422
+Rua do Caju;Morro da Saudade;Morrinhos/GO;75650-536
+Rua do Caju;Morro da Saudade;Morrinhos/GO;75650-506
+Rua Dom Pedro II;Centro;Morrinhos/GO;75650-120
+Rua Domingos Ricardo de Souza;Jardim América;Morrinhos/GO;75650-278
+Rua Domingos Ricardo de Souza;São Francisco de Assis;Morrinhos/GO;75650-205
+Rua dos Ipês;Setor Leste Universitário;Morrinhos/GO;75650-328
+Rua Doutor Antonio Carneiro;Setor Cristo Redentor;Morrinhos/GO;75652-188
+Rua Doutor Antônio J Melo;Residencial Antônio Correia Bueno;Morrinhos/GO;75652-558
+Rua Doutor Guilherme Xavier Almeida;Residencial Antônio Correia Bueno;Morrinhos/GO;75652-570
+Rua Doutor Jair de Freitas;Setor Professor Olyntho Cândido;Morrinhos/GO;75652-016
+Rua Doutor Pedro Nunes;Centro;Morrinhos/GO;75650-142
+Rua Doutor Pedro Nunes;Jardim Santa Fé;Morrinhos/GO;75652-110
+Rua Doutor Pedro Nunes;São Francisco de Assis;Morrinhos/GO;75650-172
+Rua Doutor Sílvio de Melo;Setor Cristo Redentor;Morrinhos/GO;75652-192
+Rua E;Vila Bela;Morrinhos/GO;75654-008
+Rua E;Vila Santos Dumont II;Morrinhos/GO;75654-344
+Rua Eli Ribeiro Dias;Residencial dos Buritis;Morrinhos/GO;75652-642
+Rua Elmo Carneiro;Jardim Helena;Morrinhos/GO;75654-696
+Rua Esparta;Reserva Atenas;Morrinhos/GO;75654-510
+Rua Eurico Coelho Cruvinel;Jardim Portugal;Morrinhos/GO;75652-467
+Rua Eurípedes Mariano Borges;Jardim Santa Terezinha I;Morrinhos/GO;75654-596
+Rua Evangelista Valério Cardoso;Setor Aeroporto;Morrinhos/GO;75654-058
+Rua Evangelista Valério Cardoso;Setor Aeroporto III;Morrinhos/GO;75654-154
+Rua Evangelista Valério Cardoso;Setor Oeste;Morrinhos/GO;75650-054
+Rua Evangelista Valério Cardoso;Vila Bela;Morrinhos/GO;75654-040
+Rua Evangelista Valério Cardoso;Vila Mutirão;Morrinhos/GO;75654-172
+Rua F;Vila Bela;Morrinhos/GO;75654-006
+Rua F;Vila Santos Dumont II;Morrinhos/GO;75654-340
+Rua Fábio Tavares;Jardim América;Morrinhos/GO;75650-295
+Rua FC-1;Setor Aeroporto II;Morrinhos/GO;75652-364
+Rua FC-1;Setor Cordeiro;Morrinhos/GO;75652-344
+Rua FC-1;Setor Irinéia de Freitas;Morrinhos/GO;75652-480
+Rua FC-2;Setor Irinéia de Freitas;Morrinhos/GO;75652-472
+Rua FC-3;Setor Aeroporto II;Morrinhos/GO;75652-365
+Rua FC-3;Setor Cordeiro;Morrinhos/GO;75652-334
+Rua FC-5;Jardim Bela Vista II;Morrinhos/GO;75652-580
+Rua FC-5;Jardim Portugal;Morrinhos/GO;75652-460
+Rua FC-5;Setor Aeroporto II;Morrinhos/GO;75652-369
+Rua FC-5;Setor Cordeiro;Morrinhos/GO;75652-348
+Rua FC-5;Setor Irinéia de Freitas;Morrinhos/GO;75652-486
+Rua Ferrara;Jardim Romano;Morrinhos/GO;75656-120
+Rua Fiica Marçal;Barra do Cordeiro;Morrinhos/GO;75650-388
+Rua Flamboyant;Jardim Colibri;Morrinhos/GO;75656-314
+Rua Florença;Jardim Romano;Morrinhos/GO;75656-058
+Rua Fortaleza;Setor Arca de Noé;Morrinhos/GO;75654-396
+Rua Francisco Vinuto Alves;Setor Cristo Redentor - II Etapa;Morrinhos/GO;75652-170
+Rua G;Vila Bela;Morrinhos/GO;75654-032
+Rua G;Vila Santos Dumont II;Morrinhos/GO;75654-342
+Rua GA-1;Genoveva Alves;Morrinhos/GO;75656-544
+Rua GA-10;Genoveva Alves;Morrinhos/GO;75656-568
+Rua GA-11;Genoveva Alves;Morrinhos/GO;75656-570
+Rua GA-12;Genoveva Alves;Morrinhos/GO;75656-572
+Rua GA-13;Genoveva Alves;Morrinhos/GO;75656-574
+Rua GA-14;Genoveva Alves;Morrinhos/GO;75656-576
+Rua GA-15;Genoveva Alves;Morrinhos/GO;75656-578
+Rua GA-15A;Desmembramento Fernando Azzi Teixeira;Morrinhos/GO;75656-596
+Rua GA-15A;Genoveva Alves;Morrinhos/GO;75656-580
+Rua GA-15A;Jardim Vera Cruz;Morrinhos/GO;75656-483
+Rua GA-15A;Residencial Mirante do Bosque;Morrinhos/GO;75656-602
+Rua GA-16;Desmembramento Fernando Azzi Teixeira;Morrinhos/GO;75656-594
+Rua GA-16;Genoveva Alves;Morrinhos/GO;75656-546
+Rua GA-16;Jardim Vera Cruz;Morrinhos/GO;75656-482
+Rua GA-2;Genoveva Alves;Morrinhos/GO;75656-548
+Rua GA-3;Genoveva Alves;Morrinhos/GO;75656-550
+Rua GA-4;Genoveva Alves;Morrinhos/GO;75656-552
+Rua GA-4A;Genoveva Alves;Morrinhos/GO;75656-554
+Rua GA-5;Genoveva Alves;Morrinhos/GO;75656-556
+Rua GA-6;Genoveva Alves;Morrinhos/GO;75656-558
+Rua GA-7;Genoveva Alves;Morrinhos/GO;75656-560
+Rua GA-8;Genoveva Alves;Morrinhos/GO;75656-564
+Rua GA-9;Genoveva Alves;Morrinhos/GO;75656-566
+Rua Génova;Jardim Romano;Morrinhos/GO;75656-066
+Rua Geraldino de Freitas;Residencial Antônio Correia Bueno;Morrinhos/GO;75652-564
+Rua Geraldino de Freitas;Setor Aeroporto II;Morrinhos/GO;75652-362
+Rua Geraldino de Freitas;Setor Cordeiro;Morrinhos/GO;75652-352
+Rua Geraldo José de Souza;Cristina Park;Morrinhos/GO;75652-684
+Rua Geraldo José de Souza;Jardim Bela Vista;Morrinhos/GO;75652-652
+Rua Geraldo José de Souza;Jardim Portugal;Morrinhos/GO;75652-462
+Rua Geraldo Santana;Setor Oeste;Morrinhos/GO;75650-030
+Rua Gerson Ribeiro;Setor Leste Universitário;Morrinhos/GO;75650-324
+Rua Gilda D Fontes;Residencial Antônio Correia Bueno;Morrinhos/GO;75652-566
+Rua Gumercindo Inocêncio de Oliveira;Jardim Santa Fé;Morrinhos/GO;75652-124
+Rua Gumercindo Inocêncio de Oliveira;Setor São Pedro;Morrinhos/GO;75652-276
+Rua Gustavo Emílio Felter;Setor Irinéia de Freitas;Morrinhos/GO;75652-476
+Rua H;Vila Bela;Morrinhos/GO;75654-034
+Rua Heitor de Bastos;Jardim América;Morrinhos/GO;75650-298
+Rua Heleniene Cândido dos Santos;Setor São Pedro;Morrinhos/GO;75652-298
+Rua HF;Setor Arca de Noé;Morrinhos/GO;75654-410
+Rua Horizonte;São Francisco de Assis;Morrinhos/GO;75650-192
+Rua HP;Setor Arca de Noé;Morrinhos/GO;75654-404
+Rua I;Setor São Pedro;Morrinhos/GO;75652-304
+Rua I;Vila Bela;Morrinhos/GO;75654-036
+Rua I;Vila Santos Dumont II;Morrinhos/GO;75654-326
+Rua Idelma Carneiro;Jardim Helena;Morrinhos/GO;75654-700
+Rua II;Setor São Pedro;Morrinhos/GO;75652-306
+Rua III;Setor São Pedro;Morrinhos/GO;75652-308
+Rua Inácio Correa;Jardim Santa Terezinha II;Morrinhos/GO;75654-614
+Rua Independente;São Francisco de Assis;Morrinhos/GO;75650-182
+Rua Ipê;Jardim Colibri;Morrinhos/GO;75656-300
+Rua Ipê;Residencial Mirante do Bosque;Morrinhos/GO;75656-612
+Rua Irenéa de Freitas Chaves;Setor Aeroporto II;Morrinhos/GO;75652-372
+Rua Isolina Norato de Jesus;JK;Morrinhos/GO;75650-410
+Rua Itamar Bernardino de Souza;Setor Professor Olyntho Cândido;Morrinhos/GO;75652-010
+Rua J;Vila Bela;Morrinhos/GO;75654-038
+Rua J;Vila Santos Dumont II;Morrinhos/GO;75654-334
+Rua Jacarandá;Residencial Mirante do Bosque;Morrinhos/GO;75656-604
+Rua Jatobá;Jardim Colibri;Morrinhos/GO;75656-320
+Rua Jatobá;Residencial Mirante do Bosque;Morrinhos/GO;75656-616
+Rua JC-I;Condomínio Recanto das Araras;Morrinhos/GO;75650-430
+Rua JC-II;Condomínio Recanto das Araras;Morrinhos/GO;75650-436
+Rua JC-III;Condomínio Recanto das Araras;Morrinhos/GO;75650-438
+Rua JC-IV;Condomínio Recanto das Araras;Morrinhos/GO;75650-440
+Rua JC-V;Condomínio Recanto das Araras;Morrinhos/GO;75650-432
+Rua JC-VI;Condomínio Recanto das Araras;Morrinhos/GO;75650-434
+Rua Jerivá;Jardim Colibri;Morrinhos/GO;75656-326
+Rua JG-X;Jardim Romano;Morrinhos/GO;75656-054
+Rua JJ 02;Setor José Jesuíno Filho;Morrinhos/GO;75652-072
+Rua JJ 03;Setor José Jesuíno Filho;Morrinhos/GO;75652-076
+Rua JJ 04;Setor José Jesuíno Filho;Morrinhos/GO;75652-078
+Rua JJ 05;Setor José Jesuíno Filho;Morrinhos/GO;75652-080
+Rua JJ 06;Setor José Jesuíno Filho;Morrinhos/GO;75652-088
+Rua JJ 07;Setor José Jesuíno Filho;Morrinhos/GO;75652-082
+Rua JJ 08;Setor José Jesuíno Filho;Morrinhos/GO;75652-084
+Rua JJ 09;Setor José Jesuíno Filho;Morrinhos/GO;75652-090
+Rua JJ 10;Setor José Jesuíno Filho;Morrinhos/GO;75652-092
+Rua JJ 11;Setor José Jesuíno Filho;Morrinhos/GO;75652-094
+Rua João Barbosa de Souza;Setor Aeroporto;Morrinhos/GO;75654-070
+Rua João Ferreira de Macedo;Setor Aeroporto;Morrinhos/GO;75654-069
+Rua João Júlio de Oliveira;Setor Oeste;Morrinhos/GO;75650-048
+Rua João Júlio de Oliveira;Vila Bela;Morrinhos/GO;75654-030
+Rua João Pinto de Oliveira;JK;Morrinhos/GO;75650-424
+Rua Joaquim Luiz Cascão;Setor Arca de Noé;Morrinhos/GO;75654-390
+Rua Joaquim Quitério;Morro da Saudade;Morrinhos/GO;75650-524
+Rua Joaquina Alves Coutino;Setor Arca de Noé;Morrinhos/GO;75654-394
+Rua Jonas Romano;Residencial Antônio Correia Bueno;Morrinhos/GO;75652-552
+Rua Jordelina de Freitas;Setor Irinéia de Freitas;Morrinhos/GO;75652-474
+Rua Jorge Romano Júnior;Setor Aeroporto;Morrinhos/GO;75654-084
+Rua José Daniel da Silva;Setor Cordeiro;Morrinhos/GO;75652-326
+Rua José Dionísio de Melo;Jardim Romano;Morrinhos/GO;75656-128
+Rua José Dionísio de Melo;Jardim Venezuela;Morrinhos/GO;75650-164
+Rua José Divino Prudente;Setor Professor Olyntho Cândido;Morrinhos/GO;75652-014
+Rua José Elias Borges;Barra do Cordeiro;Morrinhos/GO;75650-381
+Rua José Elias Borges;Setor Cordeiro;Morrinhos/GO;75652-322
+Rua José Elias Borges;Setor São Pedro;Morrinhos/GO;75652-310
+Rua José Nelson;Setor Arca de Noé;Morrinhos/GO;75654-408
+Rua Josina Barbosa de Freitas;Setor Irinéia de Freitas;Morrinhos/GO;75652-478
+Rua Joviano Antonio Fernandes;Setor Cristo Redentor;Morrinhos/GO;75652-202
+Rua Juvercina Cipriana da Silva;Jardim América;Morrinhos/GO;75650-281
+Rua J1;Residencial Jarina Park;Morrinhos/GO;75650-696
+Rua J2;Residencial Jarina Park;Morrinhos/GO;75650-700
+Rua J3;Residencial Jarina Park;Morrinhos/GO;75650-698
+Rua J4;Residencial Jarina Park;Morrinhos/GO;75650-692
+Rua K;Vila Santos Dumont II;Morrinhos/GO;75654-338
+Rua KM;Setor Arca de Noé;Morrinhos/GO;75654-376
+Rua L;Vila Bela;Morrinhos/GO;75654-022
+Rua L;Vila Santos Dumont II;Morrinhos/GO;75654-346
+Rua Leila Regina;Residencial Antônio Correia Bueno;Morrinhos/GO;75652-568
+Rua Ligúria;Jardim Romano;Morrinhos/GO;75656-106
+Rua Livorno;Jardim Romano;Morrinhos/GO;75656-074
+Rua Loir Carneiro de Castro;Jardim Helena;Morrinhos/GO;75654-694
+Rua Lombardia;Jardim Romano;Morrinhos/GO;75656-084
+Rua M;Vila Bela;Morrinhos/GO;75654-018
+Rua Maestro Vicente José Vieira;Centro;Morrinhos/GO;75650-082
+Rua Maestro Vicente José Vieira;Jardim América;Morrinhos/GO;75650-270
+Rua Maestro Vicente José Vieira;São Francisco de Assis;Morrinhos/GO;75650-216
+Rua Maestro Vicente José Vieira;Setor Noroeste;Morrinhos/GO;75656-192
+Rua Major Evaristo Frauzino;Centro;Morrinhos/GO;75650-076
+Rua Major Evaristo Frauzino;São Francisco de Assis;Morrinhos/GO;75650-202
+Rua Major Evaristo Frauzino;Setor Noroeste;Morrinhos/GO;75656-186
+Rua Major Limírio;Centro;Morrinhos/GO;75650-128
+Rua Manoel de Freitas;Centro;Morrinhos/GO;75650-118
+Rua Manoel de Freitas;Jardim Venezuela;Morrinhos/GO;75650-166
+Rua Manoel Mendonça;Setor Cristo Redentor;Morrinhos/GO;75652-200
+Rua Maria Alves Pereira;Setor Arca de Noé;Morrinhos/GO;75654-374
+Rua Maria Amabini de Moraes;Residencial Antônio Correia Bueno;Morrinhos/GO;75652-556
+Rua Maria Eduarda Rodrigues;Residencial Antônio Correia Bueno;Morrinhos/GO;75652-560
+Rua Maria Ferreira de Souza;Setor José Jesuíno Filho;Morrinhos/GO;75652-086
+Rua Maria Ferreira de Souza;Setor Professor Olyntho Cândido;Morrinhos/GO;75652-002
+Rua Maria Rosa;Setor Arca de Noé;Morrinhos/GO;75654-392
+Rua Mariquinha de Freitas;Setor Aeroporto II;Morrinhos/GO;75652-376
+Rua Mato Grosso;Centro;Morrinhos/GO;75650-092
+Rua Melanias Vieira de Melo;Setor Oeste;Morrinhos/GO;75650-046
+Rua Minas Gerais;Centro;Morrinhos/GO;75650-130
+Rua Minervino Quintino Martins;Centro;Morrinhos/GO;75650-150
+Rua Minervino Quintino Martins;Jardim América;Morrinhos/GO;75650-276
+Rua Mogno;Desmembramento Fernando Azzi Teixeira;Morrinhos/GO;75656-592
+Rua Mogno;Jardim Colibri;Morrinhos/GO;75656-302
+Rua Mogno;Residencial Mirante do Bosque;Morrinhos/GO;75656-600
+Rua MV-14;Cristina Park;Morrinhos/GO;75652-680
+Rua MV-3;Setor Aeroporto II;Morrinhos/GO;75652-374
+Rua N;Vila Bela;Morrinhos/GO;75654-024
+Rua Nápolis;Jardim Romano;Morrinhos/GO;75656-064
+Rua Norma Grace Simiema;Setor Arca de Noé;Morrinhos/GO;75654-382
+Rua Novara;Jardim Romano;Morrinhos/GO;75656-118
+Rua Osmira Carneiro;Jardim Helena;Morrinhos/GO;75654-702
+Rua Osvaldo Rodrigues dos Santos;Setor Professor Olyntho Cândido;Morrinhos/GO;75652-000
+Rua Ovidio José dos Santos;Setor Professor Olyntho Cândido;Morrinhos/GO;75652-012
+Rua P;Vila Bela;Morrinhos/GO;75654-014
+Rua Padre Samuel George;Setor Oeste;Morrinhos/GO;75650-018
+Rua Padre Samuel George;Vila Bela;Morrinhos/GO;75654-000
+Rua Pádua;Jardim Romano;Morrinhos/GO;75656-100
+Rua Paineira;Jardim Colibri;Morrinhos/GO;75656-316
+Rua Pará;Centro;Morrinhos/GO;75650-116
+Rua Paraíba;Centro;Morrinhos/GO;75650-138
+Rua Paraná;Centro;Morrinhos/GO;75650-090
+Rua Parma;Jardim Romano;Morrinhos/GO;75656-122
+Rua Paulo de Souza;Morro da Saudade;Morrinhos/GO;75650-562
+Rua Paulo de Souza;Morro da Saudade II;Morrinhos/GO;75650-587
+Rua Pavia;Jardim Romano;Morrinhos/GO;75656-124
+Rua Pedro Braga;Setor Cordeiro;Morrinhos/GO;75652-332
+Rua Pequi;Jardim Colibri;Morrinhos/GO;75656-328
+Rua Pernambuco;Centro;Morrinhos/GO;75650-096
+Rua Pernambuco;Setor Oeste;Morrinhos/GO;75650-050
+Rua Peroba Rosa;Jardim Colibri;Morrinhos/GO;75656-322
+Rua Perucia;Jardim Romano;Morrinhos/GO;75656-090
+Rua Piauí;Centro;Morrinhos/GO;75650-110
+Rua Porto Alegre;Centro;Morrinhos/GO;75650-152
+Rua Porto Alegre;São Francisco de Assis;Morrinhos/GO;75650-176
+Rua Prefeito Antônio de Castro Rosa;Setor Professor Olyntho Cândido;Morrinhos/GO;75652-018
+Rua Prefeito Felício Chaves;Setor Oeste;Morrinhos/GO;75650-026
+Rua Prefeito Manoel de Freitas;Setor Professor Olyntho Cândido;Morrinhos/GO;75652-008
+Rua Prefeito Manoel Lemos de Mendonça;Setor Oeste;Morrinhos/GO;75650-042
+Rua Professor Felício Chaves;Jardim Santa Fé;Morrinhos/GO;75652-120
+Rua Professor Felício Chaves;Setor Cristo Redentor - II Etapa;Morrinhos/GO;75652-144
+Rua Professor Felício Chaves;Vila Nunes;Morrinhos/GO;75650-011
+Rua Professor José Cândido;Setor Cordeiro;Morrinhos/GO;75652-354
+Rua Professor José Cândido;Setor Cristo Redentor;Morrinhos/GO;75652-194
+Rua Queridinha;Parque das Laranjeiras;Morrinhos/GO;75654-582
+Rua Raimundo N Ribeiro;Jardim Santa Terezinha II;Morrinhos/GO;75654-618
+Rua Ravena;Jardim Romano;Morrinhos/GO;75656-116
+Rua RDO 1;Residencial Dona Ondina;Morrinhos/GO;75652-752
+Rua RDO 2;Residencial Dona Ondina;Morrinhos/GO;75652-754
+Rua RDO 3;Residencial Dona Ondina;Morrinhos/GO;75652-756
+Rua RDO 4;Residencial Dona Ondina;Morrinhos/GO;75652-760
+Rua RDO 5;Residencial Dona Ondina;Morrinhos/GO;75652-764
+Rua RDO 6;Residencial Dona Ondina;Morrinhos/GO;75652-768
+Rua RDO 7;Residencial Dona Ondina;Morrinhos/GO;75652-766
+Rua Regio;Jardim Romano;Morrinhos/GO;75656-096
+Rua Regio 2;Jardim Romano;Morrinhos/GO;75656-094
+Rua Reverendo Archibald Tipple;Setor Aeroporto;Morrinhos/GO;75654-064
+Rua Rio de Janeiro;Centro;Morrinhos/GO;75650-146
+Rua Rio de Janeiro;São Francisco de Assis;Morrinhos/GO;75650-174
+Rua Rio Grande do Sul;Centro;Morrinhos/GO;75650-094
+Rua RI-1;Residencial dos Ipês;Morrinhos/GO;75654-444
+Rua RI-1A;Residencial dos Ipês;Morrinhos/GO;75654-442
+Rua RI-2;Residencial dos Ipês;Morrinhos/GO;75654-438
+Rua RI-2A;Residencial dos Ipês;Morrinhos/GO;75654-440
+Rua RI-3;Residencial dos Ipês;Morrinhos/GO;75654-428
+Rua RI-4;Residencial dos Ipês;Morrinhos/GO;75654-430
+Rua RI-5;Residencial dos Ipês;Morrinhos/GO;75654-422
+Rua RI-6;Residencial dos Ipês;Morrinhos/GO;75654-432
+Rua RI-7;Residencial dos Ipês;Morrinhos/GO;75654-434
+Rua RI-8;Residencial Aldeia;Morrinhos/GO;75654-500
+Rua RI-8;Residencial dos Ipês;Morrinhos/GO;75654-436
+Rua RI-9;Residencial dos Ipês;Morrinhos/GO;75654-426
+Rua Rodrigo Freitas de Moraes;Setor Cordeiro;Morrinhos/GO;75652-336
+Rua Rosa Cascão;Setor Arca de Noé;Morrinhos/GO;75654-388
+Rua Roseli Carneiro de Castro;Jardim Helena;Morrinhos/GO;75654-692
+Rua Salermo;Jardim Romano;Morrinhos/GO;75656-056
+Rua Santo Agostinho;Morro da Saudade;Morrinhos/GO;75650-550
+Rua Santorini;Reserva Atenas;Morrinhos/GO;75654-516
+Rua São Paulo;Centro;Morrinhos/GO;75650-132
+Rua São Pedro;São Francisco de Assis;Morrinhos/GO;75650-180
+Rua Sargento Neir Garcia dos Santos;Jardim Santa Terezinha I;Morrinhos/GO;75654-601
+Rua Sargento Neir Garcia dos Santos;Jardim Santa Terezinha II;Morrinhos/GO;75654-616
+Rua SB-10;Setor Solar do Bosque;Morrinhos/GO;75654-730
+Rua SB-2;Setor Solar do Bosque;Morrinhos/GO;75654-726
+Rua SB-3;Setor Solar do Bosque;Morrinhos/GO;75654-724
+Rua SB-4;Setor Solar do Bosque;Morrinhos/GO;75654-722
+Rua SB-5;Setor Solar do Bosque;Morrinhos/GO;75654-720
+Rua SB-6;Setor Solar do Bosque;Morrinhos/GO;75654-718
+Rua SB-7;Setor Solar do Bosque;Morrinhos/GO;75654-714
+Rua SB-7A;Setor Solar do Bosque;Morrinhos/GO;75654-716
+Rua SB-8;Jardim Helena;Morrinhos/GO;75654-708
+Rua SB-8;Setor Solar do Bosque;Morrinhos/GO;75654-728
+Rua SB-9;Setor Solar do Bosque;Morrinhos/GO;75654-712
+Rua Sergipe;Centro;Morrinhos/GO;75650-100
+Rua Sergipe;Vila Santa Rosa;Morrinhos/GO;75650-734
+Rua Siena;Jardim Romano;Morrinhos/GO;75656-110
+Rua Sílvio Romano de Melo;Jardim Colibri;Morrinhos/GO;75656-308
+Rua Spezzia;Jardim Romano;Morrinhos/GO;75656-080
+Rua Sucupira;Jardim Colibri;Morrinhos/GO;75656-318
+Rua Sucupira;Residencial Mirante do Bosque;Morrinhos/GO;75656-614
+Rua Tarento;Jardim Romano;Morrinhos/GO;75656-072
+Rua Tereza de Freitas Felter;Setor São Pedro;Morrinhos/GO;75652-300
+Rua Tessália;Reserva Atenas;Morrinhos/GO;75654-518
+Rua Tiradentes;Centro;Morrinhos/GO;75650-108
+Rua Tripoli;Reserva Atenas;Morrinhos/GO;75654-514
+Rua Turim;Jardim Romano;Morrinhos/GO;75656-062
+Rua Uvaia;Jardim Colibri;Morrinhos/GO;75656-298
+Rua VC-1;Jardim Vera Cruz;Morrinhos/GO;75656-484
+Rua VC-10;Desmembramento Fernando Azzi Teixeira;Morrinhos/GO;75656-590
+Rua VC-10;Jardim Vera Cruz;Morrinhos/GO;75656-508
+Rua VC-11;Jardim Vera Cruz;Morrinhos/GO;75656-496
+Rua VC-12;Jardim Vera Cruz;Morrinhos/GO;75656-510
+Rua VC-13;Jardim Vera Cruz;Morrinhos/GO;75656-512
+Rua VC-14;Jardim Vera Cruz;Morrinhos/GO;75656-514
+Rua VC-14A;Jardim Vera Cruz;Morrinhos/GO;75656-516
+Rua VC-15;Jardim Vera Cruz;Morrinhos/GO;75656-518
+Rua VC-15A;Jardim Vera Cruz;Morrinhos/GO;75656-520
+Rua VC-16;Jardim Vera Cruz;Morrinhos/GO;75656-522
+Rua VC-16A;Jardim Vera Cruz;Morrinhos/GO;75656-524
+Rua VC-17;Jardim Vera Cruz;Morrinhos/GO;75656-528
+Rua VC-17A;Jardim Vera Cruz;Morrinhos/GO;75656-526
+Rua VC-18;Jardim Vera Cruz;Morrinhos/GO;75656-530
+Rua VC-2;Jardim Vera Cruz;Morrinhos/GO;75656-488
+Rua VC-3;Jardim Vera Cruz;Morrinhos/GO;75656-492
+Rua VC-4;Jardim Vera Cruz;Morrinhos/GO;75656-494
+Rua VC-5;Jardim Vera Cruz;Morrinhos/GO;75656-498
+Rua VC-6;Jardim Vera Cruz;Morrinhos/GO;75656-500
+Rua VC-7;Jardim Vera Cruz;Morrinhos/GO;75656-502
+Rua VC-8;Jardim Vera Cruz;Morrinhos/GO;75656-504
+Rua VC-9;Jardim Vera Cruz;Morrinhos/GO;75656-506
+Rua Vera Cruz;Setor Arca de Noé;Morrinhos/GO;75654-402
+Rua Vereador Antonio da Lucinda;Jardim Helena;Morrinhos/GO;75654-704
+Rua Vereador Luiz Santiago;Setor Aeroporto;Morrinhos/GO;75654-090
+Rua Verona;Jardim Romano;Morrinhos/GO;75656-098
+Rua Verona I;Jardim Romano;Morrinhos/GO;75656-092
+Rua Verona II;Jardim Romano;Morrinhos/GO;75656-102
+Rua Vitória da Paixão A Barbosa;Residencial Antônio Correia Bueno;Morrinhos/GO;75652-562
+Rua WN;Setor Arca de Noé;Morrinhos/GO;75654-378
+Rua X;São Francisco de Assis;Morrinhos/GO;75650-204
+Rua X;Setor Noroeste;Morrinhos/GO;75656-194
+Rua Z;Setor Noroeste;Morrinhos/GO;75656-196
+Rua 1;Jardim América;Morrinhos/GO;75650-300
+Rua 1;Jardim Romano;Morrinhos/GO;75656-126
+Rua 1;Jardim Venezuela;Morrinhos/GO;75650-168
+Rua 1;JK;Morrinhos/GO;75650-412
+Rua 1;Loteamento Vinícius Cândido;Morrinhos/GO;75650-680
+Rua 1;Morro da Saudade II;Morrinhos/GO;75650-570
+Rua 1;Residencial Portal do Lago;Morrinhos/GO;75656-020
+Rua 1;Setor Aeroporto;Morrinhos/GO;75654-060
+Rua 1;Setor Cristo Redentor - II Etapa;Morrinhos/GO;75652-164
+Rua 1;Setor Noroeste;Morrinhos/GO;75656-176
+Rua 1;Setor Oeste;Morrinhos/GO;75650-024
+Rua 1;Setor São Pedro;Morrinhos/GO;75652-272
+Rua 1;Setor Sul dos Pomares;Morrinhos/GO;75654-298
+Rua 1;Sol Nascente;Morrinhos/GO;75650-648
+Rua 1;Vila Bela;Morrinhos/GO;75654-004
+Rua 1;Vila Nova I;Morrinhos/GO;75650-330
+Rua 1;Vila Nova III;Morrinhos/GO;75650-361
+Rua 1;Vila Nunes;Morrinhos/GO;75650-009
+Rua 1A;Residencial Santa Terezinha;Morrinhos/GO;75654-554
+Rua 1A;Setor Aeroporto;Morrinhos/GO;75654-074
+Rua 10;Barra do Cordeiro;Morrinhos/GO;75650-392
+Rua 10;Centro;Morrinhos/GO;75650-148
+Rua 10;Jardim América;Morrinhos/GO;75650-290
+Rua 10;Morro da Saudade II;Morrinhos/GO;75650-588
+Rua 10;Residencial Jarina Park;Morrinhos/GO;75650-694
+Rua 10;Sol Nascente 2ª Etapa;Morrinhos/GO;75650-618
+Rua 10;Vila Nossa Senhora do Carmo;Morrinhos/GO;75656-234
+Rua 10;Vila Nova I;Morrinhos/GO;75650-354
+Rua 100;Residencial Valéria Reis;Morrinhos/GO;75656-404
+Rua 101;Jardim Colibri;Morrinhos/GO;75656-306
+Rua 101;Residencial Valéria Reis;Morrinhos/GO;75656-390
+Rua 102;Residencial Valéria Reis;Morrinhos/GO;75656-396
+Rua 103;Residencial Valéria Reis;Morrinhos/GO;75656-398
+Rua 105;Residencial Valéria Reis;Morrinhos/GO;75656-400
+Rua 107;Residencial Valéria Reis;Morrinhos/GO;75656-402
+Rua 109;Residencial Valéria Reis;Morrinhos/GO;75656-406
+Rua 11;Barra do Cordeiro;Morrinhos/GO;75650-386
+Rua 11;Jardim América;Morrinhos/GO;75650-292
+Rua 11;Jardim Santa Fé;Morrinhos/GO;75652-119
+Rua 11;Morro da Saudade;Morrinhos/GO;75650-538
+Rua 11;Vila Nova I;Morrinhos/GO;75650-356
+Rua 11A;Vila Nova I;Morrinhos/GO;75650-360
+Rua 111;Residencial Valéria Reis;Morrinhos/GO;75656-408
+Rua 113;Residencial Valéria Reis;Morrinhos/GO;75656-410
+Rua 12;Barra do Cordeiro;Morrinhos/GO;75650-398
+Rua 12;Jardim América;Morrinhos/GO;75650-293
