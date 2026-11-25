@@ -41,7 +41,9 @@ A busca aceita abreviações como `R.` e `Av.`, grafias sem acento e endereços 
 | **CEP publicado** | CEP observado numa lista postal, com a referência da edição. A data da lista indica quando a informação foi publicada. |
 | **Conferência nos Correios** | Resultado de uma consulta direta registrada para a observação postal. A base inicial tem as conferências pendentes. |
 | **Fonte histórica** | Registro do nome antigo ou popular em pesquisa documental. A página de correspondência identifica o trecho. |
-| **Mudanças cadastradas** | Histórico lançado por quem usa a cópia local, com a vigência quando conhecida e a referência informada. |
+| **Vigência da mudança cadastrada** | Data em que a mudança lançada na cópia local passou a valer, quando conhecida. O registro mostra a referência informada no cadastro. |
+
+A aba **Histórico de nomes** reúne atos municipais, usos registrados em fontes históricas e mudanças cadastradas em ordem cronológica. Os registros sem data aparecem ao final.
 
 ## Pendências de CEP
 
@@ -66,7 +68,7 @@ python -X utf8 interface.py --edicao
 1. Busque a via, selecione o trecho correto e clique em **Cadastrar mudança**.
 2. Informe o novo nome. Preencha o nome anterior e a vigência se forem conhecidos. Para uma alteração somente de CEP, deixe os nomes em branco.
 3. Selecione **Mudou**, **Continuou igual** ou **Ainda a confirmar**. Preencha os campos de CEP de acordo com a fonte.
-4. Informe a referência documental e, se houver, um link público. Ao salvar, o registro aparece em **Mudanças cadastradas**. Você pode recuperar o trecho pelos nomes e CEPs específicos registrados.
+4. Informe a referência documental e, se houver, um link público. Ao salvar, o registro aparece na linha do tempo da aba **Histórico de nomes**. Você pode recuperar o trecho pelos nomes e CEPs específicos registrados.
 
 O modo de edição permite gravar no banco desse computador. A referência digitada fica visível na consulta. Use referências públicas e preserve a cópia local em backup. Os lançamentos locais continuam no seu computador e aparecem junto das fontes importadas na interface.
 

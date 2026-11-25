@@ -110,6 +110,75 @@ function nome(trecho) {
   return trecho.nome_postal_publicado || trecho.nome_municipal_documentado || 'Logradouro';
 }
 
+function nomesHistoricosDoResultado(trecho) {
+  const chave = (valor) => valor.normalize('NFC').toLocaleLowerCase('pt-BR');
+  const vistos = new Set([trecho.nome_postal_publicado, trecho.nome_municipal_documentado].filter(Boolean).map(chave));
+  const nomes = [
+    ...(trecho.nomes_historicos || []).map((registro) => registro.nome),
+    ...trecho.historico_nomes.flatMap((ato) => [ato.nome_anterior, ato.nome_atribuido]),
+    ...(trecho.mudancas_cadastradas || []).map((mudanca) => mudanca.nome_anterior),
+  ];
+  return nomes.filter((valor) => {
+    if (!valor || vistos.has(chave(valor))) return false;
+    vistos.add(chave(valor));
+    return true;
+  });
+}
+
+function exibirHistorico(trecho) {
+  const atos = trecho.historico_nomes.map((ato) => ({
+    data: ato.data_ato,
+    rotulo: 'Data do ato municipal',
+    registro: documento(
+      ato.nome_anterior ? `${ato.nome_anterior} → ${ato.nome_atribuido}` : ato.nome_atribuido,
+      [`Lei nº ${ato.numero} · Art. ${ato.artigo}`, ato.bairro_no_ato, ato.nota], ato, 'Abrir lei',
+    ),
+  }));
+  const usos = (trecho.nomes_historicos || []).map((registro) => {
+    const paginas = [`Registro do nome na p. ${registro.pagina}`];
+    if (registro.pagina_correspondencia !== registro.pagina) paginas.push(`Correspondência na p. ${registro.pagina_correspondencia}`);
+    return {
+      data: registro.ano ? String(registro.ano) : null,
+      rotulo: registro.ano ? 'Ano de uso registrado em fonte histórica' : 'Uso registrado em fonte histórica',
+      registro: documento(registro.nome, [paginas.join(' · '), registro.fonte, registro.nota],
+        {url: registro.url, pagina: registro.pagina_correspondencia}),
+    };
+  });
+  const mudancas = (trecho.mudancas_cadastradas || []).map((mudanca) => {
+    const anterior = mudanca.cep_anterior || 'a confirmar';
+    const ceps = {
+      alterado: `CEP ${anterior} → ${mudanca.cep_novo}`,
+      mantido: `CEP mantido em ${mudanca.cep_anterior}`,
+      desconhecido: mudanca.cep_anterior ? `Novo CEP a confirmar · CEP anterior ${anterior}` : 'CEP a confirmar',
+    };
+    const titulo = mudanca.nome_anterior ? `${mudanca.nome_anterior} → ${mudanca.nome_novo}` : mudanca.nome_novo;
+    return {
+      data: mudanca.vigencia_desde,
+      rotulo: 'Vigência da mudança cadastrada',
+      registro: documento(titulo || 'Mudança de CEP', [ceps[mudanca.situacao_cep], mudanca.fonte],
+        {url: mudanca.url_fonte}),
+    };
+  });
+  const eventos = [...atos, ...usos, ...mudancas];
+  const painel = porId('painel-nomes');
+  if (!eventos.length) {
+    painel.replaceChildren(elemento('p', 'Histórico de nomes a confirmar nas fontes municipais.', 'vazio'));
+    return false;
+  }
+  eventos.sort((a, b) => a.data && b.data ? a.data.localeCompare(b.data) : Number(!a.data) - Number(!b.data));
+  const linhaDoTempo = elemento('ol', null, 'linha-tempo');
+  linhaDoTempo.setAttribute('role', 'list');
+  for (const {data, rotulo, registro} of eventos) {
+    const item = elemento('li', null, 'evento-historico');
+    const cabecalho = elemento('p', null, 'data-historico');
+    cabecalho.append(elemento('strong', data ? dataFormatada(data) : 'Data a confirmar'), elemento('span', rotulo));
+    item.append(cabecalho, registro);
+    linhaDoTempo.append(item);
+  }
+  painel.replaceChildren(linhaDoTempo);
+  return true;
+}
+
 function exibirTrecho(trecho, botao, interacao) {
   trechoSelecionado = trecho;
   porId('estado-mudanca').textContent = '';
@@ -143,34 +212,7 @@ function exibirTrecho(trecho, botao, interacao) {
   porId('trecho-via').textContent = trecho.trecho_documentado || '';
   porId('trecho-via').hidden = !trecho.trecho_documentado;
 
-  const mudancas = (trecho.mudancas_cadastradas || []).map((mudanca) => {
-    const anterior = mudanca.cep_anterior || 'a confirmar';
-    const ceps = {
-      alterado: `CEP ${anterior} → ${mudanca.cep_novo}`,
-      mantido: `CEP mantido: ${mudanca.cep_anterior}`,
-      desconhecido: mudanca.cep_anterior ? `Novo CEP a confirmar · CEP anterior ${anterior}` : 'CEP a confirmar',
-    };
-    const titulo = mudanca.nome_anterior ? `${mudanca.nome_anterior} → ${mudanca.nome_novo}` : mudanca.nome_novo;
-    return documento(
-      titulo || 'Mudança de CEP',
-      [ceps[mudanca.situacao_cep], `Vigência: ${dataFormatada(mudanca.vigencia_desde)}`, mudanca.fonte],
-      {url: mudanca.url_fonte},
-    );
-  });
-  porId('historico-mudancas').replaceChildren(...mudancas);
-  porId('mudancas-via').hidden = !mudancas.length;
-
-  const nomes = trecho.historico_nomes.map((ato) => documento(
-    ato.nome_anterior ? `${ato.nome_anterior} → ${ato.nome_atribuido}` : ato.nome_atribuido,
-    [`Lei nº ${ato.numero} · Art. ${ato.artigo} · ${dataFormatada(ato.data_ato)}`,
-      ato.bairro_no_ato, ato.nota], ato, 'Abrir lei',
-  ));
-  for (const registro of nomesHistoricos) {
-    const referencia = ['Fonte histórica', registro.ano && `Uso registrado em ${registro.ano}`, `Registro do nome na p. ${registro.pagina}`];
-    if (registro.pagina_correspondencia !== registro.pagina) referencia.push(`Correspondência na p. ${registro.pagina_correspondencia}`);
-    nomes.push(documento(registro.nome, [referencia.filter(Boolean).join(' · '), registro.fonte, registro.nota],
-      {url: registro.url, pagina: registro.pagina_correspondencia}, 'Abrir fonte'));
-  }
+  const temHistorico = exibirHistorico(trecho);
   const fontes = [];
   const anteriores = [];
   for (const fonte of trecho.observacoes_postais) {
@@ -184,9 +226,8 @@ function exibirTrecho(trecho, botao, interacao) {
     arquivo.append(elemento('summary', `Fontes de edições anteriores (${anteriores.length})`), ...anteriores);
     fontes.push(arquivo);
   }
-  porId('painel-nomes').replaceChildren(...(nomes.length ? nomes : [elemento('p', 'Histórico de nomes a confirmar nas fontes municipais.', 'vazio')]));
   porId('painel-ceps').replaceChildren(...(fontes.length ? fontes : [elemento('p', 'CEP a confirmar. A denominação está disponível no histórico.', 'vazio')]));
-  escolherAba(nomes.length ? abas[0] : abas[1]);
+  escolherAba(temHistorico ? abas[0] : abas[1]);
   detalhe.hidden = false;
   if (interacao && matchMedia('(max-width: 785px)').matches) {
     detalhe.scrollIntoView({block: 'start'});
@@ -251,7 +292,13 @@ async function buscar(novaPagina = 1, moverFoco = false, selecionarId = null) {
       botao.setAttribute('aria-controls', 'detalhe');
       const cep = trecho.cep_publicado || 'CEP a confirmar';
       const aviso = filtro.pendencia_cep === 'sem_cep_atual' && trecho.cep_publicado ? 'Lista anterior' : null;
-      rotulo.append(elemento('strong', nome(trecho)), elemento('small', [trecho.bairro, cep, aviso].filter(Boolean).join(' · ')));
+      rotulo.append(elemento('strong', nome(trecho)));
+      const nomesHistoricos = nomesHistoricosDoResultado(trecho);
+      if (nomesHistoricos.length) {
+        const titulo = nomesHistoricos.length === 1 ? 'Nome histórico' : 'Nomes históricos';
+        rotulo.append(elemento('small', `${titulo} — ${nomesHistoricos.join(' · ')}`, 'resultado-historico'));
+      }
+      rotulo.append(elemento('small', [trecho.bairro, cep, aviso].filter(Boolean).join(' · ')));
       botao.append(icone('pin'), rotulo, icone('direita'));
       botao.addEventListener('click', () => exibirTrecho(trecho, botao, true));
       if (trecho.trecho_id === selecionarId) selecionado = {trecho, botao};

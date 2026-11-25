@@ -70,6 +70,7 @@ button:disabled { cursor: default; }
 .resultado strong, .resultado small { display: block; overflow-wrap: anywhere; }
 .resultado strong { font-size: clamp(18px, 1.55vw, 24px); line-height: 1.21; letter-spacing: -.024em; }
 .resultado small { margin-top: 4px; font-size: clamp(15px, 1.23vw, 19px); color: #33413a; }
+.resultado .resultado-historico { color: var(--verde); font-weight: 600; }
 .paginacao { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-top: 18px; font-size: .86em; }
 .paginacao button { display: grid; place-items: center; width: 44px; height: 44px; border: 1px solid var(--linha); border-radius: 8px; background: var(--papel); }
 .paginacao button:disabled { opacity: .46; }
@@ -92,9 +93,6 @@ button:disabled { cursor: default; }
 .resultados > .estado-mudanca { color: var(--verde); font-size: .9em; }
 .secundario { min-height: 44px; border: 1px solid var(--linha-forte); border-radius: 9px; padding: 8px 15px; color: var(--verde); background: var(--papel); font-weight: 680; }
 .secundario:hover { border-color: var(--verde); background: var(--verde-claro); }
-.mudancas-via { margin-top: 16px; border: 1px solid var(--linha); border-radius: var(--raio); padding: 13px 16px 3px; }
-.mudancas-via h3 { font-size: 1em; }
-.mudancas-via .registro { padding-inline: 0; }
 .dialogo-mudanca { width: min(670px, calc(100% - 24px)); max-height: calc(100dvh - 24px); margin: auto; padding: clamp(14px, 3vw, 28px); border: 1px solid var(--linha-forte); border-radius: var(--raio); color: var(--tinta); background: var(--papel); }
 .dialogo-mudanca::backdrop { background: rgb(24 38 32 / 60%); }
 .dialogo-mudanca h2 { font-family: var(--serifa); font-size: clamp(25px, 4vw, 36px); letter-spacing: -.04em; }
@@ -120,6 +118,15 @@ button:disabled { cursor: default; }
 .registro p { margin-top: 3px; color: var(--secundaria); font-size: .91em; overflow-wrap: anywhere; }
 .registro a { display: inline-flex; align-items: center; gap: 6px; min-height: 44px; font-weight: 600; white-space: nowrap; }
 .registro a svg { width: 19px; height: 19px; }
+.linha-tempo { list-style: none; margin: 18px 0 4px 6px; padding-inline-start: 17px; border-inline-start: 2px solid var(--linha); }
+.evento-historico { position: relative; padding-bottom: 18px; }
+.evento-historico:last-child { padding-bottom: 0; }
+.evento-historico::before { content: ''; position: absolute; inset-block-start: .38em; inset-inline-start: -23px; width: 10px; height: 10px; border-radius: 50%; background: var(--verde); }
+.data-historico { display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 9px; margin-bottom: 4px; color: var(--secundaria); font-size: .86em; }
+.data-historico strong { color: var(--verde); font-variant-numeric: tabular-nums; }
+.evento-historico .registro { grid-template-columns: minmax(0, 1fr) auto; min-height: 0; gap: 4px 15px; padding: 0; }
+.evento-historico .registro > svg { display: none; }
+.evento-historico .registro a { justify-self: start; }
 .fontes-anteriores { border-top: 1px solid var(--linha); }
 .fontes-anteriores summary { padding: 12px 6px; color: var(--verde); cursor: pointer; font-size: .88em; }
 .vazio, .mensagem { color: var(--secundaria); padding: 21px 12px; }
@@ -180,5 +187,6 @@ button:disabled { cursor: default; }
   .registro > svg { width: 22px; height: 22px; }
   .registro a { font-size: 14px; }
   .registro a svg { display: none; }
+  .evento-historico .registro { grid-template-columns: minmax(0, 1fr); }
   .rodape { flex-wrap: wrap; gap: 4px; }
 }
