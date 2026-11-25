@@ -1,5 +1,13 @@
 # Conferência das leis no Portal do Cidadão de Morrinhos
 
+## Situação da revisão em 25/11/2026
+
+A triagem das 3.199 fichas do Portal do Cidadão identificou 728 candidatas à revisão pelas ementas e pelas referências a outras leis. A seleção abrange denominação de vias e atos sobre loteamentos, imóveis e obras que possam identificar trechos por suas confrontações.
+
+Na data da pausa, a pesquisa reunia 699 arquivos PDF, dos quais 680 tinham texto extraído. A próxima etapa é conferir os artigos e anexos de cada ato, inclusive os já cadastrados, e verificar alterações e revogações posteriores antes de registrar novos vínculos. [Índice de leis da Prefeitura](https://acessoainformacao.morrinhos.go.gov.br/cidadao/legislacao/leis)
+
+## Conferência dos exemplares já arquivados
+
 Em 25/11/2026, o índice municipal continha 3.199 fichas. A comparação abrangeu número e ano de cada lei arquivada. A identidade do arquivo foi conferida byte a byte. Os exemplares diferentes ficam disponíveis para confronto com o texto e as certidões usados no catálogo.
 
 O levantamento abrangeu 84 leis de denominação ou alteração e duas leis de apoio. Foram localizados 51 anexos no portal, dos quais três são idênticos aos exemplares arquivados. Para os outros 48, a conferência usou a primeira página digitalizada, com leitura do número, ano e identificação da via ou objeto. O cadastro conserva as páginas e certidões dos exemplares que fundamentaram cada registro. As 35 linhas sem ficha indicam ausência de correspondência no índice consultado.
