@@ -35,7 +35,7 @@ const historicos = {
   denominacao_documentada: 'Nome documentado', cep_geral_historico: 'CEP geral histórico',
 };
 const pendenciasCep = {
-  sem_cep_atual: 'Inclui trechos sem CEP localizado e trechos com CEP somente em edições anteriores.',
+  sem_cep_atual: 'Trechos sem CEP identificado nas fontes oficiais atuais.',
   cadastro_a_confirmar: 'O trecho está sem CEP atual e sem CEP específico lançado, ou o último cadastro deixou o CEP a confirmar.',
   correios_a_conferir: 'O CEP consta da lista atual ou complementar. A conferência nos Correios está pendente ou precisa de revisão.',
 };
@@ -66,6 +66,13 @@ function documento(titulo, textos, fonte, rotulo = 'Abrir fonte') {
   const corpo = elemento('div');
   corpo.append(elemento('strong', titulo));
   for (const texto of textos.filter(Boolean)) corpo.append(elemento('p', texto));
+  if (fonte.ficha_prefeitura) {
+    const ficha = elemento('a', 'Ficha da Prefeitura');
+    ficha.href = fonte.ficha_prefeitura;
+    ficha.target = '_blank';
+    ficha.rel = 'noopener noreferrer';
+    corpo.append(ficha);
+  }
   linha.append(icone('arquivo'), corpo);
   if (fonte.url) {
     const link = elemento('a', rotulo);
@@ -107,7 +114,15 @@ for (const aba of abas) {
 }
 
 function nome(trecho) {
-  return trecho.nome_postal_publicado || trecho.nome_municipal_documentado || 'Logradouro';
+  return trecho.nome_municipal_documentado || trecho.nome_postal_publicado || 'Logradouro';
+}
+
+function descricaoNomePostal(trecho) {
+  const legal = trecho.nome_municipal_documentado;
+  const postal = trecho.nome_postal_publicado;
+  if (!legal || !postal || legal.localeCompare(postal, 'pt-BR', {sensitivity: 'accent'}) === 0) return '';
+  const origem = trecho.nome_postal_nos_correios ? 'Nos Correios' : 'Na lista postal';
+  return `${origem}: ${postal}`;
 }
 
 function nomesHistoricosDoResultado(trecho) {
@@ -123,6 +138,12 @@ function nomesHistoricosDoResultado(trecho) {
     vistos.add(chave(valor));
     return true;
   });
+}
+
+function descricaoVariantes(trecho) {
+  return trecho.variantes_postais?.length
+    ? `Nas listas municipais anteriores: ${trecho.variantes_postais.join(' · ')}`
+    : '';
 }
 
 function exibirHistorico(trecho) {
@@ -149,7 +170,7 @@ function exibirHistorico(trecho) {
   const mudancas = (trecho.mudancas_cadastradas || []).map((mudanca) => {
     const anterior = mudanca.cep_anterior || 'a confirmar';
     const ceps = {
-      alterado: `CEP ${anterior} → ${mudanca.cep_novo}`,
+      alterado: `CEP ${anterior} → ${mudanca.cep_novo || 'a confirmar'}`,
       mantido: `CEP mantido em ${mudanca.cep_anterior}`,
       desconhecido: mudanca.cep_anterior ? `Novo CEP a confirmar · CEP anterior ${anterior}` : 'CEP a confirmar',
     };
@@ -157,7 +178,7 @@ function exibirHistorico(trecho) {
     return {
       data: mudanca.vigencia_desde,
       rotulo: 'Vigência da mudança cadastrada',
-      registro: documento(titulo || 'Mudança de CEP', [ceps[mudanca.situacao_cep], mudanca.fonte],
+      registro: documento(titulo || 'Mudança de CEP', [(mudanca.cep_anterior || mudanca.cep_novo) && ceps[mudanca.situacao_cep], mudanca.fonte],
         {url: mudanca.url_fonte}),
     };
   });
@@ -190,6 +211,12 @@ function exibirTrecho(trecho, botao, interacao) {
     item.setAttribute('aria-pressed', String(item === botao));
   }
   porId('nome-via').textContent = nome(trecho);
+  const postal = porId('nome-postal');
+  postal.textContent = descricaoNomePostal(trecho);
+  postal.hidden = !postal.textContent;
+  const variante = porId('variante-postal');
+  variante.textContent = descricaoVariantes(trecho);
+  variante.hidden = !variante.textContent;
   porId('local-via').querySelector('span').textContent = [trecho.bairro, 'Morrinhos (GO)'].filter(Boolean).join(', ');
   porId('cep-via').textContent = trecho.cep_publicado || 'A confirmar';
   porId('referencia-via').textContent = dataFormatada(trecho.referencia_postal);
@@ -218,7 +245,7 @@ function exibirTrecho(trecho, botao, interacao) {
   const fontes = [];
   const anteriores = [];
   for (const fonte of trecho.observacoes_postais) {
-    const mesmaGrafia = fonte.nome_original === nome(trecho) && fonte.bairro_original === trecho.bairro;
+    const mesmaGrafia = fonte.nome_original === trecho.nome_postal_publicado && fonte.bairro_original === trecho.bairro;
     const referencia = [dataFormatada(fonte.referencia), fonte.pagina && `Página ${fonte.pagina}`].filter(Boolean).join(' · ');
     const listaFonte = fonte.referencia === trecho.referencia_postal ? fontes : anteriores;
     listaFonte.push(documento(fonte.titulo, [referencia, !mesmaGrafia && [fonte.nome_original, fonte.bairro_original, fonte.cep].filter(Boolean).join(' · ')], fonte));
@@ -295,6 +322,10 @@ async function buscar(novaPagina = 1, moverFoco = false, selecionarId = null) {
       const cep = trecho.cep_publicado || 'CEP a confirmar';
       const aviso = filtro.pendencia_cep === 'sem_cep_atual' && trecho.cep_publicado ? 'Lista anterior' : null;
       rotulo.append(elemento('strong', nome(trecho)));
+      const postal = descricaoNomePostal(trecho);
+      if (postal) rotulo.append(elemento('small', postal));
+      const variante = descricaoVariantes(trecho);
+      if (variante) rotulo.append(elemento('small', variante));
       const nomesHistoricos = nomesHistoricosDoResultado(trecho);
       if (nomesHistoricos.length) {
         const titulo = nomesHistoricos.length === 1 ? 'Nome histórico' : 'Nomes históricos';

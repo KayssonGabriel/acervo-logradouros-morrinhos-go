@@ -1,0 +1,177 @@
+# Conferência das leis no Portal do Cidadão de Morrinhos
+
+Em 25/11/2026, o índice municipal continha 3.199 fichas. A comparação abrangeu número e ano de cada lei arquivada. A identidade do arquivo foi conferida byte a byte. Os exemplares diferentes ficam disponíveis para confronto com o texto e as certidões usados no catálogo.
+
+O levantamento abrangeu 84 leis de denominação ou alteração e duas leis de apoio. Foram localizados 51 anexos no portal, dos quais três são idênticos aos exemplares arquivados. Para os outros 48, a conferência usou a primeira página digitalizada, com leitura do número, ano e identificação da via ou objeto. O cadastro conserva as páginas e certidões dos exemplares que fundamentaram cada registro. As 35 linhas sem ficha indicam ausência de correspondência no índice consultado.
+
+Em 25/11/2026, a pesquisa das 34 leis de 1960 a 1988 nos domínios da Prefeitura e da Câmara, por número, ano e nome de logradouro, e a consulta à biblioteca de mídia da Prefeitura pelos anos dos atos não localizaram exemplar oficial dessas leis. A [série digital da Câmara](https://leis.morrinhos.go.leg.br/api/leis/anos) começa em 1991. As cópias locais continuam identificadas no inventário.
+
+| Lei | Fonte municipal | Comparação com o exemplar do acervo |
+| --- | --- | --- |
+| 109/1973 | Sem correspondência no índice por número e ano | — |
+| 112/1973 | Sem correspondência no índice por número e ano | — |
+| 118/1973 | Sem correspondência no índice por número e ano | — |
+| 119/1973 | Sem correspondência no índice por número e ano | — |
+| 120/1973 | Sem correspondência no índice por número e ano | — |
+| 121/1973 | Sem correspondência no índice por número e ano | — |
+| 122/1973 | Sem correspondência no índice por número e ano | — |
+| 1295/1994 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=2714) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/5e2db97671e4535b2d82636ae88de2e7.pdf) | [Outro exemplar](fontes/leis/portal/lei-1295-1994.pdf) |
+| 1329/1995 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=2449) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/ce6708ced0c736a37afd2ab89ceffa42.pdf) | [Outro exemplar](fontes/leis/portal/lei-1329-1995.pdf) |
+| 1330/1995 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=2450) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/ab7fa80f1c6c85613f009a52597fc550.pdf) | [Outro exemplar](fontes/leis/portal/lei-1330-1995.pdf) |
+| 1332/1995 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=2452) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/7e4d329b014ee35c9083b8765bf21bfb.pdf) | [Outro exemplar](fontes/leis/portal/lei-1332-1995.pdf) |
+| 1344/1995 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=2464) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/749962ff51576c16af2092b51df5913a.pdf) | [Outro exemplar](fontes/leis/portal/lei-1344-1995.pdf) |
+| 1347/1995 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=2467) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/ddb3343f11bb555a0cab90ff23f5481f.pdf) | [Outro exemplar](fontes/leis/portal/lei-1347-1995.pdf) |
+| 1357/1995 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=2477) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/f9e7a1fb8eb2c3ae8d15c8ecfed8dc08.pdf) | [Outro exemplar](fontes/leis/portal/lei-1357-1995.pdf) |
+| 1358/1995 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=2478) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/3d257ed3a0c32f065c82acabc930f7cb.pdf) | [Outro exemplar](fontes/leis/portal/lei-1358-1995.pdf) |
+| 1432/1996 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=2392) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/8f98b24bf265f97111c49e95996c2db8.pdf) | [Outro exemplar](fontes/leis/portal/lei-1432-1996.pdf) |
+| 1437/1996 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=2397) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/3d13cbd47a10419d173abe73a42b580f.pdf) | [Outro exemplar](fontes/leis/portal/lei-1437-1996.pdf) |
+| 1448/1996 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=2408) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/e7e652f5b6056dbc7a28b65419cf227d.pdf) | [Outro exemplar](fontes/leis/portal/lei-1448-1996.pdf) |
+| 1459/1996 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=2419) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/2068dc22824fe50ca5b1e95b94ad69ef.pdf) | [Outro exemplar](fontes/leis/portal/lei-1459-1996.pdf) |
+| 1502/1997 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=2293) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/65420efe0287990042e09c3158070776.pdf) | [Outro exemplar](fontes/leis/portal/lei-1502-1997.pdf) |
+| 1503/1997 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=2294) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/74a8dcc4e3b63f4ad760e942e2ec4fc8.pdf) | [Outro exemplar](fontes/leis/portal/lei-1503-1997.pdf) |
+| 1574/1998 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=2185) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/9bf63f18779c56e967ba4068dd7d0df5.pdf) | [Outro exemplar](fontes/leis/portal/lei-1574-1998.pdf) |
+| 1575/1998 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=2186) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/750aae95c8fbf1e75ea590167c59ca1d.pdf) | [Outro exemplar](fontes/leis/portal/lei-1575-1998.pdf) |
+| 1576/1998 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=2187) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/f78e407be4387b38cc9cc5333554dbb0.pdf) | [Outro exemplar](fontes/leis/portal/lei-1576-1998.pdf) |
+| 1594/1998 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=2205) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/854e82425bcee017582f16cada2447e9.pdf) | [Outro exemplar](fontes/leis/portal/lei-1594-1998.pdf) |
+| 163/1974 | Sem correspondência no índice por número e ano | — |
+| 165/1974 | Sem correspondência no índice por número e ano | — |
+| 1658/1999 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=2110) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/fb0f266507e7563e1fc19bcea8db55b1.pdf) | Arquivo idêntico |
+| 1732/2000 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=2031) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/eacd5468e8b3a6ee2ec513bc3effb554.pdf) | [Outro exemplar](fontes/leis/portal/lei-1732-2000.pdf) |
+| 174/1975 | Sem correspondência no índice por número e ano | — |
+| 1834/2001 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=1971) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/fc1a2e7cdb52187d91b639e527f904b8.pdf) | [Outro exemplar](fontes/leis/portal/lei-1834-2001.pdf) |
+| 1871/2001 | [PDF no site da Prefeitura](https://morrinhos.go.gov.br/wp-content/uploads/2023/11/Lei-n-1871-de-22-de-novembro-de-2001.pdf) · [Ficha da Câmara](https://leis.morrinhos.go.leg.br/leis/723/lei-1871-2001) | Fora do índice do Portal do Cidadão. O PDF municipal identifica a lei de 22/11/2001 e a alteração da Rua JG-3 no Setor Jardim Goiás. |
+| 1939/2002 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=1897) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/f678afba341aa1edae1afb3b4ff4d7a9.pdf) | [Outro exemplar](fontes/leis/portal/lei-1939-2002.pdf) |
+| 202/1975 | Sem correspondência no índice por número e ano | — |
+| 2067/2004 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=1716) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/9b6e976a1dba217994384e794dd9177f.pdf) | [Outro exemplar](fontes/leis/portal/lei-2067-2004.pdf) |
+| 215/1975 | Sem correspondência no índice por número e ano | — |
+| 216/1975 | Sem correspondência no índice por número e ano | — |
+| 2179/2005 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=1664) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/b5f9390fda1c427a025269909bc9861d.pdf) | [Outro exemplar](fontes/leis/portal/lei-2179-2005.pdf) |
+| 2292/2007 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=1502) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/944d671b2f901501ef5a1085dcc0b192.pdf) | [Outro exemplar](fontes/leis/portal/lei-2292-2007.pdf) |
+| 2295/2007 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=1505) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/824fc9abb8e598e763c13de5f8d9a5ad.pdf) | [Outro exemplar](fontes/leis/portal/lei-2295-2007.pdf) |
+| 2310/2007 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=1518) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/cf3520afeb96a74855fa18addde8ad34.pdf) | [Outro exemplar](fontes/leis/portal/lei-2310-2007.pdf) |
+| 2311/2007 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=1519) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/bccca3f1207edacbc7d25d9e338caa2c.pdf) | [Outro exemplar](fontes/leis/portal/lei-2311-2007.pdf) |
+| 234/1976 | Sem correspondência no índice por número e ano | — |
+| 2450/2008 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=1456) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/a00eea65f53f9f38caa9668feef7d831.pdf) | [Outro exemplar](fontes/leis/portal/lei-2450-2008.pdf) |
+| 2474/2008 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=1479) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/3efdbfb837891f31578fa95da5f3debe.pdf) | [Outro exemplar](fontes/leis/portal/lei-2474-2008.pdf) |
+| 2475/2008 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=1480) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/65c50729f62fac92b2b988e88e5042d9.pdf) | [Outro exemplar](fontes/leis/portal/lei-2475-2008.pdf) |
+| 2478/2008 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=1483) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/d6e31e0755b12cd80792902b988fba7f.pdf) | [Outro exemplar](fontes/leis/portal/lei-2478-2008.pdf) |
+| 2517/2009 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=1383) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/2d5497084e507d19c942d4becdd543b4.pdf) | [Outro exemplar](fontes/leis/portal/lei-2517-2009.pdf) |
+| 2585/2009 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=1441) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/173d8482817b782b1922c535d5102376.pdf) | [Outro exemplar](fontes/leis/portal/lei-2585-2009.pdf) |
+| 27/1971 | Sem correspondência no índice por número e ano | — |
+| 2756/2011 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=1027) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/51e9862b7c51b05c84831a9196dbc4b0.pdf) | [Outro exemplar](fontes/leis/portal/lei-2756-2011.pdf) |
+| 2759/2011 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=1030) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/2c9ba8229fa85f38340645760290ccb3.pdf) | [Outro exemplar](fontes/leis/portal/lei-2759-2011.pdf) |
+| 2792/2011 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=1057) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/2ffcfecefecdc61223f9936c67fe509b.pdf) | [Outro exemplar](fontes/leis/portal/lei-2792-2011.pdf) |
+| 2793/2011 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=1058) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/ff28efaee98d72369b7e627b26ffc653.pdf) | [Outro exemplar](fontes/leis/portal/lei-2793-2011.pdf) |
+| 2804/2011 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=1069) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/c5a59ef859b5da3b2436631b44629a02.pdf) | [Outro exemplar](fontes/leis/portal/lei-2804-2011.pdf) |
+| 2822/2011 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=1087) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/f29bd6e79889ca4eeab8a898bcfcbd2c.pdf) | [Outro exemplar](fontes/leis/portal/lei-2822-2011.pdf) |
+| 2823/2011 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=1088) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/63b3d91054adccff7c8ea685fde37cad.pdf) | [Outro exemplar](fontes/leis/portal/lei-2823-2011.pdf) |
+| 29/1971 | Sem correspondência no índice por número e ano | — |
+| 2980/2013 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=877) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/a6e41f58368bf175c4b156ee9ac411df.pdf) | [Outro exemplar](fontes/leis/portal/lei-2980-2013.pdf) |
+| 299/1977 | Sem correspondência no índice por número e ano | — |
+| 301/1977 | Sem correspondência no índice por número e ano | — |
+| 3045/2014 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=776) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/75c602eb12ce5219278d99ccc07a2d5b.pdf) | [Outro exemplar](fontes/leis/portal/lei-3045-2014.pdf) |
+| 3066/2014 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=797) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/9ec9079ea0d5122e64a32af79fe77792.pdf) | [Outro exemplar](fontes/leis/portal/lei-3066-2014.pdf) |
+| 3091/2014 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=821) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/0056a6a4f7670024939c01c08a5070ec.pdf) | [Outro exemplar](fontes/leis/portal/lei-3091-2014.pdf) |
+| 3119/2015 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=675) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/e1bb24f4ee6a3fe0c3a6fdb0d1a1dfdd.pdf) | [Outro exemplar](fontes/leis/portal/lei-3119-2015.pdf) |
+| 3532/2020 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=161) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/f8252b23659a6645ee337718477ddc73.pdf) | [Outro exemplar](fontes/leis/portal/lei-3532-2020.pdf) |
+| 36/1960 | Sem correspondência no índice por número e ano | — |
+| 3625/2021 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=95) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/7c39b8555edafdac34c0ef47ff91844b.pdf) | [Outro exemplar](fontes/leis/portal/lei-3625-2021.pdf) |
+| 3642/2021 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=111) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/59f45398dd457ae3514417ea33ed2ed7.pdf) | [Outro exemplar](fontes/leis/portal/lei-3642-2021.pdf) |
+| 38/1965 | Sem correspondência no índice por número e ano | — |
+| 3851/2023 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=1202) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/cc0aadf05baca07ac47ad958738d3a0f.pdf) | Arquivo idêntico |
+| 405/1980 | Sem correspondência no índice por número e ano | — |
+| 4386/2026 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=3237) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/5b1e25fa2da35133b322ccb343496e43.pdf) | Arquivo idêntico |
+| 471/1982 | Sem correspondência no índice por número e ano | — |
+| 481/1982 | Sem correspondência no índice por número e ano | — |
+| 500/1983 | Sem correspondência no índice por número e ano | — |
+| 506/1983 | Sem correspondência no índice por número e ano | — |
+| 521/1984 | Sem correspondência no índice por número e ano | — |
+| 545/1984 | Sem correspondência no índice por número e ano | — |
+| 561/1984 | Sem correspondência no índice por número e ano | — |
+| 64/1961 | Sem correspondência no índice por número e ano | — |
+| 790/1988 | Sem correspondência no índice por número e ano | — |
+| 805/1988 | Sem correspondência no índice por número e ano | — |
+| 84/1966 | Sem correspondência no índice por número e ano | — |
+| 86/1972 | Sem correspondência no índice por número e ano | — |
+| 95/1973 | Sem correspondência no índice por número e ano | — |
+
+## Ampliação a partir das ementas do índice municipal
+
+Foram examinados mais 74 documentos. As referências territoriais expressam o alcance do artigo. A indicação de um lugar na lei, por si só, não comprova o CEP.
+
+| Ato | Fonte oficial | Resultado da leitura |
+| --- | --- | --- |
+| 4385/2026 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=3235) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/814ba3cfc2cb809021495abec22a2e21.pdf) | Rua 01; Rua 10 |
+| 4301/2026 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=3142) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/b4fe27f20ead39406f0b42e9377109e7.pdf) | Praça Renato Antônio Fernandes |
+| 4295/2026 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=3134) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/d30a4bf74bcfc7ae7aa2af160a391d58.pdf) | Rua 01 |
+| 4288/2026 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=3127) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/0349d67b061975048f48af0028b8c675.pdf) | Rua 01 |
+| 4239/2025 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=3077) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/c75fff2955e3960497aefa50b9ae7e2c.pdf) | Denomina o parque infantil instalado na praça, sem alterar o nome da praça. |
+| 4126/2025 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=2947) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/f98b107cd57ac67e7b900a0af4a57172.pdf) | Rua 101-A |
+| 4114/2025 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=2911) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/03f0787b23ca6073def782c7d25d252e.pdf) | Afeta o lote 1-A da quadra 01 no Vale do Sol, sem identificar nome de via. |
+| 4113/2025 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=2910) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/2e5443046b8d8cb4f8145dd1872d0c2f.pdf) | Rua VC-16; Rua VC-18; Rua FC-05; Rua BV-1 |
+| 4077/2024 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=2873) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/946c6b08ac9d8a9a3068956c9c3ed889.pdf) | Praça Dejanira Maria de Jesus |
+| 4072/2024 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=2868) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/4319aeb9a242e857a858d772e5dc1bcf.pdf) | Praça Joana Darc dos Santos Silva |
+| 4034/2024 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=2825) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/c96c7e7b68764be8b8d60e6e5feb8288.pdf) | Praça Osvaldo de Paula e Silva |
+| 4005/2024 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=2797) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/375e8b9112be4b6f3599c9d31c788fed.pdf) | Rua Fábio Tavares |
+| 3994/2024 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=2783) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/142ae4ad12cba45727cf298e6f0385ee.pdf) | Destina a rotatória do lote 22-A da quadra A-1 do Setor Genoveva Alves a praça pública sem nome próprio. |
+| 3975/2024 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=2764) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/040dee24827035d5c0ff863ccc741306.pdf) | Praça Mario Estevão Prudente |
+| 3946/2023 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=2727) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/830fcb76b7acad4694fef5e86e46a3af.pdf) | Praça de Heloísa Ferreira Mendes Silva |
+| 3939/2023 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=2305) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/30cab1081748b3e0bd0e72850e030877.pdf) | Rua Sargento Neir Garcia dos Santos |
+| 3933/2023 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=2038) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/9a46a614cae48cc301d2aaf170583bc1.pdf) | Praça Sargento Baltazar José de Menezes; Praça Rotary Club Cidade dos Pomares |
+| 3805/2022 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=374) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/3e6f9464f8d43e57ff619e9d86c03d8f.pdf) | Praça Clovis Cruvinel da Silva — Voluntários da Vila Bela |
+| 3696/2021 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=743) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/3ce0a406d0807392490c1d205aa96183.pdf) | Rua 25 |
+| 3598/2021 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=68) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/466b5cefaee48efd90e8726797d6705d.pdf) | Rua CR3 |
+| 3586/2020 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=213) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/8c45d82999372c0f4198dabffd5a0bf8.pdf) | Anel Viário Jadir Machado da Silva |
+| 3563/2020 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=190) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/f5cc4395c6b01ada5c494f7eed3dc95d.pdf) | Pista de Caminhada Luiz Nunes de Melo |
+| 3554/2020 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=182) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/935385eb44e487f13bd3c8ee5f8c83aa.pdf) | Parque Municipal Solar dos Buritis |
+| 3550/2020 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=178) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/e74d8ee94e8dfc32b310b23d1d1d6fbe.pdf) | Praça Sargento Marcos Pedro |
+| 3489/2019 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=306) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/922e34728495e8bb179e921afdab3296.pdf) | Pista de Caminhada Mozart Vieira |
+| 3462/2019 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=280) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/d0b29a55e87827c893230b5941709720.pdf) | Rua VC-14 |
+| 3403/2019 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=224) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/0c413cfd595811b1f55c628df73fee72.pdf) | Rua GA-15A |
+| 3391/2018 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=507) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/63c6ecdbe35b9622577278f149bbbff3.pdf) | Rua VC-06; Rua VC-04 |
+| 3340/2018 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=456) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/0aeb77432978c41b3fb5fb48e3b27fb7.pdf) | Praça Pública |
+| 3339/2018 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=455) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/7f183bcc2813093269cee49fb857bb32.pdf) | Rua 10-A |
+| 3333/2018 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=449) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/d1fc1a17461087669930c34694e78be1.pdf) | Praça Eulício Rodrigues Moreira |
+| 3316/2018 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=432) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/7b0eb7aad873ae1101529eb37f92a857.pdf) | Rua 10 |
+| 3291/2017 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=598) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/706298a9eb4718876fa084e43e4904c2.pdf) | Praça Hygor Romano |
+| 3280/2017 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=587) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/89f7f6e27bba6907372b5c5ff16c9c64.pdf) | Ponte Ovídio José dos Santos |
+| 3268/2017 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=569) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/db4e9811f7234b3046884d3504779382.pdf) | Denomina a quadra coberta de uma escola. |
+| 3267/2017 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=568) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/c8d7e0c6eee0fa13781b8429455040ec.pdf) | Quadra Poliesportiva Rosália Ribeiro da Silva |
+| 3266/2017 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=567) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/6d9b83a75f6eb3d10233a655084b71d4.pdf) | Praça Benedito Ferreira dos Santos |
+| 2991/2013 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=888) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/30ae475c921626bff23cf609b9253d70.pdf) | Pista de Caminhada Pedro Carlota de Azevedo |
+| 2920/2012 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=975) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/a64a15dfbe7861f3727a994f9aa9749f.pdf) | Avenida Chiquinho Canedo |
+| 2914/2012 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=1218) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/d65a29bad42ab8a61cbf6da856e396a7.pdf) | Mensagem de veto e autógrafo sobre a Rua 213. Sanção ou promulgação posterior não comprovada. |
+| 2507/2009 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=1375) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/255f1f74af734e2277a4dfd419b9011b.pdf) | Praça Mauro Mendonça |
+| 2463/2008 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=1469) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/42cf31133e341638a50e1bdb3dab2e0a.pdf) | Praça Lucicílio Frauzino Pereira |
+| 2451/2008 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=1457) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/81bd2a871c23bb1e6364b251c8b790a1.pdf) | Estrada Waldiney Rodrigues Serafim |
+| 2328/2007 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=1535) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/2161863e84667b20f020cfe72bfaab49.pdf) | Praça Rotary Club Cidade dos Pomares |
+| 2322/2007 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=1529) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/d8600e7f5cd4e4a976d5a1db2d126f5b.pdf) | Praça dos Nordestinos |
+| 2192/2005 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=1674) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/d595975a08d67343073f0c7bdcd47a7c.pdf) | Estrada José Machado da Silva |
+| 2180/2005 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=1665) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/5f091b87ecb5ed61fbd23b4125e7337d.pdf) | Denomina uma creche. |
+| 2154/2005 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=1640) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/eed3345ce46f48d4c6c9b35ded9b4950.pdf) | Praça 08 de Março |
+| 2106/2004 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=1752) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/4f0763f30702f6998e2eed8587aa0107.pdf) | Ponte João Gonçalves Leite |
+| 2041/2003 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=1838) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/4a16a3c0a31f48ae066db4deda76c51c.pdf) | Avenida Eurípedes Batista de Oliveira |
+| 2025/2003 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=1822) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/48322bc688522ee485d93de80d4b4f56.pdf) | Pedro Elias Neto |
+| 1842/2001 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=1979) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/d5a83ea19097d3ba90a6e6d14560d39b.pdf) | Rua Anaildes Maria do Carmo Oliveira |
+| 1824/2001 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=1961) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/7f9d0468f4a5c8d37e0e7595ed166d56.pdf) | Rua Isolina Norato de Jesus |
+| 1823/2001 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=1960) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/8e6350d2419fecb69b0eadee46e624d8.pdf) | Rua João Pinto de Oliveira |
+| 1793/2001 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=1930) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/1474d7be711df8c26a0103ed27484102.pdf) | Praça de Esportes Professor Paulo Antônio de Lima |
+| 1759/2000 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=2072) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/2c359cdf8eeba2adfe03d654b0b4f051.pdf) | Praça Vereador Cecílio Faria Arantes |
+| 1735/2000 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=2036) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/03b04a5f84f1eec58fe7dcab9cbc1cd5.pdf) | Praça Belino Gonçalves Damaceno |
+| 1731/2000 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=2030) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/74653aded9991a3124ecc0052f5ccf3c.pdf) | Praça Delfino Marcelino de Paula |
+| 1712/1999 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=2158) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/0b14e45385a798ea03c45339b9462cfd.pdf) | Praça Manoel Agostinho Vieira |
+| 1707/1999 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=2153) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/3deb8a847956b596275feb68c1c5ab27.pdf) | Praça José Vieira da Silva |
+| 1644/1998 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=2255) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/8d582a005f579bbf9eef2833d92e6912.pdf) | Praça do Produtor Rural |
+| 1638/1998 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=2249) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/41e158d8851b66ff34698cfd27199efd.pdf) | Praça Léo Clube de Morrinhos |
+| 1464/1996 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=2424) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/110da8a91bd1e2026e3f0b53bb3daa91.pdf) | Praça do Maçom |
+| 1425/1996 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=2385) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/8794183cdbd4189fc2bef0216fb2a00d.pdf) | Denomina o prédio do antigo fórum. |
+| 1402/1996 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=2361) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/3fbdbad0c66d605f9b7757e1fd9a26f3.pdf) | Praça Jair Luiz Ferreira |
+| 1356/1995 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=2476) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/6474c7aa401e63c708ee25d7670d66be.pdf) | Praça de Esportes José Divino da Silva |
+| 1331/1995 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=2451) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/46f22e1733fe84b519dba23e567a20fc.pdf) | Praça Dr. Limírio Ribeiro Quinta Filho |
+| 1301/1994 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=2717) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/6ea462c9236826f2f126c47fd89a2fb7.pdf) | Praça Abel Hanum |
+| 1278/1994 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=2698) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/e4082a1fb4e34feca26c45b57bdd2111.pdf) | Denomina um ginásio. |
+| 3341/2018 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=457) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/390d16475ca075d99e7c9682c6205860.pdf) | Desafeta a área 01 da Vila Santos Dummont. Não atribui denominação. |
+| 2959/2013 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=856) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/8ee4299646c2f8859db232711247f6c2.pdf) | Autoriza a desafetação de parte da Rua 10 para expansão do Cemitério São Miguel. |
+| 2244/2006 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=1575) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/ab7d8db7f5ff2e761b86d121c1e4827e.pdf) | Autoriza a desafetação parcial da Praça Monte Castelo para o Mercado Municipal. |
+| 2155/2005 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=1641) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/cb259636b2f255bd4a3df2b3c283aa99.pdf) | Altera o regime de uso da rua de lazer junto à Praça Monte Castelo. |
+| 1117/1992 | [Ficha](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=2546) · [PDF](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/6381589c37748c694f5ffe04b26c2450.pdf) | Institui rua de lazer junto à Praça Monte Castelo em dias e horários determinados. |

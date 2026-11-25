@@ -83,10 +83,11 @@ def dados_fonte(fonte, tipo):
         arquivo = (RAIZ / caminho).resolve()
         if not arquivo.is_relative_to(RAIZ):
             raise ValueError(f"A fonte {fonte['id']} deve estar dentro da pasta do acervo.")
-        if arquivo.suffix.lower() != '.pdf':
-            raise ValueError(f"A fonte {fonte['id']} deve apontar para um PDF.")
+        extensao = '.csv' if tipo == 'lista_postal' and fonte.get('formato') == 'consulta_csv' else '.pdf'
+        if arquivo.suffix.lower() != extensao:
+            raise ValueError(f"A fonte {fonte['id']} deve apontar para um arquivo {extensao}.")
         conteudo = arquivo.read_bytes()
-        if not conteudo.startswith(b'%PDF-'):
+        if extensao == '.pdf' and not conteudo.startswith(b'%PDF-'):
             raise ValueError(f"O arquivo da fonte {fonte['id']} não tem cabeçalho PDF.")
     elif tipo != 'comunicado':
         raise ValueError(f"Campo arquivo obrigatório para a fonte {fonte['id']}.")
@@ -160,6 +161,17 @@ def ler_lista(fonte, conteudo):
 
 def preparar_lista(db, fonte):
     campos, conteudo = dados_fonte(fonte, 'lista_postal')
+    if fonte.get('formato') == 'consulta_csv':
+        linhas = list(csv.DictReader(conteudo.decode('utf-8-sig').splitlines(), delimiter=';'))
+        registros = []
+        for numero in fonte['linhas_selecionadas']:
+            if not 1 <= numero <= len(linhas):
+                raise ValueError(f"Linha {numero} fora dos limites de {fonte['id']}.")
+            linha = linhas[numero - 1]
+            if linha['Localidade'] != 'Morrinhos/GO':
+                raise ValueError(f'Localidade inesperada na linha {numero} da consulta.')
+            registros.append((1, numero, linha['Logradouro'], linha['Bairro'], linha['CEP']))
+        return campos, registros
     if fonte_ja_registrada(db, fonte['id'], campos):
         return campos, None
     return campos, ler_lista(fonte, conteudo)
@@ -167,7 +179,7 @@ def preparar_lista(db, fonte):
 
 def importar_lista(db, fonte, preparada=None):
     campos, registros = preparada if preparada is not None else preparar_lista(db, fonte)
-    if not registrar_fonte(db, fonte['id'], campos):
+    if not registrar_fonte(db, fonte['id'], campos) and fonte.get('formato') != 'consulta_csv':
         total = db.execute('SELECT count(*) FROM observacao_postal WHERE fonte_id = ?', (fonte['id'],)).fetchone()[0]
         if total != fonte['linhas']:
             raise ValueError(f"Quantidade já importada difere do catálogo para {fonte['id']}.")
@@ -179,6 +191,14 @@ def importar_lista(db, fonte, preparada=None):
         nome_chave = chave(nome)
         bairro_chave = chave(bairro) if bairro else ''
         trecho = garantir_trecho(db, 'registro_postal', f'{bairro_chave}/{nome_chave}/{cep}', bairro)
+        if fonte.get('formato') == 'consulta_csv':
+            existente = db.execute('''SELECT trecho_id, nome_original, bairro_original, cep
+                FROM observacao_postal WHERE fonte_id = ? AND pagina = ? AND linha = ?''',
+                (fonte['id'], pagina, linha)).fetchone()
+            if existente is not None:
+                if tuple(existente) != (trecho, nome, bairro, cep):
+                    raise ValueError(f"Observação divergente na linha {linha} de {fonte['id']}.")
+                continue
         db.execute('''
             INSERT INTO observacao_postal (trecho_id, fonte_id, pagina, linha, nome_original,
                 nome_chave, bairro_original, cep_original, cep)
@@ -279,9 +299,10 @@ def conciliar_listas(db, registros):
         ids = []
         for papel in ('anterior', 'principal'):
             fonte, nome, bairro = registro[papel]
+            cep = registro.get('cep_anterior', registro['cep']) if papel == 'anterior' else registro['cep']
             linha, = db.execute('''SELECT DISTINCT trecho_id FROM observacao_postal
                 WHERE fonte_id = ? AND nome_original = ? AND bairro_original = ? AND cep = ?''',
-                (fonte, nome, bairro, registro['cep'])).fetchall()
+                (fonte, nome, bairro, cep)).fetchall()
             ids.append(linha[0])
         anterior, principal = ids
         conflito = db.execute('''SELECT 1 FROM equivalencia_trecho
@@ -399,12 +420,8 @@ def localizar(db, nome, bairro, cep, *, variantes=False, pendencia_cep=None):
     )'''
     if versao >= 4:
         nomes = 'nomes_acervo_v2'
-    ceps = 'ceps_acervo_v1' if versao >= 3 else '(SELECT trecho_canonico_id AS trecho_id, cep FROM observacao_postal_v1)'
-    if not nome and not cep:
+    if not nome:
         candidatos, parametros = None, []
-    elif not nome:
-        candidatos = f'SELECT DISTINCT trecho_id, 4 AS peso FROM {ceps} WHERE cep = ?'
-        parametros = [cep]
     elif variantes:
         db.create_function('pontuar', 1, pontuador(nome), deterministic=True)
         candidatos = f'''
@@ -449,8 +466,8 @@ def localizar(db, nome, bairro, cep, *, variantes=False, pendencia_cep=None):
             ) ultimo ON ultimo.trecho_canonico_id = c.trecho_id AND ultimo.ordem = 1'''
             filtros.append(f'''(ultimo.situacao_cep = 'desconhecido' OR
                                ({sem_cep_atual} AND (ultimo.cep_novo IS NULL OR ultimo.cep_novo = '75650-000')))''')
-    if nome and cep:
-        filtros.append(f'c.trecho_id IN (SELECT trecho_id FROM {ceps} WHERE cep = ?)')
+    if cep:
+        filtros.append('c.cep_publicado = ?')
         parametros.append(cep)
     if bairros:
         marcadores = ', '.join('?' for _ in bairros)
@@ -467,7 +484,7 @@ def localizar(db, nome, bairro, cep, *, variantes=False, pendencia_cep=None):
     peso = 'candidatos.peso' if candidatos else '4'
     juncao = f'JOIN ({candidatos}) candidatos ON candidatos.trecho_id = c.trecho_id' if candidatos else ''
     return db.execute(f'''
-        SELECT c.*, {peso} AS peso FROM consulta_v1 c
+        SELECT c.*, {peso} AS peso FROM consulta_atual c
         {juncao}
         {ultimo_cadastro}
         {restricoes}
@@ -476,9 +493,16 @@ def localizar(db, nome, bairro, cep, *, variantes=False, pendencia_cep=None):
     ''', parametros).fetchall()
 
 
+def preparar_consulta_atual(db):
+    for comando in (RAIZ / 'dados/consulta-atual.sql').read_text(encoding='utf-8').split(';'):
+        if comando.strip():
+            db.execute(comando)
+
+
 def consultar(db, termo, bairro, *, limite=None, deslocamento=0, pendencia_cep=None):
     if pendencia_cep and pendencia_cep not in PENDENCIAS_CEP:
         raise ValueError('Filtro de pendência de CEP inválido.')
+    preparar_consulta_atual(db)
     entrada = interpretar(termo, bairro)
     if entrada.conflito:
         registros = []
@@ -513,6 +537,14 @@ def consultar(db, termo, bairro, *, limite=None, deslocamento=0, pendencia_cep=N
         resultado.pop('peso')
         resultado['divergencia_postal'] = bool(resultado['divergencia_postal'])
         resultado['historico_nomes'] = atos(db, linha['trecho_id'])
+        resultado['variantes_postais'] = [r[0] for r in db.execute('''
+            SELECT min(o.nome_original) FROM equivalencia_trecho e
+            JOIN observacao_postal o ON o.trecho_id = e.anterior_id
+            JOIN fonte f ON f.id = o.fonte_id
+            WHERE e.principal_id = ? AND f.tipo = 'lista_postal'
+              AND o.nome_chave <> ? AND f.referencia < (SELECT max(referencia) FROM fonte WHERE abrangencia = 'integral')
+            GROUP BY o.nome_chave ORDER BY o.nome_chave
+        ''', (linha['trecho_id'], chave(linha['nome_postal_publicado'] or '')))]
         resultado['nomes_historicos'] = [dict(nome) for nome in db.execute('''
             SELECT nome, ano, fonte_id, fonte, url, pagina, pagina_correspondencia, nota
             FROM nome_historico_v1 WHERE trecho_canonico_id = ? ORDER BY ano, nome, id
@@ -526,10 +558,20 @@ def consultar(db, termo, bairro, *, limite=None, deslocamento=0, pendencia_cep=N
         resultado['observacoes_postais'] = [dict(o) for o in db.execute('''
             SELECT o.id, o.fonte_id, f.referencia, o.pagina, o.linha, o.nome_original,
                 o.bairro_original, o.cep_original, o.cep, f.url, f.arquivo
-            FROM observacao_postal o JOIN fonte f ON f.id = o.fonte_id
-            WHERE o.trecho_id IN (SELECT ? UNION ALL SELECT anterior_id FROM equivalencia_trecho WHERE principal_id = ?)
+            FROM observacoes_atuais o JOIN fonte f ON f.id = o.fonte_id
+            WHERE o.trecho_canonico_id = ? AND o.cep = ?
             ORDER BY f.referencia DESC, f.prioridade DESC, f.id, o.pagina, o.linha
-        ''', (linha['trecho_id'], linha['trecho_id']))]
+        ''', (linha['trecho_id'], linha['cep_publicado']))]
+        ceps_do_trecho = {o['cep'] for o in resultado['observacoes_postais']}
+        for mudanca in resultado['mudancas_cadastradas']:
+            for campo in ('cep_anterior', 'cep_novo'):
+                if mudanca[campo] not in ceps_do_trecho:
+                    mudanca[campo] = None
+        for registro in resultado['historico_nomes'] + resultado['nomes_historicos'] + resultado['mudancas_cadastradas']:
+            for campo in ('nota', 'fonte'):
+                if registro.get(campo):
+                    registro[campo] = re.sub(r'(?<!\d)\d{5}-\d{3}(?!\d)',
+                        lambda m: m[0] if m[0] in ceps_do_trecho else 'número omitido', registro[campo])
         resultados.append(resultado)
     resposta = {'versao': 1, 'criterio': criterio, 'cep_geral_informado': entrada.cep_geral,
                 'conflito_entrada': entrada.conflito, 'resultados': resultados}
@@ -569,7 +611,8 @@ def exportar(db, destino):
               'url_fonte_postal', 'pagina_fonte_postal', 'url_fonte_municipal', 'pagina_fonte_municipal',
               'abrangencia_fonte_postal', 'divergencia_postal', 'conferencia_correios',
               'conferido_em', 'nomes_anteriores')
-    registros = db.execute('SELECT * FROM consulta_v1 ORDER BY bairro, nome_postal_publicado, trecho_id')
+    preparar_consulta_atual(db)
+    registros = db.execute('SELECT * FROM consulta_atual ORDER BY bairro, nome_postal_publicado, trecho_id')
     with publicar_arquivo(destino) as temporario, temporario.open('w', newline='', encoding='utf-8-sig') as arquivo:
         csv_writer = csv.DictWriter(arquivo, fieldnames=campos, delimiter=';', extrasaction='ignore')
         csv_writer.writeheader()

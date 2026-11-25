@@ -108,13 +108,14 @@ class TestInterface(unittest.TestCase):
         for codigo in (201, 200):
             with urlopen(requisicao, timeout=5) as resposta:
                 self.assertEqual(resposta.status, codigo)
-        for busca in ('Rua de Teste da Memória', '75659-987', 'Rua 216', '75654-216'):
+        self.assertEqual(self.ler_json('/api/consulta', q='75659-987')['total'], 0)
+        for busca in ('Rua de Teste da Memória', 'Rua 216', '75654-216'):
             encontrados = self.ler_json('/api/consulta', q=busca, bairro='Vila Santos Dumont')['resultados']
             atual, = [item for item in encontrados if item['trecho_id'] == trecho['trecho_id']]
             self.assertEqual(atual['cep_publicado'], '75654-216')
             self.assertEqual(atual['conferencia_correios'], 'pendente')
             mudanca, = atual['mudancas_cadastradas']
-            self.assertEqual(mudanca['cep_novo'], '75659-987')
+            self.assertIsNone(mudanca['cep_novo'])
         anterior = {**dados, 'nome_anterior': 'Rua de Teste Antiga', 'nome_novo': 'Rua 216',
                     'vigencia_desde': '1980-01-01', 'situacao_cep': 'mantido', 'cep_novo': ''}
         cabecalhos = {'Content-Type': 'application/json', 'Origin': self.url}

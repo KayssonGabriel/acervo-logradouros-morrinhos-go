@@ -6,8 +6,11 @@ O [relatório de revisão das leis e dos logradouros](REVISAO-LEIS.md) identific
 
 ## Mudanças documentadas
 
+A [conferência no Portal do Cidadão](CONFERENCIA-PORTAL-LEIS.md) reúne os links das fichas e dos PDFs da Prefeitura e identifica as leis sem correspondência no índice municipal em 25/11/2026.
+
 | Nome anterior | Nome atribuído | Bairro e trecho | Ato municipal | CEP na lista de 09/12/2025 |
 | --- | --- | --- | --- | --- |
+| Sem denominação oficial | Rua Luz e Caridade | Setor Central, abaixo da Praça Doutor Raul Nunes, na via onde fica o Centro Espírita Luz e Caridade | [Lei nº 4.386, de 03/11/2026, art. 1º](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=3237). Publicação e vigência em 05/11/2026 | Sem CEP identificado. A busca nacional por “Luz e Caridade” nos Correios, em 25/11/2026, retornou apenas uma praça de Uberlândia (MG). |
 | Rua 210 | Rua José Alves de Toledo Neto | Setor Aeroporto | Lei nº 1.448, de 22/08/1996, art. 1º | Ver os atos posteriores da Rua 210 |
 | Avenida Central | Padre Kleibe França Ribeiro | Setor Monte Verde, entre as ruas MV 01 e MV 02 | Lei nº 2.295, de 02/03/2007, art. 1º | 75652-396 |
 | Rua 03 | Rua Juvercina Cipriana da Silva | Setor Jardim América | Lei nº 3.119, de 22/05/2015, art. 1º | 75650-281 |
@@ -47,7 +50,7 @@ Os atos da tabela estão arquivados com o art. 1º. A coluna de CEP registra os 
 | Rua nº 19 | Pe. Samuel George | Divisa entre Vila Bela e Setor Oeste. O PDF identifica o ato como nº 2.292, embora o nome do arquivo indique 2.296 | [Lei nº 2.292/2007](fontes/leis/lei-2292-2007.pdf) | 75654-000, p. 20, e 75650-018, p. 18 |
 | Rua 13 | Rua Geraldo Santana | Setor Oeste | [Lei nº 2.517/2009](fontes/leis/lei-2517-2009.pdf) | 75650-030, p. 18 |
 | Rua 20 | Rua Pastor Belino Gonçalves Damaceno | Setor Oeste, entre as avenidas Saturnino de Azevedo e Doutor Gumercindo Otero | [Lei nº 2.756/2011](fontes/leis/lei-2756-2011.pdf) | 75650-058, p. 18 |
-| Rua 101-A | Rua Soldado PM Adonai do Carmo Oliveira | Setor Aeroporto, em frente à 10ª CIPM. A lista usa **Avenida** para a denominação postal correspondente em grafia. O vínculo depende de verificar o trecho | [Lei nº 2.759/2011](fontes/leis/lei-2759-2011.pdf) | A confirmar |
+| Rua 101-A | Rua Soldado PM Adonai do Carmo Oliveira | Setor Aeroporto, em frente à 10ª CIPM. A lista usa **Avenida** para a denominação postal correspondente em grafia. A Saneago situa a 10ª CIPM no nº 904 da 101-A nesse setor | [Lei nº 2.759/2011](fontes/leis/lei-2759-2011.pdf) | 75654-108 |
 | Rua 22 | Rua Agenor Vicente de Souza | Setor Oeste | [Lei nº 2.792/2011](fontes/leis/lei-2792-2011.pdf) | A confirmar |
 | Rua FC 03 | Rua Beraldino Vicente de Souza | Aeroporto II, Felício Chaves e Irinéia de Freitas, com registro por bairro | [Lei nº 2.793/2011](fontes/leis/lei-2793-2011.pdf) | 75652-366, p. 14, 75652-446, p. 16, e 75652-482, p. 17 |
 | Rua 18-A | Rua Vereador Luiz Santiago | Setor Aeroporto | [Lei nº 2.804/2011](fontes/leis/lei-2804-2011.pdf) | 75654-090, p. 14 |
@@ -107,3 +110,75 @@ O CNEFE de 2010 registra no Setor Aeroporto o tipo `RUA` e o nome `214 OU JOAO F
 4. Inclua o ato em [`dados/fontes.json`](dados/fontes.json) para disponibilizá-lo na busca do acervo. [Instruções de manutenção](README.md)
 
 [Legislação da Câmara Municipal](https://leis.morrinhos.go.leg.br/leis) · [Listas de CEP da Prefeitura](https://morrinhos.go.gov.br/codigo-de-enderecamento-postal-cep/) · [Busca CEP dos Correios](https://buscacepinter.correios.com.br/app/endereco/index.php)
+
+## Leis localizadas na revisão do índice municipal
+
+| Nome anterior | Nome documentado | Localização e alcance | Fonte |
+| --- | --- | --- | --- |
+| — | Praça Abel Hanum | Vila Nunes. Confluência das ruas 1 e 15 | [Lei nº 1.301, de 24/10/1994, art. 1º](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=2717) |
+| — | Praça Dr. Limírio Ribeiro Quinta Filho | Setor Aeroporto. Confluência da Rua 214 com as avenidas Jahyme Vilela, 101-A e 101-B | [Lei nº 1.331, de 16/03/1995, art. 1º](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=2451) |
+| — | Praça de Esportes José Divino da Silva | Setor Noroeste. Confronta com as ruas 02 e Cel. João Lopes Zedes e com a Avenida Perimetral | [Lei nº 1.356, de 24/06/1995, art. 1º](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=2476) |
+| Praça A | Praça Jair Luiz Ferreira | Setor Oeste. Confluência das avenidas Dr. Gumercindo Otero e Desembargador Saturnino Azeredo | [Lei nº 1.402, de 13/02/1996, art. 1º](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=2361) |
+| — | Praça do Maçom | Bairro não especificado. Avenida Cel. Fernando Barbosa, na confluência com as avenidas Jenoveva Rezende Carneiro e E e as ruas 05 e 213 | [Lei nº 1.464, de 21/11/1996, art. 1º](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=2424) |
+| — | Praça Léo Clube de Morrinhos | Bairro não especificado. Rotatória do trevo da Avenida Cel. Fernando Barbosa, no acesso às vilas Monte Verde e Santos Dumont | [Lei nº 1.638, de 20/11/1998, art. 1º](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=2249) |
+| — | Praça do Produtor Rural | Bairro não especificado. Em frente ao Parque de Exposição Sylvio de Mello, junto à GO-213 | [Lei nº 1.644, de 11/12/1998, art. 1º](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=2255) |
+| — | Praça José Vieira da Silva | Setor São Francisco de Assis. Confluência do Ramal B com a Viela da Porto Alegre | [Lei nº 1.707, de 21/10/1999, art. 1º](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=2153) |
+| — | Praça Manoel Agostinho Vieira | Setor Noroeste. Confluência das ruas Coronel João Lopes Zedes e X | [Lei nº 1.712, de 18/11/1999, art. 1º](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=2158) |
+| — | Praça Delfino Marcelino de Paula | Povoado de Marcelânia.  | [Lei nº 1.731, de 21/02/2000, art. 1º](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=2030) |
+| — | Praça Belino Gonçalves Damaceno | Setor Nossa Senhora de Carmo. Confluência da Rua 09, Perimetral e Avenida Dr. Gumercindo Otero | [Lei nº 1.735, de 16/03/2000, art. 1º](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=2036) |
+| — | Praça Vereador Cecílio Faria Arantes | Bairro não especificado. Rotatória no término da Rua Ceará, no acesso aos setores Jardim Romano e Genoveva Alves | [Lei nº 1.759, de 17/08/2000, art. 1º](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=2072) |
+| — | Praça de Esportes Professor Paulo Antônio de Lima | Conjunto Habitacional Monte Verde.  | [Lei nº 1.793, de 15/02/2001, art. 1º](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=1930) |
+| Rua 03 | Rua João Pinto de Oliveira | Setor J.K.. O ato identifica o homenageado como João Bolinha. | [Lei nº 1.823, de 20/04/2001, art. 1º](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=1960) |
+| Rua 06 | Rua Isolina Norato de Jesus | Setor J.K.. Confrontações com as ruas 03 e Alagoas | [Lei nº 1.824, de 20/04/2001, art. 1º](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=1961) |
+| Rua 04 | Rua Anaildes Maria do Carmo Oliveira | Setor J.K..  | [Lei nº 1.842, de 22/06/2001, art. 1º](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=1979) |
+| — | Pedro Elias Neto | Bairro não especificado. Do Morro do Ovo (Serrinha) até o encontro com a GO-147 | [Lei nº 2.025, de 21/08/2003, art. 1º](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=1822) |
+| — | Avenida Eurípedes Batista de Oliveira | Bairro não especificado. Da confrontação com a Avenida Ângelo Aurichio até a sede administrativa do Parque Ecológico Jatobá Centenário | [Lei nº 2.041, de 20/11/2003, art. 1º](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=1838) |
+| — | Ponte João Gonçalves Leite | Bairro não especificado. Entre os setores Juscelino Kubitscheck e Morro da Saudade | [Lei nº 2.106, de 19/08/2004, art. 1º](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=1752) |
+| Praça III | Praça 08 de Março | Setor Oeste.  | [Lei nº 2.154, de 26/04/2005, art. 1º](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=1640) |
+| — | Estrada José Machado da Silva | Zona rural. Do viaduto sobre a BR-153, pela Vertente Rica, até a divisa com Aloândia | [Lei nº 2.192, de 28/09/2005, art. 1º](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=1674) |
+| — | Praça dos Nordestinos | Setor Sol Nascente. Em frente à Creche Infância Protegida | [Lei nº 2.322, de 19/04/2007, art. 1º](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=1529) |
+| — | Praça Rotary Club Cidade dos Pomares | Vila Santos Dumont. Entre as avenidas Jaime Vilela e A e as ruas 1 e 10. Lei expressamente revogada pelo art. 3º da Lei nº 3.933/2023. | [Lei nº 2.328, de 23/04/2007, art. 1º](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=1535) |
+| — | Estrada Waldiney Rodrigues Serafim | Zona rural. Estrada de acesso à Região Santa Rosa em toda a extensão | [Lei nº 2.451, de 21/08/2008, art. 1º](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=1457) |
+| — | Praça Lucicílio Frauzino Pereira | Bairro não especificado. Praça prevista no Morro da Serrinha (Morro da Catraca), na confluência dos setores Jardim Romano e Genoveva Alves | [Lei nº 2.463, de 20/09/2008, art. 1º](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=1469) |
+| — | Praça Mauro Mendonça | Genoveva Alves. Avenida Perimetral na confluência com as ruas GA 09, GA 01 e GA 08 | [Lei nº 2.507, de 14/04/2009, art. 1º](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=1375) |
+| Avenida MV-02 | Avenida Chiquinho Canedo | Residencial Monte Verde.  | [Lei nº 2.920, de 23/11/2012, art. 1º](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=975) |
+| — | Pista de Caminhada Pedro Carlota de Azevedo | Bairro não especificado. Na Avenida Genoveva Rezende Carneiro, da Praça do Maçom à Avenida Dr. Gumercindo Otero | [Lei nº 2.991, de 17/09/2013, art. 1º](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=888) |
+| — | Praça Benedito Ferreira dos Santos | Setor Morro da Saudade II. Confluência das ruas 10 e 05 | [Lei nº 3.266, de 17/08/2017, art. 1º](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=567) |
+| — | Quadra Poliesportiva Rosália Ribeiro da Silva | Setor Morro da Saudade. O artigo denomina a praça da Rua 04, esquina com a Rua 07, quadra 03, lote 1. | [Lei nº 3.267, de 17/08/2017, art. 1º](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=568) |
+| — | Ponte Ovídio José dos Santos | Região da Servânia. Estrada de acesso ao Povoado da Vertente Rica | [Lei nº 3.280, de 16/10/2017, art. 1º](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=587) |
+| — | Praça Hygor Romano | Setor Jardim Santa Terezinha. Rua 02 | [Lei nº 3.291, de 30/11/2017, art. 1º](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=598) |
+| — | Rua 10 | Vila Santos Dummont. Área 01-A, com 1.164,45 m², situada na Rua 10. A Lei nº 3.339/2018 identifica a área como Rua 10-A. | [Lei nº 3.316, de 28/03/2018, art. 1º](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=432) |
+| — | Praça Eulício Rodrigues Moreira | Setores Monte Verde e Felício Chaves. Entre as ruas MV 03 e FC 05 | [Lei nº 3.333, de 13/06/2018, art. 1º](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=449) |
+| — | Rua 10-A | Vila Santos Dummont. Área 01-A, com 1.164,45 m² | [Lei nº 3.339, de 24/08/2018, art. 1º](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=455) |
+| — | Praça Pública | Vila Santos Dummont. Área 01-B, com 2.351,75 m² | [Lei nº 3.340, de 24/08/2018, art. 1º](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=456) |
+| — | Rua VC-06 | Setor Vera Cruz. Lote B da quadra A-1 | [Lei nº 3.391, de 07/12/2018, art. 1º](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=507) |
+| — | Rua VC-04 | Setor Vera Cruz. Lote C da quadra A-1 | [Lei nº 3.391, de 07/12/2018, art. 1º](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=507) |
+| — | Rua GA-15A | Jardim Vera Cruz. Continuidade da via na área de 375 m² do lote A da quadra D, designada no caput como Rua GA-16 | [Lei nº 3.403, de 22/02/2019, art. 1º](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=224) |
+| — | Rua VC-14 | Bairro não especificado. Lote C da área de reserva técnica, com 161,67 m², destinado à continuação da via | [Lei nº 3.462, de 06/09/2019, art. 1º](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=280) |
+| — | Pista de Caminhada Mozart Vieira | Bairro não especificado. À margem da Avenida Dante Costa e da Alameda Goiás, entre a Rua Dr. Pedro Nunes e a Avenida Antônio Tito | [Lei nº 3.489, de 17/10/2019, art. 1º](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=306) |
+| — | Praça Sargento Marcos Pedro | Setor Vera Cruz. Entre as ruas VC 08, VC 11 e VC 12 | [Lei nº 3.550, de 19/06/2020, art. 1º](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=178) |
+| — | Parque Municipal Solar dos Buritis | Setor Cristina Park. Alameda Jonas Inocêncio de Oliveira com a Rua Felicidade Estrela de Godoy | [Lei nº 3.554, de 16/07/2020, art. 1º](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=182) |
+| — | Pista de Caminhada Luiz Nunes de Melo | Setores Cristo e Cristina Park. Avenida Firmo Antônio de Freitas e Alameda Jonas Inocêncio de Oliveira | [Lei nº 3.563, de 18/09/2020, art. 1º](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=190) |
+| — | Anel Viário Jadir Machado da Silva | Bairro não especificado. Entre a Avenida Perimetral e a Estrada do Café | [Lei nº 3.586, de 21/12/2020, art. 1º](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=213) |
+| — | Rua CR3 | Setor Cristo Redentor. Entre a Avenida F e a Rua 29, na área de 1.964,03 m² | [Lei nº 3.598, de 26/02/2021, art. 1º](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=68) |
+| — | Rua 25 | Jardim Santa Fé. Lote 1 da quadra 56, com 263,38 m² | [Lei nº 3.696, de 25/11/2021, art. 1º](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=743) |
+| — | Praça Clovis Cruvinel da Silva — Voluntários da Vila Bela | Setor Vila Bela. Entre as ruas Melanias Vieira de Mello e 19 | [Lei nº 3.805, de 19/09/2022, art. 1º](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=374) |
+| — | Praça Sargento Baltazar José de Menezes | Vila Santos Dumont — 1ª Etapa. Entre a Avenida Jaime Vilela e as ruas 10, 01 e 12 | [Lei nº 3.933, de 05/09/2023, art. 1º](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=2038) |
+| — | Praça Rotary Club Cidade dos Pomares | Santos Dumont — 2ª Etapa. Quadra V, entre as avenidas Jaime Vilela, A e H. O art. 3º revoga a Lei nº 2.328/2007. | [Lei nº 3.933, de 05/09/2023, art. 2º](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=2038) |
+| Rua 4 | Rua Sargento Neir Garcia dos Santos | Setor Santa Terezinha.  | [Lei nº 3.939, de 13/09/2023, art. 1º](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=2305) |
+| — | Praça de Heloísa Ferreira Mendes Silva | Setor Morro da Saudade I. Rua 02, esquina com a Rua Joaquim Quitério | [Lei nº 3.946, de 08/11/2023, art. 1º](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=2727) |
+| — | Praça Mario Estevão Prudente | Setor Jardim Goiás. Entre as ruas JG II e JG VI e a Alameda Goiás | [Lei nº 3.975, de 29/02/2024, art. 1º](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=2764) |
+| Rua 14 | Rua Fábio Tavares | Setor Jardim América.  | [Lei nº 4.005, de 14/05/2024, art. 1º](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=2797) |
+| — | Praça Osvaldo de Paula e Silva | Povoado de Marcelânia. Ao lado da GO-213, em frente à mercearia Nossa Senhora da Guia | [Lei nº 4.034, de 26/06/2024, art. 1º](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=2825) |
+| — | Praça Joana Darc dos Santos Silva | Setor Genoveva Alves. Rua GA 13, na divisa com as ruas GA 15 e GA 16 | [Lei nº 4.072, de 05/11/2024, art. 1º](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=2868) |
+| — | Praça Dejanira Maria de Jesus | Vila Nova III. Encontro das ruas 13, 19 e 02 | [Lei nº 4.077, de 21/11/2024, art. 1º](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=2873) |
+| — | Rua VC-16 | Jardim Vera Cruz. Prolongamento no lote B da quadra B, Avenida Álvaro Teixeira de Camargo | [Lei nº 4.113, de 12/03/2025, art. 1º](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=2910) |
+| — | Rua VC-18 | Jardim Vera Cruz. Prolongamento no lote A da quadra B, Avenida Álvaro Teixeira de Camargo | [Lei nº 4.113, de 12/03/2025, art. 1º](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=2910) |
+| — | Rua FC-05 | Irinéa Freitas Chaves. Área comum ao prolongamento da FC-05 e da Rua BV-1 no lote 01-B da quadra 18, Rua Josina Barbosa de Freitas | [Lei nº 4.113, de 12/03/2025, art. 1º](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=2910) |
+| — | Rua BV-1 | Irinéa Freitas Chaves. Área comum ao prolongamento da FC-05 e da Rua BV-1 no lote 01-B da quadra 18, Rua Josina Barbosa de Freitas | [Lei nº 4.113, de 12/03/2025, art. 1º](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=2910) |
+| Rua Soldado PM Adonai Carmo de Oliveira | Rua 101-A | Setor Aeroporto. O art. 3º revoga a Lei nº 2.759/2011. | [Lei nº 4.126, de 03/04/2025, art. 1º](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=2947) |
+| — | Rua 01 | Residencial Morro da Saudade. Prolongamento no lote 03 da quadra 21. Redação posterior pela Lei nº 4.385/2026. | [Lei nº 4.288, de 20/02/2026, art. 1º](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=3127) |
+| — | Rua 01 | Residencial Morro da Saudade. O ato inclui o lote 05 da quadra 21. A Lei nº 4.385/2026 especificou o prolongamento da Rua 10 nesse lote. | [Lei nº 4.295, de 03/03/2026, art. 1º](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=3134) |
+| — | Praça Renato Antônio Fernandes | Setor Arca de Noé. Rua Maria Rosa com a Avenida Francisco Rosa Campos | [Lei nº 4.301, de 18/03/2026, art. 1º](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=3142) |
+| — | Rua 01 | Setor Morro da Saudade II. Prolongamento no lote 03 da quadra 21, com 1.647,80 m². Nova redação da Lei nº 4.288/2026. | [Lei nº 4.385, de 03/11/2026, art. 1º](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=3235) |
+| — | Rua 10 | Setor Morro da Saudade II. Prolongamento no lote 05 da quadra 21, com 4.687,68 m². O art. 2º revoga os arts. 1º-B e 1º-C da Lei nº 4.288/2026. | [Lei nº 4.385, de 03/11/2026, art. 1º](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=3235) |

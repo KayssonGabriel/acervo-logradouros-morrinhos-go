@@ -16,14 +16,27 @@ As 60 novas ocorrências correspondem a 56 trechos distintos. Foram criados 21 i
 
 ## Pendências prioritárias
 
+- **Avenida Dante Costa.** A denominação e a data de afixação estão documentadas pela Lei nº 2.067/2004 e por sua certidão. Os Correios identificam dois trechos postais da avenida, no Centro (75650-140) e no Jardim Venezuela (75650-161). Para vincular a antiga Avenida Beira Lago a cada trecho, falta uma planta ou ficha cadastral que situe os limites da avenida descrita em 2004 em relação às quadras desses bairros. O art. 1º menciona o acesso ao Jardim Venezuela. [Lei nº 2.067/2004, p. 1](fontes/leis/lei-2067-2004.pdf#page=1) · [Consulta consolidada dos Correios](fontes/ceps/correios-2026-11-25-consolidado.csv)
 - **Avenida J, Setor Oeste.** A Lei nº 27/1971 atribui o nome Alfredo Lopes de Morais. A nº 121/1973 delimita a Avenida Cel. Fernando Barbosa entre a residência do DERGO e Vila Bela. A nº 561/1984 revoga a nº 121 e denomina o trecho Avenida Genoveva Rezende Carneiro. A planta original é necessária para identificar a extensão comum à lei de 1971. A nº 545/1984 trata da antiga Avenida 250. A Lei nº 2.991/2013 localiza a pista Pedro Carlota de Azevedo na Avenida Genoveva, da Praça do Maçom à Avenida Dr. Gumercindo Otero. [Lei nº 2.991/2013](https://morrinhos.go.gov.br/wp-content/uploads/2023/11/2.991-Nome-de-pista-de-caminhada.-Pedro-Carlota-de-Azevedo.pdf)
 - **Avenida A e Rua São Miguel.** As leis nº 84/1966 e nº 29/1971 identificam a Avenida A do loteamento do Setor Oeste. A nº 95/1973 toma por objeto a Rua São Miguel e cita a revogação da Lei nº 19/1966. Para esclarecer a relação com a homenagem a Evaristo Frauzino, faltam a íntegra da nº 19 e a planta. Os anos anteriores a 1991 estão fora da série digital localizada na Câmara. [Índice de anos](https://leis.morrinhos.go.leg.br/api/leis/anos)
-- **Rua 22.** A Lei nº 2.792/2011 usa «Agenor Vicente de Souza» no Setor Oeste. A nº 3.625/2021 usa «Evangelista Valério Cardoso» entre a Rua Pernambuco e a Rua 101 B. A lista municipal anterior traz «Agenor Vicente da Silva». Para estabelecer a extensão da sobreposição, falta confrontar a planta com os extremos de 2021.
+
+  A Lei nº 95/1973 já comprova a mudança de Rua São Miguel para Rua Major Evaristo Frauzino. Para localizar a via em uma planta de 1973, a Lei nº 109, de 21 de maio do mesmo ano, fornece uma referência: a praça delimitada pelas ruas Major Evaristo Frauzino e Paraná e pela Avenida Cel. Pedro Nunes. Essa confrontação ajuda a identificar um ponto do percurso. A extensão do nome antigo nos três bairros postais atuais ainda depende de documentação cadastral. [Lei nº 95/1973](fontes/leis/lei-95-1973.pdf) · [Lei nº 109/1973](fontes/leis/lei-109-1973.pdf)
+- **Rua 22.** A Lei nº 2.792/2011 usa «Agenor Vicente de Souza» no Setor Oeste. A nº 3.625/2021 usa «Evangelista Valério Cardoso» entre a Rua Pernambuco e a Rua 101 B. A lista municipal anterior traz «Agenor Vicente da Silva». Os dois extremos de 2021 estão localizados. A sobreposição com o ato de 2011 depende da delimitação histórica do bairro.
 
   O art. 1º da Lei nº 2.060, de 10/03/2004, situa o imóvel de 10.000 m² da CRISA na esquina da Rua 1-A com a Rua 22, no Setor Oeste. A Lei nº 2.065/2004 acrescentou autorização para serviços no imóvel. A esquina fornece um ponto de referência para localizar a antiga Rua 22 em planta. A extensão comum aos atos de 2011 e 2021 continua pendente. [Lei nº 2.060/2004](https://leis.morrinhos.go.leg.br/leis/1186/lei-2060-2004) · [Lei nº 2.065/2004](https://leis.morrinhos.go.leg.br/leis/1191/lei-2065-2004)
 
+  Os mapas urbanos do IBGE para o Censo 2010 permitem seguir a via antes da denominação de 2011. A folha 521380605000010 mostra o encontro da Rua 22 com a Rua Pernambuco. A folha 521380605000029 mostra a continuidade da Rua 22 até a Avenida 101 B, passando pela Rua 1 A e pela Avenida 101 A. A Rua 22 A aparece separadamente na mesma folha. O destaque amarelo delimita o setor censitário. Para afirmar a extensão legal exata da denominação de 2011, ainda falta o limite cadastral do bairro Setor Oeste naquela data. [IBGE, mapas de Morrinhos do Censo 2010 (ZIP)](https://geoftp.ibge.gov.br/cartas_e_mapas/mapas_para_fins_de_levantamentos_estatisticos/censo_demografico_2010/mapas_e_descritivos_de_setores_censitarios/GO/5213806.zip)
+
+  No CNEFE de 2010, o setor censitário 0010 contém 13 registros da Rua 22, 26 da Rua Pernambuco, 11 da Rua 20 A e 20 da Rua 21 A com a localidade Setor Oeste. No setor 0029, a própria Rua 22 aparece com Setor Oeste (2), Vila Bela (3) e Setor Aeroporto (12). Nesse setor, a Avenida Genoveva Rezende Carneiro aparece nas mesmas três localidades e a Rua João Júlio de Oliveira ou 21 aparece em Setor Oeste e Vila Bela. Esses registros sustentam a presença histórica da Rua 22 em vários bairros e orientam a busca das quadras próximas à Avenida Genoveva. O cadastro estatístico não fixa a divisa municipal do bairro por lote. [IBGE, CNEFE 2010 de Morrinhos (ZIP)](https://ftp.ibge.gov.br/Cadastro_Nacional_de_Enderecos_para_Fins_Estatisticos/Censo_Demografico_2010/GO/52138060500.zip)
+
+  Nos complementos dos endereços da Rua 22 do CNEFE 2010, a localidade Setor Oeste aparece na quadra 30, lote 16, e na quadra 31, lote 29. Os dois registros do lote 29, frente e fundos, correspondem ao mesmo lote. O Diário Oficial da União de 04/11/2013, seção 1, p. 43, confirma a quadra 31, lote 29, como endereço da Faculdade de Morrinhos no Setor Oeste. [CNEFE 2010](https://ftp.ibge.gov.br/Cadastro_Nacional_de_Enderecos_para_Fins_Estatisticos/Censo_Demografico_2010/GO/52138060500.zip) · [Diário Oficial da União, p. 43](https://pesquisa.in.gov.br/imprensa/servlet/INPDFViewer?captchafield=firstAccess&data=04%2F11%2F2013&jornal=1&pagina=43)
+
+  Na mesma base de 2010, a quadra 30 do Setor Oeste tem registros na Rua 22 (lote 16), na Rua 20 A (14-A, 14-B e 14-C), na Rua 21 A (29) e na Rua João Júlio de Oliveira ou 21 (41). A quadra 31 aparece na Rua 22 (lote 29), na Rua Pernambuco (09, 10 e 11) e na Rua João Júlio de Oliveira ou 21 (20, 26-A e 26-B). [CNEFE 2010](https://ftp.ibge.gov.br/Cadastro_Nacional_de_Enderecos_para_Fins_Estatisticos/Censo_Demografico_2010/GO/52138060500.zip)
+
+  As plantas municipais de valores de 2005 e de 2013 distinguem as categorias fiscais «007 – Setor Oeste» e «014 – Vila Bela». Ambas agrupam os imóveis dessas categorias sob «Todos os Logradouros». Para localizar a divisa na Rua 22, falta a distribuição dos códigos por quadra e face no cadastro de 2011. [Lei nº 2.212/2005](https://morrinhos.go.gov.br/wp-content/uploads/2023/11/2.212-Planta-de-Valores-Mobilirios.pdf) · [Lei nº 3.011/2013](https://morrinhos.go.gov.br/wp-content/uploads/2023/11/3.011-Planta-de-Valores-Imobiliarios-do-Municipio.pdf)
+
 - **Publicação e vigência.** A data do ato segue o cabeçalho. Divergências com o fecho, a sanção, a ficha legislativa ou o carimbo estão registradas por lei abaixo. Datas disponíveis apenas no índice foram tratadas como informação da Câmara. Para fixar vigências controvertidas, é necessário consultar o diário ou o livro de publicação.
-- **Trechos e CEPs.** Os CEPs citados são observações das listas municipais. Praça Lions, Rua do Bom Retiro, Rua Paulo de Souza e os bairros percorridos pela Avenida Ângelo Auricchio têm limites que exigem mapa ou cadastro. A lei da Avenida Ângelo Auricchio descreve o itinerário e omite nome anterior. Os limites e as grafias originais de cada ocorrência constam abaixo.
+- **Trechos e CEPs.** Os CEPs citados são observações das listas municipais. Praça Lions, Rua Paulo de Souza e os bairros percorridos pela Avenida Ângelo Auricchio têm limites que exigem mapa ou cadastro. A lei da Avenida Ângelo Auricchio descreve o itinerário e omite nome anterior. Os limites e as grafias originais de cada ocorrência constam abaixo.
 
 ## Leis e logradouros em ordem cronológica
 
@@ -71,7 +84,7 @@ Alteração de denominação. Art. 1º, p. 1. [PDF do acervo](fontes/leis/lei-84
 
 | Registro | Nome anterior | Nome atribuído | Bairro ou trecho no ato | Observação postal do trecho |
 | --- | --- | --- | --- | --- |
-| Novo | Avenida A | Avenida Major Evaristo Frauzino | Setor Oeste | CEP a confirmar |
+| Novo | Avenida A | Avenida Major Evaristo Frauzino | Setor Oeste | 75650-016 |
 
 A Lei nº 29/1971 atribui outra denominação à Avenida A do loteamento do Setor Oeste. A Lei nº 95/1973 denomina a Rua São Miguel e revoga a Lei nº 19/1966. A lista postal registra Rua Major Evaristo Frauzino em outros bairros. A planta do loteamento e a Lei nº 19 permitem investigar os limites. Vigência na publicação, cuja data não consta na cópia.
 
@@ -95,9 +108,9 @@ Alteração de denominação. Art. 1º, p. 1. [PDF do acervo](fontes/leis/lei-29
 
 | Registro | Nome anterior | Nome atribuído | Bairro ou trecho no ato | Observação postal do trecho |
 | --- | --- | --- | --- | --- |
-| Novo | Avenida A | Avenida Dezembargador Saturnino Sebastião de Azeredo | Setor Oeste · Loteamento do Setor Oeste | CEP a confirmar |
+| Novo | Avenida A | Avenida Dezembargador Saturnino Sebastião de Azeredo | Setor Oeste · Loteamento do Setor Oeste | 75650-016 |
 
-O artigo usa a grafia “Dezembargador”. O fecho do gabinete é de 10/02/1971. A Lei nº 84/1966 também menciona a Avenida A desse loteamento. A lista postal traz Avenida Saturnino Azeredo, CEP 75650-016. Falta planta para confirmar a correspondência dos trechos.
+O CNEFE 2010 identifica Avenida A e Saturnino de Azeredo como nomes da mesma avenida no Setor Oeste, inclusive em ordem inversa. As leis nº 84/1966 e nº 29/1971 tratam da Avenida A desse loteamento. A grafia “Dezembargador” consta do art. 1º de 1971 e o fecho do gabinete é de 10/02/1971. O vínculo preserva os dois atos e se limita ao Setor Oeste. [CNEFE 2010 de Morrinhos](https://ftp.ibge.gov.br/Cadastro_Nacional_de_Enderecos_para_Fins_Estatisticos/Censo_Demografico_2010/GO/52138060500.zip)
 
 Documentos do inventário 2.
 
@@ -225,9 +238,9 @@ Denominação. Art. 1º, p. 1. [PDF do acervo](fontes/leis/lei-165-1974.pdf#page
 
 | Registro | Nome anterior | Nome atribuído | Bairro ou trecho no ato | Observação postal do trecho |
 | --- | --- | --- | --- | --- |
-| Novo | Não informado | Praça Juquinha Diniz | Setor Oeste · Praça da Rua 13, entre as quadras 8 e 9 | CEP a confirmar |
+| Novo | Não informado | Praça Juquinha Diniz | Setor Oeste · Praça da Rua 13, entre as quadras 8 e 9 | 75650-034 |
 
-A descrição pelas quadras identifica a praça. Nenhum CEP específico foi localizado para o nome atribuído.
+O objeto da Concorrência nº 5/2026 da Prefeitura identifica Praça Juquinha Diniz e Praça Joaquim Diniz como a mesma praça. O CNEFE 2022 registra o nome da lei no Setor Oeste e os Correios registram o nome Joaquim Diniz no mesmo bairro. [Contratação municipal no PNCP](https://pncp.gov.br/api/consulta/v1/orgaos/01789551000149/compras/2026/513)
 
 Documentos do inventário 33.
 
@@ -490,9 +503,9 @@ Alteração de denominação. Art. 1º, p. 1. [PDF do acervo](fontes/leis/lei-13
 
 | Registro | Nome anterior | Nome atribuído | Bairro ou trecho no ato | Observação postal do trecho |
 | --- | --- | --- | --- | --- |
-| Novo | Avenida C | Avenida Sebastião Dias Coelho | Setor Conjunto Habitacional Santos Dumont – II Etapa | CEP a confirmar |
+| Novo | Avenida C | Avenida Sebastião Dias Coelho | Setor Conjunto Habitacional Santos Dumont – II Etapa | 75654-332 |
 
-A lista postal traz Avenida Sebastião Dias Coelho e Avenida Dias Coelho em Vila Santos Dumont, CEP 75654-246. A correspondência entre a etapa do conjunto e o trecho postal depende da planta. A ficha da Câmara informa publicação em 17/05/1995. Data efetiva a conferir no registro de publicação.
+O CNEFE 2010 registra “C OU SEBASTIAO DIAS COELHO” em Vila Santos Dumont II, a etapa identificada pela lei. O CNEFE 2022 registra Avenida C em Vila Santos Dumont II e os Correios identificam a avenida pelo nome atribuído na mesma etapa. O CEP 75654-246, publicado em Vila Santos Dumont, permanece em ficha separada. A ficha da Câmara informa publicação em 17/05/1995. Data efetiva a conferir no registro de publicação. [Consulta por bairro, registro 35](fontes/ceps/correios-2026-11-25-vila-santos-dumont.csv)
 
 Documentos do inventário 20.
 
@@ -596,9 +609,9 @@ Denominação. Art. 1º, p. 1. [PDF do acervo](fontes/leis/lei-1503-1997.pdf#pag
 
 | Registro | Nome anterior | Nome atribuído | Bairro ou trecho no ato | Observação postal do trecho |
 | --- | --- | --- | --- | --- |
-| Novo | Não informado | Rua do Bom Retiro | Entre as ruas Dr. Pedro Nunes e Major Limírio, confrontando com o Cemitério São Miguel | CEP a confirmar |
+| Novo | Não informado | Rua do Bom Retiro | Entre as ruas Dr. Pedro Nunes e Major Limírio, confrontando com o Cemitério São Miguel | 75650-126 |
 
-Os Correios registram Rua Bom Retiro no Centro, CEP 75650-126. A folha 521380605000001 do IBGE (Censo 2022) mostra a face 006-003 junto ao cemitério, com o rótulo Rua X. Um extremo encontra a Rua Doutor Pedro Nunes. No outro, o mapa assinala Rua Vinte e Cinco junto ao encontro com a Rua Major Limírio. Falta uma ficha cadastral que associe a face ao nome postal. A ficha da Câmara informa publicação em 18/04/1997. Data efetiva a conferir no registro de publicação. [Mapa do IBGE, setor 0001](https://geoftp.ibge.gov.br/cartas_e_mapas/mapas_para_fins_de_levantamentos_estatisticos/censo_demografico_2022/mapas_e_descritivos_de_setores_censitarios/GO/5213806/52138060500/MSU/521380605000001/A3_521380605000001_MSU.pdf)
+A face 006-003 do setor 521380605000001 (IBGE, 2022) tem o nome Rua X junto ao cemitério, entre a Rua Doutor Pedro Nunes e o encontro da Rua Vinte e Cinco com a Major Limírio. A lista de janeiro de 2025 registra Rua X no Centro com o mesmo CEP da Rua Bom Retiro na lista de dezembro e nos Correios. O vínculo abrange o trecho da lei. A ficha da Câmara informa publicação em 18/04/1997. Data efetiva a conferir no registro de publicação. [Lista de janeiro, p. 16](fontes/ceps/lista-2025-01.pdf#page=16) [Mapa do IBGE, setor 0001](https://geoftp.ibge.gov.br/cartas_e_mapas/mapas_para_fins_de_levantamentos_estatisticos/censo_demografico_2022/mapas_e_descritivos_de_setores_censitarios/GO/5213806/52138060500/MSU/521380605000001/A3_521380605000001_MSU.pdf)
 
 Documentos do inventário 28.
 
@@ -658,7 +671,7 @@ Denominação. Art. 1º, p. 1. [PDF do acervo](fontes/leis/lei-1658-1999.pdf#pag
 | --- | --- | --- | --- | --- |
 | Novo | Não informado | Avenida Antônio Gonçalves Leite (Antônio Tita) | Jardim Romano e Genoveva Alves · Do Córrego Maria Lucinda até o Morro do Ovo (Serrinha), na divisa entre Jardim Romano e Genoveva Alves | Avenida Antônio Gonçalves Leite · Genoveva Alves · 75656-542 |
 
-O artigo descreve uma avenida recém-construída. O acesso a Piracanjuba aparece apenas no título do arquivo. A lista postal também usa Antônio Tito no CEP 75656-542, com vogal final divergente. A ficha da Câmara indica 19/03/1999 para assinatura e publicação. O exemplar traz sanção manuscrita em 24/03/1999. Publicação efetiva a confirmar.
+O artigo descreve uma avenida recém-construída. O acesso a Piracanjuba aparece apenas no título do arquivo. As listas municipais de novembro de 2024 e janeiro de 2025 registram Avenida Antônio Tito em Genoveva Alves. A consulta dos Correios por esse endereço retorna Avenida Antônio Gonçalves Leite, no mesmo bairro, CEP 75656-542. Tito é uma variante de grafia para busca. O art. 1º usa Antônio Tita. A ficha da Câmara indica 19/03/1999 para assinatura e publicação. O exemplar traz sanção manuscrita em 24/03/1999. Publicação efetiva a confirmar.
 
 Documentos do inventário 8, 31.
 
@@ -708,7 +721,7 @@ Alteração de denominação. Art. 1º, p. 1. [PDF do acervo](fontes/leis/lei-27
 
 Vigência documentada em 29/06/2011.
 
-Correspondência com as observações postais ainda a confirmar. A Lei nº 3.625/2021 denomina Rua Evangelista Valério Cardoso o trecho da Rua 22 entre a Rua Pernambuco e a Rua 101 B. A extensão comum aos dois atos e a correspondência da grafia postal «Agenor Vicente da Silva» dependem de planta ou cadastro municipal. Publicação e vigência documentadas pela certidão de afixação no exemplar da Câmara.
+Correspondência com as observações postais ainda a confirmar. A Lei nº 3.625/2021 denomina Rua Evangelista Valério Cardoso o trecho da Rua 22 entre a Rua Pernambuco e a Rua 101 B. O percurso de 2021 está localizado nas folhas 0010 e 0029 do Censo 2010 do IBGE. As listas de novembro de 2024 e janeiro de 2025 registram «Rua Agenor Vicente da Silva». Em dezembro de 2025, os mesmos cinco pares de bairro e CEP aparecem como «Rua Evangelista Valério Cardoso», grafia conferida nos Correios. A lei de 2011 registra «Souza». A delimitação cadastral do Setor Oeste em 2011 ainda precisa ser verificada. Publicação e vigência documentadas pela certidão de afixação no exemplar da Câmara.
 
 ### Lei nº 2.793, de 22/06/2011
 
@@ -786,7 +799,7 @@ Alteração de denominação. Art. 1º, p. 1. [PDF do acervo](fontes/leis/lei-36
 
 Vigência documentada em 21/06/2021.
 
-A lista contém linhas em ambos os bairros indicados e em outros três. Para as linhas de Vila Bela, Setor Aeroporto e Setor Aeroporto III, falta confirmar em planta o percurso entre os extremos. A Lei nº 2.792/2011 denominou a Rua 22 do Setor Oeste de Rua Agenor Vicente de Souza. A lei de 2021 não declara revogação expressa. A extensão comum depende de planta. Publicação e vigência documentadas pela certidão de afixação no exemplar da Câmara.
+A lista contém linhas em ambos os bairros indicados e em outros três. As folhas 0010 e 0029 do Censo 2010 do IBGE mostram a Rua 22 entre a Rua Pernambuco e a Avenida 101-B. Falta identificar quais quadras das linhas postais de Vila Bela, Setor Aeroporto e Setor Aeroporto III ficam nesse percurso. A Lei nº 2.792/2011 denominou a Rua 22 do Setor Oeste de Rua Agenor Vicente de Souza. A lei de 2021 não declara revogação expressa. Para delimitar a parte abrangida pelos dois atos, falta identificar o limite cadastral do Setor Oeste em 2011. Publicação e vigência documentadas pela certidão de afixação no exemplar da Câmara.
 
 Documentos do inventário 47.
 

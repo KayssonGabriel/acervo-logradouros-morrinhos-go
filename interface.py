@@ -1,4 +1,5 @@
 import argparse
+import csv
 from contextlib import closing
 from http import HTTPStatus
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
@@ -18,13 +19,20 @@ ARQUIVOS = {
     '/icones.svg': ('icones.svg', 'image/svg+xml'),
     '/marca.svg': ('marca.svg', 'image/svg+xml'),
 }
+ATOS_CATALOGADOS = json.loads((RAIZ / 'dados/fontes.json').read_text(encoding='utf-8'))['atos']
+FICHAS_PREFEITURA = {ato['id']: ato['ficha_prefeitura'] for ato in ATOS_CATALOGADOS if 'ficha_prefeitura' in ato}
 LEIS_LOCAIS = {
     '/' + ato['arquivo']: RAIZ / ato['arquivo']
-    for ato in json.loads((RAIZ / 'dados/fontes.json').read_text(encoding='utf-8'))['atos']
+    for ato in ATOS_CATALOGADOS
     if re.fullmatch(r'fontes/leis/lei-[0-9]+-[0-9]{4}\.pdf', ato['arquivo'])
 }
 ROTAS = {'/api/consulta', '/api/bairros', '/api/fontes'}
 TAMANHO_PAGINA = 20
+with (RAIZ / 'fontes/ceps/correios-2026-11-25-consolidado.csv').open(encoding='utf-8-sig', newline='') as arquivo:
+    ENDERECOS_CORREIOS = {
+        (linha['Logradouro'], linha['Bairro'], linha['CEP'])
+        for linha in csv.DictReader(arquivo, delimiter=';') if linha['Localidade'] == 'Morrinhos/GO'
+    }
 LISTAS = {
     'lista-2025-12-bairro': 'Lista por bairro',
     'lista-2025-12-alfabetica': 'Lista em ordem alfabética',
@@ -35,6 +43,7 @@ LISTAS = {
     'comunicado-cep-geral-2025-03': 'Comunicado sobre o CEP geral',
 }
 CAMPOS_CONSULTA = (
+    'variantes_postais',
     'trecho_id', 'bairro', 'trecho_documentado', 'nome_municipal_documentado',
     'nome_postal_publicado', 'cep_publicado', 'fim_uso_geral_anunciado', 'referencia_postal',
     'situacao_historico', 'situacao_postal', 'divergencia_postal', 'conferencia_correios', 'conferido_em',
@@ -68,8 +77,13 @@ def resultados_publicos(db, params):
     resultados = []
     for trecho in dados['resultados']:
         resumo = {campo: trecho[campo] for campo in CAMPOS_CONSULTA}
+        endereco = (trecho['nome_postal_publicado'], trecho['bairro'], trecho['cep_publicado'])
+        resumo['nome_postal_nos_correios'] = trecho['conferencia_correios'] == 'confirmado' or (
+            trecho['conferencia_correios'] == 'pendente' and endereco in ENDERECOS_CORREIOS
+        )
         resumo['historico_nomes'] = [
-            {**{campo: ato[campo] for campo in CAMPOS_ATO}, 'url': url_publica(ato['url'])}
+            {**{campo: ato[campo] for campo in CAMPOS_ATO}, 'url': url_publica(ato['url']),
+             'ficha_prefeitura': FICHAS_PREFEITURA.get(ato['fonte_id'])}
             for ato in trecho['historico_nomes']
         ]
         resumo['nomes_historicos'] = [
@@ -95,11 +109,14 @@ def fontes_publicas(db):
     fontes = db.execute('''
         SELECT f.id, f.tipo, f.referencia, f.url, f.abrangencia, min(a.numero) AS numero
         FROM fonte f LEFT JOIN ato_nome a ON a.fonte_id = f.id
+        WHERE f.tipo <> 'lista_postal' OR f.referencia >=
+            (SELECT max(referencia) FROM fonte WHERE abrangencia = 'integral')
         GROUP BY f.id ORDER BY f.referencia DESC, f.prioridade DESC, f.id
     ''')
     return {'fontes': [
         {'id': fonte['id'], 'tipo': fonte['tipo'], 'referencia': fonte['referencia'],
          'abrangencia': fonte['abrangencia'], 'url': url_publica(fonte['url']),
+         'ficha_prefeitura': FICHAS_PREFEITURA.get(fonte['id']),
          'titulo': f"Lei nº {fonte['numero']}" if fonte['numero'] else LISTAS.get(fonte['id'], 'Fonte postal')}
         for fonte in fontes
     ]}
