@@ -12,6 +12,7 @@ import sqlite3
 import subprocess
 import tempfile
 import unicodedata
+from urllib.parse import urlsplit
 from uuid import NAMESPACE_URL, uuid5
 
 from busca import chave, expandir, interpretar, pontuador, separar_bairro, variantes_bairro
@@ -45,7 +46,10 @@ def abrir_banco(caminho, escrita=False):
         if escrita and versao == 1:
             db.executescript((RAIZ / 'dados/migracao-002.sql').read_text(encoding='utf-8'))
             versao = 2
-        if versao != 2:
+        if escrita and versao == 2:
+            db.executescript((RAIZ / 'dados/migracao-003.sql').read_text(encoding='utf-8'))
+            versao = 3
+        if versao != 3 and not (versao == 2 and not escrita):
             raise ValueError(f'Versão de esquema não suportada para consulta: {versao}. Execute importar para migrar.')
     except (sqlite3.Error, OSError, ValueError):
         db.close()
@@ -262,34 +266,91 @@ def atos(db, trecho_id):
     ''', (trecho_id,))]
 
 
+def registrar_mudanca(db, dados):
+    limites = {'trecho_id': 36, 'nome_anterior': 120, 'nome_novo': 120, 'vigencia_desde': 10,
+               'situacao_cep': 16, 'cep_anterior': 9, 'cep_novo': 9, 'fonte': 500, 'url_fonte': 1500}
+    if not isinstance(dados, dict) or dados.keys() - limites.keys():
+        raise ValueError('Campos de cadastro inválidos.')
+    registro = {}
+    for campo, limite in limites.items():
+        valor = dados.get(campo, '')
+        if not isinstance(valor, str) or len(valor) > limite or any(ord(c) < 32 for c in valor):
+            raise ValueError(f'Valor inválido para {campo.replace("_", " ")}.')
+        registro[campo] = valor.strip() or None
+
+    trecho_id, anterior, novo, vigencia, situacao, cep_anterior, cep_novo, fonte, url = registro.values()
+    if not trecho_id or not fonte or situacao not in ('alterado', 'mantido', 'desconhecido'):
+        raise ValueError('Selecione o trecho, a situação do CEP e informe a referência da fonte.')
+    if (anterior and not novo) or any(nome and not chave(nome) for nome in (anterior, novo)):
+        raise ValueError('Informe o novo nome ou deixe os nomes vazios para uma mudança apenas de CEP.')
+    if (not novo or anterior == novo) and situacao != 'alterado':
+        raise ValueError('Informe uma alteração de nome ou de CEP.')
+    if vigencia:
+        try:
+            if date.fromisoformat(vigencia).isoformat() != vigencia:
+                raise ValueError()
+        except ValueError:
+            raise ValueError('Informe uma data de vigência válida.') from None
+    if url:
+        partes = urlsplit(url)
+        if partes.scheme != 'https' or not partes.hostname or partes.username is not None or partes.password is not None:
+            raise ValueError('Informe um link HTTPS público para a fonte.')
+    cep_anterior = cep_formatado(cep_anterior) if cep_anterior else None
+    cep_novo = cep_formatado(cep_novo) if cep_novo else None
+    if situacao == 'alterado' and (not cep_novo or cep_novo == cep_anterior):
+        raise ValueError('Informe um novo CEP diferente do anterior.')
+    if situacao == 'mantido':
+        if not cep_anterior or cep_novo and cep_novo != cep_anterior:
+            raise ValueError('Informe o CEP que permaneceu igual.')
+        cep_novo = cep_anterior
+    if situacao == 'desconhecido' and cep_novo:
+        raise ValueError('Deixe o novo CEP vazio quando ele ainda está a confirmar.')
+
+    db.execute('BEGIN IMMEDIATE')
+    with db:
+        trecho = db.execute('''SELECT situacao_postal FROM consulta_v1 WHERE trecho_id = ?''', (trecho_id,)).fetchone()
+        if trecho is None or trecho['situacao_postal'] == 'cep_geral_historico':
+            raise ValueError('Selecione um trecho de logradouro disponível na consulta.')
+        campos = (trecho_id, anterior, chave(anterior), novo, chave(novo), vigencia,
+                  situacao, cep_anterior, cep_novo, fonte, url)
+        identificador = str(uuid5(NAMESPACE_URL, 'br.go.morrinhos/acervo/mudanca/' + json.dumps(campos)))
+        cursor = db.execute('''
+            INSERT INTO mudanca_local (id, trecho_id, nome_anterior, anterior_chave, nome_novo, novo_chave,
+                                       vigencia_desde, situacao_cep, cep_anterior, cep_novo, fonte, url_fonte)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) ON CONFLICT(id) DO NOTHING
+        ''', (identificador, *campos))
+        return {'id': identificador, 'criado': cursor.rowcount == 1}
+
+
 def localizar(db, nome, bairro, cep, *, variantes=False):
     bairros = variantes_bairro(bairro)
+    migrado = db.execute('PRAGMA user_version').fetchone()[0] >= 3
+    nomes = 'nomes_acervo_v1' if migrado else '''(
+        SELECT trecho_canonico_id AS trecho_id, nome_chave FROM observacao_postal_v1
+        UNION ALL SELECT trecho_id, anterior_chave FROM ato_nome WHERE anterior_chave IS NOT NULL
+        UNION ALL SELECT trecho_id, atribuido_chave FROM ato_nome
+    )'''
+    ceps = 'ceps_acervo_v1' if migrado else '(SELECT trecho_canonico_id AS trecho_id, cep FROM observacao_postal_v1)'
     if not nome:
-        candidatos = 'SELECT DISTINCT trecho_canonico_id, 4 AS peso FROM observacao_postal_v1 WHERE cep = ?'
+        candidatos = f'SELECT DISTINCT trecho_id, 4 AS peso FROM {ceps} WHERE cep = ?'
         parametros = [cep]
     elif variantes:
         db.create_function('pontuar', 1, pontuador(nome), deterministic=True)
-        candidatos = '''
-            SELECT trecho_canonico_id, max(peso) AS peso FROM (
-                SELECT trecho_canonico_id, pontuar(nome_chave) AS peso FROM observacao_postal_v1
-                UNION ALL
-                SELECT trecho_id, max(pontuar(anterior_chave), pontuar(atribuido_chave)) FROM ato_nome
-            ) WHERE peso > 0 GROUP BY trecho_canonico_id
+        candidatos = f'''
+            SELECT trecho_id, max(peso) AS peso FROM (
+                SELECT trecho_id, pontuar(nome_chave) AS peso FROM {nomes}
+            ) WHERE peso > 0 GROUP BY trecho_id
         '''
         parametros = []
     else:
-        parametros = [f'% {nome} %', f'% {expandir(nome)} %'] * 3
-        candidatos = '''
-            SELECT trecho_canonico_id, 4 AS peso FROM observacao_postal_v1
+        parametros = [f'% {nome} %', f'% {expandir(nome)} %']
+        candidatos = f'''
+            SELECT DISTINCT trecho_id, 4 AS peso FROM {nomes}
                 WHERE (' ' || nome_chave || ' ') LIKE ? OR (' ' || nome_chave || ' ') LIKE ?
-            UNION
-            SELECT trecho_id, 4 FROM ato_nome
-                WHERE (' ' || anterior_chave || ' ') LIKE ? OR (' ' || anterior_chave || ' ') LIKE ?
-                   OR (' ' || atribuido_chave || ' ') LIKE ? OR (' ' || atribuido_chave || ' ') LIKE ?
         '''
     filtros = []
     if nome and cep:
-        filtros.append('c.trecho_id IN (SELECT trecho_canonico_id FROM observacao_postal_v1 WHERE cep = ?)')
+        filtros.append(f'c.trecho_id IN (SELECT trecho_id FROM {ceps} WHERE cep = ?)')
         parametros.append(cep)
     if bairros:
         marcadores = ', '.join('?' for _ in bairros)
@@ -306,7 +367,7 @@ def localizar(db, nome, bairro, cep, *, variantes=False):
     return db.execute(f'''
         SELECT c.*, candidatos.peso FROM consulta_v1 c
         JOIN ({candidatos}) candidatos
-            ON candidatos.trecho_canonico_id = c.trecho_id
+            ON candidatos.trecho_id = c.trecho_id
         {restricoes}
         ORDER BY candidatos.peso DESC, referencia_postal DESC, bairro, nome_postal_publicado, trecho_id
     ''', parametros).fetchall()
@@ -339,12 +400,19 @@ def consultar(db, termo, bairro, *, limite=None, deslocamento=0):
     if limite is not None:
         registros = registros[deslocamento:deslocamento + limite]
     resultados = []
+    migrado = db.execute('PRAGMA user_version').fetchone()[0] >= 3
     for linha in registros:
         resultado = dict(linha)
         resultado.pop('bairro_chave')
         resultado.pop('peso')
         resultado['divergencia_postal'] = bool(resultado['divergencia_postal'])
         resultado['historico_nomes'] = atos(db, linha['trecho_id'])
+        resultado['mudancas_cadastradas'] = [dict(mudanca) for mudanca in db.execute('''
+            SELECT id, nome_anterior, nome_novo, vigencia_desde, situacao_cep, cep_anterior, cep_novo,
+                   fonte, url_fonte, registrado_em
+            FROM mudanca_local_v1 WHERE trecho_canonico_id = ?
+            ORDER BY vigencia_desde IS NULL, vigencia_desde DESC, registrado_em DESC, id
+        ''', (linha['trecho_id'],))] if migrado else []
         resultado['observacoes_postais'] = [dict(o) for o in db.execute('''
             SELECT o.id, o.fonte_id, f.referencia, o.pagina, o.linha, o.nome_original,
                 o.bairro_original, o.cep_original, o.cep, f.url, f.arquivo

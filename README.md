@@ -12,7 +12,7 @@ Para abrir a interface local no navegador, inicie o servidor na pasta do acervo.
 python -X utf8 interface.py
 ```
 
-Acesse [a consulta local](http://127.0.0.1:8765). A tela é adaptável a computador e celular, com busca por nome ou CEP, filtro por bairro e acesso às fontes oficiais. O servidor escuta apenas no próprio computador e usa o SQLite em modo somente leitura.
+Acesse [a consulta local](http://127.0.0.1:8765). A tela é adaptável a computador e celular, com busca por nome ou CEP, filtro por bairro e acesso às fontes oficiais. O servidor escuta apenas no próprio computador. A consulta padrão usa o SQLite em modo somente leitura.
 
 No PowerShell, a partir da pasta do acervo, use Python 3.10 ou superior. A consulta e a exportação usam o banco existente. A importação dos PDFs requer o `pdftotext` do Poppler no PATH.
 
@@ -38,6 +38,21 @@ A busca aceita nomes com ou sem acentos, abreviações, formatos comuns de CEP e
 O JSON traz o nome municipal documentado, o nome postal publicado, o CEP, a situação da conferência, as fontes e o `criterio` de busca. Use `situacao_historico` para localizar os nomes ainda a pesquisar. Em `observacoes_postais`, cada entrada preserva a grafia, o bairro e o CEP tal como aparecem no documento original. Um CEP associado a registros conflitantes mantém as diferentes observações disponíveis, com `divergencia_postal`.
 
 O indicador `divergencia_postal` abrange diferenças entre edições. Use as referências e páginas para distinguir uma diferença histórica de um conflito na publicação mais recente. A lista integral e os boletins complementares são identificados por `abrangencia_fonte_postal`.
+
+## Cadastrar uma mudança na interface
+
+Inicie a interface com edição habilitada.
+
+```powershell
+python -X utf8 interface.py --edicao
+```
+
+1. Pesquise a via e selecione o resultado que corresponde ao bairro e trecho da fonte. Clique em **Cadastrar mudança**.
+2. Informe o novo nome e, se forem conhecidos, o nome anterior e a data de vigência. Para registrar apenas uma troca de CEP, deixe os nomes vazios.
+3. Informe se o CEP mudou, continuou igual ou ainda está a confirmar. Confira os valores com a fonte, principalmente ao cadastrar uma mudança antiga.
+4. Informe a referência documental e, se houver, o link público. Depois de salvar, **Mudanças cadastradas** aparece no trecho. A consulta aceita os nomes e os CEPs específicos do cadastro. As fontes postais publicadas e as conferências nos Correios têm campos próprios.
+
+O modo de edição dá acesso de gravação a quem usa a interface nesse computador. Use-o durante o cadastramento em uma estação autorizada. Registre referências públicas à via ou ao documento. A referência digitada fica visível na consulta. Os registros da equipe ficam no SQLite e são preservados ao reimportar os PDFs. Inclua esse banco nas cópias de segurança. O JSON de consulta inclui `mudancas_cadastradas`; a visão `consulta_v1` e o CSV continuam a descrever as fontes importadas.
 
 ## Atualizar
 

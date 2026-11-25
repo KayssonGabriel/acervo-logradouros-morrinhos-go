@@ -71,3 +71,49 @@ class TestInterface(unittest.TestCase):
                 urlopen(Request(self.url + caminho, headers=cabecalho), timeout=5)
             self.assertEqual(retorno.exception.code, codigo)
             retorno.exception.close()
+
+    def test_cadastro_local_preserva_publicacao_e_busca_nomes_e_ceps(self):
+        trecho, = self.ler_json('/api/consulta', q='Rua 216', bairro='Vila Santos Dumont')['resultados']
+        dados = {'trecho_id': trecho['trecho_id'], 'nome_anterior': 'Rua 216',
+                 'nome_novo': 'Rua de Teste da Memória', 'vigencia_desde': '2026-11-20',
+                 'situacao_cep': 'alterado', 'cep_anterior': '75654-216', 'cep_novo': '75659-987',
+                 'fonte': 'Comunicado de teste'}
+        requisicao = Request(self.url + '/api/mudancas', data=json.dumps(dados).encode(),
+                             headers={'Content-Type': 'application/json', 'Origin': self.url})
+        with self.assertRaises(HTTPError) as erro:
+            urlopen(requisicao, timeout=5)
+        self.assertEqual(erro.exception.code, 403)
+        erro.exception.close()
+        self.servidor.edicao = True
+        self.addCleanup(setattr, self.servidor, 'edicao', False)
+        for codigo in (201, 200):
+            with urlopen(requisicao, timeout=5) as resposta:
+                self.assertEqual(resposta.status, codigo)
+        for busca in ('Rua de Teste da Memória', '75659-987', 'Rua 216', '75654-216'):
+            encontrados = self.ler_json('/api/consulta', q=busca, bairro='Vila Santos Dumont')['resultados']
+            atual, = [item for item in encontrados if item['trecho_id'] == trecho['trecho_id']]
+            self.assertEqual(atual['cep_publicado'], '75654-216')
+            self.assertEqual(atual['conferencia_correios'], 'pendente')
+            mudanca, = atual['mudancas_cadastradas']
+            self.assertEqual(mudanca['cep_novo'], '75659-987')
+        anterior = {**dados, 'nome_anterior': 'Rua de Teste Antiga', 'nome_novo': 'Rua 216',
+                    'vigencia_desde': '1980-01-01', 'situacao_cep': 'mantido', 'cep_novo': ''}
+        cabecalhos = {'Content-Type': 'application/json', 'Origin': self.url}
+        for cadastro, status in (({**anterior, 'vigencia_desde': '1980-02-31'}, 400), (anterior, 201)):
+            tentativa = Request(self.url + '/api/mudancas', data=json.dumps(cadastro).encode(), headers=cabecalhos)
+            if status == 400:
+                with self.assertRaises(HTTPError) as erro:
+                    urlopen(tentativa, timeout=5)
+                self.assertEqual(erro.exception.code, status)
+                erro.exception.close()
+            else:
+                with urlopen(tentativa, timeout=5) as resposta:
+                    self.assertEqual(resposta.status, status)
+        antigo, = self.ler_json('/api/consulta', q='Rua de Teste Antiga')['resultados']
+        self.assertEqual([m['vigencia_desde'] for m in antigo['mudancas_cadastradas']], ['2026-11-20', '1980-01-01'])
+        self.assertEqual(antigo['mudancas_cadastradas'][1]['cep_novo'], '75654-216')
+        requisicao.add_header('Origin', 'https://outra-origem.example')
+        with self.assertRaises(HTTPError) as erro:
+            urlopen(requisicao, timeout=5)
+        self.assertEqual(erro.exception.code, 403)
+        erro.exception.close()

@@ -13,7 +13,7 @@ python -X utf8 auditar_acervo.py
 python -X utf8 interface.py
 ```
 
-Abra [a interface local](http://127.0.0.1:8765). A consulta é somente leitura. `busca.py` interpreta entradas e variantes. `acervo.py` resolve candidatos, evidências e vínculos no SQLite. `interface.py` expõe à tela apenas os campos de consulta e `web/` contém os arquivos do navegador.
+Abra [a interface local](http://127.0.0.1:8765). O modo padrão é somente leitura. Para registrar uma mudança pela interface, use `python -X utf8 interface.py --edicao` e consulte o [procedimento no README](README.md#cadastrar-uma-mudança-na-interface). `busca.py` interpreta entradas e variantes. `acervo.py` resolve evidências, vínculos e cadastros no SQLite. `interface.py` atende a interface local e `web/` contém os arquivos do navegador.
 
 Em uma base que guarde conferências reais, faça uma cópia com `python -X utf8 acervo.py backup minha-copia.sqlite3` e valide a mudança nela com `--banco minha-copia.sqlite3` antes de aplicá-la ao banco de trabalho. O banco local, exportações, backups e credenciais ficam fora do Git. Preserve alterações locais feitas pela equipe.
 

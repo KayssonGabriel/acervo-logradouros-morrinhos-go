@@ -15,6 +15,14 @@ let pedido;
 let filtro;
 let pagina = 1;
 let fontesCarregadas = false;
+let edicaoHabilitada = false;
+let trechoSelecionado;
+const dialogoMudanca = porId('dialogo-mudanca');
+const formMudanca = porId('form-mudanca');
+const situacaoCep = formMudanca.elements.situacao_cep;
+const cepAnterior = formMudanca.elements.cep_anterior;
+const cepNovo = formMudanca.elements.cep_novo;
+const salvarMudanca = porId('salvar-mudanca');
 
 const situacoes = {
   pendente: 'Conferência pendente', confirmado: 'Conferido nos Correios',
@@ -54,7 +62,8 @@ function documento(titulo, textos, fonte, rotulo = 'Abrir fonte') {
   linha.append(icone('arquivo'), corpo);
   if (fonte.url) {
     const link = elemento('a', rotulo);
-    const url = new URL(fonte.url);
+    let url;
+    try { url = new URL(fonte.url); } catch { return linha; }
     if (url.protocol === 'https:') {
       if (fonte.pagina && url.pathname.toLowerCase().endsWith('.pdf')) url.hash = `page=${fonte.pagina}`;
       link.href = url.href;
@@ -95,6 +104,9 @@ function nome(trecho) {
 }
 
 function exibirTrecho(trecho, botao, interacao) {
+  trechoSelecionado = trecho;
+  porId('estado-mudanca').textContent = '';
+  porId('cadastrar-mudanca').hidden = !edicaoHabilitada || trecho.situacao_postal === 'cep_geral_historico';
   mensagem.hidden = true;
   for (const item of lista.querySelectorAll('button')) {
     item.setAttribute('aria-pressed', String(item === botao));
@@ -121,6 +133,23 @@ function exibirTrecho(trecho, botao, interacao) {
   porId('situacao-via').hidden = !avisoPostal;
   porId('trecho-via').textContent = trecho.trecho_documentado || '';
   porId('trecho-via').hidden = !trecho.trecho_documentado;
+
+  const mudancas = (trecho.mudancas_cadastradas || []).map((mudanca) => {
+    const anterior = mudanca.cep_anterior || 'a confirmar';
+    const ceps = {
+      alterado: `CEP ${anterior} → ${mudanca.cep_novo}`,
+      mantido: `CEP mantido: ${mudanca.cep_anterior}`,
+      desconhecido: mudanca.cep_anterior ? `Novo CEP a confirmar · CEP anterior ${anterior}` : 'CEP a confirmar',
+    };
+    const titulo = mudanca.nome_anterior ? `${mudanca.nome_anterior} → ${mudanca.nome_novo}` : mudanca.nome_novo;
+    return documento(
+      titulo || 'Mudança de CEP',
+      [ceps[mudanca.situacao_cep], `Vigência: ${dataFormatada(mudanca.vigencia_desde)}`, mudanca.fonte],
+      {url: mudanca.url_fonte},
+    );
+  });
+  porId('historico-mudancas').replaceChildren(...mudancas);
+  porId('mudancas-via').hidden = !mudancas.length;
 
   const nomes = trecho.historico_nomes.map((ato) => documento(
     ato.nome_anterior ? `${ato.nome_anterior} → ${ato.nome_atribuido}` : ato.nome_atribuido,
@@ -155,7 +184,7 @@ function mostrarMensagem(titulo, texto) {
   mensagem.hidden = false;
 }
 
-async function buscar(novaPagina = 1, moverFoco = false) {
+async function buscar(novaPagina = 1, moverFoco = false, selecionarId = null) {
   pedido?.abort();
   const atual = new AbortController();
   pedido = atual;
@@ -172,6 +201,7 @@ async function buscar(novaPagina = 1, moverFoco = false) {
     const dados = await resposta.json();
     if (atual.signal.aborted) return;
     if (!resposta.ok) throw new Error(dados.erro || 'Não foi possível consultar a base.');
+    edicaoHabilitada = dados.edicao_habilitada;
     pagina = dados.pagina;
     const aproximada = dados.criterio === 'aproximada';
     const rotulo = aproximada ? (dados.total === 1 ? 'sugestão' : 'sugestões') : (dados.total === 1 ? 'encontrado' : 'encontrados');
@@ -188,6 +218,7 @@ async function buscar(novaPagina = 1, moverFoco = false) {
       }
       return;
     }
+    let selecionado;
     for (const trecho of dados.resultados) {
       const item = elemento('li');
       const botao = elemento('button', null, 'resultado');
@@ -198,11 +229,14 @@ async function buscar(novaPagina = 1, moverFoco = false) {
       rotulo.append(elemento('strong', nome(trecho)), elemento('small', [trecho.bairro, trecho.cep_publicado || 'CEP a confirmar'].filter(Boolean).join(' · ')));
       botao.append(icone('pin'), rotulo, icone('direita'));
       botao.addEventListener('click', () => exibirTrecho(trecho, botao, true));
+      if (trecho.trecho_id === selecionarId) selecionado = {trecho, botao};
       item.append(botao);
       lista.append(item);
     }
     const primeiro = lista.querySelector('button');
-    if (aproximada) {
+    if (selecionado) {
+      exibirTrecho(selecionado.trecho, selecionado.botao, false);
+    } else if (aproximada) {
       mostrarMensagem('Sugestões por grafia semelhante', 'Selecione uma sugestão para conferir o nome, o bairro e as fontes. A semelhança não confirma que se trata da mesma via.');
     } else {
       exibirTrecho(dados.resultados[0], primeiro, false);
@@ -233,6 +267,57 @@ formulario.addEventListener('submit', (evento) => {
 });
 paginaAnterior.addEventListener('click', () => buscar(pagina - 1, true));
 paginaProxima.addEventListener('click', () => buscar(pagina + 1, true));
+
+function atualizarCamposCep() {
+  const mantido = situacaoCep.value === 'mantido';
+  const alterado = situacaoCep.value === 'alterado';
+  cepAnterior.disabled = !situacaoCep.value;
+  cepAnterior.required = mantido;
+  porId('rotulo-cep-anterior').hidden = cepAnterior.disabled;
+  porId('texto-cep-anterior').textContent = mantido ? 'CEP que continuou igual' : 'CEP anterior, se conhecido';
+  cepNovo.disabled = !alterado;
+  cepNovo.required = alterado;
+  porId('rotulo-cep-novo').hidden = !alterado;
+}
+
+situacaoCep.addEventListener('change', atualizarCamposCep);
+porId('cadastrar-mudanca').addEventListener('click', () => {
+  formMudanca.reset();
+  cepAnterior.value = trechoSelecionado.cep_publicado || '';
+  porId('erro-mudanca').hidden = true;
+  porId('trecho-mudanca').textContent = [nome(trechoSelecionado), trechoSelecionado.bairro].filter(Boolean).join(' · ');
+  atualizarCamposCep();
+  dialogoMudanca.showModal();
+});
+porId('cancelar-mudanca').addEventListener('click', () => dialogoMudanca.close());
+dialogoMudanca.addEventListener('cancel', (evento) => {
+  if (salvarMudanca.disabled) evento.preventDefault();
+});
+formMudanca.addEventListener('submit', async (evento) => {
+  evento.preventDefault();
+  if (salvarMudanca.disabled) return;
+  const trechoId = trechoSelecionado.trecho_id;
+  const dados = {...Object.fromEntries(new FormData(formMudanca)), trecho_id: trechoId};
+  const erro = porId('erro-mudanca');
+  erro.hidden = true;
+  salvarMudanca.disabled = porId('cancelar-mudanca').disabled = true;
+  try {
+    const resposta = await fetch('/api/mudancas', {
+      method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(dados),
+    });
+    const resultado = await resposta.json();
+    if (!resposta.ok) throw new Error(resultado.erro);
+    dialogoMudanca.close();
+    await buscar(pagina, false, trechoId);
+    porId('estado-mudanca').textContent = resultado.criado ? 'Mudança cadastrada.' : 'Esta mudança já estava cadastrada.';
+    if (!detalhe.hidden) porId('nome-via').focus();
+  } catch (falha) {
+    erro.textContent = falha instanceof TypeError ? 'Não foi possível conectar ao acervo local.' : falha.message;
+    erro.hidden = false;
+  } finally {
+    salvarMudanca.disabled = porId('cancelar-mudanca').disabled = false;
+  }
+});
 
 async function bairrosDisponiveis() {
   try {

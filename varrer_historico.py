@@ -36,6 +36,13 @@ def alvos_do_acervo(db):
     '''):
         if trecho in bairros:
             cadastrar_alvo(alvos, trecho, bairros[trecho], nome)
+    if db.execute('PRAGMA user_version').fetchone()[0] >= 3:
+        for trecho, nome in db.execute('''
+            SELECT trecho_canonico_id, nome_anterior FROM mudanca_local_v1 WHERE nome_anterior IS NOT NULL
+            UNION SELECT trecho_canonico_id, nome_novo FROM mudanca_local_v1 WHERE nome_novo IS NOT NULL
+        '''):
+            if trecho in bairros:
+                cadastrar_alvo(alvos, trecho, bairros[trecho], nome)
     return alvos
 
 

@@ -8,7 +8,7 @@ import re
 import sqlite3
 from urllib.parse import parse_qs, urlsplit
 
-from acervo import BANCO, RAIZ, abrir_banco, consultar
+from acervo import BANCO, RAIZ, abrir_banco, consultar, registrar_mudanca
 
 
 ARQUIVOS = {
@@ -70,6 +70,10 @@ def resultados_publicos(db, params):
              'url': url_publica(observacao['url'])}
             for observacao in trecho['observacoes_postais']
         ]
+        resumo['mudancas_cadastradas'] = [
+            {**mudanca, 'url_fonte': url_publica(mudanca['url_fonte']) if mudanca['url_fonte'] else None}
+            for mudanca in trecho['mudancas_cadastradas']
+        ]
         resultados.append(resumo)
     return {'resultados': resultados, 'total': dados['total'], 'pagina': pagina, 'por_pagina': TAMANHO_PAGINA,
             'criterio': dados['criterio'], 'cep_geral_informado': dados['cep_geral_informado'],
@@ -115,6 +119,39 @@ class InterfaceHandler(BaseHTTPRequestHandler):
         self.responder(codigo, json.dumps(dados, ensure_ascii=False).encode('utf-8'),
                        'application/json; charset=utf-8')
 
+    def do_POST(self):
+        self.close_connection = True
+        if self.path != '/api/mudancas':
+            self.json(HTTPStatus.NOT_FOUND, {'erro': 'Página não encontrada.'})
+            return
+        porta = self.server.server_port
+        host = self.headers.get('Host')
+        origens = self.headers.get_all('Origin', [])
+        if (not self.server.edicao or host not in (f'127.0.0.1:{porta}', f'localhost:{porta}')
+                or origens != [f'http://{host}']):
+            self.json(HTTPStatus.FORBIDDEN, {'erro': 'O cadastro exige o modo de edição e a interface local.'})
+            return
+        tamanho = self.headers.get('Content-Length', '')
+        if (self.headers.get_content_type() != 'application/json' or self.headers.get('Transfer-Encoding')
+                or len(self.headers.get_all('Content-Length', [])) != 1
+                or not re.fullmatch(r'[0-9]{1,5}', tamanho) or not 0 < int(tamanho) <= 16384):
+            self.json(HTTPStatus.BAD_REQUEST, {'erro': 'O cadastro deve conter um JSON de até 16 KiB.'})
+            return
+        try:
+            self.connection.settimeout(5)
+            dados = json.loads(self.rfile.read(int(tamanho)).decode('utf-8'))
+            with closing(abrir_banco(self.server.banco, escrita=True)) as db:
+                resultado = registrar_mudanca(db, dados)
+            self.json(HTTPStatus.CREATED if resultado['criado'] else HTTPStatus.OK, resultado)
+        except (UnicodeDecodeError, json.JSONDecodeError, RecursionError):
+            self.json(HTTPStatus.BAD_REQUEST, {'erro': 'JSON inválido.'})
+        except ValueError as erro:
+            self.json(HTTPStatus.BAD_REQUEST, {'erro': str(erro)})
+        except (BrokenPipeError, ConnectionResetError, TimeoutError):
+            return
+        except (OSError, sqlite3.Error):
+            self.json(HTTPStatus.SERVICE_UNAVAILABLE, {'erro': 'Não foi possível gravar o cadastro no banco local.'})
+
     def do_GET(self):
         porta = self.server.server_port
         if self.headers.get('Host') not in (f'127.0.0.1:{porta}', f'localhost:{porta}'):
@@ -142,15 +179,16 @@ class InterfaceHandler(BaseHTTPRequestHandler):
         params = parse_qs(alvo.query, max_num_fields=8)
         with closing(abrir_banco(self.server.banco)) as db:
             if alvo.path == '/api/consulta':
-                return resultados_publicos(db, params)
+                return {**resultados_publicos(db, params), 'edicao_habilitada': self.server.edicao}
             if alvo.path == '/api/fontes':
                 return fontes_publicas(db)
             return {'bairros': [linha['nome'] for linha in db.execute('SELECT nome FROM bairro ORDER BY chave')]}
 
 
-def criar_servidor(banco, porta):
+def criar_servidor(banco, porta, *, edicao=False):
     servidor = ThreadingHTTPServer(('127.0.0.1', porta), InterfaceHandler)
     servidor.banco = banco
+    servidor.edicao = edicao
     return servidor
 
 
@@ -158,12 +196,14 @@ def main():
     cli = argparse.ArgumentParser(description='Interface local de consulta do acervo de Morrinhos (GO)')
     cli.add_argument('--banco', type=Path, default=BANCO)
     cli.add_argument('--porta', type=int, default=8765)
+    cli.add_argument('--edicao', action='store_true', help='Permite cadastrar mudanças nesta interface local.')
     args = cli.parse_args()
     if not 0 <= args.porta <= 65535:
         cli.error('Informe uma porta entre 0 e 65535.')
     try:
-        with closing(abrir_banco(args.banco)), criar_servidor(args.banco, args.porta) as servidor:
-            print(f'Consulta local em http://127.0.0.1:{servidor.server_port}', flush=True)
+        with closing(abrir_banco(args.banco)), criar_servidor(args.banco, args.porta, edicao=args.edicao) as servidor:
+            modo = 'Consulta e edição' if args.edicao else 'Consulta'
+            print(f'{modo} local em http://127.0.0.1:{servidor.server_port}', flush=True)
             servidor.serve_forever()
     except KeyboardInterrupt:
         return
