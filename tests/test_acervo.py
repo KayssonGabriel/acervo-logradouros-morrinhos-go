@@ -12,6 +12,7 @@ from zipfile import ZipFile
 
 import acervo
 import auditar_acervo
+import varrer_historico
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -50,7 +51,7 @@ class TestAcervo(unittest.TestCase):
             self.assertEqual(contagem['lista-2024-11'], 970)
             self.assertEqual(contagem['lista-2025-01'], 970)
             self.assertEqual(contagem['lista-2025-01-bairro'], 970)
-            self.assertEqual(db.execute('SELECT count(*) FROM ato_nome').fetchone()[0], 45)
+            self.assertEqual(db.execute('SELECT count(*) FROM ato_nome').fetchone()[0], 46)
 
     def test_nome_anterior_documentado_encontra_cep_por_bairro(self):
         resultado, = self.consultar('Rua 03', '--bairro', 'Jardim América')
@@ -335,6 +336,23 @@ class TestAcervo(unittest.TestCase):
         self.assertEqual(resumo['variantes_explicitas'][0]['nomes'],
                          ['rua domingos ricardo de souza', 'rua 4'])
         self.assertNotIn('12345', json.dumps(resumo))
+
+    def test_varredura_inclui_todos_os_trechos_com_nome_e_preserva_homonimos(self):
+        with closing(acervo.abrir_banco(self.banco)) as db:
+            alvos = varrer_historico.alvos_do_acervo(db)
+            total = db.execute("SELECT count(*) FROM consulta_v1 WHERE situacao_postal <> 'cep_geral_historico'").fetchone()[0]
+        self.assertEqual(len(alvos), total)
+        indice = varrer_historico.formar_indice(alvos)
+        self.assertTrue(all(alvo['termos'] for alvo in alvos.values()))
+        achados = varrer_historico.buscar_pagina(indice, 'Na R. 0216 de Morrinhos')
+        self.assertEqual({alvos[trecho]['bairro'] for trecho, _ in achados}, {'Setor Aeroporto', 'Vila Santos Dumont'})
+
+    def test_varredura_sinaliza_pdf_ausente_com_resultado_indeterminado(self):
+        with closing(acervo.abrir_banco(self.banco)) as db:
+            catalogo = {'fontes': [{'id': 'ausente', 'arquivo': 'ausente.pdf'}], 'ocorrencias_conferidas': []}
+            resumo = varrer_historico.varrer(db, catalogo, Path(self.pasta.name))
+        self.assertEqual(resumo['fontes'][0]['estado'], 'pdf_ausente')
+        self.assertTrue(all(not reg['ocorrencias'] for reg in resumo['registros']))
 
 
 if __name__ == '__main__':

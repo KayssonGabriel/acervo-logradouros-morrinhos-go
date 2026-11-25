@@ -1,5 +1,6 @@
 /backups/
 /morrinhos*.csv
+/morrinhos-varredura-*.json
 *.sqlite
 *.sqlite3
 *.sqlite-wal

@@ -28,6 +28,8 @@ Em uma base que guarde conferências reais, faça uma cópia com `python -X utf8
 
 Use `--pistas` para abrir a comparação detalhada das listas integrais e dos boletins. Com os ZIPs oficiais, use `--cnefe-2010-zip` e `--cnefe-zip` para comparar os dois censos com a lista postal por localidade. O [roteiro de pesquisa](PESQUISA.md) traz os comandos, os limites do cruzamento e exemplos de fontes complementares. Use os ZIPs somente na pesquisa local e preserve no acervo apenas os dados públicos do logradouro necessários ao projeto.
 
+Para pesquisar todos os nomes cadastrados em um conjunto de PDFs, execute `varrer_historico.py` conforme o [roteiro histórico](PESQUISA.md#varredura-histórica-por-nome-de-logradouro). Confira a página e o contexto de cada ocorrência. O relatório conserva os homônimos e registra quando faltou um PDF ou texto extraível. Ao acrescentar uma fonte, indique URL, hash da edição, data, páginas e jurisdição no [catálogo histórico](dados/pesquisa-historica.json).
+
 ## Validar a busca e a interface
 
 Teste no CLI e no navegador. Preserve o ID do trecho, a procedência e todas as correspondências do mesmo nível de evidência. A busca flexível amplia candidatos. Ela nunca cria vínculos históricos por conta própria.

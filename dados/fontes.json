@@ -39,6 +39,15 @@
   ],
   "atos": [
     {
+      "id": "lei-2980-2013", "arquivo": "fontes/leis/lei-2980-2013.pdf",
+      "url": "https://morrinhos.go.gov.br/wp-content/uploads/2023/11/2.980-Nome.-Logradouro.-Antonio-Rosa-Ribeiro-Falcao.pdf",
+      "referencia": "2013-08-23", "numero": "2.980", "artigo": "1º", "pagina": 1,
+      "bairro": "Setor Aeroporto / Vila Santos Dumont", "anterior": null,
+      "atribuido": "Praça Antônio Rosa Ribeiro – Falcão",
+      "trecho": "Rotatória da Avenida 101-B do Setor Aeroporto com a Avenida H da Vila Santos Dumont",
+      "nota": "A lei nomeia uma praça. Os registros postais de Rua Antônio Rosa Ribeiro Falcão ficam em outros bairros. CEP da praça a confirmar."
+    },
+    {
       "id": "lei-1432-1996", "arquivo": "fontes/leis/lei-1432-1996.pdf",
       "url": "https://morrinhos.go.gov.br/wp-content/uploads/2023/11/LEI-N-1.432-DE-24-DE-MAIO-DE-1.996.pdf",
       "referencia": "1996-05-24", "numero": "1.432", "artigo": "1º", "pagina": 1,

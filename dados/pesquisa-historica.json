@@ -1,0 +1,60 @@
+{
+  "fontes": [
+    {
+      "id": "leal-1892", "arquivo": "leal-1892.pdf",
+      "url": "https://bibliotecafuturo.com.br/wp-content/uploads/tainacan-items/52/9513/VIAGEM-AS-TERRAS-GOIANAS.pdf",
+      "titulo": "Viagem às Terras Goyanas, de Oscar Leal", "publicacao": "1892",
+      "tipo": "relato de viagem", "paginas": [62, 63],
+      "sha256": "31f815b505d6b98a6db177ddf7b89c39f72326a5f4b10e5c91c88083dccf0c37"
+    },
+    {
+      "id": "fonseca-1997", "arquivo": "fonseca-1997.pdf",
+      "url": "https://files.cercomp.ufg.br/weby/up/113/o/FONSECA__Maria_L_cia._1997.pdf",
+      "titulo": "Coronelismo e mandonismo local — Morrinhos (1889/1930), de Maria Lúcia Fonseca",
+      "publicacao": "1997", "tipo": "dissertação com transcrição de fonte fiscal de 1896", "paginas": [38, 94],
+      "sha256": "8c37bfd5e69da5d48dfaa8eadbb383e7b48e15ca960c97ef91652c1201d6165e"
+    },
+    {
+      "id": "amorim-1998", "arquivo": "amorim-1998.pdf",
+      "url": "https://files.cercomp.ufg.br/weby/up/113/o/AMORIM__Eron_Meneses_de._1998.pdf",
+      "titulo": "Dissertação de Eron Meneses de Amorim, com fotos de Morrinhos em 1924",
+      "publicacao": "1998", "tipo": "dissertação com fotografias", "paginas": [172, 173],
+      "sha256": "73d9882a3dc47daa6da91cb10ccec4da95e8caa80e316198835936822ab217c6"
+    },
+    {
+      "id": "jornal-do-povo-1968-08-05", "arquivo": "jornal-do-povo-1968-08-05.pdf",
+      "url": "https://hemeroteca.ihgg.org/publicacoes/JORNAL_DO_POVO/1968/08/JORNAL_DO_POVO_1968_08_05.pdf",
+      "titulo": "Jornal do Povo, reportagem sobre Vila Bela de Morrinhos", "publicacao": "1968-08-05",
+      "tipo": "jornal de época", "paginas": [1, 1],
+      "sha256": "70be150fa5f213bd57ba4c604669419cf5444e0641ecb797af21104ef8b9dc1d"
+    },
+    {
+      "id": "meira-2017", "arquivo": "meira-2017.pdf",
+      "url": "https://repositorio.ufu.br/bitstream/123456789/21352/1/IdeiasProgressoModernizacao.pdf",
+      "titulo": "Ideias de progresso e modernização: projetos de (re)urbanização de Morrinhos (1950–1970), de Júlio Cesar Meira",
+      "publicacao": "2017", "tipo": "tese com reprodução de mapas, fotos e atos", "paginas": [92, 216],
+      "sha256": "ac97900b64ee83163e6e75eb0ef86d4473d4b83b15574989ab011619f043c28c"
+    },
+    {
+      "id": "santos-2022", "arquivo": "requalificacao-ufg.pdf",
+      "url": "https://repositorio.bc.ufg.br/riserver/api/core/bitstreams/07d83e25-5f77-473c-9e26-1d572b6354e5/content",
+      "titulo": "Requalificação urbana da Rua Barão do Rio Branco no Centro de Morrinhos, de Vitória Alves dos Santos",
+      "publicacao": "2022", "tipo": "estudo histórico e arquitetônico com fotografias", "paginas": [30, 59],
+      "sha256": "67f27201249ba10ccc1f77c219512b94e3cf72809bb17a4e87b55dbfc7df733b"
+    }
+  ],
+  "ocorrencias_conferidas": [
+    {"id": "acude", "nome": "Rua do Açude", "localidade": "Núcleo urbano histórico", "ano": 1896, "fonte_id": "fonseca-1997", "pagina": 50},
+    {"id": "dr-antero", "nome": "Rua do Dr. Antero", "localidade": "Núcleo urbano histórico", "ano": 1896, "fonte_id": "fonseca-1997", "pagina": 50},
+    {"id": "boa-vista", "nome": "Rua Boa Vista", "localidade": "Núcleo urbano histórico", "ano": 1896, "fonte_id": "fonseca-1997", "pagina": 50},
+    {"id": "ganganelli", "nome": "Rua Ganganelli", "localidade": "Núcleo urbano histórico", "ano": 1896, "fonte_id": "fonseca-1997", "pagina": 50, "nome_correspondente": "Rua Minas Gerais", "pagina_correspondencia": 80},
+    {"id": "flores", "nome": "Rua das Flores", "localidade": "Núcleo urbano histórico", "ano": 1896, "fonte_id": "fonseca-1997", "pagina": 50, "nome_correspondente": "Avenida Coronel Pedro Nunes", "pagina_correspondencia": 94},
+    {"id": "matriz", "nome": "Rua da Matriz", "localidade": "Núcleo urbano histórico", "ano": 1896, "fonte_id": "fonseca-1997", "pagina": 50},
+    {"id": "sao-paulo", "nome": "Rua de São Paulo", "localidade": "Núcleo urbano histórico", "ano": 1896, "fonte_id": "fonseca-1997", "pagina": 50},
+    {"id": "brejo", "nome": "Rua do Brejo", "localidade": "Núcleo urbano histórico", "ano": 1896, "fonte_id": "fonseca-1997", "pagina": 50},
+    {"id": "liberdade", "nome": "Largo da Liberdade", "localidade": "Núcleo urbano histórico", "ano": 1896, "fonte_id": "fonseca-1997", "pagina": 50},
+    {"id": "comercio", "nome": "Rua do Comércio", "localidade": "Núcleo urbano histórico", "ano": 1896, "fonte_id": "fonseca-1997", "pagina": 50, "nome_correspondente": "Rua Barão do Rio Branco", "pagina_correspondencia": 42},
+    {"id": "direita", "nome": "Rua Direita", "localidade": "Núcleo urbano histórico", "ano": 1896, "fonte_id": "fonseca-1997", "pagina": 50},
+    {"id": "rosario", "nome": "Largo do Rosário", "localidade": "Núcleo urbano histórico", "fonte_id": "meira-2017", "pagina": 100, "nome_correspondente": "Praça Rui Barbosa", "pagina_correspondencia": 100, "nota": "O relato retrospectivo também registra Praça da Liberdade. A data de adoção dos nomes e a correspondência com a grafia Largo da Liberdade da lista de 1896 estão a confirmar."}
+  ]
+}

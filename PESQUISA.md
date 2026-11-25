@@ -37,3 +37,57 @@ O cruzamento do IBGE usa tipo, título, nome de via e localidade. A saída agrup
 Entre as listas integrais de janeiro e dezembro de 2025, 165 CEPs compartilhados têm diferença de nome ou bairro. O boletim de outubro tem 25 diferenças em CEPs compartilhados com dezembro. Um CEP pode aparecer em mais de uma comparação. A unidade do CNEFE é o par textual de via e localidade. As contagens incluem diferenças de grafia e recorte geográfico, por isso medem o volume de triagem. [Listas postais da Prefeitura](https://morrinhos.go.gov.br/codigo-de-enderecamento-postal-cep/)
 
 No Setor Aeroporto, o CNEFE 2010 traz `RUA 214 OU JOAO F MACEDO` e `AVENIDA 100 OU PROFESSORA ZILDA DINIZ FONTES`. No Centro, traz `RUA DOMINGOS RICARDO DE SOUZA OU RUA 4`. Use esses rótulos para procurar publicações municipais pelos dois nomes e confirmar os limites em planta. As leis examinadas e os vínculos ainda em pesquisa ficam no [índice legislativo](LEGISLACAO.md).
+
+## Varredura histórica por nome de logradouro
+
+O [catálogo histórico](dados/pesquisa-historica.json) indica os PDFs, as páginas, o hash SHA-256 e as ocorrências conferidas. Baixe os seis PDFs na mesma pasta, com os nomes do catálogo. O seguinte comando lê os nomes postais de todas as edições, os nomes dos atos municipais e os nomes históricos catalogados. Com os ZIPs, inclui também os pares de via nomeada e localidade dos dois censos, com as alternativas registradas sob `OU`.
+
+```powershell
+python -X utf8 varrer_historico.py --pasta-fontes CAMINHO_DOS_PDFS --cnefe-2010-zip CAMINHO_2010.zip --cnefe-zip CAMINHO_2022.zip |
+    Set-Content -Encoding utf8 morrinhos-varredura-historica.json
+```
+
+Cada registro conserva o ID do trecho ou identifica a época e localidade da observação censitária. O relatório lista os termos efetivamente pesquisados e a página de cada ocorrência. A busca normaliza abreviações, acentos e zeros em vias numeradas. Nomes iguais em bairros diferentes podem apontar para a mesma página, por isso cada ocorrência exige revisão de município, bairro e trecho na própria fonte. PDFs ausentes, extrações incompletas e páginas sem texto aparecem com seus estados no relatório. Mantenha a saída e os PDFs de pesquisa fora do Git.
+
+### Fontes antigas já examinadas
+
+| Época do registro | Fonte | O que foi localizado |
+| --- | --- | --- |
+| 1892 | [Viagem às Terras Goyanas, páginas 62–63 do PDF](https://bibliotecafuturo.com.br/wp-content/uploads/tainacan-items/52/9513/VIAGEM-AS-TERRAS-GOIANAS.pdf#page=62) | Relato de Oscar Leal sobre a cidade e as ruas. As páginas examinadas descrevem a vila, o espaço urbano e seus melhoramentos sem identificar logradouros por nome. |
+| 1896 | [Dissertação de Maria Lúcia Fonseca, quadro 1 e indicação da fonte, páginas 50–51](https://files.cercomp.ufg.br/weby/up/113/o/FONSECA__Maria_L_cia._1997.pdf#page=50) | Onze logradouros transcritos do **Imposto Sobre o Valor Locativo dos Prédios Urbanos de 1896**, Arquivo Histórico de Goiás, **caixa 04 de Morrinhos**. A transcrição e sua indicação arquivística foram conferidas. A consulta ao lançamento original está pendente. |
+| 1924 e 1926 | [Dissertação de Eron Meneses de Amorim, página 172](https://files.cercomp.ufg.br/weby/up/113/o/AMORIM__Eron_Meneses_de._1998.pdf#page=172) · [Tese de Júlio Cesar Meira, página 103](https://repositorio.ufu.br/bitstream/123456789/21352/1/IdeiasProgressoModernizacao.pdf#page=103) | Legendas identificam Rua Barão do Rio Branco e a bifurcação das ruas Goiás e Barão do Rio Branco na Avenida Coronel Pedro Nunes. Servem para localizar o núcleo antigo. |
+| 1968 | [Jornal do Povo, edição de 05/08/1968, página 1](https://hemeroteca.ihgg.org/publicacoes/JORNAL_DO_POVO/1968/08/JORNAL_DO_POVO_1968_08_05.pdf#page=1) | Foto e reportagem sobre a Vila Bela de Morrinhos. A página documenta o nome do conjunto nessa data. |
+| Década de 1970 | [Mapa da área urbana na tese de Meira, página 178 do PDF](https://repositorio.ufu.br/bitstream/123456789/21352/1/IdeiasProgressoModernizacao.pdf#page=178) | A planta distingue a área urbanizada até 1964 da expansão da década de 1970. Serve para orientar a pesquisa por setores. As legendas cartográficas exigem leitura visual. |
+
+### Nomes registrados em 1896
+
+| Grafia no levantamento | Correspondência encontrada em pesquisa histórica |
+| --- | --- |
+| Rua do Açude | A confirmar |
+| Rua do Dr. Antero | A confirmar |
+| Rua Boa Vista | A confirmar |
+| Rua Ganganelli | Rua Minas Gerais, no local da antiga escola descrita por Fonseca. [Página 80](https://files.cercomp.ufg.br/weby/up/113/o/FONSECA__Maria_L_cia._1997.pdf#page=80) |
+| Rua das Flores | Avenida Coronel Pedro Nunes, no local do sobrado citado por Fonseca. [Página 94](https://files.cercomp.ufg.br/weby/up/113/o/FONSECA__Maria_L_cia._1997.pdf#page=94) |
+| Rua da Matriz | A confirmar |
+| Rua de São Paulo | A confirmar |
+| Rua do Brejo | A confirmar |
+| Largo da Liberdade | A confirmar. O relato citado por Meira liga **Praça da Liberdade**, com outra grafia, a Largo do Rosário e Praça Rui Barbosa. [Página 100 do PDF](https://repositorio.ufu.br/bitstream/123456789/21352/1/IdeiasProgressoModernizacao.pdf#page=100) |
+| Rua do Comércio | Rua Barão do Rio Branco, no trecho antigo do Centro. [Fonseca, p. 42](https://files.cercomp.ufg.br/weby/up/113/o/FONSECA__Maria_L_cia._1997.pdf#page=42) · [Santos, p. 30](https://repositorio.bc.ufg.br/riserver/api/core/bitstreams/07d83e25-5f77-473c-9e26-1d572b6354e5/content#page=30) |
+| Rua Direita | A confirmar |
+
+As correspondências históricas acima indicam o uso dos nomes e sua localização no núcleo antigo. O alcance, a data da mudança e o ato municipal exigem fontes próprias. Para aprofundar a pesquisa, procure a caixa **04 de Morrinhos** e as séries da Câmara, Intendência e Prefeitura, com livros de atas, posturas, emplacamento, imposto predial e aprovação de loteamentos. Em periódicos do século XIX, inclua `Goyaz` e `Villa Bella de Morrinhos` nas buscas. Confira o município no texto original antes de extrair um nome. [Arquivo Histórico de Goiás](https://goias.gov.br/cultura/indice-arquivo-historico-de-goias/) · [Hemeroteca Digital Brasileira](https://bndigital.bn.gov.br/hemeroteca-digital/) · [Histórico do município no IBGE](https://www.ibge.gov.br/biblioteca/visualizacao/dtb/goias/morrinhos.pdf)
+
+O [índice de anexos da Prefeitura](https://morrinhos.go.gov.br/wp-json/wp/v2/media?search=logradouro&per_page=100&_fields=source_url,title) complementa os índices de legislação. Repita com `denominacao`, `altera nome`, `nome de rua`, `via publica`, número do ato e nome do homenageado. Confira o total informado pelo cabeçalho `X-WP-Total` e deduplique as URLs. A busca examina metadados de anexos. Leia o inteiro teor antes de registrar um ato. A consulta desta rodada localizou a [Lei nº 2.980/2013](fontes/leis/lei-2980-2013.pdf), que dá nome à praça Antônio Rosa Ribeiro – Falcão em uma rotatória. O mesmo homenageado aparece em ruas de outros bairros nas listas postais.
+
+### Resultado da execução de 25/11/2026
+
+Foram pesquisadas **216 páginas com texto** em seis fontes. Uma página no intervalo selecionado ficou sem texto extraível. Os pares por censo e os trechos da base podem se referir à mesma via, com fonte e época próprias.
+
+| Registros pesquisados | Total com termos | Com possível ocorrência textual |
+| --- | ---: | ---: |
+| Trechos com nome no acervo | 1.244 | 68 |
+| Pares de via e localidade no CNEFE 2010 | 726 | 57 |
+| Pares de via e localidade no CNEFE 2022 | 1.100 | 62 |
+| Ocorrências históricas conferidas e catalogadas | 12 | 12 |
+
+O resultado cobre os nomes dessas listas e os intervalos de páginas documentados. A revisão individual das coincidências, das fontes físicas e dos períodos sem documentos digitalizados continua em aberto. Nenhum CEP foi conferido diretamente nos Correios nesta rodada.

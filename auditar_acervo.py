@@ -122,6 +122,22 @@ def ler_cnefe(caminho, ano):
                                 ('NOM_TIPO_SEGLOGR', 'NOM_TITULO_SEGLOGR', 'NOM_SEGLOGR', 'DSC_LOCALIDADE'))
 
 
+def variantes_cnefe(tipo, titulo, nome):
+    nomes = chave(nome).split(' ou ')
+    if len(nomes) < 2:
+        return ()
+    nomes[0] = chave(f'{titulo} {nomes[0]}')
+    alternativas = []
+    for item in nomes:
+        prefixo, separador, restante = item.partition(' ')
+        tipo_alternativo = ABREVIACOES.get(prefixo, prefixo)
+        if separador and tipo_alternativo in TIPOS_VIA:
+            alternativas.append(f'{tipo_alternativo} {restante}')
+        else:
+            alternativas.append(f'{tipo} {item}')
+    return tuple(alternativas)
+
+
 def cruzar_cnefe(caminho, postais, *, ano=2022, listar_pistas=False):
     pares, nomeadas, variantes = set(), set(), set()
     total = 0
@@ -136,19 +152,10 @@ def cruzar_cnefe(caminho, postais, *, ano=2022, listar_pistas=False):
         if tipo_chave not in TIPOS_VIA or SEM_NOME.search(nome_chave):
             continue
         nomeadas.add(par)
-        if listar_pistas and ' ou ' in nome_chave:
-            nomes = nome_chave.split(' ou ')
-            nomes[0] = chave(f'{titulo} {nomes[0]}')
-            alternativas = []
-            for item in nomes:
-                prefixo, separador, restante = item.partition(' ')
-                tipo_alternativo = ABREVIACOES.get(prefixo, prefixo)
-                if separador and tipo_alternativo in TIPOS_VIA:
-                    alternativas.append(f'{tipo_alternativo} {restante}')
-                else:
-                    alternativas.append(f'{tipo_chave} {item}')
+        alternativas = variantes_cnefe(tipo_chave, titulo, nome) if listar_pistas else ()
+        if alternativas:
             rotulo = ' '.join(filter(None, (tipo, titulo, nome)))
-            variantes.add((local_chave, local, rotulo, tuple(alternativas)))
+            variantes.add((local_chave, local, rotulo, alternativas))
     pares_postais = {(linha['nome_chave'], chave(linha['bairro_original'])) for linha in postais}
     nomes_postais = {nome for nome, _ in pares_postais}
     por_local = defaultdict(Counter)
