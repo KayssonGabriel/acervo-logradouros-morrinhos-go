@@ -598,7 +598,7 @@ Denominação. Art. 1º, p. 1. [PDF do acervo](fontes/leis/lei-1503-1997.pdf#pag
 | --- | --- | --- | --- | --- |
 | Novo | Não informado | Rua do Bom Retiro | Entre as ruas Dr. Pedro Nunes e Major Limírio, confrontando com o Cemitério São Miguel | CEP a confirmar |
 
-A lista postal traz Rua Bom Retiro, Centro, CEP 75650-126. A lei identifica as confrontações e omite o bairro. Falta confrontar o trecho com a planta. A ficha da Câmara informa publicação em 18/04/1997. Data efetiva a conferir no registro de publicação.
+Os Correios registram Rua Bom Retiro no Centro, CEP 75650-126. A folha 521380605000001 do IBGE (Censo 2022) mostra a face 006-003 junto ao cemitério, com o rótulo Rua X. Um extremo encontra a Rua Doutor Pedro Nunes. No outro, o mapa assinala Rua Vinte e Cinco junto ao encontro com a Rua Major Limírio. Falta uma ficha cadastral que associe a face ao nome postal. A ficha da Câmara informa publicação em 18/04/1997. Data efetiva a conferir no registro de publicação. [Mapa do IBGE, setor 0001](https://geoftp.ibge.gov.br/cartas_e_mapas/mapas_para_fins_de_levantamentos_estatisticos/censo_demografico_2022/mapas_e_descritivos_de_setores_censitarios/GO/5213806/52138060500/MSU/521380605000001/A3_521380605000001_MSU.pdf)
 
 Documentos do inventário 28.
 
@@ -694,7 +694,7 @@ Alteração de denominação. Art. 1º, p. 1. [PDF do acervo](fontes/leis/lei-20
 | --- | --- | --- | --- | --- |
 | Novo | Avenida Beira Lago | Avenida Dante Costa | Avenida recém-construída de acesso aos setores Morro da Saudade, Jardim Venezuela, Jardim Romano, Genoveva Alves e Parque Ecológico | CEP a confirmar |
 
-A lei descreve os acessos. A lista registra Avenida Dante Costa no Centro, CEP 75650-140. Falta identificar os limites dessa linha postal. A certidão manuscrita na página 1 registra a afixação em 14/04/2004. A vigência teve início nessa data, conforme o art. 3º. A ficha da Câmara indica 30/03/2004 para a publicação, data que também consta no cabeçalho do ato.
+A lei descreve os acessos. Os Correios registram Avenida Dante Costa no Centro (75650-140) e no Jardim Venezuela (75650-161). A relação de endereços do XVII EREGEO da UEG situa o nº 225 no Centro, em frente ao Lago das Araras. Faltam os limites da avenida recém-construída em 2004 para identificar quais quadras dos dois trechos postais receberam a denominação. A certidão manuscrita na página 1 registra a afixação em 14/04/2004. A vigência teve início nessa data, conforme o art. 3º. A ficha da Câmara indica 30/03/2004 para a publicação, data que também consta no cabeçalho do ato. [Relação de endereços da UEG](https://www.eventos.ueg.br/publico/95/download_arquivo)
 
 Documentos do inventário 39.
 
