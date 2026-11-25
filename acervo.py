@@ -61,7 +61,10 @@ def abrir_banco(caminho, escrita=False):
         if escrita and versao == 2:
             db.executescript((RAIZ / 'dados/migracao-003.sql').read_text(encoding='utf-8'))
             versao = 3
-        if versao != 3 and not (versao == 2 and not escrita):
+        if escrita and versao == 3:
+            db.executescript((RAIZ / 'dados/migracao-004.sql').read_text(encoding='utf-8'))
+            versao = 4
+        if versao != 4 and not (versao in (2, 3) and not escrita):
             raise ValueError(f'Versão de esquema não suportada para consulta: {versao}. Execute importar para migrar.')
     except (sqlite3.Error, OSError, ValueError):
         db.close()
@@ -244,8 +247,29 @@ def importar_ato(db, ato, campos=None):
         ''', (trecho_anterior, trecho, ato_id))
 
 
+def importar_nomes_historicos(db, catalogo):
+    fontes = {fonte['id']: fonte for fonte in catalogo['fontes']}
+    registros = []
+    for nome in catalogo['ocorrencias_conferidas']:
+        vinculo = nome.get('vinculo_postal')
+        if not vinculo:
+            continue
+        if chave(nome['nome_correspondente']) != chave(vinculo['nome']):
+            raise ValueError(f"Nome do vínculo postal difere da correspondência histórica: {nome['id']}.")
+        fonte = fontes[nome['fonte_id']]
+        trecho = encontrar_trecho_postal(db, vinculo)
+        registros.append((nome['id'], trecho, nome['nome'], chave(nome['nome']), nome.get('ano'),
+                          fonte['id'], fonte['titulo'], fonte['url'], nome['pagina'],
+                          nome['pagina_correspondencia'], nome['nota_vinculo']))
+    db.execute('DELETE FROM nome_historico')
+    db.executemany('''INSERT INTO nome_historico (id, trecho_id, nome, nome_chave, ano, fonte_id, fonte, url,
+                                                  pagina, pagina_correspondencia, nota)
+                      VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)''', registros)
+
+
 def importar(db):
     dados = json.loads((RAIZ / 'dados/fontes.json').read_text(encoding='utf-8'))
+    historico = json.loads((RAIZ / 'dados/pesquisa-historica.json').read_text(encoding='utf-8'))
     listas = [(fonte, preparar_lista(db, fonte)) for fonte in dados['listas']]
     atos_preparados = [(ato, dados_fonte(ato, 'lei_municipal')[0]) for ato in dados['atos']]
     geral = dados['cep_geral']
@@ -256,6 +280,7 @@ def importar(db):
             importar_lista(db, fonte, preparacao)
         for ato, campos in atos_preparados:
             importar_ato(db, ato, campos)
+        importar_nomes_historicos(db, historico)
         registrar_fonte(db, geral['id'], campos_geral)
         trecho = garantir_trecho(db, 'cep_geral_historico', geral['cep'])
         db.execute('''
@@ -265,7 +290,8 @@ def importar(db):
             ON CONFLICT(fonte_id, pagina, linha) DO NOTHING
         ''', (trecho, geral['id'], geral['cep'], geral['cep'], geral['fim_anunciado']))
     return {'observacoes_postais': db.execute('SELECT count(*) FROM observacao_postal').fetchone()[0],
-            'atos_documentados': db.execute('SELECT count(*) FROM ato_nome').fetchone()[0]}
+            'atos_documentados': db.execute('SELECT count(*) FROM ato_nome').fetchone()[0],
+            'nomes_historicos_vinculados': db.execute('SELECT count(*) FROM nome_historico').fetchone()[0]}
 
 
 def atos(db, trecho_id):
@@ -336,13 +362,15 @@ def registrar_mudanca(db, dados):
 
 def localizar(db, nome, bairro, cep, *, variantes=False):
     bairros = variantes_bairro(bairro)
-    migrado = db.execute('PRAGMA user_version').fetchone()[0] >= 3
-    nomes = 'nomes_acervo_v1' if migrado else '''(
+    versao = db.execute('PRAGMA user_version').fetchone()[0]
+    nomes = 'nomes_acervo_v1' if versao >= 3 else '''(
         SELECT trecho_canonico_id AS trecho_id, nome_chave FROM observacao_postal_v1
         UNION ALL SELECT trecho_id, anterior_chave FROM ato_nome WHERE anterior_chave IS NOT NULL
         UNION ALL SELECT trecho_id, atribuido_chave FROM ato_nome
     )'''
-    ceps = 'ceps_acervo_v1' if migrado else '(SELECT trecho_canonico_id AS trecho_id, cep FROM observacao_postal_v1)'
+    if versao >= 4:
+        nomes = 'nomes_acervo_v2'
+    ceps = 'ceps_acervo_v1' if versao >= 3 else '(SELECT trecho_canonico_id AS trecho_id, cep FROM observacao_postal_v1)'
     if not nome:
         candidatos = f'SELECT DISTINCT trecho_id, 4 AS peso FROM {ceps} WHERE cep = ?'
         parametros = [cep]
@@ -412,19 +440,23 @@ def consultar(db, termo, bairro, *, limite=None, deslocamento=0):
     if limite is not None:
         registros = registros[deslocamento:deslocamento + limite]
     resultados = []
-    migrado = db.execute('PRAGMA user_version').fetchone()[0] >= 3
+    versao = db.execute('PRAGMA user_version').fetchone()[0]
     for linha in registros:
         resultado = dict(linha)
         resultado.pop('bairro_chave')
         resultado.pop('peso')
         resultado['divergencia_postal'] = bool(resultado['divergencia_postal'])
         resultado['historico_nomes'] = atos(db, linha['trecho_id'])
+        resultado['nomes_historicos'] = [dict(nome) for nome in db.execute('''
+            SELECT nome, ano, fonte_id, fonte, url, pagina, pagina_correspondencia, nota
+            FROM nome_historico_v1 WHERE trecho_canonico_id = ? ORDER BY ano, nome, id
+        ''', (linha['trecho_id'],))] if versao >= 4 else []
         resultado['mudancas_cadastradas'] = [dict(mudanca) for mudanca in db.execute('''
             SELECT id, nome_anterior, nome_novo, vigencia_desde, situacao_cep, cep_anterior, cep_novo,
                    fonte, url_fonte, registrado_em
             FROM mudanca_local_v1 WHERE trecho_canonico_id = ?
             ORDER BY vigencia_desde IS NULL, vigencia_desde DESC, registrado_em DESC, id
-        ''', (linha['trecho_id'],))] if migrado else []
+        ''', (linha['trecho_id'],))] if versao >= 3 else []
         resultado['observacoes_postais'] = [dict(o) for o in db.execute('''
             SELECT o.id, o.fonte_id, f.referencia, o.pagina, o.linha, o.nome_original,
                 o.bairro_original, o.cep_original, o.cep, f.url, f.arquivo

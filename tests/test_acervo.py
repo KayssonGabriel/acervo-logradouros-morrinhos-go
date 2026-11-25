@@ -61,6 +61,22 @@ class TestAcervo(unittest.TestCase):
         self.assertEqual(resultado['conferencia_correios'], 'pendente')
         self.assertEqual(resultado['historico_nomes'][0]['fonte_id'], 'lei-3119-2015')
 
+    def test_nome_historico_textual_encontra_o_trecho_sem_virar_ato_ou_conferencia(self):
+        trecho, = self.consultar('Rua do Comércio')
+        self.assertEqual((trecho['bairro'], trecho['cep_publicado']), ('Centro', '75650-114'))
+        self.assertEqual(trecho['nome_postal_publicado'], 'Rua Barão do Rio Branco')
+        registro, = trecho['nomes_historicos']
+        self.assertEqual((registro['ano'], registro['pagina'], registro['pagina_correspondencia']), (1896, 50, 42))
+        self.assertEqual(trecho['historico_nomes'], [])
+        self.assertEqual(trecho['conferencia_correios'], 'pendente')
+        self.assertEqual(self.consultar('Rua do Comércio, Jardim América, CEP 75650-306'), [])
+        for nome, cep in (('Rua Ganganelli', '75650-130'), ('Rua das Flores', '75650-072'),
+                          ('Praça da Fonte Luminosa', '75650-144')):
+            with self.subTest(nome=nome):
+                resultado, = self.consultar(nome)
+                self.assertEqual((resultado['bairro'], resultado['cep_publicado']), ('Centro', cep))
+                self.assertTrue(any(registro['nome'] == nome for registro in resultado['nomes_historicos']))
+
     def test_primeiro_uso_copia_base_inicial_sem_sobrescrever_a_base_local(self):
         with tempfile.TemporaryDirectory() as pasta:
             local = Path(pasta) / 'morrinhos.sqlite3'
@@ -77,7 +93,7 @@ class TestAcervo(unittest.TestCase):
                 self.assertEqual(db.execute('SELECT count(*) FROM mudanca_local').fetchone()[0], 0)
                 self.assertEqual(db.execute('SELECT count(*) FROM conferencia_correios').fetchone()[0], 0)
                 db.execute('ATTACH DATABASE ? AS reimportado', (str(self.banco),))
-                for tabela in ('fonte', 'bairro', 'trecho', 'observacao_postal', 'ato_nome', 'equivalencia_trecho'):
+                for tabela in ('fonte', 'bairro', 'trecho', 'observacao_postal', 'ato_nome', 'equivalencia_trecho', 'nome_historico'):
                     with self.subTest(tabela=tabela):
                         self.assertFalse(db.execute(f'SELECT * FROM main.{tabela} EXCEPT SELECT * FROM reimportado.{tabela}').fetchall())
                         self.assertFalse(db.execute(f'SELECT * FROM reimportado.{tabela} EXCEPT SELECT * FROM main.{tabela}').fetchall())

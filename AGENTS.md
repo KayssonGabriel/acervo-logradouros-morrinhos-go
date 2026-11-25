@@ -32,6 +32,8 @@ Use `--pistas` para abrir a comparação detalhada das listas integrais e dos bo
 
 Para pesquisar todos os nomes cadastrados em um conjunto de PDFs, execute `varrer_historico.py` conforme o [roteiro histórico](PESQUISA.md#varredura-histórica-por-nome-de-logradouro). Confira a página e o contexto de cada ocorrência. O relatório conserva os homônimos e registra quando faltou um PDF ou texto extraível. Ao acrescentar uma fonte, indique URL, hash da edição, data, páginas e jurisdição no [catálogo histórico](dados/pesquisa-historica.json).
 
+Para tornar um nome antigo ou popular pesquisável pela interface, registre em `ocorrencias_conferidas` a página de uso do nome e a `pagina_correspondencia` que identifica o mesmo trecho. Preencha `vinculo_postal` com nome, bairro e CEP exatos da observação e explique o alcance em `nota_vinculo`. Pesquise prédios públicos, praças, esquinas e plantas para localizar o trecho. Deixe o vínculo em aberto enquanto a evidência for insuficiente.
+
 ## Validar a busca e a interface
 
 Teste no CLI e no navegador. Preserve o ID do trecho, a procedência e todas as correspondências do mesmo nível de evidência. A busca flexível amplia candidatos. Ela nunca cria vínculos históricos por conta própria.

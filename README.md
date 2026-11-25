@@ -25,6 +25,7 @@ Se o comando `python` estiver indisponível, tente `py -3` no Windows ou `python
 | Digite | O que aparece |
 | --- | --- |
 | `Rua 03, Jardim América` | Rua Juvercina Cipriana da Silva, CEP `75650-281`, com a lei que documenta o nome. |
+| `Rua do Comércio` | Rua Barão do Rio Branco, Centro, CEP `75650-114`, com a fonte histórica que registra a correspondência. |
 | `Rua 216` | Dois resultados, em Setor Aeroporto e Vila Santos Dumont. Selecione o bairro do endereço. |
 | `Rua 04, Jardim Santa Terezinha I` | O histórico mostra a sequência Rua 04 → Rua Eurípedes Mariano Borges → Rua Eurípedes Mariano da Silva. A lista postal de dezembro de 2025 usa a denominação Borges para o CEP `75654-596`. |
 | `75654-069` | Rua 214 e Rua João Ferreira de Macedo, com as respectivas fontes. A equivalência entre os registros está em pesquisa. |
@@ -39,6 +40,7 @@ A busca aceita abreviações como `R.` e `Av.`, grafias sem acento e endereços 
 | **Nome municipal documentado** | Denominação encontrada em ato municipal, com o artigo e a data disponíveis no histórico. |
 | **CEP publicado** | CEP observado numa lista postal, com a referência da edição. A data da lista indica quando a informação foi publicada. |
 | **Conferência nos Correios** | Resultado de uma consulta direta registrada para a observação postal. A base inicial tem as conferências pendentes. |
+| **Fonte histórica** | Registro do nome antigo ou popular em pesquisa documental. A página de correspondência identifica o trecho. |
 | **Mudanças cadastradas** | Histórico lançado por quem usa a cópia local, com a vigência quando conhecida e a referência informada. |
 
 ## Cadastrar uma mudança na interface
@@ -92,7 +94,7 @@ Para registrar uma conferência oficial, consulte a via no Busca CEP e use `pyth
 | Saída | Uso |
 | --- | --- |
 | **SQLite `consulta_v1`** | Visão de leitura com os dados publicados e seu estado. Use `trecho_id` para referenciar a correspondência e `equivalencia_trecho` para consultar vínculos documentados. |
-| **JSON do comando `consultar`** | Inclui `versao`, `criterio` e `resultados`. Cada resultado pode trazer `historico_nomes`, `observacoes_postais` e `mudancas_cadastradas`. |
+| **JSON do comando `consultar`** | Inclui `versao`, `criterio` e `resultados`. Cada resultado pode trazer `historico_nomes`, `nomes_historicos`, `observacoes_postais` e `mudancas_cadastradas`. |
 | **CSV** | Exportação das informações de consulta para planilha, com nomes anteriores documentados nos atos importados. |
 
 `referencia_postal` é a data ou o mês da fonte. `abrangencia_fonte_postal` identifica listas integrais e boletins complementares. `divergencia_postal` sinaliza diferenças entre observações, inclusive entre edições. Confira as datas e páginas antes de interpretar uma divergência como conflito na lista mais recente. `conferencia_correios` se refere à observação postal indicada no resultado. [Plano de integração](PLANO.md#4-integração-com-o-cartório)

@@ -41,20 +41,43 @@
       "titulo": "Requalificação urbana da Rua Barão do Rio Branco no Centro de Morrinhos, de Vitória Alves dos Santos",
       "publicacao": "2022", "tipo": "estudo histórico e arquitetônico com fotografias", "paginas": [30, 59],
       "sha256": "67f27201249ba10ccc1f77c219512b94e3cf72809bb17a4e87b55dbfc7df733b"
+    },
+    {
+      "id": "cinema-2403-2008", "arquivo": "cinema-2403-2008.pdf",
+      "url": "https://morrinhos.go.gov.br/wp-content/uploads/2023/11/2.403-Cine-Hollywood-Permuta-de-imveis.-2.403.pdf",
+      "titulo": "Lei nº 2.403/2008 e exposição de motivos sobre o Cine Teatro Hollywood",
+      "publicacao": "2008-02-28", "tipo": "ato municipal sobre imóvel de referência", "paginas": [2, 3],
+      "sha256": "eb71c51580215d00e304ce8a9f046f8a371cdd7721eee4659bf537a44765ab50"
+    },
+    {
+      "id": "plano-saude-2022-2025", "arquivo": "plano-saude-2022-2025.pdf",
+      "url": "https://morrinhos.go.gov.br/wp-content/uploads/2024/04/PLANO-MUNICIPAL-DE-SAUDE-MORRINHOS-2022-a-2025.pdf",
+      "titulo": "Plano Municipal de Saúde de Morrinhos 2022–2025, seção de contexto municipal",
+      "publicacao": "2022–2025", "tipo": "plano municipal", "paginas": [20, 20],
+      "sha256": "99d767304cb5f153a850f117e769889ea324b633adfa384b13b32bd442529ec6"
     }
   ],
   "ocorrencias_conferidas": [
     {"id": "acude", "nome": "Rua do Açude", "localidade": "Núcleo urbano histórico", "ano": 1896, "fonte_id": "fonseca-1997", "pagina": 50},
     {"id": "dr-antero", "nome": "Rua do Dr. Antero", "localidade": "Núcleo urbano histórico", "ano": 1896, "fonte_id": "fonseca-1997", "pagina": 50},
     {"id": "boa-vista", "nome": "Rua Boa Vista", "localidade": "Núcleo urbano histórico", "ano": 1896, "fonte_id": "fonseca-1997", "pagina": 50},
-    {"id": "ganganelli", "nome": "Rua Ganganelli", "localidade": "Núcleo urbano histórico", "ano": 1896, "fonte_id": "fonseca-1997", "pagina": 50, "nome_correspondente": "Rua Minas Gerais", "pagina_correspondencia": 80},
-    {"id": "flores", "nome": "Rua das Flores", "localidade": "Núcleo urbano histórico", "ano": 1896, "fonte_id": "fonseca-1997", "pagina": 50, "nome_correspondente": "Avenida Coronel Pedro Nunes", "pagina_correspondencia": 94},
+    {"id": "ganganelli", "nome": "Rua Ganganelli", "localidade": "Núcleo urbano histórico", "ano": 1896, "fonte_id": "fonseca-1997", "pagina": 50, "nome_correspondente": "Rua Minas Gerais", "pagina_correspondencia": 80,
+     "vinculo_postal": {"nome": "Rua Minas Gerais", "bairro": "Centro", "cep": "75650-130"},
+     "nota_vinculo": "Correspondência identificada no local da antiga escola. A lei e a data da mudança ainda estão em pesquisa."},
+    {"id": "flores", "nome": "Rua das Flores", "localidade": "Núcleo urbano histórico", "ano": 1896, "fonte_id": "fonseca-1997", "pagina": 50, "nome_correspondente": "Avenida Coronel Pedro Nunes", "pagina_correspondencia": 94,
+     "vinculo_postal": {"nome": "Avenida Coronel Pedro Nunes", "bairro": "Centro", "cep": "75650-072"},
+     "nota_vinculo": "Correspondência identificada no trecho do sobrado histórico citado pela fonte. O ato de denominação está em pesquisa."},
     {"id": "matriz", "nome": "Rua da Matriz", "localidade": "Núcleo urbano histórico", "ano": 1896, "fonte_id": "fonseca-1997", "pagina": 50},
     {"id": "sao-paulo", "nome": "Rua de São Paulo", "localidade": "Núcleo urbano histórico", "ano": 1896, "fonte_id": "fonseca-1997", "pagina": 50},
     {"id": "brejo", "nome": "Rua do Brejo", "localidade": "Núcleo urbano histórico", "ano": 1896, "fonte_id": "fonseca-1997", "pagina": 50},
     {"id": "liberdade", "nome": "Largo da Liberdade", "localidade": "Núcleo urbano histórico", "ano": 1896, "fonte_id": "fonseca-1997", "pagina": 50},
-    {"id": "comercio", "nome": "Rua do Comércio", "localidade": "Núcleo urbano histórico", "ano": 1896, "fonte_id": "fonseca-1997", "pagina": 50, "nome_correspondente": "Rua Barão do Rio Branco", "pagina_correspondencia": 42},
+    {"id": "comercio", "nome": "Rua do Comércio", "localidade": "Núcleo urbano histórico", "ano": 1896, "fonte_id": "fonseca-1997", "pagina": 50, "nome_correspondente": "Rua Barão do Rio Branco", "pagina_correspondencia": 42,
+     "vinculo_postal": {"nome": "Rua Barão do Rio Branco", "bairro": "Centro", "cep": "75650-114"},
+     "nota_vinculo": "Correspondência no núcleo urbano antigo. O CEP é o do trecho do Centro nas listas postais. A lei e a data da mudança ainda estão em pesquisa."},
     {"id": "direita", "nome": "Rua Direita", "localidade": "Núcleo urbano histórico", "ano": 1896, "fonte_id": "fonseca-1997", "pagina": 50},
-    {"id": "rosario", "nome": "Largo do Rosário", "localidade": "Núcleo urbano histórico", "fonte_id": "meira-2017", "pagina": 100, "nome_correspondente": "Praça Rui Barbosa", "pagina_correspondencia": 100, "nota": "O relato retrospectivo também registra Praça da Liberdade. A data de adoção dos nomes e a correspondência com a grafia Largo da Liberdade da lista de 1896 estão a confirmar."}
+    {"id": "rosario", "nome": "Largo do Rosário", "localidade": "Núcleo urbano histórico", "fonte_id": "meira-2017", "pagina": 100, "nome_correspondente": "Praça Rui Barbosa", "pagina_correspondencia": 100, "nota": "O relato retrospectivo também registra Praça da Liberdade. A data de adoção dos nomes e a correspondência com a grafia Largo da Liberdade da lista de 1896 estão a confirmar."},
+    {"id": "fonte-luminosa", "nome": "Praça da Fonte Luminosa", "localidade": "Centro", "fonte_id": "fonseca-1997", "pagina": 38, "nome_correspondente": "Praça Doutor Raul Nunes", "pagina_correspondencia": 38,
+     "vinculo_postal": {"nome": "Praça Doutor Raul Nunes", "bairro": "Centro", "cep": "75650-144"},
+     "nota_vinculo": "Nome popular da Praça Doutor Raul Nunes. A fonte localiza ali um antigo cemitério. A Praça da Matriz é outro logradouro."}
   ]
 }

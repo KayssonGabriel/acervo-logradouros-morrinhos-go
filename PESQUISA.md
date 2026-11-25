@@ -40,7 +40,7 @@ No Setor Aeroporto, o CNEFE 2010 traz `RUA 214 OU JOAO F MACEDO` e `AVENIDA 100 
 
 ## Varredura histórica por nome de logradouro
 
-O [catálogo histórico](dados/pesquisa-historica.json) indica os PDFs, as páginas, o hash SHA-256 e as ocorrências conferidas. Baixe os seis PDFs na mesma pasta, com os nomes do catálogo. O seguinte comando lê os nomes postais de todas as edições, os nomes dos atos municipais e os nomes históricos catalogados. Com os ZIPs, inclui também os pares de via nomeada e localidade dos dois censos, com as alternativas registradas sob `OU`.
+O [catálogo histórico](dados/pesquisa-historica.json) indica os PDFs, as páginas, o hash SHA-256 e as ocorrências conferidas. Baixe os PDFs na mesma pasta, com os nomes do catálogo. O seguinte comando lê os nomes postais de todas as edições, os nomes dos atos municipais e os nomes históricos catalogados. Com os ZIPs, inclui também os pares de via nomeada e localidade dos dois censos, com as alternativas registradas sob `OU`.
 
 ```powershell
 python -X utf8 varrer_historico.py --pasta-fontes CAMINHO_DOS_PDFS --cnefe-2010-zip CAMINHO_2010.zip --cnefe-zip CAMINHO_2022.zip |
@@ -91,3 +91,19 @@ Foram pesquisadas **216 páginas com texto** em seis fontes. Uma página no inte
 | Ocorrências históricas conferidas e catalogadas | 12 | 12 |
 
 O resultado cobre os nomes dessas listas e os intervalos de páginas documentados. A revisão individual das coincidências, das fontes físicas e dos períodos sem documentos digitalizados continua em aberto. Nenhum CEP foi conferido diretamente nos Correios nesta rodada.
+
+## Cruzamento por prédios públicos e praças
+
+Use um imóvel identificável para cruzar o endereço em atos de compra, permuta ou tombamento com mapas, fotos e listas postais. Busque pelo nome do equipamento, do homenageado e pela esquina. Os documentos da obra ou do imóvel ajudam a delimitar a via em uma época. A lei que mudou o nome exige busca própria.
+
+| Fonte | O que acrescentou |
+| --- | --- |
+| [Lei nº 2.403/2008 e exposição de motivos, p. 2–3](https://morrinhos.go.gov.br/wp-content/uploads/2023/11/2.403-Cine-Hollywood-Permuta-de-imveis.-2.403.pdf#page=2) | O Cine Teatro Hollywood localiza a Rua Barão do Rio Branco no Centro. A dissertação da UFG identifica esse trecho com a Rua do Comércio. [Fonseca, p. 42](https://files.cercomp.ufg.br/weby/up/113/o/FONSECA__Maria_L_cia._1997.pdf#page=42) |
+| [Índice de processos do IPHAN](https://portal.iphan.gov.br/uploads/ckfinder/arquivos/Goias_bens_tombados_novembro_2017.pdf) | O processo `1665`, aberto em 2012, referencia um imóvel na Avenida Coronel Pedro Nunes em Morrinhos. O índice serve para localizar o processo. Falta consultar o inteiro teor para pesquisar nomes mais antigos do trecho. |
+| [Plano Municipal de Saúde 2022–2025, p. 20](https://morrinhos.go.gov.br/wp-content/uploads/2024/04/PLANO-MUNICIPAL-DE-SAUDE-MORRINHOS-2022-a-2025.pdf#page=20) e notícias municipais de obras | O plano registra os nomes oficiais e populares de praças. As notícias podem confirmar que a obra e os dois nomes se referem ao mesmo lugar. |
+
+O cruzamento de fontes históricas e postais tornou **Rua do Comércio**, **Rua Ganganelli**, **Rua das Flores** e **Praça da Fonte Luminosa** pesquisáveis no trecho correspondente do **Centro**. A tela mostra a página da evidência histórica e o CEP da lista postal. A data do uso documentado indica quando a fonte registra o nome. A vigência e o ato municipal de denominação têm evidências próprias. [Vínculos e páginas no catálogo](dados/pesquisa-historica.json)
+
+Três praças têm correspondência de nomes em publicações municipais e seguem com CEP a localizar. A **Praça do Mercado** é a Praça Monte Castelo. A **Praça da Rodoviária** é a Praça Rui Barbosa. A **Praça da Biblioteca** é a Praça Padre Primo, grafada `Scussolino` e `Escussolino` em diferentes páginas municipais. Preserve as grafias e confira os limites em planta antes de associar uma linha postal. [Praça Monte Castelo](https://morrinhos.go.gov.br/praca-monte-castelo/) · [Praça Rui Barbosa](https://morrinhos.go.gov.br/prefeitura-revitaliza-praca-da-rodoviaria-e-populacao-ganha-mais-opcao-de-lazer/) · [Praça Padre Primo Scussolino](https://morrinhos.go.gov.br/praca-padre-primo-scussolino/) · [Grafia Escussolino](https://morrinhos.go.gov.br/prefeitura-de-morrinhos-entrega-revitalizacao-da-praca-padre-primo-escussolino-em-tarde-cheia-de-emocao-por-homenagens-a-lavinia/)
+
+A nova execução pesquisou **219 páginas com texto em oito PDFs**, com termos para os **1.244 trechos** do acervo, os pares de via e localidade dos dois censos e os nomes documentados no catálogo. Para repetir a busca em um clone já em uso, atualize o banco local com `python -X utf8 acervo.py importar` antes de rodar a varredura.

@@ -64,6 +64,9 @@ def resultados_publicos(db, params):
             {**{campo: ato[campo] for campo in CAMPOS_ATO}, 'url': url_publica(ato['url'])}
             for ato in trecho['historico_nomes']
         ]
+        resumo['nomes_historicos'] = [
+            {**nome, 'url': url_publica(nome['url'])} for nome in trecho['nomes_historicos']
+        ]
         resumo['observacoes_postais'] = [
             {**{campo: observacao[campo] for campo in CAMPOS_POSTAIS},
              'titulo': LISTAS.get(observacao['fonte_id'], 'Lista postal'),

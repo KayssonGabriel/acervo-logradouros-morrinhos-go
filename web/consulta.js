@@ -115,7 +115,9 @@ function exibirTrecho(trecho, botao, interacao) {
   porId('local-via').querySelector('span').textContent = [trecho.bairro, 'Morrinhos (GO)'].filter(Boolean).join(', ');
   porId('cep-via').textContent = trecho.cep_publicado || 'A confirmar';
   porId('referencia-via').textContent = dataFormatada(trecho.referencia_postal);
-  porId('historico-via').textContent = historicos[trecho.situacao_historico] || 'A confirmar';
+  const nomesHistoricos = trecho.nomes_historicos || [];
+  const historicoEmFonte = trecho.situacao_historico === 'historico_a_confirmar' && nomesHistoricos.length;
+  porId('historico-via').textContent = historicoEmFonte ? 'Nome em fonte histórica' : (historicos[trecho.situacao_historico] || 'A confirmar');
 
   const status = porId('status-postal');
   status.dataset.estado = trecho.conferencia_correios;
@@ -156,6 +158,12 @@ function exibirTrecho(trecho, botao, interacao) {
     [`Lei nº ${ato.numero} · Art. ${ato.artigo} · ${dataFormatada(ato.data_ato)}`,
       ato.bairro_no_ato, ato.nota], ato, 'Abrir lei',
   ));
+  for (const registro of nomesHistoricos) {
+    const referencia = ['Fonte histórica', registro.ano && `Uso registrado em ${registro.ano}`, `Registro do nome na p. ${registro.pagina}`];
+    if (registro.pagina_correspondencia !== registro.pagina) referencia.push(`Correspondência na p. ${registro.pagina_correspondencia}`);
+    nomes.push(documento(registro.nome, [referencia.filter(Boolean).join(' · '), registro.fonte, registro.nota],
+      {url: registro.url, pagina: registro.pagina_correspondencia}, 'Abrir fonte'));
+  }
   const fontes = [];
   const anteriores = [];
   for (const fonte of trecho.observacoes_postais) {
