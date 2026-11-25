@@ -31,17 +31,26 @@
       </div>
       <form id="busca" class="busca" role="search" aria-label="Busca de logradouros">
         <label for="termo">Nome da via ou CEP
-          <span class="controle com-icone"><svg aria-hidden="true"><use href="/icones.svg#buscar"></use></svg><input type="search" id="termo" name="q" maxlength="120" value="Rua 216" placeholder="Ex. Rua 03 ou 75650-281" required></span>
+          <span class="controle com-icone"><svg aria-hidden="true"><use href="/icones.svg#buscar"></use></svg><input type="search" id="termo" name="q" maxlength="120" placeholder="Ex. Rua 03 ou 75650-281" required></span>
         </label>
         <label for="bairro">Bairro
           <span class="controle"><select id="bairro" name="bairro"><option value="">Todos os bairros</option></select><svg aria-hidden="true"><use href="/icones.svg#baixo"></use></svg></span>
+        </label>
+        <label for="pendencia-cep">Pendência de CEP
+          <span class="controle"><select id="pendencia-cep" name="pendencia_cep">
+            <option value="">Todas as situações</option>
+            <option value="sem_cep_atual">Sem CEP atual nas fontes</option>
+            <option value="cadastro_a_confirmar">CEP a definir no cadastro</option>
+            <option value="correios_a_conferir">CEP publicado sem confirmação</option>
+          </select><svg aria-hidden="true"><use href="/icones.svg#baixo"></use></svg></span>
         </label>
         <button type="submit" class="primario">Buscar</button>
       </form>
       <div class="espaco-trabalho">
         <section aria-labelledby="titulo-resultados" class="resultados">
           <h2 id="titulo-resultados">Resultados</h2>
-          <p id="contador" role="status" aria-atomic="true">Buscando…</p>
+          <p id="contador" role="status" aria-atomic="true">Informe um nome, um CEP ou selecione uma pendência para começar.</p>
+          <p id="estado-mudanca" class="estado-mudanca" role="status"></p>
           <p id="aviso-consulta" class="aviso-consulta" hidden></p>
           <ol id="lista" class="lista-resultados"></ol>
           <nav id="paginacao" class="paginacao" aria-label="Páginas de resultados" hidden>
@@ -67,7 +76,6 @@
           <p id="trecho-via" class="nota" hidden></p>
           <div class="acoes-trecho">
             <button id="cadastrar-mudanca" type="button" class="secundario" hidden>Cadastrar mudança</button>
-            <p id="estado-mudanca" role="status"></p>
           </div>
           <section id="mudancas-via" class="mudancas-via" aria-labelledby="titulo-mudancas-via" hidden>
             <h3 id="titulo-mudancas-via">Mudanças cadastradas</h3>

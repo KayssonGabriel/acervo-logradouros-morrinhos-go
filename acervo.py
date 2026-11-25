@@ -22,6 +22,7 @@ RAIZ = Path(__file__).resolve().parent
 BANCO = RAIZ / 'morrinhos.sqlite3'
 BASE_INICIAL = RAIZ / 'dados' / 'base-inicial.sqlite3'
 CEP = r'[0-9]{5}-?[0-9]{3}'
+PENDENCIAS_CEP = ('sem_cep_atual', 'cadastro_a_confirmar', 'correios_a_conferir')
 LINHA_PADRAO = re.compile(rf'\s*(.+?)\s+({CEP})(?:\s+(.+?))?\s*')
 LINHA_NUMERADA = re.compile(rf'\s*(\d+)\s{{2,}}(.+?)\s{{2,}}(.+?)\s{{2,}}({CEP})\s*')
 
@@ -360,7 +361,7 @@ def registrar_mudanca(db, dados):
         return {'id': identificador, 'criado': cursor.rowcount == 1}
 
 
-def localizar(db, nome, bairro, cep, *, variantes=False):
+def localizar(db, nome, bairro, cep, *, variantes=False, pendencia_cep=None):
     bairros = variantes_bairro(bairro)
     versao = db.execute('PRAGMA user_version').fetchone()[0]
     nomes = 'nomes_acervo_v1' if versao >= 3 else '''(
@@ -371,7 +372,9 @@ def localizar(db, nome, bairro, cep, *, variantes=False):
     if versao >= 4:
         nomes = 'nomes_acervo_v2'
     ceps = 'ceps_acervo_v1' if versao >= 3 else '(SELECT trecho_canonico_id AS trecho_id, cep FROM observacao_postal_v1)'
-    if not nome:
+    if not nome and not cep:
+        candidatos, parametros = None, []
+    elif not nome:
         candidatos = f'SELECT DISTINCT trecho_id, 4 AS peso FROM {ceps} WHERE cep = ?'
         parametros = [cep]
     elif variantes:
@@ -389,6 +392,24 @@ def localizar(db, nome, bairro, cep, *, variantes=False):
                 WHERE (' ' || nome_chave || ' ') LIKE ? OR (' ' || nome_chave || ' ') LIKE ?
         '''
     filtros = []
+    ultimo_cadastro = ''
+    sem_cep_atual = "c.situacao_postal IN ('sem_cep_nas_fontes', 'publicado_lista_anterior')"
+    if pendencia_cep == 'sem_cep_atual':
+        filtros.append(sem_cep_atual)
+    elif pendencia_cep == 'correios_a_conferir':
+        filtros.append("""c.situacao_postal IN ('publicado_ultima_lista', 'publicado_lista_complementar')
+                            AND c.conferencia_correios <> 'confirmado'""")
+    elif pendencia_cep == 'cadastro_a_confirmar':
+        if versao < 3:
+            filtros.append(sem_cep_atual)
+        else:
+            ultimo_cadastro = '''LEFT JOIN (
+                SELECT v.trecho_canonico_id, v.situacao_cep, v.cep_novo,
+                       row_number() OVER (PARTITION BY v.trecho_canonico_id ORDER BY m.rowid DESC) AS ordem
+                FROM mudanca_local_v1 v JOIN mudanca_local m ON m.id = v.id
+            ) ultimo ON ultimo.trecho_canonico_id = c.trecho_id AND ultimo.ordem = 1'''
+            filtros.append(f'''(ultimo.situacao_cep = 'desconhecido' OR
+                               ({sem_cep_atual} AND (ultimo.cep_novo IS NULL OR ultimo.cep_novo = '75650-000')))''')
     if nome and cep:
         filtros.append(f'c.trecho_id IN (SELECT trecho_id FROM {ceps} WHERE cep = ?)')
         parametros.append(cep)
@@ -404,37 +425,43 @@ def localizar(db, nome, bairro, cep, *, variantes=False):
         parametros.extend(bairros * 3)
     db.create_function('normalizar', 1, chave, deterministic=True)
     restricoes = 'WHERE ' + ' AND '.join(filtros) if filtros else ''
+    peso = 'candidatos.peso' if candidatos else '4'
+    juncao = f'JOIN ({candidatos}) candidatos ON candidatos.trecho_id = c.trecho_id' if candidatos else ''
     return db.execute(f'''
-        SELECT c.*, candidatos.peso FROM consulta_v1 c
-        JOIN ({candidatos}) candidatos
-            ON candidatos.trecho_id = c.trecho_id
+        SELECT c.*, {peso} AS peso FROM consulta_v1 c
+        {juncao}
+        {ultimo_cadastro}
         {restricoes}
-        ORDER BY candidatos.peso DESC, referencia_postal DESC, bairro, nome_postal_publicado, trecho_id
+        ORDER BY peso DESC, referencia_postal DESC, bairro,
+                 coalesce(nome_postal_publicado, nome_municipal_documentado), trecho_id
     ''', parametros).fetchall()
 
 
-def consultar(db, termo, bairro, *, limite=None, deslocamento=0):
+def consultar(db, termo, bairro, *, limite=None, deslocamento=0, pendencia_cep=None):
+    if pendencia_cep and pendencia_cep not in PENDENCIAS_CEP:
+        raise ValueError('Filtro de pendência de CEP inválido.')
     entrada = interpretar(termo, bairro)
     if entrada.conflito:
         registros = []
     else:
-        if not entrada.nome and not entrada.cep:
-            raise ValueError('Informe um nome ou CEP para pesquisar.')
+        if not entrada.nome and not entrada.cep and (termo.strip() or not pendencia_cep):
+            raise ValueError('Informe um nome, um CEP ou selecione uma pendência.')
         nome, bairro = entrada.nome, entrada.bairro
-        registros = localizar(db, nome, bairro, entrada.cep)
+        registros = localizar(db, nome, bairro, entrada.cep, pendencia_cep=pendencia_cep)
         if not registros and nome:
             nomes_bairro = [linha[0] for linha in db.execute('SELECT nome FROM bairro UNION SELECT bairro_no_ato FROM ato_nome')]
             if entrada.cep and not bairro and any(nome in variantes_bairro(item) for item in nomes_bairro):
-                registros = localizar(db, '', nome, entrada.cep)
+                registros = localizar(db, '', nome, entrada.cep, pendencia_cep=pendencia_cep)
             nome_curto, sufixo = separar_bairro(nome, nomes_bairro)
             if not registros and sufixo and (not bairro or set(variantes_bairro(bairro)).intersection(variantes_bairro(sufixo))):
                 nome, bairro = nome_curto, bairro or sufixo
-                registros = localizar(db, nome, bairro, entrada.cep)
+                registros = localizar(db, nome, bairro, entrada.cep, pendencia_cep=pendencia_cep)
             if not registros:
-                registros = localizar(db, nome, bairro, entrada.cep, variantes=True)
+                registros = localizar(db, nome, bairro, entrada.cep, variantes=True, pendencia_cep=pendencia_cep)
                 if registros:
                     registros = [linha for linha in registros if linha['peso'] == registros[0]['peso']]
-    nomes_criterio = {1: 'aproximada', 2: 'prefixo', 3: 'termos', 4: 'texto' if entrada.nome else 'cep'}
+    criterio_exato = 'texto' if entrada.nome else ('cep' if entrada.cep else 'pendencias')
+    nomes_criterio = {1: 'aproximada', 2: 'prefixo', 3: 'termos', 4: criterio_exato}
     criterio = nomes_criterio[registros[0]['peso']] if registros else 'nenhuma'
     total = len(registros)
     if limite is not None:
@@ -556,8 +583,9 @@ def main():
     base_inicial = comandos.add_parser('gerar-base-inicial', help='Gera um banco novo apenas com as fontes públicas')
     base_inicial.add_argument('destino', type=Path)
     busca = comandos.add_parser('consultar', help='Pesquisa um nome ou CEP e devolve JSON')
-    busca.add_argument('termo')
+    busca.add_argument('termo', nargs='?', default='')
     busca.add_argument('--bairro')
+    busca.add_argument('--pendencia-cep', choices=PENDENCIAS_CEP)
     exportacao = comandos.add_parser('exportar', help='Grava um novo CSV para Excel')
     exportacao.add_argument('destino', type=Path)
     copia = comandos.add_parser('backup', help='Cria uma cópia SQLite consistente e verificada')
@@ -579,7 +607,7 @@ def main():
             if args.comando == 'importar':
                 resultado = importar(db)
             elif args.comando == 'consultar':
-                resultado = consultar(db, args.termo, args.bairro)
+                resultado = consultar(db, args.termo, args.bairro, pendencia_cep=args.pendencia_cep)
             elif args.comando == 'exportar':
                 resultado = exportar(db, args.destino)
             elif args.comando == 'backup':

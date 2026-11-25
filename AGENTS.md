@@ -48,5 +48,6 @@ Teste no CLI e no navegador. Preserve o ID do trecho, a procedência e todas as 
 | `75654-069` | Mantém visíveis Rua 214 e Rua João Ferreira de Macedo como registros distintos. |
 | `75650-000` sozinho e junto do nome de uma via | Sozinho é um CEP geral histórico. Com nome e bairro, funciona como contexto da busca. |
 | `Rua 03, Jardim América, CEP 75654-069` ou `CEP 75654-069, Morrinhos - CE` | A busca conserva as restrições informadas e evita apresentar uma via de outro contexto. |
+| Nome em branco, `Povoado de Marcelânia`, `CEP a definir no cadastro` | Lista a Rua Dona Etelvina Rosa de Jesus. Em uma cópia de teste, cadastrar um CEP específico retira o trecho dessa fila e o preserva em `Sem CEP atual nas fontes`. |
 
 Para outra IA revisar o projeto, peça que execute os testes, verifique os casos da tabela, leia os artigos dos PDFs que sustentam uma mudança e compare as contagens antes e depois. Peça uma lista de achados com arquivo, linha, fonte e passos de verificação, incluindo exemplos positivos e negativos. Para cada ponto pendente, peça a fonte necessária para aprofundar a verificação. Mantenha o banco de teste separado do banco de trabalho e examine os campos expostos pela API antes de integrar ao software do cartório.

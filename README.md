@@ -4,7 +4,7 @@
 
 Pesquise ruas pelo nome antigo, pelo nome atual ou pelo CEP. Veja o bairro, o trecho e os documentos que sustentam cada resultado. A consulta funciona no navegador do seu computador e já vem com uma base preenchida.
 
-[Começar](#começar) · [Exemplos de busca](#exemplos-de-busca) · [Cadastrar uma mudança](#cadastrar-uma-mudança-na-interface) · [Contribuir](#contribuir) · [Dados e fontes](#dados-e-fontes)
+[Começar](#começar) · [Exemplos de busca](#exemplos-de-busca) · [Pendências de CEP](#pendências-de-cep) · [Cadastrar uma mudança](#cadastrar-uma-mudança-na-interface) · [Contribuir](#contribuir) · [Dados e fontes](#dados-e-fontes)
 
 ## Começar
 
@@ -42,6 +42,18 @@ A busca aceita abreviações como `R.` e `Av.`, grafias sem acento e endereços 
 | **Conferência nos Correios** | Resultado de uma consulta direta registrada para a observação postal. A base inicial tem as conferências pendentes. |
 | **Fonte histórica** | Registro do nome antigo ou popular em pesquisa documental. A página de correspondência identifica o trecho. |
 | **Mudanças cadastradas** | Histórico lançado por quem usa a cópia local, com a vigência quando conhecida e a referência informada. |
+
+## Pendências de CEP
+
+Na consulta, selecione uma **Pendência de CEP**, escolha o **Bairro** se quiser restringir a lista e clique em **Buscar**. Deixe o campo de nome vazio para listar todas as correspondências da seleção.
+
+| Filtro | O que aparece |
+| --- | --- |
+| **Sem CEP atual nas fontes** | Trechos sem CEP localizado ou encontrados somente em edições postais anteriores. |
+| **CEP a definir no cadastro** | Trechos sem CEP atual nas fontes e sem CEP específico lançado pela equipe, ou cujo último lançamento marcou **Ainda a confirmar**. Um novo lançamento com CEP específico retira o trecho desta fila. |
+| **CEP publicado sem confirmação** | Trechos com CEP na lista atual ou complementar, cuja conferência direta nos Correios ainda está pendente ou precisa de revisão. |
+
+No modo `--edicao`, abra um resultado e clique em **Cadastrar mudança** para registrar o novo CEP com sua fonte. O cadastro local fica no histórico. A edição postal e a conferência nos Correios têm seus próprios critérios.
 
 ## Cadastrar uma mudança na interface
 

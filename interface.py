@@ -49,14 +49,15 @@ def url_publica(url):
 def resultados_publicos(db, params):
     termo = params.get('q', [''])[0].strip()
     bairro = params.get('bairro', [''])[0].strip()
+    pendencia_cep = params.get('pendencia_cep', [''])[0]
     pagina = params.get('pagina', ['1'])[0]
-    if not termo or len(termo) > 120 or len(bairro) > 120:
+    if len(termo) > 120 or len(bairro) > 120:
         raise ValueError('Informe um nome ou CEP de até 120 caracteres.')
     if not re.fullmatch(r'[1-9][0-9]{0,3}', pagina):
         raise ValueError('Página de resultados inválida.')
     pagina = int(pagina)
     dados = consultar(db, termo, bairro or None, limite=TAMANHO_PAGINA,
-                      deslocamento=(pagina - 1) * TAMANHO_PAGINA)
+                      deslocamento=(pagina - 1) * TAMANHO_PAGINA, pendencia_cep=pendencia_cep or None)
     resultados = []
     for trecho in dados['resultados']:
         resumo = {campo: trecho[campo] for campo in CAMPOS_CONSULTA}

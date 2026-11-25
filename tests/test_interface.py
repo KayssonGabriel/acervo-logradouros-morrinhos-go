@@ -51,6 +51,25 @@ class TestInterface(unittest.TestCase):
         self.assertGreater(primeira['total'], len(primeira['resultados']))
         self.assertNotEqual(primeira['resultados'][0]['trecho_id'], segunda['resultados'][0]['trecho_id'])
 
+    def test_filtros_de_pendencia_funcionam_sem_nome_e_com_bairro(self):
+        sem_cep = self.ler_json('/api/consulta', pendencia_cep='sem_cep_atual', bairro='Povoado de Marcelânia')
+        self.assertEqual(sem_cep['criterio'], 'pendencias')
+        self.assertTrue(any(item['nome_municipal_documentado'] == 'Rua Dona Etelvina Rosa de Jesus'
+                            and item['cep_publicado'] is None for item in sem_cep['resultados']))
+        fila = self.ler_json('/api/consulta', pendencia_cep='cadastro_a_confirmar', bairro='Povoado de Marcelânia')
+        self.assertEqual(fila['total'], sem_cep['total'])
+        correios = self.ler_json('/api/consulta', q='Rua 216', bairro='Vila Santos Dumont',
+                                  pendencia_cep='correios_a_conferir')
+        trecho, = correios['resultados']
+        self.assertEqual(trecho['cep_publicado'], '75654-216')
+        self.assertEqual(trecho['conferencia_correios'], 'pendente')
+        geral = self.ler_json('/api/consulta', q='75650-000', pendencia_cep='correios_a_conferir')
+        self.assertEqual(geral['total'], 0)
+        with self.assertRaises(HTTPError) as erro:
+            self.ler_json('/api/consulta', pendencia_cep='invalido')
+        erro.exception.close()
+        self.assertEqual(erro.exception.code, 400)
+
     def test_api_distingue_sugestao_de_correspondencia_documentada(self):
         dados = self.ler_json('/api/consulta', q='Rua Juvercna', bairro='Jardim América')
         self.assertEqual(dados['criterio'], 'aproximada')
@@ -112,6 +131,18 @@ class TestInterface(unittest.TestCase):
         antigo, = self.ler_json('/api/consulta', q='Rua de Teste Antiga')['resultados']
         self.assertEqual([m['vigencia_desde'] for m in antigo['mudancas_cadastradas']], ['2026-11-20', '1980-01-01'])
         self.assertEqual(antigo['mudancas_cadastradas'][1]['cep_novo'], '75654-216')
+        filtros = {'q': 'Rua 216', 'pendencia_cep': 'cadastro_a_confirmar', 'bairro': 'Vila Santos Dumont'}
+        pendente = {**dados, 'nome_novo': 'Rua de Teste com CEP Pendente',
+                    'situacao_cep': 'desconhecido', 'cep_novo': ''}
+        resolvido = {**pendente, 'situacao_cep': 'alterado', 'cep_novo': '75659-987'}
+        for cadastro, total in ((pendente, 1), (resolvido, 0)):
+            tentativa = Request(self.url + '/api/mudancas', data=json.dumps(cadastro).encode(), headers=cabecalhos)
+            with urlopen(tentativa, timeout=5) as resposta:
+                self.assertEqual(resposta.status, 201)
+            fila = self.ler_json('/api/consulta', **filtros)
+            self.assertEqual(fila['total'], total)
+            if total:
+                self.assertEqual(fila['resultados'][0]['trecho_id'], trecho['trecho_id'])
         requisicao.add_header('Origin', 'https://outra-origem.example')
         with self.assertRaises(HTTPError) as erro:
             urlopen(requisicao, timeout=5)

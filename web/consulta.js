@@ -7,6 +7,8 @@ const detalhe = porId('detalhe');
 const contador = porId('contador');
 const mensagem = porId('mensagem');
 const avisoConsulta = porId('aviso-consulta');
+const filtroPendencia = porId('pendencia-cep');
+const campoBusca = porId('termo');
 const abas = [porId('tab-nomes'), porId('tab-ceps')];
 const paginaAnterior = porId('anterior');
 const paginaProxima = porId('proxima');
@@ -31,6 +33,11 @@ const situacoes = {
 const historicos = {
   historico_a_confirmar: 'A confirmar', alteracao_documentada: 'Mudança documentada',
   denominacao_documentada: 'Nome documentado', cep_geral_historico: 'CEP geral histórico',
+};
+const pendenciasCep = {
+  sem_cep_atual: 'Inclui trechos sem CEP localizado e trechos com CEP somente em edições anteriores.',
+  cadastro_a_confirmar: 'O trecho está sem CEP atual e sem CEP específico lançado, ou o último cadastro deixou o CEP a confirmar.',
+  correios_a_conferir: 'O CEP consta da lista atual ou complementar. A conferência nos Correios está pendente ou precisa de revisão.',
 };
 
 function elemento(tag, texto, classe) {
@@ -199,6 +206,7 @@ async function buscar(novaPagina = 1, moverFoco = false, selecionarId = null) {
   mensagem.hidden = true;
   avisoConsulta.hidden = true;
   detalhe.hidden = true;
+  porId('estado-mudanca').textContent = '';
   lista.replaceChildren();
   contador.textContent = 'Buscando…';
   lista.setAttribute('aria-busy', 'true');
@@ -211,16 +219,23 @@ async function buscar(novaPagina = 1, moverFoco = false, selecionarId = null) {
     if (!resposta.ok) throw new Error(dados.erro || 'Não foi possível consultar a base.');
     edicaoHabilitada = dados.edicao_habilitada;
     pagina = dados.pagina;
+    if (dados.total && !dados.resultados.length && novaPagina > 1) {
+      return buscar(Math.ceil(dados.total / dados.por_pagina), moverFoco, selecionarId);
+    }
     const aproximada = dados.criterio === 'aproximada';
     const rotulo = aproximada ? (dados.total === 1 ? 'sugestão' : 'sugestões') : (dados.total === 1 ? 'encontrado' : 'encontrados');
     contador.textContent = `${formatoNumero.format(dados.total)} ${rotulo}`;
-    if (dados.cep_geral_informado) {
-      avisoConsulta.textContent = 'O CEP geral antigo foi usado como contexto. A busca considera o nome da via e o bairro.';
+    const avisos = [pendenciasCep[filtro.pendencia_cep]];
+    if (dados.cep_geral_informado) avisos.push('O CEP geral antigo foi usado como contexto. A busca considera o nome da via e o bairro.');
+    if (avisos.some(Boolean)) {
+      avisoConsulta.textContent = avisos.filter(Boolean).join(' ');
       avisoConsulta.hidden = false;
     }
     if (!dados.resultados.length) {
       if (dados.conflito_entrada) {
         mostrarMensagem('Dados da busca incompatíveis', 'Confira os CEPs, o bairro e a localidade informados. O acervo é de Morrinhos (GO).');
+      } else if (filtro.pendencia_cep) {
+        mostrarMensagem('Nenhuma pendência com esses filtros', 'Altere o bairro ou remova o nome para ampliar a lista.');
       } else {
         mostrarMensagem('Nenhuma correspondência encontrada', 'Confira o bairro ou tente buscar por parte do nome ou pelo CEP.');
       }
@@ -234,7 +249,9 @@ async function buscar(novaPagina = 1, moverFoco = false, selecionarId = null) {
       botao.type = 'button';
       botao.setAttribute('aria-pressed', 'false');
       botao.setAttribute('aria-controls', 'detalhe');
-      rotulo.append(elemento('strong', nome(trecho)), elemento('small', [trecho.bairro, trecho.cep_publicado || 'CEP a confirmar'].filter(Boolean).join(' · ')));
+      const cep = trecho.cep_publicado || 'CEP a confirmar';
+      const aviso = filtro.pendencia_cep === 'sem_cep_atual' && trecho.cep_publicado ? 'Lista anterior' : null;
+      rotulo.append(elemento('strong', nome(trecho)), elemento('small', [trecho.bairro, cep, aviso].filter(Boolean).join(' · ')));
       botao.append(icone('pin'), rotulo, icone('direita'));
       botao.addEventListener('click', () => exibirTrecho(trecho, botao, true));
       if (trecho.trecho_id === selecionarId) selecionado = {trecho, botao};
@@ -265,10 +282,15 @@ async function buscar(novaPagina = 1, moverFoco = false, selecionarId = null) {
 }
 
 function enviarBusca() {
-  filtro = {q: porId('termo').value.trim(), bairro: porId('bairro').value};
-  if (filtro.q) buscar();
+  filtro = {q: campoBusca.value.trim(), bairro: porId('bairro').value, pendencia_cep: filtroPendencia.value};
+  if (filtro.q || filtro.pendencia_cep) buscar();
 }
 
+function atualizarObrigatoriedadeBusca() {
+  campoBusca.required = !filtroPendencia.value;
+}
+
+filtroPendencia.addEventListener('change', atualizarObrigatoriedadeBusca);
 formulario.addEventListener('submit', (evento) => {
   evento.preventDefault();
   enviarBusca();
@@ -318,7 +340,8 @@ formMudanca.addEventListener('submit', async (evento) => {
     dialogoMudanca.close();
     await buscar(pagina, false, trechoId);
     porId('estado-mudanca').textContent = resultado.criado ? 'Mudança cadastrada.' : 'Esta mudança já estava cadastrada.';
-    if (!detalhe.hidden) porId('nome-via').focus();
+    if (!detalhe.hidden && trechoSelecionado.trecho_id === trechoId) porId('nome-via').focus();
+    else filtroPendencia.focus();
   } catch (falha) {
     erro.textContent = falha instanceof TypeError ? 'Não foi possível conectar ao acervo local.' : falha.message;
     erro.hidden = false;
@@ -375,4 +398,5 @@ function navegar(focar = false) {
 window.addEventListener('hashchange', () => navegar(true));
 navegar();
 bairrosDisponiveis();
+atualizarObrigatoriedadeBusca();
 enviarBusca();
