@@ -19,7 +19,9 @@ Os 13 CEPs municipais não localizados compreendem os 12 casos de Vila Santos Du
 
 ## Fichas históricas e trechos sem CEP vinculado
 
-Restam 121 fichas com publicação somente anterior e 46 trechos legislativos sem CEP identificado. Das 121 fichas anteriores, 104 foram confrontadas com o endereço atual do mesmo CEP, cinco tiveram consulta direta sem resultado e 12 ainda exigem busca individual. Os 46 trechos legislativos precisam de correspondência documental com endereço postal ou de confirmação de que o logradouro está sem CEP específico. As tabelas abaixo registram os candidatos disponíveis.
+Restam 121 fichas com publicação somente anterior e 46 trechos legislativos sem CEP identificado. Das 121 fichas anteriores, 104 foram confrontadas com o endereço atual do mesmo CEP, três tiveram outro CEP retornado na consulta direta, 13 tiveram consulta direta sem resultado e uma foi confirmada como CEP de localidade. Nenhuma das 121 fichas aguarda consulta individual. Os 46 trechos legislativos precisam de correspondência documental com endereço postal ou de confirmação de que o logradouro está sem CEP específico. As tabelas abaixo registram os candidatos disponíveis.
+
+Em 25/11/2026, novas tentativas de acesso ao Busca CEP terminaram com a conexão encerrada antes de o formulário abrir. Como conferência complementar, o ViaCEP associou o CEP 75659-100 à localidade de Rancho Alegre, em Morrinhos/GO, com o campo de logradouro vazio. O ViaCEP não encontrou os CEPs 75650-336, 75650-338, 75650-344, 75650-416, 75650-500, 75652-342, 75652-346 e 75654-068 na sua própria base. Os retornos dessa fonte são pistas de pesquisa. Em nova consulta direta, os Correios retornaram outros CEPs para três códigos de Vila Nova. Os CEPs retornados já constam da base em Vila Nova II. As observações das listas antigas foram preservadas com o retorno oficial registrado. A Rua 6 do JK teve resultado “Dados não encontrado”. [Busca CEP dos Correios](https://buscacepinter.correios.com.br/app/endereco/index.php) · [Retorno do ViaCEP para Rancho Alegre](https://viacep.com.br/ws/75659100/json/)
 
 | Nome da ficha | Bairro | CEP | Conferência | Candidatos ou evidência necessária |
 | --- | --- | --- | --- | --- |
@@ -41,12 +43,12 @@ Restam 121 fichas com publicação somente anterior e 46 trechos legislativos se
 | Avenida dos Trabalhadores | Distrito Agroindustrial de Morrinhos | 75654-740 | Endereço atual diferente | Avenida Angelo Auricchio, Distrito Agroindustrial de Morrinhos, 75654-740 — conferir ato, planta e limites antes de vincular os trechos |
 | Avenida Engenheiro Flávio Cascão | Setor Oeste | 75650-004 | Endereço atual diferente | Avenida Engenheiro Flávio Cascão, Vila Nunes, 75650-004 — conferir ato, planta e limites antes de vincular os trechos |
 | Avenida Firmo Antônio de Freitas | Desmembramento Doutor Adedimas | 75652-324 | Endereço atual diferente | Avenida Firmo Antônio de Freitas, Setor Cordeiro, 75652-324 — conferir ato, planta e limites antes de vincular os trechos |
-| Avenida Firmo Antônio de Freitas | Setor Carmem Lúcia | 75652-350 | Pendente | Consulta individual pelo CEP pendente |
+| Avenida Firmo Antônio de Freitas | Setor Carmem Lúcia | 75652-350 | Não localizado | Busca direta pelo CEP retornou “Dados não encontrado” em 25/11/2026 |
 | Avenida G | Setor Oeste | 75650-028 | Endereço atual diferente | Avenida Genoveva, Setor Oeste, 75650-028 — conferir ato, planta e limites antes de vincular os trechos |
 | Avenida Genoveva Rezende Carneiro | Setor Oeste | 75650-001 | Endereço atual diferente | Avenida Genoveva Rezende Carneiro, Vila Nunes, 75650-001 — conferir ato, planta e limites antes de vincular os trechos |
 | Avenida Geraldo José de Souza | Jardim Portugal | 75652-462 | Endereço atual diferente | Rua Geraldo José de Souza, Jardim Portugal, 75652-462 — conferir ato, planta e limites antes de vincular os trechos |
 | Avenida Geraldo José de Souza | Jardim Bela Vista | 75652-652 | Endereço atual diferente | Rua Geraldo José de Souza, Jardim Bela Vista, 75652-652 — conferir ato, planta e limites antes de vincular os trechos |
-| Avenida MV-2 | Conjunto Habitacional Monte Verde | 75652-398 | Pendente | Consulta individual pelo CEP pendente |
+| Avenida MV-2 | Conjunto Habitacional Monte Verde | 75652-398 | Não localizado | Busca direta pelo CEP retornou “Dados não encontrado” em 25/11/2026 |
 | Avenida MV-2 | Cristina Park | 75652-684 | Endereço atual diferente | Rua Geraldo José de Souza, Cristina Park, 75652-684 — conferir ato, planta e limites antes de vincular os trechos |
 | Avenida Perimetral | Setor Arca de Noé | 75654-370 | Endereço atual diferente | Avenida Jadir Machado da Silva, Setor Arca de Noé, 75654-370 — conferir ato, planta e limites antes de vincular os trechos |
 | Avenida Perimetral | Jardim Colibri | 75656-292 | Endereço atual diferente | Avenida Jadir Machado da Silva, Jardim Colibri, 75656-292 — conferir ato, planta e limites antes de vincular os trechos |
@@ -54,7 +56,7 @@ Restam 121 fichas com publicação somente anterior e 46 trechos legislativos se
 | Avenida Professor José do Nascimento | Setor Oeste | 75650-014 | Endereço atual diferente | Avenida Professor José do Nascimento, Vila Nunes, 75650-014 — conferir ato, planta e limites antes de vincular os trechos |
 | Praça Lions | Setor Oeste | 75650-008 | Endereço atual diferente | Praça Lions, Vila Nunes, 75650-008 — conferir ato, planta e limites antes de vincular os trechos |
 | Rua 1 | Vila Nova | 75650-330 | Endereço atual diferente | Rua 1, Vila Nova I, 75650-330 — conferir ato, planta e limites antes de vincular os trechos |
-| Rua 1 | Morro da Saudade I | 75650-560 | Pendente | Consulta individual pelo CEP pendente |
+| Rua 1 | Morro da Saudade I | 75650-560 | Não localizado | Busca direta pelo CEP retornou “Dados não encontrado” em 25/11/2026 |
 | Rua 1 | Setor Cristina | 75652-382 | Endereço atual diferente | Rua 1, Setor Cordeiro, 75652-382 — conferir ato, planta e limites antes de vincular os trechos |
 | Rua 10 | Vila Nova | 75650-354 | Endereço atual diferente | Rua 10, Vila Nova I, 75650-354 — conferir ato, planta e limites antes de vincular os trechos |
 | Rua 10 | Morro da Saudade I | 75650-558 | Endereço atual diferente | Rua Alagoas, Morro da Saudade, 75650-558 — conferir ato, planta e limites antes de vincular os trechos |
@@ -66,9 +68,9 @@ Restam 121 fichas com publicação somente anterior e 46 trechos legislativos se
 | Rua 12 | Morro da Saudade I | 75650-546 | Endereço atual diferente | Rua 12, Morro da Saudade, 75650-546 — conferir ato, planta e limites antes de vincular os trechos |
 | Rua 13 | Vila Nova | 75650-362 | Endereço atual diferente | Rua 13, Vila Nova III, 75650-362 — conferir ato, planta e limites antes de vincular os trechos |
 | Rua 13 | Morro da Saudade I | 75650-530 | Endereço atual diferente | Rua 13, Morro da Saudade, 75650-530 — conferir ato, planta e limites antes de vincular os trechos |
-| Rua 14 | Vila Nova | 75650-338 | Pendente | Consulta individual pelo CEP pendente |
+| Rua 14 | Vila Nova | 75650-338 | Endereço atual diferente | Busca direta retornou Rua 14, Vila Nova II, Morrinhos/GO, 75650-224. CEP substituto exibido pelo portal |
 | Rua 15 | Setor Oeste | 75650-012 | Endereço atual diferente | Rua 15, Vila Nunes, 75650-012 — conferir ato, planta e limites antes de vincular os trechos |
-| Rua 15 | Vila Nova | 75650-336 | Pendente | Consulta individual pelo CEP pendente |
+| Rua 15 | Vila Nova | 75650-336 | Endereço atual diferente | Busca direta retornou Rua 15, Vila Nova II, Morrinhos/GO, 75650-222. CEP substituto exibido pelo portal |
 | Rua 16 | Vila Nova | 75650-340 | Endereço atual diferente | Rua 16, Vila Nova I, 75650-340 — conferir ato, planta e limites antes de vincular os trechos |
 | Rua 16 | Vila Santos Dumont | 75654-216 | Não localizado | Solicitar confirmação cadastral do trecho à Prefeitura ou aos Correios |
 | Rua 17 | Vila Nova | 75650-364 | Endereço atual diferente | Rua 17, Vila Nova III, 75650-364 — conferir ato, planta e limites antes de vincular os trechos |
@@ -76,7 +78,7 @@ Restam 121 fichas com publicação somente anterior e 46 trechos legislativos se
 | Rua 19 | Vila Nova | 75650-370 | Endereço atual diferente | Rua 19, Vila Nova III, 75650-370 — conferir ato, planta e limites antes de vincular os trechos |
 | Rua 1A | Setor Oeste | 75650-044 | Endereço atual diferente | Rua 18A, Setor Oeste, 75650-044 — conferir ato, planta e limites antes de vincular os trechos |
 | Rua 2 | Setor Oeste | 75650-006 | Endereço atual diferente | Rua 2, Vila Nunes, 75650-006 — conferir ato, planta e limites antes de vincular os trechos |
-| Rua 2 | Vila Nova | 75650-344 | Pendente | Consulta individual pelo CEP pendente |
+| Rua 2 | Vila Nova | 75650-344 | Endereço atual diferente | Busca direta retornou Rua 2, Vila Nova II, Morrinhos/GO, 75650-226. CEP substituto exibido pelo portal |
 | Rua 2 | Morro da Saudade I | 75650-520 | Endereço atual diferente | Rua 2, Morro da Saudade, 75650-520 — conferir ato, planta e limites antes de vincular os trechos |
 | Rua 2 | Setor Cristina | 75652-386 | Endereço atual diferente | Rua 2, Setor Cordeiro, 75652-386 — conferir ato, planta e limites antes de vincular os trechos |
 | Rua 20 | Vila Nova | 75650-372 | Endereço atual diferente | Rua 20, Vila Nova III, 75650-372 — conferir ato, planta e limites antes de vincular os trechos |
@@ -91,7 +93,7 @@ Restam 121 fichas com publicação somente anterior e 46 trechos legislativos se
 | Rua 5 | Vila Nova | 75650-346 | Endereço atual diferente | Rua 5, Vila Nova I, 75650-346 — conferir ato, planta e limites antes de vincular os trechos |
 | Rua 5 | Morro da Saudade I | 75650-540 | Endereço atual diferente | Rua 5, Morro da Saudade, 75650-540 — conferir ato, planta e limites antes de vincular os trechos |
 | Rua 6 | Vila Nova | 75650-332 | Endereço atual diferente | Rua 6, Vila Nova I, 75650-332 — conferir ato, planta e limites antes de vincular os trechos |
-| Rua 6 | JK | 75650-416 | Pendente | Consulta individual pelo CEP pendente |
+| Rua 6 | JK | 75650-416 | Não localizado | Busca direta pelo CEP retornou “Dados não encontrado” |
 | Rua 6 | Morro da Saudade I | 75650-542 | Endereço atual diferente | Rua 6, Morro da Saudade, 75650-542 — conferir ato, planta e limites antes de vincular os trechos |
 | Rua 7 | Vila Nova | 75650-348 | Endereço atual diferente | Rua 7, Vila Nova I, 75650-348 — conferir ato, planta e limites antes de vincular os trechos |
 | Rua 7 | Morro da Saudade I | 75650-532 | Endereço atual diferente | Rua 7, Morro da Saudade, 75650-532 — conferir ato, planta e limites antes de vincular os trechos |
@@ -99,7 +101,7 @@ Restam 121 fichas com publicação somente anterior e 46 trechos legislativos se
 | Rua 8 | Morro da Saudade I | 75650-552 | Endereço atual diferente | Rua 8, Morro da Saudade, 75650-552 — conferir ato, planta e limites antes de vincular os trechos |
 | Rua 9 | Vila Nova | 75650-352 | Endereço atual diferente | Rua 9, Vila Nova I, 75650-352 — conferir ato, planta e limites antes de vincular os trechos |
 | Rua 9 | Morro da Saudade I | 75650-554 | Endereço atual diferente | Rua 9, Morro da Saudade, 75650-554 — conferir ato, planta e limites antes de vincular os trechos |
-| Rua Adelino Ribeiro da Silva | Setor Sebastião Telézio Carneiro de Andrade | 75650-500 | Pendente | Consulta individual pelo CEP pendente |
+| Rua Adelino Ribeiro da Silva | Setor Sebastião Telézio Carneiro de Andrade | 75650-500 | Não localizado | Busca direta pelo CEP retornou “Dados não encontrado” em 25/11/2026 |
 | Rua Adelino Ribeiro da Silva | Morro da Saudade I | 75650-534 | Endereço atual diferente | Rua Adelino Ribeiro da Silva, Morro da Saudade, 75650-534 — conferir ato, planta e limites antes de vincular os trechos |
 | Rua Agenor Vicente da Silva | Setor Oeste | 75650-054 | Endereço atual diferente | Rua Evangelista Valério Cardoso, Setor Oeste, 75650-054 — conferir ato, planta e limites antes de vincular os trechos |
 | Rua Agenor Vicente da Silva | Vila Bela | 75654-040 | Endereço atual diferente | Rua Evangelista Valério Cardoso, Vila Bela, 75654-040 — conferir ato, planta e limites antes de vincular os trechos |
@@ -120,12 +122,12 @@ Restam 121 fichas com publicação somente anterior e 46 trechos legislativos se
 | Rua do Caju | Morro da Saudade I | 75650-536 | Endereço atual diferente | Rua do Caju, Morro da Saudade, 75650-536 — conferir ato, planta e limites antes de vincular os trechos |
 | Rua FC-1 | Setor Carmem Lúcia | 75652-344 | Endereço atual diferente | Rua FC-1, Setor Cordeiro, 75652-344 — conferir ato, planta e limites antes de vincular os trechos |
 | Rua FC-3 | Desmembramento Doutor Adedimas | 75652-334 | Endereço atual diferente | Rua FC-3, Setor Cordeiro, 75652-334 — conferir ato, planta e limites antes de vincular os trechos |
-| Rua FC-3 | Setor Carmem Lúcia | 75652-346 | Pendente | Consulta individual pelo CEP pendente |
+| Rua FC-3 | Setor Carmem Lúcia | 75652-346 | Não localizado | Busca direta pelo CEP retornou “Dados não encontrado” em 25/11/2026 |
 | Rua FC-5 | Setor Carmem Lúcia | 75652-348 | Endereço atual diferente | Rua FC-5, Setor Cordeiro, 75652-348 — conferir ato, planta e limites antes de vincular os trechos |
 | Rua Felicidade Estrela de Godoy | Desmembramento Zezé Romano | 75652-740 | Endereço atual diferente | Rua Felicidade Estrela de Godoy, Setor Cordeiro II, 75652-740 — conferir ato, planta e limites antes de vincular os trechos |
 | Rua Francisco Rosa Campos | Setor Arca de Noé | 75654-384 | Endereço atual diferente | Avenida Francisco Rosa Campos, Setor Arca de Noé, 75654-384 — conferir ato, planta e limites antes de vincular os trechos |
 | Rua Geraldino de Freitas | Setor Carmem Lúcia | 75652-352 | Endereço atual diferente | Rua Geraldino de Freitas, Setor Cordeiro, 75652-352 — conferir ato, planta e limites antes de vincular os trechos |
-| Rua João Ferreira Macedo | Setor Aeroporto | 75654-068 | Pendente | Consulta individual pelo CEP pendente |
+| Rua João Ferreira Macedo | Setor Aeroporto | 75654-068 | Não localizado | Busca direta pelo CEP retornou “Dados não encontrado” em 25/11/2026 |
 | Rua Joaquim Alves Coutinho | Setor Arca de Noé | 75654-394 | Endereço atual diferente | Rua Joaquina Alves Coutino, Setor Arca de Noé, 75654-394 — conferir ato, planta e limites antes de vincular os trechos |
 | Rua Joaquim Quitério | Morro da Saudade I | 75650-524 | Endereço atual diferente | Rua Joaquim Quitério, Morro da Saudade, 75650-524 — conferir ato, planta e limites antes de vincular os trechos |
 | Rua José Daniel da Silva | Desmembramento Doutor Adedimas | 75652-326 | Endereço atual diferente | Rua José Daniel da Silva, Setor Cordeiro, 75652-326 — conferir ato, planta e limites antes de vincular os trechos |
@@ -135,7 +137,7 @@ Restam 121 fichas com publicação somente anterior e 46 trechos legislativos se
 | Rua Professor Felício Chaves | Setor Oeste | 75650-026 | Endereço atual diferente | Rua Prefeito Felício Chaves, Setor Oeste, 75650-026 — conferir ato, planta e limites antes de vincular os trechos |
 | Rua Professor Manoel Lemos de Mendonça | Setor Oeste | 75650-042 | Endereço atual diferente | Rua Prefeito Manoel Lemos de Mendonça, Setor Oeste, 75650-042 — conferir ato, planta e limites antes de vincular os trechos |
 | Rua Rodrigo Freitas de Moraes | Desmembramento Doutor Adedimas | 75652-336 | Endereço atual diferente | Rua Rodrigo Freitas de Moraes, Setor Cordeiro, 75652-336 — conferir ato, planta e limites antes de vincular os trechos |
-| Rua Rodrigo Freitas de Moraes | Setor Carmem Lúcia | 75652-342 | Pendente | Consulta individual pelo CEP pendente |
+| Rua Rodrigo Freitas de Moraes | Setor Carmem Lúcia | 75652-342 | Não localizado | Busca direta pelo CEP retornou “Dados não encontrado” em 25/11/2026 |
 | Rua Santo Agostinho | Morro da Saudade I | 75650-550 | Endereço atual diferente | Rua Santo Agostinho, Morro da Saudade, 75650-550 — conferir ato, planta e limites antes de vincular os trechos |
 | Rua Sebastião Godoy | Desmembramento Zezé Romano | 75652-742 | Endereço atual diferente | Rua Sebastião Godoy, Setor Cordeiro II, 75652-742 — conferir ato, planta e limites antes de vincular os trechos |
 | Rua X | Centro | 75650-126 | Endereço atual diferente | Rua Bom Retiro, Centro, 75650-126 — conferir ato, planta e limites antes de vincular os trechos |
@@ -143,7 +145,7 @@ Restam 121 fichas com publicação somente anterior e 46 trechos legislativos se
 | Viela do Caju | Morro da Saudade I | 75650-544 | Endereço atual diferente | Viela do Caju, Morro da Saudade, 75650-544 — conferir ato, planta e limites antes de vincular os trechos |
 | Viela MV-1 | Setor Cristina | 75652-380 | Endereço atual diferente | Rua MV-1, Setor Cordeiro, 75652-380 — conferir ato, planta e limites antes de vincular os trechos |
 | Viela MV-1 | Conjunto Habitacional Monte Verde | 75652-394 | Endereço atual diferente | Rua MV-1, Conjunto Residencial Monte Verde, 75652-394 — conferir ato, planta e limites antes de vincular os trechos |
-| Povoado de Rancho Alegre | — | 75659-100 | Pendente | Consulta individual pelo CEP pendente |
+| Povoado de Rancho Alegre | — | 75659-100 | Confirmado | O Busca CEP retornou Rancho Alegre, Morrinhos/GO, 75659-100 como CEP de localidade, sem logradouro específico, em 25/11/2026 |
 | Praça Antônio Rosa Ribeiro – Falcão | Setor Aeroporto / Vila Santos Dumont | — | Pendente | Localizar o trecho em planta ou cadastro municipal e confrontar com os Correios |
 | Rua Engenheiro Ovídio S. Tannus | Setor Jardim Santa Terezinha | — | Pendente | Localizar o trecho em planta ou cadastro municipal e confrontar com os Correios |
 | Praça Manoel de Freitas | Setor Cristo Redentor | — | Pendente | Localizar o trecho em planta ou cadastro municipal e confrontar com os Correios |
