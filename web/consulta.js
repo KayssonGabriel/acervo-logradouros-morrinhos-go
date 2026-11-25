@@ -70,8 +70,8 @@ function documento(titulo, textos, fonte, rotulo = 'Abrir fonte') {
   if (fonte.url) {
     const link = elemento('a', rotulo);
     let url;
-    try { url = new URL(fonte.url); } catch { return linha; }
-    if (url.protocol === 'https:') {
+    try { url = new URL(fonte.url, location.origin); } catch { return linha; }
+    if (url.protocol === 'https:' || (url.origin === location.origin && url.pathname.startsWith('/fontes/leis/'))) {
       if (fonte.pagina && url.pathname.toLowerCase().endsWith('.pdf')) url.hash = `page=${fonte.pagina}`;
       link.href = url.href;
       link.target = '_blank';
@@ -131,7 +131,9 @@ function exibirHistorico(trecho) {
     rotulo: 'Data do ato municipal',
     registro: documento(
       ato.nome_anterior ? `${ato.nome_anterior} → ${ato.nome_atribuido}` : ato.nome_atribuido,
-      [`Lei nº ${ato.numero} · Art. ${ato.artigo}`, ato.bairro_no_ato, ato.nota], ato, 'Abrir lei',
+      [`Lei nº ${ato.numero} · Art. ${ato.artigo}`, ato.bairro_no_ato, ato.trecho_no_ato,
+        ato.data_publicacao && `Publicação em ${dataFormatada(ato.data_publicacao)}`,
+        ato.vigencia_desde && `Vigência desde ${dataFormatada(ato.vigencia_desde)}`, ato.nota], ato, 'Abrir lei',
     ),
   }));
   const usos = (trecho.nomes_historicos || []).map((registro) => {

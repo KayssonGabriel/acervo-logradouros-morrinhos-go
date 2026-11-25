@@ -15,7 +15,7 @@ import unicodedata
 from urllib.parse import urlsplit
 from uuid import NAMESPACE_URL, uuid5
 
-from busca import chave, expandir, interpretar, pontuador, separar_bairro, variantes_bairro
+from busca import chave, expandir, interpretar, pontuador, separar_bairro, variantes_bairro, via_numerada
 
 
 RAIZ = Path(__file__).resolve().parent
@@ -213,6 +213,9 @@ def importar_ato(db, ato, campos=None):
     if db.execute('SELECT 1 FROM equivalencia_trecho WHERE anterior_id = ?', (trecho,)).fetchone():
         raise ValueError(f'Use o trecho principal como referência no ato {ato_id}.')
     anterior = ato.get('anterior')
+    nota = ato.get('nota_ato', ato.get('nota'))
+    if ato.get('tipo_alteracao'):
+        nota = ' '.join(filter(None, (ato['tipo_alteracao'] + '.', nota)))
     db.execute('''
         INSERT INTO ato_nome (id, trecho_id, fonte_id, numero, artigo, pagina, bairro_no_ato,
             trecho_no_ato, nome_anterior, anterior_chave, nome_atribuido, atribuido_chave,
@@ -227,7 +230,7 @@ def importar_ato(db, ato, campos=None):
             nota = excluded.nota
     ''', (ato_id, trecho, ato['id'], ato['numero'], ato['artigo'], ato['pagina'], ato['bairro'],
           ato.get('trecho'), anterior, chave(anterior) if anterior else None, ato['atribuido'],
-          chave(ato['atribuido']), ato.get('data_publicacao'), ato.get('vigencia_desde'), ato.get('nota')))
+          chave(ato['atribuido']), ato.get('data_publicacao'), ato.get('vigencia_desde'), nota))
     vinculados = ato.get('registros_postais_anteriores', []) + ato.get('registros_postais_vinculados', [])
     anteriores = {encontrar_trecho_postal(db, registro) for registro in vinculados}
     anteriores_salvos = db.execute('SELECT anterior_id, principal_id FROM equivalencia_trecho WHERE ato_id = ?',
@@ -386,10 +389,17 @@ def localizar(db, nome, bairro, cep, *, variantes=False, pendencia_cep=None):
         '''
         parametros = []
     else:
-        parametros = [f'% {nome} %', f'% {expandir(nome)} %']
+        numerada = via_numerada(nome)
+        parametros = [f'% {nome} %', f'% {numerada or expandir(nome)} %']
+        equivalencia_numerica = ''
+        if numerada:
+            db.create_function('via_numerada', 1, via_numerada, deterministic=True)
+            equivalencia_numerica = ' OR via_numerada(nome_chave) = ?'
+            parametros.append(numerada)
         candidatos = f'''
             SELECT DISTINCT trecho_id, 4 AS peso FROM {nomes}
                 WHERE (' ' || nome_chave || ' ') LIKE ? OR (' ' || nome_chave || ' ') LIKE ?
+                      {equivalencia_numerica}
         '''
     filtros = []
     ultimo_cadastro = ''

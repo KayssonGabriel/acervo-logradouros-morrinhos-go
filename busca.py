@@ -39,6 +39,41 @@ def expandir(nome_chave):
     return ' '.join(palavras)
 
 
+@lru_cache(maxsize=1)
+def cardinais():
+    unidades = 'zero um dois tres quatro cinco seis sete oito nove'.split()
+    simples = unidades + 'dez onze doze treze quatorze quinze dezesseis dezessete dezoito dezenove'.split()
+    numeros = {nome: valor for valor, nome in enumerate(simples)}
+    numeros.update(uma=1, duas=2, catorze=14)
+    for dezena, nome in enumerate('vinte trinta quarenta cinquenta sessenta setenta oitenta noventa'.split(), 2):
+        numeros[nome] = 10 * dezena
+        for unidade in [*unidades[1:], 'uma', 'duas']:
+            numeros[f'{nome} e {unidade}'] = 10 * dezena + numeros[unidade]
+    menores = list(numeros.items())
+    numeros.update(cem=100, mil=1000)
+    centenas = 'cento duzentos trezentos quatrocentos quinhentos seiscentos setecentos oitocentos novecentos'
+    for centena, nome in enumerate(centenas.split(), 1):
+        formas = [nome] if centena == 1 else [nome, nome[:-2] + 'as']
+        for forma in formas:
+            if centena > 1:
+                numeros[forma] = centena * 100
+            for resto, valor in menores:
+                if valor:
+                    numeros[f'{forma} e {resto}'] = centena * 100 + valor
+    return numeros
+
+
+@lru_cache(maxsize=4096)
+def via_numerada(nome):
+    tipo, _, designacao = expandir(nome).partition(' ')
+    if tipo not in TIPOS:
+        return None
+    designacao = re.sub(r'^(?:n|no|numero) ', '', designacao)
+    numero = designacao if designacao.isdigit() else cardinais().get(designacao)
+    if numero is not None:
+        return f'{tipo} {numero}'
+
+
 def variantes_bairro(bairro):
     bairro_chave = chave(bairro)
     if not bairro_chave:

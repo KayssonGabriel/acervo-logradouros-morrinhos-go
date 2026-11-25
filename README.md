@@ -28,7 +28,7 @@ Se o comando `python` estiver indisponível, tente `py -3` no Windows ou `python
 | `Rua do Comércio` | Rua Barão do Rio Branco, Centro, CEP `75650-114`, com a fonte histórica que registra a correspondência. |
 | `Rua 216` | Dois resultados, em Setor Aeroporto e Vila Santos Dumont. Selecione o bairro do endereço. |
 | `Rua 04, Jardim Santa Terezinha I` | O histórico mostra a sequência Rua 04 → Rua Eurípedes Mariano Borges → Rua Eurípedes Mariano da Silva. A lista postal de dezembro de 2025 usa a denominação Borges para o CEP `75654-596`. |
-| `75654-069` | Rua 214 e Rua João Ferreira de Macedo, com as respectivas fontes. A equivalência entre os registros está em pesquisa. |
+| `75654-069` | Rua 214 e Rua João Ferreira de Macedo, com as respectivas fontes. A Lei nº 805/1988 documenta a alteração no Setor Aeroporto. |
 | `75650-000` | O CEP geral histórico de Morrinhos. Para identificar um trecho específico, informe também a via e o bairro. |
 
 A busca aceita abreviações como `R.` e `Av.`, grafias sem acento e endereços com CEP. Um resultado por grafia semelhante aparece como sugestão. Confirme o bairro, o trecho e a fonte antes de usar a informação.
@@ -74,7 +74,7 @@ O modo de edição permite gravar no banco desse computador. A referência digit
 
 ## Dados e fontes
 
-O recorte é **Morrinhos, Goiás (IBGE 5213806)**. A [base inicial](dados/base-inicial.sqlite3) reúne **4.988 observações postais** de várias edições e **46 registros de atos municipais**. A lista integral de dezembro de 2025 traz **1.021 registros postais**. As contagens maiores incluem observações repetidas entre edições e entre as ordenações por bairro e por nome.
+O recorte é **Morrinhos, Goiás (IBGE 5213806)**. A [base inicial](dados/base-inicial.sqlite3) reúne **4.988 observações postais** de várias edições e **106 registros de atos municipais**. A lista integral de dezembro de 2025 traz **1.021 registros postais**. As contagens maiores incluem observações repetidas entre edições e entre as ordenações por bairro e por nome.
 
 | Informação | Onde consultar |
 | --- | --- |

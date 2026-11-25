@@ -48,53 +48,122 @@
       "nota": "A lei nomeia uma praça. Os registros postais de Rua Antônio Rosa Ribeiro Falcão ficam em outros bairros. CEP da praça a confirmar."
     },
     {
-      "id": "lei-1432-1996", "arquivo": "fontes/leis/lei-1432-1996.pdf",
+      "id": "lei-1432-1996",
+      "arquivo": "fontes/leis/lei-1432-1996.pdf",
       "url": "https://morrinhos.go.gov.br/wp-content/uploads/2023/11/LEI-N-1.432-DE-24-DE-MAIO-DE-1.996.pdf",
-      "referencia": "1996-05-24", "numero": "1.432", "artigo": "1º", "pagina": 1,
-      "bairro": "Setor Jardim Santa Fé", "anterior": "Avenida F", "atribuido": "Avenida Firmo Antônio de Freitas",
+      "referencia": "1996-05-24",
+      "numero": "1.432",
+      "artigo": "1º",
+      "pagina": 1,
+      "bairro": "Setor Jardim Santa Fé",
+      "anterior": "Avenida F",
+      "atribuido": "Avenida Firmo Antônio de Freitas",
       "trecho": "Toda a extensão da Avenida F no Setor Jardim Santa Fé",
-      "vinculo_postal": {"cep": "75652-126", "bairro": "Jardim Santa Fé", "nome": "Avenida Firmo Antônio de Freitas"}
+      "vinculo_postal": {
+        "cep": "75652-126",
+        "bairro": "Jardim Santa Fé",
+        "nome": "Avenida Firmo Antônio de Freitas"
+      },
+      "nota_ato": "A ficha da Câmara informa publicação em 24/05/1996. Data efetiva a conferir no registro de publicação.",
+      "tipo_alteracao": "Alteração de denominação"
     },
     {
-      "id": "lei-1459-1996", "arquivo": "fontes/leis/lei-1459-1996.pdf",
+      "id": "lei-1459-1996",
+      "arquivo": "fontes/leis/lei-1459-1996.pdf",
       "url": "https://morrinhos.go.gov.br/wp-content/uploads/2023/11/Lei-n-1459-de-20-de-setembro-de-1996.pdf",
-      "referencia": "1996-09-20", "numero": "1.459", "artigo": "1º", "pagina": 1,
-      "bairro": "Setor São Pedro", "anterior": "Avenida B", "atribuido": "Avenida Armídio Felipe Santiago",
-      "vinculo_postal": {"cep": "75652-278", "bairro": "Setor São Pedro", "nome": "Avenida Armídio Felipe Santiago"}
+      "referencia": "1996-09-20",
+      "numero": "1.459",
+      "artigo": "1º",
+      "pagina": 1,
+      "bairro": "Setor São Pedro",
+      "anterior": "Avenida B",
+      "atribuido": "Avenida Armídio Felipe Santiago",
+      "vinculo_postal": {
+        "cep": "75652-278",
+        "bairro": "Setor São Pedro",
+        "nome": "Avenida Armídio Felipe Santiago"
+      },
+      "nota_ato": "A ficha da Câmara informa publicação em 20/09/1996. Data efetiva a conferir no registro de publicação.",
+      "tipo_alteracao": "Alteração de denominação"
     },
     {
-      "id": "lei-1574-1998", "arquivo": "fontes/leis/lei-1574-1998.pdf",
+      "id": "lei-1574-1998",
+      "arquivo": "fontes/leis/lei-1574-1998.pdf",
       "url": "https://morrinhos.go.gov.br/wp-content/uploads/2023/11/Lei-n-1574-de-19-de-maro-de-1998.pdf",
-      "referencia": "1998-03-19", "numero": "1.574", "artigo": "1º", "pagina": 1,
-      "bairro": "Setor Jardim Santa Terezinha", "anterior": "Rua 02", "atribuido": "Rua Engenheiro Ovídio S. Tannus",
-      "nota": "CEP e identificação do trecho nas subdivisões atuais do Jardim Santa Terezinha a confirmar."
+      "referencia": "1998-03-19",
+      "numero": "1.574",
+      "artigo": "1º",
+      "pagina": 1,
+      "bairro": "Setor Jardim Santa Terezinha",
+      "anterior": "Rua 02",
+      "atribuido": "Rua Engenheiro Ovídio S. Tannus",
+      "nota": "CEP e identificação do trecho nas subdivisões atuais do Jardim Santa Terezinha a confirmar.",
+      "nota_ato": "CEP e identificação do trecho nas subdivisões atuais do Jardim Santa Terezinha a confirmar. A ficha da Câmara informa publicação em 19/03/1998. O exemplar examinado não traz certidão de publicação.",
+      "tipo_alteracao": "Alteração de denominação"
     },
     {
-      "id": "lei-1575-1998", "arquivo": "fontes/leis/lei-1575-1998.pdf",
+      "id": "lei-1575-1998",
+      "arquivo": "fontes/leis/lei-1575-1998.pdf",
       "url": "https://morrinhos.go.gov.br/wp-content/uploads/2023/11/Lei-n-1575-de-19-de-maro-de-1998.pdf",
-      "referencia": "1998-03-19", "numero": "1.575", "artigo": "1º", "pagina": 1,
-      "bairro": "Setor Jardim Santa Terezinha", "anterior": "Rua 04", "atribuido": "Rua Eurípedes Mariano Borges",
-      "vinculo_postal": {"cep": "75654-596", "bairro": "Jardim Santa Terezinha I", "nome": "Rua Eurípedes Mariano Borges"},
+      "referencia": "1998-03-19",
+      "numero": "1.575",
+      "artigo": "1º",
+      "pagina": 1,
+      "bairro": "Setor Jardim Santa Terezinha",
+      "anterior": "Rua 04",
+      "atribuido": "Rua Eurípedes Mariano Borges",
+      "vinculo_postal": {
+        "cep": "75654-596",
+        "bairro": "Jardim Santa Terezinha I",
+        "nome": "Rua Eurípedes Mariano Borges"
+      },
       "registros_postais_anteriores": [
-        {"cep": "75654-596", "bairro": "Jardim Santa Terezinha I", "nome": "Rua 4"}
+        {
+          "cep": "75654-596",
+          "bairro": "Jardim Santa Terezinha I",
+          "nome": "Rua 4"
+        }
       ],
-      "nota": "As listas de janeiro e dezembro de 2025 registram as duas denominações do art. 1º no mesmo CEP do Jardim Santa Terezinha I. A Rua 4 do Jardim Santa Terezinha II tem CEP próprio."
+      "nota": "As listas de janeiro e dezembro de 2025 registram as duas denominações do art. 1º no mesmo CEP do Jardim Santa Terezinha I. A Rua 4 do Jardim Santa Terezinha II tem CEP próprio.",
+      "nota_ato": "As listas de janeiro e dezembro de 2025 registram as duas denominações do art. 1º no mesmo CEP do Jardim Santa Terezinha I. A Rua 4 do Jardim Santa Terezinha II tem CEP próprio. A ficha da Câmara informa publicação em 19/03/1998. Data efetiva a conferir no registro de publicação.",
+      "tipo_alteracao": "Alteração de denominação"
     },
     {
-      "id": "lei-1594-1998", "arquivo": "fontes/leis/lei-1594-1998.pdf",
+      "id": "lei-1594-1998",
+      "arquivo": "fontes/leis/lei-1594-1998.pdf",
       "url": "https://morrinhos.go.gov.br/wp-content/uploads/2023/11/Lei-n-1594-de-16-de-abril-de-1998.pdf",
-      "referencia": "1998-04-16", "numero": "1.594", "artigo": "1º", "pagina": 1,
-      "bairro": "Setor Jardim Santa Terezinha", "anterior": "Rua Eurípedes Mariano Borges", "atribuido": "Rua Eurípedes Mariano da Silva",
-      "trecho_ato": "lei-1575-1998", "trecho": "Rua 04 do Setor Jardim Santa Terezinha",
-      "nota": "A lista de dezembro de 2025 usa a denominação do ato anterior, Rua Eurípedes Mariano Borges, em Jardim Santa Terezinha I, CEP 75654-596. A grafia postal resultante da retificação está a conferir diretamente nos Correios."
+      "referencia": "1998-04-16",
+      "numero": "1.594",
+      "artigo": "1º",
+      "pagina": 1,
+      "bairro": "Setor Jardim Santa Terezinha",
+      "anterior": "Rua Eurípedes Mariano Borges",
+      "atribuido": "Rua Eurípedes Mariano da Silva",
+      "trecho_ato": "lei-1575-1998",
+      "trecho": "Rua 04 do Setor Jardim Santa Terezinha",
+      "nota": "A lista de dezembro de 2025 usa a denominação do ato anterior, Rua Eurípedes Mariano Borges, em Jardim Santa Terezinha I, CEP 75654-596. A grafia postal resultante da retificação está a conferir diretamente nos Correios.",
+      "nota_ato": "A lista de dezembro de 2025 usa a denominação do ato anterior, Rua Eurípedes Mariano Borges, em Jardim Santa Terezinha I, CEP 75654-596. A grafia postal resultante da retificação está a conferir diretamente nos Correios. A ficha da Câmara informa publicação em 16/04/1998. O exemplar examinado não traz certidão de publicação.",
+      "tipo_alteracao": "Retificação ou alteração de redação"
     },
     {
-      "id": "lei-1576-1998", "arquivo": "fontes/leis/lei-1576-1998.pdf",
+      "id": "lei-1576-1998",
+      "arquivo": "fontes/leis/lei-1576-1998.pdf",
       "url": "https://morrinhos.go.gov.br/wp-content/uploads/2023/11/Lei-n-1576-de-19-de-maro-de-1998.pdf",
-      "referencia": "1998-03-19", "numero": "1.576", "artigo": "1º", "pagina": 1,
-      "bairro": "Setor Oeste", "anterior": "Avenida José Nascimento", "atribuido": "Avenida Professor José do Nascimento",
-      "vinculo_postal": {"cep": "75650-014", "bairro": "Setor Oeste", "nome": "Avenida Professor José do Nascimento"},
-      "nota": "O art. 2º cita a Lei nº 036, de 25/08/1960. A edição postal de dezembro de 2025 traz Vila Nunes para o mesmo nome e CEP. O alcance dessa mudança de bairro está em pesquisa."
+      "referencia": "1998-03-19",
+      "numero": "1.576",
+      "artigo": "1º",
+      "pagina": 1,
+      "bairro": "Setor Oeste",
+      "anterior": "Avenida José Nascimento",
+      "atribuido": "Avenida Professor José do Nascimento",
+      "vinculo_postal": {
+        "cep": "75650-014",
+        "bairro": "Setor Oeste",
+        "nome": "Avenida Professor José do Nascimento"
+      },
+      "nota": "O art. 2º cita a Lei nº 036, de 25/08/1960. A edição postal de dezembro de 2025 traz Vila Nunes para o mesmo nome e CEP. O alcance dessa mudança de bairro está em pesquisa.",
+      "nota_ato": "O art. 2º cita a Lei nº 036, de 25/08/1960. A edição postal de dezembro de 2025 traz Vila Nunes para o mesmo nome e CEP. O alcance dessa mudança de bairro está em pesquisa. A ficha da Câmara informa publicação em 19/03/1998. Data efetiva a conferir no registro de publicação. A Lei nº 36/1960 identifica a Avenida C do loteamento na zona oeste como Avenida José Nascimento.",
+      "tipo_alteracao": "Nova denominação com revogação expressa"
     },
     {
       "id": "lei-2478-2008", "arquivo": "fontes/leis/lei-2478-2008.pdf",
@@ -105,10 +174,18 @@
       "nota": "O cabeçalho do ato indica 12/12/2008 e o fecho indica 15/12/2008. A certidão no PDF está sem data. CEP da praça a confirmar."
     },
     {
-      "id": "lei-1448-1996", "arquivo": "fontes/leis/lei-1448-1996.pdf",
+      "id": "lei-1448-1996",
+      "arquivo": "fontes/leis/lei-1448-1996.pdf",
       "url": "https://morrinhos.go.gov.br/wp-content/uploads/2023/11/Lei-n-1448-de-22-de-agosto-de-1996.pdf",
-      "referencia": "1996-08-22", "numero": "1.448", "artigo": "1º", "pagina": 1,
-      "bairro": "Setor Aeroporto", "anterior": "Rua 210", "atribuido": "Rua José Alves de Toledo Neto"
+      "referencia": "1996-08-22",
+      "numero": "1.448",
+      "artigo": "1º",
+      "pagina": 1,
+      "bairro": "Setor Aeroporto",
+      "anterior": "Rua 210",
+      "atribuido": "Rua José Alves de Toledo Neto",
+      "nota_ato": "A ficha da Câmara informa publicação em 22/08/1996. Data efetiva a conferir no registro de publicação.",
+      "tipo_alteracao": "Alteração de denominação"
     },
     {
       "id": "lei-1732-2000", "arquivo": "fontes/leis/lei-1732-2000.pdf",
@@ -438,7 +515,11 @@
           "nome": "Rua Reverendo Archibald Tipple"
         }
       ],
-      "nota": "O artigo identifica a Rua 210 do Setor Aeroporto e cita a Lei nº 2.310. O PDF municipal da 2.310 trata da Fundação Betuel. A Lei nº 2.311, da mesma data, é a que denomina a Rua 210."
+      "nota": "O artigo identifica a Rua 210 do Setor Aeroporto e cita a Lei nº 2.310. O PDF municipal da 2.310 trata da Fundação Betuel. A Lei nº 2.311, da mesma data, é a que denomina a Rua 210.",
+      "data_publicacao": "2011-09-27",
+      "vigencia_desde": "2011-09-27",
+      "nota_ato": "O artigo identifica a Rua 210 do Setor Aeroporto e cita a Lei nº 2.310. O PDF municipal da 2.310 trata da Fundação Betuel. A Lei nº 2.311, da mesma data, é a que denomina a Rua 210. Publicação e vigência documentadas pela certidão de afixação no exemplar da Câmara.",
+      "tipo_alteracao": "Retificação ou alteração de redação"
     },
     {
       "id": "lei-2517-2009",
@@ -498,7 +579,11 @@
           "bairro": "Setor Aeroporto II",
           "nome": "Rua FC-3"
         }
-      ]
+      ],
+      "data_publicacao": "2011-06-29",
+      "vigencia_desde": "2011-06-29",
+      "nota_ato": "O art. 2º determina vigência na publicação. A certidão de afixação no placard municipal, na cópia assinada, registra 29/06/2011.",
+      "tipo_alteracao": "Alteração de denominação"
     },
     {
       "id": "lei-2793-2011",
@@ -523,7 +608,11 @@
           "bairro": "Setor Irinéia de Freitas",
           "nome": "Rua FC-3"
         }
-      ]
+      ],
+      "data_publicacao": "2011-06-29",
+      "vigencia_desde": "2011-06-29",
+      "nota_ato": "O art. 2º determina vigência na publicação. A certidão de afixação no placard municipal, na cópia assinada, registra 29/06/2011.",
+      "tipo_alteracao": "Alteração de denominação"
     },
     {
       "id": "lei-2793-2011",
@@ -548,7 +637,11 @@
           "bairro": "Setor Felício Chaves",
           "nome": "Rua FC-3"
         }
-      ]
+      ],
+      "data_publicacao": "2011-06-29",
+      "vigencia_desde": "2011-06-29",
+      "nota_ato": "O art. 2º determina vigência na publicação. A certidão de afixação no placard municipal, na cópia assinada, registra 29/06/2011.",
+      "tipo_alteracao": "Alteração de denominação"
     },
     {
       "id": "lei-2804-2011",
@@ -674,14 +767,1159 @@
       "bairro": "Setor Oeste",
       "anterior": "Rua 22",
       "atribuido": "Rua Agenor Vicente de Souza",
-      "nota": "Correspondência com as observações postais ainda a confirmar."
+      "nota": "Correspondência com as observações postais ainda a confirmar.",
+      "nota_ato": "Correspondência com as observações postais ainda a confirmar. A Lei nº 3.625/2021 denomina Rua Evangelista Valério Cardoso o trecho da Rua 22 entre a Rua Pernambuco e a Rua 101 B. A extensão comum aos dois atos e a correspondência da grafia postal «Agenor Vicente da Silva» dependem de planta ou cadastro municipal. Publicação e vigência documentadas pela certidão de afixação no exemplar da Câmara.",
+      "data_publicacao": "2011-06-29",
+      "vigencia_desde": "2011-06-29",
+      "tipo_alteracao": "Alteração de denominação"
     },
     {
-      "id": "lei-3119-2015", "arquivo": "fontes/leis/lei-3119-2015.pdf",
+      "id": "lei-3119-2015",
+      "arquivo": "fontes/leis/lei-3119-2015.pdf",
       "url": "https://morrinhos.go.gov.br/wp-content/uploads/2023/11/3.119-Nome-de-rua.-Juvercina-Cipriana.pdf",
-      "referencia": "2015-05-22", "numero": "3.119", "artigo": "1º", "pagina": 1,
-      "bairro": "Jardim América", "anterior": "Rua 03", "atribuido": "Rua Juvercina Cipriana da Silva",
-      "vinculo_postal": {"cep": "75650-281", "bairro": "Jardim América", "nome": "Rua Juvercina Cipriana da Silva"}
+      "referencia": "2015-05-22",
+      "numero": "3.119",
+      "artigo": "1º",
+      "pagina": 1,
+      "bairro": "Jardim América",
+      "anterior": "Rua 03",
+      "atribuido": "Rua Juvercina Cipriana da Silva",
+      "vinculo_postal": {
+        "cep": "75650-281",
+        "bairro": "Jardim América",
+        "nome": "Rua Juvercina Cipriana da Silva"
+      },
+      "data_publicacao": "2015-05-28",
+      "vigencia_desde": "2015-05-28",
+      "nota_ato": "O art. 2º estabelece vigência na publicação. A certidão municipal de publicação no sítio eletrônico da AGM, na cópia assinada, está datada de 28/05/2015. Diário Municipal de Goiás, edição nº 854, p. 5, código 4C0C1F9D.",
+      "tipo_alteracao": "Alteração de denominação"
+    },
+    {
+      "id": "lei-36-1960",
+      "arquivo": "fontes/leis/lei-36-1960.pdf",
+      "url": "/fontes/leis/lei-36-1960.pdf",
+      "referencia": "1960-08-25",
+      "numero": "36",
+      "artigo": "1º",
+      "pagina": 1,
+      "bairro": "Zona oeste",
+      "anterior": "Avenida C",
+      "atribuido": "Avenida José Nascimento",
+      "trecho_ato": "lei-1576-1998",
+      "nota_ato": "O art. 1º autoriza a denominação da avenida do novo loteamento na zona oeste. O cabeçalho traz 25/08/1960, o fecho da Câmara indica 06/12/1960 e a ordem «Publique-se. Registre-se.» traz 20/12/1960. A data de efetiva publicação permanece a confirmar. O art. 2º vincula a revogação de disposições em contrário à publicação. A Lei nº 1.576/1998 cita expressamente a Lei nº 36 e denomina o trecho Avenida Professor José do Nascimento. Na lista de janeiro de 2025, o CEP 75650-014 consta no Setor Oeste. A edição de dezembro situa o mesmo nome e CEP em Vila Nunes.",
+      "tipo_alteracao": "Alteração de denominação"
+    },
+    {
+      "id": "lei-64-1961",
+      "arquivo": "fontes/leis/lei-64-1961.pdf",
+      "url": "/fontes/leis/lei-64-1961.pdf",
+      "referencia": "1961-10-16",
+      "numero": "64",
+      "artigo": "1º",
+      "pagina": 1,
+      "bairro": "",
+      "anterior": "Rua Belo Horizonte",
+      "atribuido": "Rua Maestro Vicente José Vieira",
+      "nota_ato": "O título do arquivo menciona o Centro e escreve “Maentro”. O artigo usa “Maestro” e omite o bairro. Há linhas postais no Centro, Jardim América, Setor Noroeste e São Francisco. O cabeçalho data o ato de 16 de outubro e o fecho indica 24 de outubro de 1961.",
+      "tipo_alteracao": "Alteração de denominação"
+    },
+    {
+      "id": "lei-38-1965",
+      "arquivo": "fontes/leis/lei-38-1965.pdf",
+      "url": "/fontes/leis/lei-38-1965.pdf",
+      "referencia": "1965-09-06",
+      "numero": "38",
+      "artigo": "1º",
+      "pagina": 1,
+      "bairro": "Loteamento da Praça Rui Barbosa",
+      "anterior": null,
+      "atribuido": "Rua América",
+      "trecho": "Entre as quadras A e B do loteamento da Praça Rui Barbosa, referido pela Lei nº 35, de 1º de julho de 1965",
+      "nota_ato": "O cabeçalho indica 6 de setembro e o fecho, 8 de setembro de 1965. As quadras delimitam a via. Nenhum nome anterior é declarado.",
+      "tipo_alteracao": "Denominação"
+    },
+    {
+      "id": "lei-84-1966",
+      "arquivo": "fontes/leis/lei-84-1966.pdf",
+      "url": "/fontes/leis/lei-84-1966.pdf",
+      "referencia": "1966-08-20",
+      "numero": "84",
+      "artigo": "1º",
+      "pagina": 1,
+      "bairro": "Setor Oeste",
+      "anterior": "Avenida A",
+      "atribuido": "Avenida Major Evaristo Frauzino",
+      "nota_ato": "A Lei nº 29/1971 atribui outra denominação à Avenida A do loteamento do Setor Oeste. A Lei nº 95/1973 denomina a Rua São Miguel e revoga a Lei nº 19/1966. A lista postal registra Rua Major Evaristo Frauzino em outros bairros. A planta do loteamento e a Lei nº 19 permitem investigar os limites. Vigência na publicação, cuja data não consta na cópia.",
+      "tipo_alteracao": "Alteração de denominação"
+    },
+    {
+      "id": "lei-27-1971",
+      "arquivo": "fontes/leis/lei-27-1971.pdf",
+      "url": "/fontes/leis/lei-27-1971.pdf",
+      "referencia": "1971-02-05",
+      "numero": "27",
+      "artigo": "1º",
+      "pagina": 1,
+      "bairro": "Setor Oeste",
+      "atribuido": "Avenida Dr. Alfredo Lopes de Morais",
+      "anterior": "Avenida J",
+      "trecho": "Loteamento do Setor Oeste",
+      "nota_ato": "O fecho do gabinete é de 10/02/1971. As Leis nº 121/1973 e nº 561/1984 também identificam a Avenida J. A planta do loteamento deve esclarecer a extensão comum.",
+      "tipo_alteracao": "Alteração de denominação"
+    },
+    {
+      "id": "lei-29-1971",
+      "arquivo": "fontes/leis/lei-29-1971.pdf",
+      "url": "/fontes/leis/lei-29-1971.pdf",
+      "referencia": "1971-02-05",
+      "numero": "29",
+      "artigo": "1º",
+      "pagina": 1,
+      "bairro": "Setor Oeste",
+      "atribuido": "Avenida Dezembargador Saturnino Sebastião de Azeredo",
+      "anterior": "Avenida A",
+      "trecho": "Loteamento do Setor Oeste",
+      "trecho_ato": "lei-84-1966",
+      "nota_ato": "O artigo usa a grafia “Dezembargador”. O fecho do gabinete é de 10/02/1971. A Lei nº 84/1966 também menciona a Avenida A desse loteamento. A lista postal traz Avenida Saturnino Azeredo, CEP 75650-016. Falta planta para confirmar a correspondência dos trechos.",
+      "tipo_alteracao": "Alteração de denominação"
+    },
+    {
+      "id": "lei-86-1972",
+      "arquivo": "fontes/leis/lei-86-1972.pdf",
+      "url": "/fontes/leis/lei-86-1972.pdf",
+      "referencia": "1972-11-10",
+      "numero": "86",
+      "artigo": "1º",
+      "pagina": 1,
+      "bairro": "",
+      "anterior": "Avenida Araguaia",
+      "atribuido": "Avenida Dr. Gumercindo Marquez de Otero",
+      "nota_ato": "O cabeçalho e a aprovação da Câmara indicam 10/11/1972. A Lei nº 118/1973 identifica a mesma Avenida Araguaia, mas cita a Lei nº 86 com data de 22/12/1972. O art. 1º não informa bairro. Vigência na publicação, cuja data não consta na cópia.",
+      "tipo_alteracao": "Alteração de denominação"
+    },
+    {
+      "id": "lei-95-1973",
+      "arquivo": "fontes/leis/lei-95-1973.pdf",
+      "url": "/fontes/leis/lei-95-1973.pdf",
+      "referencia": "1973-02-27",
+      "numero": "95",
+      "artigo": "1º",
+      "pagina": 1,
+      "bairro": "",
+      "anterior": "Rua São Miguel",
+      "atribuido": "Rua Major Evaristo Frauzino",
+      "nota_ato": "O art. 2º revoga a Lei nº 19, de agosto de 1966. O art. 1º não informa bairro. As listas apresentam Rua Major Evaristo Frauzino no Centro (75650-076), em São Francisco de Assis (75650-202) e no Setor Noroeste (75656-186). A distribuição do antigo nome entre os trechos requer planta ou cadastro. A Avenida Major Evaristo Frauzino da Lei nº 84/1966 ficava no Setor Oeste. Vigência na publicação, cuja data não consta na cópia.",
+      "tipo_alteracao": "Alteração de denominação"
+    },
+    {
+      "id": "lei-109-1973",
+      "arquivo": "fontes/leis/lei-109-1973.pdf",
+      "url": "/fontes/leis/lei-109-1973.pdf",
+      "referencia": "1973-05-21",
+      "numero": "109",
+      "artigo": "1º",
+      "pagina": 1,
+      "bairro": "",
+      "atribuido": "Praça Sady Carnt",
+      "trecho": "Entre as ruas Major Evaristo Frauzino e Paraná e a Avenida Cel. Pedro Nunes",
+      "nota_ato": "O artigo grafa “Sady Carnt”. A Avenida Cel. Pedro Nunes integra os limites da praça. O artigo não identifica bairro ou CEP.",
+      "tipo_alteracao": "Denominação"
+    },
+    {
+      "id": "lei-112-1973",
+      "arquivo": "fontes/leis/lei-112-1973.pdf",
+      "url": "/fontes/leis/lei-112-1973.pdf",
+      "referencia": "1973-05-21",
+      "numero": "112",
+      "artigo": "1º",
+      "pagina": 1,
+      "bairro": "Bairro do Açude",
+      "atribuido": "Praça Lindolfo Cândido Ribeiro",
+      "trecho": "Na confluência das ruas Maestro Vicente José Vieira e Pernambuco com a Avenida Cel. Pedro Nunes",
+      "nota_ato": "Sem observação postal localizada para a praça.",
+      "tipo_alteracao": "Denominação"
+    },
+    {
+      "id": "lei-118-1973",
+      "arquivo": "fontes/leis/lei-118-1973.pdf",
+      "url": "/fontes/leis/lei-118-1973.pdf",
+      "referencia": "1973-05-21",
+      "numero": "118",
+      "artigo": "2º",
+      "pagina": 1,
+      "bairro": "",
+      "anterior": "Avenida Dr. Gumercindo Marquez de Otero",
+      "atribuido": "Avenida Dr. Gumercindo Otero",
+      "trecho_ato": "lei-86-1972",
+      "nota_ato": "Os arts. 1º e 2º identificam a antiga Avenida Araguaia. A cópia assinada grafa «Marquez» e a outra cópia da Lei nº 118 grafa «Marques». O art. 1º revoga a Lei nº 86, que cita como de 22/12/1972, embora o cabeçalho do exemplar da Câmara indique 10/11/1972. A lista postal usa Avenida Doutor Gumercindo Otero no Centro (75650-070), no Setor Aeroporto (75654-052), no Setor Noroeste (75656-170), no Setor Oeste (75650-062) e na Vila Nossa Senhora do Carmo (75656-228). Os limites da avenida de 1973 precisam de planta. Vigência na publicação, cuja data não consta na cópia.",
+      "tipo_alteracao": "Nova denominação com revogação expressa"
+    },
+    {
+      "id": "lei-119-1973",
+      "arquivo": "fontes/leis/lei-119-1973.pdf",
+      "url": "/fontes/leis/lei-119-1973.pdf",
+      "referencia": "1973-05-21",
+      "numero": "119",
+      "artigo": "1º",
+      "pagina": 1,
+      "bairro": "Setor Oeste",
+      "anterior": "Rua 17",
+      "atribuido": "Rua Prefeito Manoel Lemos Mendonça",
+      "vinculo_postal": {
+        "nome": "Rua Prefeito Manoel Lemos de Mendonça",
+        "bairro": "Setor Oeste",
+        "cep": "75650-042"
+      },
+      "nota_ato": "O exemplar assinado grafa «Lemos Mendonça». A outra cópia, cujo arquivo menciona o nº 199, traz nº 119 no cabeçalho e «Lemos de Mendonça» no art. 1º. A Portaria SPU/GO nº 11/2014 também registra Rua 17 como nome anterior no endereço. A lista de dezembro usa «Prefeito» no CEP 75650-042, e as edições anteriores trazem «Professor» nesse CEP. Vigência na publicação, cuja data não consta na cópia.",
+      "tipo_alteracao": "Alteração de denominação"
+    },
+    {
+      "id": "lei-120-1973",
+      "arquivo": "fontes/leis/lei-120-1973.pdf",
+      "url": "/fontes/leis/lei-120-1973.pdf",
+      "referencia": "1973-05-21",
+      "numero": "120",
+      "artigo": "1º",
+      "pagina": 1,
+      "bairro": "Setor Oeste",
+      "anterior": "Rua 11",
+      "atribuido": "Rua Prefeito Felício Chaves",
+      "vinculo_postal": {
+        "nome": "Rua Prefeito Felício Chaves",
+        "bairro": "Setor Oeste",
+        "cep": "75650-026"
+      },
+      "nota_ato": "Outro exemplar da lei consta no arquivo identificado por «Setro Oeste». A lista municipal de dezembro de 2025 usa «Prefeito», CEP 75650-026. As anteriores trazem «Professor» nesse CEP. Os homônimos em outros bairros requerem exame separado. Vigência na publicação, cuja data não consta na cópia.",
+      "tipo_alteracao": "Alteração de denominação"
+    },
+    {
+      "id": "lei-121-1973",
+      "arquivo": "fontes/leis/lei-121-1973.pdf",
+      "url": "/fontes/leis/lei-121-1973.pdf",
+      "referencia": "1973-05-21",
+      "numero": "121",
+      "artigo": "1º",
+      "pagina": 1,
+      "bairro": "Setor Oeste",
+      "atribuido": "Avenida Cel. Fernando Barbosa",
+      "anterior": "Avenida J",
+      "trecho": "Entre a residência do DERGO e o bairro da Vila Bela",
+      "nota_ato": "A Lei nº 561/1984 revoga expressamente esta denominação e atribui ao trecho o nome Avenida Genoveva Rezende Carneiro. Vila Bela é referência de limite. A Avenida J também aparece na Lei nº 27/1971.",
+      "tipo_alteracao": "Alteração de denominação"
+    },
+    {
+      "id": "lei-122-1973",
+      "arquivo": "fontes/leis/lei-122-1973.pdf",
+      "url": "/fontes/leis/lei-122-1973.pdf",
+      "referencia": "1973-05-21",
+      "numero": "122",
+      "artigo": "1º",
+      "pagina": 1,
+      "bairro": "Setor Oeste",
+      "atribuido": "Rua Melanias Vieira de Melo",
+      "anterior": "Rua 18",
+      "vinculo_postal": {
+        "nome": "Rua Melanias Vieira de Melo",
+        "bairro": "Setor Oeste",
+        "cep": "75650-046"
+      },
+      "tipo_alteracao": "Alteração de denominação"
+    },
+    {
+      "id": "lei-163-1974",
+      "arquivo": "fontes/leis/lei-163-1974.pdf",
+      "url": "/fontes/leis/lei-163-1974.pdf",
+      "referencia": "1974-02-13",
+      "numero": "163",
+      "artigo": "1º",
+      "pagina": 1,
+      "bairro": "Setor Oeste",
+      "anterior": "Praça do Trevo",
+      "atribuido": "Praça Lions Clube de Morrinhos",
+      "trecho": "Trevo próximo ao Cristo Redentor",
+      "nota_ato": "Há registros de Praça Lions nos CEPs 75650-029 e 75650-008, inclusive com variação de bairro entre as listas. A localização do trevo exige conferência em planta antes de vincular um CEP.",
+      "tipo_alteracao": "Alteração de denominação"
+    },
+    {
+      "id": "lei-165-1974",
+      "arquivo": "fontes/leis/lei-165-1974.pdf",
+      "url": "/fontes/leis/lei-165-1974.pdf",
+      "referencia": "1974-05-17",
+      "numero": "165",
+      "artigo": "1º",
+      "pagina": 1,
+      "bairro": "Setor Oeste",
+      "anterior": null,
+      "atribuido": "Praça Juquinha Diniz",
+      "trecho": "Praça da Rua 13, entre as quadras 8 e 9",
+      "nota_ato": "A descrição pelas quadras identifica a praça. Nenhum CEP específico foi localizado para o nome atribuído.",
+      "tipo_alteracao": "Denominação"
+    },
+    {
+      "id": "lei-174-1975",
+      "arquivo": "fontes/leis/lei-174-1975.pdf",
+      "url": "/fontes/leis/lei-174-1975.pdf",
+      "referencia": "1975-02-18",
+      "numero": "174",
+      "artigo": "1º",
+      "pagina": 1,
+      "bairro": "Setor Oeste",
+      "anterior": "Rua 12",
+      "atribuido": "Rua José Gomes Viado",
+      "vinculo_postal": {
+        "nome": "Rua José Gomes Veado",
+        "bairro": "Setor Oeste",
+        "cep": "75650-032"
+      },
+      "nota_ato": "O título de uma cópia traz “Vieira”. As duas páginas trazem “Viado” no art. 1º. Na lista municipal, a grafia é “Rua José Gomes Veado”.",
+      "tipo_alteracao": "Alteração de denominação"
+    },
+    {
+      "id": "lei-202-1975",
+      "arquivo": "fontes/leis/lei-202-1975.pdf",
+      "url": "/fontes/leis/lei-202-1975.pdf",
+      "referencia": "1975-08-14",
+      "numero": "202",
+      "artigo": "1º",
+      "pagina": 1,
+      "bairro": "",
+      "anterior": null,
+      "atribuido": "Praça do Estudante",
+      "trecho": "Entre as ruas Castro Alves e Cel. João Lopes Zedes e a Av. Cel. Pedro Nunes",
+      "nota_ato": "A lei delimita a praça por logradouros. CEP individual a confirmar.",
+      "tipo_alteracao": "Denominação"
+    },
+    {
+      "id": "lei-215-1975",
+      "arquivo": "fontes/leis/lei-215-1975.pdf",
+      "url": "/fontes/leis/lei-215-1975.pdf",
+      "referencia": "1975-11-24",
+      "numero": "215",
+      "artigo": "1º",
+      "pagina": 1,
+      "bairro": "Setor Oeste",
+      "anterior": null,
+      "atribuido": "Praça do Trabalhador",
+      "trecho": "Entre as ruas 11 e 17 e a Av. Dr. Gumercindo (final do nome cortado na cópia)",
+      "nota_ato": "O art. 1º emprega o singular, embora o título do arquivo diga “Praça dos Trabalhadores”. As avenidas dos Trabalhadores são logradouros de outro tipo.",
+      "tipo_alteracao": "Denominação"
+    },
+    {
+      "id": "lei-216-1975",
+      "arquivo": "fontes/leis/lei-216-1975.pdf",
+      "url": "/fontes/leis/lei-216-1975.pdf",
+      "referencia": "1975-11-24",
+      "numero": "216",
+      "artigo": "1º",
+      "pagina": 1,
+      "bairro": "",
+      "anterior": null,
+      "atribuido": "Praça Rotary",
+      "trecho": "Em frente ao Centro Esportivo, antigo Estádio João Vilela",
+      "nota_ato": "CEP individual a confirmar.",
+      "tipo_alteracao": "Denominação"
+    },
+    {
+      "id": "lei-234-1976",
+      "arquivo": "fontes/leis/lei-234-1976.pdf",
+      "url": "/fontes/leis/lei-234-1976.pdf",
+      "referencia": "1976-05-06",
+      "numero": "234",
+      "artigo": "1º",
+      "pagina": 1,
+      "bairro": "",
+      "anterior": "Praça 24 de Outubro",
+      "atribuido": "Praça Professor José Cândido",
+      "trecho": "Em frente ao edifício do fórum local",
+      "nota_ato": "O cabeçalho data o ato de 6 de maio de 1976 e o fecho indica 10 de abril de 1976. A lista registra uma rua homônima no Setor Cristo Redentor. O CEP da praça permanece em aberto.",
+      "tipo_alteracao": "Alteração de denominação"
+    },
+    {
+      "id": "lei-299-1977",
+      "arquivo": "fontes/leis/lei-299-1977.pdf",
+      "url": "/fontes/leis/lei-299-1977.pdf",
+      "referencia": "1977-11-11",
+      "numero": "299",
+      "artigo": "1º",
+      "pagina": 1,
+      "bairro": "Jardim América",
+      "anterior": "Rua 14",
+      "atribuido": "Rua Dr. Heitor Bastos",
+      "vinculo_postal": {
+        "nome": "Rua Heitor de Bastos",
+        "bairro": "Jardim América",
+        "cep": "75650-298"
+      },
+      "registros_postais_anteriores": [
+        {
+          "nome": "Rua 14",
+          "bairro": "Jardim América",
+          "cep": "75650-298"
+        }
+      ],
+      "nota_ato": "O título diz “Batos”. O artigo identifica “Bastos”. A lista anterior traz Rua 14 e a mais recente traz Rua Heitor de Bastos no mesmo bairro e CEP.",
+      "tipo_alteracao": "Alteração de denominação"
+    },
+    {
+      "id": "lei-301-1977",
+      "arquivo": "fontes/leis/lei-301-1977.pdf",
+      "url": "/fontes/leis/lei-301-1977.pdf",
+      "referencia": "1977-11-11",
+      "numero": "301",
+      "artigo": "1º",
+      "pagina": 1,
+      "bairro": "Jardim América",
+      "anterior": "Avenida C",
+      "atribuido": "Avenida Juscelino Kubitschek",
+      "vinculo_postal": {
+        "nome": "Avenida Juscelino Kubitschek",
+        "bairro": "Jardim América",
+        "cep": "75650-280"
+      },
+      "nota_ato": "O art. 1º grafa “Juscelino”, com s. A lista de dezembro de 2025 confirma o nome e o loteamento.",
+      "tipo_alteracao": "Alteração de denominação"
+    },
+    {
+      "id": "lei-405-1980",
+      "arquivo": "fontes/leis/lei-405-1980.pdf",
+      "url": "/fontes/leis/lei-405-1980.pdf",
+      "referencia": "1980-11-06",
+      "numero": "405",
+      "artigo": "1º",
+      "pagina": 1,
+      "bairro": "Vila Santos Dumont",
+      "anterior": "Avenida 101",
+      "atribuido": "Avenida Janhyme Vilela",
+      "trecho": "Conjunto Habitacional Vila Santos Dumont",
+      "vinculo_postal": {
+        "nome": "Avenida Jaime Vilela",
+        "bairro": "Vila Santos Dumont",
+        "cep": "75654-206"
+      },
+      "nota_ato": "Na lista postal do bairro, a grafia é “Avenida Jaime Vilela”. O homônimo do Setor Aeroporto tem CEP distinto.",
+      "tipo_alteracao": "Alteração de denominação"
+    },
+    {
+      "id": "lei-471-1982",
+      "arquivo": "fontes/leis/lei-471-1982.pdf",
+      "url": "/fontes/leis/lei-471-1982.pdf",
+      "referencia": "1982-08-05",
+      "numero": "471",
+      "artigo": "1º",
+      "pagina": 1,
+      "bairro": "Setor Oeste",
+      "anterior": "Rua 14",
+      "atribuido": "Rua Pedro José Braga",
+      "vinculo_postal": {
+        "nome": "Rua 14",
+        "bairro": "Setor Oeste",
+        "cep": "75650-022"
+      },
+      "nota_ato": "A lista de dezembro de 2025 conserva Rua 14 no Setor Oeste. A Rua Pedro Braga do Setor Cordeiro tem outra localização.",
+      "tipo_alteracao": "Alteração de denominação"
+    },
+    {
+      "id": "lei-481-1982",
+      "arquivo": "fontes/leis/lei-481-1982.pdf",
+      "url": "/fontes/leis/lei-481-1982.pdf",
+      "referencia": "1982-11-08",
+      "numero": "481",
+      "artigo": "1º",
+      "pagina": 1,
+      "bairro": "Vila Santos Dumont",
+      "anterior": "Avenida B",
+      "atribuido": "Avenida Pe. Samuel Chamel",
+      "vinculo_postal": {
+        "nome": "Avenida B",
+        "bairro": "Vila Santos Dumont",
+        "cep": "75654-240"
+      },
+      "nota_ato": "A lista conserva o nome Avenida B no bairro. A Lei nº 2.292/2007 nomeia uma rua na divisa entre Vila Bela e Setor Oeste, em homenagem a Pe. Samuel George.",
+      "tipo_alteracao": "Alteração de denominação"
+    },
+    {
+      "id": "lei-500-1983",
+      "arquivo": "fontes/leis/lei-500-1983.pdf",
+      "url": "/fontes/leis/lei-500-1983.pdf",
+      "referencia": "1983-05-12",
+      "numero": "500",
+      "artigo": "1º",
+      "pagina": 1,
+      "bairro": "",
+      "anterior": "Rua Uberlândia",
+      "atribuido": "Rua Minervino Quintino Martins",
+      "nota_ato": "O título do arquivo traz “Duintino”. O artigo apresenta impressão falhada no sobrenome. As listas usam “Quintino”, com CEPs no Centro (75650-150) e no Jardim América (75650-276). O texto omite o bairro. O cabeçalho indica 12 de maio de 1983, e o fecho, 13 de maio.",
+      "tipo_alteracao": "Alteração de denominação"
+    },
+    {
+      "id": "lei-506-1983",
+      "arquivo": "fontes/leis/lei-506-1983.pdf",
+      "url": "/fontes/leis/lei-506-1983.pdf",
+      "referencia": "1983-08-04",
+      "numero": "506",
+      "artigo": "1º",
+      "pagina": 1,
+      "bairro": "Setor Oeste",
+      "anterior": "Rua 21",
+      "atribuido": "Rua João Júlio de Oliveira",
+      "vinculo_postal": {
+        "nome": "Rua João Júlio de Oliveira",
+        "bairro": "Setor Oeste",
+        "cep": "75650-048"
+      },
+      "nota_ato": "O cabeçalho indica 4 de agosto de 1983 e o fecho, 8 de agosto. A lei refere-se ao Setor Oeste. Há um homônimo postal em Vila Bela.",
+      "tipo_alteracao": "Alteração de denominação"
+    },
+    {
+      "id": "lei-521-1984",
+      "arquivo": "fontes/leis/lei-521-1984.pdf",
+      "url": "/fontes/leis/lei-521-1984.pdf",
+      "referencia": "1984-03-08",
+      "numero": "521",
+      "artigo": "1º",
+      "pagina": 1,
+      "bairro": "Setor Jardim Santa Fé",
+      "atribuido": "Rua Gumercindo Inocêncio de Oliveira",
+      "anterior": "Rua 09",
+      "vinculo_postal": {
+        "nome": "Rua Gumercindo Inocêncio de Oliveira",
+        "bairro": "Jardim Santa Fé",
+        "cep": "75652-124"
+      },
+      "nota_ato": "O Ofício nº 088/84, de 23/04/1984 (p. 2), comunica o novo nome e cita 18/03 por engano. O Requerimento nº 15/84, de 02/04/1984 (p. 3), pede a comunicação aos cartórios de imóveis e concessionárias e confirma 08/03. O CEP 75652-276 pertence ao homônimo do Setor São Pedro.",
+      "tipo_alteracao": "Alteração de denominação"
+    },
+    {
+      "id": "lei-545-1984",
+      "arquivo": "fontes/leis/lei-545-1984.pdf",
+      "url": "/fontes/leis/lei-545-1984.pdf",
+      "referencia": "1984-08-07",
+      "numero": "545",
+      "artigo": "1º",
+      "pagina": 1,
+      "bairro": "Setor Aeroporto",
+      "anterior": "Avenida 250",
+      "atribuido": "Avenida Cel. Fernando Barbosa",
+      "trecho": "Extensão até a Praça Lions",
+      "vinculo_postal": {
+        "nome": "Avenida Coronel Fernando Barbosa",
+        "bairro": "Setor Aeroporto",
+        "cep": "75654-072"
+      },
+      "nota_ato": "Extensão da Avenida Cel. Fernando Barbosa até a Praça Lions. O art. 1º já identifica a antiga Avenida 250 como Avenida Cel. Fernando Barbosa e estende seu percurso até a praça. O art. 2º revoga expressamente o art. 2º da Lei nº 464, de 5 de agosto de 1982. O cabeçalho e a anotação da votação são de 7 de agosto de 1984. O campo de data do gabinete está em branco.",
+      "tipo_alteracao": "Extensão do percurso"
+    },
+    {
+      "id": "lei-561-1984",
+      "arquivo": "fontes/leis/lei-561-1984.pdf",
+      "url": "/fontes/leis/lei-561-1984.pdf",
+      "referencia": "1984-10-03",
+      "numero": "561",
+      "artigo": "1º e 2º",
+      "pagina": 1,
+      "bairro": "",
+      "anterior": "Avenida Cel. Fernando Barbosa",
+      "atribuido": "Avenida Genoveva Rezende Carneiro",
+      "trecho": "Antiga Avenida J, entre a Avenida Dr. Gumercindo Otero e a antiga Avenida 250, acesso à BR-153",
+      "trecho_ato": "lei-121-1973",
+      "nota_ato": "O art. 1º revoga a Lei nº 121, de 21 de maio de 1973, e descreve o trecho. O art. 2º atribui o nome Genoveva Rezende Carneiro. A antiga Avenida 250 é o limite da antiga Avenida J, e a Lei nº 545/1984 se refere à Avenida 250. Duas outras cópias na pasta reproduzem o mesmo ato.",
+      "tipo_alteracao": "Nova denominação com revogação expressa"
+    },
+    {
+      "id": "lei-790-1988",
+      "arquivo": "fontes/leis/lei-790-1988.pdf",
+      "url": "/fontes/leis/lei-790-1988.pdf",
+      "referencia": "1988-10-20",
+      "numero": "790",
+      "artigo": "1º",
+      "pagina": 1,
+      "bairro": "Setor Aeroporto",
+      "anterior": "Rua 215",
+      "atribuido": "Rua Dr. Jorivê Guarany Costa",
+      "vinculo_postal": {
+        "nome": "Rua Jorivê Guarani Costa",
+        "bairro": "Setor Aeroporto",
+        "cep": "75654-066"
+      },
+      "registros_postais_anteriores": [
+        {
+          "nome": "Rua 215",
+          "bairro": "Setor Aeroporto",
+          "cep": "75654-066"
+        }
+      ],
+      "nota_ato": "A lista municipal grafa “Rua Jorivê Guarani Costa”. A Rua 215 aparece nas listas anteriores no mesmo bairro e CEP. O art. 2º autoriza o envio da comunicação ao registro imobiliário, à Telegoiás, à Celg e aos Correios.",
+      "tipo_alteracao": "Alteração de denominação"
+    },
+    {
+      "id": "lei-805-1988",
+      "arquivo": "fontes/leis/lei-805-1988.pdf",
+      "url": "/fontes/leis/lei-805-1988.pdf",
+      "referencia": "1988-12-09",
+      "numero": "805",
+      "artigo": "1º",
+      "pagina": 1,
+      "bairro": "Setor Aeroporto",
+      "anterior": "Rua 214",
+      "atribuido": "Rua João Ferreira Macedo",
+      "vinculo_postal": {
+        "nome": "Rua João Ferreira de Macedo",
+        "bairro": "Setor Aeroporto",
+        "cep": "75654-069"
+      },
+      "registros_postais_anteriores": [
+        {
+          "nome": "RUA 214",
+          "bairro": "SETOR AEROPORTO",
+          "cep": "75654-069"
+        }
+      ],
+      "nota_ato": "A lista de dezembro acrescenta «de» e a lista complementar de outubro ainda usa Rua 214 no mesmo bairro e CEP 75654-069. O art. 2º autoriza a comunicação ao registro de imóveis e aos Correios. Vigência na publicação, cuja data não consta na cópia.",
+      "tipo_alteracao": "Alteração de denominação"
+    },
+    {
+      "id": "lei-1295-1994",
+      "arquivo": "fontes/leis/lei-1295-1994.pdf",
+      "url": "/fontes/leis/lei-1295-1994.pdf",
+      "referencia": "1994-10-20",
+      "numero": "1.295",
+      "artigo": "1º",
+      "pagina": 1,
+      "bairro": "Setor Jardim Santa Fé",
+      "atribuido": "Avenida Engenheiro Flavio Cascão",
+      "registro": "lei-1295-1994-santa-fe",
+      "anterior": "Avenida D",
+      "trecho": "Do Setor Jardim Santa Fé, passando pelo Setor São Pedro",
+      "vinculo_postal": {
+        "nome": "Avenida Engenheiro Flávio Cascão",
+        "bairro": "Jardim Santa Fé",
+        "cep": "75652-112"
+      },
+      "nota_ato": "O art. 1º grafa “Flavio”. A lista postal traz “Flávio”. O ato abrange dois setores e não cita Vila Nunes nem Setor Oeste. A ficha da Câmara informa publicação em 20/10/1994. Data efetiva a conferir no registro de publicação. O anexo da Câmara grafa «Flávio», com acento.",
+      "tipo_alteracao": "Alteração de denominação"
+    },
+    {
+      "id": "lei-1295-1994",
+      "arquivo": "fontes/leis/lei-1295-1994.pdf",
+      "url": "/fontes/leis/lei-1295-1994.pdf",
+      "referencia": "1994-10-20",
+      "numero": "1.295",
+      "artigo": "1º",
+      "pagina": 1,
+      "bairro": "Setor São Pedro",
+      "atribuido": "Avenida Engenheiro Flavio Cascão",
+      "registro": "lei-1295-1994-sao-pedro",
+      "anterior": "Avenida D",
+      "trecho": "Do Setor Jardim Santa Fé, passando pelo Setor São Pedro",
+      "vinculo_postal": {
+        "nome": "Avenida Engenheiro Flávio Cascão",
+        "bairro": "Setor São Pedro",
+        "cep": "75652-270"
+      },
+      "nota_ato": "O art. 1º grafa “Flavio”. A lista postal traz “Flávio”. O ato abrange dois setores e não cita Vila Nunes nem Setor Oeste. A ficha da Câmara informa publicação em 20/10/1994. Data efetiva a conferir no registro de publicação. O anexo da Câmara grafa «Flávio», com acento.",
+      "tipo_alteracao": "Alteração de denominação"
+    },
+    {
+      "id": "lei-1329-1995",
+      "arquivo": "fontes/leis/lei-1329-1995.pdf",
+      "url": "/fontes/leis/lei-1329-1995.pdf",
+      "referencia": "1995-03-16",
+      "numero": "1.329",
+      "artigo": "1º",
+      "pagina": 1,
+      "bairro": "Setor Aeroporto",
+      "atribuido": "Rua Jorge Romano Júnior",
+      "anterior": "Rua 202",
+      "vinculo_postal": {
+        "nome": "Rua Jorge Romano Júnior",
+        "bairro": "Setor Aeroporto",
+        "cep": "75654-084"
+      },
+      "nota_ato": "O nome do arquivo indica abril. Cabeçalho e fecho do ato indicam março. A ficha da Câmara informa publicação em 16/03/1995. Data efetiva a conferir no registro de publicação.",
+      "tipo_alteracao": "Alteração de denominação"
+    },
+    {
+      "id": "lei-1330-1995",
+      "arquivo": "fontes/leis/lei-1330-1995.pdf",
+      "url": "/fontes/leis/lei-1330-1995.pdf",
+      "referencia": "1995-03-16",
+      "numero": "1.330",
+      "artigo": "1º",
+      "pagina": 1,
+      "bairro": "Setor Jardim América",
+      "atribuido": "Avenida Romeu Romano",
+      "registros_postais_anteriores": [
+        {
+          "nome": "Avenida B",
+          "bairro": "Jardim América",
+          "cep": "75650-296"
+        }
+      ],
+      "anterior": "Avenida B",
+      "vinculo_postal": {
+        "nome": "Avenida Romeu Romano",
+        "bairro": "Jardim América",
+        "cep": "75650-296"
+      },
+      "nota_ato": "As duas denominações aparecem em listas postais no Jardim América, CEP 75650-296. A outra cópia do lote também confirma o mês de março. A ficha da Câmara informa publicação em 16/03/1995. Data efetiva a conferir no registro de publicação.",
+      "tipo_alteracao": "Alteração de denominação"
+    },
+    {
+      "id": "lei-1332-1995",
+      "arquivo": "fontes/leis/lei-1332-1995.pdf",
+      "url": "/fontes/leis/lei-1332-1995.pdf",
+      "referencia": "1995-03-16",
+      "numero": "1.332",
+      "artigo": "1º",
+      "pagina": 1,
+      "bairro": "Setor Aeroporto",
+      "atribuido": "Rua João Barbosa de Souza",
+      "anterior": "Rua 213",
+      "vinculo_postal": {
+        "nome": "Rua João Barbosa de Souza",
+        "bairro": "Setor Aeroporto",
+        "cep": "75654-070"
+      },
+      "nota_ato": "A ficha da Câmara informa publicação em 16/03/1995. Data efetiva a conferir no registro de publicação.",
+      "tipo_alteracao": "Alteração de denominação"
+    },
+    {
+      "id": "lei-1344-1995",
+      "arquivo": "fontes/leis/lei-1344-1995.pdf",
+      "url": "/fontes/leis/lei-1344-1995.pdf",
+      "referencia": "1995-05-17",
+      "numero": "1.344",
+      "artigo": "1º",
+      "pagina": 1,
+      "bairro": "Setor Conjunto Habitacional Santos Dumont – II Etapa",
+      "atribuido": "Avenida Sebastião Dias Coelho",
+      "anterior": "Avenida C",
+      "nota_ato": "A lista postal traz Avenida Sebastião Dias Coelho e Avenida Dias Coelho em Vila Santos Dumont, CEP 75654-246. A correspondência entre a etapa do conjunto e o trecho postal depende da planta. A ficha da Câmara informa publicação em 17/05/1995. Data efetiva a conferir no registro de publicação.",
+      "tipo_alteracao": "Alteração de denominação"
+    },
+    {
+      "id": "lei-1347-1995",
+      "arquivo": "fontes/leis/lei-1347-1995.pdf",
+      "url": "/fontes/leis/lei-1347-1995.pdf",
+      "referencia": "1995-06-20",
+      "numero": "1.347",
+      "artigo": "1º",
+      "pagina": 1,
+      "bairro": "Setor Aeroporto",
+      "atribuido": "Av. Professora Zilda Diniz Fontes",
+      "anterior": "Avenida 100",
+      "vinculo_postal": {
+        "nome": "Avenida Professora Zilda Diniz Fontes",
+        "bairro": "Setor Aeroporto",
+        "cep": "75654-096"
+      },
+      "nota_ato": "A lista registra ainda o CEP 75654-140 no Setor Aeroporto III, fora do bairro indicado no ato. A ficha da Câmara informa publicação em 20/06/1995. Data efetiva a conferir no registro de publicação.",
+      "tipo_alteracao": "Alteração de denominação"
+    },
+    {
+      "id": "lei-1357-1995",
+      "arquivo": "fontes/leis/lei-1357-1995.pdf",
+      "url": "/fontes/leis/lei-1357-1995.pdf",
+      "referencia": "1995-06-26",
+      "numero": "1.357",
+      "artigo": "1º",
+      "pagina": 1,
+      "bairro": "Setor Morro da Saudade",
+      "atribuido": "Rua Adelino Ribeiro da Silva",
+      "anterior": "Rua 01",
+      "vinculo_postal": {
+        "nome": "Rua Adelino Ribeiro da Silva",
+        "bairro": "Morro da Saudade",
+        "cep": "75650-534"
+      },
+      "nota_ato": "A lista também registra Morro da Saudade I para o mesmo nome e CEP. Os trechos do Condomínio Recanto das Araras e do Setor Sebastião Telézio Carneiro de Andrade têm CEPs próprios. A ficha da Câmara informa publicação em 26/06/1995. Data efetiva a conferir no registro de publicação.",
+      "tipo_alteracao": "Alteração de denominação"
+    },
+    {
+      "id": "lei-1358-1995",
+      "arquivo": "fontes/leis/lei-1358-1995.pdf",
+      "url": "/fontes/leis/lei-1358-1995.pdf",
+      "referencia": "1995-06-26",
+      "numero": "1.358",
+      "artigo": "1º",
+      "pagina": 1,
+      "bairro": "Jardim América",
+      "atribuido": "Praça W-A",
+      "trecho": "Entre a Rua Dr. Heitor Bastos, a Rua 03 e a Avenida Romeu Romano",
+      "nota_ato": "Ato anterior conferido no PDF oficial da Prefeitura. A ficha da Câmara informa publicação em 26/06/1995. Data efetiva a conferir no registro de publicação.",
+      "tipo_alteracao": "Denominação"
+    },
+    {
+      "id": "lei-1437-1996",
+      "arquivo": "fontes/leis/lei-1437-1996.pdf",
+      "url": "/fontes/leis/lei-1437-1996.pdf",
+      "referencia": "1996-06-20",
+      "numero": "1.437",
+      "artigo": "1º",
+      "pagina": 1,
+      "bairro": "Jardim América",
+      "atribuido": "Praça Walter de Aquino",
+      "trecho_ato": "lei-1358-1995",
+      "anterior": "Praça WA",
+      "nota_ato": "O cabeçalho indica 20/06/1996 e o fecho registra 24/05/1996. O art. 2º revoga expressamente as disposições em contrário da Lei nº 1.358/1995, que denominou a Praça W-A. A ficha da Câmara informa publicação em 20/06/1996. Data efetiva a conferir no registro de publicação.",
+      "tipo_alteracao": "Nova denominação com revogação expressa"
+    },
+    {
+      "id": "lei-1502-1997",
+      "arquivo": "fontes/leis/lei-1502-1997.pdf",
+      "url": "/fontes/leis/lei-1502-1997.pdf",
+      "referencia": "1997-04-18",
+      "numero": "1.502",
+      "artigo": "1º",
+      "pagina": 1,
+      "bairro": "",
+      "atribuido": "Rua Paulo de Souza",
+      "trecho": "Rua recém-aberta ligando o Morro da Saudade II à Rua Alagoas, que dá acesso ao Setor J.K.",
+      "nota_ato": "O Setor J.K. é destino do acesso. A lista registra a Rua Paulo de Souza em Morro da Saudade II (75650-587) e em Morro da Saudade/Morro da Saudade I (75650-562). A planta deve identificar o alcance exato da rua recém-aberta. A ficha da Câmara informa publicação em 18/04/1997. Data efetiva a conferir no registro de publicação.",
+      "tipo_alteracao": "Denominação"
+    },
+    {
+      "id": "lei-1503-1997",
+      "arquivo": "fontes/leis/lei-1503-1997.pdf",
+      "url": "/fontes/leis/lei-1503-1997.pdf",
+      "referencia": "1997-04-18",
+      "numero": "1.503",
+      "artigo": "1º",
+      "pagina": 1,
+      "bairro": "",
+      "atribuido": "Rua do Bom Retiro",
+      "trecho": "Entre as ruas Dr. Pedro Nunes e Major Limírio, confrontando com o Cemitério São Miguel",
+      "nota_ato": "A lista postal traz Rua Bom Retiro, Centro, CEP 75650-126. A lei identifica as confrontações e omite o bairro. Falta confrontar o trecho com a planta. A ficha da Câmara informa publicação em 18/04/1997. Data efetiva a conferir no registro de publicação.",
+      "tipo_alteracao": "Denominação"
+    },
+    {
+      "id": "lei-1658-1999",
+      "arquivo": "fontes/leis/lei-1658-1999.pdf",
+      "url": "/fontes/leis/lei-1658-1999.pdf",
+      "referencia": "1999-03-19",
+      "numero": "1.658",
+      "artigo": "1º",
+      "pagina": 1,
+      "bairro": "Jardim Romano e Genoveva Alves",
+      "atribuido": "Avenida Antônio Gonçalves Leite (Antônio Tita)",
+      "trecho": "Do Córrego Maria Lucinda até o Morro do Ovo (Serrinha), na divisa entre Jardim Romano e Genoveva Alves",
+      "vinculo_postal": {
+        "nome": "Avenida Antônio Gonçalves Leite",
+        "bairro": "Genoveva Alves",
+        "cep": "75656-542"
+      },
+      "nota_ato": "O artigo descreve uma avenida recém-construída. O acesso a Piracanjuba aparece apenas no título do arquivo. A lista postal também usa Antônio Tito no CEP 75656-542, com vogal final divergente. A ficha da Câmara indica 19/03/1999 para assinatura e publicação. O exemplar traz sanção manuscrita em 24/03/1999. Publicação efetiva a confirmar.",
+      "tipo_alteracao": "Denominação"
+    },
+    {
+      "id": "lei-1834-2001",
+      "arquivo": "fontes/leis/lei-1834-2001.pdf",
+      "url": "/fontes/leis/lei-1834-2001.pdf",
+      "referencia": "2001-06-20",
+      "numero": "1.834",
+      "artigo": "1º",
+      "pagina": 1,
+      "bairro": "",
+      "anterior": null,
+      "atribuido": "Avenida Ângelo Auricchio",
+      "trecho": "Da praça rotatória da Avenida Coronel Fernando Barbosa, passando pelo Parque Ecológico, até o Distrito Agroindustrial de Morrinhos (DAIMO)",
+      "vinculo_postal": {
+        "nome": "Avenida Angelo Auricchio",
+        "bairro": "Distrito Agroindustrial de Morrinhos",
+        "cep": "75654-740"
+      },
+      "nota_ato": "O art. 1º descreve o percurso e não fornece nome anterior. «Avenida dos Trabalhadores» consta no nome do arquivo e nas edições postais anteriores, nos mesmos oito bairros e CEPs que a denominação atual. O DAIMO é o ponto final identificado na lei. Para delimitar os demais trechos por bairro, é necessária a planta do percurso. Vigência na publicação, cuja data não consta na cópia. A ficha da Câmara informa publicação em 20/06/2001. O exemplar examinado não traz certidão de publicação.",
+      "tipo_alteracao": "Denominação"
+    },
+    {
+      "id": "lei-1871-2001",
+      "arquivo": "fontes/leis/lei-1871-2001.pdf",
+      "url": "/fontes/leis/lei-1871-2001.pdf",
+      "referencia": "2001-11-22",
+      "numero": "1.871",
+      "artigo": "1º",
+      "pagina": 1,
+      "bairro": "Setor Jardim Goiás",
+      "anterior": "Rua JG-3",
+      "atribuido": "Rua Manoel Cândido de Mello",
+      "vinculo_postal": {
+        "nome": "Rua Manoel Cândido de Mello",
+        "bairro": "Jardim Goiás",
+        "cep": "75656-152"
+      },
+      "registros_postais_anteriores": [
+        {
+          "nome": "Rua JG-III",
+          "bairro": "Jardim Goiás",
+          "cep": "75656-152"
+        }
+      ],
+      "nota_ato": "As listas anteriores registram a Rua JG-III no mesmo bairro e CEP do nome atribuído.",
+      "tipo_alteracao": "Alteração de denominação"
+    },
+    {
+      "id": "lei-2067-2004",
+      "arquivo": "fontes/leis/lei-2067-2004.pdf",
+      "url": "/fontes/leis/lei-2067-2004.pdf",
+      "referencia": "2004-03-30",
+      "numero": "2.067",
+      "artigo": "1º",
+      "pagina": 1,
+      "bairro": "",
+      "anterior": "Avenida Beira Lago",
+      "atribuido": "Avenida Dante Costa",
+      "trecho": "Avenida recém-construída de acesso aos setores Morro da Saudade, Jardim Venezuela, Jardim Romano, Genoveva Alves e Parque Ecológico",
+      "nota_ato": "A lei descreve os acessos. A lista registra Avenida Dante Costa no Centro, CEP 75650-140. Falta identificar os limites dessa linha postal. A certidão de afixação está esmaecida. A ficha da Câmara indica 30/03/2004 para publicação. No anexo, a certidão indica abril de 2004, com dia de leitura incerta.",
+      "tipo_alteracao": "Alteração de denominação"
+    },
+    {
+      "id": "lei-3532-2020",
+      "arquivo": "fontes/leis/lei-3532-2020.pdf",
+      "url": "/fontes/leis/lei-3532-2020.pdf",
+      "referencia": "2020-02-21",
+      "numero": "3.532",
+      "artigo": "1º",
+      "pagina": 1,
+      "bairro": "Monte Verde",
+      "anterior": "Rua MV-02",
+      "atribuido": "Rua Geraldo José de Sousa (Geraldo Barba)",
+      "trecho": "Parcela da Rua MV-02 correspondente ao bairro postal Conjunto Residencial Monte Verde, dentro do percurso descrito no art. 1º.",
+      "registro": "lei-3532-2020-75652-393",
+      "vinculo_postal": {
+        "nome": "Rua Geraldo José de Souza",
+        "bairro": "Conjunto Residencial Monte Verde",
+        "cep": "75652-393"
+      },
+      "nota_ato": "O artigo grafa “Sousa”, o título do arquivo e as linhas postais trazem “Souza”. O ato abrange os quatro conjuntos, com CEPs distintos. Publicação e vigência documentadas pela certidão de afixação no exemplar da Câmara.",
+      "data_publicacao": "2020-02-27",
+      "vigencia_desde": "2020-02-27",
+      "tipo_alteracao": "Alteração de denominação"
+    },
+    {
+      "id": "lei-3532-2020",
+      "arquivo": "fontes/leis/lei-3532-2020.pdf",
+      "url": "/fontes/leis/lei-3532-2020.pdf",
+      "referencia": "2020-02-21",
+      "numero": "3.532",
+      "artigo": "1º",
+      "pagina": 1,
+      "bairro": "Jardim Portugal",
+      "anterior": "Rua MV-02",
+      "atribuido": "Rua Geraldo José de Sousa (Geraldo Barba)",
+      "trecho": "Parcela da Rua MV-02 correspondente ao bairro postal Jardim Portugal, dentro do percurso descrito no art. 1º.",
+      "registro": "lei-3532-2020-75652-462",
+      "vinculo_postal": {
+        "nome": "Rua Geraldo José de Souza",
+        "bairro": "Jardim Portugal",
+        "cep": "75652-462"
+      },
+      "nota_ato": "O artigo grafa “Sousa”, o título do arquivo e as linhas postais trazem “Souza”. O ato abrange os quatro conjuntos, com CEPs distintos. A variante postal com tipo Avenida permanece separada até a confirmação dos limites na planta. Publicação e vigência documentadas pela certidão de afixação no exemplar da Câmara.",
+      "data_publicacao": "2020-02-27",
+      "vigencia_desde": "2020-02-27",
+      "tipo_alteracao": "Alteração de denominação"
+    },
+    {
+      "id": "lei-3532-2020",
+      "arquivo": "fontes/leis/lei-3532-2020.pdf",
+      "url": "/fontes/leis/lei-3532-2020.pdf",
+      "referencia": "2020-02-21",
+      "numero": "3.532",
+      "artigo": "1º",
+      "pagina": 1,
+      "bairro": "Jardim Bela Vista I",
+      "anterior": "Rua MV-02",
+      "atribuido": "Rua Geraldo José de Sousa (Geraldo Barba)",
+      "trecho": "Parcela da Rua MV-02 correspondente ao bairro postal Jardim Bela Vista, dentro do percurso descrito no art. 1º.",
+      "registro": "lei-3532-2020-75652-652",
+      "vinculo_postal": {
+        "nome": "Rua Geraldo José de Souza",
+        "bairro": "Jardim Bela Vista",
+        "cep": "75652-652"
+      },
+      "nota_ato": "O artigo grafa “Sousa”, o título do arquivo e as linhas postais trazem “Souza”. O ato abrange os quatro conjuntos, com CEPs distintos. A variante postal com tipo Avenida permanece separada até a confirmação dos limites na planta. Publicação e vigência documentadas pela certidão de afixação no exemplar da Câmara.",
+      "data_publicacao": "2020-02-27",
+      "vigencia_desde": "2020-02-27",
+      "tipo_alteracao": "Alteração de denominação"
+    },
+    {
+      "id": "lei-3532-2020",
+      "arquivo": "fontes/leis/lei-3532-2020.pdf",
+      "url": "/fontes/leis/lei-3532-2020.pdf",
+      "referencia": "2020-02-21",
+      "numero": "3.532",
+      "artigo": "1º",
+      "pagina": 1,
+      "bairro": "Residencial Cristina Park",
+      "anterior": "Rua MV-02",
+      "atribuido": "Rua Geraldo José de Sousa (Geraldo Barba)",
+      "trecho": "Parcela da Rua MV-02 correspondente ao bairro postal Cristina Park, dentro do percurso descrito no art. 1º.",
+      "registro": "lei-3532-2020-75652-684",
+      "vinculo_postal": {
+        "nome": "Rua Geraldo José de Souza",
+        "bairro": "Cristina Park",
+        "cep": "75652-684"
+      },
+      "nota_ato": "O artigo grafa “Sousa”, o título do arquivo e as linhas postais trazem “Souza”. O ato abrange os quatro conjuntos, com CEPs distintos. A lista anterior registra Avenida MV-2. O tipo da via diverge do art. 1º. Publicação e vigência documentadas pela certidão de afixação no exemplar da Câmara.",
+      "data_publicacao": "2020-02-27",
+      "vigencia_desde": "2020-02-27",
+      "tipo_alteracao": "Alteração de denominação"
+    },
+    {
+      "id": "lei-3625-2021",
+      "arquivo": "fontes/leis/lei-3625-2021.pdf",
+      "url": "/fontes/leis/lei-3625-2021.pdf",
+      "referencia": "2021-06-18",
+      "numero": "3.625",
+      "artigo": "1º",
+      "pagina": 1,
+      "bairro": "Setor Oeste",
+      "anterior": "Rua 22",
+      "atribuido": "Rua Evangelista Valério Cardoso",
+      "trecho": "Da Rua Pernambuco, no Setor Oeste, até a Rua 101 B, na Vila Mutirão",
+      "registro": "lei-3625-2021-75650-054",
+      "vinculo_postal": {
+        "nome": "Rua Evangelista Valério Cardoso",
+        "bairro": "Setor Oeste",
+        "cep": "75650-054"
+      },
+      "nota_ato": "A lista contém linhas em ambos os bairros indicados e em outros três. Para as linhas de Vila Bela, Setor Aeroporto e Setor Aeroporto III, falta confirmar em planta o percurso entre os extremos. A Lei nº 2.792/2011 denominou a Rua 22 do Setor Oeste de Rua Agenor Vicente de Souza. A lei de 2021 não declara revogação expressa. A extensão comum depende de planta. Publicação e vigência documentadas pela certidão de afixação no exemplar da Câmara.",
+      "data_publicacao": "2021-06-21",
+      "vigencia_desde": "2021-06-21",
+      "tipo_alteracao": "Alteração de denominação"
+    },
+    {
+      "id": "lei-3625-2021",
+      "arquivo": "fontes/leis/lei-3625-2021.pdf",
+      "url": "/fontes/leis/lei-3625-2021.pdf",
+      "referencia": "2021-06-18",
+      "numero": "3.625",
+      "artigo": "1º",
+      "pagina": 1,
+      "bairro": "Vila Mutirão",
+      "anterior": "Rua 22",
+      "atribuido": "Rua Evangelista Valério Cardoso",
+      "trecho": "Da Rua Pernambuco, no Setor Oeste, até a Rua 101 B, na Vila Mutirão",
+      "registro": "lei-3625-2021-75654-172",
+      "vinculo_postal": {
+        "nome": "Rua Evangelista Valério Cardoso",
+        "bairro": "Vila Mutirão",
+        "cep": "75654-172"
+      },
+      "nota_ato": "A lista contém linhas em ambos os bairros indicados e em outros três. Para as linhas de Vila Bela, Setor Aeroporto e Setor Aeroporto III, falta confirmar em planta o percurso entre os extremos. A Lei nº 2.792/2011 denominou a Rua 22 do Setor Oeste de Rua Agenor Vicente de Souza. A lei de 2021 não declara revogação expressa. A extensão comum depende de planta. Publicação e vigência documentadas pela certidão de afixação no exemplar da Câmara.",
+      "data_publicacao": "2021-06-21",
+      "vigencia_desde": "2021-06-21",
+      "tipo_alteracao": "Alteração de denominação"
+    },
+    {
+      "id": "lei-3642-2021",
+      "arquivo": "fontes/leis/lei-3642-2021.pdf",
+      "url": "/fontes/leis/lei-3642-2021.pdf",
+      "referencia": "2021-08-20",
+      "numero": "3.642",
+      "artigo": "1º",
+      "pagina": 1,
+      "bairro": "Jardim Venezuela",
+      "anterior": "Rua Quatro",
+      "atribuido": "Rua José Dionízio de Melo",
+      "trecho": "Entre a Rua Manuel de Freitas e o cruzamento com a Rua Sergipe",
+      "registro": "lei-3642-2021-75650-164",
+      "vinculo_postal": {
+        "nome": "Rua José Dionísio de Melo",
+        "bairro": "Jardim Venezuela",
+        "cep": "75650-164"
+      },
+      "registros_postais_anteriores": [
+        {
+          "nome": "Rua 4",
+          "bairro": "Jardim Venezuela",
+          "cep": "75650-164"
+        }
+      ],
+      "nota_ato": "O art. 1º grafa “Dionízio”. A lista registra “Dionísio” no Jardim Venezuela e no Jardim Romano. Em Vila Santa Rosa, o nome postal encontrado é Rua 4. Publicação e vigência documentadas pela certidão de afixação no exemplar da Câmara.",
+      "data_publicacao": "2021-08-27",
+      "vigencia_desde": "2021-08-27",
+      "tipo_alteracao": "Alteração de denominação"
+    },
+    {
+      "id": "lei-3642-2021",
+      "arquivo": "fontes/leis/lei-3642-2021.pdf",
+      "url": "/fontes/leis/lei-3642-2021.pdf",
+      "referencia": "2021-08-20",
+      "numero": "3.642",
+      "artigo": "1º",
+      "pagina": 1,
+      "bairro": "Vila Santa Rosa",
+      "anterior": "Rua Quatro",
+      "atribuido": "Rua José Dionízio de Melo",
+      "trecho": "Entre a Rua Manuel de Freitas e o cruzamento com a Rua Sergipe",
+      "registro": "lei-3642-2021-75650-735",
+      "vinculo_postal": {
+        "nome": "Rua 4",
+        "bairro": "Vila Santa Rosa",
+        "cep": "75650-735"
+      },
+      "nota_ato": "O art. 1º grafa “Dionízio”. A lista registra “Dionísio” no Jardim Venezuela e no Jardim Romano. Em Vila Santa Rosa, o nome postal encontrado é Rua 4. Publicação e vigência documentadas pela certidão de afixação no exemplar da Câmara.",
+      "data_publicacao": "2021-08-27",
+      "vigencia_desde": "2021-08-27",
+      "tipo_alteracao": "Alteração de denominação"
+    },
+    {
+      "id": "lei-3642-2021",
+      "arquivo": "fontes/leis/lei-3642-2021.pdf",
+      "url": "/fontes/leis/lei-3642-2021.pdf",
+      "referencia": "2021-08-20",
+      "numero": "3.642",
+      "artigo": "1º",
+      "pagina": 1,
+      "bairro": "Jardim Romano",
+      "anterior": "Rua Quatro",
+      "atribuido": "Rua José Dionízio de Melo",
+      "trecho": "Entre a Rua Manuel de Freitas e o cruzamento com a Rua Sergipe",
+      "registro": "lei-3642-2021-75656-128",
+      "vinculo_postal": {
+        "nome": "Rua José Dionísio de Melo",
+        "bairro": "Jardim Romano",
+        "cep": "75656-128"
+      },
+      "registros_postais_anteriores": [
+        {
+          "nome": "Rua 4",
+          "bairro": "Jardim Romano",
+          "cep": "75656-128"
+        }
+      ],
+      "nota_ato": "O art. 1º grafa “Dionízio”. A lista registra “Dionísio” no Jardim Venezuela e no Jardim Romano. Em Vila Santa Rosa, o nome postal encontrado é Rua 4. Publicação e vigência documentadas pela certidão de afixação no exemplar da Câmara.",
+      "data_publicacao": "2021-08-27",
+      "vigencia_desde": "2021-08-27",
+      "tipo_alteracao": "Alteração de denominação"
+    },
+    {
+      "id": "lei-3851-2023",
+      "arquivo": "fontes/leis/lei-3851-2023.pdf",
+      "url": "/fontes/leis/lei-3851-2023.pdf",
+      "referencia": "2023-02-17",
+      "numero": "3.851",
+      "artigo": "1º",
+      "pagina": 1,
+      "bairro": "Setor Santos Dumont, 2ª Etapa",
+      "anterior": "Avenida H",
+      "atribuido": "Avenida Tenente Santana",
+      "data_publicacao": "2023-03-02",
+      "vigencia_desde": "2023-03-02",
+      "vinculo_postal": {
+        "nome": "Avenida Tenente Santana",
+        "bairro": "Vila Santos Dumont",
+        "cep": "75654-226"
+      },
+      "registros_postais_anteriores": [
+        {
+          "nome": "Avenida H",
+          "bairro": "Vila Santos Dumont",
+          "cep": "75654-226"
+        }
+      ],
+      "nota_ato": "A certidão de afixação no placar municipal documenta a publicação em 2 de março de 2023. As listas postais registram os dois nomes em Vila Santos Dumont. Publicação e vigência documentadas pela certidão de afixação no exemplar da Câmara. A ficha da Câmara informa 17/02/2023. Prevalece a data de afixação certificada em 02/03/2023.",
+      "tipo_alteracao": "Alteração de denominação"
     }
   ],
   "cep_geral": {

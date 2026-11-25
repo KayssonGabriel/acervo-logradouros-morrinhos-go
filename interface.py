@@ -18,6 +18,11 @@ ARQUIVOS = {
     '/icones.svg': ('icones.svg', 'image/svg+xml'),
     '/marca.svg': ('marca.svg', 'image/svg+xml'),
 }
+LEIS_LOCAIS = {
+    '/' + ato['arquivo']: RAIZ / ato['arquivo']
+    for ato in json.loads((RAIZ / 'dados/fontes.json').read_text(encoding='utf-8'))['atos']
+    if re.fullmatch(r'fontes/leis/lei-[0-9]+-[0-9]{4}\.pdf', ato['arquivo'])
+}
 ROTAS = {'/api/consulta', '/api/bairros', '/api/fontes'}
 TAMANHO_PAGINA = 20
 LISTAS = {
@@ -40,6 +45,8 @@ CAMPOS_POSTAIS = ('referencia', 'pagina', 'nome_original', 'bairro_original', 'c
 
 
 def url_publica(url):
+    if url in LEIS_LOCAIS:
+        return url
     partes = urlsplit(url)
     if partes.scheme == 'https' and partes.hostname and not (partes.username or partes.password):
         return url
@@ -168,6 +175,8 @@ class InterfaceHandler(BaseHTTPRequestHandler):
             if alvo.path in ARQUIVOS:
                 arquivo, mime = ARQUIVOS[alvo.path]
                 self.responder(HTTPStatus.OK, (RAIZ / 'web' / arquivo).read_bytes(), mime)
+            elif alvo.path in LEIS_LOCAIS:
+                self.responder(HTTPStatus.OK, LEIS_LOCAIS[alvo.path].read_bytes(), 'application/pdf')
             elif alvo.path in ROTAS:
                 self.json(HTTPStatus.OK, self.consultar_api(alvo))
             else:

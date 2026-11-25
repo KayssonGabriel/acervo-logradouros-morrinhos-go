@@ -52,7 +52,7 @@ class TestAcervo(unittest.TestCase):
             self.assertEqual(contagem['lista-2024-11'], 970)
             self.assertEqual(contagem['lista-2025-01'], 970)
             self.assertEqual(contagem['lista-2025-01-bairro'], 970)
-            self.assertEqual(db.execute('SELECT count(*) FROM ato_nome').fetchone()[0], 46)
+            self.assertEqual(db.execute('SELECT count(*) FROM ato_nome').fetchone()[0], 106)
 
     def test_nome_anterior_documentado_encontra_cep_por_bairro(self):
         resultado, = self.consultar('Rua 03', '--bairro', 'Jardim América')
@@ -89,7 +89,7 @@ class TestAcervo(unittest.TestCase):
                 with closing(acervo.abrir_banco(local)) as db:
                     db.execute('SELECT id FROM marcador_local')
             with closing(acervo.abrir_banco(acervo.BASE_INICIAL)) as db:
-                self.assertEqual(db.execute('SELECT count(*) FROM ato_nome').fetchone()[0], 46)
+                self.assertEqual(db.execute('SELECT count(*) FROM ato_nome').fetchone()[0], 106)
                 self.assertEqual(db.execute('SELECT count(*) FROM mudanca_local').fetchone()[0], 0)
                 self.assertEqual(db.execute('SELECT count(*) FROM conferencia_correios').fetchone()[0], 0)
                 db.execute('ATTACH DATABASE ? AS reimportado', (str(self.banco),))
@@ -108,9 +108,9 @@ class TestAcervo(unittest.TestCase):
         self.assertEqual(len({r['trecho_id'] for r in da_lista_recente}), 2)
 
     def test_mesmo_cep_com_nomes_distintos_preserva_pendencia(self):
-        resultados = self.consultar('75654069')
+        resultados = self.consultar('75650044')
         self.assertEqual({r['nome_postal_publicado'] for r in resultados}, {
-            'RUA 214', 'Rua João Ferreira de Macedo'})
+            'Rua 18A', 'Rua 1A'})
         self.assertTrue(all(r['divergencia_postal'] for r in resultados))
         self.assertTrue(all(r['conferencia_correios'] == 'pendente' for r in resultados))
 
@@ -141,18 +141,18 @@ class TestAcervo(unittest.TestCase):
         banco = Path(self.pasta.name) / 'conferencia.sqlite3'
         with closing(sqlite3.connect(self.banco)) as origem, closing(sqlite3.connect(banco)) as destino:
             origem.backup(destino)
-        resultados = self.consultar('75654-069', banco=banco)
+        resultados = self.consultar('75650-044', banco=banco)
         escolhido = next(r for r in resultados if r['fonte_postal_id'] == 'lista-2025-12-bairro')
         result = self.cli(
             'registrar-conferencia', str(escolhido['observacao_postal_id']),
             '--data', '2026-11-24', '--responsavel', 'Operador de teste',
-            '--resultado', 'confirmado', '--endereco', 'Rua João Ferreira de Macedo, Setor Aeroporto',
+            '--resultado', 'confirmado', '--endereco', 'Rua 18A, Setor Oeste',
             '--evidencia', 'Consulta simulada no banco temporário de teste', banco=banco,
         )
         self.assertEqual(result.returncode, 0, result.stderr)
-        resultados = self.consultar('75654-069', banco=banco)
+        resultados = self.consultar('75650-044', banco=banco)
         self.assertEqual({r['fonte_postal_id']: r['conferencia_correios'] for r in resultados}, {
-            'lista-2025-12-bairro': 'confirmado', 'lista-2025-10': 'pendente',
+            'lista-2025-12-bairro': 'confirmado', 'lista-2025-01': 'pendente',
         })
 
     def test_mudanca_com_lei_une_listas_sem_apagar_o_endereco_anterior(self):
@@ -267,9 +267,9 @@ class TestAcervo(unittest.TestCase):
                 self.assertEqual(resultado['cep_publicado'], cep)
 
     def test_busca_de_cep_rotulado_preserva_os_resultados_ambiguos(self):
-        esperados = self.consultar('75654-069', '--bairro', 'Setor Aeroporto')
+        esperados = self.consultar('75650-044', '--bairro', 'Setor Oeste')
         self.assertEqual(len(esperados), 2)
-        self.assertEqual(self.consultar('CEP 75654069, Setor Aeroporto'), esperados)
+        self.assertEqual(self.consultar('CEP 75650044, Setor Oeste'), esperados)
 
     def test_bairro_abreviado_mantem_mesma_busca_quando_nome_completo_e_conhecido(self):
         resultado, = self.consultar('Rua 216', '--bairro', 'Aeroporto')
@@ -324,6 +324,17 @@ class TestAcervo(unittest.TestCase):
         self.assertEqual([r['cep_publicado'] for r in dados], ['75654-000'])
         self.assertEqual(self.consultar('Rua 19, Vila Bela'), dados)
 
+    def test_busca_por_cardinais_preserva_trechos_e_bairro(self):
+        for escrito, numerico in [('Rua três', 'Rua 03'), ('R. vinte e dois', 'Rua 22'),
+                                  ('Rua duzentos e dezesseis', 'Rua 216'),
+                                  ('Rua nº três, Jardim América', 'Rua 3, Jardim América')]:
+            with self.subTest(escrito=escrito):
+                esperado = self.consultar(numerico)
+                self.assertTrue(esperado)
+                self.assertEqual(self.consultar(escrito), esperado)
+        self.assertEqual(acervo.via_numerada('avenida duas'), 'avenida 2')
+        self.assertIsNone(acervo.via_numerada('rua tres marias'))
+
     def test_auditoria_separa_cep_ausente_de_grafia_alterada_entre_edicoes(self):
         with closing(acervo.abrir_banco(self.banco)) as db:
             resumo, _ = auditar_acervo.cobertura(db)
@@ -347,7 +358,7 @@ class TestAcervo(unittest.TestCase):
         self.assertNotIn('ceps_so_na_atual', boletim)
         rua214 = next(pista for pista in boletim['pistas'] if pista['cep'] == '75654-069')
         self.assertEqual(rua214['anterior'][0]['nome'], 'RUA 214')
-        self.assertFalse(rua214['vinculo_documentado'])
+        self.assertTrue(rua214['vinculo_documentado'])
 
     def test_retificacao_da_rua_04_preserva_grafia_postal_e_homonimo(self):
         legal, = self.consultar('Rua 04', '--bairro', 'Jardim Santa Terezinha I')
