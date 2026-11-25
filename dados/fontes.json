@@ -1,5 +1,8 @@
 {
   "conciliacoes_postais": [
+    {"cep": "75656-392", "anterior": ["lista-2025-01", "Avenida Perimetral", "Residencial Valéria Reis"], "principal": ["lista-2025-12-bairro", "Avenida Jadir Machado da Silva", "Residencial Valéria Reis"], "evidencia": "Equivalência postal no bairro. O memorial da Tomada de Preços nº 10/2021, p. 23, identifica a Perimetral no percurso da pista 1 do Anel Viário Jadir Machado da Silva. A notícia municipal de 28/09/2021 localiza o percurso nos três bairros das fichas postais. A exceção em frente ao Jardim Colibri delimita o serviço de meio-fio."},
+    {"cep": "75656-292", "anterior": ["lista-2025-01", "Avenida Perimetral", "Jardim Colibri"], "principal": ["lista-2025-12-bairro", "Avenida Jadir Machado da Silva", "Jardim Colibri"], "evidencia": "Equivalência postal no bairro. O memorial da Tomada de Preços nº 10/2021, p. 23, identifica a Perimetral no percurso da pista 1 do Anel Viário Jadir Machado da Silva. A notícia municipal de 28/09/2021 localiza o percurso nos três bairros das fichas postais. A exceção em frente ao Jardim Colibri delimita o serviço de meio-fio."},
+    {"cep": "75654-370", "anterior": ["lista-2025-01", "Avenida Perimetral", "Setor Arca de Noé"], "principal": ["lista-2025-12-bairro", "Avenida Jadir Machado da Silva", "Setor Arca de Noé"], "evidencia": "Equivalência postal no bairro. O memorial da Tomada de Preços nº 10/2021, p. 23, identifica a Perimetral no percurso da pista 1 do Anel Viário Jadir Machado da Silva. A notícia municipal de 28/09/2021 localiza o percurso nos três bairros das fichas postais. A exceção em frente ao Jardim Colibri delimita o serviço de meio-fio."},
     {"cep": "75654-740", "anterior": ["lista-2025-01", "Avenida dos Trabalhadores", "Distrito Agroindustrial de Morrinhos"], "principal": ["lista-2025-12-bairro", "Avenida Angelo Auricchio", "Distrito Agroindustrial de Morrinhos"], "evidencia": "A Lei nº 1.834 situa o extremo da avenida no DAIMO. O CNEFE 2022 registra Avenida do Trabalhador no DAIMO. As listas coincidem no bairro e no CEP."},
     {"cep": "75654-384", "anterior": ["lista-2025-01", "Rua Francisco Rosa Campos", "Setor Arca de Noé"], "principal": ["lista-2025-12-bairro", "Avenida Francisco Rosa Campos", "Setor Arca de Noé"], "evidencia": "O CNEFE 2022 registra Avenida Francisco Rosa Campos no Residencial Arca de Noé. As listas preservam o nome completo, o bairro e o CEP, com tipos diferentes."},
     {"cep": "75652-684", "anterior": ["lista-2025-01", "Avenida MV-2", "Cristina Park"], "principal": ["lista-2025-12-bairro", "Rua Geraldo José de Souza", "Cristina Park"], "evidencia": "A Lei nº 3.532 identifica a Rua MV-02 e o percurso de Geraldo José de Sousa. A revisão da lei identifica o trecho neste bairro. As listas conservam o bairro e o CEP, com o tipo Avenida na anterior."},
@@ -2349,7 +2352,20 @@
       "anterior": "Rua 06",
       "atribuido": "Rua Isolina Norato de Jesus",
       "tipo_alteracao": "Alteração de denominação",
-      "trecho": "Confrontações com as ruas 03 e Alagoas"
+      "trecho": "Confrontações com as ruas 03 e Alagoas",
+      "vinculo_postal": {
+        "nome": "Rua Isolina Norato de Jesus",
+        "bairro": "JK",
+        "cep": "75650-410"
+      },
+      "registros_postais_vinculados": [
+        {
+          "nome": "Rua 6",
+          "bairro": "JK",
+          "cep": "75650-416"
+        }
+      ],
+      "nota_ato": "O art. 1º identifica a Rua 06 do JK pelas confrontações com as ruas 03 e Alagoas. Janeiro já registrava as duas denominações. A lista de dezembro e a conferência postal identificam a via pelo nome da lei e pelo CEP 75650-410. A data da retirada do código anterior não foi determinada."
     },
     {
       "id": "lei-1842-2001",
@@ -2363,7 +2379,20 @@
       "bairro": "Setor J.K.",
       "anterior": "Rua 04",
       "atribuido": "Rua Anaildes Maria do Carmo Oliveira",
-      "tipo_alteracao": "Alteração de denominação"
+      "tipo_alteracao": "Alteração de denominação",
+      "vinculo_postal": {
+        "nome": "Rua Anaildes Maria do Carmo Oliveira",
+        "bairro": "JK",
+        "cep": "75650-420"
+      },
+      "registros_postais_vinculados": [
+        {
+          "nome": "Rua Anaídes Maria do Carmo Oliveira",
+          "bairro": "JK",
+          "cep": "75650-420"
+        }
+      ],
+      "nota_ato": "O art. 1º denomina a Rua 04 do JK. As listas anteriores registram Anaídes e a de dezembro registra Anaildes, grafia da lei, no mesmo bairro e CEP."
     },
     {
       "id": "lei-2025-2003",
@@ -2891,7 +2920,22 @@
       "bairro": "Setor Santa Terezinha",
       "anterior": "Rua 4",
       "atribuido": "Rua Sargento Neir Garcia dos Santos",
-      "tipo_alteracao": "Alteração de denominação"
+      "tipo_alteracao": "Alteração de denominação",
+      "vinculo_postal": {
+        "nome": "Rua Sargento Neir Garcia dos Santos",
+        "bairro": "Jardim Santa Terezinha II",
+        "cep": "75654-616"
+      },
+      "registros_postais_vinculados": [
+        {
+          "nome": "Rua 4",
+          "bairro": "Jardim Santa Terezinha II",
+          "cep": "75654-616"
+        }
+      ],
+      "nota_ato": "O art. 1º identifica a Rua 4 do Setor Santa Terezinha. As listas registram os dois nomes no mesmo CEP da II Etapa. A Rua 4 da I Etapa tem ficha própria. A certidão de afixação registra 15/09/2023.",
+      "data_publicacao": "2023-09-15",
+      "vigencia_desde": "2023-09-15"
     },
     {
       "id": "lei-3946-2023",
