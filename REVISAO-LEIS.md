@@ -19,6 +19,9 @@ As 60 novas ocorrências correspondem a 56 trechos distintos. Foram criados 21 i
 - **Avenida J, Setor Oeste.** A Lei nº 27/1971 atribui o nome Alfredo Lopes de Morais. A nº 121/1973 delimita a Avenida Cel. Fernando Barbosa entre a residência do DERGO e Vila Bela. A nº 561/1984 revoga a nº 121 e denomina o trecho Avenida Genoveva Rezende Carneiro. A planta original é necessária para identificar a extensão comum à lei de 1971. A nº 545/1984 trata da antiga Avenida 250. A Lei nº 2.991/2013 localiza a pista Pedro Carlota de Azevedo na Avenida Genoveva, da Praça do Maçom à Avenida Dr. Gumercindo Otero. [Lei nº 2.991/2013](https://morrinhos.go.gov.br/wp-content/uploads/2023/11/2.991-Nome-de-pista-de-caminhada.-Pedro-Carlota-de-Azevedo.pdf)
 - **Avenida A e Rua São Miguel.** As leis nº 84/1966 e nº 29/1971 identificam a Avenida A do loteamento do Setor Oeste. A nº 95/1973 toma por objeto a Rua São Miguel e cita a revogação da Lei nº 19/1966. Para esclarecer a relação com a homenagem a Evaristo Frauzino, faltam a íntegra da nº 19 e a planta. Os anos anteriores a 1991 estão fora da série digital localizada na Câmara. [Índice de anos](https://leis.morrinhos.go.leg.br/api/leis/anos)
 - **Rua 22.** A Lei nº 2.792/2011 usa «Agenor Vicente de Souza» no Setor Oeste. A nº 3.625/2021 usa «Evangelista Valério Cardoso» entre a Rua Pernambuco e a Rua 101 B. A lista municipal anterior traz «Agenor Vicente da Silva». Para estabelecer a extensão da sobreposição, falta confrontar a planta com os extremos de 2021.
+
+  O art. 1º da Lei nº 2.060, de 10/03/2004, situa o imóvel de 10.000 m² da CRISA na esquina da Rua 1-A com a Rua 22, no Setor Oeste. A Lei nº 2.065/2004 acrescentou autorização para serviços no imóvel. A esquina fornece um ponto de referência para localizar a antiga Rua 22 em planta. A extensão comum aos atos de 2011 e 2021 continua pendente. [Lei nº 2.060/2004](https://leis.morrinhos.go.leg.br/leis/1186/lei-2060-2004) · [Lei nº 2.065/2004](https://leis.morrinhos.go.leg.br/leis/1191/lei-2065-2004)
+
 - **Publicação e vigência.** A data do ato segue o cabeçalho. Divergências com o fecho, a sanção, a ficha legislativa ou o carimbo estão registradas por lei abaixo. Datas disponíveis apenas no índice foram tratadas como informação da Câmara. Para fixar vigências controvertidas, é necessário consultar o diário ou o livro de publicação.
 - **Trechos e CEPs.** Os CEPs citados são observações das listas municipais. Praça Lions, Rua do Bom Retiro, Rua Paulo de Souza e os bairros percorridos pela Avenida Ângelo Auricchio têm limites que exigem mapa ou cadastro. A lei da Avenida Ângelo Auricchio descreve o itinerário e omite nome anterior. Os limites e as grafias originais de cada ocorrência constam abaixo.
 
@@ -691,7 +694,7 @@ Alteração de denominação. Art. 1º, p. 1. [PDF do acervo](fontes/leis/lei-20
 | --- | --- | --- | --- | --- |
 | Novo | Avenida Beira Lago | Avenida Dante Costa | Avenida recém-construída de acesso aos setores Morro da Saudade, Jardim Venezuela, Jardim Romano, Genoveva Alves e Parque Ecológico | CEP a confirmar |
 
-A lei descreve os acessos. A lista registra Avenida Dante Costa no Centro, CEP 75650-140. Falta identificar os limites dessa linha postal. A certidão de afixação está esmaecida. A ficha da Câmara indica 30/03/2004 para publicação. No anexo, a certidão indica abril de 2004, com dia de leitura incerta.
+A lei descreve os acessos. A lista registra Avenida Dante Costa no Centro, CEP 75650-140. Falta identificar os limites dessa linha postal. A certidão manuscrita na página 1 registra a afixação em 14/04/2004. A vigência teve início nessa data, conforme o art. 3º. A ficha da Câmara indica 30/03/2004 para a publicação, data que também consta no cabeçalho do ato.
 
 Documentos do inventário 39.
 
