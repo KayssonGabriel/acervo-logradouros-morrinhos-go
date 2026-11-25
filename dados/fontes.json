@@ -1,4 +1,26 @@
 {
+  "conciliacoes_postais": [
+    {"cep": "75650-199", "anterior": ["lista-2025-10", "RUA 25A", "SÃO FRANCISCO DE ASSIS"], "principal": ["lista-2025-12-bairro", "Rua 25-A", "São Francisco de Assis"]},
+    {"cep": "75652-733", "anterior": ["lista-2025-10", "RUA CP-12", "CRISTINA PARK II"], "principal": ["lista-2025-12-bairro", "Rua CP-12", "Cristina Park 2"]},
+    {"cep": "75652-744", "anterior": ["lista-2025-10", "RUA CP-12", "CORDEIRO II"], "principal": ["lista-2025-12-bairro", "Rua CP-12", "Setor Cordeiro II"]},
+    {"cep": "75653-400", "anterior": ["lista-2025-10", "V DPI 8", "DPI"], "principal": ["lista-2025-12-bairro", "Via DPI-8", "Distrito de Pequenas Indústrias de Morrinhos"]},
+    {"cep": "75653-402", "anterior": ["lista-2025-10", "V DPI 12", "DPI"], "principal": ["lista-2025-12-bairro", "Via DPI-12", "Distrito de Pequenas Indústrias de Morrinhos"]},
+    {"cep": "75653-404", "anterior": ["lista-2025-10", "V DPI 11", "DPI"], "principal": ["lista-2025-12-bairro", "Via DPI-11", "Distrito de Pequenas Indústrias de Morrinhos"]},
+    {"cep": "75653-406", "anterior": ["lista-2025-10", "V DPI 7", "DPI"], "principal": ["lista-2025-12-bairro", "Via DPI-7", "Distrito de Pequenas Indústrias de Morrinhos"]},
+    {"cep": "75653-408", "anterior": ["lista-2025-10", "V DPI 6", "DPI"], "principal": ["lista-2025-12-bairro", "Via DPI-6", "Distrito de Pequenas Indústrias de Morrinhos"]},
+    {"cep": "75653-410", "anterior": ["lista-2025-10", "V DPI 5", "DPI"], "principal": ["lista-2025-12-bairro", "Via DPI-5", "Distrito de Pequenas Indústrias de Morrinhos"]},
+    {"cep": "75653-412", "anterior": ["lista-2025-10", "V DPI 4", "DPI"], "principal": ["lista-2025-12-bairro", "Via DPI-4", "Distrito de Pequenas Indústrias de Morrinhos"]},
+    {"cep": "75653-414", "anterior": ["lista-2025-10", "V DPI 10", "DPI"], "principal": ["lista-2025-12-bairro", "Via DPI-10", "Distrito de Pequenas Indústrias de Morrinhos"]},
+    {"cep": "75653-416", "anterior": ["lista-2025-10", "V DPI 9", "DPI"], "principal": ["lista-2025-12-bairro", "Via DPI-9", "Distrito de Pequenas Indústrias de Morrinhos"]},
+    {"cep": "75653-418", "anterior": ["lista-2025-10", "V DPI 3", "DPI"], "principal": ["lista-2025-12-bairro", "Via DPI-3", "Distrito de Pequenas Indústrias de Morrinhos"]},
+    {"cep": "75653-420", "anterior": ["lista-2025-10", "V DPI 2", "DPI"], "principal": ["lista-2025-12-bairro", "Via DPI-2", "Distrito de Pequenas Indústrias de Morrinhos"]},
+    {"cep": "75653-422", "anterior": ["lista-2025-10", "V DPI 1", "DPI"], "principal": ["lista-2025-12-bairro", "Via DPI-1", "Distrito de Pequenas Indústrias de Morrinhos"]},
+    {"cep": "75654-147", "anterior": ["lista-2025-10", "RUA 5", "AEROPORTO III"], "principal": ["lista-2025-12-bairro", "Rua 5", "Setor Aeroporto III"]},
+    {"cep": "75654-745", "anterior": ["lista-2025-10", "VIA SECUNDÁRIA 3", "DAIMO"], "principal": ["lista-2025-12-bairro", "Via Secundária 3", "Distrito Agroindustrial de Morrinhos"]},
+    {"cep": "75654-746", "anterior": ["lista-2025-10", "VIA SECUNDÁRIA 1", "DAIMO"], "principal": ["lista-2025-12-bairro", "Via Secundária-01", "Distrito Agroindustrial de Morrinhos"]},
+    {"cep": "75656-534", "anterior": ["lista-2025-10", "RUA DC-5", "VERA CRUZ"], "principal": ["lista-2025-12-bairro", "Rua DC-5", "Jardim Vera Cruz"]},
+    {"cep": "75656-626", "anterior": ["lista-2025-10", "RUA DC-5", "DARCY CHAVES"], "principal": ["lista-2025-12-bairro", "Rua DC-5", "Residencial Darcy Chaves"]}
+  ],
   "listas": [
     {
       "id": "lista-2025-12-bairro",

@@ -115,10 +115,10 @@ class TestAcervo(unittest.TestCase):
         self.assertTrue(all(r['conferencia_correios'] == 'pendente' for r in resultados))
 
     def test_cep_sem_hifen_na_origem_fica_pesquisavel(self):
-        resultados = self.consultar('75656-534')
-        outubro = next(r for r in resultados if r['fonte_postal_id'] == 'lista-2025-10')
-        self.assertEqual(outubro['bairro'], 'VERA CRUZ')
-        self.assertEqual(outubro['observacoes_postais'][0]['cep_original'], '75656534')
+        rua, = self.consultar('75656-534')
+        outubro = next(r for r in rua['observacoes_postais'] if r['fonte_id'] == 'lista-2025-10')
+        self.assertEqual(outubro['bairro_original'], 'VERA CRUZ')
+        self.assertEqual(outubro['cep_original'], '75656534')
 
     def test_lei_sem_cep_encontra_logradouro(self):
         resultado, = self.consultar('Rua Esperança', '--bairro', 'São Francisco de Assis')
@@ -323,6 +323,15 @@ class TestAcervo(unittest.TestCase):
         dados = self.consultar('Rua nº 19, Vila Bela')
         self.assertEqual([r['cep_publicado'] for r in dados], ['75654-000'])
         self.assertEqual(self.consultar('Rua 19, Vila Bela'), dados)
+
+    def test_conciliacao_das_listas_preserva_fontes_e_divergencias(self):
+        rua, = self.consultar('75654-147')
+        self.assertEqual(rua['situacao_postal'], 'publicado_ultima_lista')
+        self.assertEqual(rua['conferencia_correios'], 'pendente')
+        self.assertEqual({r['bairro_original'] for r in rua['observacoes_postais']},
+                         {'AEROPORTO III', 'Setor Aeroporto III'})
+        divergentes = self.consultar('75652-150')
+        self.assertEqual({r['nome_postal_publicado'] for r in divergentes}, {'Rua CR-2', 'RUA CR-3'})
 
     def test_busca_por_cardinais_preserva_trechos_e_bairro(self):
         for escrito, numerico in [('Rua três', 'Rua 03'), ('R. vinte e dois', 'Rua 22'),

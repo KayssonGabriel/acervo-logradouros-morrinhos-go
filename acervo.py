@@ -65,7 +65,10 @@ def abrir_banco(caminho, escrita=False):
         if escrita and versao == 3:
             db.executescript((RAIZ / 'dados/migracao-004.sql').read_text(encoding='utf-8'))
             versao = 4
-        if versao != 4 and not (versao in (2, 3) and not escrita):
+        if escrita and versao == 4:
+            db.executescript((RAIZ / 'dados/migracao-005.sql').read_text(encoding='utf-8'))
+            versao = 5
+        if versao != 5 and not (versao in (2, 3, 4) and not escrita):
             raise ValueError(f'Versão de esquema não suportada para consulta: {versao}. Execute importar para migrar.')
     except (sqlite3.Error, OSError, ValueError):
         db.close()
@@ -271,6 +274,26 @@ def importar_nomes_historicos(db, catalogo):
                       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)''', registros)
 
 
+def conciliar_listas(db, registros):
+    for registro in registros:
+        ids = []
+        for papel in ('anterior', 'principal'):
+            fonte, nome, bairro = registro[papel]
+            linha, = db.execute('''SELECT DISTINCT trecho_id FROM observacao_postal
+                WHERE fonte_id = ? AND nome_original = ? AND bairro_original = ? AND cep = ?''',
+                (fonte, nome, bairro, registro['cep'])).fetchall()
+            ids.append(linha[0])
+        anterior, principal = ids
+        conflito = db.execute('''SELECT 1 FROM equivalencia_trecho
+            WHERE anterior_id IN (?, ?) OR principal_id = ?
+            UNION ALL SELECT 1 FROM ato_nome WHERE trecho_id = ?''',
+            (anterior, principal, anterior, anterior)).fetchone()
+        if conflito:
+            raise ValueError(f"Conflito na conciliação postal do CEP {registro['cep']}.")
+        db.execute('''INSERT INTO equivalencia_trecho (anterior_id, principal_id, fonte_postal_id)
+            VALUES (?, ?, ?)''', (anterior, principal, registro['principal'][0]))
+
+
 def importar(db):
     dados = json.loads((RAIZ / 'dados/fontes.json').read_text(encoding='utf-8'))
     historico = json.loads((RAIZ / 'dados/pesquisa-historica.json').read_text(encoding='utf-8'))
@@ -280,10 +303,12 @@ def importar(db):
     campos_geral, _ = dados_fonte(geral, 'comunicado')
     db.execute('BEGIN IMMEDIATE')
     with db:
+        db.execute('DELETE FROM equivalencia_trecho WHERE fonte_postal_id IS NOT NULL')
         for fonte, preparacao in listas:
             importar_lista(db, fonte, preparacao)
         for ato, campos in atos_preparados:
             importar_ato(db, ato, campos)
+        conciliar_listas(db, dados['conciliacoes_postais'])
         importar_nomes_historicos(db, historico)
         registrar_fonte(db, geral['id'], campos_geral)
         trecho = garantir_trecho(db, 'cep_geral_historico', geral['cep'])
