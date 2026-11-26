@@ -20,6 +20,8 @@ O art. 1º da Lei nº 3.933/2023 usa o nome Sargento Baltazar José de Menezes p
 
 A pesquisa postal de 26/11/2026 procurou os três nomes legais, Praça do Falcão e rotatória nas listas da Prefeitura de 09/12/2025 e no boletim complementar publicado no portal. Também conferiu os resultados arquivados do Busca CEP de 25/11/2026, inclusive as consultas de Aeroporto e Vila Santos Dumont. Nenhum CEP próprio da praça foi localizado. O CEP 75654-110 identifica a Avenida 101-B no Setor Aeroporto, e os CEPs 75652-096 e 75652-004 identificam ruas com o nome Antônio Rosa Ribeiro Falcão em outros bairros. O CEP da praça segue em aberto. [Listas postais da Prefeitura](https://morrinhos.go.gov.br/codigo-de-enderecamento-postal-cep/) · [Resultados arquivados dos Correios](fontes/ceps/correios-2026-11-25-consolidado.csv)
 
+Em consulta direta ao Busca CEP em 26/11/2026, a pesquisa por «Falcão», em Morrinhos/GO, com todos os tipos de logradouro, retornou dois endereços. Ambos aparecem como Rua Antônio Rosa Ribeiro Falcão. No Setor José Jesuíno Filho, o CEP é 75652-096. No Setor Professor Olyntho Cândido, o CEP é 75652-004. A praça da rotatória segue sem CEP próprio confirmado. [Busca por Localidade/Logradouro dos Correios](https://buscacepinter.correios.com.br/app/localidade_logradouro/index.php)
+
 ## Conferência dos exemplares já arquivados
 
 Em 25/11/2026, o índice municipal continha 3.199 fichas. A comparação abrangeu número e ano de cada lei arquivada. A identidade do arquivo foi conferida byte a byte. Os exemplares diferentes ficam disponíveis para confronto com o texto e as certidões usados no catálogo.

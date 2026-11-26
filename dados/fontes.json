@@ -1,5 +1,6 @@
 {
   "conciliacoes_postais": [
+    {"cep": "75650-282", "anterior": ["lista-2025-01", "Avenida 2", "Jardim América"], "principal": ["lista-2025-12-bairro", "Rua 2", "Jardim América"], "evidencia": "As listas municipais conservam o CEP e o bairro. Os Correios confirmaram Rua 2 em 25/11/2026. As folhas 521380605000019 e 521380605000103 do IBGE localizam a Rua 2 entre a Avenida Juscelino Kubitschek e a antiga Rua 15. O mapa do Censo 2022 mostra o canteiro central. Os editais municipais de 2015, 2016 e 2018 usam Avenida 2 Jardim América para o serviço de poda de grama. A conciliação é postal e se limita ao CEP 75650-282."},
     {"cep": "75656-392", "anterior": ["lista-2025-01", "Avenida Perimetral", "Residencial Valéria Reis"], "principal": ["lista-2025-12-bairro", "Avenida Jadir Machado da Silva", "Residencial Valéria Reis"], "evidencia": "Equivalência postal no bairro. O memorial da Tomada de Preços nº 10/2021, p. 23, identifica a Perimetral no percurso da pista 1 do Anel Viário Jadir Machado da Silva. A notícia municipal de 28/09/2021 localiza o percurso nos três bairros das fichas postais. A exceção em frente ao Jardim Colibri delimita o serviço de meio-fio."},
     {"cep": "75656-292", "anterior": ["lista-2025-01", "Avenida Perimetral", "Jardim Colibri"], "principal": ["lista-2025-12-bairro", "Avenida Jadir Machado da Silva", "Jardim Colibri"], "evidencia": "Equivalência postal no bairro. O memorial da Tomada de Preços nº 10/2021, p. 23, identifica a Perimetral no percurso da pista 1 do Anel Viário Jadir Machado da Silva. A notícia municipal de 28/09/2021 localiza o percurso nos três bairros das fichas postais. A exceção em frente ao Jardim Colibri delimita o serviço de meio-fio."},
     {"cep": "75654-370", "anterior": ["lista-2025-01", "Avenida Perimetral", "Setor Arca de Noé"], "principal": ["lista-2025-12-bairro", "Avenida Jadir Machado da Silva", "Setor Arca de Noé"], "evidencia": "Equivalência postal no bairro. O memorial da Tomada de Preços nº 10/2021, p. 23, identifica a Perimetral no percurso da pista 1 do Anel Viário Jadir Machado da Silva. A notícia municipal de 28/09/2021 localiza o percurso nos três bairros das fichas postais. A exceção em frente ao Jardim Colibri delimita o serviço de meio-fio."},
@@ -2864,6 +2865,8 @@
       "ficha_prefeitura": "https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=68",
       "url": "https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/466b5cefaee48efd90e8726797d6705d.pdf",
       "referencia": "2021-02-26",
+      "data_publicacao": "2021-03-01",
+      "vigencia_desde": "2021-03-01",
       "numero": "3.598",
       "artigo": "1º",
       "pagina": 1,
@@ -2871,7 +2874,8 @@
       "anterior": null,
       "atribuido": "Rua CR3",
       "tipo_alteracao": "Afetação de trecho para circulação pública",
-      "trecho": "Entre a Avenida F e a Rua 29, na área de 1.964,03 m²"
+      "trecho": "Entre a Avenida F e a Rua 29, na área de 1.964,03 m²",
+      "nota_ato": "A certidão registra afixação em 01/03/2021, data de início da vigência pelo art. 2º. A folha 521380605000112 do IBGE e o recorte D4 da planta municipal situam o trecho entre a Avenida F e a Rua 29. A Rua CR-2 aparece em outro traçado. As listas postais registram Rua CR-3 em três bairros. O vínculo do trecho da lei com uma ficha postal depende da identificação das faces abrangidas."
     },
     {
       "id": "lei-3696-2021",
