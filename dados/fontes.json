@@ -1,5 +1,6 @@
 {
   "conciliacoes_postais": [
+    {"cep_anterior": "75654-216", "cep": "75654-350", "anterior": ["lista-2025-12-bairro", "Rua 216", "Vila Santos Dumont"], "principal": ["correios-busca-vila-santos-dumont-20261125", "Rua 216", "Vila Santos Dumont II"], "evidencia": "Preferência pelo endereço confirmado no Busca CEP dos Correios em 25/11/2026, conforme a revisão documentada em CONFERENCIA-CEPS.md. O IBGE localiza a Rua 216 na Vila Santos Dumont II. A conciliação atualiza a ficha de busca e não estabelece os limites históricos do CEP municipal."},
     {"cep": "75650-054", "anterior": ["lista-2025-01", "Rua Agenor Vicente da Silva", "Setor Oeste"], "principal": ["lista-2025-12-bairro", "Rua Evangelista Valério Cardoso", "Setor Oeste"], "evidencia": "As edições municipais preservam os cinco pares de bairro e CEP ao atualizar o nome para Rua Evangelista Valério Cardoso. Os Correios confirmaram os cinco em 25/11/2026. A Lei nº 3.625/2021 localiza o início do trecho na Rua Pernambuco, no Setor Oeste."},
     {"cep": "75654-040", "anterior": ["lista-2025-01", "Rua Agenor Vicente da Silva", "Vila Bela"], "principal": ["lista-2025-12-bairro", "Rua Evangelista Valério Cardoso", "Vila Bela"], "evidencia": "As edições municipais preservam os cinco pares de bairro e CEP ao atualizar o nome para Rua Evangelista Valério Cardoso. Os Correios confirmaram os cinco em 25/11/2026. O CNEFE 2010 localiza a Rua 22 na Vila Bela no setor censitário 521380605000029."},
     {"cep": "75654-058", "anterior": ["lista-2025-01", "Rua Agenor Vicente da Silva", "Setor Aeroporto"], "principal": ["lista-2025-12-bairro", "Rua Evangelista Valério Cardoso", "Setor Aeroporto"], "evidencia": "As edições municipais preservam os cinco pares de bairro e CEP ao atualizar o nome para Rua Evangelista Valério Cardoso. Os Correios confirmaram os cinco em 25/11/2026. O CNEFE 2010 localiza a Rua 22 no Setor Aeroporto no setor censitário 521380605000029."},
@@ -142,7 +143,7 @@
       "id": "correios-busca-vila-santos-dumont-20261125",
       "arquivo": "fontes/ceps/correios-2026-11-25-vila-santos-dumont.csv",
       "url": "https://buscacepinter.correios.com.br/app/logradouro_bairro/index.php",
-      "referencia": "2026-11-25", "formato": "consulta_csv", "linhas_selecionadas": [35],
+      "referencia": "2026-11-25", "formato": "consulta_csv", "linhas_selecionadas": [35, 48],
       "abrangencia": "complementar", "nota": "Busca por bairro, Morrinhos/GO, 1 a 48 de 48."
     }
   ],

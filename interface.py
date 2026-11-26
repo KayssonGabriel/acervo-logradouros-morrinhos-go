@@ -40,6 +40,7 @@ LISTAS = {
     'lista-2025-01': 'Cadastro de logradouros de janeiro de 2025',
     'lista-2025-01-bairro': 'Cadastro por bairro de janeiro de 2025',
     'lista-2024-11': 'Cadastro de logradouros de novembro de 2024',
+    'correios-busca-vila-santos-dumont-20261125': 'Busca CEP dos Correios por bairro',
     'comunicado-cep-geral-2025-03': 'Comunicado sobre o CEP geral',
 }
 CAMPOS_CONSULTA = (

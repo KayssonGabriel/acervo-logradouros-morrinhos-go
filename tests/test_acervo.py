@@ -113,7 +113,7 @@ class TestAcervo(unittest.TestCase):
             local = Path(pasta) / 'morrinhos.sqlite3'
             with patch.object(acervo, 'BANCO', local):
                 with closing(acervo.abrir_banco(local)) as db:
-                    self.assertEqual(db.execute('SELECT count(*) FROM observacao_postal').fetchone()[0], 4989)
+                    self.assertEqual(db.execute('SELECT count(*) FROM observacao_postal').fetchone()[0], 4990)
                 self.assertTrue(local.is_file())
                 with closing(acervo.abrir_banco(local, escrita=True)) as db, db:
                     db.execute('CREATE TABLE marcador_local (id INTEGER)')
@@ -133,10 +133,14 @@ class TestAcervo(unittest.TestCase):
 
     def test_homonimos_conservam_ids_e_ceps_separados(self):
         resultados = self.consultar('Rua 216')
-        da_lista_recente = [r for r in resultados if r['fonte_postal_id'] == 'lista-2025-12-bairro']
-        self.assertEqual({(r['bairro'], r['cep_publicado']) for r in da_lista_recente}, {
-            ('Setor Aeroporto', '75654-123'), ('Vila Santos Dumont', '75654-216')})
-        self.assertEqual(len({r['trecho_id'] for r in da_lista_recente}), 2)
+        self.assertEqual({(r['bairro'], r['cep_publicado']) for r in resultados}, {
+            ('Setor Aeroporto', '75654-123'), ('Vila Santos Dumont II', '75654-350')})
+        self.assertEqual(len({r['trecho_id'] for r in resultados}), 2)
+        self.assertEqual(self.consultar('75654-216'), [])
+        self.assertEqual(self.consultar('Rua 16', '--bairro', 'Vila Santos Dumont II'), [])
+        confirmado, = self.consultar('75654-350')
+        self.assertEqual(confirmado['conferencia_correios'], 'confirmado')
+        self.assertEqual(confirmado['conferido_em'], '2026-11-25')
 
     def test_mesmo_cep_com_nomes_distintos_preserva_pendencia(self):
         resultados = self.consultar('75650044')
@@ -318,8 +322,8 @@ class TestAcervo(unittest.TestCase):
         self.assertEqual(resultado['nome_municipal_documentado'], 'Rua Juvercina Cipriana da Silva')
 
     def test_bairro_no_fim_funciona_sem_virgula(self):
-        resultado, = self.consultar('Rua 216 Vila Santos Dumont')
-        self.assertEqual(resultado['cep_publicado'], '75654-216')
+        resultado, = self.consultar('Rua 216 Vila Santos Dumont II')
+        self.assertEqual(resultado['cep_publicado'], '75654-350')
 
     def test_nome_com_palavras_fora_de_ordem_continua_localizavel(self):
         resultados = self.consultar('Silva Juvercina', '--bairro', 'Jardim América')
@@ -466,7 +470,7 @@ class TestAcervo(unittest.TestCase):
         indice = varrer_historico.formar_indice(alvos)
         self.assertTrue(all(alvo['termos'] for alvo in alvos.values()))
         achados = varrer_historico.buscar_pagina(indice, 'Na R. 0216 de Morrinhos')
-        self.assertEqual({alvos[trecho]['bairro'] for trecho, _ in achados}, {'Setor Aeroporto', 'Vila Santos Dumont'})
+        self.assertEqual({alvos[trecho]['bairro'] for trecho, _ in achados}, {'Setor Aeroporto', 'Vila Santos Dumont II'})
 
     def test_varredura_sinaliza_pdf_ausente_com_resultado_indeterminado(self):
         with closing(acervo.abrir_banco(self.banco)) as db:

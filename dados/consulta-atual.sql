@@ -3,7 +3,9 @@ WITH ultima AS (
     SELECT max(referencia) AS data FROM fonte WHERE tipo = 'lista_postal' AND abrangencia = 'integral'
 )
 SELECT o.*, f.referencia, f.prioridade, f.url, f.abrangencia,
-       c.resultado, c.conferido_em, c.endereco_retornado, c.evidencia
+       coalesce(c.resultado, CASE WHEN f.arquivo LIKE '%.csv' THEN 'confirmado' END) AS resultado,
+       coalesce(c.conferido_em, CASE WHEN f.arquivo LIKE '%.csv' THEN f.referencia END) AS conferido_em,
+       c.endereco_retornado, c.evidencia
 FROM observacao_postal_v1 o JOIN fonte f ON f.id = o.fonte_id
 LEFT JOIN conferencia_correios c ON c.id = (
     SELECT id FROM conferencia_correios WHERE observacao_id = o.id

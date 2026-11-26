@@ -41,7 +41,7 @@ Teste no CLI e no navegador. Preserve o ID do trecho, a procedência e todas as 
 
 | Entrada | O que conferir |
 |---|---|
-| `Rua 216` e `Rua 216 Vila Santos Dumont` | Dois homônimos sem bairro. Com Vila Santos Dumont, retorna o CEP `75654-216`. |
+| `Rua 216` e `Rua 216 Vila Santos Dumont II` | Dois homônimos sem bairro. Com Vila Santos Dumont II, retorna o CEP `75654-350`. |
 | `R. 03, nº 44, Qd. 8, Jardim América, Morrinhos - GO, CEP 75.650-281` | Encontra a Rua Juvercina Cipriana da Silva. Os complementos são contexto de busca. |
 | `Rua Juvercna` com Jardim América | Aparece como sugestão aproximada. A interface aguarda a seleção para mostrar o detalhe. |
 | `Rua nº 19, Vila Bela` e `Rua FC03` | O número do nome da via é preservado. Os trechos com bairros e CEPs próprios continuam separados. |

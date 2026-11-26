@@ -58,10 +58,10 @@ class TestInterface(unittest.TestCase):
                             and item['cep_publicado'] is None for item in sem_cep['resultados']))
         fila = self.ler_json('/api/consulta', pendencia_cep='cadastro_a_confirmar', bairro='Povoado de Marcelânia')
         self.assertEqual(fila['total'], sem_cep['total'])
-        correios = self.ler_json('/api/consulta', q='Rua 216', bairro='Vila Santos Dumont',
+        correios = self.ler_json('/api/consulta', q='Rua 213', bairro='Vila Santos Dumont',
                                   pendencia_cep='correios_a_conferir')
         trecho, = correios['resultados']
-        self.assertEqual(trecho['cep_publicado'], '75654-216')
+        self.assertEqual(trecho['cep_publicado'], '75654-212')
         self.assertEqual(trecho['conferencia_correios'], 'pendente')
         geral = self.ler_json('/api/consulta', q='75650-000', pendencia_cep='correios_a_conferir')
         self.assertEqual(geral['total'], 0)
@@ -95,7 +95,7 @@ class TestInterface(unittest.TestCase):
         trecho, = self.ler_json('/api/consulta', q='Rua 216', bairro='Vila Santos Dumont')['resultados']
         dados = {'trecho_id': trecho['trecho_id'], 'nome_anterior': 'Rua 216',
                  'nome_novo': 'Rua de Teste da Memória', 'vigencia_desde': '2026-11-20',
-                 'situacao_cep': 'alterado', 'cep_anterior': '75654-216', 'cep_novo': '75659-987',
+                 'situacao_cep': 'alterado', 'cep_anterior': '75654-350', 'cep_novo': '75659-987',
                  'fonte': 'Comunicado de teste'}
         requisicao = Request(self.url + '/api/mudancas', data=json.dumps(dados).encode(),
                              headers={'Content-Type': 'application/json', 'Origin': self.url})
@@ -109,11 +109,11 @@ class TestInterface(unittest.TestCase):
             with urlopen(requisicao, timeout=5) as resposta:
                 self.assertEqual(resposta.status, codigo)
         self.assertEqual(self.ler_json('/api/consulta', q='75659-987')['total'], 0)
-        for busca in ('Rua de Teste da Memória', 'Rua 216', '75654-216'):
+        for busca in ('Rua de Teste da Memória', 'Rua 216', '75654-350'):
             encontrados = self.ler_json('/api/consulta', q=busca, bairro='Vila Santos Dumont')['resultados']
             atual, = [item for item in encontrados if item['trecho_id'] == trecho['trecho_id']]
-            self.assertEqual(atual['cep_publicado'], '75654-216')
-            self.assertEqual(atual['conferencia_correios'], 'pendente')
+            self.assertEqual(atual['cep_publicado'], '75654-350')
+            self.assertEqual(atual['conferencia_correios'], 'confirmado')
             mudanca, = atual['mudancas_cadastradas']
             self.assertIsNone(mudanca['cep_novo'])
         anterior = {**dados, 'nome_anterior': 'Rua de Teste Antiga', 'nome_novo': 'Rua 216',
@@ -131,7 +131,7 @@ class TestInterface(unittest.TestCase):
                     self.assertEqual(resposta.status, status)
         antigo, = self.ler_json('/api/consulta', q='Rua de Teste Antiga')['resultados']
         self.assertEqual([m['vigencia_desde'] for m in antigo['mudancas_cadastradas']], ['2026-11-20', '1980-01-01'])
-        self.assertEqual(antigo['mudancas_cadastradas'][1]['cep_novo'], '75654-216')
+        self.assertEqual(antigo['mudancas_cadastradas'][1]['cep_novo'], '75654-350')
         filtros = {'q': 'Rua 216', 'pendencia_cep': 'cadastro_a_confirmar', 'bairro': 'Vila Santos Dumont'}
         pendente = {**dados, 'nome_novo': 'Rua de Teste com CEP Pendente',
                     'situacao_cep': 'desconhecido', 'cep_novo': ''}
