@@ -135,9 +135,14 @@
       "ficha_prefeitura": "https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=877", "arquivo": "fontes/leis/lei-2980-2013.pdf",
       "url": "https://morrinhos.go.gov.br/wp-content/uploads/2023/11/2.980-Nome.-Logradouro.-Antonio-Rosa-Ribeiro-Falcao.pdf",
       "referencia": "2013-08-23", "numero": "2.980", "artigo": "1º", "pagina": 1,
-      "bairro": "Setor Aeroporto / Vila Santos Dumont", "anterior": null,
+      "data_publicacao": "2013-08-27",
+      "vigencia_desde": "2013-08-27",
+      "bairro": "Setor Aeroporto / Vila Santos Dumont",
+      "anterior": "Praça Sargento Baltazar José de Menezes",
       "atribuido": "Praça Antônio Rosa Ribeiro – Falcão",
+      "tipo_alteracao": "Alteração de denominação",
       "trecho": "Rotatória da Avenida 101-B do Setor Aeroporto com a Avenida H da Vila Santos Dumont",
+      "nota_ato": "O vínculo com a Lei nº 2.359/2007 resulta da descrição da rotatória na Lei nº 2.687/2010 e da folha 521380605000026 do IBGE de 2010, que mostra as avenidas Jaime Vilela, 101-B e H chegando ao mesmo círculo. A Lei nº 2.980/2013 atribui o novo nome à praça da rotatória. A certidão preenchida no exemplar do Portal do Cidadão registra a publicação em 27/08/2013, data de vigência pelo art. 2º. Nenhum CEP próprio da praça foi localizado nas listas da Prefeitura ou nos resultados dos Correios de 25/11/2026.",
       "nota": "A lei nomeia uma praça. Os registros postais de Rua Antônio Rosa Ribeiro Falcão ficam em outros bairros. CEP da praça a confirmar."
     },
     {
@@ -2159,7 +2164,9 @@
       "anterior": null,
       "atribuido": "Praça Dr. Limírio Ribeiro Quinta Filho",
       "tipo_alteracao": "Denominação",
-      "trecho": "Confluência da Rua 214 com as avenidas Jahyme Vilela, 101-A e 101-B"
+      "trecho": "Confluência da Rua 214 com as avenidas Jahyme Vilela, 101-A e 101-B",
+      "trecho_ato": "lei-2980-2013",
+      "nota_ato": "A folha 521380605000026 do IBGE de 2010 mostra a Rua 214, também identificada como Rua João F. Macedo, e as avenidas Jaime Vilela, 101-A e 101-B chegando à mesma rotatória. O recorte C4 da planta municipal de 2025 confirma que a Rua 214 chega à rotatória junto à quadra 75. O Portal do Cidadão identifica 16/03/1995 como data da assinatura. A ficha da Câmara indica também essa data para publicação. O PDF do Portal do Cidadão, a cópia idêntica da Câmara e a versão do índice de 1995 da Prefeitura não trazem certidão. As datas de publicação e vigência seguem a confirmar."
     },
     {
       "id": "lei-1356-1995",
@@ -2498,6 +2505,26 @@
       "tipo_alteracao": "Denominação",
       "trecho": "Entre as avenidas Jaime Vilela e A e as ruas 1 e 10. Lei expressamente revogada pelo art. 3º da Lei nº 3.933/2023.",
       "nota_ato": "A Lei nº 3.933/2023 revogou expressamente este ato e descreveu duas praças em etapas distintas."
+    },
+    {
+      "id": "lei-2359-2007",
+      "arquivo": "fontes/leis/lei-2359-2007.pdf",
+      "url": "https://nucleoleg.s3.us-east-2.amazonaws.com/cliente/cm_morrinhos/3174/Lei-n-2359-2007",
+      "ficha_prefeitura": "https://morrinhos.go.gov.br/wp-content/uploads/2023/11/2.359-Nome-de-Praa.-Sargento-Baltazar-Jos-de-Menezes.pdf",
+      "camara": "https://leis.morrinhos.go.leg.br/leis/2971/lei-2359-2007",
+      "referencia": "2007-08-23",
+      "data_publicacao": "2007-08-30",
+      "vigencia_desde": "2007-08-30",
+      "numero": "2.359",
+      "artigo": "1º",
+      "pagina": 1,
+      "bairro": "Setor Aeroporto e Vila Santos Dummont",
+      "anterior": "Praça Dr. Limírio Ribeiro Quinta Filho",
+      "atribuido": "Praça Sargento Baltazar José de Menezes",
+      "tipo_alteracao": "Denominação",
+      "trecho": "Entre as avenidas Jaime Vilela e 101-B.",
+      "trecho_ato": "lei-2980-2013",
+      "nota_ato": "A denominação anterior foi identificada pela Lei nº 1.331/1995 e pela comparação dos mapas. A certidão de afixação registra 30/08/2007. A ficha eletrônica da Câmara indica 23/08/2007 para a publicação. A Lei nº 2.687/2010, art. 1º, III, identifica a praça na 2ª Etapa como rotatória. A folha 521380605000026 do IBGE de 2010 e os recortes C3 e C4 da planta municipal de 2025 mostram a chegada da Avenida 101-B à rotatória, junto à Avenida Jaime Vilela. A Lei nº 3.933/2023 localiza a praça homônima em outra quadra, delimitada pelas ruas 10, 01 e 12 e pela Avenida Jaime Vilela, identificável na folha 521380605000025."
     },
     {
       "id": "lei-2451-2008",

@@ -52,7 +52,7 @@ class TestAcervo(unittest.TestCase):
             self.assertEqual(contagem['lista-2024-11'], 970)
             self.assertEqual(contagem['lista-2025-01'], 970)
             self.assertEqual(contagem['lista-2025-01-bairro'], 970)
-            self.assertEqual(db.execute('SELECT count(*) FROM ato_nome').fetchone()[0], 174)
+            self.assertEqual(db.execute('SELECT count(*) FROM ato_nome').fetchone()[0], 175)
 
     def test_vinculos_por_trecho_preservam_as_fontes_e_os_homonimos(self):
         esperados = {
@@ -120,7 +120,7 @@ class TestAcervo(unittest.TestCase):
                 with closing(acervo.abrir_banco(local)) as db:
                     db.execute('SELECT id FROM marcador_local')
             with closing(acervo.abrir_banco(acervo.BASE_INICIAL)) as db:
-                self.assertEqual(db.execute('SELECT count(*) FROM ato_nome').fetchone()[0], 174)
+                self.assertEqual(db.execute('SELECT count(*) FROM ato_nome').fetchone()[0], 175)
                 self.assertEqual(db.execute('SELECT count(*) FROM mudanca_local').fetchone()[0], 0)
                 self.assertEqual(db.execute('SELECT count(*) FROM conferencia_correios').fetchone()[0], 0)
                 db.execute('ATTACH DATABASE ? AS reimportado', (str(self.banco),))
