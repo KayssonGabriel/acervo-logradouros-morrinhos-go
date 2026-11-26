@@ -334,7 +334,7 @@ A lista municipal de janeiro de 2025 traz Rua 16, Vila Santos Dumont, CEP 75654-
 
 A consulta dos Correios identifica a Rua 216 na Vila Santos Dumont II com o CEP 75654-350 e no Setor Aeroporto com o CEP 75654-123. A consulta direta de 25/11/2026 pelo CEP municipal 75654-216 não retornou endereço. A busca por Rua 16 em Morrinhos/GO também não retornou nenhuma via com esse nome na Vila Santos Dumont. Falta delimitar o trecho da ficha municipal para comprovar a substituição do CEP. [Consulta por bairro](fontes/ceps/correios-2026-11-25-vila-santos-dumont.csv#L49) · [Consultas consolidadas](fontes/ceps/correios-2026-11-25-consolidado.csv)
 
-Na busca do acervo, a ficha da Vila Santos Dumont II usa o CEP 75654-350 dos Correios. O CEP 75654-216 permanece registrado como observação da fonte municipal, fora dos resultados da busca. A ficha do Setor Aeroporto continua com 75654-123.
+Na busca do acervo, a ficha da Vila Santos Dumont II usa o CEP 75654-350 dos Correios. Na ficha, a nota sobre o CEP 75654-216 aponta para a página 22 da lista municipal. A busca direta pelo CEP 75654-216 não retorna resultados. A ficha do Setor Aeroporto continua com 75654-123.
 
 ## Rua 1-A no Setor Aeroporto
 

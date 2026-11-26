@@ -96,6 +96,10 @@ def resultados_publicos(db, params):
              'url': url_publica(observacao['url'])}
             for observacao in trecho['observacoes_postais']
         ]
+        resumo['ceps_municipais_divergentes'] = [
+            {**observacao, 'url': url_publica(observacao['url'])}
+            for observacao in trecho['ceps_municipais_divergentes']
+        ]
         resumo['mudancas_cadastradas'] = [
             {**mudanca, 'url_fonte': url_publica(mudanca['url_fonte']) if mudanca['url_fonte'] else None}
             for mudanca in trecho['mudancas_cadastradas']

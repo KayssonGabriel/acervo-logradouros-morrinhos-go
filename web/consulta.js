@@ -236,8 +236,21 @@ function exibirTrecho(trecho, botao, interacao) {
   } else if (trecho.situacao_postal === 'publicado_lista_anterior') {
     avisoPostal = 'Registro encontrado em uma edição anterior da lista postal.';
   }
-  porId('situacao-via').textContent = avisoPostal;
-  porId('situacao-via').hidden = !avisoPostal;
+  const situacaoVia = porId('situacao-via');
+  situacaoVia.textContent = avisoPostal;
+  const divergencias = trecho.ceps_municipais_divergentes || [];
+  for (const fonte of divergencias) {
+    if (situacaoVia.hasChildNodes()) situacaoVia.append(document.createElement('br'));
+    situacaoVia.append(`A lista mais recente da Prefeitura (${dataFormatada(fonte.referencia)}) informa ${fonte.cep}. O CEP confirmado nos Correios é ${trecho.cep_publicado}. `);
+    if (fonte.url) {
+      const link = elemento('a', `Lista da Prefeitura, página ${fonte.pagina}`);
+      link.href = `${fonte.url}#page=${fonte.pagina}`;
+      link.target = '_blank';
+      link.rel = 'noopener';
+      situacaoVia.append(link);
+    }
+  }
+  situacaoVia.hidden = !situacaoVia.hasChildNodes();
   porId('trecho-via').textContent = trecho.trecho_documentado || '';
   porId('trecho-via').hidden = !trecho.trecho_documentado;
 

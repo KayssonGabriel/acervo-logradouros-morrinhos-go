@@ -562,6 +562,18 @@ def consultar(db, termo, bairro, *, limite=None, deslocamento=0, pendencia_cep=N
             WHERE o.trecho_canonico_id = ? AND o.cep = ?
             ORDER BY f.referencia DESC, f.prioridade DESC, f.id, o.pagina, o.linha
         ''', (linha['trecho_id'], linha['cep_publicado']))]
+        resultado['ceps_municipais_divergentes'] = [dict(o) for o in db.execute('''
+            SELECT cep, referencia, pagina, url FROM (
+                SELECT cep, referencia, pagina, url, row_number() OVER (
+                    PARTITION BY cep ORDER BY prioridade DESC, fonte_id, pagina, linha
+                ) AS ordem
+                FROM observacoes_atuais
+                WHERE trecho_canonico_id = ? AND cep <> ?
+                  AND abrangencia = 'integral'
+                  AND referencia = (SELECT max(referencia) FROM fonte
+                                    WHERE tipo = 'lista_postal' AND abrangencia = 'integral')
+            ) WHERE ordem = 1 ORDER BY cep
+        ''', (linha['trecho_id'], linha['cep_publicado']))] if linha['conferencia_correios'] == 'confirmado' else []
         ceps_do_trecho = {o['cep'] for o in resultado['observacoes_postais']}
         for mudanca in resultado['mudancas_cadastradas']:
             for campo in ('cep_anterior', 'cep_novo'):

@@ -44,6 +44,18 @@ class TestInterface(unittest.TestCase):
         self.assertNotIn('evidencia_conferencia', trecho)
         self.assertNotIn('arquivo', trecho['observacoes_postais'][0])
 
+    def test_cep_municipal_divergente_aparece_so_como_referencia_da_ficha(self):
+        dumont, = self.ler_json('/api/consulta', q='75654-350')['resultados']
+        self.assertEqual(dumont['cep_publicado'], '75654-350')
+        referencia, = dumont['ceps_municipais_divergentes']
+        self.assertEqual((referencia['cep'], referencia['referencia'], referencia['pagina']),
+                         ('75654-216', '2025-12-09', 22))
+        self.assertEqual(referencia['url'],
+                         'https://morrinhos.go.gov.br/wp-content/uploads/2025/12/Morrinhos-09_12_2025_Ordem-de-Bairro.pdf')
+        self.assertEqual(self.ler_json('/api/consulta', q='75654-216')['resultados'], [])
+        aeroporto, = self.ler_json('/api/consulta', q='75654-123')['resultados']
+        self.assertEqual(aeroporto['ceps_municipais_divergentes'], [])
+
     def test_paginacao_preserva_contagem_total(self):
         primeira = self.ler_json('/api/consulta', q='Rua', pagina=1)
         segunda = self.ler_json('/api/consulta', q='Rua', pagina=2)
