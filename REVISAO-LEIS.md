@@ -454,10 +454,10 @@ Alteração de denominação. Art. 1º, p. 1. [PDF do acervo](fontes/leis/lei-12
 
 | Registro | Nome anterior | Nome atribuído | Bairro ou trecho no ato | Observação postal do trecho |
 | --- | --- | --- | --- | --- |
-| Novo | Avenida D | Avenida Engenheiro Flavio Cascão | Setor Jardim Santa Fé · Do Setor Jardim Santa Fé, passando pelo Setor São Pedro | Avenida Engenheiro Flávio Cascão · Jardim Santa Fé · 75652-112 |
-| Novo | Avenida D | Avenida Engenheiro Flavio Cascão | Setor São Pedro · Do Setor Jardim Santa Fé, passando pelo Setor São Pedro | Avenida Engenheiro Flávio Cascão · Setor São Pedro · 75652-270 |
+| Novo | Avenida D | Avenida Engenheiro Flávio Cascão | Setor Jardim Santa Fé · Do Setor Jardim Santa Fé, passando pelo Setor São Pedro | Avenida Engenheiro Flávio Cascão · Jardim Santa Fé · 75652-112 |
+| Novo | Avenida D | Avenida Engenheiro Flávio Cascão | Setor São Pedro · Do Setor Jardim Santa Fé, passando pelo Setor São Pedro | Avenida Engenheiro Flávio Cascão · Setor São Pedro · 75652-270 |
 
-O art. 1º grafa “Flavio”. A lista postal traz “Flávio”. O ato abrange dois setores e não cita Vila Nunes nem Setor Oeste. A ficha da Câmara informa publicação em 20/10/1994. Data efetiva a conferir no registro de publicação. O anexo da Câmara grafa «Flávio», com acento.
+A cópia assinada publicada pela Câmara e a lista postal grafam “Flávio”. A transcrição da Prefeitura usa “Flavio”. O ato abrange dois setores e não cita Vila Nunes nem Setor Oeste. A ficha da Câmara informa publicação em 20/10/1994. A data efetiva fica a conferir no registro de publicação. [PDF assinado da Câmara](https://nucleoleg.s3.us-east-2.amazonaws.com/cliente/cm_morrinhos/1867/Lei-n-1295-94)
 
 Documentos do inventário 5.
 

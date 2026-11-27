@@ -52,6 +52,13 @@ class TestInterface(unittest.TestCase):
         self.assertTrue(fontes['lei-2292-2007']['pdf_prefeitura_assinado'])
         self.assertFalse(fontes['lei-165-1974']['pdf_prefeitura_assinado'])
         self.assertEqual(fontes['lei-165-1974']['url'], '/fontes/leis/lei-165-1974.pdf')
+        for lei in ('1295-1994', '1301-1994', '1871-2001', '2359-2007'):
+            fonte = fontes[f'lei-{lei}']
+            self.assertFalse(fonte['pdf_prefeitura_assinado'])
+            self.assertTrue(fonte['pdf_camara_assinado'])
+            self.assertTrue(fonte['url'].startswith('https://nucleoleg.s3.us-east-2.amazonaws.com/'))
+            self.assertTrue(fonte['ficha_camara'].endswith(f'/lei-{lei}'))
+            self.assertTrue(fonte['ficha_prefeitura'])
 
     def test_cep_municipal_divergente_aparece_so_como_referencia_da_ficha(self):
         dumont, = self.ler_json('/api/consulta', q='75654-350')['resultados']

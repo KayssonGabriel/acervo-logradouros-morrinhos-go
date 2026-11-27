@@ -21,8 +21,10 @@ ARQUIVOS = {
 }
 ATOS_CATALOGADOS = json.loads((RAIZ / 'dados/fontes.json').read_text(encoding='utf-8'))['atos']
 FICHAS_PREFEITURA = {ato['id']: ato['ficha_prefeitura'] for ato in ATOS_CATALOGADOS if 'ficha_prefeitura' in ato}
+FICHAS_CAMARA = {ato['id']: ato['camara'] for ato in ATOS_CATALOGADOS if 'camara' in ato}
 PDFS_PREFEITURA_ASSINADOS = {ato['id']: ato['url'] for ato in ATOS_CATALOGADOS
                             if ato.get('pdf_prefeitura_assinado')}
+PDFS_CAMARA_ASSINADOS = {ato['id']: ato['url'] for ato in ATOS_CATALOGADOS if ato.get('pdf_camara_assinado')}
 LEIS_LOCAIS = {
     '/' + ato['arquivo']: RAIZ / ato['arquivo']
     for ato in ATOS_CATALOGADOS
@@ -66,9 +68,13 @@ def url_publica(url):
 
 
 def fonte_legal_publica(fonte_id, url):
-    pdf_assinado = PDFS_PREFEITURA_ASSINADOS.get(fonte_id)
-    return {'url': url_publica(pdf_assinado or url), 'pdf_prefeitura_assinado': bool(pdf_assinado),
-            'ficha_prefeitura': FICHAS_PREFEITURA.get(fonte_id)}
+    pdf_prefeitura = PDFS_PREFEITURA_ASSINADOS.get(fonte_id)
+    pdf_camara = PDFS_CAMARA_ASSINADOS.get(fonte_id)
+    return {'url': url_publica(pdf_prefeitura or pdf_camara or url),
+            'pdf_prefeitura_assinado': bool(pdf_prefeitura),
+            'pdf_camara_assinado': bool(pdf_camara),
+            'ficha_prefeitura': FICHAS_PREFEITURA.get(fonte_id),
+            'ficha_camara': FICHAS_CAMARA.get(fonte_id)}
 
 
 def resultados_publicos(db, params):

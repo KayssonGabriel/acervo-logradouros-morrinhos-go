@@ -1,7 +1,63 @@
 # Conferência das leis no Portal do Cidadão de Morrinhos
 
+## Cópias assinadas da Câmara e atos anteriores a 1991
+
+A conferência de 27/11/2026 comparou as transcrições da Prefeitura com os anexos da Câmara e examinou as 40 páginas das 38 leis que estavam sem exemplar assinado publicado pela Prefeitura. As quatro leis abaixo têm cópia assinada disponibilizada pela Câmara. O histórico usa esses anexos como fonte principal e mantém o link municipal para o cotejo. A publicação municipal de uma via assinada continua pendente para os quatro atos.
+
+| Lei | O que o ato comprova | Fontes |
+| --- | --- | --- |
+| 1.295/1994 | O art. 1º muda Avenida D para Avenida Engenheiro Flávio Cascão nos setores Jardim Santa Fé e São Pedro. A edição postal de dezembro de 2025 registra o nome nos dois setores. A certificação da data de publicação permanece em aberto. | [PDF assinado da Câmara](https://nucleoleg.s3.us-east-2.amazonaws.com/cliente/cm_morrinhos/1867/Lei-n-1295-94) · [Ficha da Prefeitura](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=2714) · [Lista postal, p. 2](https://morrinhos.go.gov.br/wp-content/uploads/2025/12/Morrinhos-09_12_2025-ordem-alfabetica-dos-logradouros.pdf#page=2) |
+| 1.301/1994 | O art. 1º denomina Praça Abel Hanum a praça na confluência das ruas 1 e 15, na Vila Nunes. O ato identifica a praça por localização e deixa o nome anterior sem indicação. A certificação da data de publicação permanece em aberto. | [PDF assinado da Câmara](https://nucleoleg.s3.us-east-2.amazonaws.com/cliente/cm_morrinhos/1870/Lei-n-1301-94) · [Ficha da Prefeitura](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=2717) |
+| 1.871/2001 | O art. 1º muda Rua JG-3 para Rua Manoel Cândido de Mello, no Jardim Goiás. A edição postal de dezembro de 2025 registra o nome atribuído e o CEP 75656-152. A certificação da data de publicação permanece em aberto. | [PDF assinado da Câmara](https://nucleoleg.s3.us-east-2.amazonaws.com/cliente/cm_morrinhos/722/Lei-n-1871-2001) · [PDF da Prefeitura](https://morrinhos.go.gov.br/wp-content/uploads/2023/11/Lei-n-1871-de-22-de-novembro-de-2001.pdf) · [Lista postal, p. 6](https://morrinhos.go.gov.br/wp-content/uploads/2025/12/Morrinhos-09_12_2025_Ordem-de-Bairro.pdf#page=6) |
+| 2.359/2007 | O art. 1º dá à praça entre as avenidas Jaime Vilela e 101-B o nome Sargento Baltazar José de Menezes. A certidão de afixação registra 30/08/2007. A identificação da praça como a rotatória e as outras denominações constam na seção específica deste relatório. | [PDF assinado da Câmara](https://nucleoleg.s3.us-east-2.amazonaws.com/cliente/cm_morrinhos/3174/Lei-n-2359-2007) · [PDF da Prefeitura](https://morrinhos.go.gov.br/wp-content/uploads/2023/11/2.359-Nome-de-Praa.-Sargento-Baltazar-Jos-de-Menezes.pdf) · [Histórico da rotatória](#rotatória-da-avenida-101-b) |
+
+### Atos de 1960 a 1988
+
+Há texto para os 34 atos nas cópias catalogadas. Os números e anos foram cruzados com o índice municipal exportado e com a pesquisa no catálogo de mídias da Prefeitura. A série pública da Câmara começa em 1991. Nenhuma via oficial online desses 34 atos foi localizada nessas buscas. O ano ou a data no cabeçalho identifica o ato. A data efetiva de publicação, a vigência e a correspondência postal dependem das evidências indicadas na revisão individual. [Índice da Prefeitura](https://acessoainformacao.morrinhos.go.gov.br/cidadao/legislacao/leis) · [Série da Câmara](https://leis.morrinhos.go.leg.br/api/leis/anos) · [Revisão por lei](REVISAO-LEIS.md)
+
+O Pregão Presencial nº 11/2021 corrobora o uso municipal de Praça do Estudante, Praça do Trabalhador, Praça Lions, Praça Lindolfo Cândido e da variante Praça Sady Carnot de Ávila. O termo de referência lista os locais de manutenção e serve como evidência de uso. A grafia da Lei nº 109/1973 continua registrada como aparece no documento. A Lei nº 1.576/1998 cita a Lei nº 36/1960, e a Lei nº 118/1973 cita e revoga a Lei nº 86/1972. A cópia da Lei nº 521/1984 conserva, nas páginas 2 e 3, o ofício que comunica a alteração e o requerimento da Câmara. [Pregão Presencial nº 11/2021](https://morrinhos.go.gov.br/wp-content/uploads/2023/11/11-2021-pregao-Servicos-de-poda-de-grama-e-limpeza-de-canteiros-gramados-de-pracas-e-avenidas-1.pdf) · [Lei nº 1.576/1998](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=2187) · [Lei nº 118/1973](fontes/leis/lei-118-1973.pdf) · [Lei nº 521/1984](fontes/leis/lei-521-1984.pdf)
+
+| Cópia consultada | Nome ou designação anterior | Nome atribuído ou utilizado no ato | Tipo de ato |
+| --- | --- | --- | --- |
+| [36/1960](fontes/leis/lei-36-1960.pdf#page=1) | Avenida C | Avenida José Nascimento | Alteração de denominação |
+| [64/1961](fontes/leis/lei-64-1961.pdf#page=1) | Rua Belo Horizonte | Rua Maestro Vicente José Vieira | Alteração de denominação |
+| [38/1965](fontes/leis/lei-38-1965.pdf#page=1) | — | Rua América | Denominação |
+| [84/1966](fontes/leis/lei-84-1966.pdf#page=1) | Avenida A | Avenida Major Evaristo Frauzino | Alteração de denominação |
+| [27/1971](fontes/leis/lei-27-1971.pdf#page=1) | Avenida J | Avenida Dr. Alfredo Lopes de Morais | Alteração de denominação |
+| [29/1971](fontes/leis/lei-29-1971.pdf#page=1) | Avenida A | Avenida Dezembargador Saturnino Sebastião de Azeredo | Alteração de denominação |
+| [86/1972](fontes/leis/lei-86-1972.pdf#page=1) | Avenida Araguaia | Avenida Dr. Gumercindo Marquez de Otero | Alteração de denominação |
+| [95/1973](fontes/leis/lei-95-1973.pdf#page=1) | Rua São Miguel | Rua Major Evaristo Frauzino | Alteração de denominação |
+| [109/1973](fontes/leis/lei-109-1973.pdf#page=1) | — | Praça Sady Carnt | Denominação |
+| [112/1973](fontes/leis/lei-112-1973.pdf#page=1) | — | Praça Lindolfo Cândido Ribeiro | Denominação |
+| [118/1973](fontes/leis/lei-118-1973.pdf#page=1) | Avenida Dr. Gumercindo Marquez de Otero | Avenida Dr. Gumercindo Otero | Nova denominação com revogação expressa |
+| [119/1973](fontes/leis/lei-119-1973.pdf#page=1) | Rua 17 | Rua Prefeito Manoel Lemos Mendonça | Alteração de denominação |
+| [120/1973](fontes/leis/lei-120-1973.pdf#page=1) | Rua 11 | Rua Prefeito Felício Chaves | Alteração de denominação |
+| [121/1973](fontes/leis/lei-121-1973.pdf#page=1) | Avenida J | Avenida Cel. Fernando Barbosa | Alteração de denominação |
+| [122/1973](fontes/leis/lei-122-1973.pdf#page=1) | Rua 18 | Rua Melanias Vieira de Melo | Alteração de denominação |
+| [163/1974](fontes/leis/lei-163-1974.pdf#page=1) | Praça do Trevo | Praça Lions Clube de Morrinhos | Alteração de denominação |
+| [165/1974](fontes/leis/lei-165-1974.pdf#page=1) | — | Praça Juquinha Diniz | Denominação |
+| [174/1975](fontes/leis/lei-174-1975.pdf#page=1) | Rua 12 | Rua José Gomes Viado | Alteração de denominação |
+| [202/1975](fontes/leis/lei-202-1975.pdf#page=1) | — | Praça do Estudante | Denominação |
+| [215/1975](fontes/leis/lei-215-1975.pdf#page=1) | — | Praça do Trabalhador | Denominação |
+| [216/1975](fontes/leis/lei-216-1975.pdf#page=1) | — | Praça Rotary | Denominação |
+| [234/1976](fontes/leis/lei-234-1976.pdf#page=1) | Praça 24 de Outubro | Praça Professor José Cândido | Alteração de denominação |
+| [299/1977](fontes/leis/lei-299-1977.pdf#page=1) | Rua 14 | Rua Dr. Heitor Bastos | Alteração de denominação |
+| [301/1977](fontes/leis/lei-301-1977.pdf#page=1) | Avenida C | Avenida Juscelino Kubitschek | Alteração de denominação |
+| [405/1980](fontes/leis/lei-405-1980.pdf#page=1) | Avenida 101 | Avenida Janhyme Vilela | Alteração de denominação |
+| [471/1982](fontes/leis/lei-471-1982.pdf#page=1) | Rua 14 | Rua Pedro José Braga | Alteração de denominação |
+| [481/1982](fontes/leis/lei-481-1982.pdf#page=1) | Avenida B | Avenida Pe. Samuel Chamel | Alteração de denominação |
+| [500/1983](fontes/leis/lei-500-1983.pdf#page=1) | Rua Uberlândia | Rua Minervino Quintino Martins | Alteração de denominação |
+| [506/1983](fontes/leis/lei-506-1983.pdf#page=1) | Rua 21 | Rua João Júlio de Oliveira | Alteração de denominação |
+| [521/1984](fontes/leis/lei-521-1984.pdf#page=1) | Rua 09 | Rua Gumercindo Inocêncio de Oliveira | Alteração de denominação |
+| [545/1984](fontes/leis/lei-545-1984.pdf#page=1) | Avenida 250 | Avenida Cel. Fernando Barbosa | Extensão do percurso |
+| [561/1984](fontes/leis/lei-561-1984.pdf#page=1) | Avenida Cel. Fernando Barbosa | Avenida Genoveva Rezende Carneiro | Nova denominação com revogação expressa |
+| [790/1988](fontes/leis/lei-790-1988.pdf#page=1) | Rua 215 | Rua Dr. Jorivê Guarany Costa | Alteração de denominação |
+| [805/1988](fontes/leis/lei-805-1988.pdf#page=1) | Rua 214 | Rua João Ferreira Macedo | Alteração de denominação |
+
 
 ## Revisão das cópias assinadas em 27/11/2026
+
+O quadro desta etapa registra a situação antes da conferência dos [exemplares assinados da Câmara](#cópias-assinadas-da-câmara-e-atos-anteriores-a-1991).
 
 A revisão abrangeu as **146 leis** que alimentam as **175 ocorrências** do histórico. O cotejo entre o catálogo, o inventário do Portal do Cidadão e os links do site municipal identificou **108 exemplares assinados publicados pela Prefeitura**. Foram conferidos o número e o ano do ato, a página usada no acervo e a presença de assinatura na reprodução. Os PDFs selecionados foram baixados do endereço publicado e comparados por SHA-256 com os exemplares conferidos.
 

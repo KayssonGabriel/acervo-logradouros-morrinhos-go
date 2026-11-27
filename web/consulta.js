@@ -66,17 +66,26 @@ function documento(titulo, textos, fonte, rotulo = 'Abrir fonte') {
   const corpo = elemento('div');
   corpo.append(elemento('strong', titulo));
   for (const texto of textos.filter(Boolean)) corpo.append(elemento('p', texto));
-  if (fonte.ficha_prefeitura) {
-    const ficha = elemento('a', 'Ficha da Prefeitura');
-    ficha.href = fonte.ficha_prefeitura;
+  const fichas = [
+    [fonte.ficha_prefeitura, fonte.ficha_prefeitura?.endsWith('.pdf') ? 'PDF da Prefeitura' : 'Ficha da Prefeitura'],
+    [fonte.ficha_camara, 'Ficha da Câmara'],
+  ];
+  for (const [urlFicha, tituloFicha] of fichas) {
+    if (!urlFicha) continue;
+    const ficha = elemento('a', tituloFicha);
+    ficha.href = urlFicha;
     ficha.target = '_blank';
     ficha.rel = 'noopener noreferrer';
-    corpo.append(ficha);
+    const paragrafo = elemento('p');
+    paragrafo.append(ficha);
+    corpo.append(paragrafo);
   }
   linha.append(icone('arquivo'), corpo);
   if (fonte.url) {
-    const rotuloFonte = fonte.pdf_prefeitura_assinado === undefined ? rotulo
-      : fonte.pdf_prefeitura_assinado ? 'Abrir versão assinada' : 'Consultar exemplar disponível';
+    let rotuloFonte = rotulo;
+    if (fonte.pdf_prefeitura_assinado) rotuloFonte = 'Abrir versão assinada';
+    else if (fonte.pdf_camara_assinado) rotuloFonte = 'Abrir versão assinada da Câmara';
+    else if (fonte.pdf_prefeitura_assinado === false) rotuloFonte = 'Consultar exemplar disponível';
     const link = elemento('a', rotuloFonte);
     let url;
     try { url = new URL(fonte.url, location.origin); } catch { return linha; }
