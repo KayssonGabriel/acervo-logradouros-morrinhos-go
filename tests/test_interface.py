@@ -40,9 +40,18 @@ class TestInterface(unittest.TestCase):
         trecho, = dados['resultados']
         self.assertEqual(trecho['cep_publicado'], '75650-281')
         self.assertEqual(trecho['historico_nomes'][0]['nome_anterior'], 'Rua 03')
+        self.assertTrue(trecho['historico_nomes'][0]['pdf_prefeitura_assinado'])
+        self.assertEqual(trecho['historico_nomes'][0]['url'],
+                         'https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/e1bb24f4ee6a3fe0c3a6fdb0d1a1dfdd.pdf')
         self.assertEqual(trecho['conferencia_correios'], 'pendente')
         self.assertNotIn('evidencia_conferencia', trecho)
         self.assertNotIn('arquivo', trecho['observacoes_postais'][0])
+
+    def test_fontes_legais_indicam_disponibilidade_de_exemplar_assinado(self):
+        fontes = {fonte['id']: fonte for fonte in self.ler_json('/api/fontes')['fontes']}
+        self.assertTrue(fontes['lei-2292-2007']['pdf_prefeitura_assinado'])
+        self.assertFalse(fontes['lei-165-1974']['pdf_prefeitura_assinado'])
+        self.assertEqual(fontes['lei-165-1974']['url'], '/fontes/leis/lei-165-1974.pdf')
 
     def test_cep_municipal_divergente_aparece_so_como_referencia_da_ficha(self):
         dumont, = self.ler_json('/api/consulta', q='75654-350')['resultados']

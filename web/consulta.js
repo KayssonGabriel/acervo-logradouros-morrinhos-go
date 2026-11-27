@@ -75,7 +75,9 @@ function documento(titulo, textos, fonte, rotulo = 'Abrir fonte') {
   }
   linha.append(icone('arquivo'), corpo);
   if (fonte.url) {
-    const link = elemento('a', rotulo);
+    const rotuloFonte = fonte.pdf_prefeitura_assinado === undefined ? rotulo
+      : fonte.pdf_prefeitura_assinado ? 'Abrir versão assinada' : 'Consultar exemplar disponível';
+    const link = elemento('a', rotuloFonte);
     let url;
     try { url = new URL(fonte.url, location.origin); } catch { return linha; }
     if (url.protocol === 'https:' || (url.origin === location.origin && url.pathname.startsWith('/fontes/leis/'))) {
@@ -83,7 +85,7 @@ function documento(titulo, textos, fonte, rotulo = 'Abrir fonte') {
       link.href = url.href;
       link.target = '_blank';
       link.rel = 'noopener noreferrer';
-      link.setAttribute('aria-label', `${rotulo} · ${titulo} (nova aba)`);
+      link.setAttribute('aria-label', `${rotuloFonte} · ${titulo} (nova aba)`);
       link.append(icone('externo'));
       linha.append(link);
     }

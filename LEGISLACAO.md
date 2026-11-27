@@ -1,5 +1,7 @@
 # Histórico de nomes de logradouros de Morrinhos (GO)
 
+Os exemplares assinados da Prefeitura e as pendências por lei estão no [relatório de fontes legislativas](CONFERENCIA-PORTAL-LEIS.md#revisão-das-cópias-assinadas-em-27112026).
+
 Acervo de atos municipais que identificam, denominam ou renomeiam vias de Morrinhos, Goiás. A coluna de nome anterior registra a denominação citada em cada ato. Quando houver várias mudanças, as fontes datadas permitem localizar o nome mais antigo documentado. O CEP reflete a fonte postal indicada.
 
 O [relatório de revisão das leis e dos logradouros](REVISAO-LEIS.md) identifica os 77 arquivos legislativos recebidos, as duplicatas, as correções, as fontes complementares e os limites de cada ocorrência.
@@ -18,11 +20,11 @@ A [conferência no Portal do Cidadão](CONFERENCIA-PORTAL-LEIS.md) reúne os lin
 
 ### Lei nº 1.448, de 22 de agosto de 1996
 
-O art. 1º atribui à Rua 210 do Setor Aeroporto o nome Rua José Alves de Toledo Neto. O art. 3º estabelece vigência na data da publicação. A data de publicação está a conferir. [PDF oficial, página 1](https://morrinhos.go.gov.br/wp-content/uploads/2023/11/Lei-n-1448-de-22-de-agosto-de-1996.pdf#page=1) · [Cópia local](fontes/leis/lei-1448-1996.pdf)
+O art. 1º atribui à Rua 210 do Setor Aeroporto o nome Rua José Alves de Toledo Neto. O art. 3º estabelece vigência na data da publicação. A data de publicação está a conferir. [PDF oficial, página 1](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/e7e652f5b6056dbc7a28b65419cf227d.pdf#page=1) · [Cópia local](fontes/leis/lei-1448-1996.pdf)
 
 ### Lei nº 2.295, de 2 de março de 2007
 
-O art. 1º altera o nome da Avenida Central para Padre Kleibe França Ribeiro no trecho do Setor Monte Verde delimitado pelas ruas MV 01 e MV 02. O art. 2º estabelece vigência na data da publicação. A data efetiva da publicação está a conferir. [PDF oficial, página 1](https://morrinhos.go.gov.br/wp-content/uploads/2023/11/2.295-Nome-de-Rua.-Padre-Kleibe.pdf#page=1) · [Cópia local](fontes/leis/lei-2295-2007.pdf)
+O art. 1º altera o nome da Avenida Central para Padre Kleibe França Ribeiro no trecho do Setor Monte Verde delimitado pelas ruas MV 01 e MV 02. O art. 2º estabelece vigência na data da publicação. A data efetiva da publicação está a conferir. [PDF oficial, página 1](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/824fc9abb8e598e763c13de5f8d9a5ad.pdf#page=1) · [Cópia local](fontes/leis/lei-2295-2007.pdf)
 
 A lista postal de 09/12/2025 registra Avenida Padre Kleibe França Ribeiro, Conjunto Residencial Monte Verde, CEP 75652-396. Conferência direta no Busca CEP pendente. [Lista por bairro, página 2](https://morrinhos.go.gov.br/wp-content/uploads/2025/12/Morrinhos-09_12_2025_Ordem-de-Bairro.pdf#page=2)
 
@@ -30,13 +32,13 @@ A lista de novembro de 2024 ainda registra Avenida Central, Conjunto Habitaciona
 
 ### Lei nº 3.119, de 22 de maio de 2015
 
-O art. 1º denomina Rua Juvercina Cipriana da Silva a Rua 03 do Setor Jardim América. O art. 2º estabelece vigência na data da publicação, em 28/05/2015. [Diário Municipal de Goiás, edição 854, p. 5](https://www.diariomunicipal.com.br/agm/download/edicao/4C0C1F9D#page=5) · [PDF oficial, página 1](https://morrinhos.go.gov.br/wp-content/uploads/2023/11/3.119-Nome-de-rua.-Juvercina-Cipriana.pdf#page=1) · [Cópia local](fontes/leis/lei-3119-2015.pdf)
+O art. 1º denomina Rua Juvercina Cipriana da Silva a Rua 03 do Setor Jardim América. O art. 2º estabelece vigência na data da publicação, em 28/05/2015. [Diário Municipal de Goiás, edição 854, p. 5](https://www.diariomunicipal.com.br/agm/download/edicao/4C0C1F9D#page=5) · [PDF oficial, página 1](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/e1bb24f4ee6a3fe0c3a6fdb0d1a1dfdd.pdf#page=1) · [Cópia local](fontes/leis/lei-3119-2015.pdf)
 
 A lista postal de 09/12/2025 registra Rua Juvercina Cipriana da Silva, Jardim América, CEP 75650-281. Conferência direta no Busca CEP pendente. [Lista por bairro, página 4](https://morrinhos.go.gov.br/wp-content/uploads/2025/12/Morrinhos-09_12_2025_Ordem-de-Bairro.pdf#page=4)
 
 ### Lei nº 3.066, de 22 de agosto de 2014
 
-O art. 1º atribui o nome Avenida Presidente Getúlio Vargas ao trecho da Avenida Perimetral entre a Avenida do Trabalhador e a Estrada do Café. O ato identifica os limites do trecho. A correspondência com os registros postais permanece em pesquisa. [PDF oficial, página 1](https://morrinhos.go.gov.br/wp-content/uploads/2023/11/3.066-Altera-denominacao-de-via-publica.pdf#page=1) · [Cópia local](fontes/leis/lei-3066-2014.pdf)
+O art. 1º atribui o nome Avenida Presidente Getúlio Vargas ao trecho da Avenida Perimetral entre a Avenida do Trabalhador e a Estrada do Café. O ato identifica os limites do trecho. A correspondência com os registros postais permanece em pesquisa. [PDF oficial, página 1](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/9ec9079ea0d5122e64a32af79fe77792.pdf#page=1) · [Cópia local](fontes/leis/lei-3066-2014.pdf)
 
 ## Lote de pesquisa de 24/11/2026
 
@@ -77,14 +79,14 @@ A Rua 4 do **Jardim Santa Terezinha II** aparece com CEP próprio, 75654-616, na
 ## Denominações sem nome anterior identificado no ato
 
 - **Praça Antônio Rosa Ribeiro – Falcão, Setor Aeroporto / Vila Santos Dumont.** O art. 1º da Lei nº 2.980, de 23/08/2013, atribui esse nome à praça da rotatória da Avenida 101-B com a Avenida H. O histórico reúne as denominações Praça Dr. Limírio Ribeiro Quinta Filho, da Lei nº 1.331/1995, e Praça Sargento Baltazar José de Menezes, da Lei nº 2.359/2007. A certidão do exemplar do Portal do Cidadão registra a publicação em 27/08/2013, data de início da vigência pelo art. 2º. A lista postal registra ruas homônimas nos setores José Jesuíno Filho e Professor Olyntho Cândido. CEP da praça a confirmar. [Ficha da Prefeitura](https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=877) · [PDF oficial com a certidão](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/a6e41f58368bf175c4b156ee9ac411df.pdf#page=1) · [Conferência dos mapas](CONFERENCIA-PORTAL-LEIS.md#rotatória-da-avenida-101-b)
-- **Rua Dona Etelvina Rosa de Jesus, Povoado de Marcelânia.** O art. 1º da Lei nº 1.732, de 21/02/2000, atribui o nome à via principal do povoado. CEP a confirmar. [PDF oficial, página 1](https://morrinhos.go.gov.br/wp-content/uploads/2023/11/Lei-n-1732-de-21-de-fevereiro-de-2000.pdf#page=1) · [Cópia local](fontes/leis/lei-1732-2000.pdf)
-- **Rua Esperança, Setor São Francisco de Assis.** O art. 1º da Lei nº 1.939, de 20/11/2002, dá nome à via então recém-criada a partir da confluência com a Rua X. A Rua X é referência de localização. CEP a confirmar. [PDF oficial, página 1](https://morrinhos.go.gov.br/wp-content/uploads/2023/11/1.939-Nome-de-Rua.pdf#page=1) · [Cópia local](fontes/leis/lei-1939-2002.pdf)
-- **Rua José Elias Borges, Setor Cordeiro / Irinéia de Freitas Chaves.** O art. 1º da Lei nº 2.585, de 11/12/2009, identifica o acesso à AABB entre as avenidas Coronel Fernando Barbosa e Antônio Firmo de Freitas. A lista postal tem registros homônimos em mais de um bairro. O CEP do trecho descrito no ato está a conferir. [PDF oficial, página 1](https://morrinhos.go.gov.br/wp-content/uploads/2023/11/2.585-Nome.-Rua-prxima-AABB-Jos-Elias-Borges.pdf#page=1) · [Cópia local](fontes/leis/lei-2585-2009.pdf)
-- **Avenida Darcy Chaves.** O art. 1º da Lei nº 2.450, de 21/08/2008, descreve o trecho entre a bifurcação da Avenida Dante Costa, junto ao Lago Municipal, e a captação da Saneago. A lista postal traz o nome em mais de um bairro. O CEP do trecho legal está a conferir. [PDF oficial, página 1](https://morrinhos.go.gov.br/wp-content/uploads/2023/11/Nome-de-Avenida.-Darcy-Chaves-2.450.pdf#page=1) · [Cópia local](fontes/leis/lei-2450-2008.pdf)
+- **Rua Dona Etelvina Rosa de Jesus, Povoado de Marcelânia.** O art. 1º da Lei nº 1.732, de 21/02/2000, atribui o nome à via principal do povoado. CEP a confirmar. [PDF oficial, página 1](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/eacd5468e8b3a6ee2ec513bc3effb554.pdf#page=1) · [Cópia local](fontes/leis/lei-1732-2000.pdf)
+- **Rua Esperança, Setor São Francisco de Assis.** O art. 1º da Lei nº 1.939, de 20/11/2002, dá nome à via então recém-criada a partir da confluência com a Rua X. A Rua X é referência de localização. CEP a confirmar. [PDF oficial, página 1](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/f678afba341aa1edae1afb3b4ff4d7a9.pdf#page=1) · [Cópia local](fontes/leis/lei-1939-2002.pdf)
+- **Rua José Elias Borges, Setor Cordeiro / Irinéia de Freitas Chaves.** O art. 1º da Lei nº 2.585, de 11/12/2009, identifica o acesso à AABB entre as avenidas Coronel Fernando Barbosa e Antônio Firmo de Freitas. A lista postal tem registros homônimos em mais de um bairro. O CEP do trecho descrito no ato está a conferir. [PDF oficial, página 1](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/173d8482817b782b1922c535d5102376.pdf#page=1) · [Cópia local](fontes/leis/lei-2585-2009.pdf)
+- **Avenida Darcy Chaves.** O art. 1º da Lei nº 2.450, de 21/08/2008, descreve o trecho entre a bifurcação da Avenida Dante Costa, junto ao Lago Municipal, e a captação da Saneago. A lista postal traz o nome em mais de um bairro. O CEP do trecho legal está a conferir. [PDF oficial, página 1](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/a00eea65f53f9f38caa9668feef7d831.pdf#page=1) · [Cópia local](fontes/leis/lei-2450-2008.pdf)
 
 ### Povoado Rancho Alegre
 
-O art. 1º da Lei nº 2.474/2008 dá nome a oito vias. As denominações estão no banco com as alíneas de **a** a **h**. A lista de dezembro de 2025 tem um CEP para a localidade de Rancho Alegre. A atribuição dos CEPs por via e a localização do protótipo citado na lei continuam em pesquisa. [PDF oficial, página 1](https://morrinhos.go.gov.br/wp-content/uploads/2023/11/2.474-D-nome-s-Vias-Pblicas-do-Povoado-Rancho-Alegre.pdf#page=1) · [Cópia local](fontes/leis/lei-2474-2008.pdf) · [Lista postal](https://morrinhos.go.gov.br/wp-content/uploads/2025/12/Morrinhos-09_12_2025_Ordem-de-Bairro.pdf)
+O art. 1º da Lei nº 2.474/2008 dá nome a oito vias. As denominações estão no banco com as alíneas de **a** a **h**. A lista de dezembro de 2025 tem um CEP para a localidade de Rancho Alegre. A atribuição dos CEPs por via e a localização do protótipo citado na lei continuam em pesquisa. [PDF oficial, página 1](https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/3efdbfb837891f31578fa95da5f3debe.pdf#page=1) · [Cópia local](fontes/leis/lei-2474-2008.pdf) · [Lista postal](https://morrinhos.go.gov.br/wp-content/uploads/2025/12/Morrinhos-09_12_2025_Ordem-de-Bairro.pdf)
 
 ### Povoado Espraiado
 

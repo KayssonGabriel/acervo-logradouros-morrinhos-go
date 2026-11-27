@@ -21,6 +21,8 @@ ARQUIVOS = {
 }
 ATOS_CATALOGADOS = json.loads((RAIZ / 'dados/fontes.json').read_text(encoding='utf-8'))['atos']
 FICHAS_PREFEITURA = {ato['id']: ato['ficha_prefeitura'] for ato in ATOS_CATALOGADOS if 'ficha_prefeitura' in ato}
+PDFS_PREFEITURA_ASSINADOS = {ato['id']: ato['url'] for ato in ATOS_CATALOGADOS
+                            if ato.get('pdf_prefeitura_assinado')}
 LEIS_LOCAIS = {
     '/' + ato['arquivo']: RAIZ / ato['arquivo']
     for ato in ATOS_CATALOGADOS
@@ -63,6 +65,12 @@ def url_publica(url):
     return None
 
 
+def fonte_legal_publica(fonte_id, url):
+    pdf_assinado = PDFS_PREFEITURA_ASSINADOS.get(fonte_id)
+    return {'url': url_publica(pdf_assinado or url), 'pdf_prefeitura_assinado': bool(pdf_assinado),
+            'ficha_prefeitura': FICHAS_PREFEITURA.get(fonte_id)}
+
+
 def resultados_publicos(db, params):
     termo = params.get('q', [''])[0].strip()
     bairro = params.get('bairro', [''])[0].strip()
@@ -83,8 +91,8 @@ def resultados_publicos(db, params):
             trecho['conferencia_correios'] == 'pendente' and endereco in ENDERECOS_CORREIOS
         )
         resumo['historico_nomes'] = [
-            {**{campo: ato[campo] for campo in CAMPOS_ATO}, 'url': url_publica(ato['url']),
-             'ficha_prefeitura': FICHAS_PREFEITURA.get(ato['fonte_id'])}
+            {**{campo: ato[campo] for campo in CAMPOS_ATO},
+             **fonte_legal_publica(ato['fonte_id'], ato['url'])}
             for ato in trecho['historico_nomes']
         ]
         resumo['nomes_historicos'] = [
@@ -120,8 +128,9 @@ def fontes_publicas(db):
     ''')
     return {'fontes': [
         {'id': fonte['id'], 'tipo': fonte['tipo'], 'referencia': fonte['referencia'],
-         'abrangencia': fonte['abrangencia'], 'url': url_publica(fonte['url']),
-         'ficha_prefeitura': FICHAS_PREFEITURA.get(fonte['id']),
+         'abrangencia': fonte['abrangencia'],
+         **(fonte_legal_publica(fonte['id'], fonte['url']) if fonte['tipo'] == 'lei_municipal'
+            else {'url': url_publica(fonte['url']), 'ficha_prefeitura': None}),
          'titulo': f"Lei nº {fonte['numero']}" if fonte['numero'] else LISTAS.get(fonte['id'], 'Fonte postal')}
         for fonte in fontes
     ]}

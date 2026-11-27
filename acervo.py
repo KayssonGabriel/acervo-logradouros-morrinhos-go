@@ -107,7 +107,17 @@ def fonte_ja_registrada(db, fonte_id, campos):
     return existente is not None
 
 
-def registrar_fonte(db, fonte_id, campos):
+def registrar_fonte(db, fonte_id, campos, *, pdf_prefeitura_assinado=False):
+    if pdf_prefeitura_assinado and campos[0] == 'lei_municipal':
+        tipo, referencia, arquivo, url, sha256, prioridade, nota, abrangencia = campos
+        # Atualiza a reprodução do mesmo ato e preserva a identidade da fonte.
+        db.execute('''
+            UPDATE fonte SET url = ?, sha256 = ?
+            WHERE id = ? AND tipo = ? AND referencia = ? AND arquivo = ?
+                AND prioridade = ? AND nota IS ? AND abrangencia IS ?
+                AND (url IS NOT ? OR sha256 IS NOT ?)
+        ''', (url, sha256, fonte_id, tipo, referencia, arquivo, prioridade, nota, abrangencia,
+              url, sha256))
     if fonte_ja_registrada(db, fonte_id, campos):
         return False
     db.execute('''
@@ -220,7 +230,8 @@ def encontrar_trecho_postal(db, vinculo):
 def importar_ato(db, ato, campos=None):
     if campos is None:
         campos, _ = dados_fonte(ato, 'lei_municipal')
-    registrar_fonte(db, ato['id'], campos)
+    registrar_fonte(db, ato['id'], campos,
+                    pdf_prefeitura_assinado=ato.get('pdf_prefeitura_assinado', False))
     ato_id = ato.get('registro', ato['id'])
     vinculo = ato.get('vinculo_postal')
     trecho_ato = ato.get('trecho_ato')
