@@ -47,7 +47,7 @@ Os atos da tabela estão arquivados com o art. 1º. A coluna de CEP registra os 
 | Nome anterior | Nome atribuído | Trecho ou bairro | Ato | CEP publicado |
 | --- | --- | --- | --- | --- |
 | Avenida 101-A | Avenida Professor Frauzino Sobrinho | Setor Aeroporto. Início na rotatória descrita na lei | [Lei nº 2.179/2005](fontes/leis/lei-2179-2005.pdf) | 75654-104, p. 13 |
-| Rua nº 19 | Pe. Samuel George | Divisa entre Vila Bela e Setor Oeste. O PDF identifica o ato como nº 2.292, embora o nome do arquivo indique 2.296 | [Lei nº 2.292/2007](fontes/leis/lei-2292-2007.pdf) | 75654-000, p. 20, e 75650-018, p. 18 |
+| Rua nº 19 | Pe. Samuel George | Divisa entre Vila Bela e Setor Oeste. A certidão registra a publicação por afixação em 07/03/2007, data de início da vigência pelo art. 2º. | [Lei nº 2.292/2007 assinada](fontes/leis/lei-2292-2007.pdf) | 75654-000, p. 20, e 75650-018, p. 18 |
 | Rua 13 | Rua Geraldo Santana | Setor Oeste | [Lei nº 2.517/2009](fontes/leis/lei-2517-2009.pdf) | 75650-030, p. 18 |
 | Rua 20 | Rua Pastor Belino Gonçalves Damaceno | Setor Oeste, entre as avenidas Saturnino de Azevedo e Doutor Gumercindo Otero | [Lei nº 2.756/2011](fontes/leis/lei-2756-2011.pdf) | 75650-058, p. 18 |
 | Rua 101-A | Rua Soldado PM Adonai do Carmo Oliveira | Setor Aeroporto, em frente à 10ª CIPM. A lista usa **Avenida** para a denominação postal correspondente em grafia. A Saneago situa a 10ª CIPM no nº 904 da 101-A nesse setor | [Lei nº 2.759/2011](fontes/leis/lei-2759-2011.pdf) | 75654-108 |

@@ -843,8 +843,10 @@
       "id": "lei-2292-2007",
       "ficha_prefeitura": "https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=1502",
       "arquivo": "fontes/leis/lei-2292-2007.pdf",
-      "url": "https://morrinhos.go.gov.br/wp-content/uploads/2023/11/2.296-Nome-de-Rua.-Padre-Samuel.pdf",
+      "url": "https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/944d671b2f901501ef5a1085dcc0b192.pdf",
       "referencia": "2007-03-02",
+      "data_publicacao": "2007-03-07",
+      "vigencia_desde": "2007-03-07",
       "numero": "2.292",
       "artigo": "1º",
       "pagina": 1,
@@ -858,14 +860,16 @@
         "bairro": "Vila Bela",
         "nome": "Rua Padre Samuel George"
       },
-      "nota": "O cabeçalho do PDF identifica a Lei nº 2.292. O nome do arquivo indica 2.296."
+      "nota": "A certidão na página 1 registra a publicação por afixação em 07/03/2007. O art. 2º prevê vigência na data da publicação."
     },
     {
       "id": "lei-2292-2007",
       "ficha_prefeitura": "https://acessoainformacao.morrinhos.go.gov.br/legislacao/lei/id=1502",
       "arquivo": "fontes/leis/lei-2292-2007.pdf",
-      "url": "https://morrinhos.go.gov.br/wp-content/uploads/2023/11/2.296-Nome-de-Rua.-Padre-Samuel.pdf",
+      "url": "https://nucleogov.s3.us-east-2.amazonaws.com/pf_morrinhos/outros/944d671b2f901501ef5a1085dcc0b192.pdf",
       "referencia": "2007-03-02",
+      "data_publicacao": "2007-03-07",
+      "vigencia_desde": "2007-03-07",
       "numero": "2.292",
       "artigo": "1º",
       "pagina": 1,
@@ -879,7 +883,7 @@
         "bairro": "Setor Oeste",
         "nome": "Rua Padre Samuel George"
       },
-      "nota": "O cabeçalho do PDF identifica a Lei nº 2.292. O nome do arquivo indica 2.296."
+      "nota": "A certidão na página 1 registra a publicação por afixação em 07/03/2007. O art. 2º prevê vigência na data da publicação."
     },
     {
       "id": "lei-2179-2005",
